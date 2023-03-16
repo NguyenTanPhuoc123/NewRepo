@@ -22,8 +22,6 @@ namespace frmLogin
             InitializeComponent();
             random = new Random();
         }
-       
-        
 
         private void FrmManager_FormClosing(object sender, FormClosingEventArgs e)
         {
