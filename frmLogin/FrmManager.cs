@@ -22,12 +22,12 @@ namespace frmLogin
             InitializeComponent();
             random = new Random();
         }
-
+        //VINH
         
 
         private void FrmManager_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm quản lý này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+            if (MessageBox.Show("Bạn muốn thoát  phần mềm quản lý này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
                 e.Cancel = true;
         }
 

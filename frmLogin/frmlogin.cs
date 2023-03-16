@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
+    //VINH
     public partial class frmlogin : Form
     {
         public frmlogin()
@@ -19,7 +20,7 @@ namespace frmLogin
 
         private void frmlogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát khỏi phần này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
+            if (MessageBox.Show("Bạn muốn thoát khỏi này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
                 e.Cancel = true;
         }
 
