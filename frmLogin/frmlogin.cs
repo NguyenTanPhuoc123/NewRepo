@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
-    //VINH
+   
     public partial class frmlogin : Form
     {
         public frmlogin()
