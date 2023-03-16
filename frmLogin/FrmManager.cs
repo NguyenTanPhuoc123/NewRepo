@@ -27,7 +27,7 @@ namespace frmLogin
 
         private void FrmManager_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm quản lý này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
                 e.Cancel = true;
         }
 
