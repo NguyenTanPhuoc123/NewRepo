@@ -20,7 +20,7 @@ namespace frmLogin
 
         private void frmlogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát khỏi này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
+            if (MessageBox.Show("Bạn muốn thoát  này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
                 e.Cancel = true;
         }
 
@@ -40,6 +40,11 @@ namespace frmLogin
             this.Hide();
             login.ShowDialog();
             
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
