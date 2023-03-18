@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CaiDat.cs">
+    <Compile Include="Form\CaiDat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CaiDat.Designer.cs">
+    <Compile Include="Form\CaiDat.Designer.cs">
       <DependentUpon>CaiDat.cs</DependentUpon>
     </Compile>
     <Compile Include="frmlogin.cs">
@@ -66,31 +66,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLyDoAnThucUong.cs">
+    <Compile Include="Form\frmQuanLyDoAnThucUong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyDoAnThucUong.Designer.cs">
-      <DependentUpon>QuanLyDoAnThucUong.cs</DependentUpon>
+    <Compile Include="Form\frmQuanLyDoAnThucUong.Designer.cs">
+      <DependentUpon>frmQuanLyDoAnThucUong.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyNhanVien.cs">
+    <Compile Include="Form\frmQuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyNhanVien.Designer.cs">
-      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    <Compile Include="Form\frmQuanLyNhanVien.Designer.cs">
+      <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyTaiKhoan.cs">
+    <Compile Include="Form\frmQuanLyTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyTaiKhoan.Designer.cs">
-      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    <Compile Include="Form\frmQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemeColor.cs" />
-    <Compile Include="ThongKe.cs">
+    <Compile Include="Form\frmThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongKe.Designer.cs">
-      <DependentUpon>ThongKe.cs</DependentUpon>
+    <Compile Include="Form\frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form\frmQuanLyDoAnThucUong.resx">
+      <DependentUpon>frmQuanLyDoAnThucUong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,8 +126,6 @@
   <ItemGroup>
     <None Include="Resources\user.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Form\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
