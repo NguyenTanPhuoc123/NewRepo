@@ -37,19 +37,17 @@ namespace frmLogin
             this.btnAccountManagement = new System.Windows.Forms.Button();
             this.btnProducManagement = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.picMain = new System.Windows.Forms.PictureBox();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelTitle.SuspendLayout();
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -146,18 +144,6 @@ namespace frmLogin
             this.panelLogo.Size = new System.Drawing.Size(209, 158);
             this.panelLogo.TabIndex = 1;
             // 
-            // pbLogo
-            // 
-            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(209, 154);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogo.TabIndex = 2;
-            this.pbLogo.TabStop = false;
-            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
-            // 
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
@@ -197,7 +183,6 @@ namespace frmLogin
             // 
             this.panelMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMain.BackgroundImage")));
             this.panelMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelMain.Controls.Add(this.picMain);
             this.panelMain.Controls.Add(this.label1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(209, 154);
@@ -209,24 +194,25 @@ namespace frmLogin
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DeepPink;
-            this.label1.Location = new System.Drawing.Point(346, 106);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Snow;
+            this.label1.Location = new System.Drawing.Point(179, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(548, 55);
+            this.label1.Size = new System.Drawing.Size(907, 91);
             this.label1.TabIndex = 0;
             this.label1.Text = "ℂỬ𝔸 ℍÀℕ𝔾 Ăℕ 𝕍Ặ𝕋 𝕋𝕀𝕄𝕆";
             // 
-            // picMain
+            // pbLogo
             // 
-            this.picMain.BackColor = System.Drawing.Color.Transparent;
-            this.picMain.Image = ((System.Drawing.Image)(resources.GetObject("picMain.Image")));
-            this.picMain.Location = new System.Drawing.Point(515, 164);
-            this.picMain.Name = "picMain";
-            this.picMain.Size = new System.Drawing.Size(194, 197);
-            this.picMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMain.TabIndex = 2;
-            this.picMain.TabStop = false;
+            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(209, 154);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogo.TabIndex = 2;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
             // frmQuanLyAdmin
             // 
@@ -244,12 +230,11 @@ namespace frmLogin
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQuanLyAdmin_FormClosing);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,7 +245,6 @@ namespace frmLogin
         private System.Windows.Forms.Button btnProducManagement;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelTitle;
-        private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnAccountManagement;
         private System.Windows.Forms.Button btnSetting;
@@ -268,7 +252,7 @@ namespace frmLogin
         private System.Windows.Forms.Button btnEmployeeManager;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.PictureBox picMain;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pbLogo;
     }
 }

@@ -79,6 +79,7 @@ namespace frmLogin
             childForm.Dock = DockStyle.Fill;
             this.panelMain.Controls.Add(childForm);
             this.panelMain.Tag = childForm;
+            
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
