@@ -122,5 +122,10 @@ namespace frmLogin
             lblTitle.Text = btnSetting.Text;
             ActiveButton(sender);
         }
+
+        private void pbLogo_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -31,21 +31,21 @@ namespace frmLogin
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyAdmin));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnSetting = new System.Windows.Forms.Button();
+            this.btnStatistical = new System.Windows.Forms.Button();
+            this.btnEmployeeManager = new System.Windows.Forms.Button();
+            this.btnAccountManagement = new System.Windows.Forms.Button();
             this.btnProducManagement = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelTitle = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.btnAccountManagement = new System.Windows.Forms.Button();
-            this.btnEmployeeManager = new System.Windows.Forms.Button();
-            this.btnStatistical = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelTitle = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.panelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -62,6 +62,62 @@ namespace frmLogin
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(209, 656);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSetting.Location = new System.Drawing.Point(0, 557);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(209, 92);
+            this.btnSetting.TabIndex = 5;
+            this.btnSetting.Text = "Cài đặt";
+            this.btnSetting.UseVisualStyleBackColor = false;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // btnStatistical
+            // 
+            this.btnStatistical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnStatistical.FlatAppearance.BorderSize = 0;
+            this.btnStatistical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatistical.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnStatistical.Location = new System.Drawing.Point(0, 458);
+            this.btnStatistical.Name = "btnStatistical";
+            this.btnStatistical.Size = new System.Drawing.Size(209, 92);
+            this.btnStatistical.TabIndex = 4;
+            this.btnStatistical.Text = "Thống kê";
+            this.btnStatistical.UseVisualStyleBackColor = false;
+            this.btnStatistical.Click += new System.EventHandler(this.btnStatistical_Click);
+            // 
+            // btnEmployeeManager
+            // 
+            this.btnEmployeeManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnEmployeeManager.FlatAppearance.BorderSize = 0;
+            this.btnEmployeeManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmployeeManager.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEmployeeManager.Location = new System.Drawing.Point(0, 359);
+            this.btnEmployeeManager.Name = "btnEmployeeManager";
+            this.btnEmployeeManager.Size = new System.Drawing.Size(209, 92);
+            this.btnEmployeeManager.TabIndex = 3;
+            this.btnEmployeeManager.Text = "Quản lý nhân viên";
+            this.btnEmployeeManager.UseVisualStyleBackColor = false;
+            this.btnEmployeeManager.Click += new System.EventHandler(this.btnEmployeeManager_Click);
+            // 
+            // btnAccountManagement
+            // 
+            this.btnAccountManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnAccountManagement.FlatAppearance.BorderSize = 0;
+            this.btnAccountManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccountManagement.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAccountManagement.Location = new System.Drawing.Point(-3, 260);
+            this.btnAccountManagement.Name = "btnAccountManagement";
+            this.btnAccountManagement.Size = new System.Drawing.Size(209, 92);
+            this.btnAccountManagement.TabIndex = 2;
+            this.btnAccountManagement.Text = "Quản lý tài khoản";
+            this.btnAccountManagement.UseVisualStyleBackColor = false;
+            this.btnAccountManagement.Click += new System.EventHandler(this.btnAccountManagement_Click);
             // 
             // btnProducManagement
             // 
@@ -86,6 +142,18 @@ namespace frmLogin
             this.panelLogo.Size = new System.Drawing.Size(209, 158);
             this.panelLogo.TabIndex = 1;
             // 
+            // pbLogo
+            // 
+            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(209, 154);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogo.TabIndex = 2;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
+            // 
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
@@ -97,16 +165,17 @@ namespace frmLogin
             this.panelTitle.Size = new System.Drawing.Size(1198, 154);
             this.panelTitle.TabIndex = 1;
             // 
-            // pbLogo
+            // btnExit
             // 
-            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(209, 154);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogo.TabIndex = 2;
-            this.pbLogo.TabStop = false;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1154, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(41, 41);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblTitle
             // 
@@ -120,62 +189,6 @@ namespace frmLogin
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "Trang chủ";
             // 
-            // btnAccountManagement
-            // 
-            this.btnAccountManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnAccountManagement.FlatAppearance.BorderSize = 0;
-            this.btnAccountManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountManagement.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAccountManagement.Location = new System.Drawing.Point(-3, 260);
-            this.btnAccountManagement.Name = "btnAccountManagement";
-            this.btnAccountManagement.Size = new System.Drawing.Size(209, 92);
-            this.btnAccountManagement.TabIndex = 2;
-            this.btnAccountManagement.Text = "Quản lý tài khoản";
-            this.btnAccountManagement.UseVisualStyleBackColor = false;
-            this.btnAccountManagement.Click += new System.EventHandler(this.btnAccountManagement_Click);
-            // 
-            // btnEmployeeManager
-            // 
-            this.btnEmployeeManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnEmployeeManager.FlatAppearance.BorderSize = 0;
-            this.btnEmployeeManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployeeManager.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEmployeeManager.Location = new System.Drawing.Point(0, 359);
-            this.btnEmployeeManager.Name = "btnEmployeeManager";
-            this.btnEmployeeManager.Size = new System.Drawing.Size(209, 92);
-            this.btnEmployeeManager.TabIndex = 3;
-            this.btnEmployeeManager.Text = "Quản lý nhân viên";
-            this.btnEmployeeManager.UseVisualStyleBackColor = false;
-            this.btnEmployeeManager.Click += new System.EventHandler(this.btnEmployeeManager_Click);
-            // 
-            // btnStatistical
-            // 
-            this.btnStatistical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnStatistical.FlatAppearance.BorderSize = 0;
-            this.btnStatistical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistical.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnStatistical.Location = new System.Drawing.Point(0, 458);
-            this.btnStatistical.Name = "btnStatistical";
-            this.btnStatistical.Size = new System.Drawing.Size(209, 92);
-            this.btnStatistical.TabIndex = 4;
-            this.btnStatistical.Text = "Thống kê";
-            this.btnStatistical.UseVisualStyleBackColor = false;
-            this.btnStatistical.Click += new System.EventHandler(this.btnStatistical_Click);
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSetting.Location = new System.Drawing.Point(0, 557);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(209, 92);
-            this.btnSetting.TabIndex = 5;
-            this.btnSetting.Text = "Cài đặt";
-            this.btnSetting.UseVisualStyleBackColor = false;
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
-            // 
             // panelMain
             // 
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -183,18 +196,6 @@ namespace frmLogin
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1198, 502);
             this.panelMain.TabIndex = 2;
-            // 
-            // btnExit
-            // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1154, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(41, 41);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmQuanLyAdmin
             // 
@@ -212,9 +213,9 @@ namespace frmLogin
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQuanLyAdmin_FormClosing);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
