@@ -36,7 +36,7 @@ namespace frmLogin
                 lblWarning.Text ="Vui lòng nhập đầy đủ thông tin đăng nhập";
                 return;
             }
-            FrmManager login = new FrmManager();
+            frmQuanLyAdmin login = new frmQuanLyAdmin();
             this.Hide();
             login.ShowDialog();
             

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
-    public partial class ThongKe : Form
+    public partial class frmEmployeeManager : Form
     {
-        public ThongKe()
+        public frmEmployeeManager()
         {
             InitializeComponent();
         }

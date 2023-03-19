@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\CaiDat.cs">
+    <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\CaiDat.Designer.cs">
-      <DependentUpon>CaiDat.cs</DependentUpon>
+    <Compile Include="Form\frmAccountManagement.Designer.cs">
+      <DependentUpon>frmAccountManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmEmployeeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmEmployeeManager.Designer.cs">
+      <DependentUpon>frmEmployeeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmProductManagement.Designer.cs">
+      <DependentUpon>frmProductManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmStatistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmStatistical.Designer.cs">
+      <DependentUpon>frmStatistical.cs</DependentUpon>
     </Compile>
     <Compile Include="frmlogin.cs">
       <SubType>Form</SubType>
@@ -58,47 +82,22 @@
     <Compile Include="frmlogin.Designer.cs">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmManager.cs">
+    <Compile Include="frmQuanLyAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmManager.Designer.cs">
-      <DependentUpon>FrmManager.cs</DependentUpon>
+    <Compile Include="frmQuanLyAdmin.Designer.cs">
+      <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Form\frmQuanLyDoAnThucUong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\frmQuanLyDoAnThucUong.Designer.cs">
-      <DependentUpon>frmQuanLyDoAnThucUong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\frmQuanLyNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\frmQuanLyNhanVien.Designer.cs">
-      <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\frmQuanLyTaiKhoan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\frmQuanLyTaiKhoan.Designer.cs">
-      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThemeColor.cs" />
-    <Compile Include="Form\frmThongKe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\frmThongKe.Designer.cs">
-      <DependentUpon>frmThongKe.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Form\frmQuanLyDoAnThucUong.resx">
-      <DependentUpon>frmQuanLyDoAnThucUong.cs</DependentUpon>
+    <EmbeddedResource Include="Form\frmProductManagement.resx">
+      <DependentUpon>frmProductManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmManager.resx">
-      <DependentUpon>FrmManager.cs</DependentUpon>
+    <EmbeddedResource Include="frmQuanLyAdmin.resx">
+      <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

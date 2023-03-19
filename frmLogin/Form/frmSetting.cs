@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
-    public partial class CaiDat : Form
+    public partial class frmSetting : Form
     {
-        public CaiDat()
+        public frmSetting()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
-    public partial class QuanLyTaiKhoan : Form
+    public partial class frmAccountManagement : Form
     {
-        public QuanLyTaiKhoan()
+        public frmAccountManagement()
         {
             InitializeComponent();
         }

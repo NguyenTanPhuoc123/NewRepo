@@ -1,7 +1,7 @@
 ﻿
 namespace frmLogin
 {
-    partial class QuanLyDoAnThucUong
+    partial class frmProductManagement
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,32 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.grpProductDetail = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
-            // label1
+            // grpProductDetail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 167);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(783, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "This is Quan Ly Do An Thuc Uong";
+            this.grpProductDetail.Location = new System.Drawing.Point(551, 12);
+            this.grpProductDetail.Name = "grpProductDetail";
+            this.grpProductDetail.Size = new System.Drawing.Size(411, 426);
+            this.grpProductDetail.TabIndex = 0;
+            this.grpProductDetail.TabStop = false;
+            this.grpProductDetail.Text = "groupBox1";
             // 
-            // QuanLyDoAnThucUong
+            // frmProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Name = "QuanLyDoAnThucUong";
-            this.Text = "QuanLyDoAnThucUong";
+            this.ClientSize = new System.Drawing.Size(974, 450);
+            this.Controls.Add(this.grpProductDetail);
+            this.Name = "frmProductManagement";
+            this.Text = "frmProductManagement";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox grpProductDetail;
     }
 }

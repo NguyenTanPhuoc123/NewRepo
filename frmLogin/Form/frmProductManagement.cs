@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
-    public partial class QuanLyDoAnThucUong : Form
+    public partial class frmProductManagement : Form
     {
-        public QuanLyDoAnThucUong()
+        public frmProductManagement()
         {
             InitializeComponent();
         }

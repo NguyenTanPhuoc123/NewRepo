@@ -1,7 +1,7 @@
 ﻿
 namespace frmLogin
 {
-    partial class ThongKe
+    partial class frmStatistical
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace frmLogin
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ThongKe";
+            this.Text = "frmStatistical";
         }
 
         #endregion
