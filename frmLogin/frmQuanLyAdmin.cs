@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//abc
 namespace frmLogin
 {   
 
@@ -125,6 +125,11 @@ namespace frmLogin
 
         private void pbLogo_Click(object sender, EventArgs e)
         {
+            if (activeForm != null)
+                activeForm.Close();
+
+            lblTitle.Text = "Trang chủ";
+            DisableButton();
             
         }
     }

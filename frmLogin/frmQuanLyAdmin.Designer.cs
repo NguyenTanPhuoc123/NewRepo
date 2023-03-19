@@ -42,10 +42,14 @@ namespace frmLogin
             this.btnExit = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.picMain = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelTitle.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -191,11 +195,38 @@ namespace frmLogin
             // 
             // panelMain
             // 
+            this.panelMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMain.BackgroundImage")));
+            this.panelMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMain.Controls.Add(this.picMain);
+            this.panelMain.Controls.Add(this.label1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(209, 154);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1198, 502);
             this.panelMain.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DeepPink;
+            this.label1.Location = new System.Drawing.Point(346, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(548, 55);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ℂỬ𝔸 ℍÀℕ𝔾 Ăℕ 𝕍Ặ𝕋 𝕋𝕀𝕄𝕆";
+            // 
+            // picMain
+            // 
+            this.picMain.BackColor = System.Drawing.Color.Transparent;
+            this.picMain.Image = ((System.Drawing.Image)(resources.GetObject("picMain.Image")));
+            this.picMain.Location = new System.Drawing.Point(515, 164);
+            this.picMain.Name = "picMain";
+            this.picMain.Size = new System.Drawing.Size(194, 197);
+            this.picMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMain.TabIndex = 2;
+            this.picMain.TabStop = false;
             // 
             // frmQuanLyAdmin
             // 
@@ -216,6 +247,9 @@ namespace frmLogin
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMain)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,5 +268,7 @@ namespace frmLogin
         private System.Windows.Forms.Button btnEmployeeManager;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox picMain;
+        private System.Windows.Forms.Label label1;
     }
 }
