@@ -32,3 +32,16 @@ D:\doanWinFormC#\QuanLyCuaHangAnVatTimo\frmLogin\bin\Debug\frmLogin.exe
 D:\doanWinFormC#\QuanLyCuaHangAnVatTimo\frmLogin\bin\Debug\frmLogin.pdb
 D:\doanWinFormC#\QuanLyCuaHangAnVatTimo\frmLogin\obj\Debug\frmLogin.frmlogin.resources
 D:\doanWinFormC#\QuanLyCuaHangAnVatTimo\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\bin\Debug\frmLogin.exe.config
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\bin\Debug\frmLogin.exe
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\bin\Debug\frmLogin.pdb
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\Login.csproj.AssemblyReference.cache
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmAccountManagement.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmlogin.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.Properties.Resources.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.exe
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.pdb

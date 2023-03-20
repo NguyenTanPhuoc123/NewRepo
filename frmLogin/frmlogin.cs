@@ -24,11 +24,6 @@ namespace frmLogin
                 e.Cancel = true;
         }
 
-        private void lblExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if(string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
@@ -42,9 +37,27 @@ namespace frmLogin
             
         }
 
-        private void txtPassword_TextChanged(object sender, EventArgs e)
+        private void btnHide_Click(object sender, EventArgs e)
         {
+            if(txtPassword.PasswordChar == '\0')
+            {
+                btnDisplay.BringToFront();
+                txtPassword.PasswordChar = '*';
+            }
+        }
 
+        private void btnDisplay_Click(object sender, EventArgs e)
+        {
+            if(txtPassword.PasswordChar == '*')
+            {
+                btnHide.BringToFront();
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
