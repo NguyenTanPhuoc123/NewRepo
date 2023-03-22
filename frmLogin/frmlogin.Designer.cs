@@ -36,7 +36,7 @@ namespace frmLogin
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnHide = new System.Windows.Forms.Button();
@@ -61,9 +61,9 @@ namespace frmLogin
             this.txtPassword.Location = new System.Drawing.Point(251, 264);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(163, 23);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -98,21 +98,21 @@ namespace frmLogin
             this.label1.TabIndex = 2;
             this.label1.Text = "Tài khoản:";
             // 
-            // btnRegister
+            // btnExit
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegister.Font = new System.Drawing.Font("Segoe UI Emoji", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(251, 360);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(89, 30);
-            this.btnRegister.TabIndex = 9;
-            this.btnRegister.Text = "Thoát";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI Emoji", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(251, 360);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(89, 30);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnLogin
             // 
@@ -176,7 +176,7 @@ namespace frmLogin
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.DoubleBuffered = true;
@@ -200,7 +200,7 @@ namespace frmLogin
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblWarning;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnHide;
         private System.Windows.Forms.Button btnDisplay;
     }

@@ -20,7 +20,7 @@ namespace frmLogin
 
         private void frmlogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát  này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
+            if (MessageBox.Show("Bạn muốn thoát phần mềm này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
                 e.Cancel = true;
         }
 
@@ -39,23 +39,17 @@ namespace frmLogin
 
         private void btnHide_Click(object sender, EventArgs e)
         {
-            if(txtPassword.PasswordChar == '\0')
-            {
-                btnDisplay.BringToFront();
-                txtPassword.PasswordChar = '*';
-            }
+            btnDisplay.BringToFront();
+            txtPassword.UseSystemPasswordChar = true;
         }
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
-            if(txtPassword.PasswordChar == '*')
-            {
-                btnHide.BringToFront();
-                txtPassword.PasswordChar = '\0';
-            }
+            btnHide.BringToFront();
+            txtPassword.UseSystemPasswordChar = false;
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
