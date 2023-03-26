@@ -62,7 +62,9 @@ namespace frmLogin
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmSellManagement frm = new frmSellManagement();
+            this.Hide();
+            frm.Show();
         }
 
         #region OpenChildForm
