@@ -58,3 +58,4 @@ D:\DoAn\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
 D:\DoAn\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
 D:\DoAn\frmLogin\obj\Debug\frmLogin.exe
 D:\DoAn\frmLogin\obj\Debug\frmLogin.pdb
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
