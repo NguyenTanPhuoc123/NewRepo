@@ -45,3 +45,16 @@ D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\Login.csproj.GenerateR
 D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
 D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.exe
 D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.pdb
+D:\DoAn\frmLogin\bin\Debug\frmLogin.exe.config
+D:\DoAn\frmLogin\bin\Debug\frmLogin.exe
+D:\DoAn\frmLogin\bin\Debug\frmLogin.pdb
+D:\DoAn\frmLogin\obj\Debug\Login.csproj.AssemblyReference.cache
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmAccountManagement.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmlogin.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.Properties.Resources.resources
+D:\DoAn\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
+D:\DoAn\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\DoAn\frmLogin\obj\Debug\frmLogin.exe
+D:\DoAn\frmLogin\obj\Debug\frmLogin.pdb

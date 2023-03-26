@@ -18,11 +18,6 @@ namespace frmLogin
             InitializeComponent();
         }
 
-        private void frmlogin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn thoát phần mềm này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
-                e.Cancel = true;
-        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -34,6 +29,7 @@ namespace frmLogin
             frmQuanLyAdmin login = new frmQuanLyAdmin();
             this.Hide();
             login.ShowDialog();
+            
             
         }
 
@@ -51,7 +47,7 @@ namespace frmLogin
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }
