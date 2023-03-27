@@ -88,6 +88,12 @@
     <Compile Include="frmQuanLyAdmin.Designer.cs">
       <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSelectDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectDish.Designer.cs">
+      <DependentUpon>frmSelectDish.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSellManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyAdmin.resx">
       <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectDish.resx">
+      <DependentUpon>frmSelectDish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSellManagement.resx">
       <DependentUpon>frmSellManagement.cs</DependentUpon>
