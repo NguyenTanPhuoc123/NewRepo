@@ -95,6 +95,5 @@ D:\đồ án\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
 D:\đồ án\frmLogin\obj\Debug\frmLogin.Properties.Resources.resources
 D:\đồ án\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
 D:\đồ án\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
-D:\đồ án\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\đồ án\frmLogin\obj\Debug\frmLogin.exe
 D:\đồ án\frmLogin\obj\Debug\frmLogin.pdb

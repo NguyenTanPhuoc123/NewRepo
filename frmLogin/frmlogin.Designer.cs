@@ -62,9 +62,10 @@ namespace frmLogin
             // 
             this.pbDisplay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbDisplay.BackgroundImage")));
             this.pbDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbDisplay.Location = new System.Drawing.Point(460, 174);
+            this.pbDisplay.Location = new System.Drawing.Point(615, 212);
+            this.pbDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbDisplay.Name = "pbDisplay";
-            this.pbDisplay.Size = new System.Drawing.Size(23, 17);
+            this.pbDisplay.Size = new System.Drawing.Size(31, 21);
             this.pbDisplay.TabIndex = 18;
             this.pbDisplay.TabStop = false;
             this.pbDisplay.Click += new System.EventHandler(this.pbDisplay_Click);
@@ -73,9 +74,10 @@ namespace frmLogin
             // 
             this.pbHide.BackgroundImage = global::frmLogin.Properties.Resources.hide4;
             this.pbHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbHide.Location = new System.Drawing.Point(460, 174);
+            this.pbHide.Location = new System.Drawing.Point(615, 212);
+            this.pbHide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbHide.Name = "pbHide";
-            this.pbHide.Size = new System.Drawing.Size(23, 17);
+            this.pbHide.Size = new System.Drawing.Size(31, 21);
             this.pbHide.TabIndex = 17;
             this.pbHide.TabStop = false;
             this.pbHide.Click += new System.EventHandler(this.pbHide_Click);
@@ -85,9 +87,10 @@ namespace frmLogin
             this.btnLogin.BackColor = System.Drawing.Color.LawnGreen;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Blue;
-            this.btnLogin.Location = new System.Drawing.Point(332, 208);
+            this.btnLogin.Location = new System.Drawing.Point(443, 256);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(100, 30);
+            this.btnLogin.Size = new System.Drawing.Size(133, 37);
             this.btnLogin.TabIndex = 16;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -95,17 +98,19 @@ namespace frmLogin
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(311, 172);
+            this.txtPassword.Location = new System.Drawing.Point(415, 212);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(174, 20);
+            this.txtPassword.Size = new System.Drawing.Size(231, 22);
             this.txtPassword.TabIndex = 15;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(311, 133);
+            this.txtUsername.Location = new System.Drawing.Point(415, 164);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(174, 20);
+            this.txtUsername.Size = new System.Drawing.Size(231, 22);
             this.txtUsername.TabIndex = 14;
             // 
             // label2
@@ -114,9 +119,10 @@ namespace frmLogin
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(222, 173);
+            this.label2.Location = new System.Drawing.Point(296, 213);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 16);
+            this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 13;
             this.label2.Text = "Mật khẩu";
             // 
@@ -126,9 +132,10 @@ namespace frmLogin
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(215, 134);
+            this.label1.Location = new System.Drawing.Point(287, 165);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 16);
+            this.label1.Size = new System.Drawing.Size(90, 20);
             this.label1.TabIndex = 12;
             this.label1.Text = "Tài khoản";
             // 
@@ -137,9 +144,10 @@ namespace frmLogin
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::frmLogin.Properties.Resources.kisspng_computer_icons_login_scalable_vector_graphics_emai_5be737694adcc1_6333251315418796573066;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(332, 48);
+            this.pictureBox2.Location = new System.Drawing.Point(443, 59);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 77);
+            this.pictureBox2.Size = new System.Drawing.Size(133, 95);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
@@ -149,9 +157,10 @@ namespace frmLogin
             this.pbExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbExit.BackgroundImage")));
             this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbExit.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbExit.ErrorImage")));
-            this.pbExit.Location = new System.Drawing.Point(480, 0);
+            this.pbExit.Location = new System.Drawing.Point(640, 0);
+            this.pbExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(37, 35);
+            this.pbExit.Size = new System.Drawing.Size(49, 43);
             this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExit.TabIndex = 10;
             this.pbExit.TabStop = false;
@@ -162,20 +171,21 @@ namespace frmLogin
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-9, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(-12, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 233);
+            this.pictureBox1.Size = new System.Drawing.Size(320, 287);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
             // frmlogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(516, 279);
+            this.ClientSize = new System.Drawing.Size(688, 343);
             this.Controls.Add(this.pbDisplay);
             this.Controls.Add(this.pbHide);
             this.Controls.Add(this.btnLogin);
@@ -188,7 +198,7 @@ namespace frmLogin
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";

@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
-    public partial class frmProductManagement : Form
+    public partial class Form2 : Form
     {
-        public frmProductManagement()
-        {   
+        public Form2()
+        {
             InitializeComponent();
-            
-           
-            
         }
-
-       
-
-        
     }
 }
