@@ -39,6 +39,7 @@ namespace frmLogin
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dtgvListProduct = new System.Windows.Forms.DataGridView();
+            this.ctButton1 = new frmLogin.Controls.CtButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,11 +146,30 @@ namespace frmLogin
             this.dtgvListProduct.Size = new System.Drawing.Size(1017, 418);
             this.dtgvListProduct.TabIndex = 14;
             // 
+            // ctButton1
+            // 
+            this.ctButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ctButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.ctButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ctButton1.BorderRadius = 40;
+            this.ctButton1.BorderSize = 0;
+            this.ctButton1.FlatAppearance.BorderSize = 0;
+            this.ctButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ctButton1.ForeColor = System.Drawing.Color.White;
+            this.ctButton1.Location = new System.Drawing.Point(1052, 70);
+            this.ctButton1.Name = "ctButton1";
+            this.ctButton1.Size = new System.Drawing.Size(150, 40);
+            this.ctButton1.TabIndex = 15;
+            this.ctButton1.Text = "ctButton1";
+            this.ctButton1.TextColor = System.Drawing.Color.White;
+            this.ctButton1.UseVisualStyleBackColor = false;
+            // 
             // frmProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1228, 514);
+            this.Controls.Add(this.ctButton1);
             this.Controls.Add(this.dtgvListProduct);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -179,5 +199,6 @@ namespace frmLogin
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dtgvListProduct;
+        private Controls.CtButton ctButton1;
     }
 }
