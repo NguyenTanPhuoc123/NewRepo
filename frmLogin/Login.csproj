@@ -167,5 +167,14 @@
   <ItemGroup>
     <None Include="anh doan\hide.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-scalable-vector-graphics-emai-5be737694adcc1.6333251315418796573066.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

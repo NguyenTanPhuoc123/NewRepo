@@ -31,101 +31,23 @@ namespace frmLogin
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmlogin));
-            this.lblWarning = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btnHide = new System.Windows.Forms.Button();
-            this.btnDisplay = new System.Windows.Forms.Button();
+            this.pbDisplay = new System.Windows.Forms.PictureBox();
+            this.pbHide = new System.Windows.Forms.PictureBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbExit = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDisplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblWarning
-            // 
-            this.lblWarning.AutoSize = true;
-            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblWarning.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(241, 357);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(0, 19);
-            this.lblWarning.TabIndex = 8;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(335, 325);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(216, 27);
-            this.txtPassword.TabIndex = 2;
-            this.txtPassword.UseSystemPasswordChar = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(236, 327);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 22);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Mật khẩu:";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(335, 287);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(216, 27);
-            this.txtUsername.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(233, 289);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tài khoản:";
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI Emoji", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(335, 443);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(119, 37);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.Teal;
-            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Emoji", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(335, 401);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(119, 37);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // imageList1
             // 
@@ -136,55 +58,147 @@ namespace frmLogin
             this.imageList1.Images.SetKeyName(2, "user.png");
             this.imageList1.Images.SetKeyName(3, "images.png");
             // 
-            // btnHide
+            // pbDisplay
             // 
-            this.btnHide.BackgroundImage = global::frmLogin.Properties.Resources.hide;
-            this.btnHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnHide.Location = new System.Drawing.Point(512, 325);
-            this.btnHide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnHide.Name = "btnHide";
-            this.btnHide.Size = new System.Drawing.Size(40, 28);
-            this.btnHide.TabIndex = 10;
-            this.btnHide.UseVisualStyleBackColor = true;
-            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
+            this.pbDisplay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbDisplay.BackgroundImage")));
+            this.pbDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbDisplay.Location = new System.Drawing.Point(460, 174);
+            this.pbDisplay.Name = "pbDisplay";
+            this.pbDisplay.Size = new System.Drawing.Size(23, 17);
+            this.pbDisplay.TabIndex = 18;
+            this.pbDisplay.TabStop = false;
+            this.pbDisplay.Click += new System.EventHandler(this.pbDisplay_Click);
             // 
-            // btnDisplay
+            // pbHide
             // 
-            this.btnDisplay.BackgroundImage = global::frmLogin.Properties.Resources.images;
-            this.btnDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDisplay.Location = new System.Drawing.Point(512, 326);
-            this.btnDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(40, 26);
-            this.btnDisplay.TabIndex = 11;
-            this.btnDisplay.UseVisualStyleBackColor = true;
-            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
+            this.pbHide.BackgroundImage = global::frmLogin.Properties.Resources.hide4;
+            this.pbHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbHide.Location = new System.Drawing.Point(460, 174);
+            this.pbHide.Name = "pbHide";
+            this.pbHide.Size = new System.Drawing.Size(23, 17);
+            this.pbHide.TabIndex = 17;
+            this.pbHide.TabStop = false;
+            this.pbHide.Click += new System.EventHandler(this.pbHide_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Blue;
+            this.btnLogin.Location = new System.Drawing.Point(332, 208);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(100, 30);
+            this.btnLogin.TabIndex = 16;
+            this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(311, 172);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(174, 20);
+            this.txtPassword.TabIndex = 15;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(311, 133);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(174, 20);
+            this.txtUsername.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(222, 173);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 16);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Mật khẩu";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(215, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 16);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Tài khoản";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::frmLogin.Properties.Resources.kisspng_computer_icons_login_scalable_vector_graphics_emai_5be737694adcc1_6333251315418796573066;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(332, 48);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 77);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pbExit
+            // 
+            this.pbExit.BackColor = System.Drawing.Color.Transparent;
+            this.pbExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbExit.BackgroundImage")));
+            this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbExit.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbExit.ErrorImage")));
+            this.pbExit.Location = new System.Drawing.Point(480, 0);
+            this.pbExit.Name = "pbExit";
+            this.pbExit.Size = new System.Drawing.Size(37, 35);
+            this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbExit.TabIndex = 10;
+            this.pbExit.TabStop = false;
+            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(-9, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 233);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // frmlogin
             // 
-            this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImage = global::frmLogin.Properties.Resources.backgroundlogin;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(812, 553);
-            this.Controls.Add(this.btnDisplay);
-            this.Controls.Add(this.btnHide);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.lblWarning);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(516, 279);
+            this.Controls.Add(this.pbDisplay);
+            this.Controls.Add(this.pbHide);
             this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pbExit);
+            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.TransparencyKey = System.Drawing.Color.WhiteSmoke;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmlogin_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pbDisplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,15 +206,16 @@ namespace frmLogin
 
         #endregion
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pbDisplay;
+        private System.Windows.Forms.PictureBox pbHide;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblWarning;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnHide;
-        private System.Windows.Forms.Button btnDisplay;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
