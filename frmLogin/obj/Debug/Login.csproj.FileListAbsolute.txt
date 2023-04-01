@@ -97,3 +97,9 @@ D:\đồ án\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
 D:\đồ án\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
 D:\đồ án\frmLogin\obj\Debug\frmLogin.exe
 D:\đồ án\frmLogin\obj\Debug\frmLogin.pdb
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\bin\Debug\Guna.UI2.dll
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmSetting.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmSelectDish.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
+D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\Login.csproj.CopyComplete
