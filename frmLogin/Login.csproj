@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\CtButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmProductManagement.resx">
       <DependentUpon>frmProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>

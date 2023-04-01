@@ -61,3 +61,4 @@ D:\DoAn\frmLogin\obj\Debug\frmLogin.pdb
 D:\DoAn\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
 D:\DoAn\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.resources
 D:\DoAn\frmLogin\obj\Debug\frmLogin.frmSelectDish.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmSetting.resources
