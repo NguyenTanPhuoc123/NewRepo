@@ -30,9 +30,9 @@ namespace frmLogin
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSellManagement));
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -43,6 +43,9 @@ namespace frmLogin
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.cbLocationTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnSetting = new System.Windows.Forms.Button();
+            this.btnExitFormSell = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tstlblPosition = new System.Windows.Forms.ToolStripStatusLabel();
@@ -53,10 +56,6 @@ namespace frmLogin
             this.label4 = new System.Windows.Forms.Label();
             this.cbFillTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnStoreManagement = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLogOff = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.btnExitFormSell = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSale)).BeginInit();
             this.panel1.SuspendLayout();
@@ -83,26 +82,26 @@ namespace frmLogin
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(711, 170);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -167,7 +166,7 @@ namespace frmLogin
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(925, 567);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 18);
+            this.label1.Size = new System.Drawing.Size(81, 22);
             this.label1.TabIndex = 9;
             this.label1.Text = "Giảm giá";
             // 
@@ -222,6 +221,41 @@ namespace frmLogin
             this.panel1.Size = new System.Drawing.Size(1292, 100);
             this.panel1.TabIndex = 13;
             // 
+            // btnMinimize
+            // 
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Location = new System.Drawing.Point(1144, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(73, 46);
+            this.btnMinimize.TabIndex = 21;
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
+            this.btnSetting.Location = new System.Drawing.Point(1085, 0);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(53, 46);
+            this.btnSetting.TabIndex = 20;
+            this.btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // btnExitFormSell
+            // 
+            this.btnExitFormSell.FlatAppearance.BorderSize = 0;
+            this.btnExitFormSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitFormSell.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormSell.Image")));
+            this.btnExitFormSell.Location = new System.Drawing.Point(1217, 0);
+            this.btnExitFormSell.Name = "btnExitFormSell";
+            this.btnExitFormSell.Size = new System.Drawing.Size(75, 46);
+            this.btnExitFormSell.TabIndex = 19;
+            this.btnExitFormSell.UseVisualStyleBackColor = true;
+            this.btnExitFormSell.Click += new System.EventHandler(this.btnExitFormSell_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -229,7 +263,7 @@ namespace frmLogin
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(501, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 55);
+            this.label2.Size = new System.Drawing.Size(332, 65);
             this.label2.TabIndex = 0;
             this.label2.Text = "BÁN HÀNG";
             // 
@@ -240,29 +274,29 @@ namespace frmLogin
             this.tstlblPosition,
             this.tsslblName,
             this.tsslblTime});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 597);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1292, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1292, 32);
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tstlblPosition
             // 
             this.tstlblPosition.Name = "tstlblPosition";
-            this.tstlblPosition.Size = new System.Drawing.Size(82, 20);
+            this.tstlblPosition.Size = new System.Drawing.Size(100, 25);
             this.tstlblPosition.Text = "Nhân viên: ";
             // 
             // tsslblName
             // 
             this.tsslblName.Name = "tsslblName";
-            this.tsslblName.Size = new System.Drawing.Size(49, 20);
+            this.tsslblName.Size = new System.Drawing.Size(59, 25);
             this.tsslblName.Text = "Name";
             // 
             // tsslblTime
             // 
             this.tsslblTime.Margin = new System.Windows.Forms.Padding(900, 4, 0, 2);
             this.tsslblTime.Name = "tsslblTime";
-            this.tsslblTime.Size = new System.Drawing.Size(0, 20);
+            this.tsslblTime.Size = new System.Drawing.Size(0, 26);
             // 
             // timer1
             // 
@@ -274,7 +308,7 @@ namespace frmLogin
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(12, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 18);
+            this.label3.Size = new System.Drawing.Size(81, 22);
             this.label3.TabIndex = 15;
             this.label3.Text = "Vị trí bàn";
             // 
@@ -284,7 +318,7 @@ namespace frmLogin
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(508, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 18);
+            this.label4.Size = new System.Drawing.Size(44, 22);
             this.label4.TabIndex = 16;
             this.label4.Text = "Lọc ";
             // 
@@ -321,67 +355,12 @@ namespace frmLogin
             this.btnStoreManagement.Text = "Quản lý cửa hàng";
             this.btnStoreManagement.Click += new System.EventHandler(this.btnStoreManagement_Click);
             // 
-            // btnLogOff
-            // 
-            this.btnLogOff.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogOff.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.btnLogOff.BorderRadius = 10;
-            this.btnLogOff.BorderThickness = 2;
-            this.btnLogOff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogOff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogOff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogOff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogOff.FillColor = System.Drawing.Color.White;
-            this.btnLogOff.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLogOff.ForeColor = System.Drawing.Color.Black;
-            this.btnLogOff.Location = new System.Drawing.Point(12, 547);
-            this.btnLogOff.Name = "btnLogOff";
-            this.btnLogOff.Size = new System.Drawing.Size(180, 45);
-            this.btnLogOff.TabIndex = 19;
-            this.btnLogOff.Text = "Đăng xuất";
-            this.btnLogOff.Click += new System.EventHandler(this.btnLogOff_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(1144, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(73, 46);
-            this.btnMinimize.TabIndex = 21;
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.Location = new System.Drawing.Point(1085, 0);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(53, 46);
-            this.btnSetting.TabIndex = 20;
-            this.btnSetting.UseVisualStyleBackColor = true;
-            // 
-            // btnExitFormSell
-            // 
-            this.btnExitFormSell.FlatAppearance.BorderSize = 0;
-            this.btnExitFormSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitFormSell.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormSell.Image")));
-            this.btnExitFormSell.Location = new System.Drawing.Point(1217, 0);
-            this.btnExitFormSell.Name = "btnExitFormSell";
-            this.btnExitFormSell.Size = new System.Drawing.Size(75, 46);
-            this.btnExitFormSell.TabIndex = 19;
-            this.btnExitFormSell.UseVisualStyleBackColor = true;
-            this.btnExitFormSell.Click += new System.EventHandler(this.btnExitFormSell_Click);
-            // 
             // frmSellManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1292, 629);
-            this.Controls.Add(this.btnLogOff);
             this.Controls.Add(this.btnStoreManagement);
             this.Controls.Add(this.cbFillTable);
             this.Controls.Add(this.label4);
@@ -436,7 +415,6 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2ComboBox cbFillTable;
         private Guna.UI2.WinForms.Guna2Button btnStoreManagement;
         private System.Windows.Forms.Button btnExitFormSell;
-        private Guna.UI2.WinForms.Guna2Button btnLogOff;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnSetting;
     }

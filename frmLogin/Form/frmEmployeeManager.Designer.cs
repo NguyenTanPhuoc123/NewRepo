@@ -51,7 +51,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 18);
+            this.label1.Size = new System.Drawing.Size(76, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Sắp xếp";
             // 
@@ -87,7 +87,7 @@ namespace frmLogin
             this.txtSearchEmployee.PasswordChar = '\0';
             this.txtSearchEmployee.PlaceholderText = "";
             this.txtSearchEmployee.SelectedText = "";
-            this.txtSearchEmployee.Size = new System.Drawing.Size(314, 36);
+            this.txtSearchEmployee.Size = new System.Drawing.Size(263, 36);
             this.txtSearchEmployee.TabIndex = 11;
             // 
             // btnSearchEmployee
@@ -101,7 +101,7 @@ namespace frmLogin
             this.btnSearchEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearchEmployee.ForeColor = System.Drawing.Color.White;
             this.btnSearchEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchEmployee.Image")));
-            this.btnSearchEmployee.Location = new System.Drawing.Point(609, 29);
+            this.btnSearchEmployee.Location = new System.Drawing.Point(581, 29);
             this.btnSearchEmployee.Name = "btnSearchEmployee";
             this.btnSearchEmployee.Size = new System.Drawing.Size(72, 36);
             this.btnSearchEmployee.TabIndex = 12;
@@ -116,7 +116,7 @@ namespace frmLogin
             this.cbFillEmployee.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillEmployee.ItemHeight = 30;
-            this.cbFillEmployee.Location = new System.Drawing.Point(794, 29);
+            this.cbFillEmployee.Location = new System.Drawing.Point(708, 33);
             this.cbFillEmployee.Name = "cbFillEmployee";
             this.cbFillEmployee.Size = new System.Drawing.Size(163, 36);
             this.cbFillEmployee.TabIndex = 13;
@@ -133,7 +133,7 @@ namespace frmLogin
             this.btnAddEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnAddEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmployee.Image")));
             this.btnAddEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddEmployee.Location = new System.Drawing.Point(975, 136);
+            this.btnAddEmployee.Location = new System.Drawing.Point(882, 138);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnAddEmployee.TabIndex = 14;
@@ -151,7 +151,7 @@ namespace frmLogin
             this.btnEditEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnEditEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmployee.Image")));
             this.btnEditEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditEmployee.Location = new System.Drawing.Point(975, 211);
+            this.btnEditEmployee.Location = new System.Drawing.Point(882, 220);
             this.btnEditEmployee.Name = "btnEditEmployee";
             this.btnEditEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnEditEmployee.TabIndex = 15;
@@ -169,7 +169,7 @@ namespace frmLogin
             this.btnDeleteEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteEmployee.Image")));
             this.btnDeleteEmployee.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnDeleteEmployee.Location = new System.Drawing.Point(975, 297);
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(882, 305);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
             this.btnDeleteEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnDeleteEmployee.TabIndex = 16;
@@ -187,7 +187,8 @@ namespace frmLogin
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvListEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtgvListEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvListEmployee.ColumnHeadersHeight = 4;
+            this.dtgvListEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,7 +203,7 @@ namespace frmLogin
             this.dtgvListEmployee.RowHeadersVisible = false;
             this.dtgvListEmployee.RowHeadersWidth = 51;
             this.dtgvListEmployee.RowTemplate.Height = 24;
-            this.dtgvListEmployee.Size = new System.Drawing.Size(945, 418);
+            this.dtgvListEmployee.Size = new System.Drawing.Size(859, 418);
             this.dtgvListEmployee.TabIndex = 17;
             this.dtgvListEmployee.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListEmployee.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -215,7 +216,7 @@ namespace frmLogin
             this.dtgvListEmployee.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgvListEmployee.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvListEmployee.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgvListEmployee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvListEmployee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListEmployee.ThemeStyle.HeaderStyle.Height = 4;
             this.dtgvListEmployee.ThemeStyle.ReadOnly = false;
             this.dtgvListEmployee.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -229,17 +230,17 @@ namespace frmLogin
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(794, 3);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(708, 5);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(28, 20);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(29, 22);
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "Lọc";
             // 
             // frmEmployeeManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 514);
+            this.ClientSize = new System.Drawing.Size(1053, 514);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.dtgvListEmployee);
             this.Controls.Add(this.btnDeleteEmployee);

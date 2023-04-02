@@ -16,6 +16,7 @@ namespace frmLogin
         {
             InitializeComponent();
             guna2GroupBox2.Visible = false;
+            guna2ComboBox1.SelectedIndex = 0;
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -30,6 +31,12 @@ namespace frmLogin
             guna2GroupBox1.Visible = false;
         }
 
-       
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            frmSellManagement frm = new frmSellManagement();
+            this.Close();
+            frm.Close();
+            
+        }
     }
 }

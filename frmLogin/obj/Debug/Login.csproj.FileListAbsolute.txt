@@ -160,3 +160,5 @@ C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\Login.csproj.CoreComp
 C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\Login.csproj.CopyComplete
 C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.exe
 C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.pdb
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources

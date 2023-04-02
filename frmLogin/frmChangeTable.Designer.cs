@@ -1,7 +1,7 @@
 ﻿
 namespace frmLogin
 {
-    partial class frmStatistical
+    partial class frmChangeTable
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmStatistical
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 450);
-            this.Name = "frmStatistical";
-            this.Text = "frmStatistical";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "frmChangeTable";
         }
 
         #endregion

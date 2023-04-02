@@ -30,9 +30,9 @@ namespace frmLogin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductManagement));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSearchProduct = new Guna.UI2.WinForms.Guna2Button();
@@ -49,9 +49,9 @@ namespace frmLogin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(816, 20);
+            this.label2.Location = new System.Drawing.Point(722, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 18);
+            this.label2.Size = new System.Drawing.Size(39, 22);
             this.label2.TabIndex = 6;
             this.label2.Text = "Lọc";
             // 
@@ -60,7 +60,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 18);
+            this.label3.Size = new System.Drawing.Size(76, 22);
             this.label3.TabIndex = 9;
             this.label3.Text = "Sắp xếp";
             // 
@@ -75,7 +75,7 @@ namespace frmLogin
             this.btnSearchProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
             this.btnSearchProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchProduct.Image")));
-            this.btnSearchProduct.Location = new System.Drawing.Point(603, 41);
+            this.btnSearchProduct.Location = new System.Drawing.Point(577, 41);
             this.btnSearchProduct.Name = "btnSearchProduct";
             this.btnSearchProduct.Size = new System.Drawing.Size(95, 37);
             this.btnSearchProduct.TabIndex = 16;
@@ -112,7 +112,7 @@ namespace frmLogin
             this.txtSearchProduct.PasswordChar = '\0';
             this.txtSearchProduct.PlaceholderText = "";
             this.txtSearchProduct.SelectedText = "";
-            this.txtSearchProduct.Size = new System.Drawing.Size(329, 36);
+            this.txtSearchProduct.Size = new System.Drawing.Size(298, 36);
             this.txtSearchProduct.TabIndex = 18;
             // 
             // cbFillProduct
@@ -125,7 +125,7 @@ namespace frmLogin
             this.cbFillProduct.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillProduct.ItemHeight = 30;
-            this.cbFillProduct.Location = new System.Drawing.Point(819, 41);
+            this.cbFillProduct.Location = new System.Drawing.Point(726, 41);
             this.cbFillProduct.Name = "cbFillProduct";
             this.cbFillProduct.Size = new System.Drawing.Size(183, 36);
             this.cbFillProduct.TabIndex = 19;
@@ -142,7 +142,7 @@ namespace frmLogin
             this.btnAddProduct.ForeColor = System.Drawing.Color.Black;
             this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
             this.btnAddProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddProduct.Location = new System.Drawing.Point(1008, 141);
+            this.btnAddProduct.Location = new System.Drawing.Point(920, 136);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(135, 46);
             this.btnAddProduct.TabIndex = 20;
@@ -159,7 +159,7 @@ namespace frmLogin
             this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
             this.btnEditProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnEditProduct.Image")));
             this.btnEditProduct.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnEditProduct.Location = new System.Drawing.Point(1008, 218);
+            this.btnEditProduct.Location = new System.Drawing.Point(920, 213);
             this.btnEditProduct.Name = "btnEditProduct";
             this.btnEditProduct.Size = new System.Drawing.Size(135, 46);
             this.btnEditProduct.TabIndex = 21;
@@ -177,7 +177,7 @@ namespace frmLogin
             this.btnDeleteProduct.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.Image")));
             this.btnDeleteProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteProduct.Location = new System.Drawing.Point(1008, 294);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(920, 295);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(135, 46);
             this.btnDeleteProduct.TabIndex = 22;
@@ -185,33 +185,33 @@ namespace frmLogin
             // 
             // dtgvListProduct
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvListProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvListProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvListProduct.ColumnHeadersHeight = 20;
             this.dtgvListProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListProduct.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListProduct.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListProduct.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListProduct.Location = new System.Drawing.Point(12, 83);
             this.dtgvListProduct.Name = "dtgvListProduct";
             this.dtgvListProduct.RowHeadersVisible = false;
             this.dtgvListProduct.RowHeadersWidth = 51;
             this.dtgvListProduct.RowTemplate.Height = 24;
-            this.dtgvListProduct.Size = new System.Drawing.Size(990, 419);
+            this.dtgvListProduct.Size = new System.Drawing.Size(897, 419);
             this.dtgvListProduct.TabIndex = 23;
             this.dtgvListProduct.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListProduct.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -237,9 +237,9 @@ namespace frmLogin
             // 
             // frmProductManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 514);
+            this.ClientSize = new System.Drawing.Size(1053, 514);
             this.Controls.Add(this.dtgvListProduct);
             this.Controls.Add(this.btnDeleteProduct);
             this.Controls.Add(this.btnEditProduct);

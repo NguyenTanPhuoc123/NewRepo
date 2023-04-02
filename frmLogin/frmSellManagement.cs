@@ -18,6 +18,13 @@ namespace frmLogin
         {
             InitializeComponent();
             timer1.Start();
+            //lấy kích thước của màn hình
+            int widthScreen = Screen.PrimaryScreen.WorkingArea.Width;
+            int heightScreen = Screen.PrimaryScreen.WorkingArea.Height;
+
+            //cho form hiển thị theo kích thước của màn hình
+            this.Width = widthScreen;
+            this.Height = heightScreen;
         }
         private void frmSellManagement_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -43,10 +50,6 @@ namespace frmLogin
             this.Show();
         }
 
-        private void btnLogOff_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void btnExitFormSell_Click(object sender, EventArgs e)
         {
@@ -57,6 +60,13 @@ namespace frmLogin
         {
             this.IsMdiContainer = true;
             frmSelectDish frm = new frmSelectDish();
+            frm.Show();
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            frmSetting frm = new frmSetting();
             frm.Show();
         }
     }
