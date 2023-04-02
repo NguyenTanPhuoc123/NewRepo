@@ -33,13 +33,15 @@ namespace frmLogin
         private void pbDisplay_Click(object sender, EventArgs e)
         {
             pbHide.BringToFront();
-            txtPassword.UseSystemPasswordChar = false;
+            txtPassword.UseSystemPasswordChar= false;
+            txtPassword.PasswordChar = '\0';
         }
 
         private void pbHide_Click(object sender, EventArgs e)
         {
            pbDisplay.BringToFront();
             txtPassword.UseSystemPasswordChar = true;
+            txtPassword.PasswordChar = '●';
         }
 
         private void btnLogin_Click_1(object sender, EventArgs e)
