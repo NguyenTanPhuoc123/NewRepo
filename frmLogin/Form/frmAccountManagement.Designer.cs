@@ -30,9 +30,9 @@ namespace frmLogin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccountManagement));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SortAccount = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -49,7 +49,7 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(690, 9);
+            this.label1.Location = new System.Drawing.Point(788, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 18);
             this.label1.TabIndex = 4;
@@ -58,7 +58,7 @@ namespace frmLogin
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Location = new System.Drawing.Point(12, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 18);
             this.label3.TabIndex = 11;
@@ -74,7 +74,7 @@ namespace frmLogin
             this.SortAccount.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SortAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.SortAccount.ItemHeight = 30;
-            this.SortAccount.Location = new System.Drawing.Point(12, 30);
+            this.SortAccount.Location = new System.Drawing.Point(12, 48);
             this.SortAccount.Name = "SortAccount";
             this.SortAccount.Size = new System.Drawing.Size(140, 36);
             this.SortAccount.TabIndex = 12;
@@ -90,7 +90,7 @@ namespace frmLogin
             this.txtSearchAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchAccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchAccount.Location = new System.Drawing.Point(221, 30);
+            this.txtSearchAccount.Location = new System.Drawing.Point(292, 48);
             this.txtSearchAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchAccount.Name = "txtSearchAccount";
             this.txtSearchAccount.PasswordChar = '\0';
@@ -110,7 +110,7 @@ namespace frmLogin
             this.btnSearchAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearchAccount.ForeColor = System.Drawing.Color.White;
             this.btnSearchAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchAccount.Image")));
-            this.btnSearchAccount.Location = new System.Drawing.Point(512, 30);
+            this.btnSearchAccount.Location = new System.Drawing.Point(583, 49);
             this.btnSearchAccount.Name = "btnSearchAccount";
             this.btnSearchAccount.Size = new System.Drawing.Size(92, 36);
             this.btnSearchAccount.TabIndex = 14;
@@ -125,7 +125,7 @@ namespace frmLogin
             this.cbFillAccount.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillAccount.ItemHeight = 30;
-            this.cbFillAccount.Location = new System.Drawing.Point(693, 31);
+            this.cbFillAccount.Location = new System.Drawing.Point(791, 49);
             this.cbFillAccount.Name = "cbFillAccount";
             this.cbFillAccount.Size = new System.Drawing.Size(150, 36);
             this.cbFillAccount.TabIndex = 16;
@@ -142,9 +142,9 @@ namespace frmLogin
             this.btnAddAccount.ForeColor = System.Drawing.Color.Black;
             this.btnAddAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAccount.Image")));
             this.btnAddAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddAccount.Location = new System.Drawing.Point(849, 122);
+            this.btnAddAccount.Location = new System.Drawing.Point(969, 118);
             this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.Size = new System.Drawing.Size(122, 45);
+            this.btnAddAccount.Size = new System.Drawing.Size(170, 45);
             this.btnAddAccount.TabIndex = 17;
             this.btnAddAccount.Text = "Thêm";
             // 
@@ -160,9 +160,9 @@ namespace frmLogin
             this.btnEditAccount.ForeColor = System.Drawing.Color.Black;
             this.btnEditAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccount.Image")));
             this.btnEditAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditAccount.Location = new System.Drawing.Point(849, 211);
+            this.btnEditAccount.Location = new System.Drawing.Point(969, 205);
             this.btnEditAccount.Name = "btnEditAccount";
-            this.btnEditAccount.Size = new System.Drawing.Size(122, 45);
+            this.btnEditAccount.Size = new System.Drawing.Size(170, 45);
             this.btnEditAccount.TabIndex = 18;
             this.btnEditAccount.Text = "Sửa";
             // 
@@ -178,40 +178,40 @@ namespace frmLogin
             this.btnDeleteAccount.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAccount.Image")));
             this.btnDeleteAccount.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDeleteAccount.Location = new System.Drawing.Point(849, 293);
+            this.btnDeleteAccount.Location = new System.Drawing.Point(969, 299);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(122, 45);
+            this.btnDeleteAccount.Size = new System.Drawing.Size(170, 45);
             this.btnDeleteAccount.TabIndex = 19;
             this.btnDeleteAccount.Text = "Xóa";
             // 
             // dtgvListAccount
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvListAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvListAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvListAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListAccount.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListAccount.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListAccount.Location = new System.Drawing.Point(12, 91);
             this.dtgvListAccount.Name = "dtgvListAccount";
             this.dtgvListAccount.RowHeadersVisible = false;
             this.dtgvListAccount.RowHeadersWidth = 51;
             this.dtgvListAccount.RowTemplate.Height = 24;
-            this.dtgvListAccount.Size = new System.Drawing.Size(831, 387);
+            this.dtgvListAccount.Size = new System.Drawing.Size(929, 387);
             this.dtgvListAccount.TabIndex = 20;
             this.dtgvListAccount.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListAccount.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -239,7 +239,7 @@ namespace frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(980, 490);
+            this.ClientSize = new System.Drawing.Size(1151, 514);
             this.Controls.Add(this.dtgvListAccount);
             this.Controls.Add(this.btnDeleteAccount);
             this.Controls.Add(this.btnEditAccount);

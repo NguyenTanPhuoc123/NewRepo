@@ -15,8 +15,7 @@ namespace frmLogin
         public frmEmployeeManager()
         {
             InitializeComponent();
-            cbArrageEmployee.Text = "Theo mã";
-            cbSortEmployee.Text = "Tất cả";
+            
         }
 
       

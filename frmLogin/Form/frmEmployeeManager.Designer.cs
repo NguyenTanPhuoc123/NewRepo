@@ -49,7 +49,7 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 1;
@@ -81,7 +81,7 @@ namespace frmLogin
             this.txtSearchEmployee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchEmployee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchEmployee.Location = new System.Drawing.Point(262, 29);
+            this.txtSearchEmployee.Location = new System.Drawing.Point(289, 29);
             this.txtSearchEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchEmployee.Name = "txtSearchEmployee";
             this.txtSearchEmployee.PasswordChar = '\0';
@@ -101,7 +101,7 @@ namespace frmLogin
             this.btnSearchEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearchEmployee.ForeColor = System.Drawing.Color.White;
             this.btnSearchEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchEmployee.Image")));
-            this.btnSearchEmployee.Location = new System.Drawing.Point(582, 29);
+            this.btnSearchEmployee.Location = new System.Drawing.Point(609, 29);
             this.btnSearchEmployee.Name = "btnSearchEmployee";
             this.btnSearchEmployee.Size = new System.Drawing.Size(72, 36);
             this.btnSearchEmployee.TabIndex = 12;
@@ -116,7 +116,7 @@ namespace frmLogin
             this.cbFillEmployee.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillEmployee.ItemHeight = 30;
-            this.cbFillEmployee.Location = new System.Drawing.Point(763, 29);
+            this.cbFillEmployee.Location = new System.Drawing.Point(794, 29);
             this.cbFillEmployee.Name = "cbFillEmployee";
             this.cbFillEmployee.Size = new System.Drawing.Size(163, 36);
             this.cbFillEmployee.TabIndex = 13;
@@ -133,9 +133,9 @@ namespace frmLogin
             this.btnAddEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnAddEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmployee.Image")));
             this.btnAddEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddEmployee.Location = new System.Drawing.Point(932, 136);
+            this.btnAddEmployee.Location = new System.Drawing.Point(975, 136);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(134, 45);
+            this.btnAddEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnAddEmployee.TabIndex = 14;
             this.btnAddEmployee.Text = "Thêm";
             // 
@@ -151,9 +151,9 @@ namespace frmLogin
             this.btnEditEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnEditEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmployee.Image")));
             this.btnEditEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditEmployee.Location = new System.Drawing.Point(932, 215);
+            this.btnEditEmployee.Location = new System.Drawing.Point(975, 211);
             this.btnEditEmployee.Name = "btnEditEmployee";
-            this.btnEditEmployee.Size = new System.Drawing.Size(134, 45);
+            this.btnEditEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnEditEmployee.TabIndex = 15;
             this.btnEditEmployee.Text = "Sửa";
             // 
@@ -169,9 +169,9 @@ namespace frmLogin
             this.btnDeleteEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteEmployee.Image")));
             this.btnDeleteEmployee.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnDeleteEmployee.Location = new System.Drawing.Point(932, 301);
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(975, 297);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
-            this.btnDeleteEmployee.Size = new System.Drawing.Size(134, 45);
+            this.btnDeleteEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnDeleteEmployee.TabIndex = 16;
             this.btnDeleteEmployee.Text = "Xóa";
             // 
@@ -202,7 +202,7 @@ namespace frmLogin
             this.dtgvListEmployee.RowHeadersVisible = false;
             this.dtgvListEmployee.RowHeadersWidth = 51;
             this.dtgvListEmployee.RowTemplate.Height = 24;
-            this.dtgvListEmployee.Size = new System.Drawing.Size(914, 418);
+            this.dtgvListEmployee.Size = new System.Drawing.Size(945, 418);
             this.dtgvListEmployee.TabIndex = 17;
             this.dtgvListEmployee.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListEmployee.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -229,7 +229,7 @@ namespace frmLogin
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(763, 9);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(794, 3);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(28, 20);
             this.guna2HtmlLabel1.TabIndex = 18;
@@ -239,7 +239,7 @@ namespace frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 501);
+            this.ClientSize = new System.Drawing.Size(1151, 514);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.dtgvListEmployee);
             this.Controls.Add(this.btnDeleteEmployee);

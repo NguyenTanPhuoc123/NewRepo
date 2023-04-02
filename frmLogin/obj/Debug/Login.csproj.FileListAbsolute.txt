@@ -103,3 +103,4 @@ D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmSetting.re
 D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmSelectDish.resources
 D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
 D:\Cao Thắng\LapTrinhWindows\NhomPAV\frmLogin\obj\Debug\Login.csproj.CopyComplete
+D:\doAn\frmLogin\bin\Debug\Guna.UI2.dll

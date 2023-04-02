@@ -19,9 +19,32 @@ namespace frmLogin
         }
 
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void frmlogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+                e.Cancel = true;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pbDisplay_Click(object sender, EventArgs e)
+        {
+            pbHide.BringToFront();
+            txtPassword.UseSystemPasswordChar = false;
+        }
+
+        private void pbHide_Click(object sender, EventArgs e)
+        {
+           pbDisplay.BringToFront();
+            txtPassword.UseSystemPasswordChar = true;
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -31,27 +54,9 @@ namespace frmLogin
             login.ShowDialog();
         }
 
-        private void pbHide_Click(object sender, EventArgs e)
-        {
-            pbDisplay.BringToFront();
-            txtPassword.UseSystemPasswordChar = true;
-        }
-
-        private void pbDisplay_Click(object sender, EventArgs e)
-        {
-            pbHide.BringToFront();
-            txtPassword.UseSystemPasswordChar = false;
-        }
-
-        private void pbExit_Click(object sender, EventArgs e)
+        private void btnLogOff_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void frmlogin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
-                e.Cancel = true;
         }
     }
 }
