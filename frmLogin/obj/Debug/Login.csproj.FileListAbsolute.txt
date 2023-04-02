@@ -141,3 +141,22 @@ D:\do an\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
 D:\do an\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
 D:\do an\frmLogin\obj\Debug\frmLogin.exe
 D:\do an\frmLogin\obj\Debug\frmLogin.pdb
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\bin\Debug\frmLogin.exe.config
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\bin\Debug\frmLogin.exe
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\bin\Debug\frmLogin.pdb
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\Login.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmAccountManagement.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmSetting.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmlogin.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmSelectDish.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.Properties.Resources.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\Login.csproj.CopyComplete
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.exe
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.pdb

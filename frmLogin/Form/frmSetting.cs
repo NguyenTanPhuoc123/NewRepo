@@ -15,6 +15,21 @@ namespace frmLogin
         public frmSetting()
         {
             InitializeComponent();
+            guna2GroupBox2.Visible = false;
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            guna2GroupBox2.Visible = false;
+            guna2GroupBox1.Visible = true;
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            guna2GroupBox2.Visible = true;
+            guna2GroupBox1.Visible = false;
+        }
+
+       
     }
 }
