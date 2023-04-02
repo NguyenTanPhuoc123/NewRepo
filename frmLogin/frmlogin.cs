@@ -21,8 +21,7 @@ namespace frmLogin
 
         private void frmlogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
-                e.Cancel = true;
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -54,6 +53,8 @@ namespace frmLogin
             frmSellManagement login = new frmSellManagement();
             this.Hide();
             login.ShowDialog();
+            txtPassword.Clear();
+            this.Show();
         }
 
         private void btnLogOff_Click(object sender, EventArgs e)

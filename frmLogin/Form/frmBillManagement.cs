@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
-    public partial class frmSelectDish : Form
+    public partial class frmBillManagement : Form
     {
-        public frmSelectDish()
+        public frmBillManagement()
         {
             InitializeComponent();
         }

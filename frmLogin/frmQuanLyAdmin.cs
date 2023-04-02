@@ -23,8 +23,7 @@ namespace frmLogin
 
         private void frmQuanLyAdmin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
-                e.Cancel = true;
+           
         }
 
         #region EffectButton
@@ -62,9 +61,8 @@ namespace frmLogin
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            frmSellManagement frm = new frmSellManagement();
-            this.Hide();
-            frm.Show();
+            this.Close();
+            
         }
 
         #region OpenChildForm
@@ -119,12 +117,6 @@ namespace frmLogin
             ActiveButton(sender);
         }
 
-        private void btnSetting_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmSetting(), sender);
-            lblTitle.Text = btnSetting.Text;
-            ActiveButton(sender);
-        }
 
         private void pbLogo_Click(object sender, EventArgs e)
         {
@@ -134,6 +126,27 @@ namespace frmLogin
             lblTitle.Text = "Trang chủ";
             DisableButton();
             
+        }
+
+        private void btnCustomerManagement_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmCustomerManagement(), sender);
+            lblTitle.Text = btnCustomerManagement.Text;
+            ActiveButton(sender);
+        }
+
+        private void btnBillManagement_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmBillManagement(), sender);
+            lblTitle.Text = btnBillManagement.Text;
+            ActiveButton(sender);
+        }
+
+        private void btnTableManagement_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmTableManagement(), sender);
+            lblTitle.Text = btnTableManagement.Text;
+            ActiveButton(sender);
         }
     }
 }

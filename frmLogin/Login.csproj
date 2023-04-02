@@ -82,6 +82,18 @@
     <Compile Include="Form\frmStatistical.Designer.cs">
       <DependentUpon>frmStatistical.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\frmBillManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmBillManagement.Designer.cs">
+      <DependentUpon>frmBillManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCustomerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCustomerManagement.Designer.cs">
+      <DependentUpon>frmCustomerManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,10 +106,10 @@
     <Compile Include="frmQuanLyAdmin.Designer.cs">
       <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSelectDish.cs">
+    <Compile Include="Form\frmSelectDish.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSelectDish.Designer.cs">
+    <Compile Include="Form\frmSelectDish.Designer.cs">
       <DependentUpon>frmSelectDish.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSellManagement.cs">
@@ -105,6 +117,12 @@
     </Compile>
     <Compile Include="frmSellManagement.Designer.cs">
       <DependentUpon>frmSellManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTableManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTableManagement.Designer.cs">
+      <DependentUpon>frmTableManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,7 +144,7 @@
     <EmbeddedResource Include="frmQuanLyAdmin.resx">
       <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSelectDish.resx">
+    <EmbeddedResource Include="Form\frmSelectDish.resx">
       <DependentUpon>frmSelectDish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSellManagement.resx">
@@ -134,19 +152,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>

@@ -12,37 +12,52 @@ namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
+        
+
         public frmSellManagement()
         {
             InitializeComponent();
+            timer1.Start();
         }
-
-        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        private void frmSellManagement_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frmQuanLyAdmin admin = new frmQuanLyAdmin();
-            admin.Show();
-        }
-
-        private void btnAddDish_Click(object sender, EventArgs e)
-        {
+            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+            {
+                e.Cancel = true;
+                
+            }
             
+
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            tsslblTime.Text = DateTime.Now.ToString("hh:mm:ss:tt");
+        }
+
+        private void btnStoreManagement_Click(object sender, EventArgs e)
+        {
+            frmQuanLyAdmin frm = new frmQuanLyAdmin();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void btnLogOff_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void frmSellManagement_FormClosing(object sender, FormClosingEventArgs e)
+        private void btnExitFormSell_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                e.Cancel = true;
-            else
-            {
-                frmlogin login = new frmlogin();
-                this.Hide();
-                login.Show();
-            }
+            this.Close();
+        }
+
+        private void btnSelectDish_Click(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            frmSelectDish frm = new frmSelectDish();
+            frm.Show();
         }
     }
 }
