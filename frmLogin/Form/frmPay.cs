@@ -16,5 +16,10 @@ namespace frmLogin
         {
             InitializeComponent();
         }
+
+        private void btnExitFomPay_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -19,13 +19,7 @@ namespace frmLogin
         public frmQuanLyAdmin()
         {
             InitializeComponent();
-            //lấy kích thước của màn hình
-            int widthScreen = Screen.PrimaryScreen.WorkingArea.Width;
-            int heightScreen = Screen.PrimaryScreen.WorkingArea.Height;
-
-            //cho form hiển thị theo kích thước của màn hình
-            this.Width = widthScreen;
-            this.Height = heightScreen;
+        
         }
 
         private void frmQuanLyAdmin_FormClosing(object sender, FormClosingEventArgs e)

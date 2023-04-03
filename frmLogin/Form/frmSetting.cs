@@ -15,28 +15,37 @@ namespace frmLogin
         public frmSetting()
         {
             InitializeComponent();
-            guna2GroupBox2.Visible = false;
-            guna2ComboBox1.SelectedIndex = 0;
+            grpChangePassword.Visible = false;
+            cbLanguage.SelectedIndex = 0;
+            cbSizeDisplay.SelectedIndex = 1;
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            guna2GroupBox2.Visible = false;
-            guna2GroupBox1.Visible = true;
-        }
+    
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnExitFormSetting_Click(object sender, EventArgs e)
         {
-            guna2GroupBox2.Visible = true;
-            guna2GroupBox1.Visible = false;
-        }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-            frmSellManagement frm = new frmSellManagement();
             this.Close();
-            frm.Close();
-            
+        }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            grpChangePassword.Visible = true;
+            grpAccountDetail.Visible = false;
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            grpChangePassword.Visible = false;
+            grpAccountDetail.Visible = true;
+        }
+
+        private void btnLogOff_Click(object sender, EventArgs e)
+        {
+            frmSellManagement frmSell = new frmSellManagement();
+            frmlogin frmLogin = new frmlogin();
+            this.Close();
+            frmSell.Close();
+            frmLogin.Show();
         }
     }
 }

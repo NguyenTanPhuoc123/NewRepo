@@ -32,15 +32,12 @@ namespace frmLogin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSelectDish));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnExitFomSelectDish = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lstvListDish = new System.Windows.Forms.ListView();
             this.cbCategoryDish = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearchDish = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
             this.grpDishDetail = new System.Windows.Forms.GroupBox();
-            this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.numQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDishPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,7 +46,10 @@ namespace frmLogin
             this.label5 = new System.Windows.Forms.Label();
             this.txtDishName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.pbPictureDish = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExitFomSelectDish = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.grpDishDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -74,18 +74,6 @@ namespace frmLogin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(991, 72);
             this.panel1.TabIndex = 2;
-            // 
-            // btnExitFomSelectDish
-            // 
-            this.btnExitFomSelectDish.FlatAppearance.BorderSize = 0;
-            this.btnExitFomSelectDish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitFomSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFomSelectDish.Image")));
-            this.btnExitFomSelectDish.Location = new System.Drawing.Point(922, 0);
-            this.btnExitFomSelectDish.Name = "btnExitFomSelectDish";
-            this.btnExitFomSelectDish.Size = new System.Drawing.Size(69, 45);
-            this.btnExitFomSelectDish.TabIndex = 4;
-            this.btnExitFomSelectDish.UseVisualStyleBackColor = true;
-            this.btnExitFomSelectDish.Click += new System.EventHandler(this.btnExitFomSelectDish_Click);
             // 
             // label2
             // 
@@ -153,22 +141,6 @@ namespace frmLogin
             this.txtSearchDish.Size = new System.Drawing.Size(263, 36);
             this.txtSearchDish.TabIndex = 6;
             // 
-            // btnSearchDish
-            // 
-            this.btnSearchDish.BorderRadius = 10;
-            this.btnSearchDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearchDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchDish.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSearchDish.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSearchDish.ForeColor = System.Drawing.Color.White;
-            this.btnSearchDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchDish.Image")));
-            this.btnSearchDish.Location = new System.Drawing.Point(454, 105);
-            this.btnSearchDish.Name = "btnSearchDish";
-            this.btnSearchDish.Size = new System.Drawing.Size(80, 36);
-            this.btnSearchDish.TabIndex = 7;
-            // 
             // grpDishDetail
             // 
             this.grpDishDetail.Controls.Add(this.btnSelectDish);
@@ -187,22 +159,6 @@ namespace frmLogin
             this.grpDishDetail.TabIndex = 8;
             this.grpDishDetail.TabStop = false;
             this.grpDishDetail.Text = "Chi tiết món";
-            // 
-            // btnSelectDish
-            // 
-            this.btnSelectDish.BorderRadius = 20;
-            this.btnSelectDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelectDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.btnSelectDish.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSelectDish.ForeColor = System.Drawing.Color.White;
-            this.btnSelectDish.Location = new System.Drawing.Point(241, 391);
-            this.btnSelectDish.Name = "btnSelectDish";
-            this.btnSelectDish.Size = new System.Drawing.Size(180, 45);
-            this.btnSelectDish.TabIndex = 9;
-            this.btnSelectDish.Text = "Lên món";
             // 
             // numQuantity
             // 
@@ -314,6 +270,24 @@ namespace frmLogin
             this.label4.TabIndex = 1;
             this.label4.Text = "Tên món";
             // 
+            // btnSelectDish
+            // 
+            this.btnSelectDish.BorderRadius = 20;
+            this.btnSelectDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelectDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnSelectDish.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSelectDish.ForeColor = System.Drawing.Color.White;
+            this.btnSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectDish.Image")));
+            this.btnSelectDish.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSelectDish.Location = new System.Drawing.Point(241, 391);
+            this.btnSelectDish.Name = "btnSelectDish";
+            this.btnSelectDish.Size = new System.Drawing.Size(180, 45);
+            this.btnSelectDish.TabIndex = 9;
+            this.btnSelectDish.Text = "Lên món";
+            // 
             // pbPictureDish
             // 
             this.pbPictureDish.ImageRotate = 0F;
@@ -322,6 +296,34 @@ namespace frmLogin
             this.pbPictureDish.Size = new System.Drawing.Size(229, 152);
             this.pbPictureDish.TabIndex = 0;
             this.pbPictureDish.TabStop = false;
+            // 
+            // btnSearchDish
+            // 
+            this.btnSearchDish.BorderRadius = 10;
+            this.btnSearchDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchDish.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSearchDish.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearchDish.ForeColor = System.Drawing.Color.White;
+            this.btnSearchDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchDish.Image")));
+            this.btnSearchDish.Location = new System.Drawing.Point(454, 105);
+            this.btnSearchDish.Name = "btnSearchDish";
+            this.btnSearchDish.Size = new System.Drawing.Size(80, 36);
+            this.btnSearchDish.TabIndex = 7;
+            // 
+            // btnExitFomSelectDish
+            // 
+            this.btnExitFomSelectDish.FlatAppearance.BorderSize = 0;
+            this.btnExitFomSelectDish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitFomSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFomSelectDish.Image")));
+            this.btnExitFomSelectDish.Location = new System.Drawing.Point(922, 0);
+            this.btnExitFomSelectDish.Name = "btnExitFomSelectDish";
+            this.btnExitFomSelectDish.Size = new System.Drawing.Size(69, 45);
+            this.btnExitFomSelectDish.TabIndex = 4;
+            this.btnExitFomSelectDish.UseVisualStyleBackColor = true;
+            this.btnExitFomSelectDish.Click += new System.EventHandler(this.btnExitFomSelectDish_Click);
             // 
             // frmSelectDish
             // 
@@ -340,7 +342,7 @@ namespace frmLogin
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSelectDish";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSelectDish";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

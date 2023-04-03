@@ -30,22 +30,18 @@ namespace frmLogin
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSellManagement));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.numSale = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnChangeTable = new Guna.UI2.WinForms.Guna2Button();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.cbLocationTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.btnExitFormSell = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tstlblPosition = new System.Windows.Forms.ToolStripStatusLabel();
@@ -56,6 +52,12 @@ namespace frmLogin
             this.label4 = new System.Windows.Forms.Label();
             this.cbFillTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnStoreManagement = new Guna.UI2.WinForms.Guna2Button();
+            this.cbChangeTable = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnSetting = new System.Windows.Forms.Button();
+            this.btnExitFormSell = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSale)).BeginInit();
             this.panel1.SuspendLayout();
@@ -70,10 +72,12 @@ namespace frmLogin
             this.btnSelectDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(51)))));
             this.btnSelectDish.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSelectDish.ForeColor = System.Drawing.Color.White;
-            this.btnSelectDish.Location = new System.Drawing.Point(1100, 119);
+            this.btnSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectDish.Image")));
+            this.btnSelectDish.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSelectDish.Location = new System.Drawing.Point(711, 119);
             this.btnSelectDish.Name = "btnSelectDish";
             this.btnSelectDish.Size = new System.Drawing.Size(180, 45);
             this.btnSelectDish.TabIndex = 5;
@@ -82,33 +86,33 @@ namespace frmLogin
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(711, 170);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(569, 361);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(569, 335);
             this.guna2DataGridView1.TabIndex = 6;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -143,54 +147,41 @@ namespace frmLogin
             this.btnPay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
             this.btnPay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPay.ForeColor = System.Drawing.Color.White;
+            this.btnPay.Image = ((System.Drawing.Image)(resources.GetObject("btnPay.Image")));
+            this.btnPay.ImageSize = new System.Drawing.Size(30, 30);
             this.btnPay.Location = new System.Drawing.Point(1152, 537);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(128, 63);
             this.btnPay.TabIndex = 7;
             this.btnPay.Text = "Thanh toán";
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // numSale
             // 
             this.numSale.BackColor = System.Drawing.Color.Transparent;
             this.numSale.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numSale.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numSale.Location = new System.Drawing.Point(998, 547);
+            this.numSale.Location = new System.Drawing.Point(966, 562);
             this.numSale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numSale.Name = "numSale";
-            this.numSale.Size = new System.Drawing.Size(81, 51);
+            this.numSale.Size = new System.Drawing.Size(113, 36);
             this.numSale.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(925, 567);
+            this.label1.Location = new System.Drawing.Point(963, 537);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 22);
+            this.label1.Size = new System.Drawing.Size(67, 18);
             this.label1.TabIndex = 9;
             this.label1.Text = "Giảm giá";
-            // 
-            // btnChangeTable
-            // 
-            this.btnChangeTable.BackColor = System.Drawing.Color.Transparent;
-            this.btnChangeTable.BorderRadius = 20;
-            this.btnChangeTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnChangeTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnChangeTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnChangeTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChangeTable.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnChangeTable.ForeColor = System.Drawing.Color.White;
-            this.btnChangeTable.Location = new System.Drawing.Point(738, 547);
-            this.btnChangeTable.Name = "btnChangeTable";
-            this.btnChangeTable.Size = new System.Drawing.Size(167, 51);
-            this.btnChangeTable.TabIndex = 10;
-            this.btnChangeTable.Text = "Chuyển bàn";
             // 
             // flpTable
             // 
             this.flpTable.Location = new System.Drawing.Point(12, 170);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(693, 361);
+            this.flpTable.Size = new System.Drawing.Size(693, 428);
             this.flpTable.TabIndex = 11;
             // 
             // cbLocationTable
@@ -221,41 +212,6 @@ namespace frmLogin
             this.panel1.Size = new System.Drawing.Size(1292, 100);
             this.panel1.TabIndex = 13;
             // 
-            // btnMinimize
-            // 
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(1144, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(73, 46);
-            this.btnMinimize.TabIndex = 21;
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.Location = new System.Drawing.Point(1085, 0);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(53, 46);
-            this.btnSetting.TabIndex = 20;
-            this.btnSetting.UseVisualStyleBackColor = true;
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
-            // 
-            // btnExitFormSell
-            // 
-            this.btnExitFormSell.FlatAppearance.BorderSize = 0;
-            this.btnExitFormSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitFormSell.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormSell.Image")));
-            this.btnExitFormSell.Location = new System.Drawing.Point(1217, 0);
-            this.btnExitFormSell.Name = "btnExitFormSell";
-            this.btnExitFormSell.Size = new System.Drawing.Size(75, 46);
-            this.btnExitFormSell.TabIndex = 19;
-            this.btnExitFormSell.UseVisualStyleBackColor = true;
-            this.btnExitFormSell.Click += new System.EventHandler(this.btnExitFormSell_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -263,7 +219,7 @@ namespace frmLogin
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(501, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(332, 65);
+            this.label2.Size = new System.Drawing.Size(283, 55);
             this.label2.TabIndex = 0;
             this.label2.Text = "BÁN HÀNG";
             // 
@@ -274,29 +230,29 @@ namespace frmLogin
             this.tstlblPosition,
             this.tsslblName,
             this.tsslblTime});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 597);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1292, 32);
+            this.statusStrip1.Size = new System.Drawing.Size(1292, 26);
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tstlblPosition
             // 
             this.tstlblPosition.Name = "tstlblPosition";
-            this.tstlblPosition.Size = new System.Drawing.Size(100, 25);
+            this.tstlblPosition.Size = new System.Drawing.Size(82, 20);
             this.tstlblPosition.Text = "Nhân viên: ";
             // 
             // tsslblName
             // 
             this.tsslblName.Name = "tsslblName";
-            this.tsslblName.Size = new System.Drawing.Size(59, 25);
+            this.tsslblName.Size = new System.Drawing.Size(49, 20);
             this.tsslblName.Text = "Name";
             // 
             // tsslblTime
             // 
             this.tsslblTime.Margin = new System.Windows.Forms.Padding(900, 4, 0, 2);
             this.tsslblTime.Name = "tsslblTime";
-            this.tsslblTime.Size = new System.Drawing.Size(0, 26);
+            this.tsslblTime.Size = new System.Drawing.Size(0, 20);
             // 
             // timer1
             // 
@@ -308,7 +264,7 @@ namespace frmLogin
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(12, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 22);
+            this.label3.Size = new System.Drawing.Size(64, 18);
             this.label3.TabIndex = 15;
             this.label3.Text = "Vị trí bàn";
             // 
@@ -318,7 +274,7 @@ namespace frmLogin
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(508, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 22);
+            this.label4.Size = new System.Drawing.Size(37, 18);
             this.label4.TabIndex = 16;
             this.label4.Text = "Lọc ";
             // 
@@ -348,19 +304,93 @@ namespace frmLogin
             this.btnStoreManagement.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.btnStoreManagement.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnStoreManagement.ForeColor = System.Drawing.Color.White;
-            this.btnStoreManagement.Location = new System.Drawing.Point(487, 547);
+            this.btnStoreManagement.Image = ((System.Drawing.Image)(resources.GetObject("btnStoreManagement.Image")));
+            this.btnStoreManagement.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnStoreManagement.Location = new System.Drawing.Point(1065, 119);
             this.btnStoreManagement.Name = "btnStoreManagement";
             this.btnStoreManagement.Size = new System.Drawing.Size(215, 45);
             this.btnStoreManagement.TabIndex = 18;
             this.btnStoreManagement.Text = "Quản lý cửa hàng";
             this.btnStoreManagement.Click += new System.EventHandler(this.btnStoreManagement_Click);
             // 
+            // cbChangeTable
+            // 
+            this.cbChangeTable.BackColor = System.Drawing.Color.Transparent;
+            this.cbChangeTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbChangeTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbChangeTable.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbChangeTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbChangeTable.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbChangeTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbChangeTable.ItemHeight = 30;
+            this.cbChangeTable.Location = new System.Drawing.Point(724, 564);
+            this.cbChangeTable.Name = "cbChangeTable";
+            this.cbChangeTable.Size = new System.Drawing.Size(152, 36);
+            this.cbChangeTable.TabIndex = 19;
+            // 
+            // guna2ColorTransition1
+            // 
+            this.guna2ColorTransition1.ColorArray = new System.Drawing.Color[] {
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Blue,
+        System.Drawing.Color.Orange};
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(721, 537);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 18);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Chuyển bàn";
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Location = new System.Drawing.Point(1144, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(73, 46);
+            this.btnMinimize.TabIndex = 21;
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
+            this.btnSetting.Location = new System.Drawing.Point(1085, 0);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(53, 46);
+            this.btnSetting.TabIndex = 20;
+            this.btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // btnExitFormSell
+            // 
+            this.btnExitFormSell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExitFormSell.FlatAppearance.BorderSize = 0;
+            this.btnExitFormSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitFormSell.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormSell.Image")));
+            this.btnExitFormSell.Location = new System.Drawing.Point(1217, 0);
+            this.btnExitFormSell.Name = "btnExitFormSell";
+            this.btnExitFormSell.Size = new System.Drawing.Size(75, 46);
+            this.btnExitFormSell.TabIndex = 19;
+            this.btnExitFormSell.UseVisualStyleBackColor = true;
+            this.btnExitFormSell.Click += new System.EventHandler(this.btnExitFormSell_Click);
+            // 
             // frmSellManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1292, 629);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cbChangeTable);
             this.Controls.Add(this.btnStoreManagement);
             this.Controls.Add(this.cbFillTable);
             this.Controls.Add(this.label4);
@@ -370,7 +400,6 @@ namespace frmLogin
             this.Controls.Add(this.btnSelectDish);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpTable);
-            this.Controls.Add(this.btnChangeTable);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numSale);
             this.Controls.Add(this.btnPay);
@@ -400,7 +429,6 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2Button btnPay;
         private Guna.UI2.WinForms.Guna2NumericUpDown numSale;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnChangeTable;
         private System.Windows.Forms.FlowLayoutPanel flpTable;
         private Guna.UI2.WinForms.Guna2ComboBox cbLocationTable;
         private System.Windows.Forms.Panel panel1;
@@ -417,5 +445,8 @@ namespace frmLogin
         private System.Windows.Forms.Button btnExitFormSell;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnSetting;
+        private Guna.UI2.WinForms.Guna2ComboBox cbChangeTable;
+        private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
+        private System.Windows.Forms.Label label5;
     }
 }

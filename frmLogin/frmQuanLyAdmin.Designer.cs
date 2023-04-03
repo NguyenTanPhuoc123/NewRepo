@@ -202,6 +202,7 @@ namespace frmLogin
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
@@ -220,7 +221,7 @@ namespace frmLogin
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(354, 30);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(367, 82);
+            this.lblTitle.Size = new System.Drawing.Size(307, 69);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "Trang chủ";
             // 
@@ -243,13 +244,13 @@ namespace frmLogin
             this.label1.ForeColor = System.Drawing.Color.Snow;
             this.label1.Location = new System.Drawing.Point(179, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1088, 108);
+            this.label1.Size = new System.Drawing.Size(907, 91);
             this.label1.TabIndex = 0;
             this.label1.Text = "ℂỬ𝔸 ℍÀℕ𝔾 Ăℕ 𝕍Ặ𝕋 𝕋𝕀𝕄𝕆";
             // 
             // frmQuanLyAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 702);
             this.Controls.Add(this.panelMain);

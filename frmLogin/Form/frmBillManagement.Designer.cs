@@ -36,11 +36,13 @@ namespace frmLogin
             this.label3 = new System.Windows.Forms.Label();
             this.btnSearchBill = new Guna.UI2.WinForms.Guna2Button();
             this.cbSortBill = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSearchBill = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbFillBill = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.dtgvListBill = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnDeleteAllBill = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBillDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditBill = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteBill = new Guna.UI2.WinForms.Guna2Button();
-            this.dtgvListBill = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListBill)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +66,7 @@ namespace frmLogin
             this.btnSearchBill.FillColor = System.Drawing.Color.MediumSlateBlue;
             resources.ApplyResources(this.btnSearchBill, "btnSearchBill");
             this.btnSearchBill.ForeColor = System.Drawing.Color.White;
+            this.btnSearchBill.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchBill.Image")));
             this.btnSearchBill.Name = "btnSearchBill";
             // 
             // cbSortBill
@@ -77,21 +80,22 @@ namespace frmLogin
             this.cbSortBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortBill.Name = "cbSortBill";
             // 
-            // txtSearchProduct
+            // txtSearchBill
             // 
-            this.txtSearchProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchProduct.DefaultText = "";
-            this.txtSearchProduct.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchProduct.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtSearchProduct, "txtSearchProduct");
-            this.txtSearchProduct.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchProduct.Name = "txtSearchProduct";
-            this.txtSearchProduct.PasswordChar = '\0';
-            this.txtSearchProduct.PlaceholderText = "";
-            this.txtSearchProduct.SelectedText = "";
+            this.txtSearchBill.BorderRadius = 10;
+            this.txtSearchBill.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchBill.DefaultText = "";
+            this.txtSearchBill.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBill.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtSearchBill, "txtSearchBill");
+            this.txtSearchBill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchBill.Name = "txtSearchBill";
+            this.txtSearchBill.PasswordChar = '\0';
+            this.txtSearchBill.PlaceholderText = "";
+            this.txtSearchBill.SelectedText = "";
             // 
             // cbFillBill
             // 
@@ -103,31 +107,6 @@ namespace frmLogin
             resources.ApplyResources(this.cbFillBill, "cbFillBill");
             this.cbFillBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillBill.Name = "cbFillBill";
-            // 
-            // btnEditBill
-            // 
-            this.btnEditBill.BorderRadius = 20;
-            this.btnEditBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.btnEditBill, "btnEditBill");
-            this.btnEditBill.ForeColor = System.Drawing.Color.Black;
-            this.btnEditBill.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnEditBill.Name = "btnEditBill";
-            // 
-            // btnDeleteBill
-            // 
-            this.btnDeleteBill.BorderRadius = 20;
-            this.btnDeleteBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteBill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            resources.ApplyResources(this.btnDeleteBill, "btnDeleteBill");
-            this.btnDeleteBill.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteBill.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteBill.Name = "btnDeleteBill";
             // 
             // dtgvListBill
             // 
@@ -177,16 +156,75 @@ namespace frmLogin
             this.dtgvListBill.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListBill.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // btnDeleteAllBill
+            // 
+            this.btnDeleteAllBill.BorderColor = System.Drawing.Color.Red;
+            this.btnDeleteAllBill.BorderRadius = 10;
+            this.btnDeleteAllBill.BorderThickness = 2;
+            this.btnDeleteAllBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteAllBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteAllBill.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnDeleteAllBill, "btnDeleteAllBill");
+            this.btnDeleteAllBill.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteAllBill.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllBill.Image")));
+            this.btnDeleteAllBill.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteAllBill.Name = "btnDeleteAllBill";
+            // 
+            // btnBillDeleted
+            // 
+            this.btnBillDeleted.BorderRadius = 20;
+            this.btnBillDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBillDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBillDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBillDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBillDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
+            resources.ApplyResources(this.btnBillDeleted, "btnBillDeleted");
+            this.btnBillDeleted.ForeColor = System.Drawing.Color.Black;
+            this.btnBillDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnBillDeleted.Image")));
+            this.btnBillDeleted.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBillDeleted.Name = "btnBillDeleted";
+            // 
+            // btnEditBill
+            // 
+            this.btnEditBill.BorderRadius = 20;
+            this.btnEditBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.btnEditBill, "btnEditBill");
+            this.btnEditBill.ForeColor = System.Drawing.Color.Black;
+            this.btnEditBill.Image = ((System.Drawing.Image)(resources.GetObject("btnEditBill.Image")));
+            this.btnEditBill.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnEditBill.Name = "btnEditBill";
+            // 
+            // btnDeleteBill
+            // 
+            this.btnDeleteBill.BorderRadius = 20;
+            this.btnDeleteBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteBill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            resources.ApplyResources(this.btnDeleteBill, "btnDeleteBill");
+            this.btnDeleteBill.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteBill.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteBill.Image")));
+            this.btnDeleteBill.ImageSize = new System.Drawing.Size(45, 45);
+            this.btnDeleteBill.Name = "btnDeleteBill";
+            // 
             // frmBillManagement
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.dtgvListBill);
             this.Controls.Add(this.btnDeleteBill);
+            this.Controls.Add(this.btnDeleteAllBill);
+            this.Controls.Add(this.btnBillDeleted);
             this.Controls.Add(this.btnEditBill);
+            this.Controls.Add(this.dtgvListBill);
             this.Controls.Add(this.cbFillBill);
-            this.Controls.Add(this.txtSearchProduct);
+            this.Controls.Add(this.txtSearchBill);
             this.Controls.Add(this.cbSortBill);
             this.Controls.Add(this.btnSearchBill);
             this.Controls.Add(this.label3);
@@ -204,12 +242,12 @@ namespace frmLogin
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button btnSearchBill;
         private Guna.UI2.WinForms.Guna2ComboBox cbSortBill;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchProduct;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearchBill;
         private Guna.UI2.WinForms.Guna2ComboBox cbFillBill;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgvListBill;
+        private Guna.UI2.WinForms.Guna2Button btnDeleteAllBill;
+        private Guna.UI2.WinForms.Guna2Button btnBillDeleted;
         private Guna.UI2.WinForms.Guna2Button btnEditBill;
         private Guna.UI2.WinForms.Guna2Button btnDeleteBill;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgvListBill;
-
-
     }
 }

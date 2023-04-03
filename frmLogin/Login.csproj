@@ -94,22 +94,16 @@
     <Compile Include="Form\frmCustomerManagement.Designer.cs">
       <DependentUpon>frmCustomerManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmChangeTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmChangeTable.Designer.cs">
-      <DependentUpon>frmChangeTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmlogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmlogin.Designer.cs">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPay.cs">
+    <Compile Include="Form\frmPay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPay.Designer.cs">
+    <Compile Include="Form\frmPay.Designer.cs">
       <DependentUpon>frmPay.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQuanLyAdmin.cs">
@@ -150,6 +144,12 @@
     <EmbeddedResource Include="Form\frmEmployeeManager.resx">
       <DependentUpon>frmEmployeeManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPay.en-CA.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPay.zh.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmProductManagement.resx">
       <DependentUpon>frmProductManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPay.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyAdmin.resx">
       <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
