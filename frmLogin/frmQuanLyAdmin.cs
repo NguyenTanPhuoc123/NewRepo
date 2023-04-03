@@ -136,17 +136,19 @@ namespace frmLogin
             ActiveButton(sender);
         }
 
-        private void btnBillManagement_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmBillManagement(), sender);
-            lblTitle.Text = btnBillManagement.Text;
-            ActiveButton(sender);
-        }
+   
 
         private void btnTableManagement_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmTableManagement(), sender);
             lblTitle.Text = btnTableManagement.Text;
+            ActiveButton(sender);
+        }
+
+        private void btnBillManagement_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmBillManagement(), sender);
+            lblTitle.Text = btnBillManagement.Text;
             ActiveButton(sender);
         }
     }

@@ -29,22 +29,22 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerManagement));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerManagement));
             this.label1 = new System.Windows.Forms.Label();
             this.cbSortCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbFillCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchCustomer = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListCustomer = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnDeleteAllECustomer = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteAllCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomerDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddCustomer = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListCustomer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +75,7 @@ namespace frmLogin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(725, 22);
+            this.label2.Location = new System.Drawing.Point(782, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 17);
             this.label2.TabIndex = 2;
@@ -91,9 +91,9 @@ namespace frmLogin
             this.cbFillCustomer.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillCustomer.ItemHeight = 30;
-            this.cbFillCustomer.Location = new System.Drawing.Point(728, 43);
+            this.cbFillCustomer.Location = new System.Drawing.Point(785, 43);
             this.cbFillCustomer.Name = "cbFillCustomer";
-            this.cbFillCustomer.Size = new System.Drawing.Size(143, 36);
+            this.cbFillCustomer.Size = new System.Drawing.Size(171, 36);
             this.cbFillCustomer.TabIndex = 3;
             // 
             // txtSearchCustomer
@@ -115,22 +115,6 @@ namespace frmLogin
             this.txtSearchCustomer.SelectedText = "";
             this.txtSearchCustomer.Size = new System.Drawing.Size(272, 36);
             this.txtSearchCustomer.TabIndex = 4;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(527, 43);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(105, 36);
-            this.guna2Button1.TabIndex = 5;
             // 
             // dtgvListCustomer
             // 
@@ -160,7 +144,7 @@ namespace frmLogin
             this.dtgvListCustomer.RowHeadersVisible = false;
             this.dtgvListCustomer.RowHeadersWidth = 51;
             this.dtgvListCustomer.RowTemplate.Height = 24;
-            this.dtgvListCustomer.Size = new System.Drawing.Size(856, 419);
+            this.dtgvListCustomer.Size = new System.Drawing.Size(941, 419);
             this.dtgvListCustomer.TabIndex = 6;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -184,25 +168,25 @@ namespace frmLogin
             this.dtgvListCustomer.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListCustomer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // btnDeleteAllECustomer
+            // btnDeleteAllCustomer
             // 
-            this.btnDeleteAllECustomer.BorderColor = System.Drawing.Color.Red;
-            this.btnDeleteAllECustomer.BorderRadius = 10;
-            this.btnDeleteAllECustomer.BorderThickness = 2;
-            this.btnDeleteAllECustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllECustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllECustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAllECustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAllECustomer.FillColor = System.Drawing.Color.White;
-            this.btnDeleteAllECustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAllECustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAllECustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllECustomer.Image")));
-            this.btnDeleteAllECustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllECustomer.Location = new System.Drawing.Point(882, 461);
-            this.btnDeleteAllECustomer.Name = "btnDeleteAllECustomer";
-            this.btnDeleteAllECustomer.Size = new System.Drawing.Size(159, 43);
-            this.btnDeleteAllECustomer.TabIndex = 32;
-            this.btnDeleteAllECustomer.Text = "Xóa tất cả";
+            this.btnDeleteAllCustomer.BorderColor = System.Drawing.Color.Red;
+            this.btnDeleteAllCustomer.BorderRadius = 10;
+            this.btnDeleteAllCustomer.BorderThickness = 2;
+            this.btnDeleteAllCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteAllCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteAllCustomer.FillColor = System.Drawing.Color.White;
+            this.btnDeleteAllCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteAllCustomer.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteAllCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllCustomer.Image")));
+            this.btnDeleteAllCustomer.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteAllCustomer.Location = new System.Drawing.Point(967, 461);
+            this.btnDeleteAllCustomer.Name = "btnDeleteAllCustomer";
+            this.btnDeleteAllCustomer.Size = new System.Drawing.Size(198, 43);
+            this.btnDeleteAllCustomer.TabIndex = 32;
+            this.btnDeleteAllCustomer.Text = "Xóa tất cả";
             // 
             // btnCustomerDeleted
             // 
@@ -216,9 +200,9 @@ namespace frmLogin
             this.btnCustomerDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnCustomerDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomerDeleted.Image")));
             this.btnCustomerDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCustomerDeleted.Location = new System.Drawing.Point(882, 385);
+            this.btnCustomerDeleted.Location = new System.Drawing.Point(967, 384);
             this.btnCustomerDeleted.Name = "btnCustomerDeleted";
-            this.btnCustomerDeleted.Size = new System.Drawing.Size(159, 45);
+            this.btnCustomerDeleted.Size = new System.Drawing.Size(198, 45);
             this.btnCustomerDeleted.TabIndex = 31;
             this.btnCustomerDeleted.Text = "Khách hàng đã xóa";
             // 
@@ -234,9 +218,9 @@ namespace frmLogin
             this.btnDeleteCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteCustomer.Image")));
             this.btnDeleteCustomer.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnDeleteCustomer.Location = new System.Drawing.Point(877, 229);
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(962, 222);
             this.btnDeleteCustomer.Name = "btnDeleteCustomer";
-            this.btnDeleteCustomer.Size = new System.Drawing.Size(164, 45);
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(203, 45);
             this.btnDeleteCustomer.TabIndex = 30;
             this.btnDeleteCustomer.Text = "Xóa";
             // 
@@ -252,9 +236,9 @@ namespace frmLogin
             this.btnEditCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnEditCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnEditCustomer.Image")));
             this.btnEditCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditCustomer.Location = new System.Drawing.Point(877, 159);
+            this.btnEditCustomer.Location = new System.Drawing.Point(962, 159);
             this.btnEditCustomer.Name = "btnEditCustomer";
-            this.btnEditCustomer.Size = new System.Drawing.Size(164, 45);
+            this.btnEditCustomer.Size = new System.Drawing.Size(203, 45);
             this.btnEditCustomer.TabIndex = 29;
             this.btnEditCustomer.Text = "Sửa";
             // 
@@ -270,18 +254,34 @@ namespace frmLogin
             this.btnAddCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnAddCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.Image")));
             this.btnAddCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddCustomer.Location = new System.Drawing.Point(877, 96);
+            this.btnAddCustomer.Location = new System.Drawing.Point(962, 96);
             this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(164, 45);
+            this.btnAddCustomer.Size = new System.Drawing.Size(203, 45);
             this.btnAddCustomer.TabIndex = 28;
             this.btnAddCustomer.Text = "Thêm";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(527, 43);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(105, 36);
+            this.guna2Button1.TabIndex = 5;
             // 
             // frmCustomerManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 516);
-            this.Controls.Add(this.btnDeleteAllECustomer);
+            this.ClientSize = new System.Drawing.Size(1177, 516);
+            this.Controls.Add(this.btnDeleteAllCustomer);
             this.Controls.Add(this.btnCustomerDeleted);
             this.Controls.Add(this.btnDeleteCustomer);
             this.Controls.Add(this.btnEditCustomer);
@@ -311,7 +311,7 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2TextBox txtSearchCustomer;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvListCustomer;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteAllECustomer;
+        private Guna.UI2.WinForms.Guna2Button btnDeleteAllCustomer;
         private Guna.UI2.WinForms.Guna2Button btnCustomerDeleted;
         private Guna.UI2.WinForms.Guna2Button btnDeleteCustomer;
         private Guna.UI2.WinForms.Guna2Button btnEditCustomer;
