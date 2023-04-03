@@ -70,5 +70,10 @@ namespace frmLogin
             frmPay frm = new frmPay();
             frm.Show();
         }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -47,5 +47,7 @@ namespace frmLogin
             frmSell.Close();
             frmLogin.Show();
         }
+
+       
     }
 }

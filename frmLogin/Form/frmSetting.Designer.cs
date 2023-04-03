@@ -81,9 +81,10 @@ namespace frmLogin
             this.grpAccountDetail.Controls.Add(this.label1);
             this.grpAccountDetail.Controls.Add(this.guna2PictureBox1);
             this.grpAccountDetail.CustomBorderColor = System.Drawing.Color.Black;
+            this.grpAccountDetail.FillColor = System.Drawing.Color.WhiteSmoke;
             this.grpAccountDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.grpAccountDetail.ForeColor = System.Drawing.Color.White;
-            this.grpAccountDetail.Location = new System.Drawing.Point(0, 0);
+            this.grpAccountDetail.Location = new System.Drawing.Point(0, 89);
             this.grpAccountDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpAccountDetail.Name = "grpAccountDetail";
             this.grpAccountDetail.Size = new System.Drawing.Size(701, 365);
@@ -271,7 +272,6 @@ namespace frmLogin
             // 
             // grpChangePassword
             // 
-            this.grpChangePassword.Controls.Add(this.grpAccountDetail);
             this.grpChangePassword.Controls.Add(this.txtAccept);
             this.grpChangePassword.Controls.Add(this.btnReturn);
             this.grpChangePassword.Controls.Add(this.txtRepeatPassword);
@@ -445,7 +445,7 @@ namespace frmLogin
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(278, 18);
+            this.label9.Location = new System.Drawing.Point(222, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(213, 55);
             this.label9.TabIndex = 0;
@@ -529,9 +529,10 @@ namespace frmLogin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(701, 620);
+            this.Controls.Add(this.grpAccountDetail);
             this.Controls.Add(this.grpDisplay);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.grpChangePassword);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSetting";
