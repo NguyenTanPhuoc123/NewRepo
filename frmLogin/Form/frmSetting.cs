@@ -16,6 +16,7 @@ namespace frmLogin
         {
             InitializeComponent();
             grpChangePassword.Visible = false;
+            grpPersonalInfomation.Visible = false;
             cbLanguage.SelectedIndex = 0;
             cbSizeDisplay.SelectedIndex = 1;
         }
@@ -48,6 +49,16 @@ namespace frmLogin
             frmLogin.Show();
         }
 
-       
+        private void btnReturnAccountInfo_Click(object sender, EventArgs e)
+        {
+            grpPersonalInfomation.Visible = false;
+            grpAccountDetail.Visible = true;
+        }
+
+        private void btnPersonalInfo_Click(object sender, EventArgs e)
+        {
+            grpPersonalInfomation.Visible = true;
+            grpAccountDetail.Visible = false;
+        }
     }
 }

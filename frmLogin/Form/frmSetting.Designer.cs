@@ -59,16 +59,37 @@ namespace frmLogin
             this.label10 = new System.Windows.Forms.Label();
             this.cbLanguage = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.grpPersonalInfomation = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReturnAccountInfo = new Guna.UI2.WinForms.Guna2Button();
+            this.txtEmployeeFullName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmployeeID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dtpBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label13 = new System.Windows.Forms.Label();
+            this.radMale = new System.Windows.Forms.RadioButton();
+            this.radFemale = new System.Windows.Forms.RadioButton();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtNumberPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtPosition = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.grpAccountDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.grpChangePassword.SuspendLayout();
             this.panel1.SuspendLayout();
             this.grpDisplay.SuspendLayout();
+            this.grpPersonalInfomation.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpAccountDetail
             // 
             this.grpAccountDetail.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.grpAccountDetail.Controls.Add(this.grpChangePassword);
             this.grpAccountDetail.Controls.Add(this.btnUploadPicture);
             this.grpAccountDetail.Controls.Add(this.btnPersonalInfo);
             this.grpAccountDetail.Controls.Add(this.btnLogOff);
@@ -81,13 +102,13 @@ namespace frmLogin
             this.grpAccountDetail.Controls.Add(this.label1);
             this.grpAccountDetail.Controls.Add(this.guna2PictureBox1);
             this.grpAccountDetail.CustomBorderColor = System.Drawing.Color.Black;
-            this.grpAccountDetail.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.grpAccountDetail.FillColor = System.Drawing.Color.Gainsboro;
             this.grpAccountDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.grpAccountDetail.ForeColor = System.Drawing.Color.White;
-            this.grpAccountDetail.Location = new System.Drawing.Point(0, 89);
+            this.grpAccountDetail.Location = new System.Drawing.Point(0, 1);
             this.grpAccountDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpAccountDetail.Name = "grpAccountDetail";
-            this.grpAccountDetail.Size = new System.Drawing.Size(701, 365);
+            this.grpAccountDetail.Size = new System.Drawing.Size(701, 376);
             this.grpAccountDetail.TabIndex = 0;
             this.grpAccountDetail.Text = "Thông tin tài khoản";
             // 
@@ -124,6 +145,7 @@ namespace frmLogin
             this.btnPersonalInfo.Size = new System.Drawing.Size(195, 45);
             this.btnPersonalInfo.TabIndex = 12;
             this.btnPersonalInfo.Text = "Thông tin cá nhân";
+            this.btnPersonalInfo.Click += new System.EventHandler(this.btnPersonalInfo_Click);
             // 
             // btnLogOff
             // 
@@ -226,7 +248,7 @@ namespace frmLogin
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(280, 144);
             this.label3.Name = "label3";
@@ -237,7 +259,7 @@ namespace frmLogin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(243, 100);
             this.label2.Name = "label2";
@@ -248,7 +270,7 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(265, 66);
             this.label1.Name = "label1";
@@ -281,9 +303,10 @@ namespace frmLogin
             this.grpChangePassword.Controls.Add(this.label5);
             this.grpChangePassword.Controls.Add(this.label6);
             this.grpChangePassword.CustomBorderColor = System.Drawing.Color.Black;
+            this.grpChangePassword.FillColor = System.Drawing.Color.Gainsboro;
             this.grpChangePassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.grpChangePassword.ForeColor = System.Drawing.Color.White;
-            this.grpChangePassword.Location = new System.Drawing.Point(0, 91);
+            this.grpChangePassword.Location = new System.Drawing.Point(0, 0);
             this.grpChangePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpChangePassword.Name = "grpChangePassword";
             this.grpChangePassword.Size = new System.Drawing.Size(701, 365);
@@ -387,7 +410,7 @@ namespace frmLogin
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(60, 237);
             this.label4.Name = "label4";
@@ -398,7 +421,7 @@ namespace frmLogin
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(50, 171);
             this.label5.Name = "label5";
@@ -409,7 +432,7 @@ namespace frmLogin
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(61, 96);
             this.label6.Name = "label6";
@@ -523,15 +546,304 @@ namespace frmLogin
             this.label8.TabIndex = 0;
             this.label8.Text = "Ngôn ngữ";
             // 
+            // grpPersonalInfomation
+            // 
+            this.grpPersonalInfomation.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.grpPersonalInfomation.Controls.Add(this.label17);
+            this.grpPersonalInfomation.Controls.Add(this.grpAccountDetail);
+            this.grpPersonalInfomation.Controls.Add(this.txtPosition);
+            this.grpPersonalInfomation.Controls.Add(this.label16);
+            this.grpPersonalInfomation.Controls.Add(this.guna2DateTimePicker1);
+            this.grpPersonalInfomation.Controls.Add(this.label15);
+            this.grpPersonalInfomation.Controls.Add(this.txtNumberPhone);
+            this.grpPersonalInfomation.Controls.Add(this.label14);
+            this.grpPersonalInfomation.Controls.Add(this.radFemale);
+            this.grpPersonalInfomation.Controls.Add(this.radMale);
+            this.grpPersonalInfomation.Controls.Add(this.label13);
+            this.grpPersonalInfomation.Controls.Add(this.dtpBirthday);
+            this.grpPersonalInfomation.Controls.Add(this.label11);
+            this.grpPersonalInfomation.Controls.Add(this.label7);
+            this.grpPersonalInfomation.Controls.Add(this.btnSave);
+            this.grpPersonalInfomation.Controls.Add(this.btnReturnAccountInfo);
+            this.grpPersonalInfomation.Controls.Add(this.txtEmployeeFullName);
+            this.grpPersonalInfomation.Controls.Add(this.txtEmployeeID);
+            this.grpPersonalInfomation.Controls.Add(this.label12);
+            this.grpPersonalInfomation.CustomBorderColor = System.Drawing.Color.Black;
+            this.grpPersonalInfomation.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.grpPersonalInfomation.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.grpPersonalInfomation.ForeColor = System.Drawing.Color.White;
+            this.grpPersonalInfomation.Location = new System.Drawing.Point(0, 90);
+            this.grpPersonalInfomation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpPersonalInfomation.Name = "grpPersonalInfomation";
+            this.grpPersonalInfomation.Size = new System.Drawing.Size(701, 365);
+            this.grpPersonalInfomation.TabIndex = 7;
+            this.grpPersonalInfomation.Text = "Thông tin cá nhân";
+            // 
+            // btnSave
+            // 
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(540, 316);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 38);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Lưu";
+            // 
+            // btnReturnAccountInfo
+            // 
+            this.btnReturnAccountInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReturnAccountInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReturnAccountInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReturnAccountInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReturnAccountInfo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReturnAccountInfo.ForeColor = System.Drawing.Color.White;
+            this.btnReturnAccountInfo.Location = new System.Drawing.Point(26, 316);
+            this.btnReturnAccountInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReturnAccountInfo.Name = "btnReturnAccountInfo";
+            this.btnReturnAccountInfo.Size = new System.Drawing.Size(134, 36);
+            this.btnReturnAccountInfo.TabIndex = 8;
+            this.btnReturnAccountInfo.Text = "Trở về";
+            this.btnReturnAccountInfo.Click += new System.EventHandler(this.btnReturnAccountInfo_Click);
+            // 
+            // txtEmployeeFullName
+            // 
+            this.txtEmployeeFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmployeeFullName.DefaultText = "";
+            this.txtEmployeeFullName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmployeeFullName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmployeeFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmployeeFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmployeeFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmployeeFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmployeeFullName.ForeColor = System.Drawing.Color.Black;
+            this.txtEmployeeFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmployeeFullName.Location = new System.Drawing.Point(118, 100);
+            this.txtEmployeeFullName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmployeeFullName.Name = "txtEmployeeFullName";
+            this.txtEmployeeFullName.PasswordChar = '\0';
+            this.txtEmployeeFullName.PlaceholderText = "";
+            this.txtEmployeeFullName.SelectedText = "";
+            this.txtEmployeeFullName.Size = new System.Drawing.Size(216, 36);
+            this.txtEmployeeFullName.TabIndex = 5;
+            // 
+            // txtEmployeeID
+            // 
+            this.txtEmployeeID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmployeeID.DefaultText = "";
+            this.txtEmployeeID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmployeeID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmployeeID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmployeeID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmployeeID.Enabled = false;
+            this.txtEmployeeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmployeeID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmployeeID.ForeColor = System.Drawing.Color.Black;
+            this.txtEmployeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmployeeID.Location = new System.Drawing.Point(116, 52);
+            this.txtEmployeeID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmployeeID.Name = "txtEmployeeID";
+            this.txtEmployeeID.PasswordChar = '\0';
+            this.txtEmployeeID.PlaceholderText = "";
+            this.txtEmployeeID.SelectedText = "";
+            this.txtEmployeeID.Size = new System.Drawing.Size(218, 36);
+            this.txtEmployeeID.TabIndex = 4;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(9, 58);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 20);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Mã nhân viên:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(9, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(102, 20);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Tên nhân viên:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(32, 160);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 20);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Ngày sinh:";
+            // 
+            // dtpBirthday
+            // 
+            this.dtpBirthday.Checked = true;
+            this.dtpBirthday.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpBirthday.Location = new System.Drawing.Point(118, 146);
+            this.dtpBirthday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpBirthday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(216, 36);
+            this.dtpBirthday.TabIndex = 15;
+            this.dtpBirthday.Value = new System.DateTime(2023, 4, 3, 21, 2, 43, 285);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(41, 206);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 20);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "Giới tính:";
+            // 
+            // radMale
+            // 
+            this.radMale.AutoSize = true;
+            this.radMale.BackColor = System.Drawing.Color.Transparent;
+            this.radMale.ForeColor = System.Drawing.Color.Black;
+            this.radMale.Location = new System.Drawing.Point(118, 206);
+            this.radMale.Name = "radMale";
+            this.radMale.Size = new System.Drawing.Size(62, 24);
+            this.radMale.TabIndex = 17;
+            this.radMale.TabStop = true;
+            this.radMale.Text = "Nam";
+            this.radMale.UseVisualStyleBackColor = false;
+            // 
+            // radFemale
+            // 
+            this.radFemale.AutoSize = true;
+            this.radFemale.BackColor = System.Drawing.Color.Transparent;
+            this.radFemale.ForeColor = System.Drawing.Color.Black;
+            this.radFemale.Location = new System.Drawing.Point(237, 206);
+            this.radFemale.Name = "radFemale";
+            this.radFemale.Size = new System.Drawing.Size(50, 24);
+            this.radFemale.TabIndex = 18;
+            this.radFemale.TabStop = true;
+            this.radFemale.Text = "Nữ";
+            this.radFemale.UseVisualStyleBackColor = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(374, 58);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(100, 20);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Số điện thoại:";
+            // 
+            // txtNumberPhone
+            // 
+            this.txtNumberPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNumberPhone.DefaultText = "";
+            this.txtNumberPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNumberPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNumberPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNumberPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNumberPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNumberPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNumberPhone.ForeColor = System.Drawing.Color.Black;
+            this.txtNumberPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNumberPhone.Location = new System.Drawing.Point(478, 52);
+            this.txtNumberPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumberPhone.Name = "txtNumberPhone";
+            this.txtNumberPhone.PasswordChar = '\0';
+            this.txtNumberPhone.PlaceholderText = "";
+            this.txtNumberPhone.SelectedText = "";
+            this.txtNumberPhone.Size = new System.Drawing.Size(205, 36);
+            this.txtNumberPhone.TabIndex = 20;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(407, 110);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(64, 20);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "Chức vụ:";
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.Enabled = false;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(480, 146);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.TabIndex = 23;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 4, 3, 21, 8, 33, 62);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(374, 160);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(104, 20);
+            this.label16.TabIndex = 24;
+            this.label16.Text = "Ngày vào làm:";
+            // 
+            // txtPosition
+            // 
+            this.txtPosition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPosition.DefaultText = "";
+            this.txtPosition.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPosition.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPosition.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPosition.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPosition.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPosition.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPosition.ForeColor = System.Drawing.Color.Black;
+            this.txtPosition.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPosition.Location = new System.Drawing.Point(478, 102);
+            this.txtPosition.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.PasswordChar = '\0';
+            this.txtPosition.PlaceholderText = "";
+            this.txtPosition.SelectedText = "";
+            this.txtPosition.Size = new System.Drawing.Size(205, 36);
+            this.txtPosition.TabIndex = 25;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(415, 204);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(58, 20);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "Địa chỉ:";
+            // 
             // frmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(701, 620);
-            this.Controls.Add(this.grpAccountDetail);
+            this.Controls.Add(this.grpPersonalInfomation);
             this.Controls.Add(this.grpDisplay);
-            this.Controls.Add(this.grpChangePassword);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -547,6 +859,8 @@ namespace frmLogin
             this.panel1.PerformLayout();
             this.grpDisplay.ResumeLayout(false);
             this.grpDisplay.PerformLayout();
+            this.grpPersonalInfomation.ResumeLayout(false);
+            this.grpPersonalInfomation.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -583,5 +897,24 @@ namespace frmLogin
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2ComboBox cbLanguage;
         private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2GroupBox grpPersonalInfomation;
+        private System.Windows.Forms.Label label17;
+        private Guna.UI2.WinForms.Guna2TextBox txtPosition;
+        private System.Windows.Forms.Label label16;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private System.Windows.Forms.Label label15;
+        private Guna.UI2.WinForms.Guna2TextBox txtNumberPhone;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.RadioButton radFemale;
+        private System.Windows.Forms.RadioButton radMale;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpBirthday;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
+        private Guna.UI2.WinForms.Guna2Button btnReturnAccountInfo;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmployeeFullName;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmployeeID;
+        private System.Windows.Forms.Label label12;
     }
 }
