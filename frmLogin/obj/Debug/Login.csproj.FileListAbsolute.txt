@@ -191,3 +191,12 @@ D:\đồ án Winform\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
 D:\đồ án Winform\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
 D:\đồ án Winform\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
 D:\đồ án Winform\frmLogin\obj\Debug\zh\frmLogin.resources.dll
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\bin\Debug\en-CA\frmLogin.resources.dll
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\bin\Debug\zh\frmLogin.resources.dll
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmPay.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
+C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\zh\frmLogin.resources.dll
