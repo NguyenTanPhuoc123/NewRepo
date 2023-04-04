@@ -42,11 +42,7 @@ namespace frmLogin
 
         private void btnLogOff_Click(object sender, EventArgs e)
         {
-            frmSellManagement frmSell = new frmSellManagement();
-            frmlogin frmLogin = new frmlogin();
             this.Close();
-            frmSell.Close();
-            frmLogin.Show();
         }
 
         private void btnReturnAccountInfo_Click(object sender, EventArgs e)

@@ -45,6 +45,14 @@ namespace frmLogin
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnDeleteAllEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnEmployeeDeleted = new Guna.UI2.WinForms.Guna2Button();
+            this.colEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmployeeFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBirthDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNumberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colWorkingDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,7 +143,7 @@ namespace frmLogin
             this.btnAddEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnAddEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmployee.Image")));
             this.btnAddEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddEmployee.Location = new System.Drawing.Point(882, 93);
+            this.btnAddEmployee.Location = new System.Drawing.Point(877, 83);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnAddEmployee.TabIndex = 14;
@@ -153,7 +161,7 @@ namespace frmLogin
             this.btnEditEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnEditEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmployee.Image")));
             this.btnEditEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditEmployee.Location = new System.Drawing.Point(882, 164);
+            this.btnEditEmployee.Location = new System.Drawing.Point(878, 149);
             this.btnEditEmployee.Name = "btnEditEmployee";
             this.btnEditEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnEditEmployee.TabIndex = 15;
@@ -171,7 +179,7 @@ namespace frmLogin
             this.btnDeleteEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteEmployee.Image")));
             this.btnDeleteEmployee.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnDeleteEmployee.Location = new System.Drawing.Point(882, 234);
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(878, 209);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
             this.btnDeleteEmployee.Size = new System.Drawing.Size(164, 45);
             this.btnDeleteEmployee.TabIndex = 16;
@@ -189,8 +197,16 @@ namespace frmLogin
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvListEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvListEmployee.ColumnHeadersHeight = 4;
-            this.dtgvListEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvListEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvListEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colEmployeeID,
+            this.colEmployeeFullName,
+            this.colBirthDay,
+            this.colSex,
+            this.colNumberPhone,
+            this.colAddress,
+            this.colWorkingDay,
+            this.colPosition});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -200,12 +216,12 @@ namespace frmLogin
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListEmployee.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListEmployee.Location = new System.Drawing.Point(12, 71);
+            this.dtgvListEmployee.Location = new System.Drawing.Point(12, 75);
             this.dtgvListEmployee.Name = "dtgvListEmployee";
             this.dtgvListEmployee.RowHeadersVisible = false;
             this.dtgvListEmployee.RowHeadersWidth = 51;
             this.dtgvListEmployee.RowTemplate.Height = 24;
-            this.dtgvListEmployee.Size = new System.Drawing.Size(859, 418);
+            this.dtgvListEmployee.Size = new System.Drawing.Size(859, 414);
             this.dtgvListEmployee.TabIndex = 17;
             this.dtgvListEmployee.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListEmployee.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -218,8 +234,8 @@ namespace frmLogin
             this.dtgvListEmployee.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgvListEmployee.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvListEmployee.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgvListEmployee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgvListEmployee.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgvListEmployee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvListEmployee.ThemeStyle.HeaderStyle.Height = 38;
             this.dtgvListEmployee.ThemeStyle.ReadOnly = false;
             this.dtgvListEmployee.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListEmployee.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -252,7 +268,7 @@ namespace frmLogin
             this.btnDeleteAllEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllEmployee.Image")));
             this.btnDeleteAllEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllEmployee.Location = new System.Drawing.Point(882, 446);
+            this.btnDeleteAllEmployee.Location = new System.Drawing.Point(877, 446);
             this.btnDeleteAllEmployee.Name = "btnDeleteAllEmployee";
             this.btnDeleteAllEmployee.Size = new System.Drawing.Size(159, 43);
             this.btnDeleteAllEmployee.TabIndex = 27;
@@ -270,17 +286,73 @@ namespace frmLogin
             this.btnEmployeeDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnEmployeeDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeDeleted.Image")));
             this.btnEmployeeDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEmployeeDeleted.Location = new System.Drawing.Point(882, 372);
+            this.btnEmployeeDeleted.Location = new System.Drawing.Point(877, 355);
             this.btnEmployeeDeleted.Name = "btnEmployeeDeleted";
             this.btnEmployeeDeleted.Size = new System.Drawing.Size(159, 45);
             this.btnEmployeeDeleted.TabIndex = 26;
             this.btnEmployeeDeleted.Text = "Nhân viên đã xóa";
             // 
+            // colEmployeeID
+            // 
+            this.colEmployeeID.DataPropertyName = "MANV";
+            this.colEmployeeID.HeaderText = "Mã nhân viên";
+            this.colEmployeeID.MinimumWidth = 6;
+            this.colEmployeeID.Name = "colEmployeeID";
+            // 
+            // colEmployeeFullName
+            // 
+            this.colEmployeeFullName.DataPropertyName = "TENNV";
+            this.colEmployeeFullName.HeaderText = "Họ tên";
+            this.colEmployeeFullName.MinimumWidth = 6;
+            this.colEmployeeFullName.Name = "colEmployeeFullName";
+            // 
+            // colBirthDay
+            // 
+            this.colBirthDay.DataPropertyName = "NGAYSINH";
+            this.colBirthDay.HeaderText = "Ngày sinh";
+            this.colBirthDay.MinimumWidth = 6;
+            this.colBirthDay.Name = "colBirthDay";
+            // 
+            // colSex
+            // 
+            this.colSex.DataPropertyName = "GIOITINH";
+            this.colSex.HeaderText = "Giới tính";
+            this.colSex.MinimumWidth = 6;
+            this.colSex.Name = "colSex";
+            // 
+            // colNumberPhone
+            // 
+            this.colNumberPhone.DataPropertyName = "SODIENTHOAI";
+            this.colNumberPhone.HeaderText = "Số điện thoai";
+            this.colNumberPhone.MinimumWidth = 6;
+            this.colNumberPhone.Name = "colNumberPhone";
+            // 
+            // colAddress
+            // 
+            this.colAddress.DataPropertyName = "DIACHI";
+            this.colAddress.HeaderText = "Địa chỉ";
+            this.colAddress.MinimumWidth = 6;
+            this.colAddress.Name = "colAddress";
+            // 
+            // colWorkingDay
+            // 
+            this.colWorkingDay.DataPropertyName = "NGAYVAOLAM";
+            this.colWorkingDay.HeaderText = "Ngày vào làm";
+            this.colWorkingDay.MinimumWidth = 6;
+            this.colWorkingDay.Name = "colWorkingDay";
+            // 
+            // colPosition
+            // 
+            this.colPosition.DataPropertyName = "MACHUCVU";
+            this.colPosition.HeaderText = "Chức vụ";
+            this.colPosition.MinimumWidth = 6;
+            this.colPosition.Name = "colPosition";
+            // 
             // frmEmployeeManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 514);
+            this.ClientSize = new System.Drawing.Size(1054, 497);
             this.Controls.Add(this.btnDeleteAllEmployee);
             this.Controls.Add(this.btnEmployeeDeleted);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -294,6 +366,7 @@ namespace frmLogin
             this.Controls.Add(this.cbSortEmployee);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEmployeeManager";
             this.Text = "frmEmployeeManager";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListEmployee)).EndInit();
@@ -315,5 +388,13 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btnDeleteAllEmployee;
         private Guna.UI2.WinForms.Guna2Button btnEmployeeDeleted;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEmployeeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEmployeeFullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colBirthDay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSex;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNumberPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colWorkingDay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPosition;
     }
 }

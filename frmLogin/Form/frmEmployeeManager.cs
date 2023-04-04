@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using frmLogin.Data_Access_Layer;
 
 namespace frmLogin
 {
@@ -15,7 +16,9 @@ namespace frmLogin
         public frmEmployeeManager()
         {
             InitializeComponent();
-            
+            string query = "Select * from NhanVien";
+            dtgvListEmployee.DataSource = DataProvider.ExcecuteSelectCommand(query, null);
+
         }
 
       

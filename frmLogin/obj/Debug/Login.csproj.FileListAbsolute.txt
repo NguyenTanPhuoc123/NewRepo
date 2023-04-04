@@ -200,3 +200,14 @@ C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmPay.en-CA
 C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
 C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
 C:\Users\Admin\Desktop\Do an\New folder\frmLogin\obj\Debug\zh\frmLogin.resources.dll
+D:\do an\frmLogin\bin\Debug\en-CA\frmLogin.resources.dll
+D:\do an\frmLogin\bin\Debug\zh\frmLogin.resources.dll
+D:\do an\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
+D:\do an\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
+D:\do an\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
+D:\do an\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
+D:\do an\frmLogin\obj\Debug\frmLogin.frmPay.resources
+D:\do an\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
+D:\do an\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
+D:\do an\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
+D:\do an\frmLogin\obj\Debug\zh\frmLogin.resources.dll
