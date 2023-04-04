@@ -1,4 +1,5 @@
-﻿using System;
+﻿using frmLogin.Data_Access_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,8 @@ namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
-        
-
+        string username = null;
+        string password = null;
         public frmSellManagement()
         {
             InitializeComponent();
@@ -38,10 +39,20 @@ namespace frmLogin
 
         private void btnStoreManagement_Click(object sender, EventArgs e)
         {
-            frmQuanLyAdmin frm = new frmQuanLyAdmin();
-            this.Hide();
-            frm.ShowDialog();
-            this.Show();
+            //string sql = String.Format("select count(*) from taikhoan where loaitaikhoan = 2 and tendangnhap = {0} and matkhau = {1}",username,password);
+            //int dem = DataProvider.ExecuteScalarCommand(sql, null);
+            //if(dem > 0)
+            //{
+                frmQuanLyAdmin frm = new frmQuanLyAdmin();
+                this.Hide();
+                frm.ShowDialog();
+                this.Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Bạn ko đủ đk");
+            //    return;
+            //}
         }
 
 
@@ -74,6 +85,12 @@ namespace frmLogin
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        public void ChonTaiKhoan(string tenTk, string matKhau)
+        {
+            username = tenTk;
+            password = matKhau;
         }
     }
 }

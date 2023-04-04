@@ -29,22 +29,22 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccountManagement));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccountManagement));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SortAccount = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchAccount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearchAccount = new Guna.UI2.WinForms.Guna2Button();
             this.cbFillAccount = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnAddAccount = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEditAccount = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListAccount = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnDeleteAllAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccountDeleted = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEditAccount = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddAccount = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearchAccount = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListAccount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(714, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 18);
+            this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Lọc";
             // 
@@ -62,7 +62,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 18);
+            this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 11;
             this.label3.Text = "Sắp xếp";
             // 
@@ -101,22 +101,6 @@ namespace frmLogin
             this.txtSearchAccount.Size = new System.Drawing.Size(285, 36);
             this.txtSearchAccount.TabIndex = 13;
             // 
-            // btnSearchAccount
-            // 
-            this.btnSearchAccount.BorderRadius = 10;
-            this.btnSearchAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearchAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchAccount.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSearchAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSearchAccount.ForeColor = System.Drawing.Color.White;
-            this.btnSearchAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchAccount.Image")));
-            this.btnSearchAccount.Location = new System.Drawing.Point(551, 48);
-            this.btnSearchAccount.Name = "btnSearchAccount";
-            this.btnSearchAccount.Size = new System.Drawing.Size(92, 36);
-            this.btnSearchAccount.TabIndex = 14;
-            // 
             // cbFillAccount
             // 
             this.cbFillAccount.BackColor = System.Drawing.Color.Transparent;
@@ -132,60 +116,6 @@ namespace frmLogin
             this.cbFillAccount.Size = new System.Drawing.Size(150, 36);
             this.cbFillAccount.TabIndex = 16;
             // 
-            // btnAddAccount
-            // 
-            this.btnAddAccount.BorderRadius = 20;
-            this.btnAddAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
-            this.btnAddAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAddAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnAddAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAccount.Image")));
-            this.btnAddAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddAccount.Location = new System.Drawing.Point(874, 105);
-            this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.Size = new System.Drawing.Size(167, 45);
-            this.btnAddAccount.TabIndex = 17;
-            this.btnAddAccount.Text = "Thêm";
-            // 
-            // btnEditAccount
-            // 
-            this.btnEditAccount.BorderRadius = 20;
-            this.btnEditAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
-            this.btnEditAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEditAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnEditAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccount.Image")));
-            this.btnEditAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditAccount.Location = new System.Drawing.Point(874, 174);
-            this.btnEditAccount.Name = "btnEditAccount";
-            this.btnEditAccount.Size = new System.Drawing.Size(170, 45);
-            this.btnEditAccount.TabIndex = 18;
-            this.btnEditAccount.Text = "Sửa";
-            // 
-            // btnDeleteAccount
-            // 
-            this.btnDeleteAccount.BorderRadius = 20;
-            this.btnDeleteAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            this.btnDeleteAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAccount.Image")));
-            this.btnDeleteAccount.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDeleteAccount.Location = new System.Drawing.Point(874, 239);
-            this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(170, 45);
-            this.btnDeleteAccount.TabIndex = 19;
-            this.btnDeleteAccount.Text = "Xóa";
-            // 
             // dtgvListAccount
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -198,7 +128,7 @@ namespace frmLogin
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvListAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvListAccount.ColumnHeadersHeight = 4;
+            this.dtgvListAccount.ColumnHeadersHeight = 20;
             this.dtgvListAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -228,7 +158,7 @@ namespace frmLogin
             this.dtgvListAccount.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvListAccount.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgvListAccount.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgvListAccount.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgvListAccount.ThemeStyle.HeaderStyle.Height = 20;
             this.dtgvListAccount.ThemeStyle.ReadOnly = false;
             this.dtgvListAccount.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListAccount.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -276,9 +206,79 @@ namespace frmLogin
             this.btnAccountDeleted.TabIndex = 26;
             this.btnAccountDeleted.Text = "Tài khoản đã xóa";
             // 
+            // btnDeleteAccount
+            // 
+            this.btnDeleteAccount.BorderRadius = 20;
+            this.btnDeleteAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            this.btnDeleteAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteAccount.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAccount.Image")));
+            this.btnDeleteAccount.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnDeleteAccount.Location = new System.Drawing.Point(874, 239);
+            this.btnDeleteAccount.Name = "btnDeleteAccount";
+            this.btnDeleteAccount.Size = new System.Drawing.Size(170, 45);
+            this.btnDeleteAccount.TabIndex = 19;
+            this.btnDeleteAccount.Text = "Xóa";
+            // 
+            // btnEditAccount
+            // 
+            this.btnEditAccount.BorderRadius = 20;
+            this.btnEditAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.btnEditAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEditAccount.ForeColor = System.Drawing.Color.Black;
+            this.btnEditAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccount.Image")));
+            this.btnEditAccount.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnEditAccount.Location = new System.Drawing.Point(874, 174);
+            this.btnEditAccount.Name = "btnEditAccount";
+            this.btnEditAccount.Size = new System.Drawing.Size(170, 45);
+            this.btnEditAccount.TabIndex = 18;
+            this.btnEditAccount.Text = "Sửa";
+            // 
+            // btnAddAccount
+            // 
+            this.btnAddAccount.BorderRadius = 20;
+            this.btnAddAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            this.btnAddAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddAccount.ForeColor = System.Drawing.Color.Black;
+            this.btnAddAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAccount.Image")));
+            this.btnAddAccount.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddAccount.Location = new System.Drawing.Point(874, 105);
+            this.btnAddAccount.Name = "btnAddAccount";
+            this.btnAddAccount.Size = new System.Drawing.Size(167, 45);
+            this.btnAddAccount.TabIndex = 17;
+            this.btnAddAccount.Text = "Thêm";
+            // 
+            // btnSearchAccount
+            // 
+            this.btnSearchAccount.BorderRadius = 10;
+            this.btnSearchAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchAccount.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSearchAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearchAccount.ForeColor = System.Drawing.Color.White;
+            this.btnSearchAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchAccount.Image")));
+            this.btnSearchAccount.Location = new System.Drawing.Point(551, 48);
+            this.btnSearchAccount.Name = "btnSearchAccount";
+            this.btnSearchAccount.Size = new System.Drawing.Size(92, 36);
+            this.btnSearchAccount.TabIndex = 14;
+            // 
             // frmAccountManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 514);
             this.Controls.Add(this.btnDeleteAllAccount);
@@ -296,6 +296,7 @@ namespace frmLogin
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmAccountManagement";
             this.Text = "frmAccountManagement";
+            this.Load += new System.EventHandler(this.frmAccountManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListAccount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

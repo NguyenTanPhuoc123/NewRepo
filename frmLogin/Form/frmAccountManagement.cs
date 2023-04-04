@@ -1,4 +1,5 @@
-﻿using System;
+﻿using frmLogin.Data_Access_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace frmLogin
         public frmAccountManagement()
         {
             InitializeComponent();
+        }
+
+        private void frmAccountManagement_Load(object sender, EventArgs e)
+        {
+            string query = "select * from taikhoan";
+            dtgvListAccount.DataSource =  DataProvider.ExcecuteSelectCommand(query, null);
         }
     }
 }

@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Layer\DataProvider.cs" />
+    <Compile Include="Data Access Layer\Utils.cs" />
     <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>

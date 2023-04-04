@@ -10,7 +10,7 @@ namespace frmLogin.Data_Access_Layer
 {
     public class DataProvider
     {
-        private static string connect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\do an\frmLogin\database\QUANLYCUAHANGTIMO.mdf';Integrated Security = True; Connect Timeout = 30";
+        private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
         private static SqlConnection connection = new SqlConnection(connect);
         private static SqlDataAdapter da = new SqlDataAdapter();
         
@@ -38,6 +38,32 @@ namespace frmLogin.Data_Access_Layer
             return tbl;
         }
 
+        public static int ExecuteScalarCommand(string sql, SqlParameter[] parameters)
+        {
+            SqlCommand cmd = new SqlCommand(sql);
+            int rows = 0;
+            cmd.Connection = OpenConnection();
+            if (parameters != null)
+            {
+                cmd.Parameters.AddRange(parameters);
+            }
+            rows = (int)cmd.ExecuteScalar();
+            connection.Close();
+            return rows;
+        }
 
+        public static int ExecuteInsertCommand(string sql, SqlParameter[] parameters)
+        {
+            SqlCommand cmd = new SqlCommand(sql);
+            int rows = 0;
+            cmd.Connection = OpenConnection();
+            if (parameters != null)
+            {
+                cmd.Parameters.AddRange(parameters);
+            }
+            rows = cmd.ExecuteNonQuery();
+            connection.Close();
+            return rows;
+        }
     }
 }

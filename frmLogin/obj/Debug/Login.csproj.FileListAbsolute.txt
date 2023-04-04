@@ -211,3 +211,15 @@ D:\do an\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
 D:\do an\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
 D:\do an\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
 D:\do an\frmLogin\obj\Debug\zh\frmLogin.resources.dll
+D:\DoAn\frmLogin\bin\Debug\en-CA\frmLogin.resources.dll
+D:\DoAn\frmLogin\bin\Debug\zh\frmLogin.resources.dll
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmPay.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
+D:\DoAn\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
+D:\DoAn\frmLogin\obj\Debug\zh\frmLogin.resources.dll
+D:\DoAn\frmLogin\obj\Debug\Login.csproj.CopyComplete

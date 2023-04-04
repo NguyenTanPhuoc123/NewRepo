@@ -1,7 +1,9 @@
-﻿using System;
+﻿using frmLogin.Data_Access_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,7 @@ namespace frmLogin
    
     public partial class frmlogin : Form
     {
+        frmSellManagement frm;
         public frmlogin()
         {
             InitializeComponent();
@@ -50,16 +53,31 @@ namespace frmLogin
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            frmSellManagement login = new frmSellManagement();
-            this.Hide();
-            login.ShowDialog();
-            txtPassword.Clear();
-            this.Show();
+            string sql = "select count(*) from taikhoan where TENDANGNHAP = @username AND MATKHAU = @password";
+            SqlParameter[] parameters = new SqlParameter[2];
+            parameters[0] = new SqlParameter("@username", txtUsername.Text);
+            parameters[1] = new SqlParameter("@password", Utils.GetMD5(txtPassword.Text));
+            if (DataProvider.ExecuteScalarCommand(sql, parameters)==1)
+            {
+                frmSellManagement login = new frmSellManagement();
+                //frm.ChonTaiKhoan(txtUsername.Text, txtPassword.Text);
+                this.Hide();
+                login.ShowDialog();
+                txtPassword.Clear();
+                this.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Dữ liệu không hợp lệ", "Thông báo");
+            }
         }
 
         private void btnLogOff_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        
     }
 }
