@@ -275,6 +275,7 @@ namespace frmLogin
             this.statusStrip1.Size = new System.Drawing.Size(1292, 26);
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
+            
             // 
             // tstlblPosition
             // 

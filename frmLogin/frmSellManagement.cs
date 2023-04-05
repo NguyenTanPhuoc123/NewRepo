@@ -92,5 +92,7 @@ namespace frmLogin
             username = tenTk;
             password = matKhau;
         }
+
+        
     }
 }

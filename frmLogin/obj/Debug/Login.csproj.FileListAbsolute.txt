@@ -223,3 +223,32 @@ D:\DoAn\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
 D:\DoAn\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
 D:\DoAn\frmLogin\obj\Debug\zh\frmLogin.resources.dll
 D:\DoAn\frmLogin\obj\Debug\Login.csproj.CopyComplete
+D:\do an winform\frmLogin\bin\Debug\frmLogin.exe.config
+D:\do an winform\frmLogin\bin\Debug\frmLogin.exe
+D:\do an winform\frmLogin\bin\Debug\frmLogin.pdb
+D:\do an winform\frmLogin\bin\Debug\en-CA\frmLogin.resources.dll
+D:\do an winform\frmLogin\bin\Debug\zh\frmLogin.resources.dll
+D:\do an winform\frmLogin\bin\Debug\Guna.UI2.dll
+D:\do an winform\frmLogin\obj\Debug\Login.csproj.AssemblyReference.cache
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmAccountManagement.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmSetting.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmlogin.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmPay.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmSelectDish.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.Properties.Resources.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
+D:\do an winform\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
+D:\do an winform\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
+D:\do an winform\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\do an winform\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
+D:\do an winform\frmLogin\obj\Debug\zh\frmLogin.resources.dll
+D:\do an winform\frmLogin\obj\Debug\frmLogin.exe
+D:\do an winform\frmLogin\obj\Debug\frmLogin.pdb
