@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Data Access Layer\DataProvider.cs" />
     <Compile Include="Data Access Layer\Utils.cs" />
+    <Compile Include="Data Tranfer Object\NhanVien.cs" />
     <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,8 +229,6 @@
   <ItemGroup>
     <None Include="Resources\hide.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data Tranfer Object\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
