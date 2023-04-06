@@ -7,21 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using frmLogin.Data_Access_Layer;
 
 namespace frmLogin
 {
-    public partial class frmEmployeeManager : Form
+    public partial class frmBillDetail : Form
     {
-        public frmEmployeeManager()
+        public frmBillDetail()
         {
             InitializeComponent();
-            string query = "Select * from NhanVien";
-            dtgvListEmployee.DataSource = DataProvider.ExcecuteSelectCommand(query, null);
-
         }
 
-        private void btnEmployeeDeleted_Click(object sender, EventArgs e)
+        private void btnExitFomBillDetail_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBillDetailDeleted_Click(object sender, EventArgs e)
         {
             frmRecycleBin frm = new frmRecycleBin();
             frm.Show();

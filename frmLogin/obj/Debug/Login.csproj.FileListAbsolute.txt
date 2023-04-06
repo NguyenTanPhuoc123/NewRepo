@@ -282,3 +282,5 @@ D:\Cao Thắng\DoAn\frmLogin\obj\Debug\zh\frmLogin.resources.dll
 D:\Cao Thắng\DoAn\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\Cao Thắng\DoAn\frmLogin\obj\Debug\frmLogin.exe
 D:\Cao Thắng\DoAn\frmLogin\obj\Debug\frmLogin.pdb
+D:\Do An\frmLogin\obj\Debug\frmLogin.frmBillDetail.resources
+D:\Do An\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources

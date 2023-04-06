@@ -14,8 +14,7 @@ namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
-        string username = null;
-        string password = null;
+     
         public frmSellManagement()
         {
             InitializeComponent();
@@ -88,29 +87,5 @@ namespace frmLogin
             WindowState = FormWindowState.Minimized;
         }
 
-        public void ChonTaiKhoan(string tenTk, string matKhau)
-        {
-            username = tenTk;
-            password = matKhau;
-        }
-
-        private void tstlblPosition_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void frmSellManagement_Load(object sender, EventArgs e)
-        {
-            int chucVu = (sender as NhanVien).MaChucVu;
-            
-            if(chucVu == 2)
-            {
-                tstlblPosition.Text = "Quản lý";
-            }
-            else
-            {
-                tstlblPosition.Text = "Bán hàng";
-            }
-        }
     }
 }

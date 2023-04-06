@@ -29,44 +29,44 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductManagement));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductManagement));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnSearchProduct = new Guna.UI2.WinForms.Guna2Button();
             this.cbSortProduct = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbFillProduct = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEditProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListProduct = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnDeleteAllProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.btnProductDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.grpProductInfo = new System.Windows.Forms.GroupBox();
-            this.pbProduct = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtProductID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtProductName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.richtxtDescribe = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.numQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtProductName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtProductID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpFunction = new System.Windows.Forms.GroupBox();
             this.btnRefreshProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEditProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteAllProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.btnProductDeleted = new Guna.UI2.WinForms.Guna2Button();
+            this.pbProduct = new System.Windows.Forms.PictureBox();
+            this.btnSearchProduct = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProduct)).BeginInit();
             this.grpProductInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
             this.grpFunction.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -86,22 +86,6 @@ namespace frmLogin
             this.label3.Size = new System.Drawing.Size(61, 18);
             this.label3.TabIndex = 9;
             this.label3.Text = "Sắp xếp";
-            // 
-            // btnSearchProduct
-            // 
-            this.btnSearchProduct.BorderRadius = 10;
-            this.btnSearchProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchProduct.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSearchProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
-            this.btnSearchProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchProduct.Image")));
-            this.btnSearchProduct.Location = new System.Drawing.Point(617, 294);
-            this.btnSearchProduct.Name = "btnSearchProduct";
-            this.btnSearchProduct.Size = new System.Drawing.Size(95, 37);
-            this.btnSearchProduct.TabIndex = 16;
             // 
             // cbSortProduct
             // 
@@ -152,59 +136,6 @@ namespace frmLogin
             this.cbFillProduct.Name = "cbFillProduct";
             this.cbFillProduct.Size = new System.Drawing.Size(161, 36);
             this.cbFillProduct.TabIndex = 19;
-            // 
-            // btnAddProduct
-            // 
-            this.btnAddProduct.BorderRadius = 20;
-            this.btnAddProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
-            this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAddProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
-            this.btnAddProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddProduct.Location = new System.Drawing.Point(6, 20);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(140, 46);
-            this.btnAddProduct.TabIndex = 20;
-            this.btnAddProduct.Text = "Thêm";
-            // 
-            // btnEditProduct
-            // 
-            this.btnEditProduct.BorderRadius = 20;
-            this.btnEditProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnEditProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnEditProduct.Image")));
-            this.btnEditProduct.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnEditProduct.Location = new System.Drawing.Point(6, 85);
-            this.btnEditProduct.Name = "btnEditProduct";
-            this.btnEditProduct.Size = new System.Drawing.Size(140, 46);
-            this.btnEditProduct.TabIndex = 21;
-            this.btnEditProduct.Text = "Sửa";
-            // 
-            // btnDeleteProduct
-            // 
-            this.btnDeleteProduct.BorderRadius = 20;
-            this.btnDeleteProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            this.btnDeleteProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.Image")));
-            this.btnDeleteProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteProduct.Location = new System.Drawing.Point(6, 161);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(140, 46);
-            this.btnDeleteProduct.TabIndex = 22;
-            this.btnDeleteProduct.Text = "Xóa";
             // 
             // dtgvListProduct
             // 
@@ -258,44 +189,6 @@ namespace frmLogin
             this.dtgvListProduct.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListProduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // btnDeleteAllProduct
-            // 
-            this.btnDeleteAllProduct.BorderColor = System.Drawing.Color.Red;
-            this.btnDeleteAllProduct.BorderRadius = 10;
-            this.btnDeleteAllProduct.BorderThickness = 2;
-            this.btnDeleteAllProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAllProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAllProduct.FillColor = System.Drawing.Color.White;
-            this.btnDeleteAllProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAllProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAllProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllProduct.Image")));
-            this.btnDeleteAllProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllProduct.Location = new System.Drawing.Point(177, 161);
-            this.btnDeleteAllProduct.Name = "btnDeleteAllProduct";
-            this.btnDeleteAllProduct.Size = new System.Drawing.Size(141, 43);
-            this.btnDeleteAllProduct.TabIndex = 25;
-            this.btnDeleteAllProduct.Text = "Xóa tất cả";
-            // 
-            // btnProductDeleted
-            // 
-            this.btnProductDeleted.BorderRadius = 20;
-            this.btnProductDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnProductDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnProductDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnProductDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnProductDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
-            this.btnProductDeleted.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnProductDeleted.ForeColor = System.Drawing.Color.Black;
-            this.btnProductDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnProductDeleted.Image")));
-            this.btnProductDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnProductDeleted.Location = new System.Drawing.Point(177, 85);
-            this.btnProductDeleted.Name = "btnProductDeleted";
-            this.btnProductDeleted.Size = new System.Drawing.Size(141, 45);
-            this.btnProductDeleted.TabIndex = 24;
-            this.btnProductDeleted.Text = "Món đã xóa";
-            // 
             // grpProductInfo
             // 
             this.grpProductInfo.Controls.Add(this.richtxtDescribe);
@@ -305,7 +198,7 @@ namespace frmLogin
             this.grpProductInfo.Controls.Add(this.label7);
             this.grpProductInfo.Controls.Add(this.numQuantity);
             this.grpProductInfo.Controls.Add(this.label6);
-            this.grpProductInfo.Controls.Add(this.guna2ComboBox1);
+            this.grpProductInfo.Controls.Add(this.cbCategory);
             this.grpProductInfo.Controls.Add(this.label5);
             this.grpProductInfo.Controls.Add(this.txtProductName);
             this.grpProductInfo.Controls.Add(this.label4);
@@ -319,126 +212,31 @@ namespace frmLogin
             this.grpProductInfo.TabStop = false;
             this.grpProductInfo.Text = "Thông tin món ăn";
             // 
-            // pbProduct
+            // richtxtDescribe
             // 
-            this.pbProduct.Location = new System.Drawing.Point(6, 23);
-            this.pbProduct.Name = "pbProduct";
-            this.pbProduct.Size = new System.Drawing.Size(139, 126);
-            this.pbProduct.TabIndex = 0;
-            this.pbProduct.TabStop = false;
+            this.richtxtDescribe.Location = new System.Drawing.Point(471, 143);
+            this.richtxtDescribe.Name = "richtxtDescribe";
+            this.richtxtDescribe.Size = new System.Drawing.Size(197, 59);
+            this.richtxtDescribe.TabIndex = 13;
+            this.richtxtDescribe.Text = "";
             // 
-            // label1
+            // label9
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(161, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Mã sản phẩm:";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(468, 122);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 18);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Mô tả";
             // 
-            // txtProductID
+            // label8
             // 
-            this.txtProductID.BorderRadius = 10;
-            this.txtProductID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProductID.DefaultText = "";
-            this.txtProductID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProductID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProductID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProductID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProductID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProductID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtProductID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProductID.Location = new System.Drawing.Point(269, 14);
-            this.txtProductID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.PasswordChar = '\0';
-            this.txtProductID.PlaceholderText = "";
-            this.txtProductID.SelectedText = "";
-            this.txtProductID.Size = new System.Drawing.Size(229, 36);
-            this.txtProductID.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(192, 58);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Tên món:";
-            // 
-            // txtProductName
-            // 
-            this.txtProductName.BorderRadius = 10;
-            this.txtProductName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProductName.DefaultText = "";
-            this.txtProductName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProductName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProductName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProductName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProductName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProductName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtProductName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProductName.Location = new System.Drawing.Point(269, 58);
-            this.txtProductName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.PasswordChar = '\0';
-            this.txtProductName.PlaceholderText = "";
-            this.txtProductName.SelectedText = "";
-            this.txtProductName.Size = new System.Drawing.Size(229, 36);
-            this.txtProductName.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(183, 122);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 18);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Danh mục:";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(269, 113);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(168, 36);
-            this.guna2ComboBox1.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 173);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 18);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Số lượng:";
-            // 
-            // numQuantity
-            // 
-            this.numQuantity.BackColor = System.Drawing.Color.Transparent;
-            this.numQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numQuantity.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numQuantity.Location = new System.Drawing.Point(74, 161);
-            this.numQuantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.numQuantity.Name = "numQuantity";
-            this.numQuantity.Size = new System.Drawing.Size(71, 41);
-            this.numQuantity.TabIndex = 8;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(200, 173);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 18);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Đơn giá:";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(407, 173);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 18);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "VNĐ";
             // 
             // txtPrice
             // 
@@ -461,31 +259,118 @@ namespace frmLogin
             this.txtPrice.Size = new System.Drawing.Size(141, 36);
             this.txtPrice.TabIndex = 10;
             // 
-            // label8
+            // label7
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(407, 173);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 18);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "VNĐ";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(200, 173);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 18);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Đơn giá:";
             // 
-            // label9
+            // numQuantity
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(468, 122);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 18);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Mô tả";
+            this.numQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.numQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.numQuantity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numQuantity.Location = new System.Drawing.Point(74, 161);
+            this.numQuantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.numQuantity.Name = "numQuantity";
+            this.numQuantity.Size = new System.Drawing.Size(71, 41);
+            this.numQuantity.TabIndex = 8;
             // 
-            // richtxtDescribe
+            // label6
             // 
-            this.richtxtDescribe.Location = new System.Drawing.Point(471, 143);
-            this.richtxtDescribe.Name = "richtxtDescribe";
-            this.richtxtDescribe.Size = new System.Drawing.Size(197, 59);
-            this.richtxtDescribe.TabIndex = 13;
-            this.richtxtDescribe.Text = "";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 173);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 18);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Số lượng:";
+            // 
+            // cbCategory
+            // 
+            this.cbCategory.BackColor = System.Drawing.Color.Transparent;
+            this.cbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbCategory.ItemHeight = 30;
+            this.cbCategory.Location = new System.Drawing.Point(269, 113);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(168, 36);
+            this.cbCategory.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(183, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 18);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Danh mục:";
+            // 
+            // txtProductName
+            // 
+            this.txtProductName.BorderRadius = 10;
+            this.txtProductName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProductName.DefaultText = "";
+            this.txtProductName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtProductName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtProductName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProductName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProductName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProductName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtProductName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProductName.Location = new System.Drawing.Point(269, 58);
+            this.txtProductName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.PasswordChar = '\0';
+            this.txtProductName.PlaceholderText = "";
+            this.txtProductName.SelectedText = "";
+            this.txtProductName.Size = new System.Drawing.Size(229, 36);
+            this.txtProductName.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(192, 58);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 18);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Tên món:";
+            // 
+            // txtProductID
+            // 
+            this.txtProductID.BorderRadius = 10;
+            this.txtProductID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProductID.DefaultText = "";
+            this.txtProductID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtProductID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtProductID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProductID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProductID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProductID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtProductID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProductID.Location = new System.Drawing.Point(269, 14);
+            this.txtProductID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.PasswordChar = '\0';
+            this.txtProductID.PlaceholderText = "";
+            this.txtProductID.SelectedText = "";
+            this.txtProductID.Size = new System.Drawing.Size(229, 36);
+            this.txtProductID.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(161, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Mã sản phẩm:";
             // 
             // grpFunction
             // 
@@ -520,6 +405,122 @@ namespace frmLogin
             this.btnRefreshProduct.TabIndex = 26;
             this.btnRefreshProduct.Text = "Làm mới";
             // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.BorderRadius = 20;
+            this.btnAddProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
+            this.btnAddProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddProduct.Location = new System.Drawing.Point(6, 20);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(140, 46);
+            this.btnAddProduct.TabIndex = 20;
+            this.btnAddProduct.Text = "Thêm";
+            // 
+            // btnEditProduct
+            // 
+            this.btnEditProduct.BorderRadius = 20;
+            this.btnEditProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnEditProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnEditProduct.Image")));
+            this.btnEditProduct.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnEditProduct.Location = new System.Drawing.Point(6, 85);
+            this.btnEditProduct.Name = "btnEditProduct";
+            this.btnEditProduct.Size = new System.Drawing.Size(140, 46);
+            this.btnEditProduct.TabIndex = 21;
+            this.btnEditProduct.Text = "Sửa";
+            // 
+            // btnDeleteAllProduct
+            // 
+            this.btnDeleteAllProduct.BorderColor = System.Drawing.Color.Red;
+            this.btnDeleteAllProduct.BorderRadius = 10;
+            this.btnDeleteAllProduct.BorderThickness = 2;
+            this.btnDeleteAllProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteAllProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteAllProduct.FillColor = System.Drawing.Color.White;
+            this.btnDeleteAllProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteAllProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteAllProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllProduct.Image")));
+            this.btnDeleteAllProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteAllProduct.Location = new System.Drawing.Point(177, 161);
+            this.btnDeleteAllProduct.Name = "btnDeleteAllProduct";
+            this.btnDeleteAllProduct.Size = new System.Drawing.Size(141, 43);
+            this.btnDeleteAllProduct.TabIndex = 25;
+            this.btnDeleteAllProduct.Text = "Xóa tất cả";
+            // 
+            // btnDeleteProduct
+            // 
+            this.btnDeleteProduct.BorderRadius = 20;
+            this.btnDeleteProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            this.btnDeleteProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.Image")));
+            this.btnDeleteProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(6, 161);
+            this.btnDeleteProduct.Name = "btnDeleteProduct";
+            this.btnDeleteProduct.Size = new System.Drawing.Size(140, 46);
+            this.btnDeleteProduct.TabIndex = 22;
+            this.btnDeleteProduct.Text = "Xóa";
+            // 
+            // btnProductDeleted
+            // 
+            this.btnProductDeleted.BorderRadius = 20;
+            this.btnProductDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnProductDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnProductDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnProductDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnProductDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
+            this.btnProductDeleted.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnProductDeleted.ForeColor = System.Drawing.Color.Black;
+            this.btnProductDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnProductDeleted.Image")));
+            this.btnProductDeleted.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnProductDeleted.Location = new System.Drawing.Point(177, 85);
+            this.btnProductDeleted.Name = "btnProductDeleted";
+            this.btnProductDeleted.Size = new System.Drawing.Size(141, 45);
+            this.btnProductDeleted.TabIndex = 24;
+            this.btnProductDeleted.Text = "Món đã xóa";
+            this.btnProductDeleted.Click += new System.EventHandler(this.btnProductDeleted_Click);
+            // 
+            // pbProduct
+            // 
+            this.pbProduct.Location = new System.Drawing.Point(6, 23);
+            this.pbProduct.Name = "pbProduct";
+            this.pbProduct.Size = new System.Drawing.Size(139, 126);
+            this.pbProduct.TabIndex = 0;
+            this.pbProduct.TabStop = false;
+            // 
+            // btnSearchProduct
+            // 
+            this.btnSearchProduct.BorderRadius = 10;
+            this.btnSearchProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchProduct.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSearchProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
+            this.btnSearchProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchProduct.Image")));
+            this.btnSearchProduct.Location = new System.Drawing.Point(617, 294);
+            this.btnSearchProduct.Name = "btnSearchProduct";
+            this.btnSearchProduct.Size = new System.Drawing.Size(95, 37);
+            this.btnSearchProduct.TabIndex = 16;
+            // 
             // frmProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -539,9 +540,9 @@ namespace frmLogin
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProduct)).EndInit();
             this.grpProductInfo.ResumeLayout(false);
             this.grpProductInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             this.grpFunction.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -568,7 +569,7 @@ namespace frmLogin
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2NumericUpDown numQuantity;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox cbCategory;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtProductName;
         private System.Windows.Forms.Label label4;

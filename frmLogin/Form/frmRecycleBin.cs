@@ -10,19 +10,16 @@ using System.Windows.Forms;
 
 namespace frmLogin
 {
-    public partial class frmBillManagement : Form
+    public partial class frmRecycleBin : Form
     {
-        public frmBillManagement()
+        public frmRecycleBin()
         {
             InitializeComponent();
         }
 
-        private void btnShowDetail_Click(object sender, EventArgs e)
+        private void btnExitFomSelectDish_Click(object sender, EventArgs e)
         {
-            frmBillDetail frm = new frmBillDetail();
-            frm.Show();
+            this.Close();
         }
-
-        
     }
 }

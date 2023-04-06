@@ -23,5 +23,11 @@ namespace frmLogin
             string query = "select * from taikhoan";
             dtgvListAccount.DataSource =  DataProvider.ExcecuteSelectCommand(query, null);
         }
+
+        private void btnAccountDeleted_Click(object sender, EventArgs e)
+        {
+            frmRecycleBin frm = new frmRecycleBin();
+            frm.Show();
+        }
     }
 }

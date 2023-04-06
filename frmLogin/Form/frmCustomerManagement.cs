@@ -17,6 +17,10 @@ namespace frmLogin
             InitializeComponent();
         }
 
-        
+        private void btnCustomerDeleted_Click(object sender, EventArgs e)
+        {
+            frmRecycleBin frm = new frmRecycleBin();
+            frm.Show();
+        }
     }
 }

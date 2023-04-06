@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Data Access Layer\DataProvider.cs" />
     <Compile Include="Data Access Layer\Utils.cs" />
+    <Compile Include="Data Tranfer Object\Account.cs" />
     <Compile Include="Data Tranfer Object\NhanVien.cs" />
     <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>
@@ -98,6 +99,12 @@
     <Compile Include="Form\frmBillManagement.Designer.cs">
       <DependentUpon>frmBillManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\frmBillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmBillDetail.Designer.cs">
+      <DependentUpon>frmBillDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +128,12 @@
     </Compile>
     <Compile Include="Form\frmSelectDish.Designer.cs">
       <DependentUpon>frmSelectDish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmRecycleBin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmRecycleBin.Designer.cs">
+      <DependentUpon>frmRecycleBin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSellManagement.cs">
       <SubType>Form</SubType>
@@ -157,6 +170,9 @@
     <EmbeddedResource Include="Form\frmProductManagement.resx">
       <DependentUpon>frmProductManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRecycleBin.resx">
+      <DependentUpon>frmRecycleBin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmTableManagement.resx">
       <DependentUpon>frmTableManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBillDetail.resx">
+      <DependentUpon>frmBillDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>

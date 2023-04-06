@@ -60,7 +60,7 @@ namespace frmLogin
             if (DataProvider.ExecuteScalarCommand(sql, parameters)==1)
             {
                 frmSellManagement login = new frmSellManagement();
-                //frm.ChonTaiKhoan(txtUsername.Text, txtPassword.Text);
+               
                 this.Hide();
                 login.ShowDialog();
                 txtPassword.Clear();

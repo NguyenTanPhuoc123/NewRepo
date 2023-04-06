@@ -39,19 +39,30 @@ namespace frmLogin
             this.cbFillTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchTable = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtgvListTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.grpTableInfo = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTableID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTableName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbLocation = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.grpFunctionTable = new System.Windows.Forms.GroupBox();
+            this.btnRefreshTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditTable = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteAllTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnTableDeleted = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteAllTable = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListTable)).BeginInit();
+            this.grpTableInfo.SuspendLayout();
+            this.grpFunctionTable.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 35);
+            this.label1.Location = new System.Drawing.Point(59, 221);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 0;
@@ -67,7 +78,7 @@ namespace frmLogin
             this.cbSortTable.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbSortTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortTable.ItemHeight = 30;
-            this.cbSortTable.Location = new System.Drawing.Point(15, 56);
+            this.cbSortTable.Location = new System.Drawing.Point(62, 242);
             this.cbSortTable.Name = "cbSortTable";
             this.cbSortTable.Size = new System.Drawing.Size(167, 36);
             this.cbSortTable.TabIndex = 1;
@@ -75,7 +86,7 @@ namespace frmLogin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(717, 35);
+            this.label2.Location = new System.Drawing.Point(817, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 18);
             this.label2.TabIndex = 2;
@@ -91,7 +102,7 @@ namespace frmLogin
             this.cbFillTable.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillTable.ItemHeight = 30;
-            this.cbFillTable.Location = new System.Drawing.Point(720, 57);
+            this.cbFillTable.Location = new System.Drawing.Point(820, 242);
             this.cbFillTable.Name = "cbFillTable";
             this.cbFillTable.Size = new System.Drawing.Size(167, 36);
             this.cbFillTable.TabIndex = 3;
@@ -108,7 +119,7 @@ namespace frmLogin
             this.txtSearchTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchTable.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchTable.Location = new System.Drawing.Point(252, 52);
+            this.txtSearchTable.Location = new System.Drawing.Point(349, 237);
             this.txtSearchTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchTable.Name = "txtSearchTable";
             this.txtSearchTable.PasswordChar = '\0';
@@ -129,7 +140,8 @@ namespace frmLogin
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvListTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvListTable.ColumnHeadersHeight = 4;
+            this.dtgvListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -139,12 +151,12 @@ namespace frmLogin
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTable.Location = new System.Drawing.Point(15, 99);
+            this.dtgvListTable.Location = new System.Drawing.Point(62, 284);
             this.dtgvListTable.Name = "dtgvListTable";
             this.dtgvListTable.RowHeadersVisible = false;
             this.dtgvListTable.RowHeadersWidth = 51;
             this.dtgvListTable.RowTemplate.Height = 24;
-            this.dtgvListTable.Size = new System.Drawing.Size(872, 405);
+            this.dtgvListTable.Size = new System.Drawing.Size(925, 220);
             this.dtgvListTable.TabIndex = 5;
             this.dtgvListTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -157,7 +169,7 @@ namespace frmLogin
             this.dtgvListTable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgvListTable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvListTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgvListTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvListTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListTable.ThemeStyle.HeaderStyle.Height = 4;
             this.dtgvListTable.ThemeStyle.ReadOnly = false;
             this.dtgvListTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -168,22 +180,137 @@ namespace frmLogin
             this.dtgvListTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2Button1
+            // grpTableInfo
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(540, 52);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(99, 41);
-            this.guna2Button1.TabIndex = 6;
+            this.grpTableInfo.Controls.Add(this.cbLocation);
+            this.grpTableInfo.Controls.Add(this.label5);
+            this.grpTableInfo.Controls.Add(this.txtTableName);
+            this.grpTableInfo.Controls.Add(this.label4);
+            this.grpTableInfo.Controls.Add(this.txtTableID);
+            this.grpTableInfo.Controls.Add(this.label3);
+            this.grpTableInfo.Location = new System.Drawing.Point(12, 12);
+            this.grpTableInfo.Name = "grpTableInfo";
+            this.grpTableInfo.Size = new System.Drawing.Size(415, 206);
+            this.grpTableInfo.TabIndex = 12;
+            this.grpTableInfo.TabStop = false;
+            this.grpTableInfo.Text = "Thông tin bàn ăn";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Mã bàn ăn:";
+            // 
+            // txtTableID
+            // 
+            this.txtTableID.BorderRadius = 10;
+            this.txtTableID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTableID.DefaultText = "";
+            this.txtTableID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTableID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTableID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTableID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTableID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTableID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTableID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTableID.Location = new System.Drawing.Point(112, 24);
+            this.txtTableID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTableID.Name = "txtTableID";
+            this.txtTableID.PasswordChar = '\0';
+            this.txtTableID.PlaceholderText = "";
+            this.txtTableID.SelectedText = "";
+            this.txtTableID.Size = new System.Drawing.Size(229, 48);
+            this.txtTableID.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(2, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 18);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Tên bàn ăn:";
+            // 
+            // txtTableName
+            // 
+            this.txtTableName.BorderRadius = 10;
+            this.txtTableName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTableName.DefaultText = "";
+            this.txtTableName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTableName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTableName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTableName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTableName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTableName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTableName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTableName.Location = new System.Drawing.Point(112, 80);
+            this.txtTableName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTableName.Name = "txtTableName";
+            this.txtTableName.PasswordChar = '\0';
+            this.txtTableName.PlaceholderText = "";
+            this.txtTableName.SelectedText = "";
+            this.txtTableName.Size = new System.Drawing.Size(229, 48);
+            this.txtTableName.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(47, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 18);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Vị trí:";
+            // 
+            // cbLocation
+            // 
+            this.cbLocation.BackColor = System.Drawing.Color.Transparent;
+            this.cbLocation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLocation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbLocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbLocation.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbLocation.ItemHeight = 30;
+            this.cbLocation.Location = new System.Drawing.Point(112, 136);
+            this.cbLocation.Name = "cbLocation";
+            this.cbLocation.Size = new System.Drawing.Size(140, 36);
+            this.cbLocation.TabIndex = 5;
+            // 
+            // grpFunctionTable
+            // 
+            this.grpFunctionTable.Controls.Add(this.btnRefreshTable);
+            this.grpFunctionTable.Controls.Add(this.btnAddTable);
+            this.grpFunctionTable.Controls.Add(this.btnEditTable);
+            this.grpFunctionTable.Controls.Add(this.btnDeleteAllTable);
+            this.grpFunctionTable.Controls.Add(this.btnDeleteTable);
+            this.grpFunctionTable.Controls.Add(this.btnTableDeleted);
+            this.grpFunctionTable.Location = new System.Drawing.Point(554, 12);
+            this.grpFunctionTable.Name = "grpFunctionTable";
+            this.grpFunctionTable.Size = new System.Drawing.Size(404, 206);
+            this.grpFunctionTable.TabIndex = 13;
+            this.grpFunctionTable.TabStop = false;
+            this.grpFunctionTable.Text = "Chức năng";
+            // 
+            // btnRefreshTable
+            // 
+            this.btnRefreshTable.BorderRadius = 20;
+            this.btnRefreshTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefreshTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefreshTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRefreshTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRefreshTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnRefreshTable.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRefreshTable.ForeColor = System.Drawing.Color.Black;
+            this.btnRefreshTable.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshTable.Image")));
+            this.btnRefreshTable.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRefreshTable.Location = new System.Drawing.Point(227, 27);
+            this.btnRefreshTable.Name = "btnRefreshTable";
+            this.btnRefreshTable.Size = new System.Drawing.Size(148, 45);
+            this.btnRefreshTable.TabIndex = 27;
+            this.btnRefreshTable.Text = "Làm mới";
             // 
             // btnAddTable
             // 
@@ -198,7 +325,7 @@ namespace frmLogin
             this.btnAddTable.ForeColor = System.Drawing.Color.Black;
             this.btnAddTable.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTable.Image")));
             this.btnAddTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddTable.Location = new System.Drawing.Point(893, 123);
+            this.btnAddTable.Location = new System.Drawing.Point(6, 27);
             this.btnAddTable.Name = "btnAddTable";
             this.btnAddTable.Size = new System.Drawing.Size(148, 45);
             this.btnAddTable.TabIndex = 7;
@@ -216,11 +343,31 @@ namespace frmLogin
             this.btnEditTable.ForeColor = System.Drawing.Color.Black;
             this.btnEditTable.Image = ((System.Drawing.Image)(resources.GetObject("btnEditTable.Image")));
             this.btnEditTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditTable.Location = new System.Drawing.Point(893, 195);
+            this.btnEditTable.Location = new System.Drawing.Point(6, 83);
             this.btnEditTable.Name = "btnEditTable";
             this.btnEditTable.Size = new System.Drawing.Size(148, 45);
             this.btnEditTable.TabIndex = 8;
             this.btnEditTable.Text = "Sửa";
+            // 
+            // btnDeleteAllTable
+            // 
+            this.btnDeleteAllTable.BorderColor = System.Drawing.Color.Red;
+            this.btnDeleteAllTable.BorderRadius = 10;
+            this.btnDeleteAllTable.BorderThickness = 2;
+            this.btnDeleteAllTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteAllTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteAllTable.FillColor = System.Drawing.Color.White;
+            this.btnDeleteAllTable.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteAllTable.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteAllTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllTable.Image")));
+            this.btnDeleteAllTable.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteAllTable.Location = new System.Drawing.Point(227, 154);
+            this.btnDeleteAllTable.Name = "btnDeleteAllTable";
+            this.btnDeleteAllTable.Size = new System.Drawing.Size(148, 43);
+            this.btnDeleteAllTable.TabIndex = 11;
+            this.btnDeleteAllTable.Text = "Xóa tất cả";
             // 
             // btnDeleteTable
             // 
@@ -234,7 +381,7 @@ namespace frmLogin
             this.btnDeleteTable.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteTable.Image")));
             this.btnDeleteTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteTable.Location = new System.Drawing.Point(893, 261);
+            this.btnDeleteTable.Location = new System.Drawing.Point(0, 154);
             this.btnDeleteTable.Name = "btnDeleteTable";
             this.btnDeleteTable.Size = new System.Drawing.Size(148, 45);
             this.btnDeleteTable.TabIndex = 9;
@@ -252,42 +399,37 @@ namespace frmLogin
             this.btnTableDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnTableDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnTableDeleted.Image")));
             this.btnTableDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTableDeleted.Location = new System.Drawing.Point(893, 352);
+            this.btnTableDeleted.Location = new System.Drawing.Point(227, 83);
             this.btnTableDeleted.Name = "btnTableDeleted";
             this.btnTableDeleted.Size = new System.Drawing.Size(148, 45);
             this.btnTableDeleted.TabIndex = 10;
             this.btnTableDeleted.Text = "Bàn đã xóa";
+            this.btnTableDeleted.Click += new System.EventHandler(this.btnTableDeleted_Click);
             // 
-            // btnDeleteAllTable
+            // guna2Button1
             // 
-            this.btnDeleteAllTable.BorderColor = System.Drawing.Color.Red;
-            this.btnDeleteAllTable.BorderRadius = 10;
-            this.btnDeleteAllTable.BorderThickness = 2;
-            this.btnDeleteAllTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAllTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAllTable.FillColor = System.Drawing.Color.White;
-            this.btnDeleteAllTable.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAllTable.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAllTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllTable.Image")));
-            this.btnDeleteAllTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllTable.Location = new System.Drawing.Point(893, 444);
-            this.btnDeleteAllTable.Name = "btnDeleteAllTable";
-            this.btnDeleteAllTable.Size = new System.Drawing.Size(148, 43);
-            this.btnDeleteAllTable.TabIndex = 11;
-            this.btnDeleteAllTable.Text = "Xóa tất cả";
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(637, 237);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(99, 41);
+            this.guna2Button1.TabIndex = 6;
             // 
             // frmTableManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 516);
-            this.Controls.Add(this.btnDeleteAllTable);
-            this.Controls.Add(this.btnTableDeleted);
-            this.Controls.Add(this.btnDeleteTable);
-            this.Controls.Add(this.btnEditTable);
-            this.Controls.Add(this.btnAddTable);
+            this.Controls.Add(this.grpFunctionTable);
+            this.Controls.Add(this.grpTableInfo);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.dtgvListTable);
             this.Controls.Add(this.txtSearchTable);
@@ -300,6 +442,9 @@ namespace frmLogin
             this.Name = "frmTableManagement";
             this.Text = "frmTableManagement";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListTable)).EndInit();
+            this.grpTableInfo.ResumeLayout(false);
+            this.grpTableInfo.PerformLayout();
+            this.grpFunctionTable.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,5 +464,14 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2Button btnDeleteTable;
         private Guna.UI2.WinForms.Guna2Button btnTableDeleted;
         private Guna.UI2.WinForms.Guna2Button btnDeleteAllTable;
+        private System.Windows.Forms.GroupBox grpTableInfo;
+        private Guna.UI2.WinForms.Guna2ComboBox cbLocation;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox txtTableName;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2TextBox txtTableID;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox grpFunctionTable;
+        private Guna.UI2.WinForms.Guna2Button btnRefreshTable;
     }
 }

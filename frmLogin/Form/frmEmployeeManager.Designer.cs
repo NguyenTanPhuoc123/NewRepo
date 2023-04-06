@@ -30,22 +30,24 @@ namespace frmLogin
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeManager));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeManager));
             this.label1 = new System.Windows.Forms.Label();
             this.cbSortEmployee = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchEmployee = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearchEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.cbFillEmployee = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnAddEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEditEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListEmployee = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.colEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmployeeFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBirthDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNumberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colWorkingDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnDeleteAllEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEmployeeDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.grpEmployeeInfo = new System.Windows.Forms.GroupBox();
             this.richtxtAddress = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -67,14 +69,12 @@ namespace frmLogin
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.grpFunctionEmployee = new System.Windows.Forms.GroupBox();
             this.btnRefreshEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.colEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEmployeeFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBirthDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNumberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colWorkingDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAddEmployee = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEditEmployee = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteAllEmployee = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteEmployee = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEmployeeDeleted = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearchEmployee = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListEmployee)).BeginInit();
             this.grpEmployeeInfo.SuspendLayout();
             this.grpFunctionEmployee.SuspendLayout();
@@ -124,22 +124,6 @@ namespace frmLogin
             this.txtSearchEmployee.Size = new System.Drawing.Size(263, 36);
             this.txtSearchEmployee.TabIndex = 11;
             // 
-            // btnSearchEmployee
-            // 
-            this.btnSearchEmployee.BorderRadius = 10;
-            this.btnSearchEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearchEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchEmployee.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSearchEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSearchEmployee.ForeColor = System.Drawing.Color.White;
-            this.btnSearchEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchEmployee.Image")));
-            this.btnSearchEmployee.Location = new System.Drawing.Point(652, 269);
-            this.btnSearchEmployee.Name = "btnSearchEmployee";
-            this.btnSearchEmployee.Size = new System.Drawing.Size(72, 36);
-            this.btnSearchEmployee.TabIndex = 12;
-            // 
             // cbFillEmployee
             // 
             this.cbFillEmployee.BackColor = System.Drawing.Color.Transparent;
@@ -154,60 +138,6 @@ namespace frmLogin
             this.cbFillEmployee.Name = "cbFillEmployee";
             this.cbFillEmployee.Size = new System.Drawing.Size(163, 36);
             this.cbFillEmployee.TabIndex = 13;
-            // 
-            // btnAddEmployee
-            // 
-            this.btnAddEmployee.BorderRadius = 20;
-            this.btnAddEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
-            this.btnAddEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAddEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnAddEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmployee.Image")));
-            this.btnAddEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddEmployee.Location = new System.Drawing.Point(8, 27);
-            this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(113, 45);
-            this.btnAddEmployee.TabIndex = 14;
-            this.btnAddEmployee.Text = "Thêm";
-            // 
-            // btnEditEmployee
-            // 
-            this.btnEditEmployee.BorderRadius = 20;
-            this.btnEditEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
-            this.btnEditEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEditEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnEditEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmployee.Image")));
-            this.btnEditEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditEmployee.Location = new System.Drawing.Point(6, 78);
-            this.btnEditEmployee.Name = "btnEditEmployee";
-            this.btnEditEmployee.Size = new System.Drawing.Size(115, 45);
-            this.btnEditEmployee.TabIndex = 15;
-            this.btnEditEmployee.Text = "Sửa";
-            // 
-            // btnDeleteEmployee
-            // 
-            this.btnDeleteEmployee.BorderRadius = 20;
-            this.btnDeleteEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            this.btnDeleteEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteEmployee.Image")));
-            this.btnDeleteEmployee.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnDeleteEmployee.Location = new System.Drawing.Point(8, 149);
-            this.btnDeleteEmployee.Name = "btnDeleteEmployee";
-            this.btnDeleteEmployee.Size = new System.Drawing.Size(113, 45);
-            this.btnDeleteEmployee.TabIndex = 16;
-            this.btnDeleteEmployee.Text = "Xóa";
             // 
             // dtgvListEmployee
             // 
@@ -270,6 +200,62 @@ namespace frmLogin
             this.dtgvListEmployee.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListEmployee.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // colEmployeeID
+            // 
+            this.colEmployeeID.DataPropertyName = "MANV";
+            this.colEmployeeID.HeaderText = "Mã nhân viên";
+            this.colEmployeeID.MinimumWidth = 6;
+            this.colEmployeeID.Name = "colEmployeeID";
+            // 
+            // colEmployeeFullName
+            // 
+            this.colEmployeeFullName.DataPropertyName = "TENNV";
+            this.colEmployeeFullName.HeaderText = "Họ tên";
+            this.colEmployeeFullName.MinimumWidth = 6;
+            this.colEmployeeFullName.Name = "colEmployeeFullName";
+            // 
+            // colBirthDay
+            // 
+            this.colBirthDay.DataPropertyName = "NGAYSINH";
+            this.colBirthDay.HeaderText = "Ngày sinh";
+            this.colBirthDay.MinimumWidth = 6;
+            this.colBirthDay.Name = "colBirthDay";
+            // 
+            // colSex
+            // 
+            this.colSex.DataPropertyName = "GIOITINH";
+            this.colSex.HeaderText = "Giới tính";
+            this.colSex.MinimumWidth = 6;
+            this.colSex.Name = "colSex";
+            // 
+            // colNumberPhone
+            // 
+            this.colNumberPhone.DataPropertyName = "SODIENTHOAI";
+            this.colNumberPhone.HeaderText = "Số điện thoai";
+            this.colNumberPhone.MinimumWidth = 6;
+            this.colNumberPhone.Name = "colNumberPhone";
+            // 
+            // colAddress
+            // 
+            this.colAddress.DataPropertyName = "DIACHI";
+            this.colAddress.HeaderText = "Địa chỉ";
+            this.colAddress.MinimumWidth = 6;
+            this.colAddress.Name = "colAddress";
+            // 
+            // colWorkingDay
+            // 
+            this.colWorkingDay.DataPropertyName = "NGAYVAOLAM";
+            this.colWorkingDay.HeaderText = "Ngày vào làm";
+            this.colWorkingDay.MinimumWidth = 6;
+            this.colWorkingDay.Name = "colWorkingDay";
+            // 
+            // colPosition
+            // 
+            this.colPosition.DataPropertyName = "CHUCVU";
+            this.colPosition.HeaderText = "Chức vụ";
+            this.colPosition.MinimumWidth = 6;
+            this.colPosition.Name = "colPosition";
+            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
@@ -278,44 +264,6 @@ namespace frmLogin
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(25, 18);
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "Lọc";
-            // 
-            // btnDeleteAllEmployee
-            // 
-            this.btnDeleteAllEmployee.BorderColor = System.Drawing.Color.Red;
-            this.btnDeleteAllEmployee.BorderRadius = 10;
-            this.btnDeleteAllEmployee.BorderThickness = 2;
-            this.btnDeleteAllEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAllEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAllEmployee.FillColor = System.Drawing.Color.White;
-            this.btnDeleteAllEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAllEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAllEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllEmployee.Image")));
-            this.btnDeleteAllEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllEmployee.Location = new System.Drawing.Point(157, 151);
-            this.btnDeleteAllEmployee.Name = "btnDeleteAllEmployee";
-            this.btnDeleteAllEmployee.Size = new System.Drawing.Size(159, 43);
-            this.btnDeleteAllEmployee.TabIndex = 27;
-            this.btnDeleteAllEmployee.Text = "Xóa tất cả";
-            // 
-            // btnEmployeeDeleted
-            // 
-            this.btnEmployeeDeleted.BorderRadius = 20;
-            this.btnEmployeeDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEmployeeDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEmployeeDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEmployeeDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEmployeeDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
-            this.btnEmployeeDeleted.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEmployeeDeleted.ForeColor = System.Drawing.Color.Black;
-            this.btnEmployeeDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeDeleted.Image")));
-            this.btnEmployeeDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEmployeeDeleted.Location = new System.Drawing.Point(157, 78);
-            this.btnEmployeeDeleted.Name = "btnEmployeeDeleted";
-            this.btnEmployeeDeleted.Size = new System.Drawing.Size(160, 45);
-            this.btnEmployeeDeleted.TabIndex = 26;
-            this.btnEmployeeDeleted.Text = "Nhân viên đã xóa";
             // 
             // grpEmployeeInfo
             // 
@@ -582,61 +530,114 @@ namespace frmLogin
             this.btnRefreshEmployee.TabIndex = 28;
             this.btnRefreshEmployee.Text = "Làm mới";
             // 
-            // colEmployeeID
+            // btnAddEmployee
             // 
-            this.colEmployeeID.DataPropertyName = "MANV";
-            this.colEmployeeID.HeaderText = "Mã nhân viên";
-            this.colEmployeeID.MinimumWidth = 6;
-            this.colEmployeeID.Name = "colEmployeeID";
+            this.btnAddEmployee.BorderRadius = 20;
+            this.btnAddEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            this.btnAddEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddEmployee.ForeColor = System.Drawing.Color.Black;
+            this.btnAddEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmployee.Image")));
+            this.btnAddEmployee.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddEmployee.Location = new System.Drawing.Point(8, 27);
+            this.btnAddEmployee.Name = "btnAddEmployee";
+            this.btnAddEmployee.Size = new System.Drawing.Size(113, 45);
+            this.btnAddEmployee.TabIndex = 14;
+            this.btnAddEmployee.Text = "Thêm";
             // 
-            // colEmployeeFullName
+            // btnEditEmployee
             // 
-            this.colEmployeeFullName.DataPropertyName = "TENNV";
-            this.colEmployeeFullName.HeaderText = "Họ tên";
-            this.colEmployeeFullName.MinimumWidth = 6;
-            this.colEmployeeFullName.Name = "colEmployeeFullName";
+            this.btnEditEmployee.BorderRadius = 20;
+            this.btnEditEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.btnEditEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEditEmployee.ForeColor = System.Drawing.Color.Black;
+            this.btnEditEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmployee.Image")));
+            this.btnEditEmployee.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnEditEmployee.Location = new System.Drawing.Point(6, 78);
+            this.btnEditEmployee.Name = "btnEditEmployee";
+            this.btnEditEmployee.Size = new System.Drawing.Size(115, 45);
+            this.btnEditEmployee.TabIndex = 15;
+            this.btnEditEmployee.Text = "Sửa";
             // 
-            // colBirthDay
+            // btnDeleteAllEmployee
             // 
-            this.colBirthDay.DataPropertyName = "NGAYSINH";
-            this.colBirthDay.HeaderText = "Ngày sinh";
-            this.colBirthDay.MinimumWidth = 6;
-            this.colBirthDay.Name = "colBirthDay";
+            this.btnDeleteAllEmployee.BorderColor = System.Drawing.Color.Red;
+            this.btnDeleteAllEmployee.BorderRadius = 10;
+            this.btnDeleteAllEmployee.BorderThickness = 2;
+            this.btnDeleteAllEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteAllEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteAllEmployee.FillColor = System.Drawing.Color.White;
+            this.btnDeleteAllEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteAllEmployee.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteAllEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllEmployee.Image")));
+            this.btnDeleteAllEmployee.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteAllEmployee.Location = new System.Drawing.Point(157, 151);
+            this.btnDeleteAllEmployee.Name = "btnDeleteAllEmployee";
+            this.btnDeleteAllEmployee.Size = new System.Drawing.Size(159, 43);
+            this.btnDeleteAllEmployee.TabIndex = 27;
+            this.btnDeleteAllEmployee.Text = "Xóa tất cả";
             // 
-            // colSex
+            // btnDeleteEmployee
             // 
-            this.colSex.DataPropertyName = "GIOITINH";
-            this.colSex.HeaderText = "Giới tính";
-            this.colSex.MinimumWidth = 6;
-            this.colSex.Name = "colSex";
+            this.btnDeleteEmployee.BorderRadius = 20;
+            this.btnDeleteEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            this.btnDeleteEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDeleteEmployee.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteEmployee.Image")));
+            this.btnDeleteEmployee.ImageSize = new System.Drawing.Size(45, 45);
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(8, 149);
+            this.btnDeleteEmployee.Name = "btnDeleteEmployee";
+            this.btnDeleteEmployee.Size = new System.Drawing.Size(113, 45);
+            this.btnDeleteEmployee.TabIndex = 16;
+            this.btnDeleteEmployee.Text = "Xóa";
             // 
-            // colNumberPhone
+            // btnEmployeeDeleted
             // 
-            this.colNumberPhone.DataPropertyName = "SODIENTHOAI";
-            this.colNumberPhone.HeaderText = "Số điện thoai";
-            this.colNumberPhone.MinimumWidth = 6;
-            this.colNumberPhone.Name = "colNumberPhone";
+            this.btnEmployeeDeleted.BorderRadius = 20;
+            this.btnEmployeeDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEmployeeDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEmployeeDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEmployeeDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEmployeeDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
+            this.btnEmployeeDeleted.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEmployeeDeleted.ForeColor = System.Drawing.Color.Black;
+            this.btnEmployeeDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeDeleted.Image")));
+            this.btnEmployeeDeleted.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnEmployeeDeleted.Location = new System.Drawing.Point(157, 78);
+            this.btnEmployeeDeleted.Name = "btnEmployeeDeleted";
+            this.btnEmployeeDeleted.Size = new System.Drawing.Size(160, 45);
+            this.btnEmployeeDeleted.TabIndex = 26;
+            this.btnEmployeeDeleted.Text = "Nhân viên đã xóa";
+            this.btnEmployeeDeleted.Click += new System.EventHandler(this.btnEmployeeDeleted_Click);
             // 
-            // colAddress
+            // btnSearchEmployee
             // 
-            this.colAddress.DataPropertyName = "DIACHI";
-            this.colAddress.HeaderText = "Địa chỉ";
-            this.colAddress.MinimumWidth = 6;
-            this.colAddress.Name = "colAddress";
-            // 
-            // colWorkingDay
-            // 
-            this.colWorkingDay.DataPropertyName = "NGAYVAOLAM";
-            this.colWorkingDay.HeaderText = "Ngày vào làm";
-            this.colWorkingDay.MinimumWidth = 6;
-            this.colWorkingDay.Name = "colWorkingDay";
-            // 
-            // colPosition
-            // 
-            this.colPosition.DataPropertyName = "CHUCVU";
-            this.colPosition.HeaderText = "Chức vụ";
-            this.colPosition.MinimumWidth = 6;
-            this.colPosition.Name = "colPosition";
+            this.btnSearchEmployee.BorderRadius = 10;
+            this.btnSearchEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchEmployee.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSearchEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearchEmployee.ForeColor = System.Drawing.Color.White;
+            this.btnSearchEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchEmployee.Image")));
+            this.btnSearchEmployee.Location = new System.Drawing.Point(652, 269);
+            this.btnSearchEmployee.Name = "btnSearchEmployee";
+            this.btnSearchEmployee.Size = new System.Drawing.Size(72, 36);
+            this.btnSearchEmployee.TabIndex = 12;
             // 
             // frmEmployeeManager
             // 

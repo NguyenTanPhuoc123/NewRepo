@@ -281,7 +281,7 @@ namespace frmLogin
             this.tstlblPosition.Name = "tstlblPosition";
             this.tstlblPosition.Size = new System.Drawing.Size(67, 17);
             this.tstlblPosition.Text = "Nhân viên: ";
-            this.tstlblPosition.Click += new System.EventHandler(this.tstlblPosition_Click);
+            
             // 
             // tsslblName
             // 
@@ -430,7 +430,7 @@ namespace frmLogin
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSellManagement";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSellManagement_FormClosing);
-            this.Load += new System.EventHandler(this.frmSellManagement_Load);
+          
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSale)).EndInit();
             this.panel1.ResumeLayout(false);
