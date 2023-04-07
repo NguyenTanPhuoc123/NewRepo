@@ -221,7 +221,7 @@ namespace frmLogin
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(279, 32);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(307, 69);
+            this.lblTitle.Size = new System.Drawing.Size(250, 55);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "Trang chủ";
             // 
@@ -244,13 +244,13 @@ namespace frmLogin
             this.label1.ForeColor = System.Drawing.Color.Snow;
             this.label1.Location = new System.Drawing.Point(51, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(907, 91);
+            this.label1.Size = new System.Drawing.Size(727, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "ℂỬ𝔸 ℍÀℕ𝔾 Ăℕ 𝕍Ặ𝕋 𝕋𝕀𝕄𝕆";
             // 
             // frmQuanLyAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1238, 702);
             this.Controls.Add(this.panelMain);

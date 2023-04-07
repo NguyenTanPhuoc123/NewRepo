@@ -65,7 +65,6 @@ namespace frmLogin
             this.txtNumberPhoneCustomer = new Guna.UI2.WinForms.Guna2TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtMoneyPay = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnAccept = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).BeginInit();
             this.SuspendLayout();
@@ -381,22 +380,10 @@ namespace frmLogin
             this.txtMoneyPay.PlaceholderText = "";
             this.txtMoneyPay.SelectedText = "";
             // 
-            // btnAccept
-            // 
-            this.btnAccept.BorderRadius = 20;
-            this.btnAccept.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAccept.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAccept.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAccept.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.btnAccept, "btnAccept");
-            this.btnAccept.ForeColor = System.Drawing.Color.White;
-            this.btnAccept.Name = "btnAccept";
-            // 
             // frmPay
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.txtMoneyPay);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.txtNumberPhoneCustomer);
@@ -470,7 +457,6 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2TextBox txtNumberPhoneCustomer;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2TextBox txtMoneyPay;
-        private Guna.UI2.WinForms.Guna2Button btnAccept;
         private System.Windows.Forms.Button btnExitFomPay;
     }
 }

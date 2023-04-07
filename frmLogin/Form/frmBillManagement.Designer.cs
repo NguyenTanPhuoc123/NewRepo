@@ -84,12 +84,13 @@ namespace frmLogin
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListCustomer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListCustomer.Location = new System.Drawing.Point(15, 281);
+            this.dtgvListCustomer.Location = new System.Drawing.Point(11, 228);
+            this.dtgvListCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtgvListCustomer.Name = "dtgvListCustomer";
             this.dtgvListCustomer.RowHeadersVisible = false;
             this.dtgvListCustomer.RowHeadersWidth = 51;
             this.dtgvListCustomer.RowTemplate.Height = 24;
-            this.dtgvListCustomer.Size = new System.Drawing.Size(1155, 234);
+            this.dtgvListCustomer.Size = new System.Drawing.Size(866, 190);
             this.dtgvListCustomer.TabIndex = 39;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -124,13 +125,13 @@ namespace frmLogin
             this.txtSearchBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchBill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchBill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBill.Location = new System.Drawing.Point(331, 238);
-            this.txtSearchBill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearchBill.Location = new System.Drawing.Point(248, 193);
+            this.txtSearchBill.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSearchBill.Name = "txtSearchBill";
             this.txtSearchBill.PasswordChar = '\0';
             this.txtSearchBill.PlaceholderText = "";
             this.txtSearchBill.SelectedText = "";
-            this.txtSearchBill.Size = new System.Drawing.Size(351, 36);
+            this.txtSearchBill.Size = new System.Drawing.Size(263, 29);
             this.txtSearchBill.TabIndex = 37;
             // 
             // cbFillBill
@@ -143,17 +144,19 @@ namespace frmLogin
             this.cbFillBill.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillBill.ItemHeight = 30;
-            this.cbFillBill.Location = new System.Drawing.Point(999, 239);
+            this.cbFillBill.Location = new System.Drawing.Point(749, 194);
+            this.cbFillBill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbFillBill.Name = "cbFillBill";
-            this.cbFillBill.Size = new System.Drawing.Size(171, 36);
+            this.cbFillBill.Size = new System.Drawing.Size(129, 36);
             this.cbFillBill.TabIndex = 36;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(996, 219);
+            this.label2.Location = new System.Drawing.Point(747, 178);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 17);
+            this.label2.Size = new System.Drawing.Size(25, 13);
             this.label2.TabIndex = 35;
             this.label2.Text = "Lọc";
             // 
@@ -167,17 +170,19 @@ namespace frmLogin
             this.cbSortBill.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbSortBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortBill.ItemHeight = 30;
-            this.cbSortBill.Location = new System.Drawing.Point(15, 239);
+            this.cbSortBill.Location = new System.Drawing.Point(11, 194);
+            this.cbSortBill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbSortBill.Name = "cbSortBill";
-            this.cbSortBill.Size = new System.Drawing.Size(146, 36);
+            this.cbSortBill.Size = new System.Drawing.Size(110, 36);
             this.cbSortBill.TabIndex = 34;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 219);
+            this.label1.Location = new System.Drawing.Point(9, 178);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 33;
             this.label1.Text = "Sắp xếp";
             // 
@@ -190,10 +195,11 @@ namespace frmLogin
             this.btnShowDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnShowDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnShowDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnShowDetail.ForeColor = System.Drawing.Color.White;
-            this.btnShowDetail.Location = new System.Drawing.Point(873, 172);
+            this.btnShowDetail.ForeColor = System.Drawing.Color.Black;
+            this.btnShowDetail.Location = new System.Drawing.Point(655, 140);
+            this.btnShowDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnShowDetail.Name = "btnShowDetail";
-            this.btnShowDetail.Size = new System.Drawing.Size(154, 44);
+            this.btnShowDetail.Size = new System.Drawing.Size(116, 36);
             this.btnShowDetail.TabIndex = 40;
             this.btnShowDetail.Text = "Xem chi tiết";
             this.btnShowDetail.Click += new System.EventHandler(this.btnShowDetail_Click);
@@ -209,9 +215,10 @@ namespace frmLogin
             this.btnSearchBill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearchBill.ForeColor = System.Drawing.Color.White;
             this.btnSearchBill.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchBill.Image")));
-            this.btnSearchBill.Location = new System.Drawing.Point(688, 238);
+            this.btnSearchBill.Location = new System.Drawing.Point(516, 193);
+            this.btnSearchBill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearchBill.Name = "btnSearchBill";
-            this.btnSearchBill.Size = new System.Drawing.Size(105, 36);
+            this.btnSearchBill.Size = new System.Drawing.Size(79, 29);
             this.btnSearchBill.TabIndex = 38;
             // 
             // grpBillInfo
@@ -228,9 +235,11 @@ namespace frmLogin
             this.grpBillInfo.Controls.Add(this.label4);
             this.grpBillInfo.Controls.Add(this.txtBillID);
             this.grpBillInfo.Controls.Add(this.label3);
-            this.grpBillInfo.Location = new System.Drawing.Point(12, 12);
+            this.grpBillInfo.Location = new System.Drawing.Point(9, 10);
+            this.grpBillInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpBillInfo.Name = "grpBillInfo";
-            this.grpBillInfo.Size = new System.Drawing.Size(855, 204);
+            this.grpBillInfo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBillInfo.Size = new System.Drawing.Size(641, 166);
             this.grpBillInfo.TabIndex = 41;
             this.grpBillInfo.TabStop = false;
             this.grpBillInfo.Text = "Thông tin hóa đơn";
@@ -245,17 +254,19 @@ namespace frmLogin
             this.cbStatusCheckOut.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbStatusCheckOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbStatusCheckOut.ItemHeight = 30;
-            this.cbStatusCheckOut.Location = new System.Drawing.Point(645, 141);
+            this.cbStatusCheckOut.Location = new System.Drawing.Point(484, 115);
+            this.cbStatusCheckOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbStatusCheckOut.Name = "cbStatusCheckOut";
-            this.cbStatusCheckOut.Size = new System.Drawing.Size(143, 36);
+            this.cbStatusCheckOut.Size = new System.Drawing.Size(108, 36);
             this.cbStatusCheckOut.TabIndex = 11;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(465, 160);
+            this.label8.Location = new System.Drawing.Point(349, 130);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(149, 17);
+            this.label8.Size = new System.Drawing.Size(112, 13);
             this.label8.TabIndex = 10;
             this.label8.Text = "Trạng thái thanh toán:";
             // 
@@ -271,21 +282,22 @@ namespace frmLogin
             this.txtTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTable.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTable.Location = new System.Drawing.Point(645, 71);
-            this.txtTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTable.Location = new System.Drawing.Point(484, 58);
+            this.txtTable.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTable.Name = "txtTable";
             this.txtTable.PasswordChar = '\0';
             this.txtTable.PlaceholderText = "";
             this.txtTable.SelectedText = "";
-            this.txtTable.Size = new System.Drawing.Size(204, 41);
+            this.txtTable.Size = new System.Drawing.Size(153, 33);
             this.txtTable.TabIndex = 9;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(557, 84);
+            this.label7.Location = new System.Drawing.Point(418, 68);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 17);
+            this.label7.Size = new System.Drawing.Size(44, 13);
             this.label7.TabIndex = 8;
             this.label7.Text = "Số bàn:";
             // 
@@ -301,43 +313,47 @@ namespace frmLogin
             this.txtCustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCustomerName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCustomerName.Location = new System.Drawing.Point(645, 22);
-            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCustomerName.Location = new System.Drawing.Point(484, 18);
+            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.PasswordChar = '\0';
             this.txtCustomerName.PlaceholderText = "";
             this.txtCustomerName.SelectedText = "";
-            this.txtCustomerName.Size = new System.Drawing.Size(204, 41);
+            this.txtCustomerName.Size = new System.Drawing.Size(153, 33);
             this.txtCustomerName.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(526, 33);
+            this.label6.Location = new System.Drawing.Point(394, 27);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 17);
+            this.label6.Size = new System.Drawing.Size(68, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "Khách hàng:";
             // 
             // dtpInvoiceDate
             // 
             this.dtpInvoiceDate.Checked = true;
+            this.dtpInvoiceDate.FillColor = System.Drawing.Color.GreenYellow;
             this.dtpInvoiceDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpInvoiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpInvoiceDate.Location = new System.Drawing.Point(99, 152);
+            this.dtpInvoiceDate.Location = new System.Drawing.Point(75, 122);
+            this.dtpInvoiceDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpInvoiceDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpInvoiceDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpInvoiceDate.Name = "dtpInvoiceDate";
-            this.dtpInvoiceDate.Size = new System.Drawing.Size(200, 36);
+            this.dtpInvoiceDate.Size = new System.Drawing.Size(150, 29);
             this.dtpInvoiceDate.TabIndex = 5;
             this.dtpInvoiceDate.Value = new System.DateTime(2023, 4, 6, 10, 13, 44, 377);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 160);
+            this.label5.Location = new System.Drawing.Point(19, 130);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Ngày lập:";
             // 
@@ -353,21 +369,22 @@ namespace frmLogin
             this.txtEmployeeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmployeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeName.Location = new System.Drawing.Point(99, 71);
-            this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmployeeName.Location = new System.Drawing.Point(74, 58);
+            this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.PasswordChar = '\0';
             this.txtEmployeeName.PlaceholderText = "";
             this.txtEmployeeName.SelectedText = "";
-            this.txtEmployeeName.Size = new System.Drawing.Size(204, 41);
+            this.txtEmployeeName.Size = new System.Drawing.Size(153, 33);
             this.txtEmployeeName.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 84);
+            this.label4.Location = new System.Drawing.Point(13, 68);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 17);
+            this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 2;
             this.label4.Text = "Nhân viên:";
             // 
@@ -383,21 +400,22 @@ namespace frmLogin
             this.txtBillID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBillID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBillID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBillID.Location = new System.Drawing.Point(99, 22);
-            this.txtBillID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBillID.Location = new System.Drawing.Point(74, 18);
+            this.txtBillID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtBillID.Name = "txtBillID";
             this.txtBillID.PasswordChar = '\0';
             this.txtBillID.PlaceholderText = "";
             this.txtBillID.SelectedText = "";
-            this.txtBillID.Size = new System.Drawing.Size(204, 41);
+            this.txtBillID.Size = new System.Drawing.Size(153, 33);
             this.txtBillID.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 33);
+            this.label3.Location = new System.Drawing.Point(4, 27);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 17);
+            this.label3.Size = new System.Drawing.Size(68, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã hóa đơn:";
             // 
@@ -415,18 +433,19 @@ namespace frmLogin
             this.btnEditBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEditBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnEditBill.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEditBill.ForeColor = System.Drawing.Color.White;
-            this.btnEditBill.Location = new System.Drawing.Point(873, 122);
+            this.btnEditBill.ForeColor = System.Drawing.Color.Black;
+            this.btnEditBill.Location = new System.Drawing.Point(655, 100);
+            this.btnEditBill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditBill.Name = "btnEditBill";
-            this.btnEditBill.Size = new System.Drawing.Size(154, 44);
+            this.btnEditBill.Size = new System.Drawing.Size(116, 36);
             this.btnEditBill.TabIndex = 42;
             this.btnEditBill.Text = "Sửa";
             // 
             // frmBillManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 516);
+            this.ClientSize = new System.Drawing.Size(886, 419);
             this.Controls.Add(this.btnEditBill);
             this.Controls.Add(this.grpBillInfo);
             this.Controls.Add(this.btnShowDetail);
@@ -438,6 +457,7 @@ namespace frmLogin
             this.Controls.Add(this.cbSortBill);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmBillManagement";
             this.Text = "frmBillManagement";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListCustomer)).EndInit();

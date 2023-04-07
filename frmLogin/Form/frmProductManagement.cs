@@ -24,6 +24,12 @@ namespace frmLogin
         {
             frmRecycleBin frm = new frmRecycleBin();
             frm.Show();
+            
+        }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
