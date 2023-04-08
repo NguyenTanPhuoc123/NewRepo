@@ -54,12 +54,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Layer\AccountDAF.cs" />
+    <Compile Include="Data Access Layer\BillDetailDAF.cs" />
+    <Compile Include="Data Access Layer\BillDAF.cs" />
+    <Compile Include="Data Access Layer\CustomerDAF.cs" />
     <Compile Include="Data Access Layer\DataProvider.cs" />
+    <Compile Include="Data Access Layer\DiscountDAF.cs" />
     <Compile Include="Data Access Layer\EmployeeDAF.cs" />
+    <Compile Include="Data Access Layer\ProductDAF.cs" />
+    <Compile Include="Data Access Layer\TableDAF.cs" />
     <Compile Include="Data Access Layer\TypeAccountDAF.cs" />
     <Compile Include="Data Access Layer\Utils.cs" />
     <Compile Include="Data Tranfer Object\Account.cs" />
+    <Compile Include="Data Tranfer Object\Bill.cs" />
+    <Compile Include="Data Tranfer Object\BillDetail.cs" />
+    <Compile Include="Data Tranfer Object\Customer.cs" />
+    <Compile Include="Data Tranfer Object\Discount.cs" />
     <Compile Include="Data Tranfer Object\Employee.cs" />
+    <Compile Include="Data Tranfer Object\Product.cs" />
+    <Compile Include="Data Tranfer Object\Table.cs" />
     <Compile Include="Data Tranfer Object\TypeAccount.cs" />
     <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>

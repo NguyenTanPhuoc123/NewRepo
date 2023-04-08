@@ -21,5 +21,11 @@ namespace frmLogin
         {
             this.Close();
         }
+
+        private void txtMoneyPay_TextChanged(object sender, EventArgs e)
+        {
+            lblMoneyReceive.Text = txtMoneyPay.Text;
+            //lblMoneyPay.Text = (Convert.ToInt32(lblMoneyReceive.Text) - Convert.ToInt32(lblTotal.Text)).ToString();
+        }
     }
 }

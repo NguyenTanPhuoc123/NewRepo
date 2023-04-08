@@ -56,14 +56,8 @@ namespace frmLogin
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            string sql = "select count(*) from taikhoan where TENDANGNHAP = @username AND MATKHAU = @password";
-            SqlParameter[] parameters = new SqlParameter[2];
-            parameters[0] = new SqlParameter("@username", txtUsername.Text);
-            parameters[1] = new SqlParameter("@password", Utils.GetMD5(txtPassword.Text));
-
-         
-
-            if (DataProvider.ExecuteScalarCommand(sql, parameters)==1)
+            
+            if(AccountDAF.Instance.ktDangNhap(txtUsername.Text, txtPassword.Text))
             {
                 Account loginAccount = AccountDAF.Instance.GetAccountForUsername(txtUsername.Text);
                 frmSellManagement login = new frmSellManagement(loginAccount);
@@ -72,7 +66,6 @@ namespace frmLogin
                 login.ShowDialog();
                 txtPassword.Clear();
                 this.Show();
-
             }
             else
             {

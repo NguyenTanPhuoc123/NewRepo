@@ -67,7 +67,7 @@ namespace frmLogin
             this.label2.Location = new System.Drawing.Point(390, 235);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 20);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 13;
             this.label2.Text = "Mật khẩu";
             // 
@@ -80,7 +80,7 @@ namespace frmLogin
             this.label1.Location = new System.Drawing.Point(390, 181);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 20);
+            this.label1.Size = new System.Drawing.Size(77, 16);
             this.label1.TabIndex = 12;
             this.label1.Text = "Tài khoản";
             // 
@@ -132,11 +132,12 @@ namespace frmLogin
             this.txtUsername.PlaceholderText = "username";
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(345, 46);
-            this.txtUsername.TabIndex = 20;
+            this.txtUsername.TabIndex = 1;
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
@@ -171,7 +172,7 @@ namespace frmLogin
             this.txtPassword.PlaceholderText = "password";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(345, 46);
-            this.txtPassword.TabIndex = 22;
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
@@ -189,7 +190,7 @@ namespace frmLogin
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(202, 52);
-            this.btnLogin.TabIndex = 23;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
@@ -210,7 +211,7 @@ namespace frmLogin
             this.btnLogOff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOff.Name = "btnLogOff";
             this.btnLogOff.Size = new System.Drawing.Size(202, 52);
-            this.btnLogOff.TabIndex = 24;
+            this.btnLogOff.TabIndex = 4;
             this.btnLogOff.Text = "Thoát";
             this.btnLogOff.Click += new System.EventHandler(this.btnLogOff_Click);
             // 
@@ -242,11 +243,13 @@ namespace frmLogin
             // 
             // frmlogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AcceptButton = this.btnLogin;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(900, 468);
             this.Controls.Add(this.pbDisplay);
             this.Controls.Add(this.pbHide);
