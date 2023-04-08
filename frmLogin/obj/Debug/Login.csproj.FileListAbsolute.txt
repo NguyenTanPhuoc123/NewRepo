@@ -286,3 +286,16 @@ D:\Do An\frmLogin\obj\Debug\frmLogin.frmBillDetail.resources
 D:\Do An\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources
 D:\Cao Thắng\DoAn\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources
 D:\Cao Thắng\DoAn\frmLogin\obj\Debug\frmLogin.frmBillDetail.resources
+D:\đồ án\frmLogin\bin\Debug\en-CA\frmLogin.resources.dll
+D:\đồ án\frmLogin\bin\Debug\zh\frmLogin.resources.dll
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmBillDetail.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmPay.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
+D:\đồ án\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
+D:\đồ án\frmLogin\obj\Debug\zh\frmLogin.resources.dll

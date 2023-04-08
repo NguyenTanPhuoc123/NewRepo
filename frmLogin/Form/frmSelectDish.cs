@@ -19,8 +19,6 @@ namespace frmLogin
 
         private void btnExitFomSelectDish_Click(object sender, EventArgs e)
         {
-            frmSellManagement frm = new frmSellManagement();
-            frm.IsMdiContainer = false;
             this.Close();
         }
     }

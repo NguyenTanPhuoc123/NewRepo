@@ -14,12 +14,19 @@ namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
-     
-        public frmSellManagement()
+        private Account loginAccount;
+        public frmSellManagement(Account acc)
         {
             InitializeComponent();
+            this.loginAccount = acc;
             timer1.Start();
        
+        }
+
+        public  Account LoginAccount
+        {
+            get {  return this.loginAccount; }
+            private set { this.loginAccount = value;}
         }
         private void frmSellManagement_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -39,20 +46,19 @@ namespace frmLogin
 
         private void btnStoreManagement_Click(object sender, EventArgs e)
         {
-            //string sql = String.Format("select count(*) from taikhoan where loaitaikhoan = 2 and tendangnhap = {0} and matkhau = {1}",username,password);
-            //int dem = DataProvider.ExecuteScalarCommand(sql, null);
-            //if(dem > 0)
-            //{
+
+            if (GetTypeAccount() == 1)
+            {  
                 frmQuanLyAdmin frm = new frmQuanLyAdmin();
                 this.Hide();
                 frm.ShowDialog();
                 this.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Bạn ko đủ đk");
-            //    return;
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có phận sự ở đây, cút!!!", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
         }
 
 
@@ -87,5 +93,27 @@ namespace frmLogin
             WindowState = FormWindowState.Minimized;
         }
 
+        public int GetTypeAccount()
+        {
+            return loginAccount.TypeAccount;
+        }
+
+        private void frmSellManagement_Load(object sender, EventArgs e)
+        {
+            tstlblPosition.Text = GetTypeAccountName() + " : ";
+            tsslblName.Text = GetEmployeeName();
+        }
+
+        public string GetTypeAccountName()
+        {
+            TypeAccount typeAccount = TypeAccountDAF.Instance.GetTypeAccountForTypeAccountID(loginAccount.TypeAccount);
+            return typeAccount.TenLoai;
+        }
+
+        public string GetEmployeeName()
+        {
+            Employee employee = EmployeeDAF.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
+            return employee.TenNV;
+        }
     }
 }

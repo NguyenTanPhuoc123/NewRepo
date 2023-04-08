@@ -1,4 +1,5 @@
 ﻿using frmLogin.Data_Access_Layer;
+using frmLogin.Data_Tranfer_Object;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +16,10 @@ namespace frmLogin
    
     public partial class frmlogin : Form
     {
-        frmSellManagement frm;
         public frmlogin()
         {
             InitializeComponent();
+           
         }
 
 
@@ -46,6 +47,8 @@ namespace frmLogin
             txtPassword.PasswordChar = '●';
         }
 
+        
+
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
@@ -57,10 +60,14 @@ namespace frmLogin
             SqlParameter[] parameters = new SqlParameter[2];
             parameters[0] = new SqlParameter("@username", txtUsername.Text);
             parameters[1] = new SqlParameter("@password", Utils.GetMD5(txtPassword.Text));
+
+         
+
             if (DataProvider.ExecuteScalarCommand(sql, parameters)==1)
             {
-                frmSellManagement login = new frmSellManagement();
-               
+                Account loginAccount = AccountDAF.Instance.GetAccountForUsername(txtUsername.Text);
+                frmSellManagement login = new frmSellManagement(loginAccount);
+                
                 this.Hide();
                 login.ShowDialog();
                 txtPassword.Clear();

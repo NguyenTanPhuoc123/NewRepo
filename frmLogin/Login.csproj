@@ -53,10 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data Access Layer\AccountDAF.cs" />
     <Compile Include="Data Access Layer\DataProvider.cs" />
+    <Compile Include="Data Access Layer\EmployeeDAF.cs" />
+    <Compile Include="Data Access Layer\TypeAccountDAF.cs" />
     <Compile Include="Data Access Layer\Utils.cs" />
     <Compile Include="Data Tranfer Object\Account.cs" />
-    <Compile Include="Data Tranfer Object\NhanVien.cs" />
+    <Compile Include="Data Tranfer Object\Employee.cs" />
+    <Compile Include="Data Tranfer Object\TypeAccount.cs" />
     <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
