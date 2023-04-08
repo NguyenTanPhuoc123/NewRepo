@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace frmLogin.Data_Access_Layer
 {
@@ -33,5 +34,12 @@ namespace frmLogin.Data_Access_Layer
             }
             return null;
         }
+        public int UpdateEmployeeInFo(int employeeID,string SDT,string NgaySinh,string GioiTinh,string DiaChi)
+        {
+            string query = string.Format("UPDATE NHANVIEN SET SODIENTHOAI='{1}',NGAYSINH='{2}',GIOITINH=N'{3}',DIACHI=N'{4}' WHERE MANV = {0}", employeeID,SDT,NgaySinh,GioiTinh,DiaChi);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+       
     }
 }

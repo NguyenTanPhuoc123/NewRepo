@@ -47,6 +47,12 @@ namespace frmLogin.Data_Access_Layer
 
             return null;
         }
-        
+        public int UpdatePassword(string passwordNew,string username)
+        {
+            string query = string.Format("UPDATE TAIKHOAN SET MATKHAU = '{0}' WHERE TENDANGNHAP='{1}'", Utils.GetMD5(passwordNew), username);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+       
     }
 }

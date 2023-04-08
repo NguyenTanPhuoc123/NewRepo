@@ -77,7 +77,7 @@ namespace frmLogin
         private void btnSetting_Click(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
-            frmSetting frm = new frmSetting();
+            frmSetting frm = new frmSetting(loginAccount);
             frm.Show();
         }
 
