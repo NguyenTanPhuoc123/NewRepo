@@ -20,22 +20,22 @@ namespace frmLogin
             InitializeComponent();
             this.loginAccount = acc;
             timer1.Start();
-       
+            LoadTables();
         }
 
-        public  Account LoginAccount
+        public Account LoginAccount
         {
-            get {  return this.loginAccount; }
-            private set { this.loginAccount = value;}
+            get { return this.loginAccount; }
+            private set { this.loginAccount = value; }
         }
         private void frmSellManagement_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
             {
                 e.Cancel = true;
-                
+
             }
-            
+
 
         }
 
@@ -48,7 +48,7 @@ namespace frmLogin
         {
 
             if (GetTypeAccount() == 1)
-            {  
+            {
                 frmQuanLyAdmin frm = new frmQuanLyAdmin();
                 this.Hide();
                 frm.ShowDialog();
@@ -56,7 +56,7 @@ namespace frmLogin
             }
             else
             {
-                MessageBox.Show("Bạn không có phận sự ở đây, cút!!!", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn không có phận sự ở đây, cút!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
         }
@@ -114,6 +114,31 @@ namespace frmLogin
         {
             Employee employee = EmployeeDAF.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
             return employee.TenNV;
+        }
+        public void LoadTables()
+        {
+            flpTable.Controls.Clear();
+            List<Table> listTable = new List<Table>();
+            listTable = TableDAF.Instance.GetListTables();
+            foreach (Table item in listTable)
+            {
+                Button btnTable = new Button() { Width = 80, Height = 70 };
+                string tableDisplay = item.TenBan + Environment.NewLine + "<" + item.TrangThai + ">";
+                btnTable.Text = tableDisplay;
+                btnTable.Click += btnTable_Click;
+                btnTable.Tag = item;
+                if(item.TrangThai=="Trống")
+                    btnTable.BackColor = Color.GreenYellow;
+                else
+                    btnTable.BackColor = Color.Red;
+                flpTable.Controls.Add(btnTable);
+            }
+          
+        }
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            int nTableId = ((sender as Button).Tag as Table).MaBanAn;
+          
         }
     }
 }

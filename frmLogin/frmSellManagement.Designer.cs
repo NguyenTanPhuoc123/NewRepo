@@ -56,7 +56,6 @@ namespace frmLogin
             this.label5 = new System.Windows.Forms.Label();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.numSale)).BeginInit();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -125,6 +124,7 @@ namespace frmLogin
             // 
             // flpTable
             // 
+            this.flpTable.AutoScroll = true;
             this.flpTable.Location = new System.Drawing.Point(12, 170);
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(650, 428);
@@ -340,9 +340,9 @@ namespace frmLogin
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(934, 553);
+            this.btnDelete.Location = new System.Drawing.Point(864, 553);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(85, 45);
+            this.btnDelete.Size = new System.Drawing.Size(130, 45);
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Xóa";
             // 
@@ -355,29 +355,12 @@ namespace frmLogin
             this.listView1.TabIndex = 22;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BorderRadius = 20;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(826, 553);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(85, 45);
-            this.btnSave.TabIndex = 23;
-            this.btnSave.Text = "Lưu";
-            // 
             // frmSellManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1292, 629);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label5);
@@ -439,6 +422,5 @@ namespace frmLogin
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private System.Windows.Forms.ListView listView1;
-        private Guna.UI2.WinForms.Guna2Button btnSave;
     }
 }
