@@ -57,7 +57,7 @@ namespace frmLogin
                 return;
             }
             
-            if(AccountDAF.Instance.ktDangNhap(txtUsername.Text, txtPassword.Text))
+            if(AccountDAF.Instance.CheckLogin(txtUsername.Text, txtPassword.Text))
             {
                 Account loginAccount = AccountDAF.Instance.GetAccountForUsername(txtUsername.Text);
                 frmSellManagement login = new frmSellManagement(loginAccount);

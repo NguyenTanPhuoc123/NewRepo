@@ -34,5 +34,18 @@ namespace frmLogin.Data_Access_Layer
 
             return null;
         }
+
+        public List<TypeAccount> GetListTypeAccount()
+        {
+            List<TypeAccount> type = new List<TypeAccount>();
+            string query = "select * from loaitaikhoan";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach(DataRow item in data.Rows)
+            {
+                TypeAccount typeacc = new TypeAccount(item);
+                type.Add(typeacc);
+            }
+            return type;
+        }
     }
 }

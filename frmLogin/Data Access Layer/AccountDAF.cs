@@ -23,9 +23,9 @@ namespace frmLogin.Data_Access_Layer
 
         }
 
-        public bool ktDangNhap(string username, string password)
+        public bool CheckLogin(string username, string password)
         {
-            string sql = "select count(*) from taikhoan where TENDANGNHAP = @username AND MATKHAU = @password";
+            string sql = "select count(*) from taikhoan where TENDANGNHAP = @username AND MATKHAU = @password and trangthai = 1";
             SqlParameter[] parameters = new SqlParameter[2];
             parameters[0] = new SqlParameter("@username", username);
             parameters[1] = new SqlParameter("@password", Utils.GetMD5(password));
@@ -34,6 +34,19 @@ namespace frmLogin.Data_Access_Layer
                 return true;
             }
             return false;
+        }
+
+        public List<Account> GetListAccount()
+        {
+            List<Account> lst = new List<Account>(); 
+            string query = "select * from taikhoan where trangthai=1";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach(DataRow item in data.Rows)
+            {
+                Account acc = new Account(item);
+                lst.Add(acc);
+            }
+            return lst;
         }
             
         public Account GetAccountForUsername(string username)
@@ -53,6 +66,20 @@ namespace frmLogin.Data_Access_Layer
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
-       
+
+        public int DeleteAllAccount()
+        {
+            string query = "update taikhoan set trangthai = 0";
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int DeleteAccountByUserName(string username)
+        {
+            string query = string.Format("update taikhoan set trangthai = 0 where tendangnhap = '{0}'", username);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
     }
 }

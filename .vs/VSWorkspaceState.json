@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\frmLogin",
+    "\\frmLogin\\Data Access Layer"
   ],
-  "SelectedNode": "\\QuanLyCuaHangAnVatTimo.sln",
+  "SelectedNode": "\\frmLogin\\Data Access Layer\\BillDetailDAF.cs",
   "PreviewInSolutionExplorer": false
 }
