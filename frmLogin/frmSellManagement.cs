@@ -28,16 +28,7 @@ namespace frmLogin
             get { return this.loginAccount; }
             private set { this.loginAccount = value; }
         }
-        private void frmSellManagement_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
-            {
-                e.Cancel = true;
-
-            }
-
-
-        }
+       
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -63,8 +54,9 @@ namespace frmLogin
 
 
         private void btnExitFormSell_Click(object sender, EventArgs e)
-        {
-            this.Close();
+        {   
+            if(MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?","Thông báo",MessageBoxButtons.OKCancel,MessageBoxIcon.Question)==DialogResult.OK)
+                this.Close();
         }
 
         private void btnSelectDish_Click(object sender, EventArgs e)
@@ -140,5 +132,7 @@ namespace frmLogin
             int nTableId = ((sender as Button).Tag as Table).MaBanAn;
           
         }
+
+   
     }
 }

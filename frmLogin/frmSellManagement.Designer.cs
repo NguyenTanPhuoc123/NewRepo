@@ -383,7 +383,7 @@ namespace frmLogin
             this.Name = "frmSellManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSellManagement";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSellManagement_FormClosing);
+            
             this.Load += new System.EventHandler(this.frmSellManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numSale)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -46,9 +46,18 @@ namespace frmLogin
 
         private void btnLogOff_Click(object sender, EventArgs e)
         {
-
-            this.Close();
+            if (MessageBox.Show("Bạn muốn đăng xuất khỏi tài khoản này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                frmSellManagement.ActiveForm.Disposed += new EventHandler(CloseForm);
+                this.Close();
+            }
         }
+
+        public void CloseForm(object sender, EventArgs e)
+        {
+            frmSellManagement.ActiveForm.Dispose();
+        }
+
         private void LoadThongTin()
         {
             Employee employee = EmployeeDAF.Instance.GetEmployeeByEmployeeID(account.EmployeeID);
