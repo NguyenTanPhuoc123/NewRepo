@@ -81,5 +81,19 @@ namespace frmLogin.Data_Access_Layer
             return data;
         }
 
+        public int AddAccount(string username, string password, string employeeID, string typeEmployID)
+        {
+            string query = string.Format("insert taikhoan values('{0}' , '{1}', {2} , {3} , 1)", username, Utils.GetMD5(password), employeeID, typeEmployID);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int EditAccount(string username, string employeeID, string typeEmployID)
+        {
+            string query = string.Format("update taikhoan set manv={0}, loaitaikhoan={1} where tendangnhap='{2}'", employeeID, typeEmployID, username);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
     }
 }

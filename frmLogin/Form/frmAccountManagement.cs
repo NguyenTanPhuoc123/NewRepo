@@ -41,11 +41,11 @@ namespace frmLogin
                 int count = AccountDAF.Instance.DeleteAllAccount();
                 if (count > 0)
                 {
-                    MessageBox.Show("Xoa tat ca thanh cong");
+                    MessageBox.Show("Xóa tất cả thành công");
                 }
                 else
                 {
-                    MessageBox.Show("Xoa tat ca that bai");
+                    MessageBox.Show("Xóa tất cả thất bại");
                 }
             }
             frmAccountManagement_Load(sender, e);
@@ -53,7 +53,16 @@ namespace frmLogin
 
         private void btnAddAccount_Click(object sender, EventArgs e)
         {
-            
+            int count = AccountDAF.Instance.AddAccount(txtUsername.Text, txtPassword.Text, txtEmployee.Text, cbTypeAccount.SelectedValue.ToString());
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm tài khoản thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thêm tài khoản thất bại");
+            }
+            frmAccountManagement_Load(sender, e);
         }
 
         private void dtgvListAccount_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -79,12 +88,26 @@ namespace frmLogin
                 int count = AccountDAF.Instance.DeleteAccountByUserName(txtUsername.Text);
                 if (count > 0)
                 {
-                    MessageBox.Show("Xoa tai khoan thanh cong");
+                    MessageBox.Show("Xóa tài khoản thành công");
                 }
                 else
                 {
-                    MessageBox.Show("Xoa tai khoan that bai");
+                    MessageBox.Show("Xóa tài khoản thất bại");
                 }
+            }
+            frmAccountManagement_Load(sender, e);
+        }
+
+        private void btnEditAccount_Click(object sender, EventArgs e)
+        {
+            int count = AccountDAF.Instance.EditAccount(txtUsername.Text, txtEmployee.Text, cbTypeAccount.SelectedValue.ToString());
+            if (count > 0)
+            {
+                MessageBox.Show("Sửa tài khoản thành công");
+            }
+            else
+            {
+                MessageBox.Show("Sửa tài khoản thất bại");
             }
             frmAccountManagement_Load(sender, e);
         }
