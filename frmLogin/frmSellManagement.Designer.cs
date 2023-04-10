@@ -34,7 +34,6 @@ namespace frmLogin
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.numSale = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.cbLocationTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -48,14 +47,15 @@ namespace frmLogin
             this.tsslblTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbFillTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnStoreManagement = new Guna.UI2.WinForms.Guna2Button();
             this.cbChangeTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(this.components);
-            this.label5 = new System.Windows.Forms.Label();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.btnChangeTable = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSale = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblToltalPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numSale)).BeginInit();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -106,21 +106,11 @@ namespace frmLogin
             this.numSale.BackColor = System.Drawing.Color.Transparent;
             this.numSale.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numSale.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numSale.Location = new System.Drawing.Point(1025, 559);
+            this.numSale.Location = new System.Drawing.Point(914, 507);
             this.numSale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numSale.Name = "numSale";
             this.numSale.Size = new System.Drawing.Size(113, 36);
             this.numSale.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(1021, 533);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 22);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Giảm giá";
             // 
             // flpTable
             // 
@@ -144,6 +134,7 @@ namespace frmLogin
             this.cbLocationTable.Name = "cbLocationTable";
             this.cbLocationTable.Size = new System.Drawing.Size(191, 36);
             this.cbLocationTable.TabIndex = 12;
+            this.cbLocationTable.SelectedIndexChanged += new System.EventHandler(this.cbLocationTable_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -204,7 +195,7 @@ namespace frmLogin
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(501, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(332, 65);
+            this.label2.Size = new System.Drawing.Size(283, 55);
             this.label2.TabIndex = 0;
             this.label2.Text = "BÁN HÀNG";
             // 
@@ -215,29 +206,29 @@ namespace frmLogin
             this.tstlblPosition,
             this.tsslblName,
             this.tsslblTime});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 597);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1292, 32);
+            this.statusStrip1.Size = new System.Drawing.Size(1292, 26);
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tstlblPosition
             // 
             this.tstlblPosition.Name = "tstlblPosition";
-            this.tstlblPosition.Size = new System.Drawing.Size(100, 25);
+            this.tstlblPosition.Size = new System.Drawing.Size(82, 20);
             this.tstlblPosition.Text = "Nhân viên: ";
             // 
             // tsslblName
             // 
             this.tsslblName.Name = "tsslblName";
-            this.tsslblName.Size = new System.Drawing.Size(59, 25);
+            this.tsslblName.Size = new System.Drawing.Size(49, 20);
             this.tsslblName.Text = "Name";
             // 
             // tsslblTime
             // 
             this.tsslblTime.Margin = new System.Windows.Forms.Padding(900, 4, 0, 2);
             this.tsslblTime.Name = "tsslblTime";
-            this.tsslblTime.Size = new System.Drawing.Size(0, 26);
+            this.tsslblTime.Size = new System.Drawing.Size(0, 20);
             // 
             // timer1
             // 
@@ -249,34 +240,9 @@ namespace frmLogin
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(12, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 22);
+            this.label3.Size = new System.Drawing.Size(64, 18);
             this.label3.TabIndex = 15;
             this.label3.Text = "Vị trí bàn";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(467, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 22);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Lọc ";
-            // 
-            // cbFillTable
-            // 
-            this.cbFillTable.BackColor = System.Drawing.Color.Transparent;
-            this.cbFillTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbFillTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbFillTable.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbFillTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbFillTable.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbFillTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbFillTable.ItemHeight = 30;
-            this.cbFillTable.Location = new System.Drawing.Point(471, 128);
-            this.cbFillTable.Name = "cbFillTable";
-            this.cbFillTable.Size = new System.Drawing.Size(191, 36);
-            this.cbFillTable.TabIndex = 17;
             // 
             // btnStoreManagement
             // 
@@ -308,7 +274,7 @@ namespace frmLogin
             this.cbChangeTable.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbChangeTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbChangeTable.ItemHeight = 30;
-            this.cbChangeTable.Location = new System.Drawing.Point(668, 559);
+            this.cbChangeTable.Location = new System.Drawing.Point(672, 508);
             this.cbChangeTable.Name = "cbChangeTable";
             this.cbChangeTable.Size = new System.Drawing.Size(152, 36);
             this.cbChangeTable.TabIndex = 19;
@@ -320,16 +286,6 @@ namespace frmLogin
         System.Drawing.Color.Blue,
         System.Drawing.Color.Orange};
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(668, 533);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 22);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Chuyển bàn";
-            // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Transparent;
@@ -340,7 +296,7 @@ namespace frmLogin
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(864, 553);
+            this.btnDelete.Location = new System.Drawing.Point(897, 119);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(130, 45);
             this.btnDelete.TabIndex = 21;
@@ -351,30 +307,80 @@ namespace frmLogin
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(668, 171);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(612, 351);
+            this.listView1.Size = new System.Drawing.Size(612, 300);
             this.listView1.TabIndex = 22;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
+            // btnChangeTable
+            // 
+            this.btnChangeTable.BackColor = System.Drawing.Color.Transparent;
+            this.btnChangeTable.BorderRadius = 20;
+            this.btnChangeTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnChangeTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnChangeTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChangeTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnChangeTable.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnChangeTable.ForeColor = System.Drawing.Color.White;
+            this.btnChangeTable.Location = new System.Drawing.Point(668, 550);
+            this.btnChangeTable.Name = "btnChangeTable";
+            this.btnChangeTable.Size = new System.Drawing.Size(151, 45);
+            this.btnChangeTable.TabIndex = 23;
+            this.btnChangeTable.Text = "Chuyển bàn";
+            // 
+            // btnSale
+            // 
+            this.btnSale.BackColor = System.Drawing.Color.Transparent;
+            this.btnSale.BorderRadius = 20;
+            this.btnSale.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSale.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSale.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSale.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSale.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSale.ForeColor = System.Drawing.Color.White;
+            this.btnSale.Location = new System.Drawing.Point(897, 550);
+            this.btnSale.Name = "btnSale";
+            this.btnSale.Size = new System.Drawing.Size(151, 45);
+            this.btnSale.TabIndex = 24;
+            this.btnSale.Text = "Giảm giá";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1082, 487);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 18);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Tổng tiền:";
+            // 
+            // lblToltalPrice
+            // 
+            this.lblToltalPrice.AutoSize = true;
+            this.lblToltalPrice.Location = new System.Drawing.Point(1229, 487);
+            this.lblToltalPrice.Name = "lblToltalPrice";
+            this.lblToltalPrice.Size = new System.Drawing.Size(16, 18);
+            this.lblToltalPrice.TabIndex = 26;
+            this.lblToltalPrice.Text = "0";
+            // 
             // frmSellManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1292, 629);
+            this.Controls.Add(this.lblToltalPrice);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnSale);
+            this.Controls.Add(this.btnChangeTable);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.cbChangeTable);
             this.Controls.Add(this.btnStoreManagement);
-            this.Controls.Add(this.cbFillTable);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbLocationTable);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnSelectDish);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpTable);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.numSale);
             this.Controls.Add(this.btnPay);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -383,7 +389,6 @@ namespace frmLogin
             this.Name = "frmSellManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSellManagement";
-            
             this.Load += new System.EventHandler(this.frmSellManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numSale)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -400,7 +405,6 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2Button btnSelectDish;
         private Guna.UI2.WinForms.Guna2Button btnPay;
         private Guna.UI2.WinForms.Guna2NumericUpDown numSale;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flpTable;
         private Guna.UI2.WinForms.Guna2ComboBox cbLocationTable;
         private System.Windows.Forms.Panel panel1;
@@ -411,16 +415,17 @@ namespace frmLogin
         private System.Windows.Forms.ToolStripStatusLabel tsslblTime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2ComboBox cbFillTable;
         private Guna.UI2.WinForms.Guna2Button btnStoreManagement;
         private System.Windows.Forms.Button btnExitFormSell;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnSetting;
         private Guna.UI2.WinForms.Guna2ComboBox cbChangeTable;
         private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
-        private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private System.Windows.Forms.ListView listView1;
+        private Guna.UI2.WinForms.Guna2Button btnChangeTable;
+        private Guna.UI2.WinForms.Guna2Button btnSale;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblToltalPrice;
     }
 }

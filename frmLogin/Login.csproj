@@ -60,6 +60,7 @@
     <Compile Include="Data Access Layer\DataProvider.cs" />
     <Compile Include="Data Access Layer\DiscountDAF.cs" />
     <Compile Include="Data Access Layer\EmployeeDAF.cs" />
+    <Compile Include="Data Access Layer\LocationDAF.cs" />
     <Compile Include="Data Access Layer\PositionDAF.cs" />
     <Compile Include="Data Access Layer\ProductDAF.cs" />
     <Compile Include="Data Access Layer\TableDAF.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Data Tranfer Object\Customer.cs" />
     <Compile Include="Data Tranfer Object\Discount.cs" />
     <Compile Include="Data Tranfer Object\Employee.cs" />
+    <Compile Include="Data Tranfer Object\Location.cs" />
     <Compile Include="Data Tranfer Object\Position.cs" />
     <Compile Include="Data Tranfer Object\Product.cs" />
     <Compile Include="Data Tranfer Object\Table.cs" />

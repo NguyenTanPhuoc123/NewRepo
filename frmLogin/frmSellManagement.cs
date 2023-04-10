@@ -15,19 +15,22 @@ namespace frmLogin
     public partial class frmSellManagement : Form
     {
         private Account loginAccount;
-        public frmSellManagement(Account acc)
-        {
-            InitializeComponent();
-            this.loginAccount = acc;
-            timer1.Start();
-            LoadTables();
-        }
 
         public Account LoginAccount
         {
             get { return this.loginAccount; }
             private set { this.loginAccount = value; }
         }
+
+        public frmSellManagement(Account acc)
+        {
+            InitializeComponent();
+            this.loginAccount = acc;
+            timer1.Start();
+            
+        }
+
+        
        
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -85,54 +88,80 @@ namespace frmLogin
             WindowState = FormWindowState.Minimized;
         }
 
-        public int GetTypeAccount()
-        {
-            return loginAccount.TypeAccount;
-        }
+      
 
         private void frmSellManagement_Load(object sender, EventArgs e)
         {
+            
             tstlblPosition.Text = GetTypeAccountName() + " : ";
             tsslblName.Text = GetEmployeeName();
+            cbLocationTable.DataSource = LocationDAF.Instance.GetListLocation();
+            cbLocationTable.DisplayMember = "TenViTri";
+            cbLocationTable.ValueMember = "MaViTri";
+            
         }
 
-        public string GetTypeAccountName()
-        {
-            TypeAccount typeAccount = TypeAccountDAF.Instance.GetTypeAccountForTypeAccountID(loginAccount.TypeAccount);
-            return typeAccount.TenLoai;
-        }
 
-        public string GetEmployeeName()
-        {
-            Employee employee = EmployeeDAF.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
-            return employee.TenNV;
-        }
-        public void LoadTables()
-        {
-            flpTable.Controls.Clear();
-            List<Table> listTable = new List<Table>();
-            listTable = TableDAF.Instance.GetListTables();
-            foreach (Table item in listTable)
-            {
-                Button btnTable = new Button() { Width = 80, Height = 70 };
-                string tableDisplay = item.TenBan + Environment.NewLine + "<" + item.TrangThai + ">";
-                btnTable.Text = tableDisplay;
-                btnTable.Click += btnTable_Click;
-                btnTable.Tag = item;
-                if(item.TrangThai=="Trống")
-                    btnTable.BackColor = Color.GreenYellow;
-                else
-                    btnTable.BackColor = Color.Red;
-                flpTable.Controls.Add(btnTable);
-            }
-          
-        }
+        
+       
         private void btnTable_Click(object sender, EventArgs e)
         {
             int nTableId = ((sender as Button).Tag as Table).MaBanAn;
           
         }
+        #region Method
+       
+        public string GetTypeAccountName()
+            {
+                TypeAccount typeAccount = TypeAccountDAF.Instance.GetTypeAccountForTypeAccountID(loginAccount.TypeAccount);
+                return typeAccount.TenLoai;
+            }
 
-   
+        public string GetEmployeeName()
+            {
+                Employee employee = EmployeeDAF.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
+                return employee.TenNV;
+            }
+
+        public int GetTypeAccount()
+            {
+                return loginAccount.TypeAccount;
+            }
+        
+        public void GetListTableByLocationID(int id)
+        {
+            flpTable.Controls.Clear();
+            List<Table> listTable = new List<Table>();
+            listTable = TableDAF.Instance.GetListTableByLocationID(id);
+
+            foreach (Table item in listTable)
+            {
+                Button btnTable = new Button() { Width = 150, Height = 150 };
+                string tableDisplay = item.TenBan + Environment.NewLine + "<" + item.TrangThai + ">";
+                btnTable.Text = tableDisplay;
+                btnTable.Click += btnTable_Click;
+                btnTable.Tag = item;
+                if (item.TrangThai == "Trống")
+                    btnTable.BackColor = Color.GreenYellow;
+                else
+                    btnTable.BackColor = Color.Red;
+                flpTable.Controls.Add(btnTable);
+            }
+        }
+
+
+        #endregion
+        private void cbLocationTable_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int id = 0;
+            ComboBox cb = sender as ComboBox;
+            if (cb.SelectedItem == null)
+                return;
+            Location selected = cb.SelectedItem as Location;
+            id = selected.MaViTri;
+            GetListTableByLocationID(id);
+        }
+
+        
     }
 }
