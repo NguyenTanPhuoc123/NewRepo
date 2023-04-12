@@ -64,7 +64,6 @@ namespace frmLogin
             this.label7 = new System.Windows.Forms.Label();
             this.numQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.cbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProductName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -103,9 +102,12 @@ namespace frmLogin
             this.btnRestoreAllAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreAccount = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListAccountDeleted = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpAccountInfo = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.cbTypeAccount = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtEmployee = new Guna.UI2.WinForms.Guna2TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -161,6 +163,8 @@ namespace frmLogin
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExitFomSelectDish = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtTypeAccount = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabctrlListDeletedManager.SuspendLayout();
             this.tbpProductDeleted.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProductDeleted)).BeginInit();
@@ -404,6 +408,7 @@ namespace frmLogin
             // 
             // richtxtDescribe
             // 
+            this.richtxtDescribe.Enabled = false;
             this.richtxtDescribe.Location = new System.Drawing.Point(471, 143);
             this.richtxtDescribe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richtxtDescribe.Name = "richtxtDescribe";
@@ -438,6 +443,7 @@ namespace frmLogin
             this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.Enabled = false;
             this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -463,6 +469,7 @@ namespace frmLogin
             // 
             this.numQuantity.BackColor = System.Drawing.Color.Transparent;
             this.numQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.numQuantity.Enabled = false;
             this.numQuantity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.numQuantity.Location = new System.Drawing.Point(75, 161);
             this.numQuantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -478,22 +485,6 @@ namespace frmLogin
             this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 7;
             this.label6.Text = "Số lượng:";
-            // 
-            // cbCategory
-            // 
-            this.cbCategory.BackColor = System.Drawing.Color.Transparent;
-            this.cbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbCategory.ItemHeight = 30;
-            this.cbCategory.Location = new System.Drawing.Point(269, 113);
-            this.cbCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(168, 36);
-            this.cbCategory.TabIndex = 6;
             // 
             // label5
             // 
@@ -513,6 +504,7 @@ namespace frmLogin
             this.txtProductName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtProductName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtProductName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProductName.Enabled = false;
             this.txtProductName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProductName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtProductName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -543,6 +535,7 @@ namespace frmLogin
             this.txtProductID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtProductID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtProductID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProductID.Enabled = false;
             this.txtProductID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProductID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtProductID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -1046,6 +1039,7 @@ namespace frmLogin
             this.btnRestoreAllAccount.Size = new System.Drawing.Size(220, 46);
             this.btnRestoreAllAccount.TabIndex = 1;
             this.btnRestoreAllAccount.Text = "Khôi phục tất cả";
+            this.btnRestoreAllAccount.Click += new System.EventHandler(this.btnRestoreAllAccount_Click);
             // 
             // btnRestoreAccount
             // 
@@ -1063,6 +1057,7 @@ namespace frmLogin
             this.btnRestoreAccount.Size = new System.Drawing.Size(220, 46);
             this.btnRestoreAccount.TabIndex = 0;
             this.btnRestoreAccount.Text = "Khôi phục";
+            this.btnRestoreAccount.Click += new System.EventHandler(this.btnRestoreAccount_Click);
             // 
             // dtgvListAccountDeleted
             // 
@@ -1076,8 +1071,13 @@ namespace frmLogin
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvListAccountDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dtgvListAccountDeleted.ColumnHeadersHeight = 4;
+            this.dtgvListAccountDeleted.ColumnHeadersHeight = 40;
             this.dtgvListAccountDeleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvListAccountDeleted.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1087,13 +1087,13 @@ namespace frmLogin
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListAccountDeleted.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtgvListAccountDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListAccountDeleted.Location = new System.Drawing.Point(5, 254);
+            this.dtgvListAccountDeleted.Location = new System.Drawing.Point(5, 252);
             this.dtgvListAccountDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvListAccountDeleted.Name = "dtgvListAccountDeleted";
             this.dtgvListAccountDeleted.RowHeadersVisible = false;
             this.dtgvListAccountDeleted.RowHeadersWidth = 51;
             this.dtgvListAccountDeleted.RowTemplate.Height = 24;
-            this.dtgvListAccountDeleted.Size = new System.Drawing.Size(913, 175);
+            this.dtgvListAccountDeleted.Size = new System.Drawing.Size(913, 177);
             this.dtgvListAccountDeleted.TabIndex = 30;
             this.dtgvListAccountDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListAccountDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1107,7 +1107,7 @@ namespace frmLogin
             this.dtgvListAccountDeleted.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvListAccountDeleted.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgvListAccountDeleted.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgvListAccountDeleted.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgvListAccountDeleted.ThemeStyle.HeaderStyle.Height = 40;
             this.dtgvListAccountDeleted.ThemeStyle.ReadOnly = false;
             this.dtgvListAccountDeleted.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListAccountDeleted.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -1116,11 +1116,40 @@ namespace frmLogin
             this.dtgvListAccountDeleted.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvListAccountDeleted.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListAccountDeleted.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvListAccountDeleted.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListAccountDeleted_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Username";
+            this.Column1.HeaderText = "Tên đăng nhập";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Password";
+            this.Column2.HeaderText = "Mật khẩu";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "EmployeeID";
+            this.Column3.HeaderText = "Mã nhân viên";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "TypeAccount";
+            this.Column4.HeaderText = "Loại tài khoản";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
             // 
             // grpAccountInfo
             // 
+            this.grpAccountInfo.Controls.Add(this.txtTypeAccount);
             this.grpAccountInfo.Controls.Add(this.label17);
-            this.grpAccountInfo.Controls.Add(this.cbTypeAccount);
             this.grpAccountInfo.Controls.Add(this.txtEmployee);
             this.grpAccountInfo.Controls.Add(this.label18);
             this.grpAccountInfo.Controls.Add(this.txtPassword);
@@ -1145,22 +1174,6 @@ namespace frmLogin
             this.label17.TabIndex = 7;
             this.label17.Text = "Loại tài khoản:";
             // 
-            // cbTypeAccount
-            // 
-            this.cbTypeAccount.BackColor = System.Drawing.Color.Transparent;
-            this.cbTypeAccount.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbTypeAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTypeAccount.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbTypeAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbTypeAccount.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbTypeAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbTypeAccount.ItemHeight = 30;
-            this.cbTypeAccount.Location = new System.Drawing.Point(199, 164);
-            this.cbTypeAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbTypeAccount.Name = "cbTypeAccount";
-            this.cbTypeAccount.Size = new System.Drawing.Size(153, 36);
-            this.cbTypeAccount.TabIndex = 6;
-            // 
             // txtEmployee
             // 
             this.txtEmployee.BorderRadius = 10;
@@ -1170,6 +1183,7 @@ namespace frmLogin
             this.txtEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmployee.Enabled = false;
             this.txtEmployee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmployee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -1200,6 +1214,7 @@ namespace frmLogin
             this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.Enabled = false;
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -1230,6 +1245,7 @@ namespace frmLogin
             this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.Enabled = false;
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -2106,6 +2122,45 @@ namespace frmLogin
             this.label1.TabIndex = 0;
             this.label1.Text = "RECYCLE BIN";
             // 
+            // cbCategory
+            // 
+            this.cbCategory.BackColor = System.Drawing.Color.Transparent;
+            this.cbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCategory.Enabled = false;
+            this.cbCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbCategory.ItemHeight = 30;
+            this.cbCategory.Location = new System.Drawing.Point(269, 113);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(168, 36);
+            this.cbCategory.TabIndex = 6;
+            // 
+            // txtTypeAccount
+            // 
+            this.txtTypeAccount.BorderRadius = 10;
+            this.txtTypeAccount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTypeAccount.DefaultText = "";
+            this.txtTypeAccount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTypeAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTypeAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTypeAccount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTypeAccount.Enabled = false;
+            this.txtTypeAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTypeAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTypeAccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTypeAccount.Location = new System.Drawing.Point(199, 165);
+            this.txtTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTypeAccount.Name = "txtTypeAccount";
+            this.txtTypeAccount.PasswordChar = '\0';
+            this.txtTypeAccount.PlaceholderText = "";
+            this.txtTypeAccount.SelectedText = "";
+            this.txtTypeAccount.Size = new System.Drawing.Size(200, 38);
+            this.txtTypeAccount.TabIndex = 8;
+            // 
             // frmRecycleBin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2119,6 +2174,7 @@ namespace frmLogin
             this.Name = "frmRecycleBin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRecycleBin";
+            this.Load += new System.EventHandler(this.frmRecycleBin_Load);
             this.tabctrlListDeletedManager.ResumeLayout(false);
             this.tbpProductDeleted.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProductDeleted)).EndInit();
@@ -2176,7 +2232,6 @@ namespace frmLogin
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2NumericUpDown numQuantity;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2ComboBox cbCategory;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtProductName;
         private System.Windows.Forms.Label label4;
@@ -2216,7 +2271,6 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2DataGridView dtgvListAccountDeleted;
         private System.Windows.Forms.GroupBox grpAccountInfo;
         private System.Windows.Forms.Label label17;
-        private Guna.UI2.WinForms.Guna2ComboBox cbTypeAccount;
         private Guna.UI2.WinForms.Guna2TextBox txtEmployee;
         private System.Windows.Forms.Label label18;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
@@ -2273,5 +2327,11 @@ namespace frmLogin
         private System.Windows.Forms.Label label30;
         private Guna.UI2.WinForms.Guna2TextBox txtBillID;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private Guna.UI2.WinForms.Guna2ComboBox cbCategory;
+        private Guna.UI2.WinForms.Guna2TextBox txtTypeAccount;
     }
 }

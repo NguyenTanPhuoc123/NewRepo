@@ -48,7 +48,21 @@ namespace frmLogin.Data_Access_Layer
             }
             return lst;
         }
-            
+
+
+        public List<Account> GetListAccountDeleted()
+        {
+            List<Account> lst = new List<Account>();
+            string query = "select * from taikhoan where trangthai=0";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                Account acc = new Account(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
+
         public Account GetAccountForUsername(string username)
         {
             DataTable data = DataProvider.ExcecuteSelectCommand("Select * from TAIKHOAN where TENDANGNHAP = '" + username+"'", null);
@@ -74,9 +88,23 @@ namespace frmLogin.Data_Access_Layer
             return data;
         }
 
+        public int RestoreAllAccount()
+        {
+            string query = "update taikhoan set trangthai = 1";
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
         public int DeleteAccountByUserName(string username)
         {
             string query = string.Format("update taikhoan set trangthai = 0 where tendangnhap = '{0}'", username);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int RestoreAccountByUserName(string username)
+        {
+            string query = string.Format("update taikhoan set trangthai = 1 where tendangnhap = '{0}'", username);
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }

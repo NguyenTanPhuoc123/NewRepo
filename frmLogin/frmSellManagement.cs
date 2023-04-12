@@ -136,7 +136,7 @@ namespace frmLogin
 
             foreach (Table item in listTable)
             {
-                Button btnTable = new Button() { Width = 150, Height = 150 };
+                Button btnTable = new Button() { Width = 150, Height = 150 };               
                 string tableDisplay = item.TenBan + Environment.NewLine + "<" + item.TrangThai + ">";
                 btnTable.Text = tableDisplay;
                 btnTable.Click += btnTable_Click;

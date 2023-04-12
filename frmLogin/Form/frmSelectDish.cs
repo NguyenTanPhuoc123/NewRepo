@@ -21,5 +21,10 @@ namespace frmLogin
         {
             this.Close();
         }
+
+        private void frmSelectDish_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

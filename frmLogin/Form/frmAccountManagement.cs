@@ -83,7 +83,7 @@ namespace frmLogin
 
         private void btnDeleteAccount_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa tai khoan", "Thong bao", MessageBoxButtons.YesNo))
+            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Warning))
             {
                 int count = AccountDAF.Instance.DeleteAccountByUserName(txtUsername.Text);
                 if (count > 0)

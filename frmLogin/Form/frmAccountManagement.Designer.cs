@@ -73,7 +73,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(766, 257);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 15);
+            this.label1.Size = new System.Drawing.Size(33, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Lọc";
             // 
@@ -82,7 +82,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(64, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(61, 18);
             this.label3.TabIndex = 11;
             this.label3.Text = "Sắp xếp";
             // 
@@ -198,24 +198,28 @@ namespace frmLogin
             // 
             this.Column1.DataPropertyName = "Username";
             this.Column1.HeaderText = "Tên đăng nhập";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
             this.Column2.DataPropertyName = "Password";
             this.Column2.HeaderText = "Mật khẩu";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
             this.Column3.DataPropertyName = "EmployeeID";
             this.Column3.HeaderText = "Nhân viên";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "TypeAccount";
             this.Column4.HeaderText = "Loại tài khoản";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
@@ -241,7 +245,7 @@ namespace frmLogin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(36, 173);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 15);
+            this.label6.Size = new System.Drawing.Size(104, 18);
             this.label6.TabIndex = 7;
             this.label6.Text = "Loại tài khoản:";
             // 
@@ -286,7 +290,7 @@ namespace frmLogin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(63, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 15);
+            this.label5.Size = new System.Drawing.Size(77, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Nhân viên:";
             // 
@@ -316,7 +320,7 @@ namespace frmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(67, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 15);
+            this.label4.Size = new System.Drawing.Size(73, 18);
             this.label4.TabIndex = 2;
             this.label4.Text = "Mật khẩu:";
             // 
@@ -346,7 +350,7 @@ namespace frmLogin
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(31, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 15);
+            this.label2.Size = new System.Drawing.Size(109, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên đăng nhập:";
             // 
@@ -498,7 +502,7 @@ namespace frmLogin
             // 
             // frmAccountManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 514);
             this.Controls.Add(this.grpFunctionAccount);
