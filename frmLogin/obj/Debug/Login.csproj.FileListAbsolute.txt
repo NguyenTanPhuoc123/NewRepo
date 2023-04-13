@@ -363,3 +363,5 @@ D:\Cao Thắng\DuAnTIMOFOOD\frmLogin\obj\Debug\zh\frmLogin.resources.dll
 D:\Cao Thắng\DuAnTIMOFOOD\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\Cao Thắng\DuAnTIMOFOOD\frmLogin\obj\Debug\frmLogin.exe
 D:\Cao Thắng\DuAnTIMOFOOD\frmLogin\obj\Debug\frmLogin.pdb
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.frmBillDetail.resources

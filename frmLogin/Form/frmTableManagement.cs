@@ -22,7 +22,5 @@ namespace frmLogin
             frmRecycleBin frm = new frmRecycleBin();
             frm.Show();
         }
-
-        
     }
 }

@@ -162,6 +162,6 @@ namespace frmLogin
             GetListTableByLocationID(id);
         }
 
-        //upload
+        
     }
 }
