@@ -39,7 +39,6 @@ namespace frmLogin
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearchDish = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpDishDetail = new System.Windows.Forms.GroupBox();
-            this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.numQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDishPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,6 +48,7 @@ namespace frmLogin
             this.txtDishName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pbPictureDish = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
             this.panelListDishSelected = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -172,24 +172,6 @@ namespace frmLogin
             this.grpDishDetail.TabStop = false;
             this.grpDishDetail.Text = "Chi tiết món";
             // 
-            // btnSelectDish
-            // 
-            this.btnSelectDish.BorderRadius = 20;
-            this.btnSelectDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelectDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.btnSelectDish.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSelectDish.ForeColor = System.Drawing.Color.White;
-            this.btnSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectDish.Image")));
-            this.btnSelectDish.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSelectDish.Location = new System.Drawing.Point(799, 508);
-            this.btnSelectDish.Name = "btnSelectDish";
-            this.btnSelectDish.Size = new System.Drawing.Size(180, 45);
-            this.btnSelectDish.TabIndex = 9;
-            this.btnSelectDish.Text = "Lên món";
-            // 
             // numQuantity
             // 
             this.numQuantity.BackColor = System.Drawing.Color.Transparent;
@@ -309,6 +291,24 @@ namespace frmLogin
             this.pbPictureDish.TabIndex = 0;
             this.pbPictureDish.TabStop = false;
             // 
+            // btnSelectDish
+            // 
+            this.btnSelectDish.BorderRadius = 20;
+            this.btnSelectDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelectDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnSelectDish.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSelectDish.ForeColor = System.Drawing.Color.White;
+            this.btnSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectDish.Image")));
+            this.btnSelectDish.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSelectDish.Location = new System.Drawing.Point(799, 508);
+            this.btnSelectDish.Name = "btnSelectDish";
+            this.btnSelectDish.Size = new System.Drawing.Size(180, 45);
+            this.btnSelectDish.TabIndex = 9;
+            this.btnSelectDish.Text = "Lên món";
+            // 
             // btnSearchDish
             // 
             this.btnSearchDish.BorderRadius = 10;
@@ -332,6 +332,7 @@ namespace frmLogin
             this.panelListDishSelected.Name = "panelListDishSelected";
             this.panelListDishSelected.Size = new System.Drawing.Size(210, 487);
             this.panelListDishSelected.TabIndex = 9;
+            
             // 
             // frmSelectDish
             // 
