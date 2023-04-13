@@ -65,5 +65,5 @@ namespace frmLogin
             dtgvListAccountDeleted.DataSource = AccountDAF.Instance.GetListAccountDeleted();
         }
     }
-        //Anhhghggh
+        
 }
