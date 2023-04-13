@@ -42,6 +42,8 @@ namespace frmLogin
             this.dtgvListAccount = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpAccountInfo = new System.Windows.Forms.GroupBox();
@@ -73,7 +75,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(766, 257);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 18);
+            this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Lọc";
             // 
@@ -82,7 +84,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(64, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 18);
+            this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 11;
             this.label3.Text = "Sắp xếp";
             // 
@@ -153,6 +155,8 @@ namespace frmLogin
             this.dtgvListAccount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
+            this.Column5,
+            this.Column6,
             this.Column3,
             this.Column4});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -166,6 +170,7 @@ namespace frmLogin
             this.dtgvListAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListAccount.Location = new System.Drawing.Point(67, 320);
             this.dtgvListAccount.Name = "dtgvListAccount";
+            this.dtgvListAccount.ReadOnly = true;
             this.dtgvListAccount.RowHeadersVisible = false;
             this.dtgvListAccount.RowHeadersWidth = 51;
             this.dtgvListAccount.RowTemplate.Height = 24;
@@ -184,7 +189,7 @@ namespace frmLogin
             this.dtgvListAccount.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgvListAccount.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListAccount.ThemeStyle.HeaderStyle.Height = 20;
-            this.dtgvListAccount.ThemeStyle.ReadOnly = false;
+            this.dtgvListAccount.ThemeStyle.ReadOnly = true;
             this.dtgvListAccount.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListAccount.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvListAccount.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,7 +197,7 @@ namespace frmLogin
             this.dtgvListAccount.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvListAccount.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListAccount.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dtgvListAccount.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListAccount_CellContentClick);
+            this.dtgvListAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListAccount_CellClick);
             // 
             // Column1
             // 
@@ -200,6 +205,7 @@ namespace frmLogin
             this.Column1.HeaderText = "Tên đăng nhập";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
@@ -207,20 +213,39 @@ namespace frmLogin
             this.Column2.HeaderText = "Mật khẩu";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "TypeAccount";
+            this.Column5.HeaderText = "Mataikhoan";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "EmployeeID";
+            this.Column6.HeaderText = "MaNV";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
             // 
             // Column3
             // 
-            this.Column3.DataPropertyName = "EmployeeID";
+            this.Column3.DataPropertyName = "EmployeeName";
             this.Column3.HeaderText = "Nhân viên";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.DataPropertyName = "TypeAccount";
+            this.Column4.DataPropertyName = "TypeName";
             this.Column4.HeaderText = "Loại tài khoản";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // grpAccountInfo
@@ -245,7 +270,7 @@ namespace frmLogin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(36, 173);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 18);
+            this.label6.Size = new System.Drawing.Size(87, 15);
             this.label6.TabIndex = 7;
             this.label6.Text = "Loại tài khoản:";
             // 
@@ -281,6 +306,7 @@ namespace frmLogin
             this.txtEmployee.Name = "txtEmployee";
             this.txtEmployee.PasswordChar = '\0';
             this.txtEmployee.PlaceholderText = "";
+            this.txtEmployee.ReadOnly = true;
             this.txtEmployee.SelectedText = "";
             this.txtEmployee.Size = new System.Drawing.Size(200, 38);
             this.txtEmployee.TabIndex = 5;
@@ -290,7 +316,7 @@ namespace frmLogin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(63, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 18);
+            this.label5.Size = new System.Drawing.Size(65, 15);
             this.label5.TabIndex = 4;
             this.label5.Text = "Nhân viên:";
             // 
@@ -320,7 +346,7 @@ namespace frmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(67, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 18);
+            this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "Mật khẩu:";
             // 
@@ -350,7 +376,7 @@ namespace frmLogin
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(31, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 18);
+            this.label2.Size = new System.Drawing.Size(93, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên đăng nhập:";
             // 
@@ -502,7 +528,7 @@ namespace frmLogin
             // 
             // frmAccountManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 514);
             this.Controls.Add(this.grpFunctionAccount);
@@ -555,6 +581,8 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2Button btnRefreshAccount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }

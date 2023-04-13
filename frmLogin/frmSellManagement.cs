@@ -161,7 +161,7 @@ namespace frmLogin
             id = selected.MaViTri;
             GetListTableByLocationID(id);
         }
-        //update form
+
         
     }
 }

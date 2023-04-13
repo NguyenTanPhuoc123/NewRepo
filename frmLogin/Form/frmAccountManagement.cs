@@ -21,7 +21,6 @@ namespace frmLogin
 
         private void frmAccountManagement_Load(object sender, EventArgs e)
         {
-            
             dtgvListAccount.DataSource= AccountDAF.Instance.GetListAccount();
             cbTypeAccount.DataSource = TypeAccountDAF.Instance.GetListTypeAccount();
             cbTypeAccount.DisplayMember = "TenLoai";
@@ -65,21 +64,7 @@ namespace frmLogin
             frmAccountManagement_Load(sender, e);
         }
 
-        private void dtgvListAccount_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtUsername.Text = dtgvListAccount.SelectedRows[0].Cells[0].Value.ToString();
-            txtPassword.Text = dtgvListAccount.SelectedRows[0].Cells[1].Value.ToString();
-            txtEmployee.Text = dtgvListAccount.SelectedRows[0].Cells[2].Value.ToString();
-            int type = int.Parse(dtgvListAccount.SelectedRows[0].Cells[3].Value.ToString());
-            if (type == 1)
-            {
-                cbTypeAccount.SelectedIndex = 0;
-            }
-            else
-            {
-                cbTypeAccount.SelectedIndex = 1;
-            }
-        }
+       
 
         private void btnDeleteAccount_Click(object sender, EventArgs e)
         {
@@ -110,6 +95,26 @@ namespace frmLogin
                 MessageBox.Show("Sửa tài khoản thất bại");
             }
             frmAccountManagement_Load(sender, e);
+        }
+
+       
+
+        private void dtgvListAccount_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtUsername.Text = dtgvListAccount.SelectedRows[0].Cells[0].Value.ToString();
+            txtPassword.Text = dtgvListAccount.SelectedRows[0].Cells[1].Value.ToString();
+            txtEmployee.Text = dtgvListAccount.SelectedRows[0].Cells[4].Value.ToString();
+            int type = int.Parse(dtgvListAccount.SelectedRows[0].Cells[3].Value.ToString());
+            if (type == 1)
+            {
+                cbTypeAccount.SelectedIndex = 0;
+
+            }
+            else
+            {
+                cbTypeAccount.SelectedIndex = 1;
+
+            }
         }
     }
 }

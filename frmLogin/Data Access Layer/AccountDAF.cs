@@ -39,7 +39,7 @@ namespace frmLogin.Data_Access_Layer
         public List<Account> GetListAccount()
         {
             List<Account> lst = new List<Account>(); 
-            string query = "select * from taikhoan where trangthai=1";
+            string query = "select a.tendangnhap ,a.matkhau,a.manv,a.loaitaikhoan,b.tennv,c.tenloai  from taikhoan a ,nhanvien  b,loaitaikhoan c where a.trangthai=1 and a.MANV = b.MANV and a.LOAITAIKHOAN = c.MALOAI";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach(DataRow item in data.Rows)
             {
