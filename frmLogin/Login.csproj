@@ -171,6 +171,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrol.Designer.cs">
+      <DependentUpon>Usercontrol.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form\frmAccountManagement.resx">
       <DependentUpon>frmAccountManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +232,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol.resx">
+      <DependentUpon>Usercontrol.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

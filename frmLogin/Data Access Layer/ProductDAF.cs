@@ -22,5 +22,17 @@ namespace frmLogin.Data_Access_Layer
         {
 
         }
+        public List<Product> GetListProduct()
+        {
+            List<Product> lst = new List<Product>();
+            string query = "select *  from sanpham";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                Product acc = new Product(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
     }
 }

@@ -26,5 +26,14 @@ namespace frmLogin
         {
             
         }
+
+        private void btnSelectDish_Click(object sender, EventArgs e)
+        {
+            Usercontrol uc = new Usercontrol();
+            uc.TenSP =" "+ txtDishName.Text;
+            uc.SoLuong =" "+ numQuantity.Value.ToString();
+            uc.DonGia = " "+txtDishPrice.Text;
+            flowLayoutPanel1.Controls.Add(uc);
+        }
     }
 }

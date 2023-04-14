@@ -397,3 +397,36 @@ C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Deb
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.CopyComplete
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.exe
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.pdb
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\frmLogin.exe.config
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\frmLogin.exe
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\frmLogin.pdb
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\en-CA\frmLogin.resources.dll
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\zh\frmLogin.resources.dll
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmAccountManagement.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSetting.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmBillDetail.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmlogin.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmPay.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSelectDish.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.Properties.Resources.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.Usercontrol.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmPay.zh.resources
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\zh\frmLogin.resources.dll
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.CopyComplete
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.exe
+C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.pdb

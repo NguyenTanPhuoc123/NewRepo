@@ -10,6 +10,7 @@ namespace frmLogin.Data_Tranfer_Object
 {
     class Product
     {
+        private byte[] m_image;
         private string m_MaSanPham;
         private string m_TenSanPham;
         private int m_DanhMuc;
@@ -17,8 +18,9 @@ namespace frmLogin.Data_Tranfer_Object
         private float m_DonGia;
         private int m_TrangThai;
 
-        public Product(string maSanPham, string tenSanPham, int danhMuc, int soLuong, float donGia, int trangThai)
+        public Product(string maSanPham, string tenSanPham, int danhMuc, int soLuong, float donGia, int trangThai,byte[] hinhAnh)
         {
+            this.image = hinhAnh;
             this.MaSanPham = maSanPham;
             this.TenSanPham = tenSanPham;
             this.DanhMuc = danhMuc;
@@ -33,7 +35,8 @@ namespace frmLogin.Data_Tranfer_Object
         public int SoLuong { get => m_SoLuong; set => m_SoLuong = value; }
         public float DonGia { get => m_DonGia; set => m_DonGia = value; }
         public int TrangThai { get => m_TrangThai; set => m_TrangThai = value; }
-    
+        public byte[] image { get => m_image; set => m_image = value; }
+
         public Product(DataRow row)
         {
             this.m_MaSanPham = row["MASANPHAM"].ToString();
@@ -41,6 +44,7 @@ namespace frmLogin.Data_Tranfer_Object
             this.m_DanhMuc = (int)row["DANHMUC"];
             this.m_SoLuong = (int)row["SOLUONG"];
             this.m_DonGia = (float)row["DONGIA"];
+            this.m_image = (byte[])row["HINHANH"];
         }
     }
 }

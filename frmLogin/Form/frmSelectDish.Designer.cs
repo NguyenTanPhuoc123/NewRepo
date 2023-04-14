@@ -39,7 +39,6 @@ namespace frmLogin
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearchDish = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpDishDetail = new System.Windows.Forms.GroupBox();
-            this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.numQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDishPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,8 +48,9 @@ namespace frmLogin
             this.txtDishName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pbPictureDish = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
-            this.panelListDishSelected = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.grpDishDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -62,7 +62,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(414, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 18);
+            this.label1.Size = new System.Drawing.Size(0, 22);
             this.label1.TabIndex = 1;
             // 
             // panel1
@@ -81,7 +81,7 @@ namespace frmLogin
             this.btnExitFomSelectDish.FlatAppearance.BorderSize = 0;
             this.btnExitFomSelectDish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitFomSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFomSelectDish.Image")));
-            this.btnExitFomSelectDish.Location = new System.Drawing.Point(922, 0);
+            this.btnExitFomSelectDish.Location = new System.Drawing.Point(1126, 0);
             this.btnExitFomSelectDish.Name = "btnExitFomSelectDish";
             this.btnExitFomSelectDish.Size = new System.Drawing.Size(69, 45);
             this.btnExitFomSelectDish.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace frmLogin
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(365, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 55);
+            this.label2.Size = new System.Drawing.Size(350, 65);
             this.label2.TabIndex = 3;
             this.label2.Text = "CHỌN MÓN";
             // 
@@ -129,7 +129,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 18);
+            this.label3.Size = new System.Drawing.Size(91, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Danh mục";
             // 
@@ -167,28 +167,10 @@ namespace frmLogin
             this.grpDishDetail.Controls.Add(this.pbPictureDish);
             this.grpDishDetail.Location = new System.Drawing.Point(552, 105);
             this.grpDishDetail.Name = "grpDishDetail";
-            this.grpDishDetail.Size = new System.Drawing.Size(427, 397);
+            this.grpDishDetail.Size = new System.Drawing.Size(338, 397);
             this.grpDishDetail.TabIndex = 8;
             this.grpDishDetail.TabStop = false;
             this.grpDishDetail.Text = "Chi tiết món";
-            // 
-            // btnSelectDish
-            // 
-            this.btnSelectDish.BorderRadius = 20;
-            this.btnSelectDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelectDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.btnSelectDish.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSelectDish.ForeColor = System.Drawing.Color.White;
-            this.btnSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectDish.Image")));
-            this.btnSelectDish.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSelectDish.Location = new System.Drawing.Point(799, 508);
-            this.btnSelectDish.Name = "btnSelectDish";
-            this.btnSelectDish.Size = new System.Drawing.Size(180, 45);
-            this.btnSelectDish.TabIndex = 9;
-            this.btnSelectDish.Text = "Lên món";
             // 
             // numQuantity
             // 
@@ -206,7 +188,7 @@ namespace frmLogin
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 362);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 18);
+            this.label7.Size = new System.Drawing.Size(86, 22);
             this.label7.TabIndex = 7;
             this.label7.Text = "Số lượng:";
             // 
@@ -228,7 +210,7 @@ namespace frmLogin
             this.txtDishPrice.PlaceholderText = "";
             this.txtDishPrice.ReadOnly = true;
             this.txtDishPrice.SelectedText = "";
-            this.txtDishPrice.Size = new System.Drawing.Size(229, 40);
+            this.txtDishPrice.Size = new System.Drawing.Size(206, 40);
             this.txtDishPrice.TabIndex = 6;
             // 
             // label6
@@ -236,7 +218,7 @@ namespace frmLogin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 319);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 18);
+            this.label6.Size = new System.Drawing.Size(77, 22);
             this.label6.TabIndex = 5;
             this.label6.Text = "Đơn giá:";
             // 
@@ -258,7 +240,7 @@ namespace frmLogin
             this.txtCategoryDish.PlaceholderText = "";
             this.txtCategoryDish.ReadOnly = true;
             this.txtCategoryDish.SelectedText = "";
-            this.txtCategoryDish.Size = new System.Drawing.Size(229, 40);
+            this.txtCategoryDish.Size = new System.Drawing.Size(206, 40);
             this.txtCategoryDish.TabIndex = 4;
             // 
             // label5
@@ -266,7 +248,7 @@ namespace frmLogin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 18);
+            this.label5.Size = new System.Drawing.Size(91, 22);
             this.label5.TabIndex = 3;
             this.label5.Text = "Danh mục";
             // 
@@ -288,7 +270,7 @@ namespace frmLogin
             this.txtDishName.PlaceholderText = "";
             this.txtDishName.ReadOnly = true;
             this.txtDishName.SelectedText = "";
-            this.txtDishName.Size = new System.Drawing.Size(229, 40);
+            this.txtDishName.Size = new System.Drawing.Size(206, 40);
             this.txtDishName.TabIndex = 2;
             // 
             // label4
@@ -296,18 +278,37 @@ namespace frmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 219);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 18);
+            this.label4.Size = new System.Drawing.Size(81, 22);
             this.label4.TabIndex = 1;
             this.label4.Text = "Tên món";
             // 
             // pbPictureDish
             // 
             this.pbPictureDish.ImageRotate = 0F;
-            this.pbPictureDish.Location = new System.Drawing.Point(88, 23);
+            this.pbPictureDish.Location = new System.Drawing.Point(72, 27);
             this.pbPictureDish.Name = "pbPictureDish";
             this.pbPictureDish.Size = new System.Drawing.Size(229, 152);
             this.pbPictureDish.TabIndex = 0;
             this.pbPictureDish.TabStop = false;
+            // 
+            // btnSelectDish
+            // 
+            this.btnSelectDish.BorderRadius = 20;
+            this.btnSelectDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelectDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnSelectDish.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSelectDish.ForeColor = System.Drawing.Color.White;
+            this.btnSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectDish.Image")));
+            this.btnSelectDish.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSelectDish.Location = new System.Drawing.Point(710, 508);
+            this.btnSelectDish.Name = "btnSelectDish";
+            this.btnSelectDish.Size = new System.Drawing.Size(180, 45);
+            this.btnSelectDish.TabIndex = 9;
+            this.btnSelectDish.Text = "Lên món";
+            this.btnSelectDish.Click += new System.EventHandler(this.btnSelectDish_Click);
             // 
             // btnSearchDish
             // 
@@ -325,21 +326,22 @@ namespace frmLogin
             this.btnSearchDish.Size = new System.Drawing.Size(80, 36);
             this.btnSearchDish.TabIndex = 7;
             // 
-            // panelListDishSelected
+            // flowLayoutPanel1
             // 
-            this.panelListDishSelected.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelListDishSelected.Location = new System.Drawing.Point(985, 72);
-            this.panelListDishSelected.Name = "panelListDishSelected";
-            this.panelListDishSelected.Size = new System.Drawing.Size(210, 487);
-            this.panelListDishSelected.TabIndex = 9;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(891, 72);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(304, 487);
+            this.flowLayoutPanel1.TabIndex = 10;
             // 
             // frmSelectDish
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1195, 559);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnSelectDish);
-            this.Controls.Add(this.panelListDishSelected);
             this.Controls.Add(this.grpDishDetail);
             this.Controls.Add(this.btnSearchDish);
             this.Controls.Add(this.txtSearchDish);
@@ -387,6 +389,6 @@ namespace frmLogin
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2PictureBox pbPictureDish;
         private System.Windows.Forms.Button btnExitFomSelectDish;
-        private System.Windows.Forms.Panel panelListDishSelected;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
