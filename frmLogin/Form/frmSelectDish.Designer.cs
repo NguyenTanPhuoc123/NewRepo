@@ -29,12 +29,16 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSelectDish));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExitFomSelectDish = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lstvListDish = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cbCategoryDish = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearchDish = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,9 +55,7 @@ namespace frmLogin
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.grpDishDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -109,12 +111,28 @@ namespace frmLogin
             this.columnHeader2,
             this.columnHeader3});
             this.lstvListDish.HideSelection = false;
+            this.lstvListDish.LargeImageList = this.imageList1;
             this.lstvListDish.Location = new System.Drawing.Point(12, 148);
             this.lstvListDish.Name = "lstvListDish";
             this.lstvListDish.Size = new System.Drawing.Size(522, 399);
             this.lstvListDish.TabIndex = 3;
             this.lstvListDish.UseCompatibleStateImageBehavior = false;
-            this.lstvListDish.View = System.Windows.Forms.View.Details;
+            this.lstvListDish.SelectedIndexChanged += new System.EventHandler(this.lstvListDish_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên món ăn";
+            this.columnHeader1.Width = 118;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Danh mục ";
+            this.columnHeader2.Width = 118;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            this.columnHeader3.Width = 97;
             // 
             // cbCategoryDish
             // 
@@ -296,6 +314,7 @@ namespace frmLogin
             this.pbPictureDish.Location = new System.Drawing.Point(72, 27);
             this.pbPictureDish.Name = "pbPictureDish";
             this.pbPictureDish.Size = new System.Drawing.Size(229, 152);
+            this.pbPictureDish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPictureDish.TabIndex = 0;
             this.pbPictureDish.TabStop = false;
             // 
@@ -343,20 +362,11 @@ namespace frmLogin
             this.flowLayoutPanel1.Size = new System.Drawing.Size(304, 487);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
-            // columnHeader1
+            // imageList1
             // 
-            this.columnHeader1.Text = "Tên món ăn";
-            this.columnHeader1.Width = 118;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Danh mục ";
-            this.columnHeader2.Width = 118;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Đơn giá";
-            this.columnHeader3.Width = 97;
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(80, 80);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // frmSelectDish
             // 
@@ -416,5 +426,6 @@ namespace frmLogin
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

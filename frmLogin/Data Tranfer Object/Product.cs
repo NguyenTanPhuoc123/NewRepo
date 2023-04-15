@@ -52,10 +52,9 @@ namespace frmLogin.Data_Tranfer_Object
             this.m_SoLuong = (int)row["SOLUONG"];
             this.m_DonGia =float.Parse(row["DONGIA"].ToString());
             this.m_MoTa = row["MOTA"].ToString();
-            
             this.HinhAnh =ConvertByteToImage((byte[])row["HINHANH"]);
         }
-        public Image ConvertByteToImage(byte[] byteArray)
+        public static Image ConvertByteToImage(byte[] byteArray)
         {
             using (var memoryStream = new MemoryStream(byteArray))
             {

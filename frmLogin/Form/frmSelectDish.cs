@@ -29,19 +29,40 @@ namespace frmLogin
             List<Product> products = ProductDAF.Instance.GetListProduct();
             for (int i = 0; i < products.Count; i++)
             {
-                lstvListDish.Items.Add(products[i].TenSanPham);
-                lstvListDish.Items[i].SubItems.Add(products[i].DanhMuc.ToString());
-                lstvListDish.Items[i].SubItems.Add(products[i].DonGia.ToString());
+                imageList1.Images.Add(products[i].HinhAnh);
+                ListViewItem item = new ListViewItem(products[i].TenSanPham);
+                item.ImageIndex =i;
+                item.SubItems.Add(products[i].DanhMuc.ToString());
+                item.SubItems.Add(products[i].DonGia.ToString());
+                lstvListDish.Items.Add(item);
             }
         }
 
         private void btnSelectDish_Click(object sender, EventArgs e)
         {
             Usercontrol uc = new Usercontrol();
-            uc.TenSP =" "+ txtDishName.Text;
-            uc.SoLuong =" "+ numQuantity.Value.ToString();
-            uc.DonGia = " "+txtDishPrice.Text;
-            flowLayoutPanel1.Controls.Add(uc);
+            if (lstvListDish.SelectedItems.Count > 0)
+            {
+                int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
+                uc.HinhAnh  = imageList1.Images[i];
+                uc.TenSP = " " + txtDishName.Text;
+                uc.SoLuong = " " + numQuantity.Value.ToString();
+                uc.DonGia = " " + txtDishPrice.Text;
+                flowLayoutPanel1.Controls.Add(uc);
+            }
+        }
+
+        private void lstvListDish_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+            if (lstvListDish.SelectedItems.Count > 0)
+            {
+                int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
+                pbPictureDish.Image = imageList1.Images[i];
+                txtDishName.Text = lstvListDish.SelectedItems[0].Text;
+                txtCategoryDish.Text = lstvListDish.SelectedItems[0].SubItems[1].Text;
+                txtDishPrice.Text = lstvListDish.SelectedItems[0].SubItems[2].Text;
+            }
         }
     }
 }

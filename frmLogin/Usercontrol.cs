@@ -15,6 +15,7 @@ namespace frmLogin
         private string tenSP;
         private string soLuong;
         private string donGia;
+        private Image hinhAnh;
         public Usercontrol()
         {
             InitializeComponent();
@@ -24,5 +25,6 @@ namespace frmLogin
         public string TenSP { get => tenSP; set => label1.Text+= value; }
         public string SoLuong { get => soLuong; set => label2.Text += value; }
         public string DonGia { get => donGia; set => label3.Text += value; }
+        public Image HinhAnh { get => hinhAnh; set => pictureBox1.Image = value; }
     }
 }
