@@ -51,6 +51,9 @@ namespace frmLogin
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.grpDishDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -101,12 +104,17 @@ namespace frmLogin
             // 
             // lstvListDish
             // 
+            this.lstvListDish.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
             this.lstvListDish.HideSelection = false;
             this.lstvListDish.Location = new System.Drawing.Point(12, 148);
             this.lstvListDish.Name = "lstvListDish";
             this.lstvListDish.Size = new System.Drawing.Size(522, 399);
             this.lstvListDish.TabIndex = 3;
             this.lstvListDish.UseCompatibleStateImageBehavior = false;
+            this.lstvListDish.View = System.Windows.Forms.View.Details;
             // 
             // cbCategoryDish
             // 
@@ -335,6 +343,21 @@ namespace frmLogin
             this.flowLayoutPanel1.Size = new System.Drawing.Size(304, 487);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên món ăn";
+            this.columnHeader1.Width = 118;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Danh mục ";
+            this.columnHeader2.Width = 118;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            this.columnHeader3.Width = 97;
+            // 
             // frmSelectDish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -390,5 +413,8 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2PictureBox pbPictureDish;
         private System.Windows.Forms.Button btnExitFomSelectDish;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

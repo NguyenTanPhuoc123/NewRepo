@@ -1,4 +1,6 @@
-﻿using System;
+﻿using frmLogin.Data_Access_Layer;
+using frmLogin.Data_Tranfer_Object;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +26,13 @@ namespace frmLogin
 
         private void frmSelectDish_Load(object sender, EventArgs e)
         {
-            
+            List<Product> products = ProductDAF.Instance.GetListProduct();
+            for (int i = 0; i < products.Count; i++)
+            {
+                lstvListDish.Items.Add(products[i].TenSanPham);
+                lstvListDish.Items[i].SubItems.Add(products[i].DanhMuc.ToString());
+                lstvListDish.Items[i].SubItems.Add(products[i].DonGia.ToString());
+            }
         }
 
         private void btnSelectDish_Click(object sender, EventArgs e)
