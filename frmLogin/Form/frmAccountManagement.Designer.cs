@@ -36,11 +36,18 @@ namespace frmLogin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccountManagement));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.SortAccount = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbSortAccount = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchAccount = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbFillAccount = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgvListAccount = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpAccountInfo = new System.Windows.Forms.GroupBox();
+            this.cbEmloyee = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbTypeAccount = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,13 +65,6 @@ namespace frmLogin
             this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccountDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchAccount = new Guna.UI2.WinForms.Guna2Button();
-            this.cbEmloyee = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListAccount)).BeginInit();
             this.grpAccountInfo.SuspendLayout();
             this.grpFunctionAccount.SuspendLayout();
@@ -75,33 +75,38 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(766, 257);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 18);
+            this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Lọc";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 257);
+            this.label3.Location = new System.Drawing.Point(24, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 18);
+            this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 11;
             this.label3.Text = "Sắp xếp";
             // 
-            // SortAccount
+            // cbSortAccount
             // 
-            this.SortAccount.BackColor = System.Drawing.Color.Transparent;
-            this.SortAccount.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.SortAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SortAccount.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SortAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SortAccount.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.SortAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.SortAccount.ItemHeight = 30;
-            this.SortAccount.Location = new System.Drawing.Point(67, 278);
-            this.SortAccount.Name = "SortAccount";
-            this.SortAccount.Size = new System.Drawing.Size(140, 36);
-            this.SortAccount.TabIndex = 12;
+            this.cbSortAccount.BackColor = System.Drawing.Color.Transparent;
+            this.cbSortAccount.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbSortAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSortAccount.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSortAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSortAccount.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbSortAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbSortAccount.ItemHeight = 30;
+            this.cbSortAccount.Items.AddRange(new object[] {
+            "Mặc định",
+            "Tên đăng nhập",
+            "Tên nhân viên"});
+            this.cbSortAccount.Location = new System.Drawing.Point(27, 278);
+            this.cbSortAccount.Name = "cbSortAccount";
+            this.cbSortAccount.Size = new System.Drawing.Size(140, 36);
+            this.cbSortAccount.TabIndex = 12;
+            this.cbSortAccount.SelectedIndexChanged += new System.EventHandler(this.cbSortAccount_SelectedIndexChanged);
             // 
             // txtSearchAccount
             // 
@@ -122,6 +127,7 @@ namespace frmLogin
             this.txtSearchAccount.SelectedText = "";
             this.txtSearchAccount.Size = new System.Drawing.Size(285, 36);
             this.txtSearchAccount.TabIndex = 13;
+            this.txtSearchAccount.TextChanged += new System.EventHandler(this.txtSearchAccount_TextChanged);
             // 
             // cbFillAccount
             // 
@@ -133,10 +139,15 @@ namespace frmLogin
             this.cbFillAccount.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillAccount.ItemHeight = 30;
+            this.cbFillAccount.Items.AddRange(new object[] {
+            "Tất cả",
+            "Nhân viên bán hàng",
+            "Nhân viên quản lý"});
             this.cbFillAccount.Location = new System.Drawing.Point(769, 278);
             this.cbFillAccount.Name = "cbFillAccount";
-            this.cbFillAccount.Size = new System.Drawing.Size(150, 36);
+            this.cbFillAccount.Size = new System.Drawing.Size(211, 36);
             this.cbFillAccount.TabIndex = 16;
+            this.cbFillAccount.SelectedIndexChanged += new System.EventHandler(this.cbFillAccount_SelectedIndexChanged);
             // 
             // dtgvListAccount
             // 
@@ -168,13 +179,13 @@ namespace frmLogin
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListAccount.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListAccount.Location = new System.Drawing.Point(67, 320);
+            this.dtgvListAccount.Location = new System.Drawing.Point(27, 320);
             this.dtgvListAccount.Name = "dtgvListAccount";
             this.dtgvListAccount.ReadOnly = true;
             this.dtgvListAccount.RowHeadersVisible = false;
             this.dtgvListAccount.RowHeadersWidth = 51;
             this.dtgvListAccount.RowTemplate.Height = 24;
-            this.dtgvListAccount.Size = new System.Drawing.Size(852, 182);
+            this.dtgvListAccount.Size = new System.Drawing.Size(953, 182);
             this.dtgvListAccount.TabIndex = 20;
             this.dtgvListAccount.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListAccount.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -199,6 +210,57 @@ namespace frmLogin
             this.dtgvListAccount.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListAccount_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Username";
+            this.Column1.HeaderText = "Tên đăng nhập";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Password";
+            this.Column2.HeaderText = "Mật khẩu";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "TypeAccount";
+            this.Column5.HeaderText = "Mataikhoan";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "EmployeeID";
+            this.Column6.HeaderText = "MaNV";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "EmployeeName";
+            this.Column3.HeaderText = "Nhân viên";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "TypeName";
+            this.Column4.HeaderText = "Loại tài khoản";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // grpAccountInfo
             // 
             this.grpAccountInfo.Controls.Add(this.cbEmloyee);
@@ -216,12 +278,27 @@ namespace frmLogin
             this.grpAccountInfo.TabStop = false;
             this.grpAccountInfo.Text = "Thông tin tài khoản";
             // 
+            // cbEmloyee
+            // 
+            this.cbEmloyee.BackColor = System.Drawing.Color.Transparent;
+            this.cbEmloyee.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbEmloyee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEmloyee.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbEmloyee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbEmloyee.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbEmloyee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbEmloyee.ItemHeight = 30;
+            this.cbEmloyee.Location = new System.Drawing.Point(161, 122);
+            this.cbEmloyee.Name = "cbEmloyee";
+            this.cbEmloyee.Size = new System.Drawing.Size(200, 36);
+            this.cbEmloyee.TabIndex = 8;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(36, 173);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 18);
+            this.label6.Size = new System.Drawing.Size(87, 15);
             this.label6.TabIndex = 7;
             this.label6.Text = "Loại tài khoản:";
             // 
@@ -245,7 +322,7 @@ namespace frmLogin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(63, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 18);
+            this.label5.Size = new System.Drawing.Size(65, 15);
             this.label5.TabIndex = 4;
             this.label5.Text = "Nhân viên:";
             // 
@@ -275,7 +352,7 @@ namespace frmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(67, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 18);
+            this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "Mật khẩu:";
             // 
@@ -305,7 +382,7 @@ namespace frmLogin
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(31, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 18);
+            this.label2.Size = new System.Drawing.Size(93, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên đăng nhập:";
             // 
@@ -456,76 +533,11 @@ namespace frmLogin
             this.btnSearchAccount.Name = "btnSearchAccount";
             this.btnSearchAccount.Size = new System.Drawing.Size(92, 36);
             this.btnSearchAccount.TabIndex = 14;
-            // 
-            // cbEmloyee
-            // 
-            this.cbEmloyee.BackColor = System.Drawing.Color.Transparent;
-            this.cbEmloyee.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbEmloyee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbEmloyee.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbEmloyee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbEmloyee.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbEmloyee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbEmloyee.ItemHeight = 30;
-            this.cbEmloyee.Location = new System.Drawing.Point(161, 122);
-            this.cbEmloyee.Name = "cbEmloyee";
-            this.cbEmloyee.Size = new System.Drawing.Size(200, 36);
-            this.cbEmloyee.TabIndex = 8;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Username";
-            this.Column1.HeaderText = "Tên đăng nhập";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Password";
-            this.Column2.HeaderText = "Mật khẩu";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "TypeAccount";
-            this.Column5.HeaderText = "Mataikhoan";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Visible = false;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "EmployeeID";
-            this.Column6.HeaderText = "MaNV";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Visible = false;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "EmployeeName";
-            this.Column3.HeaderText = "Nhân viên";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "TypeName";
-            this.Column4.HeaderText = "Loại tài khoản";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnSearchAccount.Click += new System.EventHandler(this.btnSearchAccount_Click);
             // 
             // frmAccountManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 514);
             this.Controls.Add(this.grpFunctionAccount);
@@ -534,7 +546,7 @@ namespace frmLogin
             this.Controls.Add(this.cbFillAccount);
             this.Controls.Add(this.btnSearchAccount);
             this.Controls.Add(this.txtSearchAccount);
-            this.Controls.Add(this.SortAccount);
+            this.Controls.Add(this.cbSortAccount);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -553,7 +565,7 @@ namespace frmLogin
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2ComboBox SortAccount;
+        private Guna.UI2.WinForms.Guna2ComboBox cbSortAccount;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchAccount;
         private Guna.UI2.WinForms.Guna2Button btnSearchAccount;
         private Guna.UI2.WinForms.Guna2ComboBox cbFillAccount;

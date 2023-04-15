@@ -21,6 +21,7 @@ namespace frmLogin
         private void btnExitFomSelectDish_Click(object sender, EventArgs e)
         {
             this.Close();
+            
         }
 
         private void dtgvListAccountDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -46,6 +47,8 @@ namespace frmLogin
                 else
                     MessageBox.Show("Khôi phục thất bại", "Khôi phục tài khoản", MessageBoxButtons.OK);
             }
+            frmRecycleBin_Load(sender, e);
+            
         }
 
         private void btnRestoreAllAccount_Click(object sender, EventArgs e)
@@ -63,6 +66,7 @@ namespace frmLogin
         private void frmRecycleBin_Load(object sender, EventArgs e)
         {
             dtgvListAccountDeleted.DataSource = AccountDAF.Instance.GetListAccountDeleted();
+            
         }
     }
         //Anhhghggh

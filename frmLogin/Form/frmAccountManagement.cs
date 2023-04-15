@@ -17,6 +17,8 @@ namespace frmLogin
         public frmAccountManagement()
         {
             InitializeComponent();
+            cbSortAccount.SelectedIndex = 0;
+            cbFillAccount.SelectedIndex = 0;
         }
 
         private void frmAccountManagement_Load(object sender, EventArgs e)
@@ -129,6 +131,48 @@ namespace frmLogin
                 MessageBox.Show("Thêm tài khoản thất bại");
             }
             frmAccountManagement_Load(sender, e);
+        }
+
+        private void txtSearchAccount_TextChanged(object sender, EventArgs e)
+        {
+            dtgvListAccount.DataSource = AccountMenuDAF.Instance.SearchAccountByEmloyeeName(txtSearchAccount.Text);
+        }
+
+        private void btnSearchAccount_Click(object sender, EventArgs e)
+        {
+            dtgvListAccount.DataSource = AccountMenuDAF.Instance.SearchAccountByEmloyeeName(txtSearchAccount.Text);
+        }
+
+        private void cbSortAccount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbSortAccount.SelectedIndex == 0)
+            {
+                dtgvListAccount.DataSource = AccountMenuDAF.Instance.GetListAccount();
+            } 
+            else if (cbSortAccount.SelectedIndex == 1) 
+            {
+                dtgvListAccount.DataSource = AccountMenuDAF.Instance.SortListAccountByUsername();
+            }
+            else
+            {
+                dtgvListAccount.DataSource = AccountMenuDAF.Instance.SortListAccountByEmployeeName();
+            }
+        }
+
+        private void cbFillAccount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbFillAccount.SelectedIndex == 0)
+            {
+                dtgvListAccount.DataSource = AccountMenuDAF.Instance.GetListAccount();
+            }
+            else if (cbFillAccount.SelectedIndex == 1)
+            {
+                dtgvListAccount.DataSource = AccountMenuDAF.Instance.FillListAccountIsSeller();
+            }
+            else
+            {
+                dtgvListAccount.DataSource = AccountMenuDAF.Instance.FillListAccountIsManager();
+            }
         }
     }
 }

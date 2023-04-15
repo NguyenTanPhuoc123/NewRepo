@@ -431,3 +431,4 @@ C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj
 C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.exe
 C:\Users\Admin\Desktop\Do an C#\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.pdb
 D:\do an\frmLogin\obj\Debug\frmLogin.Usercontrol.resources
+D:\DoAn\frmLogin\obj\Debug\frmLogin.Usercontrol.resources
