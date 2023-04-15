@@ -142,17 +142,17 @@
     <value>234, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnRefreshAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABlUlEQVRYR+3WPShFYRzH8UsYvCSvk1CU
-        t5QssigpWaRMipGZVQarSZHJwsaOsJhlsFCIRSkDCyl59/11PfV0es7t3Lj/ya8+dTqde37POd3neU7q
-        P79IGxaxhT6dsEo11vCBPZTDLL24wRd2UQSzDOMZKr9FFcwyiBeoXCZglg48wpWfIh8mKcMFXLlMwiyr
-        8MsfUIKcpB1dnjF8wh/ADvxrOvFnUaHmtl+YiQY3hbjMYCF9mDzTCJWFzCEu43APo3tmFY06Wha1jLgM
-        4RXuWg1Ebzdx8rAOv9C3gbhp2IMnRH+jNWQAiVMI/eGiN9pH3PKrzekO0d84mkHdSBxNt0O4GxyhFKHU
-        4Rp+YYiW8CYkjna+8x81OhFIJbQ6hgpDLlGLxGlEQ/owmFnom8A5Q7T0BP4188hZoqvnO5phlmP4A9iE
-        WbR5vcGV67gVZhmF//QrMM02XLmmXAXMokXG3z1HYBqtkq48016Rk+hpXbm+lrWUm0VL6z1UrrdQDLPU
-        4wqabtrGC2CWfhxgCS068Z/sk0p9A/tVsWwdyhArAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAGQSURBVGhD7ZoxTgNBEASdIHgEvBgQzyAiA/wi4BfAbHBS
+        a1Sntm/Z8UpcSZXcXk975GAD+7Czs7OJm/Ap/Ap/LuRzeBV20Zag4dW+hF3LuG9iNNr1Gl6Hm9BB5Ghy
+        3+Zl8qDsaKhz0zI0SO3Fzcvni2cvQ0PUXty8fK6etQwNUHtx8/J59uRlKKz24ublc7LdMxYKqr24efmc
+        /A4tFFR7cfPy+ZoWCqm9uHn5fE0LhdRe3Lx8vqaFQupoqJO0UEi9DUdxF1InaaGQ+h62wr+mzTyG1Ela
+        KDSjFgrNqIVCM2qh0IxaKDSjFgrNqIVCM2qhkPoWjrwU2+x2V1G3aqGQOnKJhVNueAuF1CqoW7VQSK2C
+        ulULhdQqqFu1UEitgrpVC4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2CulULhdQqqFu1UEitgrpVC4XUKqhb
+        tVBIrYK6VQu9TM9GQ530bBV6mZ6Nhjrp2SqX/jF0gboXP0LLY0jhmbwPLe0PA22Zz5CGXNL2mR7CTb/y
+        7uz8Tw6HX1ZExWaM3D42AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnAddAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

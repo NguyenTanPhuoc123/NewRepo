@@ -40,16 +40,9 @@ namespace frmLogin
             this.txtSearchAccount = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbFillAccount = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgvListAccount = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpAccountInfo = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbTypeAccount = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtEmployee = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,13 +51,20 @@ namespace frmLogin
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2AnimateWindow2 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.grpFunctionAccount = new System.Windows.Forms.GroupBox();
-            this.btnRefreshAccount = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteAllAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccountDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchAccount = new Guna.UI2.WinForms.Guna2Button();
+            this.cbEmloyee = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListAccount)).BeginInit();
             this.grpAccountInfo.SuspendLayout();
             this.grpFunctionAccount.SuspendLayout();
@@ -75,7 +75,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(766, 257);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 15);
+            this.label1.Size = new System.Drawing.Size(33, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Lọc";
             // 
@@ -84,7 +84,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(64, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(61, 18);
             this.label3.TabIndex = 11;
             this.label3.Text = "Sắp xếp";
             // 
@@ -199,60 +199,11 @@ namespace frmLogin
             this.dtgvListAccount.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListAccount_CellClick);
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Username";
-            this.Column1.HeaderText = "Tên đăng nhập";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Password";
-            this.Column2.HeaderText = "Mật khẩu";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "TypeAccount";
-            this.Column5.HeaderText = "Mataikhoan";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Visible = false;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "EmployeeID";
-            this.Column6.HeaderText = "MaNV";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Visible = false;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "EmployeeName";
-            this.Column3.HeaderText = "Nhân viên";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "TypeName";
-            this.Column4.HeaderText = "Loại tài khoản";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
             // grpAccountInfo
             // 
+            this.grpAccountInfo.Controls.Add(this.cbEmloyee);
             this.grpAccountInfo.Controls.Add(this.label6);
             this.grpAccountInfo.Controls.Add(this.cbTypeAccount);
-            this.grpAccountInfo.Controls.Add(this.txtEmployee);
             this.grpAccountInfo.Controls.Add(this.label5);
             this.grpAccountInfo.Controls.Add(this.txtPassword);
             this.grpAccountInfo.Controls.Add(this.label4);
@@ -270,7 +221,7 @@ namespace frmLogin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(36, 173);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 15);
+            this.label6.Size = new System.Drawing.Size(104, 18);
             this.label6.TabIndex = 7;
             this.label6.Text = "Loại tài khoản:";
             // 
@@ -289,34 +240,12 @@ namespace frmLogin
             this.cbTypeAccount.Size = new System.Drawing.Size(200, 36);
             this.cbTypeAccount.TabIndex = 6;
             // 
-            // txtEmployee
-            // 
-            this.txtEmployee.BorderRadius = 10;
-            this.txtEmployee.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmployee.DefaultText = "";
-            this.txtEmployee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmployee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmployee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEmployee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployee.Location = new System.Drawing.Point(161, 119);
-            this.txtEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtEmployee.Name = "txtEmployee";
-            this.txtEmployee.PasswordChar = '\0';
-            this.txtEmployee.PlaceholderText = "";
-            this.txtEmployee.ReadOnly = true;
-            this.txtEmployee.SelectedText = "";
-            this.txtEmployee.Size = new System.Drawing.Size(200, 38);
-            this.txtEmployee.TabIndex = 5;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(63, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 15);
+            this.label5.Size = new System.Drawing.Size(77, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Nhân viên:";
             // 
@@ -346,7 +275,7 @@ namespace frmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(67, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 15);
+            this.label4.Size = new System.Drawing.Size(73, 18);
             this.label4.TabIndex = 2;
             this.label4.Text = "Mật khẩu:";
             // 
@@ -376,13 +305,13 @@ namespace frmLogin
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(31, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 15);
+            this.label2.Size = new System.Drawing.Size(109, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên đăng nhập:";
             // 
             // grpFunctionAccount
             // 
-            this.grpFunctionAccount.Controls.Add(this.btnRefreshAccount);
+            this.grpFunctionAccount.Controls.Add(this.btnSave);
             this.grpFunctionAccount.Controls.Add(this.btnAddAccount);
             this.grpFunctionAccount.Controls.Add(this.btnEditAccount);
             this.grpFunctionAccount.Controls.Add(this.btnDeleteAllAccount);
@@ -395,23 +324,25 @@ namespace frmLogin
             this.grpFunctionAccount.TabStop = false;
             this.grpFunctionAccount.Text = "Chức năng";
             // 
-            // btnRefreshAccount
+            // btnSave
             // 
-            this.btnRefreshAccount.BorderRadius = 20;
-            this.btnRefreshAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefreshAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefreshAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRefreshAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRefreshAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            this.btnRefreshAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRefreshAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnRefreshAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshAccount.Image")));
-            this.btnRefreshAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnRefreshAccount.Location = new System.Drawing.Point(261, 23);
-            this.btnRefreshAccount.Name = "btnRefreshAccount";
-            this.btnRefreshAccount.Size = new System.Drawing.Size(161, 45);
-            this.btnRefreshAccount.TabIndex = 28;
-            this.btnRefreshAccount.Text = "Làm mới";
+            this.btnSave.BorderRadius = 20;
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.Enabled = false;
+            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSave.Location = new System.Drawing.Point(261, 23);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(161, 45);
+            this.btnSave.TabIndex = 28;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnAddAccount
             // 
@@ -526,9 +457,75 @@ namespace frmLogin
             this.btnSearchAccount.Size = new System.Drawing.Size(92, 36);
             this.btnSearchAccount.TabIndex = 14;
             // 
+            // cbEmloyee
+            // 
+            this.cbEmloyee.BackColor = System.Drawing.Color.Transparent;
+            this.cbEmloyee.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbEmloyee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEmloyee.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbEmloyee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbEmloyee.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbEmloyee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbEmloyee.ItemHeight = 30;
+            this.cbEmloyee.Location = new System.Drawing.Point(161, 122);
+            this.cbEmloyee.Name = "cbEmloyee";
+            this.cbEmloyee.Size = new System.Drawing.Size(200, 36);
+            this.cbEmloyee.TabIndex = 8;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Username";
+            this.Column1.HeaderText = "Tên đăng nhập";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Password";
+            this.Column2.HeaderText = "Mật khẩu";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "TypeAccount";
+            this.Column5.HeaderText = "Mataikhoan";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "EmployeeID";
+            this.Column6.HeaderText = "MaNV";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "EmployeeName";
+            this.Column3.HeaderText = "Nhân viên";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "TypeName";
+            this.Column4.HeaderText = "Loại tài khoản";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // frmAccountManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 514);
             this.Controls.Add(this.grpFunctionAccount);
@@ -576,9 +573,9 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow2;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2ComboBox cbTypeAccount;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmployee;
         private System.Windows.Forms.GroupBox grpFunctionAccount;
-        private Guna.UI2.WinForms.Guna2Button btnRefreshAccount;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
+        private Guna.UI2.WinForms.Guna2ComboBox cbEmloyee;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;

@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Layer\AccountDAF.cs" />
+    <Compile Include="Data Access Layer\AccountMenuDAF.cs" />
     <Compile Include="Data Access Layer\BillDetailDAF.cs" />
     <Compile Include="Data Access Layer\BillDAF.cs" />
     <Compile Include="Data Access Layer\CategoryFoodDAF.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Data Access Layer\TypeAccountDAF.cs" />
     <Compile Include="Data Access Layer\Utils.cs" />
     <Compile Include="Data Tranfer Object\Account.cs" />
+    <Compile Include="Data Tranfer Object\AccountMenu.cs" />
     <Compile Include="Data Tranfer Object\Bill.cs" />
     <Compile Include="Data Tranfer Object\BillDetail.cs" />
     <Compile Include="Data Tranfer Object\CategoryFood.cs" />

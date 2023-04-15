@@ -21,10 +21,18 @@ namespace frmLogin
 
         private void frmAccountManagement_Load(object sender, EventArgs e)
         {
-            dtgvListAccount.DataSource= AccountDAF.Instance.GetListAccount();
+            dtgvListAccount.DataSource= AccountMenuDAF.Instance.GetListAccount();
             cbTypeAccount.DataSource = TypeAccountDAF.Instance.GetListTypeAccount();
             cbTypeAccount.DisplayMember = "TenLoai";
             cbTypeAccount.ValueMember = "MaLoai";
+            cbEmloyee.DataSource = EmployeeDAF.Instance.GetListEmployee();
+            cbEmloyee.DisplayMember = "TenNV";
+            cbEmloyee.ValueMember = "MaNV";
+            btnSave.Enabled = false;
+            btnSave.Enabled = false;
+            btnDeleteAllAccount.Enabled = true;
+            btnDeleteAccount.Enabled = true;
+            btnEditAccount.Enabled = true;
         }
 
         private void btnAccountDeleted_Click(object sender, EventArgs e)
@@ -52,16 +60,14 @@ namespace frmLogin
 
         private void btnAddAccount_Click(object sender, EventArgs e)
         {
-            int count = AccountDAF.Instance.AddAccount(txtUsername.Text, txtPassword.Text, txtEmployee.Text, cbTypeAccount.SelectedValue.ToString());
-            if (count > 0)
-            {
-                MessageBox.Show("Thêm tài khoản thành công");
-            }
-            else
-            {
-                MessageBox.Show("Thêm tài khoản thất bại");
-            }
-            frmAccountManagement_Load(sender, e);
+            txtUsername.Clear();
+            txtPassword.Clear();
+            cbEmloyee.SelectedIndex=0;
+            cbTypeAccount.SelectedIndex = 0;
+            btnSave.Enabled = true;
+            btnDeleteAllAccount.Enabled = false;
+            btnDeleteAccount.Enabled = false;
+            btnEditAccount.Enabled = false;
         }
 
        
@@ -85,7 +91,7 @@ namespace frmLogin
 
         private void btnEditAccount_Click(object sender, EventArgs e)
         {
-            int count = AccountDAF.Instance.EditAccount(txtUsername.Text, txtEmployee.Text, cbTypeAccount.SelectedValue.ToString());
+            int count = AccountDAF.Instance.EditAccount(txtUsername.Text,cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
             if (count > 0)
             {
                 MessageBox.Show("Sửa tài khoản thành công");
@@ -103,18 +109,26 @@ namespace frmLogin
         {
             txtUsername.Text = dtgvListAccount.SelectedRows[0].Cells[0].Value.ToString();
             txtPassword.Text = dtgvListAccount.SelectedRows[0].Cells[1].Value.ToString();
-            txtEmployee.Text = dtgvListAccount.SelectedRows[0].Cells[4].Value.ToString();
-            int type = int.Parse(dtgvListAccount.SelectedRows[0].Cells[3].Value.ToString());
-            if (type == 1)
-            {
-                cbTypeAccount.SelectedIndex = 0;
+            cbEmloyee.SelectedValue = Convert.ToInt32(dtgvListAccount.SelectedRows[0].Cells[2].Value.ToString());
+            cbTypeAccount.SelectedValue = Convert.ToInt32(dtgvListAccount.SelectedRows[0].Cells[3].Value.ToString());
+            btnSave.Enabled = false;
+            btnDeleteAllAccount.Enabled =true;
+            btnDeleteAccount.Enabled = true;
+            btnEditAccount.Enabled = true;
+        }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            int count = AccountDAF.Instance.AddAccount(txtUsername.Text, txtPassword.Text,cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm tài khoản thành công");
             }
             else
             {
-                cbTypeAccount.SelectedIndex = 1;
-
+                MessageBox.Show("Thêm tài khoản thất bại");
             }
+            frmAccountManagement_Load(sender, e);
         }
     }
 }
