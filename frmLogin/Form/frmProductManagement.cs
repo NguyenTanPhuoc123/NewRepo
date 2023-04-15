@@ -1,9 +1,11 @@
 ﻿using frmLogin.Data_Access_Layer;
+using frmLogin.Data_Tranfer_Object;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,6 +19,7 @@ namespace frmLogin
         public frmProductManagement()
         {
             InitializeComponent();
+            dtgvListProduct.AutoGenerateColumns = false;
 
         }
 
@@ -26,26 +29,33 @@ namespace frmLogin
             frm.Show();
 
         }
-
+        Product product;
+        public void getValue()
+        {
+            string maSP = txtProductID.Text;
+            string tenSP = txtProductName.Text;
+            int donGia = Convert.ToInt32(txtPrice.Text);
+            int soLuong = Convert.ToInt32(numQuantity.Value.ToString());
+            string moTa = richtxtDescribe.Text;
+            int danhMuc = Convert.ToInt32(cbCategory.SelectedValue.ToString());
+            byte[] hinhAnh = ConvertImageToByte(pbProduct);
+            product = new Product(maSP, tenSP, danhMuc, soLuong, donGia, 1,hinhAnh,moTa);
+        }
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            byte[] image = imageToByteArray(pbProduct.Image);
-            string query = string.Format("INSERT INTO SANPHAM VALUES({0},{1},{2},{3},{4},{5},1,{6})",txtProductID.Text,txtProductName.Text,cbCategory.SelectedValue.ToString(),numQuantity.Value.ToString(),txtPrice.Text,richtxtDescribe.Text,image);
-            int count = DataProvider.ExecuteInsertCommand(query, null);
+            getValue();
+            string query ="INSERT INTO SANPHAM(MASANPHAM,TENSANPHAM,DANHMUC,SOLUONG,DONGIA,MOTA,TRANGTHAI,HinhANh) VALUES(@MASP,@TENSP,@DANHMUC,@SOLUONG,@DONGIA,@MOTA,@TRANGTHAI,@HINHANH)";
+            int count = ProductDAF.ExecuteInsertCommand(query, product);
             MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
+            frmProductManagement_Load(sender, e);
         }
-        public byte[] imageToByteArray(System.Drawing.Image imageIn)
+        public byte[] ConvertImageToByte(PictureBox image)
         {
-            MemoryStream ms = new MemoryStream();
-            imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
-            return ms.ToArray();
-        }
-
-        public Image byteArrayToImage(byte[] byteArrayIn)
-        {
-            MemoryStream ms = new MemoryStream(byteArrayIn);
-            Image returnImage = Image.FromStream(ms);
-            return returnImage;
+            using (var memoryStream = new MemoryStream())
+            {
+                image.Image.Save(memoryStream,image.Image.RawFormat);
+                return memoryStream.ToArray();
+            }
         }
 
         private void pbProduct_Click(object sender, EventArgs e)

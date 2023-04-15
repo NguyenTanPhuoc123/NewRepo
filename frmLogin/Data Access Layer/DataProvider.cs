@@ -5,13 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
 namespace frmLogin.Data_Access_Layer
 {
     public class DataProvider
     {
+<<<<<<< HEAD
+        //private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
+        private static string connect = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
+=======
         private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
         //private static string connect = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
+>>>>>>> 4664ef7e63a8f68702e5a77d9f61e56fbddb1d5d
         //private static string connect = @"Data Source=NTP;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
         private static SqlConnection connection = new SqlConnection(connect);
         private static SqlDataAdapter da = new SqlDataAdapter();
@@ -67,5 +71,7 @@ namespace frmLogin.Data_Access_Layer
             connection.Close();
             return rows;
         }
+        
+
     }
 }
