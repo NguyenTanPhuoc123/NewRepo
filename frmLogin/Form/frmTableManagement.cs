@@ -17,6 +17,8 @@ namespace frmLogin
         public frmTableManagement()
         {
             InitializeComponent();
+            cbFillTable.SelectedIndex = 0;
+            cbSortTable.SelectedIndex = 0;
         }
 
         private void btnTableDeleted_Click(object sender, EventArgs e)
@@ -159,6 +161,51 @@ namespace frmLogin
                 }
                 frmTableManagement_Load(sender, e);
             }
+        }
+
+        private void txtSearchTable_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSearchTable.Text))
+            {
+                dtgvListTable.DataSource = TableMenuDAF.Instance.GetListTableMenu();
+            }
+
+            dtgvListTable.DataSource = TableMenuDAF.Instance.SearchTableFoodByTableName(txtSearchTable.Text);
+        }
+
+        private void cbSortTable_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (cbSortTable.SelectedIndex == 1)
+            {   
+                dtgvListTable.DataSource = TableMenuDAF.Instance.SortListTableMenuByTableName();
+            }
+            else if(cbSortTable.SelectedIndex == 2)
+                dtgvListTable.DataSource = TableMenuDAF.Instance.SortListTableMenuByLocation();
+            else
+                dtgvListTable.DataSource = TableMenuDAF.Instance.GetListTableMenu();
+
+
+        }
+
+        private void cbFillTable_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (cbFillTable.SelectedIndex == 0)
+            {
+                dtgvListTable.DataSource = TableMenuDAF.Instance.GetListTableMenu();
+                
+            }
+            else
+            {
+                dtgvListTable.DataSource = TableMenuDAF.Instance.FillTableFood(cbFillTable.SelectedIndex);
+               
+            }
+        }
+
+        private void btnSearchTable_Click(object sender, EventArgs e)
+        {
+            dtgvListTable.DataSource = TableMenuDAF.Instance.SearchTableFoodByTableName(txtSearchTable.Text);
         }
     }
 }

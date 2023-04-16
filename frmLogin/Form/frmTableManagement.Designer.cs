@@ -29,9 +29,9 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTableManagement));
             this.label1 = new System.Windows.Forms.Label();
             this.cbSortTable = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -39,6 +39,11 @@ namespace frmLogin
             this.cbFillTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchTable = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtgvListTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.colTableID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTableName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocationID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTableInfo = new System.Windows.Forms.GroupBox();
             this.cbLocation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,12 +58,7 @@ namespace frmLogin
             this.btnDeleteAllTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnTableDeleted = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.colTableID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTableName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLocationID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearchTable = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListTable)).BeginInit();
             this.grpTableInfo.SuspendLayout();
             this.grpFunctionTable.SuspendLayout();
@@ -67,7 +67,7 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 221);
+            this.label1.Location = new System.Drawing.Point(38, 221);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 0;
@@ -83,15 +83,20 @@ namespace frmLogin
             this.cbSortTable.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbSortTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortTable.ItemHeight = 30;
-            this.cbSortTable.Location = new System.Drawing.Point(62, 242);
+            this.cbSortTable.Items.AddRange(new object[] {
+            "Mặc định",
+            "Sắp xếp theo tên bàn",
+            "Sắp xếp theo vị trí"});
+            this.cbSortTable.Location = new System.Drawing.Point(36, 242);
             this.cbSortTable.Name = "cbSortTable";
-            this.cbSortTable.Size = new System.Drawing.Size(167, 36);
+            this.cbSortTable.Size = new System.Drawing.Size(203, 36);
             this.cbSortTable.TabIndex = 1;
+            this.cbSortTable.SelectedIndexChanged += new System.EventHandler(this.cbSortTable_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(817, 221);
+            this.label2.Location = new System.Drawing.Point(847, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 18);
             this.label2.TabIndex = 2;
@@ -107,10 +112,17 @@ namespace frmLogin
             this.cbFillTable.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillTable.ItemHeight = 30;
-            this.cbFillTable.Location = new System.Drawing.Point(820, 242);
+            this.cbFillTable.Items.AddRange(new object[] {
+            "Tất cả",
+            "Bên trong tầng 1",
+            "Bên ngoài tầng 1",
+            "Bên trong tầng 2",
+            "Bên ngoài tầng 2 "});
+            this.cbFillTable.Location = new System.Drawing.Point(850, 242);
             this.cbFillTable.Name = "cbFillTable";
             this.cbFillTable.Size = new System.Drawing.Size(167, 36);
             this.cbFillTable.TabIndex = 3;
+            this.cbFillTable.SelectedIndexChanged += new System.EventHandler(this.cbFillTable_SelectedIndexChanged);
             // 
             // txtSearchTable
             // 
@@ -132,21 +144,22 @@ namespace frmLogin
             this.txtSearchTable.SelectedText = "";
             this.txtSearchTable.Size = new System.Drawing.Size(282, 41);
             this.txtSearchTable.TabIndex = 4;
+            this.txtSearchTable.TextChanged += new System.EventHandler(this.txtSearchTable_TextChanged);
             // 
             // dtgvListTable
             // 
             this.dtgvListTable.AllowUserToAddRows = false;
             this.dtgvListTable.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dtgvListTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgvListTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvListTable.ColumnHeadersHeight = 25;
             this.dtgvListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -155,21 +168,21 @@ namespace frmLogin
             this.colLocation,
             this.colStatus,
             this.colLocationID});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListTable.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTable.Location = new System.Drawing.Point(62, 284);
+            this.dtgvListTable.Location = new System.Drawing.Point(36, 284);
             this.dtgvListTable.Name = "dtgvListTable";
             this.dtgvListTable.RowHeadersVisible = false;
             this.dtgvListTable.RowHeadersWidth = 51;
             this.dtgvListTable.RowTemplate.Height = 24;
-            this.dtgvListTable.Size = new System.Drawing.Size(925, 220);
+            this.dtgvListTable.Size = new System.Drawing.Size(981, 220);
             this.dtgvListTable.TabIndex = 5;
             this.dtgvListTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -194,6 +207,42 @@ namespace frmLogin
             this.dtgvListTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTable_CellContentClick);
             this.dtgvListTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTable_CellContentClick);
+            // 
+            // colTableID
+            // 
+            this.colTableID.DataPropertyName = "MaBanAn";
+            this.colTableID.HeaderText = "Mã bàn ăn";
+            this.colTableID.MinimumWidth = 6;
+            this.colTableID.Name = "colTableID";
+            // 
+            // colTableName
+            // 
+            this.colTableName.DataPropertyName = "TenBan";
+            this.colTableName.HeaderText = "Tên bàn ăn";
+            this.colTableName.MinimumWidth = 6;
+            this.colTableName.Name = "colTableName";
+            // 
+            // colLocation
+            // 
+            this.colLocation.DataPropertyName = "TenViTri";
+            this.colLocation.HeaderText = "Vị trí";
+            this.colLocation.MinimumWidth = 6;
+            this.colLocation.Name = "colLocation";
+            // 
+            // colStatus
+            // 
+            this.colStatus.DataPropertyName = "TrangThai";
+            this.colStatus.HeaderText = "Trạng thái";
+            this.colStatus.MinimumWidth = 6;
+            this.colStatus.Name = "colStatus";
+            // 
+            // colLocationID
+            // 
+            this.colLocationID.DataPropertyName = "MaViTri";
+            this.colLocationID.HeaderText = "Mã vị trí";
+            this.colLocationID.MinimumWidth = 6;
+            this.colLocationID.Name = "colLocationID";
+            this.colLocationID.Visible = false;
             // 
             // grpTableInfo
             // 
@@ -305,7 +354,7 @@ namespace frmLogin
             this.grpFunctionTable.Controls.Add(this.btnTableDeleted);
             this.grpFunctionTable.Location = new System.Drawing.Point(583, 12);
             this.grpFunctionTable.Name = "grpFunctionTable";
-            this.grpFunctionTable.Size = new System.Drawing.Size(404, 206);
+            this.grpFunctionTable.Size = new System.Drawing.Size(434, 206);
             this.grpFunctionTable.TabIndex = 13;
             this.grpFunctionTable.TabStop = false;
             this.grpFunctionTable.Text = "Chức năng";
@@ -323,7 +372,7 @@ namespace frmLogin
             this.btnSaveTable.ForeColor = System.Drawing.Color.Black;
             this.btnSaveTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveTable.Image")));
             this.btnSaveTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveTable.Location = new System.Drawing.Point(250, 27);
+            this.btnSaveTable.Location = new System.Drawing.Point(280, 27);
             this.btnSaveTable.Name = "btnSaveTable";
             this.btnSaveTable.Size = new System.Drawing.Size(148, 45);
             this.btnSaveTable.TabIndex = 27;
@@ -383,7 +432,7 @@ namespace frmLogin
             this.btnDeleteAllTable.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllTable.Image")));
             this.btnDeleteAllTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllTable.Location = new System.Drawing.Point(250, 154);
+            this.btnDeleteAllTable.Location = new System.Drawing.Point(280, 154);
             this.btnDeleteAllTable.Name = "btnDeleteAllTable";
             this.btnDeleteAllTable.Size = new System.Drawing.Size(148, 43);
             this.btnDeleteAllTable.TabIndex = 11;
@@ -421,65 +470,30 @@ namespace frmLogin
             this.btnTableDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnTableDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnTableDeleted.Image")));
             this.btnTableDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTableDeleted.Location = new System.Drawing.Point(250, 83);
+            this.btnTableDeleted.Location = new System.Drawing.Point(280, 83);
             this.btnTableDeleted.Name = "btnTableDeleted";
             this.btnTableDeleted.Size = new System.Drawing.Size(148, 45);
             this.btnTableDeleted.TabIndex = 10;
             this.btnTableDeleted.Text = "Bàn đã xóa";
             this.btnTableDeleted.Click += new System.EventHandler(this.btnTableDeleted_Click);
             // 
-            // guna2Button1
+            // btnSearchTable
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(637, 237);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(99, 41);
-            this.guna2Button1.TabIndex = 6;
-            // 
-            // colTableID
-            // 
-            this.colTableID.DataPropertyName = "MaBanAn";
-            this.colTableID.HeaderText = "Mã bàn ăn";
-            this.colTableID.MinimumWidth = 6;
-            this.colTableID.Name = "colTableID";
-            // 
-            // colTableName
-            // 
-            this.colTableName.DataPropertyName = "TenBan";
-            this.colTableName.HeaderText = "Tên bàn ăn";
-            this.colTableName.MinimumWidth = 6;
-            this.colTableName.Name = "colTableName";
-            // 
-            // colLocation
-            // 
-            this.colLocation.DataPropertyName = "TenViTri";
-            this.colLocation.HeaderText = "Vị trí";
-            this.colLocation.MinimumWidth = 6;
-            this.colLocation.Name = "colLocation";
-            // 
-            // colStatus
-            // 
-            this.colStatus.DataPropertyName = "TrangThai";
-            this.colStatus.HeaderText = "Trạng thái";
-            this.colStatus.MinimumWidth = 6;
-            this.colStatus.Name = "colStatus";
-            // 
-            // colLocationID
-            // 
-            this.colLocationID.DataPropertyName = "MaViTri";
-            this.colLocationID.HeaderText = "Mã vị trí";
-            this.colLocationID.MinimumWidth = 6;
-            this.colLocationID.Name = "colLocationID";
-            this.colLocationID.Visible = false;
+            this.btnSearchTable.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearchTable.BorderRadius = 10;
+            this.btnSearchTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchTable.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSearchTable.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearchTable.ForeColor = System.Drawing.Color.White;
+            this.btnSearchTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchTable.Image")));
+            this.btnSearchTable.Location = new System.Drawing.Point(637, 237);
+            this.btnSearchTable.Name = "btnSearchTable";
+            this.btnSearchTable.Size = new System.Drawing.Size(99, 41);
+            this.btnSearchTable.TabIndex = 6;
+            this.btnSearchTable.Click += new System.EventHandler(this.btnSearchTable_Click);
             // 
             // frmTableManagement
             // 
@@ -488,7 +502,7 @@ namespace frmLogin
             this.ClientSize = new System.Drawing.Size(1053, 516);
             this.Controls.Add(this.grpFunctionTable);
             this.Controls.Add(this.grpTableInfo);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnSearchTable);
             this.Controls.Add(this.dtgvListTable);
             this.Controls.Add(this.txtSearchTable);
             this.Controls.Add(this.cbFillTable);
@@ -517,7 +531,7 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2ComboBox cbFillTable;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchTable;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvListTable;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnSearchTable;
         private Guna.UI2.WinForms.Guna2Button btnAddTable;
         private Guna.UI2.WinForms.Guna2Button btnEditTable;
         private Guna.UI2.WinForms.Guna2Button btnDeleteTable;
