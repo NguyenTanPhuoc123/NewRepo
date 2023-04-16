@@ -465,3 +465,4 @@ C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\bin\Debug\Guna.UI2.dl
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\zh\frmLogin.resources.dll
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.CopyComplete
+D:\do an\frmLogin\obj\Debug\frmLogin.frmCategoryManager.resources
