@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\frmCategoryManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCategoryManager.Designer.cs">
+      <DependentUpon>frmCategoryManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data Access Layer\AccountDAF.cs" />
     <Compile Include="Data Access Layer\AccountMenuDAF.cs" />
     <Compile Include="Data Access Layer\BillDetailDAF.cs" />
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmBillDetail.resx">
       <DependentUpon>frmBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCategoryManager.resx">
+      <DependentUpon>frmCategoryManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
