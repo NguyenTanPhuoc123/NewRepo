@@ -36,9 +36,12 @@ namespace frmLogin
                 item.SubItems.Add(products[i].DonGia.ToString());
                 lstvListDish.Items.Add(item);
             }
+            cbCategoryDish.DataSource = CategoryFoodDAF.Instance.GetCategoryFoods();
+            cbCategoryDish.ValueMember = "CategoryID";
+            cbCategoryDish.DisplayMember = "CategoryName";
         }
 
-        private void btnSelectDish_Click(object sender, EventArgs e)
+        private void btnAddDish_Click(object sender, EventArgs e)
         {
             Usercontrol uc = new Usercontrol();
             if (lstvListDish.SelectedItems.Count > 0)
@@ -48,7 +51,7 @@ namespace frmLogin
                 uc.TenSP = " " + txtDishName.Text;
                 uc.SoLuong = " " + numQuantity.Value.ToString();
                 uc.DonGia = " " + txtDishPrice.Text;
-                flowLayoutPanel1.Controls.Add(uc);
+                flpAddDish.Controls.Add(uc);
             }
         }
 
@@ -63,6 +66,17 @@ namespace frmLogin
                 txtCategoryDish.Text = lstvListDish.SelectedItems[0].SubItems[1].Text;
                 txtDishPrice.Text = lstvListDish.SelectedItems[0].SubItems[2].Text;
             }
+        }
+
+        private void flowLayoutPanel1_DoubleClick(object sender, EventArgs e)
+        {
+            Usercontrol usercontrol = new Usercontrol();
+            this.Controls.Remove(usercontrol);
+        }
+
+        private void cbCategoryDish_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

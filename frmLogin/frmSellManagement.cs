@@ -30,9 +30,6 @@ namespace frmLogin
             
         }
 
-        
-       
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             tsslblTime.Text = DateTime.Now.ToString("hh:mm:ss:tt");
@@ -101,9 +98,14 @@ namespace frmLogin
             
         }
 
-
-        
-       
+        public void ShowBill(int nTableId)
+        {
+            List<MenuTable> menus = MenuDAF.Instance.GetListMenu(nTableId);
+            for(int i = 0; i < menus.Count; i++)
+            {
+                ListViewItem lsvItem = new ListViewItem();
+            }
+        }
         private void btnTable_Click(object sender, EventArgs e)
         {
             int nTableId = ((sender as Button).Tag as Table).MaBanAn;
