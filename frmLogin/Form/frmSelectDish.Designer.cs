@@ -39,6 +39,7 @@ namespace frmLogin
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.cbCategoryDish = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearchDish = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,7 +56,6 @@ namespace frmLogin
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.grpDishDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -67,7 +67,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(414, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 22);
+            this.label1.Size = new System.Drawing.Size(0, 18);
             this.label1.TabIndex = 1;
             // 
             // panel1
@@ -100,7 +100,7 @@ namespace frmLogin
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(365, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(350, 65);
+            this.label2.Size = new System.Drawing.Size(299, 55);
             this.label2.TabIndex = 3;
             this.label2.Text = "CHỌN MÓN";
             // 
@@ -134,6 +134,12 @@ namespace frmLogin
             this.columnHeader3.Text = "Đơn giá";
             this.columnHeader3.Width = 97;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(80, 80);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // cbCategoryDish
             // 
             this.cbCategoryDish.BackColor = System.Drawing.Color.Transparent;
@@ -155,7 +161,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 22);
+            this.label3.Size = new System.Drawing.Size(76, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "Danh mục";
             // 
@@ -214,7 +220,7 @@ namespace frmLogin
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 362);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 22);
+            this.label7.Size = new System.Drawing.Size(71, 18);
             this.label7.TabIndex = 7;
             this.label7.Text = "Số lượng:";
             // 
@@ -244,7 +250,7 @@ namespace frmLogin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 319);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 22);
+            this.label6.Size = new System.Drawing.Size(63, 18);
             this.label6.TabIndex = 5;
             this.label6.Text = "Đơn giá:";
             // 
@@ -274,7 +280,7 @@ namespace frmLogin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 22);
+            this.label5.Size = new System.Drawing.Size(76, 18);
             this.label5.TabIndex = 3;
             this.label5.Text = "Danh mục";
             // 
@@ -304,7 +310,7 @@ namespace frmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 219);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 22);
+            this.label4.Size = new System.Drawing.Size(67, 18);
             this.label4.TabIndex = 1;
             this.label4.Text = "Tên món";
             // 
@@ -362,15 +368,9 @@ namespace frmLogin
             this.flowLayoutPanel1.Size = new System.Drawing.Size(304, 487);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(80, 80);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // frmSelectDish
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1195, 559);
             this.Controls.Add(this.flowLayoutPanel1);

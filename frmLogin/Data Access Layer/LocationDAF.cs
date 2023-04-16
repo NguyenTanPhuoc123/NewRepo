@@ -24,7 +24,7 @@ namespace frmLogin.Data_Access_Layer
         public List<Location> GetListLocation()
         {
             List<Location> listLocation = new List<Location>();
-            string query = "SELECT * FROM VITRI";
+            string query = "SELECT * FROM VITRI WHERE XOA = 0";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach(DataRow row in data.Rows)
             {

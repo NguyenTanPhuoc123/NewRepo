@@ -66,6 +66,7 @@
     <Compile Include="Data Access Layer\PositionDAF.cs" />
     <Compile Include="Data Access Layer\ProductDAF.cs" />
     <Compile Include="Data Access Layer\TableDAF.cs" />
+    <Compile Include="Data Access Layer\TableMenuDAF.cs" />
     <Compile Include="Data Access Layer\TypeAccountDAF.cs" />
     <Compile Include="Data Access Layer\Utils.cs" />
     <Compile Include="Data Tranfer Object\Account.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Data Tranfer Object\Position.cs" />
     <Compile Include="Data Tranfer Object\Product.cs" />
     <Compile Include="Data Tranfer Object\Table.cs" />
+    <Compile Include="Data Tranfer Object\TableMenu.cs" />
     <Compile Include="Data Tranfer Object\TypeAccount.cs" />
     <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>
