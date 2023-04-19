@@ -18,11 +18,7 @@ namespace frmLogin
             InitializeComponent();
         }
 
-        private void btnExitFomSelectDish_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            
-        }
+              
 
         private void dtgvListAccountDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -124,6 +120,11 @@ namespace frmLogin
                 }
                 LoadTableFoodDeleted();
             }
+        }
+
+        private void btnExitFomRecycleBin_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
  

@@ -29,31 +29,29 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRecycleBin));
             this.tabctrlListDeletedManager = new Guna.UI2.WinForms.Guna2TabControl();
             this.tbpProductDeleted = new System.Windows.Forms.TabPage();
             this.dtgvListProductDeleted = new Guna.UI2.WinForms.Guna2DataGridView();
             this.grpFunctionProduct = new System.Windows.Forms.GroupBox();
-            this.btnDeteleAllProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreAllProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreProduct = new Guna.UI2.WinForms.Guna2Button();
             this.grpProductInfo = new System.Windows.Forms.GroupBox();
@@ -73,8 +71,6 @@ namespace frmLogin
             this.pbProduct = new System.Windows.Forms.PictureBox();
             this.tbpEmployeeDeleted = new System.Windows.Forms.TabPage();
             this.grpFunctionEmployee = new System.Windows.Forms.GroupBox();
-            this.btnDeleteAllEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreAllEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListEmployeeDeleted = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -98,8 +94,6 @@ namespace frmLogin
             this.label16 = new System.Windows.Forms.Label();
             this.tbpAccountDeleted = new System.Windows.Forms.TabPage();
             this.grpFunctionAccount = new System.Windows.Forms.GroupBox();
-            this.btnDeleteAllAccount = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreAllAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreAccount = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListAccountDeleted = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -118,8 +112,6 @@ namespace frmLogin
             this.label20 = new System.Windows.Forms.Label();
             this.tbpCustomerAccount = new System.Windows.Forms.TabPage();
             this.grpFunctionCustomer = new System.Windows.Forms.GroupBox();
-            this.btnDeleteAllCustomer = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreAllCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListCustomerDeleted = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -135,7 +127,13 @@ namespace frmLogin
             this.btnRestoreAllTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreTable = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvListTableFoodDeleted = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.colTableID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTableName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatusTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocationID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTableInfo = new System.Windows.Forms.GroupBox();
+            this.txtLocation = new Guna.UI2.WinForms.Guna2TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.txtTableName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label25 = new System.Windows.Forms.Label();
@@ -144,8 +142,6 @@ namespace frmLogin
             this.tbpBillDetailDeleted = new System.Windows.Forms.TabPage();
             this.dtgvListBillDetailDeleted = new Guna.UI2.WinForms.Guna2DataGridView();
             this.grpFunctionBillDetail = new System.Windows.Forms.GroupBox();
-            this.btnDeteleAllBillDetail = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteBillDetail = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreAllBillDetail = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreBillDetail = new Guna.UI2.WinForms.Guna2Button();
             this.grpBillDetail = new System.Windows.Forms.GroupBox();
@@ -158,16 +154,9 @@ namespace frmLogin
             this.label30 = new System.Windows.Forms.Label();
             this.txtBillID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnExitFomSelectDish = new System.Windows.Forms.Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.colTableID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTableName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatusTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLocationID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtLocation = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnExitFomRecycleBin = new System.Windows.Forms.Button();
             this.tabctrlListDeletedManager.SuspendLayout();
             this.tbpProductDeleted.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProductDeleted)).BeginInit();
@@ -195,7 +184,7 @@ namespace frmLogin
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListBillDetailDeleted)).BeginInit();
             this.grpFunctionBillDetail.SuspendLayout();
             this.grpBillDetail.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabctrlListDeletedManager
@@ -208,11 +197,11 @@ namespace frmLogin
             this.tabctrlListDeletedManager.Controls.Add(this.tbpTableFoodDeleted);
             this.tabctrlListDeletedManager.Controls.Add(this.tbpBillDetailDeleted);
             this.tabctrlListDeletedManager.ItemSize = new System.Drawing.Size(180, 40);
-            this.tabctrlListDeletedManager.Location = new System.Drawing.Point(0, 91);
+            this.tabctrlListDeletedManager.Location = new System.Drawing.Point(0, 88);
             this.tabctrlListDeletedManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabctrlListDeletedManager.Name = "tabctrlListDeletedManager";
             this.tabctrlListDeletedManager.SelectedIndex = 0;
-            this.tabctrlListDeletedManager.Size = new System.Drawing.Size(1115, 446);
+            this.tabctrlListDeletedManager.Size = new System.Drawing.Size(1255, 486);
             this.tabctrlListDeletedManager.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tabctrlListDeletedManager.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.tabctrlListDeletedManager.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -241,41 +230,41 @@ namespace frmLogin
             this.tbpProductDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpProductDeleted.Name = "tbpProductDeleted";
             this.tbpProductDeleted.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbpProductDeleted.Size = new System.Drawing.Size(927, 438);
+            this.tbpProductDeleted.Size = new System.Drawing.Size(1067, 478);
             this.tbpProductDeleted.TabIndex = 0;
             this.tbpProductDeleted.Text = "Sản phẩm";
             this.tbpProductDeleted.UseVisualStyleBackColor = true;
             // 
             // dtgvListProductDeleted
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.dtgvListProductDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListProductDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgvListProductDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListProductDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvListProductDeleted.ColumnHeadersHeight = 4;
             this.dtgvListProductDeleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListProductDeleted.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListProductDeleted.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListProductDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListProductDeleted.Location = new System.Drawing.Point(26, 257);
+            this.dtgvListProductDeleted.Location = new System.Drawing.Point(19, 325);
             this.dtgvListProductDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvListProductDeleted.Name = "dtgvListProductDeleted";
             this.dtgvListProductDeleted.RowHeadersVisible = false;
             this.dtgvListProductDeleted.RowHeadersWidth = 51;
             this.dtgvListProductDeleted.RowTemplate.Height = 24;
-            this.dtgvListProductDeleted.Size = new System.Drawing.Size(866, 174);
+            this.dtgvListProductDeleted.Size = new System.Drawing.Size(1036, 140);
             this.dtgvListProductDeleted.TabIndex = 0;
             this.dtgvListProductDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListProductDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -301,54 +290,16 @@ namespace frmLogin
             // 
             // grpFunctionProduct
             // 
-            this.grpFunctionProduct.Controls.Add(this.btnDeteleAllProduct);
-            this.grpFunctionProduct.Controls.Add(this.btnDeleteProduct);
             this.grpFunctionProduct.Controls.Add(this.btnRestoreAllProduct);
             this.grpFunctionProduct.Controls.Add(this.btnRestoreProduct);
-            this.grpFunctionProduct.Location = new System.Drawing.Point(687, 6);
+            this.grpFunctionProduct.Location = new System.Drawing.Point(812, 77);
             this.grpFunctionProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpFunctionProduct.Name = "grpFunctionProduct";
             this.grpFunctionProduct.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpFunctionProduct.Size = new System.Drawing.Size(205, 244);
+            this.grpFunctionProduct.Size = new System.Drawing.Size(249, 244);
             this.grpFunctionProduct.TabIndex = 28;
             this.grpFunctionProduct.TabStop = false;
             this.grpFunctionProduct.Text = "Chức năng";
-            // 
-            // btnDeteleAllProduct
-            // 
-            this.btnDeteleAllProduct.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeteleAllProduct.BorderRadius = 10;
-            this.btnDeteleAllProduct.BorderThickness = 3;
-            this.btnDeteleAllProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeteleAllProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeteleAllProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeteleAllProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeteleAllProduct.FillColor = System.Drawing.Color.White;
-            this.btnDeteleAllProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeteleAllProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnDeteleAllProduct.Location = new System.Drawing.Point(5, 185);
-            this.btnDeteleAllProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeteleAllProduct.Name = "btnDeteleAllProduct";
-            this.btnDeteleAllProduct.Size = new System.Drawing.Size(165, 46);
-            this.btnDeteleAllProduct.TabIndex = 3;
-            this.btnDeteleAllProduct.Text = "Xóa tất cả vĩnh viễn";
-            // 
-            // btnDeleteProduct
-            // 
-            this.btnDeleteProduct.BorderRadius = 20;
-            this.btnDeleteProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeleteProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteProduct.Location = new System.Drawing.Point(5, 123);
-            this.btnDeleteProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(165, 46);
-            this.btnDeleteProduct.TabIndex = 2;
-            this.btnDeleteProduct.Text = "Xóa vĩnh viễn";
             // 
             // btnRestoreAllProduct
             // 
@@ -360,10 +311,10 @@ namespace frmLogin
             this.btnRestoreAllProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllProduct.Location = new System.Drawing.Point(5, 71);
+            this.btnRestoreAllProduct.Location = new System.Drawing.Point(19, 143);
             this.btnRestoreAllProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreAllProduct.Name = "btnRestoreAllProduct";
-            this.btnRestoreAllProduct.Size = new System.Drawing.Size(165, 46);
+            this.btnRestoreAllProduct.Size = new System.Drawing.Size(181, 46);
             this.btnRestoreAllProduct.TabIndex = 1;
             this.btnRestoreAllProduct.Text = "Khôi phục tất cả";
             // 
@@ -377,10 +328,10 @@ namespace frmLogin
             this.btnRestoreProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreProduct.Location = new System.Drawing.Point(5, 21);
+            this.btnRestoreProduct.Location = new System.Drawing.Point(19, 58);
             this.btnRestoreProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreProduct.Name = "btnRestoreProduct";
-            this.btnRestoreProduct.Size = new System.Drawing.Size(165, 46);
+            this.btnRestoreProduct.Size = new System.Drawing.Size(181, 46);
             this.btnRestoreProduct.TabIndex = 0;
             this.btnRestoreProduct.Text = "Khôi phục";
             // 
@@ -400,7 +351,7 @@ namespace frmLogin
             this.grpProductInfo.Controls.Add(this.txtProductID);
             this.grpProductInfo.Controls.Add(this.label2);
             this.grpProductInfo.Controls.Add(this.pbProduct);
-            this.grpProductInfo.Location = new System.Drawing.Point(5, 6);
+            this.grpProductInfo.Location = new System.Drawing.Point(11, 77);
             this.grpProductInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpProductInfo.Name = "grpProductInfo";
             this.grpProductInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -595,18 +546,16 @@ namespace frmLogin
             this.tbpEmployeeDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpEmployeeDeleted.Name = "tbpEmployeeDeleted";
             this.tbpEmployeeDeleted.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbpEmployeeDeleted.Size = new System.Drawing.Size(927, 438);
+            this.tbpEmployeeDeleted.Size = new System.Drawing.Size(1067, 478);
             this.tbpEmployeeDeleted.TabIndex = 1;
             this.tbpEmployeeDeleted.Text = "Nhân viên";
             this.tbpEmployeeDeleted.UseVisualStyleBackColor = true;
             // 
             // grpFunctionEmployee
             // 
-            this.grpFunctionEmployee.Controls.Add(this.btnDeleteAllEmployee);
-            this.grpFunctionEmployee.Controls.Add(this.btnDeleteEmployee);
             this.grpFunctionEmployee.Controls.Add(this.btnRestoreAllEmployee);
             this.grpFunctionEmployee.Controls.Add(this.btnRestoreEmployee);
-            this.grpFunctionEmployee.Location = new System.Drawing.Point(692, 6);
+            this.grpFunctionEmployee.Location = new System.Drawing.Point(713, 77);
             this.grpFunctionEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpFunctionEmployee.Name = "grpFunctionEmployee";
             this.grpFunctionEmployee.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -614,42 +563,6 @@ namespace frmLogin
             this.grpFunctionEmployee.TabIndex = 31;
             this.grpFunctionEmployee.TabStop = false;
             this.grpFunctionEmployee.Text = "Chức năng";
-            // 
-            // btnDeleteAllEmployee
-            // 
-            this.btnDeleteAllEmployee.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeleteAllEmployee.BorderRadius = 10;
-            this.btnDeleteAllEmployee.BorderThickness = 3;
-            this.btnDeleteAllEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAllEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAllEmployee.FillColor = System.Drawing.Color.White;
-            this.btnDeleteAllEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAllEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAllEmployee.Location = new System.Drawing.Point(5, 185);
-            this.btnDeleteAllEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteAllEmployee.Name = "btnDeleteAllEmployee";
-            this.btnDeleteAllEmployee.Size = new System.Drawing.Size(161, 46);
-            this.btnDeleteAllEmployee.TabIndex = 3;
-            this.btnDeleteAllEmployee.Text = "Xóa tất cả vĩnh viễn";
-            // 
-            // btnDeleteEmployee
-            // 
-            this.btnDeleteEmployee.BorderRadius = 20;
-            this.btnDeleteEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeleteEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteEmployee.Location = new System.Drawing.Point(5, 133);
-            this.btnDeleteEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteEmployee.Name = "btnDeleteEmployee";
-            this.btnDeleteEmployee.Size = new System.Drawing.Size(161, 46);
-            this.btnDeleteEmployee.TabIndex = 2;
-            this.btnDeleteEmployee.Text = "Xóa vĩnh viễn";
             // 
             // btnRestoreAllEmployee
             // 
@@ -661,10 +574,10 @@ namespace frmLogin
             this.btnRestoreAllEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllEmployee.Location = new System.Drawing.Point(5, 71);
+            this.btnRestoreAllEmployee.Location = new System.Drawing.Point(20, 114);
             this.btnRestoreAllEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreAllEmployee.Name = "btnRestoreAllEmployee";
-            this.btnRestoreAllEmployee.Size = new System.Drawing.Size(161, 46);
+            this.btnRestoreAllEmployee.Size = new System.Drawing.Size(148, 46);
             this.btnRestoreAllEmployee.TabIndex = 1;
             this.btnRestoreAllEmployee.Text = "Khôi phục tất cả";
             // 
@@ -678,43 +591,43 @@ namespace frmLogin
             this.btnRestoreEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreEmployee.Location = new System.Drawing.Point(5, 21);
+            this.btnRestoreEmployee.Location = new System.Drawing.Point(20, 21);
             this.btnRestoreEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreEmployee.Name = "btnRestoreEmployee";
-            this.btnRestoreEmployee.Size = new System.Drawing.Size(161, 46);
+            this.btnRestoreEmployee.Size = new System.Drawing.Size(148, 46);
             this.btnRestoreEmployee.TabIndex = 0;
             this.btnRestoreEmployee.Text = "Khôi phục";
             // 
             // dtgvListEmployeeDeleted
             // 
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            this.dtgvListEmployeeDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListEmployeeDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvListEmployeeDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListEmployeeDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvListEmployeeDeleted.ColumnHeadersHeight = 4;
             this.dtgvListEmployeeDeleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListEmployeeDeleted.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListEmployeeDeleted.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListEmployeeDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListEmployeeDeleted.Location = new System.Drawing.Point(5, 241);
+            this.dtgvListEmployeeDeleted.Location = new System.Drawing.Point(10, 312);
             this.dtgvListEmployeeDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvListEmployeeDeleted.Name = "dtgvListEmployeeDeleted";
             this.dtgvListEmployeeDeleted.RowHeadersVisible = false;
             this.dtgvListEmployeeDeleted.RowHeadersWidth = 51;
             this.dtgvListEmployeeDeleted.RowTemplate.Height = 24;
-            this.dtgvListEmployeeDeleted.Size = new System.Drawing.Size(913, 188);
+            this.dtgvListEmployeeDeleted.Size = new System.Drawing.Size(871, 158);
             this.dtgvListEmployeeDeleted.TabIndex = 30;
             this.dtgvListEmployeeDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListEmployeeDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -757,7 +670,7 @@ namespace frmLogin
             this.grpEmployeeInfo.Controls.Add(this.label15);
             this.grpEmployeeInfo.Controls.Add(this.txtEmployeeID);
             this.grpEmployeeInfo.Controls.Add(this.label16);
-            this.grpEmployeeInfo.Location = new System.Drawing.Point(5, 2);
+            this.grpEmployeeInfo.Location = new System.Drawing.Point(10, 77);
             this.grpEmployeeInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpEmployeeInfo.Name = "grpEmployeeInfo";
             this.grpEmployeeInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -987,61 +900,23 @@ namespace frmLogin
             this.tbpAccountDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpAccountDeleted.Name = "tbpAccountDeleted";
             this.tbpAccountDeleted.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbpAccountDeleted.Size = new System.Drawing.Size(927, 438);
+            this.tbpAccountDeleted.Size = new System.Drawing.Size(1067, 478);
             this.tbpAccountDeleted.TabIndex = 2;
             this.tbpAccountDeleted.Text = "Tài khoản";
             this.tbpAccountDeleted.UseVisualStyleBackColor = true;
             // 
             // grpFunctionAccount
             // 
-            this.grpFunctionAccount.Controls.Add(this.btnDeleteAllAccount);
-            this.grpFunctionAccount.Controls.Add(this.btnDeleteAccount);
             this.grpFunctionAccount.Controls.Add(this.btnRestoreAllAccount);
             this.grpFunctionAccount.Controls.Add(this.btnRestoreAccount);
-            this.grpFunctionAccount.Location = new System.Drawing.Point(561, 6);
+            this.grpFunctionAccount.Location = new System.Drawing.Point(694, 4);
             this.grpFunctionAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpFunctionAccount.Name = "grpFunctionAccount";
             this.grpFunctionAccount.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpFunctionAccount.Size = new System.Drawing.Size(357, 242);
+            this.grpFunctionAccount.Size = new System.Drawing.Size(357, 174);
             this.grpFunctionAccount.TabIndex = 32;
             this.grpFunctionAccount.TabStop = false;
             this.grpFunctionAccount.Text = "Chức năng";
-            // 
-            // btnDeleteAllAccount
-            // 
-            this.btnDeleteAllAccount.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeleteAllAccount.BorderRadius = 10;
-            this.btnDeleteAllAccount.BorderThickness = 3;
-            this.btnDeleteAllAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAllAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAllAccount.FillColor = System.Drawing.Color.White;
-            this.btnDeleteAllAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAllAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAllAccount.Location = new System.Drawing.Point(64, 191);
-            this.btnDeleteAllAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteAllAccount.Name = "btnDeleteAllAccount";
-            this.btnDeleteAllAccount.Size = new System.Drawing.Size(220, 46);
-            this.btnDeleteAllAccount.TabIndex = 3;
-            this.btnDeleteAllAccount.Text = "Xóa tất cả vĩnh viễn";
-            // 
-            // btnDeleteAccount
-            // 
-            this.btnDeleteAccount.BorderRadius = 20;
-            this.btnDeleteAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeleteAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(64, 130);
-            this.btnDeleteAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(220, 46);
-            this.btnDeleteAccount.TabIndex = 2;
-            this.btnDeleteAccount.Text = "Xóa vĩnh viễn";
             // 
             // btnRestoreAllAccount
             // 
@@ -1053,7 +928,7 @@ namespace frmLogin
             this.btnRestoreAllAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllAccount.Location = new System.Drawing.Point(64, 71);
+            this.btnRestoreAllAccount.Location = new System.Drawing.Point(64, 93);
             this.btnRestoreAllAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreAllAccount.Name = "btnRestoreAllAccount";
             this.btnRestoreAllAccount.Size = new System.Drawing.Size(220, 46);
@@ -1081,16 +956,16 @@ namespace frmLogin
             // 
             // dtgvListAccountDeleted
             // 
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            this.dtgvListAccountDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListAccountDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dtgvListAccountDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListAccountDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgvListAccountDeleted.ColumnHeadersHeight = 40;
             this.dtgvListAccountDeleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListAccountDeleted.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1098,22 +973,22 @@ namespace frmLogin
             this.Column2,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListAccountDeleted.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListAccountDeleted.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtgvListAccountDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListAccountDeleted.Location = new System.Drawing.Point(5, 252);
+            this.dtgvListAccountDeleted.Location = new System.Drawing.Point(6, 271);
             this.dtgvListAccountDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvListAccountDeleted.Name = "dtgvListAccountDeleted";
             this.dtgvListAccountDeleted.RowHeadersVisible = false;
             this.dtgvListAccountDeleted.RowHeadersWidth = 51;
             this.dtgvListAccountDeleted.RowTemplate.Height = 24;
-            this.dtgvListAccountDeleted.Size = new System.Drawing.Size(913, 177);
+            this.dtgvListAccountDeleted.Size = new System.Drawing.Size(1045, 203);
             this.dtgvListAccountDeleted.TabIndex = 30;
             this.dtgvListAccountDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListAccountDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1168,19 +1043,19 @@ namespace frmLogin
             // 
             // grpAccountInfo
             // 
-            this.grpAccountInfo.Controls.Add(this.txtTypeAccount);
-            this.grpAccountInfo.Controls.Add(this.label17);
             this.grpAccountInfo.Controls.Add(this.txtEmployee);
             this.grpAccountInfo.Controls.Add(this.label18);
             this.grpAccountInfo.Controls.Add(this.txtPassword);
             this.grpAccountInfo.Controls.Add(this.label19);
+            this.grpAccountInfo.Controls.Add(this.txtTypeAccount);
             this.grpAccountInfo.Controls.Add(this.txtUsername);
             this.grpAccountInfo.Controls.Add(this.label20);
-            this.grpAccountInfo.Location = new System.Drawing.Point(3, 6);
+            this.grpAccountInfo.Controls.Add(this.label17);
+            this.grpAccountInfo.Location = new System.Drawing.Point(6, 4);
             this.grpAccountInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpAccountInfo.Name = "grpAccountInfo";
             this.grpAccountInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpAccountInfo.Size = new System.Drawing.Size(483, 242);
+            this.grpAccountInfo.Size = new System.Drawing.Size(483, 263);
             this.grpAccountInfo.TabIndex = 29;
             this.grpAccountInfo.TabStop = false;
             this.grpAccountInfo.Text = "Thông tin tài khoản";
@@ -1198,7 +1073,7 @@ namespace frmLogin
             this.txtTypeAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeAccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeAccount.Location = new System.Drawing.Point(199, 165);
+            this.txtTypeAccount.Location = new System.Drawing.Point(199, 122);
             this.txtTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTypeAccount.Name = "txtTypeAccount";
             this.txtTypeAccount.PasswordChar = '\0';
@@ -1210,7 +1085,7 @@ namespace frmLogin
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(36, 174);
+            this.label17.Location = new System.Drawing.Point(36, 131);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(101, 17);
             this.label17.TabIndex = 7;
@@ -1229,7 +1104,7 @@ namespace frmLogin
             this.txtEmployee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmployee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployee.Location = new System.Drawing.Point(199, 119);
+            this.txtEmployee.Location = new System.Drawing.Point(199, 190);
             this.txtEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmployee.Name = "txtEmployee";
             this.txtEmployee.PasswordChar = '\0';
@@ -1241,7 +1116,7 @@ namespace frmLogin
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(63, 130);
+            this.label18.Location = new System.Drawing.Point(64, 199);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(76, 17);
             this.label18.TabIndex = 4;
@@ -1318,61 +1193,23 @@ namespace frmLogin
             this.tbpCustomerAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpCustomerAccount.Name = "tbpCustomerAccount";
             this.tbpCustomerAccount.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbpCustomerAccount.Size = new System.Drawing.Size(927, 438);
+            this.tbpCustomerAccount.Size = new System.Drawing.Size(1067, 478);
             this.tbpCustomerAccount.TabIndex = 3;
             this.tbpCustomerAccount.Text = "Khách hàng";
             this.tbpCustomerAccount.UseVisualStyleBackColor = true;
             // 
             // grpFunctionCustomer
             // 
-            this.grpFunctionCustomer.Controls.Add(this.btnDeleteAllCustomer);
-            this.grpFunctionCustomer.Controls.Add(this.btnDeleteCustomer);
             this.grpFunctionCustomer.Controls.Add(this.btnRestoreAllCustomer);
             this.grpFunctionCustomer.Controls.Add(this.btnRestoreCustomer);
-            this.grpFunctionCustomer.Location = new System.Drawing.Point(561, 6);
+            this.grpFunctionCustomer.Location = new System.Drawing.Point(704, 4);
             this.grpFunctionCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpFunctionCustomer.Name = "grpFunctionCustomer";
             this.grpFunctionCustomer.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpFunctionCustomer.Size = new System.Drawing.Size(357, 223);
+            this.grpFunctionCustomer.Size = new System.Drawing.Size(357, 163);
             this.grpFunctionCustomer.TabIndex = 36;
             this.grpFunctionCustomer.TabStop = false;
             this.grpFunctionCustomer.Text = "Chức năng";
-            // 
-            // btnDeleteAllCustomer
-            // 
-            this.btnDeleteAllCustomer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeleteAllCustomer.BorderRadius = 10;
-            this.btnDeleteAllCustomer.BorderThickness = 3;
-            this.btnDeleteAllCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAllCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAllCustomer.FillColor = System.Drawing.Color.White;
-            this.btnDeleteAllCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteAllCustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAllCustomer.Location = new System.Drawing.Point(77, 172);
-            this.btnDeleteAllCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteAllCustomer.Name = "btnDeleteAllCustomer";
-            this.btnDeleteAllCustomer.Size = new System.Drawing.Size(220, 46);
-            this.btnDeleteAllCustomer.TabIndex = 3;
-            this.btnDeleteAllCustomer.Text = "Xóa tất cả vĩnh viễn";
-            // 
-            // btnDeleteCustomer
-            // 
-            this.btnDeleteCustomer.BorderRadius = 20;
-            this.btnDeleteCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeleteCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteCustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteCustomer.Location = new System.Drawing.Point(77, 114);
-            this.btnDeleteCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
-            this.btnDeleteCustomer.Size = new System.Drawing.Size(220, 46);
-            this.btnDeleteCustomer.TabIndex = 2;
-            this.btnDeleteCustomer.Text = "Xóa vĩnh viễn";
             // 
             // btnRestoreAllCustomer
             // 
@@ -1384,7 +1221,7 @@ namespace frmLogin
             this.btnRestoreAllCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllCustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllCustomer.Location = new System.Drawing.Point(77, 63);
+            this.btnRestoreAllCustomer.Location = new System.Drawing.Point(67, 84);
             this.btnRestoreAllCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreAllCustomer.Name = "btnRestoreAllCustomer";
             this.btnRestoreAllCustomer.Size = new System.Drawing.Size(220, 46);
@@ -1401,7 +1238,7 @@ namespace frmLogin
             this.btnRestoreCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreCustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreCustomer.Location = new System.Drawing.Point(77, 12);
+            this.btnRestoreCustomer.Location = new System.Drawing.Point(67, 27);
             this.btnRestoreCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreCustomer.Name = "btnRestoreCustomer";
             this.btnRestoreCustomer.Size = new System.Drawing.Size(220, 46);
@@ -1410,34 +1247,34 @@ namespace frmLogin
             // 
             // dtgvListCustomerDeleted
             // 
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
-            this.dtgvListCustomerDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListCustomerDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.dtgvListCustomerDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListCustomerDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dtgvListCustomerDeleted.ColumnHeadersHeight = 4;
             this.dtgvListCustomerDeleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListCustomerDeleted.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListCustomerDeleted.DefaultCellStyle = dataGridViewCellStyle12;
             this.dtgvListCustomerDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListCustomerDeleted.Location = new System.Drawing.Point(5, 235);
+            this.dtgvListCustomerDeleted.Location = new System.Drawing.Point(6, 231);
             this.dtgvListCustomerDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvListCustomerDeleted.Name = "dtgvListCustomerDeleted";
             this.dtgvListCustomerDeleted.RowHeadersVisible = false;
             this.dtgvListCustomerDeleted.RowHeadersWidth = 51;
             this.dtgvListCustomerDeleted.RowTemplate.Height = 24;
-            this.dtgvListCustomerDeleted.Size = new System.Drawing.Size(913, 194);
+            this.dtgvListCustomerDeleted.Size = new System.Drawing.Size(1055, 243);
             this.dtgvListCustomerDeleted.TabIndex = 35;
             this.dtgvListCustomerDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListCustomerDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1469,7 +1306,7 @@ namespace frmLogin
             this.grpCustomerInfo.Controls.Add(this.label22);
             this.grpCustomerInfo.Controls.Add(this.txtCustomerID);
             this.grpCustomerInfo.Controls.Add(this.label23);
-            this.grpCustomerInfo.Location = new System.Drawing.Point(5, 6);
+            this.grpCustomerInfo.Location = new System.Drawing.Point(6, 4);
             this.grpCustomerInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpCustomerInfo.Name = "grpCustomerInfo";
             this.grpCustomerInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1577,7 +1414,7 @@ namespace frmLogin
             this.tbpTableFoodDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpTableFoodDeleted.Name = "tbpTableFoodDeleted";
             this.tbpTableFoodDeleted.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbpTableFoodDeleted.Size = new System.Drawing.Size(927, 438);
+            this.tbpTableFoodDeleted.Size = new System.Drawing.Size(1067, 478);
             this.tbpTableFoodDeleted.TabIndex = 4;
             this.tbpTableFoodDeleted.Text = "Bàn ăn";
             this.tbpTableFoodDeleted.UseVisualStyleBackColor = true;
@@ -1586,7 +1423,7 @@ namespace frmLogin
             // 
             this.grpFunctionTableFood.Controls.Add(this.btnRestoreAllTable);
             this.grpFunctionTableFood.Controls.Add(this.btnRestoreTable);
-            this.grpFunctionTableFood.Location = new System.Drawing.Point(497, 52);
+            this.grpFunctionTableFood.Location = new System.Drawing.Point(704, 9);
             this.grpFunctionTableFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpFunctionTableFood.Name = "grpFunctionTableFood";
             this.grpFunctionTableFood.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1635,16 +1472,16 @@ namespace frmLogin
             // 
             this.dtgvListTableFoodDeleted.AllowUserToAddRows = false;
             this.dtgvListTableFoodDeleted.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.dtgvListTableFoodDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListTableFoodDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dtgvListTableFoodDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListTableFoodDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dtgvListTableFoodDeleted.ColumnHeadersHeight = 25;
             this.dtgvListTableFoodDeleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListTableFoodDeleted.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1653,22 +1490,22 @@ namespace frmLogin
             this.colLocation,
             this.colStatusTable,
             this.colLocationID});
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListTableFoodDeleted.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListTableFoodDeleted.DefaultCellStyle = dataGridViewCellStyle15;
             this.dtgvListTableFoodDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTableFoodDeleted.Location = new System.Drawing.Point(6, 241);
+            this.dtgvListTableFoodDeleted.Location = new System.Drawing.Point(75, 239);
             this.dtgvListTableFoodDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvListTableFoodDeleted.Name = "dtgvListTableFoodDeleted";
             this.dtgvListTableFoodDeleted.RowHeadersVisible = false;
             this.dtgvListTableFoodDeleted.RowHeadersWidth = 51;
             this.dtgvListTableFoodDeleted.RowTemplate.Height = 24;
-            this.dtgvListTableFoodDeleted.Size = new System.Drawing.Size(864, 188);
+            this.dtgvListTableFoodDeleted.Size = new System.Drawing.Size(947, 235);
             this.dtgvListTableFoodDeleted.TabIndex = 14;
             this.dtgvListTableFoodDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTableFoodDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1694,6 +1531,42 @@ namespace frmLogin
             this.dtgvListTableFoodDeleted.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTableFoodDeleted_CellContentClick);
             this.dtgvListTableFoodDeleted.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTableFoodDeleted_CellContentClick);
             // 
+            // colTableID
+            // 
+            this.colTableID.DataPropertyName = "MaBanAn";
+            this.colTableID.HeaderText = "Mã bàn ăn";
+            this.colTableID.MinimumWidth = 6;
+            this.colTableID.Name = "colTableID";
+            // 
+            // colTableName
+            // 
+            this.colTableName.DataPropertyName = "TenBan";
+            this.colTableName.HeaderText = "Tên bàn ăn";
+            this.colTableName.MinimumWidth = 6;
+            this.colTableName.Name = "colTableName";
+            // 
+            // colLocation
+            // 
+            this.colLocation.DataPropertyName = "TenViTri";
+            this.colLocation.HeaderText = "Vị trí";
+            this.colLocation.MinimumWidth = 6;
+            this.colLocation.Name = "colLocation";
+            // 
+            // colStatusTable
+            // 
+            this.colStatusTable.DataPropertyName = "TrangThai";
+            this.colStatusTable.HeaderText = "Trạng thái";
+            this.colStatusTable.MinimumWidth = 6;
+            this.colStatusTable.Name = "colStatusTable";
+            // 
+            // colLocationID
+            // 
+            this.colLocationID.DataPropertyName = "MaViTri";
+            this.colLocationID.HeaderText = "Mã vị trí";
+            this.colLocationID.MinimumWidth = 6;
+            this.colLocationID.Name = "colLocationID";
+            this.colLocationID.Visible = false;
+            // 
             // grpTableInfo
             // 
             this.grpTableInfo.Controls.Add(this.txtLocation);
@@ -1702,7 +1575,7 @@ namespace frmLogin
             this.grpTableInfo.Controls.Add(this.label25);
             this.grpTableInfo.Controls.Add(this.txtTableID);
             this.grpTableInfo.Controls.Add(this.label26);
-            this.grpTableInfo.Location = new System.Drawing.Point(5, 6);
+            this.grpTableInfo.Location = new System.Drawing.Point(6, 9);
             this.grpTableInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpTableInfo.Name = "grpTableInfo";
             this.grpTableInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1710,6 +1583,28 @@ namespace frmLogin
             this.grpTableInfo.TabIndex = 13;
             this.grpTableInfo.TabStop = false;
             this.grpTableInfo.Text = "Thông tin bàn ăn";
+            // 
+            // txtLocation
+            // 
+            this.txtLocation.BorderRadius = 10;
+            this.txtLocation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLocation.DefaultText = "";
+            this.txtLocation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLocation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLocation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLocation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLocation.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLocation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLocation.Location = new System.Drawing.Point(161, 151);
+            this.txtLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.PasswordChar = '\0';
+            this.txtLocation.PlaceholderText = "";
+            this.txtLocation.ReadOnly = true;
+            this.txtLocation.SelectedText = "";
+            this.txtLocation.Size = new System.Drawing.Size(229, 48);
+            this.txtLocation.TabIndex = 5;
             // 
             // label24
             // 
@@ -1791,41 +1686,41 @@ namespace frmLogin
             this.tbpBillDetailDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpBillDetailDeleted.Name = "tbpBillDetailDeleted";
             this.tbpBillDetailDeleted.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbpBillDetailDeleted.Size = new System.Drawing.Size(927, 438);
+            this.tbpBillDetailDeleted.Size = new System.Drawing.Size(1067, 478);
             this.tbpBillDetailDeleted.TabIndex = 5;
             this.tbpBillDetailDeleted.Text = "Chi tiết hóa đơn";
             this.tbpBillDetailDeleted.UseVisualStyleBackColor = true;
             // 
             // dtgvListBillDetailDeleted
             // 
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-            this.dtgvListBillDetailDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListBillDetailDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.dtgvListBillDetailDeleted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListBillDetailDeleted.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dtgvListBillDetailDeleted.ColumnHeadersHeight = 4;
             this.dtgvListBillDetailDeleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListBillDetailDeleted.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListBillDetailDeleted.DefaultCellStyle = dataGridViewCellStyle18;
             this.dtgvListBillDetailDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListBillDetailDeleted.Location = new System.Drawing.Point(5, 245);
+            this.dtgvListBillDetailDeleted.Location = new System.Drawing.Point(50, 289);
             this.dtgvListBillDetailDeleted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvListBillDetailDeleted.Name = "dtgvListBillDetailDeleted";
             this.dtgvListBillDetailDeleted.RowHeadersVisible = false;
             this.dtgvListBillDetailDeleted.RowHeadersWidth = 51;
             this.dtgvListBillDetailDeleted.RowTemplate.Height = 24;
-            this.dtgvListBillDetailDeleted.Size = new System.Drawing.Size(891, 185);
+            this.dtgvListBillDetailDeleted.Size = new System.Drawing.Size(965, 185);
             this.dtgvListBillDetailDeleted.TabIndex = 39;
             this.dtgvListBillDetailDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListBillDetailDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1851,54 +1746,16 @@ namespace frmLogin
             // 
             // grpFunctionBillDetail
             // 
-            this.grpFunctionBillDetail.Controls.Add(this.btnDeteleAllBillDetail);
-            this.grpFunctionBillDetail.Controls.Add(this.btnDeleteBillDetail);
             this.grpFunctionBillDetail.Controls.Add(this.btnRestoreAllBillDetail);
             this.grpFunctionBillDetail.Controls.Add(this.btnRestoreBillDetail);
-            this.grpFunctionBillDetail.Location = new System.Drawing.Point(539, 14);
+            this.grpFunctionBillDetail.Location = new System.Drawing.Point(686, 9);
             this.grpFunctionBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpFunctionBillDetail.Name = "grpFunctionBillDetail";
             this.grpFunctionBillDetail.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpFunctionBillDetail.Size = new System.Drawing.Size(357, 226);
+            this.grpFunctionBillDetail.Size = new System.Drawing.Size(357, 155);
             this.grpFunctionBillDetail.TabIndex = 38;
             this.grpFunctionBillDetail.TabStop = false;
             this.grpFunctionBillDetail.Text = "Chức năng";
-            // 
-            // btnDeteleAllBillDetail
-            // 
-            this.btnDeteleAllBillDetail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeteleAllBillDetail.BorderRadius = 10;
-            this.btnDeteleAllBillDetail.BorderThickness = 3;
-            this.btnDeteleAllBillDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeteleAllBillDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeteleAllBillDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeteleAllBillDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeteleAllBillDetail.FillColor = System.Drawing.Color.White;
-            this.btnDeteleAllBillDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeteleAllBillDetail.ForeColor = System.Drawing.Color.Black;
-            this.btnDeteleAllBillDetail.Location = new System.Drawing.Point(77, 172);
-            this.btnDeteleAllBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeteleAllBillDetail.Name = "btnDeteleAllBillDetail";
-            this.btnDeteleAllBillDetail.Size = new System.Drawing.Size(220, 46);
-            this.btnDeteleAllBillDetail.TabIndex = 3;
-            this.btnDeteleAllBillDetail.Text = "Xóa tất cả vĩnh viễn";
-            // 
-            // btnDeleteBillDetail
-            // 
-            this.btnDeleteBillDetail.BorderRadius = 20;
-            this.btnDeleteBillDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteBillDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteBillDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteBillDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteBillDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(91)))));
-            this.btnDeleteBillDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteBillDetail.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteBillDetail.Location = new System.Drawing.Point(77, 114);
-            this.btnDeleteBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteBillDetail.Name = "btnDeleteBillDetail";
-            this.btnDeleteBillDetail.Size = new System.Drawing.Size(220, 46);
-            this.btnDeleteBillDetail.TabIndex = 2;
-            this.btnDeleteBillDetail.Text = "Xóa vĩnh viễn";
             // 
             // btnRestoreAllBillDetail
             // 
@@ -1910,7 +1767,7 @@ namespace frmLogin
             this.btnRestoreAllBillDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllBillDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllBillDetail.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllBillDetail.Location = new System.Drawing.Point(77, 63);
+            this.btnRestoreAllBillDetail.Location = new System.Drawing.Point(77, 92);
             this.btnRestoreAllBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreAllBillDetail.Name = "btnRestoreAllBillDetail";
             this.btnRestoreAllBillDetail.Size = new System.Drawing.Size(220, 46);
@@ -1927,7 +1784,7 @@ namespace frmLogin
             this.btnRestoreBillDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreBillDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreBillDetail.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreBillDetail.Location = new System.Drawing.Point(77, 12);
+            this.btnRestoreBillDetail.Location = new System.Drawing.Point(77, 31);
             this.btnRestoreBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestoreBillDetail.Name = "btnRestoreBillDetail";
             this.btnRestoreBillDetail.Size = new System.Drawing.Size(220, 46);
@@ -1945,7 +1802,7 @@ namespace frmLogin
             this.grpBillDetail.Controls.Add(this.label30);
             this.grpBillDetail.Controls.Add(this.txtBillID);
             this.grpBillDetail.Controls.Add(this.label31);
-            this.grpBillDetail.Location = new System.Drawing.Point(5, 6);
+            this.grpBillDetail.Location = new System.Drawing.Point(6, 9);
             this.grpBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBillDetail.Name = "grpBillDetail";
             this.grpBillDetail.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2079,116 +1936,49 @@ namespace frmLogin
             this.label31.TabIndex = 0;
             this.label31.Text = "Mã hóa đơn:";
             // 
-            // guna2ContainerControl1
+            // guna2Panel1
             // 
-            this.guna2ContainerControl1.Location = new System.Drawing.Point(764, 324);
-            this.guna2ContainerControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ContainerControl1.Name = "guna2ContainerControl1";
-            this.guna2ContainerControl1.Size = new System.Drawing.Size(8, 7);
-            this.guna2ContainerControl1.TabIndex = 1;
-            this.guna2ContainerControl1.Text = "guna2ContainerControl1";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.btnExitFomSelectDish);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1114, 87);
-            this.panel1.TabIndex = 2;
-            // 
-            // btnExitFomSelectDish
-            // 
-            this.btnExitFomSelectDish.FlatAppearance.BorderSize = 0;
-            this.btnExitFomSelectDish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitFomSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFomSelectDish.Image")));
-            this.btnExitFomSelectDish.Location = new System.Drawing.Point(1043, 0);
-            this.btnExitFomSelectDish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExitFomSelectDish.Name = "btnExitFomSelectDish";
-            this.btnExitFomSelectDish.Size = new System.Drawing.Size(69, 46);
-            this.btnExitFomSelectDish.TabIndex = 5;
-            this.btnExitFomSelectDish.UseVisualStyleBackColor = true;
-            this.btnExitFomSelectDish.Click += new System.EventHandler(this.btnExitFomSelectDish_Click);
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
+            this.guna2Panel1.Controls.Add(this.btnExitFomRecycleBin);
+            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1257, 83);
+            this.guna2Panel1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(389, 18);
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(424, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(356, 55);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 1;
             this.label1.Text = "RECYCLE BIN";
             // 
-            // colTableID
+            // btnExitFomRecycleBin
             // 
-            this.colTableID.DataPropertyName = "MaBanAn";
-            this.colTableID.HeaderText = "Mã bàn ăn";
-            this.colTableID.MinimumWidth = 6;
-            this.colTableID.Name = "colTableID";
-            // 
-            // colTableName
-            // 
-            this.colTableName.DataPropertyName = "TenBan";
-            this.colTableName.HeaderText = "Tên bàn ăn";
-            this.colTableName.MinimumWidth = 6;
-            this.colTableName.Name = "colTableName";
-            // 
-            // colLocation
-            // 
-            this.colLocation.DataPropertyName = "TenViTri";
-            this.colLocation.HeaderText = "Vị trí";
-            this.colLocation.MinimumWidth = 6;
-            this.colLocation.Name = "colLocation";
-            // 
-            // colStatusTable
-            // 
-            this.colStatusTable.DataPropertyName = "TrangThai";
-            this.colStatusTable.HeaderText = "Trạng thái";
-            this.colStatusTable.MinimumWidth = 6;
-            this.colStatusTable.Name = "colStatusTable";
-            // 
-            // colLocationID
-            // 
-            this.colLocationID.DataPropertyName = "MaViTri";
-            this.colLocationID.HeaderText = "Mã vị trí";
-            this.colLocationID.MinimumWidth = 6;
-            this.colLocationID.Name = "colLocationID";
-            this.colLocationID.Visible = false;
-            // 
-            // txtLocation
-            // 
-            this.txtLocation.BorderRadius = 10;
-            this.txtLocation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLocation.DefaultText = "";
-            this.txtLocation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLocation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLocation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLocation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLocation.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtLocation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLocation.Location = new System.Drawing.Point(161, 151);
-            this.txtLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtLocation.Name = "txtLocation";
-            this.txtLocation.PasswordChar = '\0';
-            this.txtLocation.PlaceholderText = "";
-            this.txtLocation.ReadOnly = true;
-            this.txtLocation.SelectedText = "";
-            this.txtLocation.Size = new System.Drawing.Size(229, 48);
-            this.txtLocation.TabIndex = 5;
+            this.btnExitFomRecycleBin.FlatAppearance.BorderSize = 0;
+            this.btnExitFomRecycleBin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitFomRecycleBin.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFomRecycleBin.Image")));
+            this.btnExitFomRecycleBin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExitFomRecycleBin.Location = new System.Drawing.Point(1188, 2);
+            this.btnExitFomRecycleBin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExitFomRecycleBin.Name = "btnExitFomRecycleBin";
+            this.btnExitFomRecycleBin.Size = new System.Drawing.Size(69, 46);
+            this.btnExitFomRecycleBin.TabIndex = 6;
+            this.btnExitFomRecycleBin.UseVisualStyleBackColor = true;
+            this.btnExitFomRecycleBin.Click += new System.EventHandler(this.btnExitFomRecycleBin_Click);
             // 
             // frmRecycleBin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 537);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.guna2ContainerControl1);
+            this.ClientSize = new System.Drawing.Size(1257, 594);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.tabctrlListDeletedManager);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2229,8 +2019,8 @@ namespace frmLogin
             this.grpFunctionBillDetail.ResumeLayout(false);
             this.grpBillDetail.ResumeLayout(false);
             this.grpBillDetail.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2240,10 +2030,6 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2TabControl tabctrlListDeletedManager;
         private System.Windows.Forms.TabPage tbpProductDeleted;
         private System.Windows.Forms.TabPage tbpEmployeeDeleted;
-        private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnExitFomSelectDish;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvListProductDeleted;
         private System.Windows.Forms.GroupBox grpProductInfo;
         private System.Windows.Forms.RichTextBox richtxtDescribe;
@@ -2260,13 +2046,9 @@ namespace frmLogin
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pbProduct;
         private System.Windows.Forms.GroupBox grpFunctionProduct;
-        private Guna.UI2.WinForms.Guna2Button btnDeteleAllProduct;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteProduct;
         private Guna.UI2.WinForms.Guna2Button btnRestoreAllProduct;
         private Guna.UI2.WinForms.Guna2Button btnRestoreProduct;
         private System.Windows.Forms.GroupBox grpFunctionEmployee;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteAllEmployee;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteEmployee;
         private Guna.UI2.WinForms.Guna2Button btnRestoreAllEmployee;
         private Guna.UI2.WinForms.Guna2Button btnRestoreEmployee;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvListEmployeeDeleted;
@@ -2299,14 +2081,10 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2TextBox txtUsername;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox grpFunctionAccount;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteAllAccount;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteAccount;
         private Guna.UI2.WinForms.Guna2Button btnRestoreAllAccount;
         private Guna.UI2.WinForms.Guna2Button btnRestoreAccount;
         private System.Windows.Forms.TabPage tbpCustomerAccount;
         private System.Windows.Forms.GroupBox grpFunctionCustomer;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteAllCustomer;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteCustomer;
         private Guna.UI2.WinForms.Guna2Button btnRestoreAllCustomer;
         private Guna.UI2.WinForms.Guna2Button btnRestoreCustomer;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvListCustomerDeleted;
@@ -2331,8 +2109,6 @@ namespace frmLogin
         private System.Windows.Forms.TabPage tbpBillDetailDeleted;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvListBillDetailDeleted;
         private System.Windows.Forms.GroupBox grpFunctionBillDetail;
-        private Guna.UI2.WinForms.Guna2Button btnDeteleAllBillDetail;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteBillDetail;
         private Guna.UI2.WinForms.Guna2Button btnRestoreAllBillDetail;
         private Guna.UI2.WinForms.Guna2Button btnRestoreBillDetail;
         private System.Windows.Forms.GroupBox grpBillDetail;
@@ -2357,5 +2133,8 @@ namespace frmLogin
         private System.Windows.Forms.DataGridViewTextBoxColumn colStatusTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLocationID;
         private Guna.UI2.WinForms.Guna2TextBox txtLocation;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExitFomRecycleBin;
     }
 }

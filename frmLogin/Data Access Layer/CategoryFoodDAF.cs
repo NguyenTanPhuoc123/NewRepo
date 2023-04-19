@@ -26,7 +26,7 @@ namespace frmLogin.Data_Access_Layer
         public List<CategoryFood> GetCategoryFoods()
         {
             List<CategoryFood> listCategoryFood = new List<CategoryFood>();
-            DataTable data = DataProvider.ExcecuteSelectCommand("Select * from DANHMUC ", null);
+            DataTable data = DataProvider.ExcecuteSelectCommand("Select * from DANHMUC where xoa=0", null);
             foreach(DataRow item in data.Rows)
             {
                 CategoryFood categoryFood = new CategoryFood(item);
@@ -34,5 +34,7 @@ namespace frmLogin.Data_Access_Layer
             }
             return listCategoryFood;
         }
+
+       
     }
 }

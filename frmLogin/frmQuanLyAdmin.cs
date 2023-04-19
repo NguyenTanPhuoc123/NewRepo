@@ -111,10 +111,10 @@ namespace frmLogin
             
         }
 
-        private void btnStatistical_Click(object sender, EventArgs e)
+        private void btnCategoryManagement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmStatistical(), sender);
-            lblTitle.Text = btnStatistical.Text;
+            OpenChildForm(new frmCategoyManagement(), sender);
+            lblTitle.Text = btnCategoryManagement.Text;
             ActiveButton(sender);
         }
 
@@ -124,7 +124,7 @@ namespace frmLogin
             if (activeForm != null)
                 activeForm.Close();
 
-            lblTitle.Text = "Trang chủ";
+            lblTitle.Text = "Thống kê";
             DisableButton();
             
         }

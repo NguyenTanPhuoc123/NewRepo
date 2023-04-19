@@ -204,7 +204,6 @@ D:\do an\frmLogin\bin\Debug\en-CA\frmLogin.resources.dll
 D:\do an\frmLogin\bin\Debug\zh\frmLogin.resources.dll
 D:\do an\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
 D:\do an\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
-D:\do an\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
 D:\do an\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
 D:\do an\frmLogin\obj\Debug\frmLogin.frmPay.resources
 D:\do an\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
@@ -498,3 +497,4 @@ D:\DOANWINFORM\frmLogin\obj\Debug\zh\frmLogin.resources.dll
 D:\DOANWINFORM\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.exe
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.pdb
+D:\do an\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources

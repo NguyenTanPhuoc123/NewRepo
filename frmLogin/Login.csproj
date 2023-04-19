@@ -109,12 +109,6 @@
     <Compile Include="Form\frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\frmStatistical.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\frmStatistical.Designer.cs">
-      <DependentUpon>frmStatistical.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\frmCustomerManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +126,12 @@
     </Compile>
     <Compile Include="Form\frmBillDetail.Designer.cs">
       <DependentUpon>frmBillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCategoyManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCategoyManagement.Designer.cs">
+      <DependentUpon>frmCategoyManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="frmlogin.cs">
       <SubType>Form</SubType>
@@ -210,14 +210,14 @@
     <EmbeddedResource Include="Form\frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\frmStatistical.resx">
-      <DependentUpon>frmStatistical.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmTableManagement.resx">
       <DependentUpon>frmTableManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmBillDetail.resx">
       <DependentUpon>frmBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCategoyManagement.resx">
+      <DependentUpon>frmCategoyManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
