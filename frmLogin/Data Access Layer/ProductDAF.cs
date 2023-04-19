@@ -26,7 +26,7 @@ namespace frmLogin.Data_Access_Layer
         public List<Product> GetListProduct()
         {
             List<Product> lst = new List<Product>();
-            string query = "select *  from sanpham";
+            string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
@@ -53,6 +53,12 @@ namespace frmLogin.Data_Access_Layer
             rows = cmd.ExecuteNonQuery();
             cmd.Connection.Close();
             return rows;
+        }
+        public int DeleteProduct(string query,SqlParameter[] parameters)
+        {
+            int row = 0;
+            row = DataProvider.ExecuteInsertCommand(query, parameters);
+            return row;
         }
     }
 }

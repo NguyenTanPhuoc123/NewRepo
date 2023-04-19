@@ -17,6 +17,7 @@ namespace frmLogin.Data_Tranfer_Object
         private string m_MaSanPham;
         private string m_TenSanPham;
         private int m_DanhMuc;
+        private string m_TenDanhMuc;
         private int m_SoLuong;
         private float m_DonGia;
         private int m_TrangThai;
@@ -43,6 +44,7 @@ namespace frmLogin.Data_Tranfer_Object
         public byte[] image { get => m_image; set => m_image = value; }
         public string MoTa { get => m_MoTa; set => m_MoTa = value; }
         public Image HinhAnh { get => m_HinhAnh; set => m_HinhAnh = value; }
+        public string TenDanhMuc { get => m_TenDanhMuc; set => m_TenDanhMuc = value; }
 
         public Product(DataRow row)
         {
@@ -53,6 +55,7 @@ namespace frmLogin.Data_Tranfer_Object
             this.m_DonGia =float.Parse(row["DONGIA"].ToString());
             this.m_MoTa = row["MOTA"].ToString();
             this.HinhAnh =ConvertByteToImage((byte[])row["HINHANH"]);
+            this.TenDanhMuc = row["Tendanhmuc"].ToString();
         }
         public static Image ConvertByteToImage(byte[] byteArray)
         {

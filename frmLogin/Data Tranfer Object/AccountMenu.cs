@@ -41,7 +41,7 @@ namespace frmLogin.Data_Tranfer_Object
             this.m_employeeID = (int)row["MANV"];
             this.m_typeName = row["TENLOAI"].ToString();
             this.m_employeeName = row["TENNV"].ToString();
-
+           
         }
     }
 }
