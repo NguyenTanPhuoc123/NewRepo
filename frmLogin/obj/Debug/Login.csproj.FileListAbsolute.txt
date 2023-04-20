@@ -498,3 +498,4 @@ D:\DOANWINFORM\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.exe
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.pdb
 D:\do an\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources
+D:\do an\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources

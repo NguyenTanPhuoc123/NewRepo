@@ -130,7 +130,7 @@ namespace frmLogin
 
         private void btnLocationDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin();
+            frmRecycleBinCategory frm = new frmRecycleBinCategory();
             frm.Show();
         }
 

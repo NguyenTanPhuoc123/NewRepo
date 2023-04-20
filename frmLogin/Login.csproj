@@ -163,6 +163,12 @@
     <Compile Include="Form\frmRecycleBin.Designer.cs">
       <DependentUpon>frmRecycleBin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\frmRecycleBinCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmRecycleBinCategory.Designer.cs">
+      <DependentUpon>frmRecycleBinCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSellManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmSelectDish.resx">
       <DependentUpon>frmSelectDish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRecycleBinCategory.resx">
+      <DependentUpon>frmRecycleBinCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSellManagement.resx">
       <DependentUpon>frmSellManagement.cs</DependentUpon>

@@ -41,6 +41,7 @@ namespace frmLogin
         {
             frmRecycleBin frm = new frmRecycleBin();
             frm.Show();
+          
         }
 
         private void btnDeleteAllAccount_Click(object sender, EventArgs e)
