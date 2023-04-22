@@ -26,7 +26,7 @@ namespace frmLogin.Data_Access_Layer
         public List<Product> GetListProduct()
         {
             List<Product> lst = new List<Product>();
-            string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1";
+            string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and a.TRANGTHAI = 1";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {

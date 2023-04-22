@@ -439,7 +439,6 @@ C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.fr
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSetting.resources
-C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmBillDetail.resources
 C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmlogin.resources
@@ -499,3 +498,5 @@ D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.exe
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.pdb
 D:\do an\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources
 D:\do an\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources
+C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources
+C:\Users\Admin\Desktop\Do an C#\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources
