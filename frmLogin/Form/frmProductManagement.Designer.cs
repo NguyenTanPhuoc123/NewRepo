@@ -29,9 +29,9 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductManagement));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,6 +39,14 @@ namespace frmLogin
             this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbFillProduct = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgvListProduct = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpProductInfo = new System.Windows.Forms.GroupBox();
             this.richtxtDescribe = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,14 +71,6 @@ namespace frmLogin
             this.btnProductDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchProduct = new Guna.UI2.WinForms.Guna2Button();
             this.ofdImage = new System.Windows.Forms.OpenFileDialog();
-            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProduct)).BeginInit();
             this.grpProductInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -83,7 +83,7 @@ namespace frmLogin
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(796, 274);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 15);
+            this.label2.Size = new System.Drawing.Size(39, 22);
             this.label2.TabIndex = 6;
             this.label2.Text = "Lọc";
             // 
@@ -92,7 +92,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(83, 273);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(76, 22);
             this.label3.TabIndex = 9;
             this.label3.Text = "Sắp xếp";
             // 
@@ -106,10 +106,17 @@ namespace frmLogin
             this.cbSortProduct.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbSortProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortProduct.ItemHeight = 30;
+            this.cbSortProduct.Items.AddRange(new object[] {
+            "Tên Sản Phẩm",
+            "Số Lượng Tăng dần",
+            "Số Lượng  Giảm dần",
+            "Đơn giá  Tăng dần",
+            "Đơn giá Giảm dần"});
             this.cbSortProduct.Location = new System.Drawing.Point(86, 294);
             this.cbSortProduct.Name = "cbSortProduct";
             this.cbSortProduct.Size = new System.Drawing.Size(174, 36);
             this.cbSortProduct.TabIndex = 17;
+            this.cbSortProduct.SelectedIndexChanged += new System.EventHandler(this.cbSortProduct_SelectedIndexChanged);
             // 
             // txtSearchProduct
             // 
@@ -147,19 +154,20 @@ namespace frmLogin
             this.cbFillProduct.Name = "cbFillProduct";
             this.cbFillProduct.Size = new System.Drawing.Size(161, 36);
             this.cbFillProduct.TabIndex = 19;
+            this.cbFillProduct.SelectedIndexChanged += new System.EventHandler(this.cbFillProduct_SelectedIndexChanged);
             // 
             // dtgvListProduct
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtgvListProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dtgvListProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgvListProduct.ColumnHeadersHeight = 20;
             this.dtgvListProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -171,14 +179,14 @@ namespace frmLogin
             this.Column5,
             this.Column6,
             this.Column7});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListProduct.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListProduct.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtgvListProduct.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListProduct.Location = new System.Drawing.Point(86, 342);
             this.dtgvListProduct.Name = "dtgvListProduct";
@@ -208,6 +216,66 @@ namespace frmLogin
             this.dtgvListProduct.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvListProduct.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListProduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "HinhAnh";
+            this.Column1.HeaderText = "Hình Ảnh";
+            this.Column1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "MASANPHAM";
+            this.Column3.HeaderText = "Mã SP";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TENSANPHAM";
+            this.Column2.HeaderText = "Tên SP";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "TenDanhMuc";
+            this.Column8.HeaderText = "Tên danh mục";
+            this.Column8.MinimumWidth = 8;
+            this.Column8.Name = "Column8";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "DANHMUC";
+            this.Column4.HeaderText = "Loại SP";
+            this.Column4.MinimumWidth = 8;
+            this.Column4.Name = "Column4";
+            this.Column4.Visible = false;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "SOLUONG";
+            this.Column5.HeaderText = "Số lượng";
+            this.Column5.MinimumWidth = 8;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "DonGia";
+            this.Column6.HeaderText = "Đơn giá";
+            this.Column6.MinimumWidth = 8;
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "MoTa";
+            this.Column7.HeaderText = "Mô tả";
+            this.Column7.MinimumWidth = 8;
+            this.Column7.Name = "Column7";
             // 
             // grpProductInfo
             // 
@@ -245,7 +313,7 @@ namespace frmLogin
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(468, 122);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 15);
+            this.label9.Size = new System.Drawing.Size(54, 22);
             this.label9.TabIndex = 12;
             this.label9.Text = "Mô tả";
             // 
@@ -254,7 +322,7 @@ namespace frmLogin
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(416, 173);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 15);
+            this.label8.Size = new System.Drawing.Size(48, 22);
             this.label8.TabIndex = 11;
             this.label8.Text = "VNĐ";
             // 
@@ -284,7 +352,7 @@ namespace frmLogin
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(200, 173);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 15);
+            this.label7.Size = new System.Drawing.Size(77, 22);
             this.label7.TabIndex = 9;
             this.label7.Text = "Đơn giá:";
             // 
@@ -319,7 +387,7 @@ namespace frmLogin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 173);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 15);
+            this.label6.Size = new System.Drawing.Size(86, 22);
             this.label6.TabIndex = 7;
             this.label6.Text = "Số lượng:";
             // 
@@ -343,7 +411,7 @@ namespace frmLogin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(183, 122);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 15);
+            this.label5.Size = new System.Drawing.Size(96, 22);
             this.label5.TabIndex = 5;
             this.label5.Text = "Danh mục:";
             // 
@@ -373,7 +441,7 @@ namespace frmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(192, 58);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 15);
+            this.label4.Size = new System.Drawing.Size(86, 22);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tên món:";
             // 
@@ -403,7 +471,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(161, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 15);
+            this.label1.Size = new System.Drawing.Size(122, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã sản phẩm:";
             // 
@@ -485,6 +553,7 @@ namespace frmLogin
             this.btnEditProduct.Size = new System.Drawing.Size(140, 46);
             this.btnEditProduct.TabIndex = 21;
             this.btnEditProduct.Text = "Sửa";
+            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
             // 
             // btnDeleteAllProduct
             // 
@@ -559,73 +628,15 @@ namespace frmLogin
             this.btnSearchProduct.Name = "btnSearchProduct";
             this.btnSearchProduct.Size = new System.Drawing.Size(95, 37);
             this.btnSearchProduct.TabIndex = 16;
+            this.btnSearchProduct.Click += new System.EventHandler(this.btnSearchProduct_Click);
             // 
             // ofdImage
             // 
             this.ofdImage.FileName = "openFileDialog1";
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "HinhAnh";
-            this.Column1.HeaderText = "Hình Ảnh";
-            this.Column1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "MASANPHAM";
-            this.Column3.HeaderText = "Mã SP";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TENSANPHAM";
-            this.Column2.HeaderText = "Tên SP";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "TenDanhMuc";
-            this.Column8.HeaderText = "Tên danh mục";
-            this.Column8.Name = "Column8";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "DANHMUC";
-            this.Column4.HeaderText = "Loại SP";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.Visible = false;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "SOLUONG";
-            this.Column5.HeaderText = "Số lượng";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "DonGia";
-            this.Column6.HeaderText = "Đơn giá";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "MoTa";
-            this.Column7.HeaderText = "Mô tả";
-            this.Column7.MinimumWidth = 8;
-            this.Column7.Name = "Column7";
-            // 
             // frmProductManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 514);
             this.Controls.Add(this.grpFunction);

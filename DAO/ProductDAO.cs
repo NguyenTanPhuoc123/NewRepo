@@ -1,41 +1,39 @@
-﻿using frmLogin.Data_Tranfer_Object;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO;
 
-namespace frmLogin.Data_Access_Layer
+namespace DAO
 {
-    class ProductDAF
+    public class ProductDAO
     {
-        private static ProductDAF instance;
+        private static ProductDAO instance;
 
-        public static ProductDAF Instance
+        public static ProductDAO Instance
         {
-            get { if (instance == null) instance = new ProductDAF(); return ProductDAF.instance; }
-            private set { ProductDAF.instance = value; }
+            get { if (instance == null) instance = new ProductDAO(); return ProductDAO.instance; }
+            private set { ProductDAO.instance = value; }
         }
 
-        private ProductDAF()
+        public List<ProductDTO> GetListProduct()
         {
-
-        }
-        public List<Product> GetListProduct()
-        {
-            List<Product> lst = new List<Product>();
+            List<ProductDTO> lst = new List<ProductDTO>();
             string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
-                Product acc = new Product(item);
+                var image = item.ItemArray[0];
+                ProductDTO acc = new ProductDTO(item);
                 lst.Add(acc);
             }
             return lst;
         }
-        public static int ExecuteInsertCommand(Product product)
+
+        public int ExecuteInsertCommand(ProductDTO product)
         {
             string query = "INSERT INTO SANPHAM(MASANPHAM,TENSANPHAM,DANHMUC,SOLUONG,DONGIA,MOTA,TRANGTHAI,HinhANh) VALUES(@MASP,@TENSP,@DANHMUC,@SOLUONG,@DONGIA,@MOTA,@TRANGTHAI,@HINHANH)";
             int rows = 0;
@@ -60,7 +58,7 @@ namespace frmLogin.Data_Access_Layer
             row = DataProvider.ExecuteInsertCommand(query, parameter);
             return row;
         }
-        public static int UpdateProduct(Product product, byte[] hinhAnh)
+        public int UpdateProduct(ProductDTO product, byte[] hinhAnh)
         {
             int data = 0;
             if (hinhAnh == null)
@@ -92,35 +90,35 @@ namespace frmLogin.Data_Access_Layer
             }
             return data;
         }
-        public List<Product> GetListFillProduct(string tendanhmuc)
+        public List<ProductDTO> GetListFillProduct(string tendanhmuc)
         {
-            List<Product> lst = new List<Product>();
+            List<ProductDTO> lst = new List<ProductDTO>();
             string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 and b.tendanhmuc=@tendanhmuc";
             SqlParameter[] parameters = new SqlParameter[1];
             parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, parameters);
             foreach (DataRow item in data.Rows)
             {
-                Product acc = new Product(item);
+                ProductDTO acc = new ProductDTO(item);
                 lst.Add(acc);
             }
             return lst;
         }
-        public List<Product> GetListFindProduct(string tensanpham)
+        public List<ProductDTO> GetListFindProduct(string tensanpham)
         {
-            List<Product> lst = new List<Product>();
+            List<ProductDTO> lst = new List<ProductDTO>();
             string query = string.Format("select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 AND a.tensanpham LIKE N'%{0}%'", tensanpham);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
-                Product acc = new Product(item);
+                ProductDTO acc = new ProductDTO(item);
                 lst.Add(acc);
             }
             return lst;
         }
-        public List<Product> SortProductName(string tendanhmuc)
+        public List<ProductDTO> SortProductName(string tendanhmuc)
         {
-            List<Product> lst = new List<Product>();
+            List<ProductDTO> lst = new List<ProductDTO>();
             string query;
             if (tendanhmuc == "Tat ca")
             {
@@ -134,14 +132,14 @@ namespace frmLogin.Data_Access_Layer
             DataTable data = DataProvider.ExcecuteSelectCommand(query, parameters);
             foreach (DataRow item in data.Rows)
             {
-                Product acc = new Product(item);
+                ProductDTO acc = new ProductDTO(item);
                 lst.Add(acc);
             }
             return lst;
         }
-        public List<Product> SortSoLuongASC(string tendanhmuc)
+        public List<ProductDTO> SortSoLuongASC(string tendanhmuc)
         {
-            List<Product> lst = new List<Product>();
+            List<ProductDTO> lst = new List<ProductDTO>();
             string query;
             if (tendanhmuc == "Tat ca")
             {
@@ -155,14 +153,14 @@ namespace frmLogin.Data_Access_Layer
             DataTable data = DataProvider.ExcecuteSelectCommand(query, parameters);
             foreach (DataRow item in data.Rows)
             {
-                Product acc = new Product(item);
+                ProductDTO acc = new ProductDTO(item);
                 lst.Add(acc);
             }
             return lst;
         }
-        public List<Product> SortSoLuongDESC(string tendanhmuc)
+        public List<ProductDTO> SortSoLuongDESC(string tendanhmuc)
         {
-            List<Product> lst = new List<Product>();
+            List<ProductDTO> lst = new List<ProductDTO>();
             string query;
             if (tendanhmuc == "Tat ca")
             {
@@ -176,14 +174,14 @@ namespace frmLogin.Data_Access_Layer
             DataTable data = DataProvider.ExcecuteSelectCommand(query, parameters);
             foreach (DataRow item in data.Rows)
             {
-                Product acc = new Product(item);
+                ProductDTO acc = new ProductDTO(item);
                 lst.Add(acc);
             }
             return lst;
         }
-        public List<Product> SortDonGiaASC(string tendanhmuc)
+        public List<ProductDTO> SortDonGiaASC(string tendanhmuc)
         {
-            List<Product> lst = new List<Product>();
+            List<ProductDTO> lst = new List<ProductDTO>();
             string query;
             if (tendanhmuc == "Tat ca")
             {
@@ -197,14 +195,14 @@ namespace frmLogin.Data_Access_Layer
             DataTable data = DataProvider.ExcecuteSelectCommand(query, parameters);
             foreach (DataRow item in data.Rows)
             {
-                Product acc = new Product(item);
+                ProductDTO acc = new ProductDTO(item);
                 lst.Add(acc);
             }
             return lst;
         }
-        public List<Product> SortDonGiaDESC(string tendanhmuc)
+        public List<ProductDTO> SortDonGiaDESC(string tendanhmuc)
         {
-            List<Product> lst = new List<Product>();
+            List<ProductDTO> lst = new List<ProductDTO>();
             string query;
             if (tendanhmuc == "Tat ca")
             {
@@ -218,7 +216,7 @@ namespace frmLogin.Data_Access_Layer
             DataTable data = DataProvider.ExcecuteSelectCommand(query, parameters);
             foreach (DataRow item in data.Rows)
             {
-                Product acc = new Product(item);
+                ProductDTO acc = new ProductDTO(item);
                 lst.Add(acc);
             }
             return lst;
