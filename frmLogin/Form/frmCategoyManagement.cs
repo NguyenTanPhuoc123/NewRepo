@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using BUS;
 
 namespace frmLogin
 {
@@ -17,15 +19,25 @@ namespace frmLogin
         {
             InitializeComponent();
         }
+      
 
-        private void btnAddLocation_Click(object sender, EventArgs e)
+        private void frmCategoyManagement_Load(object sender, EventArgs e)
         {
-            txtLocationID.Text = LocationDAF.Instance.GetLocationIDMax().ToString();
-            btnSaveLocation.Enabled = true;
-            btnEditLocation.Enabled = false;
-            btnDeleteLocation.Enabled = false;
-            btnDeleteAllLocation.Enabled = false;
             
+            LoadLocationTable();
+            LoadListSizeProduct();
+        }
+
+
+        #region Location Table Food
+        public void LoadLocationTable()
+        {
+            dtgvListLocation.DataSource = LocationDAF.Instance.GetListLocation();
+            btnSaveLocation.Enabled = false;
+            btnEditLocation.Enabled = true;
+            btnDeleteLocation.Enabled = true;
+            btnDeleteAllLocation.Enabled = true;
+            ResetLocationInfo();
         }
 
         public void ResetLocationInfo()
@@ -34,19 +46,15 @@ namespace frmLogin
             txtLocationName.Clear();
         }
 
-        private void frmCategoyManagement_Load(object sender, EventArgs e)
+        private void btnAddLocation_Click(object sender, EventArgs e)
         {
-            ResetLocationInfo();
-            LoadLocationTable();
-        }
+            txtLocationID.Text = LocationDAF.Instance.GetLocationIDMax().ToString();
+            txtLocationName.Clear();
+            btnSaveLocation.Enabled = true;
+            btnEditLocation.Enabled = false;
+            btnDeleteLocation.Enabled = false;
+            btnDeleteAllLocation.Enabled = false;
 
-        public void LoadLocationTable()
-        {
-            dtgvListLocation.DataSource = LocationDAF.Instance.GetListLocation();
-            btnSaveLocation.Enabled = false;
-            btnEditLocation.Enabled = true;
-            btnDeleteLocation.Enabled = true;
-            btnDeleteAllLocation.Enabled = true;
         }
 
         private void btnSaveLocation_Click(object sender, EventArgs e)
@@ -78,7 +86,7 @@ namespace frmLogin
             }
             if (MessageBox.Show("Bạn chắc chắn muốn sửa vị trí bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                int count = LocationDAF.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text),txtLocationName.Text);
+                int count = LocationDAF.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
                 if (count > 0)
                 {
                     MessageBox.Show("Sửa vị trí bàn thành công!", "Sửa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -138,7 +146,121 @@ namespace frmLogin
         {
             if (dtgvListLocation.SelectedRows.Count > 0)
                 txtLocationID.Text = dtgvListLocation.SelectedRows[0].Cells[0].Value.ToString();
-                txtLocationName.Text = dtgvListLocation.SelectedRows[0].Cells[1].Value.ToString();
+            txtLocationName.Text = dtgvListLocation.SelectedRows[0].Cells[1].Value.ToString();
+        }
+        #endregion
+
+        #region Size Product
+         public  void LoadListSizeProduct()
+        {
+            dtgvListSize.DataSource = SizeProductBUS.Instance.GetListSizeProduct();
+            ResetSizeInfo();
+        }
+
+        public void ResetSizeInfo()
+        {
+            txtSizeName.Clear();
+            txtSizePrice.Clear();
+            btnSaveSize.Enabled = false;
+            btnEditSize.Enabled = true;
+            btnDeleteAllSize.Enabled = true;
+            btnDeleteSize.Enabled = true;
+        }
+
+
+        private void btnSizeDeleted_Click(object sender, EventArgs e)
+        {
+            frmRecycleBinCategory frm = new frmRecycleBinCategory();
+            frm.Show();        
+        }
+
+        private void txtSizePrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void btnAddSize_Click(object sender, EventArgs e)
+        {
+            txtSizeID.Text = SizeProductBUS.Instance.GetSizeIDMax().ToString();
+            txtSizeName.Clear();
+            txtSizePrice.Clear();
+            btnSaveSize.Enabled = true;
+            btnEditSize.Enabled = false;
+            btnDeleteAllSize.Enabled = false;
+            btnDeleteSize.Enabled = false;
+        }
+
+
+        #endregion
+
+        private void btnSaveSize_Click(object sender, EventArgs e)
+        {   
+            if(string.IsNullOrEmpty(txtSizeName.Text) || string.IsNullOrEmpty(txtSizePrice.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin mà bạn muốn thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            int count = SizeProductBUS.Instance.AddSizeProduct(txtSizeName.Text, float.Parse(txtSizePrice.Text));
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm kích thước mới thành công", "Thêm kích thước", MessageBoxButtons.OK);
+                LoadListSizeProduct();
+            }
+            else
+                MessageBox.Show("Thêm kích thước mới thất bại", "Thêm kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnEditSize_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Bạn muốn thay đổi thông tin kích thước này?","Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (string.IsNullOrEmpty(txtSizeName.Text) || string.IsNullOrEmpty(txtSizePrice.Text))
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin mà bạn muốn sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                int count = SizeProductBUS.Instance.EditSizeProduct(int.Parse(txtSizeID.Text),txtSizeName.Text, float.Parse(txtSizePrice.Text));
+                if (count > 0)
+                {
+                    MessageBox.Show("Sửa kích thước thành công", "Sửa kích thước", MessageBoxButtons.OK);
+                    LoadListSizeProduct();
+                }
+                else
+                    MessageBox.Show("Sửa kích thước thất bại", "Sửa kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnDeleteSize_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn xóa kích thước này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+            
+                int count = SizeProductBUS.Instance.DeleteSizeProduct(int.Parse(txtSizeID.Text));
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa kích thước thành công", "Xóa kích thước", MessageBoxButtons.OK);
+                    LoadListSizeProduct();
+                }
+                else
+                    MessageBox.Show("Xóa kích thước thất bại", "Xóa kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnDeleteAllSize_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn xóa tất cả các kích thước này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+
+                int count = SizeProductBUS.Instance.DeleteAllSizeProduct();
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa tất cả kích thước thành công", "Xóa kích thước", MessageBoxButtons.OK);
+                    LoadListSizeProduct();
+                }
+                else
+                    MessageBox.Show("Xóa tất cả kích thước thất bại", "Xóa kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

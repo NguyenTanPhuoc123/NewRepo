@@ -1,0 +1,11 @@
+D:\do an\BUS\bin\Debug\BUS.dll
+D:\do an\BUS\bin\Debug\BUS.pdb
+D:\do an\BUS\bin\Debug\DAO.dll
+D:\do an\BUS\bin\Debug\DTO.dll
+D:\do an\BUS\bin\Debug\DAO.pdb
+D:\do an\BUS\bin\Debug\DTO.pdb
+D:\do an\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\do an\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\do an\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\do an\BUS\obj\Debug\BUS.dll
+D:\do an\BUS\obj\Debug\BUS.pdb

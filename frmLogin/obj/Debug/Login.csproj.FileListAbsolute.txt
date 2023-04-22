@@ -500,3 +500,9 @@ D:\do an\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources
 D:\do an\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources
 D:\DOAN\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources
 D:\DOAN\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources
+D:\do an\frmLogin\bin\Debug\BUS.dll
+D:\do an\frmLogin\bin\Debug\DTO.dll
+D:\do an\frmLogin\bin\Debug\DAO.dll
+D:\do an\frmLogin\bin\Debug\BUS.pdb
+D:\do an\frmLogin\bin\Debug\DTO.pdb
+D:\do an\frmLogin\bin\Debug\DAO.pdb

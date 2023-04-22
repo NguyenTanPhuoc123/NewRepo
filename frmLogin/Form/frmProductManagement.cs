@@ -45,7 +45,8 @@ namespace frmLogin
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
             getValue();
-            int count = ProductDAF.ExecuteInsertCommand(product);
+            string query ="INSERT INTO SANPHAM(MASANPHAM,TENSANPHAM,DANHMUC,SOLUONG,DONGIA,MOTA,TRANGTHAI,HinhANh) VALUES(@MASP,@TENSP,@DANHMUC,@SOLUONG,@DONGIA,@MOTA,@TRANGTHAI,@HINHANH)";
+            int count = ProductDAF.ExecuteInsertCommand(query, product);
             MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
             frmProductManagement_Load(sender, e);
             ResetText();
@@ -102,39 +103,6 @@ namespace frmLogin
             numQuantity.Value = 1;
             cbCategory.SelectedIndex = 0;
             pbProduct.Image = null;
-        }
-        private void dtgvListProduct_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int i = e.RowIndex;
-            if (i == -1) return;
-            Image image = (Image)dtgvListProduct.Rows[i].Cells[0].Value;
-            pbProduct.Image = image;
-            txtProductID.Text = dtgvListProduct.Rows[i].Cells[1].Value.ToString();
-            txtProductName.Text = dtgvListProduct.Rows[i].Cells[2].Value.ToString();
-            cbCategory.SelectedValue = dtgvListProduct.Rows[i].Cells[3].Value;
-            numQuantity.Value = Convert.ToInt32(dtgvListProduct.Rows[i].Cells[4].Value);
-            txtPrice.Text = dtgvListProduct.Rows[i].Cells[5].Value.ToString();
-            richtxtDescribe.Text = dtgvListProduct.Rows[i].Cells[6].Value.ToString();
-        }
-
-        private void btnEditProduct_Click(object sender, EventArgs e)
-        {
-            getValueUpdate();
-            byte[] hinhAnh;
-            Image image = (Image)dtgvListProduct.SelectedRows[0].Cells[0].Value;
-            hinhAnh = pbProduct.Image == image ? null : ConvertImageToByte(pbProduct);
-            int cout = ProductDAF.UpdateProduct(product, hinhAnh);
-            MessageBox.Show(cout > 0 ? "Sua thanh cong" : "Sua that bai");
-        }
-        public void getValueUpdate()
-        {
-            string maSP = txtProductID.Text;
-            string tenSP = txtProductName.Text;
-            int donGia = Convert.ToInt32(txtPrice.Text);
-            int soLuong = Convert.ToInt32(numQuantity.Value.ToString());
-            string moTa = richtxtDescribe.Text;
-            int danhMuc = Convert.ToInt32(cbCategory.SelectedValue.ToString());
-            product = new Product(maSP, tenSP, danhMuc, soLuong, donGia, 1, null, moTa);
         }
     }
 }
