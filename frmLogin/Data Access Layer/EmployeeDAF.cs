@@ -28,7 +28,7 @@ namespace frmLogin.Data_Access_Layer
             string query = string.Format("Select * from NHANVIEN WHERE MANV = {0}", employeeID);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
 
-            foreach(DataRow item in data.Rows)
+            foreach (DataRow item in data.Rows)
             {
                 return new Employee(item);
             }
@@ -37,24 +37,75 @@ namespace frmLogin.Data_Access_Layer
 
         public List<Employee> GetListEmployee()
         {
-            List<Employee> listEmployee = new List<Employee>();
-            string query = string.Format("Select * from NHANVIEN");
+            List<Employee> lst = new List<Employee>();
+            string query = "select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                Employee acc = new Employee(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
+
+        public List<Position> GetListPosition()
+        {
+            List<Position> listPosition = new List<Position>();
+            string query = string.Format("Select * from CHUCVU");
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
 
             foreach (DataRow item in data.Rows)
             {
-                Employee employee = new Employee(item);
-                listEmployee.Add(employee);
+                Position employee = new Position(item);
+                listPosition.Add(employee);
             }
-            return listEmployee;
+            return listPosition;
         }
 
-        public int UpdateEmployeeInFo(int employeeID,string SDT,string NgaySinh,string GioiTinh,string DiaChi)
+        public int UpdateEmployeeInFo(int employeeID, string SDT, string NgaySinh, string GioiTinh, string DiaChi)
         {
-            string query = string.Format("UPDATE NHANVIEN SET SODIENTHOAI='{1}',NGAYSINH='{2}',GIOITINH=N'{3}',DIACHI=N'{4}' WHERE MANV = {0}", employeeID,SDT,NgaySinh,GioiTinh,DiaChi);
+            string query = string.Format("UPDATE NHANVIEN SET SODIENTHOAI='{1}',NGAYSINH='{2}',GIOITINH=N'{3}',DIACHI=N'{4}' WHERE MANV = {0}", employeeID, SDT, NgaySinh, GioiTinh, DiaChi);
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
-       
+
+        public int DeleteEmployeeInfo(int employeeID)
+        {
+            string query = string.Format("update nhanvien set trangthai = 0 where manv = '{0}'", employeeID);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int UpdateEmployee(int employeeID, string employeeName, string ngaySinh, string gioiTinh, string soDienThoai, string diaChi)
+        {
+            string query = string.Format("update nhanvien set TENNV=N'{1}', NGAYSINH='{2}', GIOITINH=N'{3}', SODIENTHOAI='{4}', DIACHI=N'{5}' where MANV={0}", employeeID, employeeName, ngaySinh, gioiTinh, soDienThoai, diaChi);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int AddEmployee(string tennv, string ngaysinh, string gioitinh, string ngayvaolam, string chucvu, string sdt, string diachi)
+        {
+            string query = string.Format("insert NHANVIEN values({0},N'{1}', '{2}', N'{3}', '{4}', N'{5}', '{6}', N'{7}', 1)", GetEmployeeIDMax(), tennv, ngaysinh, gioitinh, ngayvaolam, chucvu, sdt, diachi);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int GetEmployeeIDMax()
+        {
+            int ID = 0;
+            int id = DataProvider.ExecuteScalarCommand("select max(manv) from nhanvien", null);
+            if (id != null)
+            {
+                ID = id;
+            }
+            return ID + 1;
+        }
+
+        public int DeleteAllEmployee()
+        {
+            string query = "update nhanvien set trangthai = 0";
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
     }
 }

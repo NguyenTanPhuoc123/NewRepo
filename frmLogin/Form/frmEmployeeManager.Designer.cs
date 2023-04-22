@@ -30,23 +30,15 @@ namespace frmLogin
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeManager));
             this.label1 = new System.Windows.Forms.Label();
             this.cbSortEmployee = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchEmployee = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbFillEmployee = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgvListEmployee = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.colEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEmployeeFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBirthDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNumberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colWorkingDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.grpEmployeeInfo = new System.Windows.Forms.GroupBox();
             this.richtxtAddress = new System.Windows.Forms.RichTextBox();
@@ -68,13 +60,22 @@ namespace frmLogin
             this.label2 = new System.Windows.Forms.Label();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.grpFunctionEmployee = new System.Windows.Forms.GroupBox();
-            this.btnRefreshEmployee = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSaveEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteAllEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnEmployeeDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchEmployee = new Guna.UI2.WinForms.Guna2Button();
+            this.colEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmployeeFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBirthDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNumberPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colWorkingDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListEmployee)).BeginInit();
             this.grpEmployeeInfo.SuspendLayout();
             this.grpFunctionEmployee.SuspendLayout();
@@ -141,16 +142,16 @@ namespace frmLogin
             // 
             // dtgvListEmployee
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvListEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvListEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvListEmployee.ColumnHeadersHeight = 38;
             this.dtgvListEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -161,15 +162,16 @@ namespace frmLogin
             this.colNumberPhone,
             this.colAddress,
             this.colWorkingDay,
-            this.colPosition});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListEmployee.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colPosition,
+            this.Column1});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListEmployee.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListEmployee.Location = new System.Drawing.Point(36, 311);
             this.dtgvListEmployee.Name = "dtgvListEmployee";
@@ -199,62 +201,7 @@ namespace frmLogin
             this.dtgvListEmployee.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvListEmployee.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListEmployee.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // colEmployeeID
-            // 
-            this.colEmployeeID.DataPropertyName = "MANV";
-            this.colEmployeeID.HeaderText = "Mã nhân viên";
-            this.colEmployeeID.MinimumWidth = 6;
-            this.colEmployeeID.Name = "colEmployeeID";
-            // 
-            // colEmployeeFullName
-            // 
-            this.colEmployeeFullName.DataPropertyName = "TENNV";
-            this.colEmployeeFullName.HeaderText = "Họ tên";
-            this.colEmployeeFullName.MinimumWidth = 6;
-            this.colEmployeeFullName.Name = "colEmployeeFullName";
-            // 
-            // colBirthDay
-            // 
-            this.colBirthDay.DataPropertyName = "NGAYSINH";
-            this.colBirthDay.HeaderText = "Ngày sinh";
-            this.colBirthDay.MinimumWidth = 6;
-            this.colBirthDay.Name = "colBirthDay";
-            // 
-            // colSex
-            // 
-            this.colSex.DataPropertyName = "GIOITINH";
-            this.colSex.HeaderText = "Giới tính";
-            this.colSex.MinimumWidth = 6;
-            this.colSex.Name = "colSex";
-            // 
-            // colNumberPhone
-            // 
-            this.colNumberPhone.DataPropertyName = "SODIENTHOAI";
-            this.colNumberPhone.HeaderText = "Số điện thoai";
-            this.colNumberPhone.MinimumWidth = 6;
-            this.colNumberPhone.Name = "colNumberPhone";
-            // 
-            // colAddress
-            // 
-            this.colAddress.DataPropertyName = "DIACHI";
-            this.colAddress.HeaderText = "Địa chỉ";
-            this.colAddress.MinimumWidth = 6;
-            this.colAddress.Name = "colAddress";
-            // 
-            // colWorkingDay
-            // 
-            this.colWorkingDay.DataPropertyName = "NGAYVAOLAM";
-            this.colWorkingDay.HeaderText = "Ngày vào làm";
-            this.colWorkingDay.MinimumWidth = 6;
-            this.colWorkingDay.Name = "colWorkingDay";
-            // 
-            // colPosition
-            // 
-            this.colPosition.DataPropertyName = "CHUCVU";
-            this.colPosition.HeaderText = "Chức vụ";
-            this.colPosition.MinimumWidth = 6;
-            this.colPosition.Name = "colPosition";
+            this.dtgvListEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListEmployee_CellClick);
             // 
             // guna2HtmlLabel1
             // 
@@ -503,7 +450,7 @@ namespace frmLogin
             // 
             // grpFunctionEmployee
             // 
-            this.grpFunctionEmployee.Controls.Add(this.btnRefreshEmployee);
+            this.grpFunctionEmployee.Controls.Add(this.btnSaveEmployee);
             this.grpFunctionEmployee.Controls.Add(this.btnAddEmployee);
             this.grpFunctionEmployee.Controls.Add(this.btnEditEmployee);
             this.grpFunctionEmployee.Controls.Add(this.btnDeleteAllEmployee);
@@ -516,23 +463,25 @@ namespace frmLogin
             this.grpFunctionEmployee.TabStop = false;
             this.grpFunctionEmployee.Text = "Chức năng";
             // 
-            // btnRefreshEmployee
+            // btnSaveEmployee
             // 
-            this.btnRefreshEmployee.BorderRadius = 20;
-            this.btnRefreshEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefreshEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefreshEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRefreshEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRefreshEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.btnRefreshEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRefreshEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnRefreshEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshEmployee.Image")));
-            this.btnRefreshEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnRefreshEmployee.Location = new System.Drawing.Point(157, 23);
-            this.btnRefreshEmployee.Name = "btnRefreshEmployee";
-            this.btnRefreshEmployee.Size = new System.Drawing.Size(159, 45);
-            this.btnRefreshEmployee.TabIndex = 28;
-            this.btnRefreshEmployee.Text = "Làm mới";
+            this.btnSaveEmployee.BorderRadius = 20;
+            this.btnSaveEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSaveEmployee.Enabled = false;
+            this.btnSaveEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnSaveEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSaveEmployee.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveEmployee.Image")));
+            this.btnSaveEmployee.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSaveEmployee.Location = new System.Drawing.Point(156, 27);
+            this.btnSaveEmployee.Name = "btnSaveEmployee";
+            this.btnSaveEmployee.Size = new System.Drawing.Size(161, 45);
+            this.btnSaveEmployee.TabIndex = 30;
+            this.btnSaveEmployee.Text = "Lưu";
+            this.btnSaveEmployee.Click += new System.EventHandler(this.btnSaveEmployee_Click);
             // 
             // btnAddEmployee
             // 
@@ -551,6 +500,7 @@ namespace frmLogin
             this.btnAddEmployee.Size = new System.Drawing.Size(113, 45);
             this.btnAddEmployee.TabIndex = 14;
             this.btnAddEmployee.Text = "Thêm";
+            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // btnEditEmployee
             // 
@@ -569,6 +519,7 @@ namespace frmLogin
             this.btnEditEmployee.Size = new System.Drawing.Size(115, 45);
             this.btnEditEmployee.TabIndex = 15;
             this.btnEditEmployee.Text = "Sửa";
+            this.btnEditEmployee.Click += new System.EventHandler(this.btnEditEmployee_Click);
             // 
             // btnDeleteAllEmployee
             // 
@@ -589,6 +540,7 @@ namespace frmLogin
             this.btnDeleteAllEmployee.Size = new System.Drawing.Size(159, 43);
             this.btnDeleteAllEmployee.TabIndex = 27;
             this.btnDeleteAllEmployee.Text = "Xóa tất cả";
+            this.btnDeleteAllEmployee.Click += new System.EventHandler(this.btnDeleteAllEmployee_Click);
             // 
             // btnDeleteEmployee
             // 
@@ -607,6 +559,7 @@ namespace frmLogin
             this.btnDeleteEmployee.Size = new System.Drawing.Size(113, 45);
             this.btnDeleteEmployee.TabIndex = 16;
             this.btnDeleteEmployee.Text = "Xóa";
+            this.btnDeleteEmployee.Click += new System.EventHandler(this.btnDeleteEmployee_Click);
             // 
             // btnEmployeeDeleted
             // 
@@ -643,6 +596,69 @@ namespace frmLogin
             this.btnSearchEmployee.Size = new System.Drawing.Size(72, 36);
             this.btnSearchEmployee.TabIndex = 12;
             // 
+            // colEmployeeID
+            // 
+            this.colEmployeeID.DataPropertyName = "MANV";
+            this.colEmployeeID.HeaderText = "Mã nhân viên";
+            this.colEmployeeID.MinimumWidth = 6;
+            this.colEmployeeID.Name = "colEmployeeID";
+            // 
+            // colEmployeeFullName
+            // 
+            this.colEmployeeFullName.DataPropertyName = "TENNV";
+            this.colEmployeeFullName.HeaderText = "Họ tên";
+            this.colEmployeeFullName.MinimumWidth = 6;
+            this.colEmployeeFullName.Name = "colEmployeeFullName";
+            // 
+            // colBirthDay
+            // 
+            this.colBirthDay.DataPropertyName = "NGAYSINH";
+            this.colBirthDay.HeaderText = "Ngày sinh";
+            this.colBirthDay.MinimumWidth = 6;
+            this.colBirthDay.Name = "colBirthDay";
+            // 
+            // colSex
+            // 
+            this.colSex.DataPropertyName = "GIOITINH";
+            this.colSex.HeaderText = "Giới tính";
+            this.colSex.MinimumWidth = 6;
+            this.colSex.Name = "colSex";
+            // 
+            // colNumberPhone
+            // 
+            this.colNumberPhone.DataPropertyName = "SODIENTHOAI";
+            this.colNumberPhone.HeaderText = "Số điện thoai";
+            this.colNumberPhone.MinimumWidth = 6;
+            this.colNumberPhone.Name = "colNumberPhone";
+            // 
+            // colAddress
+            // 
+            this.colAddress.DataPropertyName = "DIACHI";
+            this.colAddress.HeaderText = "Địa chỉ";
+            this.colAddress.MinimumWidth = 6;
+            this.colAddress.Name = "colAddress";
+            // 
+            // colWorkingDay
+            // 
+            this.colWorkingDay.DataPropertyName = "NGAYVAOLAM";
+            this.colWorkingDay.HeaderText = "Ngày vào làm";
+            this.colWorkingDay.MinimumWidth = 6;
+            this.colWorkingDay.Name = "colWorkingDay";
+            // 
+            // colPosition
+            // 
+            this.colPosition.DataPropertyName = "TenChucVu";
+            this.colPosition.HeaderText = "Chức vụ";
+            this.colPosition.MinimumWidth = 6;
+            this.colPosition.Name = "colPosition";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaChucVu";
+            this.Column1.HeaderText = "MaChucVu";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
             // frmEmployeeManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -661,6 +677,7 @@ namespace frmLogin
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEmployeeManager";
             this.Text = "frmEmployeeManager";
+            this.Load += new System.EventHandler(this.frmEmployeeManager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListEmployee)).EndInit();
             this.grpEmployeeInfo.ResumeLayout(false);
             this.grpEmployeeInfo.PerformLayout();
@@ -703,7 +720,7 @@ namespace frmLogin
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private System.Windows.Forms.GroupBox grpFunctionEmployee;
-        private Guna.UI2.WinForms.Guna2Button btnRefreshEmployee;
+        private Guna.UI2.WinForms.Guna2Button btnSaveEmployee;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmployeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmployeeFullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colBirthDay;
@@ -712,5 +729,6 @@ namespace frmLogin
         private System.Windows.Forms.DataGridViewTextBoxColumn colAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn colWorkingDay;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPosition;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

@@ -23,7 +23,7 @@ namespace frmLogin.Data_Access_Layer
         }
         public Position GetPositionName(int id)
         {
-            DataTable data = DataProvider.ExcecuteSelectCommand("Select * from CHUCVU where MACHUCVU = "+ id,null);
+            DataTable data = DataProvider.ExcecuteSelectCommand("Select * from CHUCVU where MACHUCVU = " + id, null);
 
             foreach (DataRow item in data.Rows)
             {
@@ -31,6 +31,20 @@ namespace frmLogin.Data_Access_Layer
             }
 
             return null;
+        }
+
+        public List<Position> GetListPosition()
+        {
+            List<Position> listPosition = new List<Position>();
+            string query = string.Format("Select * from CHUCVU");
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Position employee = new Position(item);
+                listPosition.Add(employee);
+            }
+            return listPosition;
         }
     }
 }

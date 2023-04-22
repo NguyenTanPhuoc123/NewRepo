@@ -214,7 +214,6 @@ D:\DoAn\frmLogin\bin\Debug\en-CA\frmLogin.resources.dll
 D:\DoAn\frmLogin\bin\Debug\zh\frmLogin.resources.dll
 D:\DoAn\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
 D:\DoAn\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
-D:\DoAn\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
 D:\DoAn\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
 D:\DoAn\frmLogin\obj\Debug\frmLogin.frmPay.resources
 D:\DoAn\frmLogin\obj\Debug\frmLogin.frmPay.en-CA.resources
@@ -499,3 +498,5 @@ D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.exe
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.pdb
 D:\do an\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources
 D:\do an\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources

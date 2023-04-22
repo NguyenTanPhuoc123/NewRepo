@@ -18,6 +18,7 @@ namespace frmLogin.Data_Tranfer_Object
         private string soDienThoai;
         private string diaChi;
         private int trangThai;
+        private string tenChucVu;
 
         public int MaNV { get => maNV; set => maNV = value; }
         public string TenNV { get => tenNV; set => tenNV = value; }
@@ -28,8 +29,9 @@ namespace frmLogin.Data_Tranfer_Object
         public string SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public int TrangThai { get => trangThai; set => trangThai = value; }
+        public string TenChucVu { get => tenChucVu; set => tenChucVu = value; }
 
-        public Employee(int manv, string ten, string ngaysinh,string gioitinh, string ngayvaolam, int macv, string sdt, string diachi, int trangthai)
+        public Employee(int manv, string ten, string ngaysinh, string gioitinh, string ngayvaolam, int macv, string sdt, string diachi, int trangthai, string tenchucvu)
         {
             this.maNV = manv;
             this.tenNV = ten;
@@ -40,6 +42,7 @@ namespace frmLogin.Data_Tranfer_Object
             this.soDienThoai = sdt;
             this.diaChi = diachi;
             this.trangThai = trangthai;
+            this.tenChucVu = tenchucvu;
         }
 
         public Employee(DataRow row)
@@ -52,7 +55,7 @@ namespace frmLogin.Data_Tranfer_Object
             this.maChucVu = (int)row["MACHUCVU"];
             this.soDienThoai = row["SODIENTHOAI"].ToString();
             this.diaChi = row["DIACHI"].ToString();
-            //this.trangThai = (int)row["TRANGTHAI"];
+            this.tenChucVu = row["TENCHUCVU"].ToString();
         }
     }
 }
