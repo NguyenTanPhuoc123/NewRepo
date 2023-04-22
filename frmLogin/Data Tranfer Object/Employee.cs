@@ -22,28 +22,16 @@ namespace frmLogin.Data_Tranfer_Object
 
         public int MaNV { get => maNV; set => maNV = value; }
         public string TenNV { get => tenNV; set => tenNV = value; }
-        public string NgaySinh { get => ngaySinh; set => ngaySinh = value; }
-        public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
-        public string NgayVaoLam { get => ngayVaoLam; set => ngayVaoLam = value; }
+        public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }   
         public int MaChucVu { get => maChucVu; set => maChucVu = value; }
         public string SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public int TrangThai { get => trangThai; set => trangThai = value; }
         public string TenChucVu { get => tenChucVu; set => tenChucVu = value; }
+        public string NgaySinh { get => ngaySinh; set => ngaySinh = value; }
+        public string NgayVaoLam { get => ngayVaoLam; set => ngayVaoLam = value; }
 
-        public Employee(int manv, string ten, string ngaysinh, string gioitinh, string ngayvaolam, int macv, string sdt, string diachi, int trangthai, string tenchucvu)
-        {
-            this.maNV = manv;
-            this.tenNV = ten;
-            this.ngaySinh = ngaysinh;
-            this.gioiTinh = gioitinh;
-            this.ngayVaoLam = ngayvaolam;
-            this.maChucVu = macv;
-            this.soDienThoai = sdt;
-            this.diaChi = diachi;
-            this.trangThai = trangthai;
-            this.tenChucVu = tenchucvu;
-        }
+     
 
         public Employee(DataRow row)
         {
@@ -56,6 +44,20 @@ namespace frmLogin.Data_Tranfer_Object
             this.soDienThoai = row["SODIENTHOAI"].ToString();
             this.diaChi = row["DIACHI"].ToString();
             this.tenChucVu = row["TENCHUCVU"].ToString();
+        }
+
+        public Employee(int maNV, string tenNV, string ngaySinh, string gioiTinh, string ngayVaoLam, int maChucVu, string soDienThoai, string diaChi, int trangThai, string tenChucVu)
+        {
+            this.maNV = maNV;
+            this.tenNV = tenNV;
+            this.ngaySinh = ngaySinh;
+            this.gioiTinh = gioiTinh;
+            this.ngayVaoLam = ngayVaoLam;
+            this.maChucVu = maChucVu;
+            this.soDienThoai = soDienThoai;
+            this.diaChi = diaChi;
+            this.trangThai = trangThai;
+            this.tenChucVu = tenChucVu;
         }
     }
 }

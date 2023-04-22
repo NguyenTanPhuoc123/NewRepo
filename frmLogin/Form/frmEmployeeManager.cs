@@ -32,31 +32,35 @@ namespace frmLogin
             cbPosition.DataSource = PositionDAF.Instance.GetListPosition();
             cbPosition.DisplayMember = "TENCHUCVU";
             cbPosition.ValueMember = "MACHUCVU";
+            btnSaveEmployee.Enabled = false;
+            btnDeleteEmployee.Enabled = true;
+            btnDeleteAllEmployee.Enabled = true;
+            btnEditEmployee.Enabled = true;
+            radMale.Checked = true;
         }
 
         private void dtgvListEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            bool gender = dtgvListEmployee.Rows[0].Cells[3].Value.ToString().Equals("Nam") ? true : false;
-            txtEmployeeID.Text = dtgvListEmployee.SelectedRows[0].Cells[0].Value.ToString();
-            txtEmployeeName.Text = dtgvListEmployee.SelectedRows[0].Cells[1].Value.ToString();
-            dtpBirthday.Text = dtgvListEmployee.SelectedRows[0].Cells[2].Value.ToString();
-            txtNumberPhone.Text = dtgvListEmployee.SelectedRows[0].Cells[4].Value.ToString();
-            richtxtAddress.Text = dtgvListEmployee.SelectedRows[0].Cells[5].Value.ToString();
-            dtpWorkingDay.Text = dtgvListEmployee.SelectedRows[0].Cells[6].Value.ToString();
-            if (gender == true)
-            {
-
-                radMale.Checked = true;
-            }
-            else
-                radFemale.Checked = true;
+            if (dtgvListEmployee.SelectedRows.Count > 0) {
+                txtEmployeeID.Text = dtgvListEmployee.SelectedRows[0].Cells[0].Value.ToString();
+                txtEmployeeName.Text = dtgvListEmployee.SelectedRows[0].Cells[1].Value.ToString();
+                dtpBirthday.Text = dtgvListEmployee.SelectedRows[0].Cells[2].Value.ToString();
+                txtNumberPhone.Text = dtgvListEmployee.SelectedRows[0].Cells[4].Value.ToString();
+                richtxtAddress.Text = dtgvListEmployee.SelectedRows[0].Cells[5].Value.ToString();
+                dtpWorkingDay.Text = dtgvListEmployee.SelectedRows[0].Cells[6].Value.ToString();
+                string gender = dtgvListEmployee.SelectedRows[0].Cells[3].Value.ToString();
+                if (gender==radMale.Text)
+                    radMale.Checked = true;
+                else
+                    radFemale.Checked = true;
             cbPosition.SelectedValue = Convert.ToInt32(dtgvListEmployee.SelectedRows[0].Cells[8].Value.ToString());
+            }
         }
 
         private void btnEditEmployee_Click(object sender, EventArgs e)
         {
             string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            int count = EmployeeDAF.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString(), gender, txtNumberPhone.Text, richtxtAddress.Text);
+            int count = EmployeeDAF.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
             if (count > 0)
             {
                 MessageBox.Show("Sửa tài khoản thành công");
@@ -90,7 +94,9 @@ namespace frmLogin
             txtEmployeeID.Text = EmployeeDAF.Instance.GetEmployeeIDMax().ToString();
             txtEmployeeName.Clear();
             cbPosition.SelectedIndex = 0;
-            cbPosition.SelectedIndex = 0;
+            radMale.Checked = true;
+            richtxtAddress.Clear();
+            txtNumberPhone.Clear();
             btnSaveEmployee.Enabled = true;
             btnDeleteEmployee.Enabled = false;
             btnDeleteAllEmployee.Enabled = false;
@@ -100,7 +106,7 @@ namespace frmLogin
         private void btnSaveEmployee_Click(object sender, EventArgs e)
         {
             string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            int count = EmployeeDAF.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString(), gender, dtpWorkingDay.Value.ToString(), cbPosition.SelectedValue.ToString(), txtNumberPhone.Text, richtxtAddress.Text);
+            int count = EmployeeDAF.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
             if (count > 0)
             {
                 MessageBox.Show("Thêm tài khoản thành công");

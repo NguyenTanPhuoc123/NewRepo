@@ -69,7 +69,7 @@ namespace frmLogin
             txtNumberPhone.Text = employee.SoDienThoai;
             txtPosition.Text = position.TenChucVu;
             dtpBirthday.Text = employee.NgaySinh;
-            guna2DateTimePicker1.Text = employee.NgayVaoLam;
+           dtpWorkingDay.Text = employee.NgayVaoLam;
             txtAddress.Text = employee.DiaChi;
             if (employee.GioiTinh == "Nam")
                 radMale.Checked = true;
@@ -83,13 +83,12 @@ namespace frmLogin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string ngaySinh = dtpBirthday.Value.ToString("yyyy-MM-dd");
             string gioiTinh;
             if (radMale.Checked)
                 gioiTinh = "Nam";
             else
                 gioiTinh = "Nữ";
-            int row= EmployeeDAF.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text),txtNumberPhone.Text,ngaySinh,gioiTinh,txtAddress.Text);
+            int row= EmployeeDAF.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text),txtNumberPhone.Text,dtpBirthday.Text,gioiTinh,txtAddress.Text);
             if (row == 1)
             {
                 MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK);
