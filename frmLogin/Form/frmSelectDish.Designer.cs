@@ -57,6 +57,8 @@ namespace frmLogin
             this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
             this.flpAddDish = new System.Windows.Forms.FlowLayoutPanel();
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbSize = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.grpDishDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -68,7 +70,7 @@ namespace frmLogin
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(414, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 22);
+            this.label1.Size = new System.Drawing.Size(0, 18);
             this.label1.TabIndex = 1;
             // 
             // panel1
@@ -101,7 +103,7 @@ namespace frmLogin
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(365, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(350, 65);
+            this.label2.Size = new System.Drawing.Size(299, 55);
             this.label2.TabIndex = 3;
             this.label2.Text = "CHỌN MÓN";
             // 
@@ -163,7 +165,7 @@ namespace frmLogin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 22);
+            this.label3.Size = new System.Drawing.Size(76, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "Danh mục";
             // 
@@ -190,6 +192,8 @@ namespace frmLogin
             // 
             // grpDishDetail
             // 
+            this.grpDishDetail.Controls.Add(this.cbSize);
+            this.grpDishDetail.Controls.Add(this.label8);
             this.grpDishDetail.Controls.Add(this.numQuantity);
             this.grpDishDetail.Controls.Add(this.label7);
             this.grpDishDetail.Controls.Add(this.txtDishPrice);
@@ -219,7 +223,7 @@ namespace frmLogin
             0,
             0});
             this.numQuantity.Name = "numQuantity";
-            this.numQuantity.Size = new System.Drawing.Size(93, 43);
+            this.numQuantity.Size = new System.Drawing.Size(73, 43);
             this.numQuantity.TabIndex = 8;
             this.numQuantity.Value = new decimal(new int[] {
             1,
@@ -232,7 +236,7 @@ namespace frmLogin
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 362);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 22);
+            this.label7.Size = new System.Drawing.Size(71, 18);
             this.label7.TabIndex = 7;
             this.label7.Text = "Số lượng:";
             // 
@@ -262,7 +266,7 @@ namespace frmLogin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 319);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 22);
+            this.label6.Size = new System.Drawing.Size(63, 18);
             this.label6.TabIndex = 5;
             this.label6.Text = "Đơn giá:";
             // 
@@ -292,7 +296,7 @@ namespace frmLogin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 22);
+            this.label5.Size = new System.Drawing.Size(76, 18);
             this.label5.TabIndex = 3;
             this.label5.Text = "Danh mục";
             // 
@@ -322,7 +326,7 @@ namespace frmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 219);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 22);
+            this.label4.Size = new System.Drawing.Size(67, 18);
             this.label4.TabIndex = 1;
             this.label4.Text = "Tên món";
             // 
@@ -399,9 +403,33 @@ namespace frmLogin
             this.btnSelectDish.TabIndex = 11;
             this.btnSelectDish.Text = "Lên món";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(170, 362);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 18);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Kích thước:";
+            // 
+            // cbSize
+            // 
+            this.cbSize.BackColor = System.Drawing.Color.Transparent;
+            this.cbSize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSize.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSize.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSize.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbSize.ItemHeight = 30;
+            this.cbSize.Location = new System.Drawing.Point(258, 355);
+            this.cbSize.Name = "cbSize";
+            this.cbSize.Size = new System.Drawing.Size(74, 36);
+            this.cbSize.TabIndex = 10;
+            // 
             // frmSelectDish
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1195, 607);
             this.Controls.Add(this.btnSelectDish);
@@ -460,5 +488,7 @@ namespace frmLogin
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ImageList imageList1;
         private Guna.UI2.WinForms.Guna2Button btnSelectDish;
+        private Guna.UI2.WinForms.Guna2ComboBox cbSize;
+        private System.Windows.Forms.Label label8;
     }
 }

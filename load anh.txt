@@ -1,0 +1,17 @@
+//load anh
+ private void frmSelectDish_Load(object sender, EventArgs e)
+        {
+            List<Product> products = ProductDAF.Instance.GetListProduct();
+            for (int i = 0; i < products.Count; i++)
+            {
+                imageList1.Images.Add(products[i].HinhAnh);
+                ListViewItem item = new ListViewItem(products[i].TenSanPham);
+                item.ImageIndex =i;
+                item.SubItems.Add(products[i].DanhMuc.ToString());
+                item.SubItems.Add(products[i].DonGia.ToString());
+                lstvListDish.Items.Add(item);
+            }
+            cbCategoryDish.DataSource = CategoryFoodDAF.Instance.GetCategoryFoods();
+            cbCategoryDish.ValueMember = "CategoryID";
+            cbCategoryDish.DisplayMember = "CategoryName";
+        }
