@@ -104,5 +104,6 @@ namespace frmLogin
             cbCategory.SelectedIndex = 0;
             pbProduct.Image = null;
         }
+        //...
     }
 }
