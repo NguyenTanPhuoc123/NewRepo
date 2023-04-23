@@ -1,23 +1,23 @@
-﻿using frmLogin.Data_Tranfer_Object;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO;
 
-namespace frmLogin.Data_Access_Layer
+namespace DAO
 {
-    public class PositionDAF
+    public class PositionDAO
     {
-        private static PositionDAF instance;
-        public static PositionDAF Instance
+        private static PositionDAO instance;
+        public static PositionDAO Instance
         {
-            get { if (instance == null) instance = new PositionDAF(); return PositionDAF.instance; }
-            private set { PositionDAF.instance = value; }
+            get { if (instance == null) instance = new PositionDAO(); return PositionDAO.instance; }
+            private set { PositionDAO.instance = value; }
         }
 
-        private PositionDAF()
+        private PositionDAO()
         {
 
         }

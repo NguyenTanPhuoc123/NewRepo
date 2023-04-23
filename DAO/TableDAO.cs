@@ -1,25 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Data;
-using frmLogin.Data_Tranfer_Object;
+using DTO;
 
-namespace frmLogin.Data_Access_Layer
+namespace DAO
 {
-    class TableDAF
+    public class TableDAO
     {
-        private static TableDAF instance;
+        private static TableDAO instance;
 
-        public static TableDAF Instance
+        public static TableDAO Instance
         {
-            get { if (instance == null) instance = new TableDAF(); return TableDAF.instance; }
-            private set { TableDAF.instance = value; }
+            get { if (instance == null) instance = new TableDAO(); return TableDAO.instance; }
+            private set { TableDAO.instance = value; }
         }
 
-        private TableDAF()
+        private TableDAO()
         {
 
         }
@@ -27,23 +26,23 @@ namespace frmLogin.Data_Access_Layer
         {
             string query = "";
             List<Table> listTable = new List<Table>();
-                query = string.Format("select * from BANAN where XOA = 0");
-            
+            query = string.Format("select * from BANAN where XOA = 0");
+
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
-                {
-                    Table table = new Table(item);
-                    listTable.Add(table);
-                }
-            
+            {
+                Table table = new Table(item);
+                listTable.Add(table);
+            }
+
             return listTable;
         }
 
         public List<Table> GetListTableByLocationID(int locationid)
         {
-        
+
             List<Table> listTable = new List<Table>();
-            string query = string.Format("select * from BANAN Where VITRI = {0} and XOA = 0 ",locationid);
+            string query = string.Format("select * from BANAN Where VITRI = {0} and XOA = 0 ", locationid);
 
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
@@ -70,12 +69,12 @@ namespace frmLogin.Data_Access_Layer
         {
             string query = string.Format("Insert BANAN(TENBAN,VITRI,TRANGTHAI) values(N'{0}',{1},N'Trống')", tenBan, maVitri);
             int row = 0;
-             row = DataProvider.ExecuteInsertCommand(query, null);
+            row = DataProvider.ExecuteInsertCommand(query, null);
 
             return row;
         }
 
-        public int EditTable(int maBan,string tenBan, int maViTri)
+        public int EditTable(int maBan, string tenBan, int maViTri)
         {
             string query = string.Format("Update BANAN SET TENBAN = N'{0}' , VITRI = {1} where MABANAN = {2}", tenBan, maViTri, maBan);
             int row = 0;
@@ -86,7 +85,7 @@ namespace frmLogin.Data_Access_Layer
 
         public int DeleteTable(int maBan)
         {
-            string query = string.Format("Update BANAN SET XOA = 1 where MABANAN = {0}",  maBan);
+            string query = string.Format("Update BANAN SET XOA = 1 where MABANAN = {0}", maBan);
             int row = 0;
             row = DataProvider.ExecuteInsertCommand(query, null);
 
@@ -119,7 +118,5 @@ namespace frmLogin.Data_Access_Layer
 
             return row;
         }
-
-        
     }
 }

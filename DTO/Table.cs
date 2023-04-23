@@ -5,39 +5,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace frmLogin.Data_Tranfer_Object
+namespace DTO
 {
-    public class TableMenu
+    public class Table
     {
         private int m_MaBanAn;
         private string m_TenBan;
-        private int m_MaViTri;
+        private int m_ViTri;
         private string m_TrangThai;
-        private string m_TenViTri;
 
+    
         public int MaBanAn { get => m_MaBanAn; set => m_MaBanAn = value; }
         public string TenBan { get => m_TenBan; set => m_TenBan = value; }
-        public int MaViTri { get => m_MaViTri; set => m_MaViTri = value; }
+        public int ViTri { get => m_ViTri; set => m_ViTri = value; }
         public string TrangThai { get => m_TrangThai; set => m_TrangThai = value; }
-        public string TenViTri { get => m_TenViTri; set => m_TenViTri = value; }
+     
 
-        public TableMenu(DataRow row)
+        public Table(DataRow row)
         {
             this.m_MaBanAn = (int)row["MABANAN"];
             this.m_TenBan = row["TENBAN"].ToString();
-            this.m_MaViTri = (int)row["MAVITRI"];
-            this.m_TenViTri = row["TENVITRI"].ToString();
+            this.m_ViTri = (int)row["VITRI"];
             this.m_TrangThai = row["TRANGTHAI"].ToString();
 
         }
 
-        public TableMenu(int maBanAn, string tenBan, int maViTri, string trangThai, string tenViTri)
+        public Table(int maBanAn, string tenBan, int viTri, string trangThai)
         {
             m_MaBanAn = maBanAn;
             m_TenBan = tenBan;
-            m_MaViTri = maViTri;
+            m_ViTri = viTri;
             m_TrangThai = trangThai;
-            m_TenViTri = tenViTri;
         }
     }
 }

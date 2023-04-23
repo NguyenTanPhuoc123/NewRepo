@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using BUS;
 
 namespace frmLogin
 {
@@ -29,7 +31,7 @@ namespace frmLogin
 
         private void btnAddTable_Click(object sender, EventArgs e)
         {
-            txtTableID.Text = TableDAF.Instance.GetTableIDMax().ToString();
+            txtTableID.Text = TableBUS.Instance.GetTableIDMax().ToString();
             txtTableName.Clear();
             cbLocation.SelectedIndex = 0;
             btnSaveTable.Enabled = true;
@@ -47,10 +49,10 @@ namespace frmLogin
             btnSaveTable.Enabled = false;
             btnTableDeleted.Enabled = true;
 
-            cbLocation.DataSource = LocationDAF.Instance.GetListLocation();
+            cbLocation.DataSource = LocationBUS.Instance.GetListLocation();
             cbLocation.ValueMember = "MaViTri";
             cbLocation.DisplayMember = "TenViTri";
-            dtgvListTable.DataSource = TableMenuDAF.Instance.GetListTableMenu();
+            dtgvListTable.DataSource = TableMenuBUS.Instance.GetListTableMenu();
         }
 
         private void dtgvListTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -79,7 +81,7 @@ namespace frmLogin
             }
             try
             {
-                int count = TableDAF.Instance.AddTable(txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
+                int count = TableBUS.Instance.AddTable(txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 
                 if (count > 0)
                     MessageBox.Show("Thêm bàn ăn thành công ", "Thêm bàn ăn", MessageBoxButtons.OK);
@@ -106,7 +108,7 @@ namespace frmLogin
 
                     try
                     {
-                        int count = TableDAF.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
+                        int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 
                         if (count > 0)
                             MessageBox.Show("Sửa bàn ăn thành công ", "Sửa bàn ăn", MessageBoxButtons.OK);
@@ -127,7 +129,7 @@ namespace frmLogin
             {
                 try
                 {
-                    int count = TableDAF.Instance.DeleteTable(int.Parse(txtTableID.Text));
+                    int count = TableBUS.Instance.DeleteTable(int.Parse(txtTableID.Text));
 
                     if (count > 0)
                         MessageBox.Show("Xóa bàn ăn thành công ", "Xóa bàn ăn", MessageBoxButtons.OK);
@@ -148,7 +150,7 @@ namespace frmLogin
             {
                 try
                 {
-                    int count = TableDAF.Instance.DeleteAllTable();
+                    int count = TableBUS.Instance.DeleteAllTable();
 
                     if (count > 0)
                         MessageBox.Show("Xóa bàn ăn thành công ", "Xóa bàn ăn", MessageBoxButtons.OK);
@@ -167,10 +169,10 @@ namespace frmLogin
         {
             if (string.IsNullOrEmpty(txtSearchTable.Text))
             {
-                dtgvListTable.DataSource = TableMenuDAF.Instance.GetListTableMenu();
+                dtgvListTable.DataSource = TableMenuBUS.Instance.GetListTableMenu();
             }
 
-            dtgvListTable.DataSource = TableMenuDAF.Instance.SearchTableFoodByTableName(txtSearchTable.Text);
+            dtgvListTable.DataSource = TableMenuBUS.Instance.SearchTableFoodByTableName(txtSearchTable.Text);
         }
 
         private void cbSortTable_SelectedIndexChanged(object sender, EventArgs e)
@@ -178,12 +180,12 @@ namespace frmLogin
             
             if (cbSortTable.SelectedIndex == 1)
             {   
-                dtgvListTable.DataSource = TableMenuDAF.Instance.SortListTableMenuByTableName();
+                dtgvListTable.DataSource = TableMenuBUS.Instance.SortListTableMenuByTableName();
             }
             else if(cbSortTable.SelectedIndex == 2)
-                dtgvListTable.DataSource = TableMenuDAF.Instance.SortListTableMenuByLocation();
+                dtgvListTable.DataSource = TableMenuBUS.Instance.SortListTableMenuByLocation();
             else
-                dtgvListTable.DataSource = TableMenuDAF.Instance.GetListTableMenu();
+                dtgvListTable.DataSource = TableMenuBUS.Instance.GetListTableMenu();
 
 
         }
@@ -193,19 +195,19 @@ namespace frmLogin
             
             if (cbFillTable.SelectedIndex == 0)
             {
-                dtgvListTable.DataSource = TableMenuDAF.Instance.GetListTableMenu();
+                dtgvListTable.DataSource = TableMenuBUS.Instance.GetListTableMenu();
                 
             }
             else
             {
-                dtgvListTable.DataSource = TableMenuDAF.Instance.FillTableFood(cbFillTable.SelectedIndex);
+                dtgvListTable.DataSource = TableMenuBUS.Instance.FillTableFood(cbFillTable.SelectedIndex);
                
             }
         }
 
         private void btnSearchTable_Click(object sender, EventArgs e)
         {
-            dtgvListTable.DataSource = TableMenuDAF.Instance.SearchTableFoodByTableName(txtSearchTable.Text);
+            dtgvListTable.DataSource = TableMenuBUS.Instance.SearchTableFoodByTableName(txtSearchTable.Text);
         }
     }
 }

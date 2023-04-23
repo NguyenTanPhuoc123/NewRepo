@@ -1427,6 +1427,7 @@ namespace frmLogin
             this.dtgvListSize.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvListSize.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListSize.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvListSize.SelectionChanged += new System.EventHandler(this.dtgvListSize_SelectionChanged);
             // 
             // grpFunctionSize
             // 
@@ -2073,7 +2074,7 @@ namespace frmLogin
             // 
             // Column11
             // 
-            this.Column11.DataPropertyName = "SizePrice";
+            this.Column11.DataPropertyName = "Price";
             this.Column11.HeaderText = "Đơn giá";
             this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";

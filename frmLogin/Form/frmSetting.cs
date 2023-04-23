@@ -16,8 +16,8 @@ namespace frmLogin
 {
     public partial class frmSetting : Form
     {
-        DTO.Account account;
-        public frmSetting(DTO.Account acc)
+        Account account;
+        public frmSetting(Account acc)
         {
             InitializeComponent();
             account = acc;
@@ -63,7 +63,7 @@ namespace frmLogin
         private void LoadThongTin()
         {
             Employee employee = EmployeeDAF.Instance.GetEmployeeByEmployeeID(account.EmployeeID);
-            Position position = PositionDAF.Instance.GetPositionName(employee.MaChucVu);
+            Position position = PositionBUS.Instance.GetPositionName(employee.MaChucVu);
             txtDisplayName.Text = employee.TenNV;
             txtUserName.Text = account.Username;
             txtEmployeeID.Text = employee.MaNV.ToString();
@@ -118,7 +118,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    int row = AccountDAF.Instance.UpdatePassword(txtNewPassword.Text, account.Username);
+                    int row = AccountBUS.Instance.UpdatePassword(txtNewPassword.Text, account.Username);
                     if (row == 1)
                     {
                         MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK);

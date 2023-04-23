@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using BUS;
 
 namespace frmLogin
 {
@@ -23,12 +25,12 @@ namespace frmLogin
             LoadLocationDeleted();
         }
 
-        #region Method
+        #region Location
             public void LoadLocationDeleted()
             {
             txtLocationID.Clear();
             txtLocationName.Clear();
-            dtgvListLocationDeleted.DataSource = LocationDAF.Instance.GetListLocation();
+            dtgvListLocationDeleted.DataSource = LocationBUS.Instance.GetListLocation();
             }
         #endregion
 

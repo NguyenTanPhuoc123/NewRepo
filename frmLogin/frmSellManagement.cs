@@ -16,15 +16,15 @@ namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
-        private DTO.Account loginAccount;
+        private Account loginAccount;
 
-        public DTO.Account LoginAccount
+        public Account LoginAccount
         {
             get { return this.loginAccount; }
             private set { this.loginAccount = value; }
         }
 
-        public frmSellManagement(DTO.Account acc)
+        public frmSellManagement(Account acc)
         {
             InitializeComponent();
             this.loginAccount = acc;
@@ -94,7 +94,7 @@ namespace frmLogin
             
             tstlblPosition.Text = GetTypeAccountName() + " : ";
             tsslblName.Text = GetEmployeeName();
-            cbLocationTable.DataSource = LocationDAF.Instance.GetListLocation();
+            cbLocationTable.DataSource = LocationBUS.Instance.GetListLocation();
             cbLocationTable.DisplayMember = "TenViTri";
             cbLocationTable.ValueMember = "MaViTri";
             
@@ -136,7 +136,7 @@ namespace frmLogin
         {
             flpTable.Controls.Clear();
             List<Table> listTable = new List<Table>();
-            listTable = TableDAF.Instance.GetListTableByLocationID(id);
+            listTable = TableBUS.Instance.GetListTableByLocationID(id);
 
             foreach (Table item in listTable)
             {

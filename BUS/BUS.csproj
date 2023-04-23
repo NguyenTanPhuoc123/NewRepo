@@ -44,9 +44,13 @@
     <Compile Include="AccountBUS.cs" />
     <Compile Include="AccountMenuBUS.cs" />
     <Compile Include="CategoryFoodBUS.cs" />
+    <Compile Include="LocationBUS.cs" />
+    <Compile Include="PositionBUS.cs" />
     <Compile Include="ProductBUS.cs" />
     <Compile Include="SizeProductBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableBUS.cs" />
+    <Compile Include="TableMenuBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">

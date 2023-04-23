@@ -22,8 +22,7 @@ namespace frmLogin
       
 
         private void frmCategoyManagement_Load(object sender, EventArgs e)
-        {
-            
+        { 
             LoadLocationTable();
             LoadListSizeProduct();
         }
@@ -32,7 +31,7 @@ namespace frmLogin
         #region Location Table Food
         public void LoadLocationTable()
         {
-            dtgvListLocation.DataSource = LocationDAF.Instance.GetListLocation();
+            dtgvListLocation.DataSource = LocationBUS.Instance.GetListLocation();
             btnSaveLocation.Enabled = false;
             btnEditLocation.Enabled = true;
             btnDeleteLocation.Enabled = true;
@@ -48,7 +47,7 @@ namespace frmLogin
 
         private void btnAddLocation_Click(object sender, EventArgs e)
         {
-            txtLocationID.Text = LocationDAF.Instance.GetLocationIDMax().ToString();
+            txtLocationID.Text = LocationBUS.Instance.GetLocationIDMax().ToString();
             txtLocationName.Clear();
             btnSaveLocation.Enabled = true;
             btnEditLocation.Enabled = false;
@@ -64,7 +63,7 @@ namespace frmLogin
                 MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            int count = LocationDAF.Instance.AddLocationTable(txtLocationName.Text);
+            int count = LocationBUS.Instance.AddLocationTable(txtLocationName.Text);
             if (count > 0)
             {
                 MessageBox.Show("Thêm vị trí bàn thành công!", "Thêm vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -86,7 +85,7 @@ namespace frmLogin
             }
             if (MessageBox.Show("Bạn chắc chắn muốn sửa vị trí bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                int count = LocationDAF.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
+                int count = LocationBUS.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
                 if (count > 0)
                 {
                     MessageBox.Show("Sửa vị trí bàn thành công!", "Sửa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -104,7 +103,7 @@ namespace frmLogin
         {
             if (MessageBox.Show("Bạn chắc chắn muốn xóa vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                int count = LocationDAF.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
+                int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
                 if (count > 0)
                 {
                     MessageBox.Show("Xóa vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -122,7 +121,7 @@ namespace frmLogin
         {
             if (MessageBox.Show("Bạn chắc chắn muốn xóa tất cả vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                int count = LocationDAF.Instance.DeleteAllLocationTable();
+                int count = LocationBUS.Instance.DeleteAllLocationTable();
                 if (count > 0)
                 {
                     MessageBox.Show("Xóa tất cả vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -151,7 +150,16 @@ namespace frmLogin
         #endregion
 
         #region Size Product
-         public  void LoadListSizeProduct()
+        private void dtgvListSize_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgvListSize.SelectedRows.Count > 0)
+            {
+                txtSizeID.Text = dtgvListSize.SelectedRows[0].Cells[0].Value.ToString();
+                txtSizeName.Text = dtgvListSize.SelectedRows[0].Cells[1].Value.ToString();
+                txtSizePrice.Text = dtgvListSize.SelectedRows[0].Cells[2].Value.ToString();
+            }
+        }
+        public  void LoadListSizeProduct()
         {
             dtgvListSize.DataSource = SizeProductBUS.Instance.GetListSizeProduct();
             ResetSizeInfo();
@@ -191,12 +199,9 @@ namespace frmLogin
             btnDeleteSize.Enabled = false;
         }
 
-
-        #endregion
-
         private void btnSaveSize_Click(object sender, EventArgs e)
-        {   
-            if(string.IsNullOrEmpty(txtSizeName.Text) || string.IsNullOrEmpty(txtSizePrice.Text))
+        {
+            if (string.IsNullOrEmpty(txtSizeName.Text) || string.IsNullOrEmpty(txtSizePrice.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin mà bạn muốn thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -213,14 +218,14 @@ namespace frmLogin
 
         private void btnEditSize_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn muốn thay đổi thông tin kích thước này?","Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn muốn thay đổi thông tin kích thước này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (string.IsNullOrEmpty(txtSizeName.Text) || string.IsNullOrEmpty(txtSizePrice.Text))
                 {
                     MessageBox.Show("Vui lòng điền đầy đủ thông tin mà bạn muốn sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                int count = SizeProductBUS.Instance.EditSizeProduct(int.Parse(txtSizeID.Text),txtSizeName.Text, float.Parse(txtSizePrice.Text));
+                int count = SizeProductBUS.Instance.EditSizeProduct(int.Parse(txtSizeID.Text), txtSizeName.Text, float.Parse(txtSizePrice.Text));
                 if (count > 0)
                 {
                     MessageBox.Show("Sửa kích thước thành công", "Sửa kích thước", MessageBoxButtons.OK);
@@ -235,7 +240,7 @@ namespace frmLogin
         {
             if (MessageBox.Show("Bạn muốn xóa kích thước này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-            
+
                 int count = SizeProductBUS.Instance.DeleteSizeProduct(int.Parse(txtSizeID.Text));
                 if (count > 0)
                 {
@@ -262,5 +267,11 @@ namespace frmLogin
                     MessageBox.Show("Xóa tất cả kích thước thất bại", "Xóa kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
+        #endregion
+
+      
     }
 }

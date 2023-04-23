@@ -48,7 +48,7 @@ namespace frmLogin
 
         private void btnDeleteAllAccount_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa tat ca", "Thong bao", MessageBoxButtons.YesNo))
+            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation))
             {
                 int count = AccountBUS.Instance.DeleteAllAccount();
                 if (count > 0)

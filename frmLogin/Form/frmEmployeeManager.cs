@@ -9,7 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
+using DTO;
 namespace frmLogin
 {
     public partial class frmEmployeeManager : Form
@@ -30,7 +31,7 @@ namespace frmLogin
         private void frmEmployeeManager_Load(object sender, EventArgs e)
         {
             dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.GetListEmployee();
-            cbPosition.DataSource = PositionDAF.Instance.GetListPosition();
+            cbPosition.DataSource = PositionBUS.Instance.GetListPosition();
             cbPosition.DisplayMember = "TENCHUCVU";
             cbPosition.ValueMember = "MACHUCVU";
             btnSaveEmployee.Enabled = false;

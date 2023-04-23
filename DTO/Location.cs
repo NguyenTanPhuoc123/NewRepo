@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace frmLogin.Data_Tranfer_Object
+namespace DTO
 {
     
     public class Location
