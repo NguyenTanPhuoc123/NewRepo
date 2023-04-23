@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,11 +17,11 @@ namespace BUS
             get { if (instance == null) instance = new ProductBUS(); return ProductBUS.instance; }
             private set { ProductBUS.instance = value; }
         }
-        public List<ProductDTO> GetListProduct()
+        public DataTable GetListProduct()
         {
             return ProductDAO.Instance.GetListProduct();
         }
-        public  int ExecuteInsertCommand(ProductDTO product)
+        public int ExecuteInsertCommand(ProductDTO product)
         {
             return ProductDAO.Instance.ExecuteInsertCommand(product);
         }
@@ -28,35 +29,35 @@ namespace BUS
         {
             return ProductDAO.Instance.DeleteProduct(Masp);
         }
-        public  int UpdateProduct(ProductDTO product, byte[] hinhAnh)
+        public int UpdateProduct(ProductDTO product)
         {
-            return ProductDAO.Instance.UpdateProduct(product, hinhAnh);
+            return ProductDAO.Instance.UpdateProduct(product);
         }
-        public List<ProductDTO> GetListFillProduct(string tendanhmuc)
+        public DataTable GetListFillProduct(string tendanhmuc)
         {
             return ProductDAO.Instance.GetListFillProduct(tendanhmuc);
         }
-        public List<ProductDTO> GetListFindProduct(string tensanpham)
+        public DataTable GetListFindProduct(string tensanpham)
         {
             return ProductDAO.Instance.GetListFindProduct(tensanpham);
         }
-        public List<ProductDTO> SortProductName(string tendanhmuc)
+        public DataTable SortProductName(string tendanhmuc)
         {
             return ProductDAO.Instance.SortProductName(tendanhmuc);
         }
-        public List<ProductDTO> SortSoLuongASC(string tendanhmuc)
+        public DataTable SortSoLuongASC(string tendanhmuc)
         {
             return ProductDAO.Instance.SortSoLuongASC(tendanhmuc);
         }
-        public List<ProductDTO> SortSoLuongDESC(string tendanhmuc)
+        public DataTable SortSoLuongDESC(string tendanhmuc)
         {
             return ProductDAO.Instance.SortSoLuongDESC(tendanhmuc);
         }
-        public List<ProductDTO> SortDonGiaASC(string tendanhmuc)
+        public DataTable SortDonGiaASC(string tendanhmuc)
         {
             return ProductDAO.Instance.SortDonGiaASC(tendanhmuc);
         }
-        public List<ProductDTO> SortDonGiaDESC(string tendanhmuc)
+        public DataTable SortDonGiaDESC(string tendanhmuc)
         {
             return ProductDAO.Instance.SortDonGiaDESC(tendanhmuc);
         }

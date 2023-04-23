@@ -12,13 +12,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
-using frmLogin.Data_Access_Layer;
-using frmLogin.Data_Tranfer_Object;
 
 namespace frmLogin
 {
     public partial class frmProductManagement : Form
     {
+        private string fileAddress;
+        private byte[] img;
         public frmProductManagement()
         {
             InitializeComponent();
@@ -32,53 +32,54 @@ namespace frmLogin
             frm.Show();
 
         }
-        ProductDTO product;
-        public void getValue()
-        {
-            string maSP = txtProductID.Text;
-            string tenSP = txtProductName.Text;
-            int donGia = Convert.ToInt32(txtPrice.Text);
-            int soLuong = Convert.ToInt32(numQuantity.Value.ToString());
-            string moTa = richtxtDescribe.Text;
-            int danhMuc = Convert.ToInt32(cbCategory.SelectedValue.ToString());
-            byte[] hinhAnh = ConvertImageToByte(pbProduct);
-            product = new ProductDTO(maSP, tenSP, danhMuc, soLuong, donGia, 1,hinhAnh,moTa);
-        }
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            getValue();
+            ProductDTO product = new ProductDTO(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
             int count = ProductBUS.Instance.ExecuteInsertCommand(product);
             MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
             LoadProduct();
             ResetText();
         }
-        public byte[] ConvertImageToByte(PictureBox image)
-        {
-            using (var memoryStream = new MemoryStream())
-            {
-                image.Image.Save(memoryStream, image.Image.RawFormat);
-                return memoryStream.ToArray();
-            }
-        }
+
 
         private void pbProduct_Click(object sender, EventArgs e)
         {
-            ofdImage.Filter = "Image files(*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
+            ofdImage.Filter = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
+            ofdImage.Title = "Chọn ảnh";
             if (ofdImage.ShowDialog() == DialogResult.OK)
             {
-                pbProduct.ImageLocation = ofdImage.FileName;
+                fileAddress = ofdImage.FileName;
+                pbProduct.Image = CloneImage(fileAddress);
+                pbProduct.ImageLocation = fileAddress;
+                img = ImageToByteArray(pbProduct);
             }
 
         }
+        private Image CloneImage(string path)
+        {
+            Image result;
+            using (Bitmap original = new Bitmap(path))
+            {
+                result = (Bitmap)original.Clone();
 
+            };
+            return result;
+        }
+
+        private byte[] ImageToByteArray(PictureBox pictureBox)
+        {
+            MemoryStream memoryStream = new MemoryStream();
+            pictureBox.Image.Save(memoryStream, pictureBox.Image.RawFormat);
+            return memoryStream.ToArray();
+        }
         private void frmProductManagement_Load(object sender, EventArgs e)
         {
             LoadProduct();
-            cbCategory.DataSource = CategoryFoodDAF.Instance.GetCategoryFoods();
+            cbCategory.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
             cbCategory.DisplayMember = "CategoryName";
             cbCategory.ValueMember = "CategoryID";
-            List<CategoryFood> list = new List<CategoryFood>();
-            list = CategoryFoodDAF.Instance.GetCategoryFoods();
+            List<CategoryFoodDTO> list = new List<CategoryFoodDTO>();
+            list = CategoryFoodBUS.Instance.GetCategoryFoods();
             for (int i = 0; i < list.Count; i++)
             {
                 cbFillProduct.Items.Add(list[i].CategoryName);
@@ -87,9 +88,8 @@ namespace frmLogin
         public void LoadProduct()
         {
             dtgvListProduct.DataSource = ProductBUS.Instance.GetListProduct();
-
         }
-      
+
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
             if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
@@ -115,8 +115,8 @@ namespace frmLogin
         {
             int i = e.RowIndex;
             if (i == -1) return;
-            Image image = (Image)dtgvListProduct.Rows[i].Cells[0].Value;
-            pbProduct.Image = image;
+            MemoryStream memoryStream = new MemoryStream((byte[])dtgvListProduct.Rows[i].Cells[0].Value);
+            pbProduct.Image = Image.FromStream(memoryStream);
             txtProductID.Text = dtgvListProduct.Rows[i].Cells[1].Value.ToString();
             txtProductName.Text = dtgvListProduct.Rows[i].Cells[2].Value.ToString();
             cbCategory.SelectedValue = dtgvListProduct.Rows[i].Cells[4].Value;
@@ -129,27 +129,16 @@ namespace frmLogin
         {
             if (DialogResult.Yes == MessageBox.Show("Ban co muon sua san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
-                getValueUpdate();
-                byte[] hinhAnh;
-                Image image = (Image)dtgvListProduct.SelectedRows[0].Cells[0].Value;
-                hinhAnh = pbProduct.Image == image ? null : ConvertImageToByte(pbProduct);
-                int cout = ProductBUS.Instance.UpdateProduct(product, hinhAnh);
+                ProductDTO product = new ProductDTO
+                    (
+                        txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text
+                    );
+                int cout = ProductBUS.Instance.UpdateProduct(product);
                 MessageBox.Show(cout > 0 ? "Sua thanh cong" : "Sua that bai");
                 Resettext();
                 LoadProduct();
             }
         }
-        public void getValueUpdate()
-        {
-            string maSP = txtProductID.Text;
-            string tenSP = txtProductName.Text;
-            int donGia = Convert.ToInt32(txtPrice.Text);
-            int soLuong = Convert.ToInt32(numQuantity.Value.ToString());
-            string moTa = richtxtDescribe.Text;
-            int danhMuc = Convert.ToInt32(cbCategory.SelectedValue.ToString());
-            product = new ProductDTO(maSP, tenSP, danhMuc, soLuong, donGia, 1, null, moTa);
-        }
-
         private void cbFillProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
             dtgvListProduct.DataSource = null;

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryFoodBUS.cs" />
     <Compile Include="ProductBUS.cs" />
     <Compile Include="SizeProductBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
