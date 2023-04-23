@@ -1,6 +1,4 @@
-﻿using frmLogin.Data_Access_Layer;
-using frmLogin.Data_Tranfer_Object;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using BUS;
+using System.IO;
 
 namespace frmLogin
 {
@@ -26,21 +27,28 @@ namespace frmLogin
 
         private void frmSelectDish_Load(object sender, EventArgs e)
         {
-            List<Product> products = ProductDAF.Instance.GetListProduct();
+            List<Product> products = ProductBUS.Instance.GetProduct();
             for (int i = 0; i < products.Count; i++)
             {
-                imageList1.Images.Add(products[i].HinhAnh);
+                imageList1.Images.Add(convertbytetoimage(products[i].image));
                 ListViewItem item = new ListViewItem(products[i].TenSanPham);
                 item.ImageIndex =i;
                 item.SubItems.Add(products[i].DanhMuc.ToString());
                 item.SubItems.Add(products[i].DonGia.ToString());
                 lstvListDish.Items.Add(item);
             }
-            cbCategoryDish.DataSource = CategoryFoodDAF.Instance.GetCategoryFoods();
+            cbCategoryDish.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
             cbCategoryDish.ValueMember = "CategoryID";
             cbCategoryDish.DisplayMember = "CategoryName";
         }
-
+        private Image convertbytetoimage(byte[] b)
+        {
+            using (MemoryStream ms = new MemoryStream(b))
+            {
+                Image image = Image.FromStream(ms);
+                return image;
+            }
+        }
         private void btnAddDish_Click(object sender, EventArgs e)
         {
             Usercontrol uc = new Usercontrol();

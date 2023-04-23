@@ -21,6 +21,14 @@ namespace BUS
         {
             return ProductDAO.Instance.GetListProduct();
         }
+        public DataTable GetListProductDeleted()
+        {
+            return ProductDAO.Instance.GetListProductDeleted();
+        }
+        public List<Product> GetProduct()
+        {
+            return ProductDAO.Instance.GetProduct();
+        }
         public int ExecuteInsertCommand(Product product)
         {
             return ProductDAO.Instance.ExecuteInsertCommand(product);
@@ -60,6 +68,14 @@ namespace BUS
         public DataTable SortDonGiaDESC(string tendanhmuc)
         {
             return ProductDAO.Instance.SortDonGiaDESC(tendanhmuc);
+        }
+        public int RestoreProduct(string Masp)
+        {
+            return ProductBUS.Instance.RestoreProduct(Masp);
+        }
+        public int RestoreProductAll()
+        {
+            return ProductDAO.Instance.RestoreProductAll();
         }
     }
 }

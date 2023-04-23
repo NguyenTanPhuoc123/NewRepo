@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using System.IO;
+
 namespace frmLogin
 {
     public partial class frmRecycleBin : Form
@@ -135,7 +137,41 @@ namespace frmLogin
         }
         #endregion
 
-       
+        #region Product
+        private void LoadProductDeleted()
+        {
+            dtgvListProductDeleted.DataSource = ProductBUS.Instance.GetListProductDeleted();
+        }
+        private void dtgvListProductDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = e.RowIndex;
+            if (i == -1) return;
+            MemoryStream memoryStream = new MemoryStream((byte[])dtgvListProductDeleted.Rows[i].Cells[0].Value);
+            pbProduct.Image = Image.FromStream(memoryStream);
+            txtProductID.Text = dtgvListProductDeleted.Rows[i].Cells[1].Value.ToString();
+            txtProductName.Text = dtgvListProductDeleted.Rows[i].Cells[2].Value.ToString();
+            cbCategory.SelectedValue = dtgvListProductDeleted.Rows[i].Cells[4].Value;
+            numQuantity.Value = Convert.ToInt32(dtgvListProductDeleted.Rows[i].Cells[5].Value);
+            txtPrice.Text = dtgvListProductDeleted.Rows[i].Cells[6].Value.ToString();
+            richtxtDescribe.Text = dtgvListProductDeleted.Rows[i].Cells[7].Value.ToString();
+        }
+        private void btnRestoreProduct_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Ban co muon khoi phuc san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int cout = ProductBUS.Instance.RestoreProduct(txtProductID.Text);
+                MessageBox.Show(cout > 0 ? "Khoi phuc thanh cong" : "Khoi phuc that bai");
+            }
+        }
+        private void btnRestoreAllProduct_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Ban co muon khoi phuc tat ca san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int cout = ProductBUS.Instance.RestoreProductAll();
+                MessageBox.Show(cout > 0 ? "Khoi phuc thanh cong" : "Khoi phuc that bai");
+            }
+        }
+        #endregion
 
     }
 }

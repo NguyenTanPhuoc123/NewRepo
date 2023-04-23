@@ -20,5 +20,37 @@ namespace BUS
         {
             return CategoryFoodDAO.Instance.GetCategoryFoods();
         }
+        public List<CategoryFood> GetCategoryFoodsDeleted()
+        {
+            return CategoryFoodBUS.instance.GetCategoryFoodsDeleted();
+        }
+        public List<CategoryFood> GetCategoryFoodsID()
+        {
+            return CategoryFoodDAO.Instance.GetCategoryFoodsID();
+        }
+        public int AddCategoryFood(string name)
+        {
+            return CategoryFoodDAO.Instance.AddCategoryFood(name);
+        }
+        public int UpdateCategoryFood(string id, string name)
+        {
+            return CategoryFoodDAO.Instance.UpdateCategoryFood(id, name);
+        }
+        public int DeleteCategoryFood(string id)
+        {
+            return CategoryFoodDAO.Instance.DeleteCategoryFood(id);
+        }
+        public int DeleteAllCategoryFood()
+        {
+            return CategoryFoodDAO.Instance.DeleteAllCategoryFood();
+        }
+        public int RestoreCategoryFood(string id)
+        {
+            return CategoryFoodBUS.Instance.RestoreCategoryFood(id);
+        }
+        public int RestoreAllCategoryFood()
+        {
+            return CategoryFoodBUS.Instance.RestoreAllCategoryFood();
+        }
     }
 }

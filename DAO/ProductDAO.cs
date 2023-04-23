@@ -26,7 +26,25 @@ namespace DAO
             da = DataProvider.ExcecuteSelectCommand(query, null);
             return da;
         }
-
+        public DataTable GetListProductDeleted()
+        {
+            DataTable da = new DataTable();
+            string query = "Select * from SanPham where TRANGTHAI=0";
+            da = DataProvider.ExcecuteSelectCommand(query, null);
+            return da;
+        }
+        public List<Product> GetProduct()
+        {
+            List<Product> lst = new List<Product>();
+            string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                Product acc = new Product(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
         public int ExecuteInsertCommand(Product product)
         {
             string query = "INSERT INTO SANPHAM(MASANPHAM,TENSANPHAM,DANHMUC,SOLUONG,DONGIA,MOTA,TRANGTHAI,HinhANh) VALUES(@MASP,@TENSP,@DANHMUC,@SOLUONG,@DONGIA,@MOTA,@TRANGTHAI,@HINHANH)";
@@ -52,24 +70,25 @@ namespace DAO
             row = DataProvider.ExecuteInsertCommand(query, parameter);
             return row;
         }
+        public int RestoreProduct(string Masp)
+        {
+            string query = "UPDATE SANPHAM SET TRANGTHAI=1 WHERE MASANPHAM=@SANPHAM";
+            SqlParameter[] parameter = new SqlParameter[1];
+            parameter[0] = new SqlParameter("@SANPHAM", Masp);
+            int row = 0;
+            row = DataProvider.ExecuteInsertCommand(query, parameter);
+            return row;
+        }
+        public int RestoreProductAll()
+        {
+            string query = "UPDATE SANPHAM SET TRANGTHAI=1";
+            int row = 0;
+            row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
         public int UpdateProduct(Product product)
         {
             int data = 0;
-            //if (hinhAnh == null)
-            //{
-            //    string query = "Update SANPHAM SET TENSANPHAM = @TENSP,DANHMUC=@DANHMUC,SOLUONG=@SOLUONG,DONGIA=@DONGIA,MOTA=@MOTA where MASANPHAM = @MASP";
-            //    SqlParameter[] parameter = new SqlParameter[7];
-            //    parameter[0] = new SqlParameter("@MASP", product.MaSanPham);
-            //    parameter[1] = new SqlParameter("@TENSP", product.TenSanPham);
-            //    parameter[2] = new SqlParameter("@DANHMUC", product.DanhMuc);
-            //    parameter[3] = new SqlParameter("@SOLUONG", product.SoLuong);
-            //    parameter[4] = new SqlParameter("@DONGIA", product.DonGia);
-            //    parameter[5] = new SqlParameter("@TRANGTHAI", product.TrangThai);
-            //    parameter[6] = new SqlParameter("@MOTA", product.MoTa);
-            //    data = DataProvider.ExecuteInsertCommand(query, parameter);
-            //}
-            //else
-            //{
             string query = "Update SANPHAM SET TENSANPHAM = @TENSP,DANHMUC=@DANHMUC,SOLUONG=@SOLUONG,DONGIA=@DONGIA,MOTA=@MOTA,HINHANH=@HINHANH where MASANPHAM = @MASP";
             SqlParameter[] parameter = new SqlParameter[8];
             parameter[0] = new SqlParameter("@MASP", product.MaSanPham);
@@ -81,7 +100,6 @@ namespace DAO
             parameter[6] = new SqlParameter("@MOTA", product.MoTa);
             parameter[7] = new SqlParameter("@HINHANH", product.image);
             data = DataProvider.ExecuteInsertCommand(query, parameter);
-            //}
             return data;
         }
         public DataTable GetListFillProduct(string tendanhmuc)

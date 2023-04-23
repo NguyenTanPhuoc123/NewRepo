@@ -26,6 +26,7 @@ namespace frmLogin
             LoadLocationTable();
             LoadListSizeProduct();
             LoadTypeCustomer();
+            LoadTypeProduct();
         }
 
 
@@ -393,6 +394,68 @@ namespace frmLogin
 
         #endregion
 
-        
+        #region TypeProduct
+        private void LoadTypeProduct()
+        {
+            dtgvListTypeProduct.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
+        }
+
+        private void dtgvListTypeProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = e.RowIndex;
+            if (i == -1) return;
+            txtTypeProductID.Text = dtgvListTypeProduct.Rows[i].Cells[0].Value.ToString();
+            txtTypeProductName.Text = dtgvListTypeProduct.Rows[i].Cells[1].Value.ToString();
+        }
+        private void btnAddTypeProduct_Click(object sender, EventArgs e)
+        {
+            txtTypeProductID.Clear();
+            txtTypeProductName.Clear();
+            int id = CategoryFoodBUS.Instance.GetCategoryFoodsID().Count + 1;
+            txtTypeProductID.Text = id.ToString();
+            btnSaveTypeProduct.Enabled = true;
+        }
+        private void btnSaveTypeProduct_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtTypeProductName.Text))
+            {
+                MessageBox.Show("Ban chua nhap ten loai san pham", "Thong bao");
+                return;
+            }
+            int count = CategoryFoodBUS.Instance.AddCategoryFood(txtTypeProductName.Text);
+            MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
+            LoadTypeProduct();
+        }
+
+        private void btnEditTypeProduct_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Ban co muon sua loai san pham", "Thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int count = CategoryFoodBUS.Instance.UpdateCategoryFood(txtTypeProductID.Text, txtTypeProductName.Text);
+                MessageBox.Show(count > 0 ? "Sua thanh cong" : "Sua that bai");
+                LoadTypeProduct();
+            }
+        }
+
+        private void btnDeleteTypeProduct_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa loai san pham", "Thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int count = CategoryFoodBUS.Instance.DeleteCategoryFood(txtTypeProductID.Text);
+                MessageBox.Show(count > 0 ? "Xoa thanh cong" : "Xoa that bai");
+                LoadTypeProduct();
+            }
+        }
+        private void btnDeleteAllTypeProduct_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa tat ca loai san pham", "Thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int count = CategoryFoodBUS.Instance.DeleteAllCategoryFood();
+                MessageBox.Show(count > 0 ? "Xoa thanh cong" : "Xoa that bai");
+                LoadTypeProduct();
+            }
+        }
+        #endregion
+
     }
 }
