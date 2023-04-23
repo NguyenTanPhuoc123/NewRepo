@@ -10,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace frmLogin
 {
@@ -57,11 +59,10 @@ namespace frmLogin
                 return;
             }
             
-            if(AccountDAF.Instance.CheckLogin(txtUsername.Text, txtPassword.Text))
+            if(AccountBUS.Instance.CheckLogin(txtUsername.Text, txtPassword.Text))
             {
-                Account loginAccount = AccountDAF.Instance.GetAccountForUsername(txtUsername.Text);
+                DTO.Account loginAccount = AccountBUS.Instance.GetAccountForUsername(txtUsername.Text);
                 frmSellManagement login = new frmSellManagement(loginAccount);
-                
                 this.Hide();
                 login.ShowDialog();
                 txtPassword.Clear();

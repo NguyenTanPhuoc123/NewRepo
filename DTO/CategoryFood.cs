@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class CategoryFoodDTO
+    public class CategoryFood
     {
         private int m_categoryID;
         private string m_categoryName;
@@ -16,13 +16,13 @@ namespace DTO
         public int CategoryID { get => m_categoryID; set => m_categoryID = value; }
         public string CategoryName { get => m_categoryName; set => m_categoryName = value; }
 
-        public CategoryFoodDTO(int categoryID, string categoryName)
+        public CategoryFood(int categoryID, string categoryName)
         {
             m_categoryID = categoryID;
             m_categoryName = categoryName;
         }
 
-        public CategoryFoodDTO(DataRow row)
+        public CategoryFood(DataRow row)
         {
             this.m_categoryID = (int)row["MADANHMUC"];
             this.m_categoryName = row["TENDANHMUC"].ToString();

@@ -27,7 +27,7 @@ namespace DAO
             return da;
         }
 
-        public int ExecuteInsertCommand(ProductDTO product)
+        public int ExecuteInsertCommand(Product product)
         {
             string query = "INSERT INTO SANPHAM(MASANPHAM,TENSANPHAM,DANHMUC,SOLUONG,DONGIA,MOTA,TRANGTHAI,HinhANh) VALUES(@MASP,@TENSP,@DANHMUC,@SOLUONG,@DONGIA,@MOTA,@TRANGTHAI,@HINHANH)";
             int rows = 0;
@@ -52,7 +52,7 @@ namespace DAO
             row = DataProvider.ExecuteInsertCommand(query, parameter);
             return row;
         }
-        public int UpdateProduct(ProductDTO product)
+        public int UpdateProduct(Product product)
         {
             int data = 0;
             //if (hinhAnh == null)

@@ -31,3 +31,14 @@ C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BU
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.dll
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.pdb
+D:\DOANWINFORM\BUS\bin\Debug\BUS.dll
+D:\DOANWINFORM\BUS\bin\Debug\BUS.pdb
+D:\DOANWINFORM\BUS\bin\Debug\DAO.dll
+D:\DOANWINFORM\BUS\bin\Debug\DTO.dll
+D:\DOANWINFORM\BUS\bin\Debug\DAO.pdb
+D:\DOANWINFORM\BUS\bin\Debug\DTO.pdb
+D:\DOANWINFORM\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\DOANWINFORM\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\DOANWINFORM\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\DOANWINFORM\BUS\obj\Debug\BUS.dll
+D:\DOANWINFORM\BUS\obj\Debug\BUS.pdb

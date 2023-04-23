@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace frmLogin
 {
@@ -23,11 +25,11 @@ namespace frmLogin
 
         private void frmAccountManagement_Load(object sender, EventArgs e)
         {
-            dtgvListAccount.DataSource= AccountMenuDAF.Instance.GetListAccount();
+            dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
             cbTypeAccount.DataSource = TypeAccountDAF.Instance.GetListTypeAccount();
             cbTypeAccount.DisplayMember = "TenLoai";
             cbTypeAccount.ValueMember = "MaLoai";
-            cbEmloyee.DataSource = EmployeeDAF.Instance.GetListEmployee();
+            cbEmloyee.DataSource = EmployeeMenuDAF.Instance.GetListEmployee();
             cbEmloyee.DisplayMember = "TenNV";
             cbEmloyee.ValueMember = "MaNV";
             btnSave.Enabled = false;
@@ -41,14 +43,14 @@ namespace frmLogin
         {
             frmRecycleBin frm = new frmRecycleBin();
             frm.Show();
-          
+
         }
 
         private void btnDeleteAllAccount_Click(object sender, EventArgs e)
         {
-            if(DialogResult.Yes == MessageBox.Show("Ban co muon xoa tat ca", "Thong bao", MessageBoxButtons.YesNo))
+            if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa tat ca", "Thong bao", MessageBoxButtons.YesNo))
             {
-                int count = AccountDAF.Instance.DeleteAllAccount();
+                int count = AccountBUS.Instance.DeleteAllAccount();
                 if (count > 0)
                 {
                     MessageBox.Show("Xóa tất cả thành công");
@@ -65,7 +67,7 @@ namespace frmLogin
         {
             txtUsername.Clear();
             txtPassword.Clear();
-            cbEmloyee.SelectedIndex=0;
+            cbEmloyee.SelectedIndex = 0;
             cbTypeAccount.SelectedIndex = 0;
             btnSave.Enabled = true;
             btnDeleteAllAccount.Enabled = false;
@@ -73,13 +75,13 @@ namespace frmLogin
             btnEditAccount.Enabled = false;
         }
 
-       
+
 
         private void btnDeleteAccount_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Warning))
+            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
             {
-                int count = AccountDAF.Instance.DeleteAccountByUserName(txtUsername.Text);
+                int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
                 if (count > 0)
                 {
                     MessageBox.Show("Xóa tài khoản thành công");
@@ -94,7 +96,7 @@ namespace frmLogin
 
         private void btnEditAccount_Click(object sender, EventArgs e)
         {
-            int count = AccountDAF.Instance.EditAccount(txtUsername.Text,cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
+            int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
             if (count > 0)
             {
                 MessageBox.Show("Sửa tài khoản thành công");
@@ -106,7 +108,7 @@ namespace frmLogin
             frmAccountManagement_Load(sender, e);
         }
 
-       
+
 
         private void dtgvListAccount_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -115,14 +117,14 @@ namespace frmLogin
             cbEmloyee.SelectedValue = Convert.ToInt32(dtgvListAccount.SelectedRows[0].Cells[2].Value.ToString());
             cbTypeAccount.SelectedValue = Convert.ToInt32(dtgvListAccount.SelectedRows[0].Cells[3].Value.ToString());
             btnSave.Enabled = false;
-            btnDeleteAllAccount.Enabled =true;
+            btnDeleteAllAccount.Enabled = true;
             btnDeleteAccount.Enabled = true;
             btnEditAccount.Enabled = true;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            int count = AccountDAF.Instance.AddAccount(txtUsername.Text, txtPassword.Text,cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
+            int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
             if (count > 0)
             {
                 MessageBox.Show("Thêm tài khoản thành công");
@@ -136,27 +138,27 @@ namespace frmLogin
 
         private void txtSearchAccount_TextChanged(object sender, EventArgs e)
         {
-            dtgvListAccount.DataSource = AccountMenuDAF.Instance.SearchAccountByEmloyeeName(txtSearchAccount.Text);
+            dtgvListAccount.DataSource = AccountMenuBUS.Instance.SearchAccountByEmloyeeName(txtSearchAccount.Text);
         }
 
         private void btnSearchAccount_Click(object sender, EventArgs e)
         {
-            dtgvListAccount.DataSource = AccountMenuDAF.Instance.SearchAccountByEmloyeeName(txtSearchAccount.Text);
+            dtgvListAccount.DataSource = AccountMenuBUS.Instance.SearchAccountByEmloyeeName(txtSearchAccount.Text);
         }
 
         private void cbSortAccount_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbSortAccount.SelectedIndex == 0)
             {
-                dtgvListAccount.DataSource = AccountMenuDAF.Instance.GetListAccount();
-            } 
-            else if (cbSortAccount.SelectedIndex == 1) 
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
+            }
+            else if (cbSortAccount.SelectedIndex == 1)
             {
-                dtgvListAccount.DataSource = AccountMenuDAF.Instance.SortListAccountByUsername();
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByUsername();
             }
             else
             {
-                dtgvListAccount.DataSource = AccountMenuDAF.Instance.SortListAccountByEmployeeName();
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByEmployeeName();
             }
         }
 
@@ -164,15 +166,15 @@ namespace frmLogin
         {
             if (cbFillAccount.SelectedIndex == 0)
             {
-                dtgvListAccount.DataSource = AccountMenuDAF.Instance.GetListAccount();
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
             }
             else if (cbFillAccount.SelectedIndex == 1)
             {
-                dtgvListAccount.DataSource = AccountMenuDAF.Instance.FillListAccountIsSeller();
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.FillListAccountIsSeller();
             }
             else
             {
-                dtgvListAccount.DataSource = AccountMenuDAF.Instance.FillListAccountIsManager();
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.FillListAccountIsManager();
             }
         }
     }

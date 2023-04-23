@@ -16,7 +16,7 @@ namespace BUS
             get { if (instance == null) instance = new CategoryFoodBUS(); return CategoryFoodBUS.instance; }
             private set { CategoryFoodBUS.instance = value; }
         }
-        public List<CategoryFoodDTO> GetCategoryFoods()
+        public List<CategoryFood> GetCategoryFoods()
         {
             return CategoryFoodDAO.Instance.GetCategoryFoods();
         }

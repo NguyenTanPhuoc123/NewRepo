@@ -9,20 +9,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using frmLogin.Data_Tranfer_Object;
+using BUS;
+using DTO;
 
 namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
-        private Account loginAccount;
+        private DTO.Account loginAccount;
 
-        public Account LoginAccount
+        public DTO.Account LoginAccount
         {
             get { return this.loginAccount; }
             private set { this.loginAccount = value; }
         }
 
-        public frmSellManagement(Account acc)
+        public frmSellManagement(DTO.Account acc)
         {
             InitializeComponent();
             this.loginAccount = acc;

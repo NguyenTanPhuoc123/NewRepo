@@ -9,13 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using BUS;
 
 namespace frmLogin
 {
     public partial class frmSetting : Form
     {
-        Account account;
-        public frmSetting(Account acc)
+        DTO.Account account;
+        public frmSetting(DTO.Account acc)
         {
             InitializeComponent();
             account = acc;

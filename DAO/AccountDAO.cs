@@ -1,24 +1,24 @@
-﻿using frmLogin.Data_Tranfer_Object;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO;
 
-namespace frmLogin.Data_Access_Layer
+namespace DAO
 {
-    public class AccountDAF
+    public class AccountDAO
     {
-        private static AccountDAF instance;
-        public static AccountDAF Instance
+        private static AccountDAO instance;
+        public static AccountDAO Instance
         {
-            get { if (instance == null) instance = new AccountDAF(); return AccountDAF.instance; }
-            private set { AccountDAF.instance = value; }
+            get { if (instance == null) instance = new AccountDAO(); return AccountDAO.instance; }
+            private set { AccountDAO.instance = value; }
         }
 
-        private AccountDAF()
+        private AccountDAO()
         {
 
         }
@@ -122,6 +122,5 @@ namespace frmLogin.Data_Access_Layer
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
-
     }
 }

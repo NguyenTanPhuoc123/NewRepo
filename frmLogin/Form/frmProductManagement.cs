@@ -34,7 +34,7 @@ namespace frmLogin
         }
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            ProductDTO product = new ProductDTO(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
+            Product product = new Product(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
             int count = ProductBUS.Instance.ExecuteInsertCommand(product);
             MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
             LoadProduct();
@@ -78,7 +78,7 @@ namespace frmLogin
             cbCategory.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
             cbCategory.DisplayMember = "CategoryName";
             cbCategory.ValueMember = "CategoryID";
-            List<CategoryFoodDTO> list = new List<CategoryFoodDTO>();
+            List<CategoryFood> list = new List<CategoryFood>();
             list = CategoryFoodBUS.Instance.GetCategoryFoods();
             for (int i = 0; i < list.Count; i++)
             {
@@ -129,7 +129,7 @@ namespace frmLogin
         {
             if (DialogResult.Yes == MessageBox.Show("Ban co muon sua san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
-                ProductDTO product = new ProductDTO
+                Product product = new Product
                     (
                         txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text
                     );

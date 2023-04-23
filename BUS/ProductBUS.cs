@@ -21,7 +21,7 @@ namespace BUS
         {
             return ProductDAO.Instance.GetListProduct();
         }
-        public int ExecuteInsertCommand(ProductDTO product)
+        public int ExecuteInsertCommand(Product product)
         {
             return ProductDAO.Instance.ExecuteInsertCommand(product);
         }
@@ -29,7 +29,7 @@ namespace BUS
         {
             return ProductDAO.Instance.DeleteProduct(Masp);
         }
-        public int UpdateProduct(ProductDTO product)
+        public int UpdateProduct(Product product)
         {
             return ProductDAO.Instance.UpdateProduct(product);
         }

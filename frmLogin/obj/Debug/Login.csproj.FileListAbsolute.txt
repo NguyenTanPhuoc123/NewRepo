@@ -477,7 +477,6 @@ D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.resources
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmSetting.resources
-D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmStatistical.resources
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmTableManagement.resources
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmBillDetail.resources
 D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmlogin.resources
@@ -586,3 +585,11 @@ C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Deb
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.CopyComplete
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.exe
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.pdb
+D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.resources
+D:\DOANWINFORM\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources
+D:\DOANWINFORM\frmLogin\bin\Debug\BUS.dll
+D:\DOANWINFORM\frmLogin\bin\Debug\DTO.dll
+D:\DOANWINFORM\frmLogin\bin\Debug\DAO.dll
+D:\DOANWINFORM\frmLogin\bin\Debug\BUS.pdb
+D:\DOANWINFORM\frmLogin\bin\Debug\DTO.pdb
+D:\DOANWINFORM\frmLogin\bin\Debug\DAO.pdb

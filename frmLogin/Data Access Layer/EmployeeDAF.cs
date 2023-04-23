@@ -35,36 +35,9 @@ namespace frmLogin.Data_Access_Layer
             return null;
         }
 
-        public List<Employee> GetListEmployee()
-        {
-            List<Employee> lst = new List<Employee>();
-            string query = "select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU";
-            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
-            foreach (DataRow item in data.Rows)
-            {
-                Employee acc = new Employee(item);
-                lst.Add(acc);
-            }
-            return lst;
-        }
-
-        public List<Position> GetListPosition()
-        {
-            List<Position> listPosition = new List<Position>();
-            string query = string.Format("Select * from CHUCVU");
-            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
-
-            foreach (DataRow item in data.Rows)
-            {
-                Position employee = new Position(item);
-                listPosition.Add(employee);
-            }
-            return listPosition;
-        }
-
         public int UpdateEmployeeInFo(int employeeID, string SDT, string NgaySinh, string GioiTinh, string DiaChi)
         {
-            string query = string.Format("UPDATE NHANVIEN SET SODIENTHOAI='{1}',NGAYSINH='{2}',GIOITINH=N'{3}',DIACHI=N'{4}' WHERE MANV = {0}", employeeID, SDT,NgaySinh, GioiTinh, DiaChi);
+            string query = string.Format("UPDATE NHANVIEN SET SODIENTHOAI='{1}',NGAYSINH='{2}',GIOITINH=N'{3}',DIACHI=N'{4}' WHERE MANV = {0}", employeeID, SDT, NgaySinh, GioiTinh, DiaChi);
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
@@ -85,7 +58,7 @@ namespace frmLogin.Data_Access_Layer
 
         public int AddEmployee(string tennv, string ngaysinh, string gioitinh, string ngayvaolam, int chucvu, string sdt, string diachi)
         {
-            string query = string.Format("insert NHANVIEN(TenNV,NGAYSINH,GIOITINH,NGAYVAOLAM,MACHUCVU,SODIENTHOAI,DIACHI,TRANGTHAI) values(N'{0}', '{1}', N'{2}', '{3}', N'{4}', '{5}', N'{6}', 1)",  tennv, ngaysinh, gioitinh, ngayvaolam, chucvu, sdt, diachi);
+            string query = string.Format("insert NHANVIEN(TenNV,NGAYSINH,GIOITINH,NGAYVAOLAM,MACHUCVU,SODIENTHOAI,DIACHI,TRANGTHAI) values(N'{0}', '{1}', N'{2}', '{3}', N'{4}', '{5}', N'{6}', 1)", tennv, ngaysinh, gioitinh, ngayvaolam, chucvu, sdt, diachi);
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
@@ -107,5 +80,7 @@ namespace frmLogin.Data_Access_Layer
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
+
+
     }
 }

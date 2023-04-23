@@ -23,13 +23,13 @@ namespace DAO
 
         }
 
-        public List<CategoryFoodDTO> GetCategoryFoods()
+        public List<CategoryFood> GetCategoryFoods()
         {
-            List<CategoryFoodDTO> listCategoryFood = new List<CategoryFoodDTO>();
+            List<CategoryFood> listCategoryFood = new List<CategoryFood>();
             DataTable data = DataProvider.ExcecuteSelectCommand("Select * from DANHMUC where xoa=0", null);
             foreach (DataRow item in data.Rows)
             {
-                CategoryFoodDTO categoryFood = new CategoryFoodDTO(item);
+                CategoryFood categoryFood = new CategoryFood(item);
                 listCategoryFood.Add(categoryFood);
             }
             return listCategoryFood;

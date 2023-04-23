@@ -18,6 +18,7 @@ namespace frmLogin
         {
             InitializeComponent();
             dtgvListEmployee.AutoGenerateColumns = false;
+            cbSortEmployee.SelectedIndex = 0;
         }
 
         private void btnEmployeeDeleted_Click(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace frmLogin
 
         private void frmEmployeeManager_Load(object sender, EventArgs e)
         {
-            dtgvListEmployee.DataSource = EmployeeDAF.Instance.GetListEmployee();
+            dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.GetListEmployee();
             cbPosition.DataSource = PositionDAF.Instance.GetListPosition();
             cbPosition.DisplayMember = "TENCHUCVU";
             cbPosition.ValueMember = "MACHUCVU";
@@ -41,7 +42,8 @@ namespace frmLogin
 
         private void dtgvListEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dtgvListEmployee.SelectedRows.Count > 0) {
+            if (dtgvListEmployee.SelectedRows.Count > 0)
+            {
                 txtEmployeeID.Text = dtgvListEmployee.SelectedRows[0].Cells[0].Value.ToString();
                 txtEmployeeName.Text = dtgvListEmployee.SelectedRows[0].Cells[1].Value.ToString();
                 dtpBirthday.Text = dtgvListEmployee.SelectedRows[0].Cells[2].Value.ToString();
@@ -49,11 +51,11 @@ namespace frmLogin
                 richtxtAddress.Text = dtgvListEmployee.SelectedRows[0].Cells[5].Value.ToString();
                 dtpWorkingDay.Text = dtgvListEmployee.SelectedRows[0].Cells[6].Value.ToString();
                 string gender = dtgvListEmployee.SelectedRows[0].Cells[3].Value.ToString();
-                if (gender==radMale.Text)
+                if (gender == radMale.Text)
                     radMale.Checked = true;
                 else
                     radFemale.Checked = true;
-            cbPosition.SelectedValue = Convert.ToInt32(dtgvListEmployee.SelectedRows[0].Cells[8].Value.ToString());
+                cbPosition.SelectedValue = Convert.ToInt32(dtgvListEmployee.SelectedRows[0].Cells[8].Value.ToString());
             }
         }
 
@@ -92,6 +94,7 @@ namespace frmLogin
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
             txtEmployeeID.Text = EmployeeDAF.Instance.GetEmployeeIDMax().ToString();
+            //txtEmployeeID.Enabled = false;
             txtEmployeeName.Clear();
             cbPosition.SelectedIndex = 0;
             radMale.Checked = true;
@@ -133,6 +136,32 @@ namespace frmLogin
                 }
             }
             frmEmployeeManager_Load(sender, e);
+        }
+
+        private void txtSearchEmployee_TextChanged(object sender, EventArgs e)
+        {
+            dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.SearchEmloyeeName(txtSearchEmployee.Text);
+        }
+
+        private void btnSearchEmployee_Click(object sender, EventArgs e)
+        {
+            dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.SearchEmloyeeName(txtSearchEmployee.Text);
+        }
+
+        private void cbSortEmployee_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbSortEmployee.SelectedIndex == 0)
+            {
+                dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.GetListEmployee();
+            }
+            else if (cbSortEmployee.SelectedIndex == 1)
+            {
+                dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.SortListEmployeeByEmployeeName();
+            }
+            else
+            {
+                dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.SortListEmployeeByEmployeeID();
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class ProductDTO
+    public class Product
     {
         private byte[] m_image;
         private string m_MaSanPham;
@@ -21,7 +21,7 @@ namespace DTO
         private string m_MoTa;
 
 
-        public ProductDTO(string maSanPham, string tenSanPham, int danhMuc, int soLuong, float donGia, int trangThai, byte[] hinhAnh, string moTa)
+        public Product(string maSanPham, string tenSanPham, int danhMuc, int soLuong, float donGia, int trangThai, byte[] hinhAnh, string moTa)
         {
             this.image = hinhAnh;
             this.MaSanPham = maSanPham;
@@ -32,7 +32,7 @@ namespace DTO
             this.TrangThai = trangThai;
             this.MoTa = moTa;
         }
-        public ProductDTO(string tenSanPham, int danhMuc, int soLuong, float donGia, int trangThai, byte[] hinhAnh, string moTa)
+        public Product(string tenSanPham, int danhMuc, int soLuong, float donGia, int trangThai, byte[] hinhAnh, string moTa)
         {
             this.image = hinhAnh;
             this.TenSanPham = tenSanPham;
