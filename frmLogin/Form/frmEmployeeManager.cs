@@ -30,7 +30,7 @@ namespace frmLogin
 
         private void frmEmployeeManager_Load(object sender, EventArgs e)
         {
-            dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.GetListEmployee();
+            dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
             cbPosition.DataSource = PositionBUS.Instance.GetListPosition();
             cbPosition.DisplayMember = "TENCHUCVU";
             cbPosition.ValueMember = "MACHUCVU";
@@ -63,7 +63,7 @@ namespace frmLogin
         private void btnEditEmployee_Click(object sender, EventArgs e)
         {
             string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            int count = EmployeeDAF.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
+            int count = EmployeeBUS.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
             if (count > 0)
             {
                 MessageBox.Show("Sửa tài khoản thành công");
@@ -79,7 +79,7 @@ namespace frmLogin
         {
             if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
             {
-                int count = EmployeeDAF.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
+                int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
                 if (count > 0)
                 {
                     MessageBox.Show("Xóa tài khoản thành công");
@@ -94,7 +94,7 @@ namespace frmLogin
 
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
-            txtEmployeeID.Text = EmployeeDAF.Instance.GetEmployeeIDMax().ToString();
+            txtEmployeeID.Text = EmployeeBUS.Instance.GetEmployeeIDMax().ToString();
             //txtEmployeeID.Enabled = false;
             txtEmployeeName.Clear();
             cbPosition.SelectedIndex = 0;
@@ -110,7 +110,7 @@ namespace frmLogin
         private void btnSaveEmployee_Click(object sender, EventArgs e)
         {
             string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            int count = EmployeeDAF.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
+            int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
             if (count > 0)
             {
                 MessageBox.Show("Thêm tài khoản thành công");
@@ -126,7 +126,7 @@ namespace frmLogin
         {
             if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa toàn bộ nhân viên", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
             {
-                int count = EmployeeDAF.Instance.DeleteAllEmployee();
+                int count = EmployeeBUS.Instance.DeleteAllEmployee();
                 if (count > 0)
                 {
                     MessageBox.Show("Xóa tất cả tài khoản thành công");
@@ -141,27 +141,27 @@ namespace frmLogin
 
         private void txtSearchEmployee_TextChanged(object sender, EventArgs e)
         {
-            dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.SearchEmloyeeName(txtSearchEmployee.Text);
+            dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SearchEmloyeeName(txtSearchEmployee.Text);
         }
 
         private void btnSearchEmployee_Click(object sender, EventArgs e)
         {
-            dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.SearchEmloyeeName(txtSearchEmployee.Text);
+            dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SearchEmloyeeName(txtSearchEmployee.Text);
         }
 
         private void cbSortEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbSortEmployee.SelectedIndex == 0)
             {
-                dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.GetListEmployee();
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
             }
             else if (cbSortEmployee.SelectedIndex == 1)
             {
-                dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.SortListEmployeeByEmployeeName();
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName();
             }
             else
             {
-                dtgvListEmployee.DataSource = EmployeeMenuDAF.Instance.SortListEmployeeByEmployeeID();
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID();
             }
         }
     }

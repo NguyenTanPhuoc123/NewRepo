@@ -45,6 +45,8 @@
     <Compile Include="AccountMenu.cs" />
     <Compile Include="CategoryFood.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeMenu.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Product.cs" />

@@ -44,6 +44,8 @@
     <Compile Include="AccountBUS.cs" />
     <Compile Include="AccountMenuBUS.cs" />
     <Compile Include="CategoryFoodBUS.cs" />
+    <Compile Include="EmployeeBUS.cs" />
+    <Compile Include="EmployeeMenuBUS.cs" />
     <Compile Include="LocationBUS.cs" />
     <Compile Include="PositionBUS.cs" />
     <Compile Include="ProductBUS.cs" />

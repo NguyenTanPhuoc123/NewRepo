@@ -128,6 +128,7 @@ namespace frmLogin
             this.txtSearchEmployee.SelectedText = "";
             this.txtSearchEmployee.Size = new System.Drawing.Size(263, 36);
             this.txtSearchEmployee.TabIndex = 11;
+            this.txtSearchEmployee.TextChanged += new System.EventHandler(this.txtSearchEmployee_TextChanged);
             // 
             // cbFillEmployee
             // 
@@ -663,6 +664,7 @@ namespace frmLogin
             this.btnSearchEmployee.Name = "btnSearchEmployee";
             this.btnSearchEmployee.Size = new System.Drawing.Size(72, 36);
             this.btnSearchEmployee.TabIndex = 12;
+            this.btnSearchEmployee.Click += new System.EventHandler(this.btnSearchEmployee_Click);
             // 
             // frmEmployeeManager
             // 

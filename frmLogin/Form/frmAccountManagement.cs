@@ -29,7 +29,7 @@ namespace frmLogin
             cbTypeAccount.DataSource = TypeAccountDAF.Instance.GetListTypeAccount();
             cbTypeAccount.DisplayMember = "TenLoai";
             cbTypeAccount.ValueMember = "MaLoai";
-            cbEmloyee.DataSource = EmployeeMenuDAF.Instance.GetListEmployee();
+            cbEmloyee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
             cbEmloyee.DisplayMember = "TenNV";
             cbEmloyee.ValueMember = "MaNV";
             btnSave.Enabled = false;

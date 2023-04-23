@@ -123,7 +123,7 @@ namespace frmLogin
 
         public string GetEmployeeName()
             {
-                Employee employee = EmployeeDAF.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
+                Employee employee = EmployeeBUS.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
                 return employee.TenNV;
             }
 

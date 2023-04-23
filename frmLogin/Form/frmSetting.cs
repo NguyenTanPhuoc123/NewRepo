@@ -62,7 +62,7 @@ namespace frmLogin
 
         private void LoadThongTin()
         {
-            Employee employee = EmployeeDAF.Instance.GetEmployeeByEmployeeID(account.EmployeeID);
+            Employee employee = EmployeeBUS.Instance.GetEmployeeByEmployeeID(account.EmployeeID);
             Position position = PositionBUS.Instance.GetPositionName(employee.MaChucVu);
             txtDisplayName.Text = employee.TenNV;
             txtUserName.Text = account.Username;
@@ -90,7 +90,7 @@ namespace frmLogin
                 gioiTinh = "Nam";
             else
                 gioiTinh = "Nữ";
-            int row= EmployeeDAF.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text),txtNumberPhone.Text,dtpBirthday.Text,gioiTinh,txtAddress.Text);
+            int row= EmployeeBUS.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text),txtNumberPhone.Text,dtpBirthday.Text,gioiTinh,txtAddress.Text);
             if (row == 1)
             {
                 MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK);

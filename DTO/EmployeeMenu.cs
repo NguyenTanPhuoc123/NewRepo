@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 
-namespace frmLogin.Data_Tranfer_Object
+namespace DTO
 {
     public class EmployeeMenu
     {
@@ -30,8 +30,6 @@ namespace frmLogin.Data_Tranfer_Object
         public string TenChucVu { get => tenChucVu; set => tenChucVu = value; }
         public string NgaySinh { get => ngaySinh; set => ngaySinh = value; }
         public string NgayVaoLam { get => ngayVaoLam; set => ngayVaoLam = value; }
-
-
 
         public EmployeeMenu(DataRow row)
         {

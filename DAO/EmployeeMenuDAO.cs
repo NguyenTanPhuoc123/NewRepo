@@ -1,25 +1,23 @@
-﻿using frmLogin.Data_Tranfer_Object;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using DTO;
-namespace frmLogin.Data_Access_Layer
-{
 
-    public class EmployeeMenuDAF
+namespace DAO
+{
+    public class EmployeeMenuDAO
     {
-        private static EmployeeMenuDAF instance;
-        public static EmployeeMenuDAF Instance
+        private static EmployeeMenuDAO instance;
+        public static EmployeeMenuDAO Instance
         {
-            get { if (instance == null) instance = new EmployeeMenuDAF(); return EmployeeMenuDAF.instance; }
-            private set { EmployeeMenuDAF.instance = value; }
+            get { if (instance == null) instance = new EmployeeMenuDAO(); return EmployeeMenuDAO.instance; }
+            private set { EmployeeMenuDAO.instance = value; }
         }
 
-        private EmployeeMenuDAF()
+        private EmployeeMenuDAO()
         {
 
         }
