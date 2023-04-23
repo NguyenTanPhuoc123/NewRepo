@@ -10,7 +10,7 @@ namespace DAO
     public class CustomerDAO
     {
         private static CustomerDAO instance;
-
+        public static int count = 0;
         public static CustomerDAO Instance
         {
             get { if (instance == null) instance = new CustomerDAO(); return CustomerDAO.instance; }
@@ -31,12 +31,14 @@ namespace DAO
             {
                 Customer customer = new Customer(item);
                 list.Add(customer);
+                count++;
             }
             return list;
         }
 
-        public int AddNewCustomer(string id,string name, string phone, int type)
+        public int AddNewCustomer(string name, string phone, int type)
         {
+            string id = string.Format("KH{0}", count + 1);
             string query = String.Format("INSERT KHACHHANG VALUES('{0}',N'{1}','{2}',1,{3})",id, name, phone, type);
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;

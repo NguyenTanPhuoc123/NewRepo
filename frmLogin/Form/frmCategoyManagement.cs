@@ -19,16 +19,18 @@ namespace frmLogin
         {
             InitializeComponent();
         }
-      
+
 
         private void frmCategoyManagement_Load(object sender, EventArgs e)
-        { 
+        {
             LoadLocationTable();
             LoadListSizeProduct();
+            LoadTypeCustomer();
         }
 
 
         #region Location Table Food
+        
         public void LoadLocationTable()
         {
             dtgvListLocation.DataSource = LocationBUS.Instance.GetListLocation();
@@ -159,7 +161,7 @@ namespace frmLogin
                 txtSizePrice.Text = dtgvListSize.SelectedRows[0].Cells[2].Value.ToString();
             }
         }
-        public  void LoadListSizeProduct()
+        public void LoadListSizeProduct()
         {
             dtgvListSize.DataSource = SizeProductBUS.Instance.GetListSizeProduct();
             ResetSizeInfo();
@@ -179,7 +181,7 @@ namespace frmLogin
         private void btnSizeDeleted_Click(object sender, EventArgs e)
         {
             frmRecycleBinCategory frm = new frmRecycleBinCategory();
-            frm.Show();        
+            frm.Show();
         }
 
         private void txtSizePrice_KeyPress(object sender, KeyPressEventArgs e)
@@ -272,6 +274,125 @@ namespace frmLogin
 
         #endregion
 
-      
+        #region Type Customer
+        public void LoadTypeCustomer()
+        {
+            dtgvListTypeCustomer.DataSource = TypeCustomerBUS.Instance.GetListTypeCustomer();
+            ResetInfo();
+            btnSaveTypeCustomer.Enabled = false;
+            btnEditTypeCustomer.Enabled = true;
+            btnDeleteAllTypeCustomer.Enabled = true;
+            btnDeleteTypeCustomer.Enabled = true;
+        }
+
+        public void ResetInfo()
+        {
+            txtTypeCustomerID.Clear();
+            txtTypeCustomerName.Clear();
+        }
+
+        private void btnAddTypeCustomer_Click(object sender, EventArgs e)
+        {
+            txtTypeCustomerID.Text = TypeCustomerBUS.Instance.GetTypeCustomerIDMax().ToString();
+            txtTypeCustomerName.Clear();
+            btnSaveTypeCustomer.Enabled = true;
+            btnEditTypeCustomer.Enabled = false;
+            btnDeleteAllTypeCustomer.Enabled = false;
+            btnDeleteTypeCustomer.Enabled = false;
+        }
+
+        private void btnSaveTypeCustomer_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtTypeCustomerName.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tên loại khách hàng muốn thêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            int count = TypeCustomerBUS.Instance.AddTypeCustomer(txtTypeCustomerName.Text);
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm loại khách hàng mới thành công", "Thêm loại khách hàng", MessageBoxButtons.OK);
+                LoadTypeCustomer();
+            }
+            else
+                MessageBox.Show("Thêm loại khách hàng mới thất bại", "Thêm loại khách hàng", MessageBoxButtons.OK,MessageBoxIcon.Error);       
+        }
+
+        private void btnEditTypeCustomer_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn sửa loại khách hàng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (string.IsNullOrEmpty(txtTypeCustomerName.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập tên loại khách hàng muốn sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                int count = TypeCustomerBUS.Instance.EditTypeCustomer(int.Parse(txtTypeCustomerID.Text), txtTypeCustomerName.Text);
+                if (count > 0)
+                {
+                    MessageBox.Show("Sửa loại khách hàng thành công", "Sửa loại khách hàng", MessageBoxButtons.OK);
+                    LoadTypeCustomer();
+                }
+                else
+                    MessageBox.Show("Sửa loại khách hàng thất bại", "Sửa loại khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }          
+        }
+
+        private void btnDeleteTypeCustomer_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn xóa loại khách hàng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                int count = TypeCustomerBUS.Instance.DeleteTypeCustomer(int.Parse(txtTypeCustomerID.Text));
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa loại khách hàng thành công", "Xóa loại khách hàng", MessageBoxButtons.OK);
+                    LoadTypeCustomer();
+                }
+                else
+                    MessageBox.Show("Xóa loại khách hàng thất bại", "Xóa loại khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            
+        }
+
+        private void btnDeleteAllTypeCustomer_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn xóa tất cả  loại khách hàng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                int count = TypeCustomerBUS.Instance.DeleteAllTypeCustomer();
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa tất cả loại khách hàng thành công", "Xóa loại khách hàng", MessageBoxButtons.OK);
+                    LoadTypeCustomer();
+                }
+                else
+                    MessageBox.Show("Xóa tất cả loại khách hàng thất bại", "Xóa loại khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void btnTypeCustomerDeleted_Click(object sender, EventArgs e)
+        {
+            frmRecycleBinCategory frm = new frmRecycleBinCategory();
+            frm.Show();
+        }
+
+        private void dtgvListTypeCustomer_SelectionChanged(object sender, EventArgs e)
+        {
+            btnSaveTypeCustomer.Enabled = false;
+            btnEditTypeCustomer.Enabled = true;
+            btnDeleteAllTypeAccount.Enabled = true;
+            btnDeleteTypeCustomer.Enabled = true;
+            if (dtgvListTypeCustomer.SelectedRows.Count > 0)
+            {
+                txtTypeCustomerID.Text = dtgvListTypeCustomer.SelectedRows[0].Cells[0].Value.ToString();
+                txtTypeCustomerName.Text = dtgvListTypeCustomer.SelectedRows[0].Cells[1].Value.ToString();
+            }
+        }
+
+        #endregion
+
+        
     }
 }

@@ -40,12 +40,12 @@ namespace frmLogin
             this.txtSearchCustomer = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtgvListCustomer = new Guna.UI2.WinForms.Guna2DataGridView();
             this.grpCustomerInfo = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCustomerID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtCustomerName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtCustomerNumberPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCustomerName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCustomerID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.grpFunctionCustomer = new System.Windows.Forms.GroupBox();
             this.btnRefreshCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddCustomer = new Guna.UI2.WinForms.Guna2Button();
@@ -54,6 +54,11 @@ namespace frmLogin
             this.btnDeleteCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomerDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbTypeCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radMale = new System.Windows.Forms.RadioButton();
+            this.radFemale = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListCustomer)).BeginInit();
             this.grpCustomerInfo.SuspendLayout();
             this.grpFunctionCustomer.SuspendLayout();
@@ -62,7 +67,7 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 238);
+            this.label1.Location = new System.Drawing.Point(9, 258);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 0;
@@ -78,15 +83,15 @@ namespace frmLogin
             this.cbSortCustomer.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbSortCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortCustomer.ItemHeight = 30;
-            this.cbSortCustomer.Location = new System.Drawing.Point(57, 258);
+            this.cbSortCustomer.Location = new System.Drawing.Point(12, 278);
             this.cbSortCustomer.Name = "cbSortCustomer";
-            this.cbSortCustomer.Size = new System.Drawing.Size(146, 36);
+            this.cbSortCustomer.Size = new System.Drawing.Size(186, 36);
             this.cbSortCustomer.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(945, 238);
+            this.label2.Location = new System.Drawing.Point(991, 258);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 17);
             this.label2.TabIndex = 2;
@@ -102,7 +107,7 @@ namespace frmLogin
             this.cbFillCustomer.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillCustomer.ItemHeight = 30;
-            this.cbFillCustomer.Location = new System.Drawing.Point(948, 258);
+            this.cbFillCustomer.Location = new System.Drawing.Point(994, 278);
             this.cbFillCustomer.Name = "cbFillCustomer";
             this.cbFillCustomer.Size = new System.Drawing.Size(171, 36);
             this.cbFillCustomer.TabIndex = 3;
@@ -118,7 +123,7 @@ namespace frmLogin
             this.txtSearchCustomer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchCustomer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchCustomer.Location = new System.Drawing.Point(403, 258);
+            this.txtSearchCustomer.Location = new System.Drawing.Point(403, 278);
             this.txtSearchCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchCustomer.Name = "txtSearchCustomer";
             this.txtSearchCustomer.PasswordChar = '\0';
@@ -150,12 +155,12 @@ namespace frmLogin
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListCustomer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListCustomer.Location = new System.Drawing.Point(57, 299);
+            this.dtgvListCustomer.Location = new System.Drawing.Point(12, 321);
             this.dtgvListCustomer.Name = "dtgvListCustomer";
             this.dtgvListCustomer.RowHeadersVisible = false;
             this.dtgvListCustomer.RowHeadersWidth = 51;
             this.dtgvListCustomer.RowTemplate.Height = 24;
-            this.dtgvListCustomer.Size = new System.Drawing.Size(1062, 204);
+            this.dtgvListCustomer.Size = new System.Drawing.Size(1153, 182);
             this.dtgvListCustomer.TabIndex = 6;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -181,6 +186,11 @@ namespace frmLogin
             // 
             // grpCustomerInfo
             // 
+            this.grpCustomerInfo.Controls.Add(this.radFemale);
+            this.grpCustomerInfo.Controls.Add(this.radMale);
+            this.grpCustomerInfo.Controls.Add(this.label7);
+            this.grpCustomerInfo.Controls.Add(this.cbTypeCustomer);
+            this.grpCustomerInfo.Controls.Add(this.label6);
             this.grpCustomerInfo.Controls.Add(this.txtCustomerNumberPhone);
             this.grpCustomerInfo.Controls.Add(this.label5);
             this.grpCustomerInfo.Controls.Add(this.txtCustomerName);
@@ -189,53 +199,44 @@ namespace frmLogin
             this.grpCustomerInfo.Controls.Add(this.label3);
             this.grpCustomerInfo.Location = new System.Drawing.Point(12, 12);
             this.grpCustomerInfo.Name = "grpCustomerInfo";
-            this.grpCustomerInfo.Size = new System.Drawing.Size(525, 223);
+            this.grpCustomerInfo.Size = new System.Drawing.Size(525, 243);
             this.grpCustomerInfo.TabIndex = 33;
             this.grpCustomerInfo.TabStop = false;
             this.grpCustomerInfo.Text = "Thông tin khách hàng";
             // 
-            // label3
+            // txtCustomerNumberPhone
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 17);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Mã KH:";
+            this.txtCustomerNumberPhone.BorderRadius = 20;
+            this.txtCustomerNumberPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCustomerNumberPhone.DefaultText = "";
+            this.txtCustomerNumberPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCustomerNumberPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCustomerNumberPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCustomerNumberPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCustomerNumberPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCustomerNumberPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCustomerNumberPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCustomerNumberPhone.Location = new System.Drawing.Point(173, 156);
+            this.txtCustomerNumberPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCustomerNumberPhone.Name = "txtCustomerNumberPhone";
+            this.txtCustomerNumberPhone.PasswordChar = '\0';
+            this.txtCustomerNumberPhone.PlaceholderText = "";
+            this.txtCustomerNumberPhone.SelectedText = "";
+            this.txtCustomerNumberPhone.Size = new System.Drawing.Size(246, 35);
+            this.txtCustomerNumberPhone.TabIndex = 5;
             // 
-            // txtCustomerID
+            // label5
             // 
-            this.txtCustomerID.BorderRadius = 10;
-            this.txtCustomerID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCustomerID.DefaultText = "";
-            this.txtCustomerID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCustomerID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCustomerID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCustomerID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCustomerID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCustomerID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCustomerID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCustomerID.Location = new System.Drawing.Point(173, 22);
-            this.txtCustomerID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCustomerID.Name = "txtCustomerID";
-            this.txtCustomerID.PasswordChar = '\0';
-            this.txtCustomerID.PlaceholderText = "";
-            this.txtCustomerID.SelectedText = "";
-            this.txtCustomerID.Size = new System.Drawing.Size(246, 35);
-            this.txtCustomerID.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Tên KH:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 158);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 17);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Số điện thoại:";
             // 
             // txtCustomerName
             // 
-            this.txtCustomerName.BorderRadius = 10;
+            this.txtCustomerName.BorderRadius = 20;
             this.txtCustomerName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCustomerName.DefaultText = "";
             this.txtCustomerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -254,35 +255,44 @@ namespace frmLogin
             this.txtCustomerName.Size = new System.Drawing.Size(246, 35);
             this.txtCustomerName.TabIndex = 3;
             // 
-            // label5
+            // label4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 147);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Số điện thoại:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 17);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Tên KH:";
             // 
-            // txtCustomerNumberPhone
+            // txtCustomerID
             // 
-            this.txtCustomerNumberPhone.BorderRadius = 10;
-            this.txtCustomerNumberPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCustomerNumberPhone.DefaultText = "";
-            this.txtCustomerNumberPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCustomerNumberPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCustomerNumberPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCustomerNumberPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCustomerNumberPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCustomerNumberPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCustomerNumberPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCustomerNumberPhone.Location = new System.Drawing.Point(173, 138);
-            this.txtCustomerNumberPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCustomerNumberPhone.Name = "txtCustomerNumberPhone";
-            this.txtCustomerNumberPhone.PasswordChar = '\0';
-            this.txtCustomerNumberPhone.PlaceholderText = "";
-            this.txtCustomerNumberPhone.SelectedText = "";
-            this.txtCustomerNumberPhone.Size = new System.Drawing.Size(246, 35);
-            this.txtCustomerNumberPhone.TabIndex = 5;
+            this.txtCustomerID.BorderRadius = 20;
+            this.txtCustomerID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCustomerID.DefaultText = "";
+            this.txtCustomerID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCustomerID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCustomerID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCustomerID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCustomerID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCustomerID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCustomerID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCustomerID.Location = new System.Drawing.Point(173, 22);
+            this.txtCustomerID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCustomerID.Name = "txtCustomerID";
+            this.txtCustomerID.PasswordChar = '\0';
+            this.txtCustomerID.PlaceholderText = "";
+            this.txtCustomerID.SelectedText = "";
+            this.txtCustomerID.Size = new System.Drawing.Size(246, 35);
+            this.txtCustomerID.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Mã KH:";
             // 
             // grpFunctionCustomer
             // 
@@ -292,9 +302,9 @@ namespace frmLogin
             this.grpFunctionCustomer.Controls.Add(this.btnDeleteAllCustomer);
             this.grpFunctionCustomer.Controls.Add(this.btnDeleteCustomer);
             this.grpFunctionCustomer.Controls.Add(this.btnCustomerDeleted);
-            this.grpFunctionCustomer.Location = new System.Drawing.Point(657, 12);
+            this.grpFunctionCustomer.Location = new System.Drawing.Point(735, 12);
             this.grpFunctionCustomer.Name = "grpFunctionCustomer";
-            this.grpFunctionCustomer.Size = new System.Drawing.Size(430, 223);
+            this.grpFunctionCustomer.Size = new System.Drawing.Size(430, 243);
             this.grpFunctionCustomer.TabIndex = 34;
             this.grpFunctionCustomer.TabStop = false;
             this.grpFunctionCustomer.Text = "Chức năng";
@@ -331,7 +341,7 @@ namespace frmLogin
             this.btnAddCustomer.ImageSize = new System.Drawing.Size(30, 30);
             this.btnAddCustomer.Location = new System.Drawing.Point(6, 27);
             this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(140, 45);
+            this.btnAddCustomer.Size = new System.Drawing.Size(165, 45);
             this.btnAddCustomer.TabIndex = 28;
             this.btnAddCustomer.Text = "Thêm";
             // 
@@ -349,7 +359,7 @@ namespace frmLogin
             this.btnEditCustomer.ImageSize = new System.Drawing.Size(30, 30);
             this.btnEditCustomer.Location = new System.Drawing.Point(6, 84);
             this.btnEditCustomer.Name = "btnEditCustomer";
-            this.btnEditCustomer.Size = new System.Drawing.Size(140, 45);
+            this.btnEditCustomer.Size = new System.Drawing.Size(165, 45);
             this.btnEditCustomer.TabIndex = 29;
             this.btnEditCustomer.Text = "Sửa";
             // 
@@ -387,7 +397,7 @@ namespace frmLogin
             this.btnDeleteCustomer.ImageSize = new System.Drawing.Size(45, 45);
             this.btnDeleteCustomer.Location = new System.Drawing.Point(6, 156);
             this.btnDeleteCustomer.Name = "btnDeleteCustomer";
-            this.btnDeleteCustomer.Size = new System.Drawing.Size(140, 45);
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(165, 45);
             this.btnDeleteCustomer.TabIndex = 30;
             this.btnDeleteCustomer.Text = "Xóa";
             // 
@@ -421,10 +431,65 @@ namespace frmLogin
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(681, 258);
+            this.guna2Button1.Location = new System.Drawing.Point(681, 278);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(105, 36);
             this.guna2Button1.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 210);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 17);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Loại khách hàng:";
+            // 
+            // cbTypeCustomer
+            // 
+            this.cbTypeCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.cbTypeCustomer.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbTypeCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTypeCustomer.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbTypeCustomer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbTypeCustomer.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbTypeCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbTypeCustomer.ItemHeight = 30;
+            this.cbTypeCustomer.Location = new System.Drawing.Point(173, 201);
+            this.cbTypeCustomer.Name = "cbTypeCustomer";
+            this.cbTypeCustomer.Size = new System.Drawing.Size(175, 36);
+            this.cbTypeCustomer.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 114);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 17);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Giới tính:";
+            // 
+            // radMale
+            // 
+            this.radMale.AutoSize = true;
+            this.radMale.Location = new System.Drawing.Point(173, 112);
+            this.radMale.Name = "radMale";
+            this.radMale.Size = new System.Drawing.Size(58, 21);
+            this.radMale.TabIndex = 9;
+            this.radMale.TabStop = true;
+            this.radMale.Text = "Nam";
+            this.radMale.UseVisualStyleBackColor = true;
+            // 
+            // radFemale
+            // 
+            this.radFemale.AutoSize = true;
+            this.radFemale.Location = new System.Drawing.Point(290, 112);
+            this.radFemale.Name = "radFemale";
+            this.radFemale.Size = new System.Drawing.Size(47, 21);
+            this.radFemale.TabIndex = 10;
+            this.radFemale.TabStop = true;
+            this.radFemale.Text = "Nữ";
+            this.radFemale.UseVisualStyleBackColor = true;
             // 
             // frmCustomerManagement
             // 
@@ -475,5 +540,10 @@ namespace frmLogin
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox grpFunctionCustomer;
         private Guna.UI2.WinForms.Guna2Button btnRefreshCustomer;
+        private System.Windows.Forms.RadioButton radFemale;
+        private System.Windows.Forms.RadioButton radMale;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2ComboBox cbTypeCustomer;
+        private System.Windows.Forms.Label label6;
     }
 }

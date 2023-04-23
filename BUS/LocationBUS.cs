@@ -50,5 +50,20 @@ namespace BUS
         {
             return LocationDAO.Instance.GetLocationIDMax();
         }
+
+        public List<Location> GetListLocationDeleted()
+        {
+            return LocationDAO.Instance.GetListLocationDeleted();
+        }
+
+        public int RestoreLocation(int id)
+        {
+            return LocationDAO.Instance.RestoreLocation(id);
+        }
+
+        public int RestoreAllLocation()
+        {
+            return LocationDAO.Instance.RestoreAllLocation();
+        }
     }
 }
