@@ -46,10 +46,6 @@ namespace BUS
             return LocationDAO.Instance.DeleteAllLocationTable();
         }
 
-        public int GetLocationIDMax()
-        {
-            return LocationDAO.Instance.GetLocationIDMax();
-        }
 
         public List<Location> GetListLocationDeleted()
         {

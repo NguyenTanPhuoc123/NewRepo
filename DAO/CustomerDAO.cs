@@ -38,6 +38,7 @@ namespace DAO
 
         public int AddNewCustomer(string name, string phone, int type)
         {
+
             string id = string.Format("KH{0}", count + 1);
             string query = String.Format("INSERT KHACHHANG VALUES('{0}',N'{1}','{2}',1,{3})",id, name, phone, type);
             int row = DataProvider.ExecuteInsertCommand(query, null);

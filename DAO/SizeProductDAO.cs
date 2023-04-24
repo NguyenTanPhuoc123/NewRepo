@@ -35,7 +35,19 @@ namespace DAO
             }
             return list;
         }
+        public List<SizeProduct> GetSizeProduct()
+        {
+            List<SizeProduct> list = new List<SizeProduct>();
+            string query = "Select * from KICHTHUOC";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
 
+            foreach (DataRow item in data.Rows)
+            {
+                SizeProduct sizeProduct = new SizeProduct(item);
+                list.Add(sizeProduct);
+            }
+            return list;
+        }
         public int GetListSizeIDMax()
         {
             int sizeID = 0;

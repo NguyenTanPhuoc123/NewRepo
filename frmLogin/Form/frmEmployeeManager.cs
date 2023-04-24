@@ -94,7 +94,8 @@ namespace frmLogin
 
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
-            txtEmployeeID.Text = EmployeeBUS.Instance.GetEmployeeIDMax().ToString();
+            int i = EmployeeMenuBUS.Instance.GetListEmployee().Count + 1;
+            txtEmployeeID.Text = i.ToString();
             //txtEmployeeID.Enabled = false;
             txtEmployeeName.Clear();
             cbPosition.SelectedIndex = 0;
@@ -110,16 +111,23 @@ namespace frmLogin
         private void btnSaveEmployee_Click(object sender, EventArgs e)
         {
             string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
-            if (count > 0)
+            if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text))
             {
-                MessageBox.Show("Thêm tài khoản thành công");
+                int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
+                if (count > 0)
+                {
+                    MessageBox.Show("Thêm tài khoản thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm tài khoản thất bại");
+                }
+                frmEmployeeManager_Load(sender, e);
             }
             else
             {
-                MessageBox.Show("Thêm tài khoản thất bại");
+                MessageBox.Show("Số điện thoại phải có 10 số và không được trùng nhau");
             }
-            frmEmployeeManager_Load(sender, e);
         }
 
         private void btnDeleteAllEmployee_Click(object sender, EventArgs e)

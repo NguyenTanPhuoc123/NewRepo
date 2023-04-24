@@ -52,7 +52,8 @@ namespace frmLogin
 
         private void btnAddLocation_Click(object sender, EventArgs e)
         {
-            txtLocationID.Text = LocationBUS.Instance.GetLocationIDMax().ToString();
+            int i = LocationBUS.Instance.GetListLocation().Count + 1;
+            txtLocationID.Text = i.ToString();
             txtLocationName.Clear();
             btnSaveLocation.Enabled = true;
             btnEditLocation.Enabled = false;
@@ -195,7 +196,8 @@ namespace frmLogin
 
         private void btnAddSize_Click(object sender, EventArgs e)
         {
-            txtSizeID.Text = SizeProductBUS.Instance.GetSizeIDMax().ToString();
+            int i = SizeProductBUS.Instance.GetSizeProduct().Count + 1;
+            txtSizeID.Text =i.ToString(); 
             txtSizeName.Clear();
             txtSizePrice.Clear();
             btnSaveSize.Enabled = true;
@@ -462,8 +464,10 @@ namespace frmLogin
         #region Position
         private void btnAddPosition_Click(object sender, EventArgs e)
         {
-            txtPositionID.Text = PositionBUS.Instance.GetPositionIDMax().ToString();
+            int i = PositionBUS.Instance.GetListPosition().Count + 1;
+            txtPositionID.Text = i.ToString();
             btnSavePosition.Enabled = true;
+            btnDeleteAllPosition.Enabled = true;
         }
 
         private void btnSavePosition_Click(object sender, EventArgs e)
@@ -562,7 +566,8 @@ namespace frmLogin
 
         private void btnAddTypeAccount_Click(object sender, EventArgs e)
         {
-            txtTypeAccountID.Text = TypeAccountBUS.Instance.GetTypeAccountIDMax().ToString();
+            int i = TypeAccountBUS.Instance.GetListTypeAccount().Count + 1;
+            txtTypeAccountID.Text = i.ToString();
             btnSaveTypeAccount.Enabled = true;
         }
 

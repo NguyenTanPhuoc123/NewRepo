@@ -65,15 +65,6 @@ namespace DAO
             return row;
         }
 
-        public int GetLocationIDMax()
-        {
-            int locationID = 1;
-            int max = DataProvider.ExecuteScalarCommand("SELECT MAX(MAVITRI) from VITRI", null);
-
-            if (max != null)
-                locationID = max;
-            return locationID + 1;
-        }
         public List<Location> GetListLocationDeleted()
         {
             List<Location> listLocation = new List<Location>();

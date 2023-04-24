@@ -21,7 +21,10 @@ namespace BUS
         {
             return EmployeeDAO.Instance.GetEmployeeByEmployeeID(employeeID);
         }
-
+        public bool CheckNumberPhone(string Numberphone)
+        {
+            return EmployeeDAO.Instance.CheckNumberPhone(Numberphone);
+        }
         public int UpdateEmployeeInFo(int employeeID, string SDT, string NgaySinh, string GioiTinh, string DiaChi)
         {
             return EmployeeDAO.Instance.UpdateEmployeeInFo(employeeID, SDT, NgaySinh, GioiTinh, DiaChi);
@@ -40,11 +43,6 @@ namespace BUS
         public int AddEmployee(string tennv, string ngaysinh, string gioitinh, string ngayvaolam, int chucvu, string sdt, string diachi)
         {
             return EmployeeDAO.Instance.AddEmployee(tennv, ngaysinh, gioitinh, ngayvaolam, chucvu, sdt, diachi);
-        }
-
-        public int GetEmployeeIDMax()
-        {
-            return EmployeeDAO.Instance.GetEmployeeIDMax();
         }
 
         public int DeleteAllEmployee()

@@ -21,6 +21,21 @@ namespace DAO
         {
 
         }
+        public bool CheckNumberPhone(string Numberphone)
+        {
+            List<EmployeeMenu> employees = EmployeeMenuDAO.Instance.GetListEmployee();
+            if (Numberphone.Length < 11)
+            {
+                for (int i = 0 ;i <employees.Count; i++){
+                    if(Numberphone == employees[i].SoDienThoai)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
 
         public Employee GetEmployeeByEmployeeID(int employeeID)
         {
@@ -60,17 +75,6 @@ namespace DAO
             string query = string.Format("insert NHANVIEN(TenNV,NGAYSINH,GIOITINH,NGAYVAOLAM,MACHUCVU,SODIENTHOAI,DIACHI,TRANGTHAI) values(N'{0}', '{1}', N'{2}', '{3}', N'{4}', '{5}', N'{6}', 1)", tennv, ngaysinh, gioitinh, ngayvaolam, chucvu, sdt, diachi);
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
-        }
-
-        public int GetEmployeeIDMax()
-        {
-            int ID = 0;
-            int id = DataProvider.ExecuteScalarCommand("select max(manv) from nhanvien", null);
-            if (id != null)
-            {
-                ID = id;
-            }
-            return ID + 1;
         }
 
         public int DeleteAllEmployee()
