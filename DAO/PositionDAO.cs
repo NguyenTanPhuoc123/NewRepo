@@ -36,7 +36,7 @@ namespace DAO
         public List<Position> GetListPosition()
         {
             List<Position> listPosition = new List<Position>();
-            string query = string.Format("Select * from CHUCVU");
+            string query = string.Format("Select * from CHUCVU where xoa = 0");
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
 
             foreach (DataRow item in data.Rows)
@@ -45,6 +45,45 @@ namespace DAO
                 listPosition.Add(employee);
             }
             return listPosition;
+        }
+
+        public int AddPosition(string tenchucvu)
+        {
+            string query = string.Format("insert chucvu(tenchucvu,xoa) values(N'{0}',0)", tenchucvu);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int GetPositionIDMax()
+        {
+            int ID = 0;
+            int id = DataProvider.ExecuteScalarCommand("select max(MACHUCVU) from chucvu", null);
+            if (id != null)
+            {
+                ID = id;
+            }
+            return ID + 1;
+        }
+
+        public int UpdatePosition(int macv, string tencv)
+        {
+            string query = string.Format("update chucvu set tenchucvu=N'{0}' where machucvu={1}", tencv, macv);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int DeletePosition(int macv)
+        {
+            string query = string.Format("update chucvu set xoa = 1 where machucvu={0}", macv);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int DeleteAllPosition()
+        {
+            string query = string.Format("update chucvu set xoa = 1");
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
         }
     }
 }

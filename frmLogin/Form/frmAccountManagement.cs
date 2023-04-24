@@ -26,7 +26,7 @@ namespace frmLogin
         private void frmAccountManagement_Load(object sender, EventArgs e)
         {
             dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
-            cbTypeAccount.DataSource = TypeAccountDAF.Instance.GetListTypeAccount();
+            cbTypeAccount.DataSource = TypeAccountBUS.Instance.GetListTypeAccount();
             cbTypeAccount.DisplayMember = "TenLoai";
             cbTypeAccount.ValueMember = "MaLoai";
             cbEmloyee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();

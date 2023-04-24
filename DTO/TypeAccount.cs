@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace frmLogin.Data_Tranfer_Object
+namespace DTO
 {
-   public  class TypeAccount
+    public class TypeAccount
     {
         private int m_MaLoai;
         private string m_TenLoai;

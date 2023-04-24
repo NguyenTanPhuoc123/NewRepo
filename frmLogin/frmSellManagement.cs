@@ -117,7 +117,7 @@ namespace frmLogin
        
         public string GetTypeAccountName()
             {
-                TypeAccount typeAccount = TypeAccountDAF.Instance.GetTypeAccountForTypeAccountID(loginAccount.TypeAccount);
+                TypeAccount typeAccount = TypeAccountBUS.Instance.GetTypeAccountForTypeAccountID(loginAccount.TypeAccount);
                 return typeAccount.TenLoai;
             }
 

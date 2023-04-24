@@ -53,3 +53,14 @@ C:\Users\Admin\Desktop\DOAN\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\DOAN\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Admin\Desktop\DOAN\BUS\obj\Debug\BUS.dll
 C:\Users\Admin\Desktop\DOAN\BUS\obj\Debug\BUS.pdb
+D:\DOAN\BUS\bin\Debug\BUS.dll
+D:\DOAN\BUS\bin\Debug\BUS.pdb
+D:\DOAN\BUS\bin\Debug\DAO.dll
+D:\DOAN\BUS\bin\Debug\DTO.dll
+D:\DOAN\BUS\bin\Debug\DAO.pdb
+D:\DOAN\BUS\bin\Debug\DTO.pdb
+D:\DOAN\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\DOAN\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\DOAN\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\DOAN\BUS\obj\Debug\BUS.dll
+D:\DOAN\BUS\obj\Debug\BUS.pdb

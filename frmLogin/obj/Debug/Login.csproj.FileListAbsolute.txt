@@ -633,3 +633,9 @@ C:\Users\Admin\Desktop\DOAN\frmLogin\obj\Debug\zh\frmLogin.resources.dll
 C:\Users\Admin\Desktop\DOAN\frmLogin\obj\Debug\Login.csproj.CopyComplete
 C:\Users\Admin\Desktop\DOAN\frmLogin\obj\Debug\frmLogin.exe
 C:\Users\Admin\Desktop\DOAN\frmLogin\obj\Debug\frmLogin.pdb
+D:\DOAN\frmLogin\bin\Debug\BUS.dll
+D:\DOAN\frmLogin\bin\Debug\DTO.dll
+D:\DOAN\frmLogin\bin\Debug\DAO.dll
+D:\DOAN\frmLogin\bin\Debug\BUS.pdb
+D:\DOAN\frmLogin\bin\Debug\DTO.pdb
+D:\DOAN\frmLogin\bin\Debug\DAO.pdb

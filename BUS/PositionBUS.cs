@@ -30,5 +30,30 @@ namespace BUS
         {
             return PositionDAO.Instance.GetListPosition();
         }
+
+        public int GetPositionIDMax()
+        {
+            return PositionDAO.Instance.GetPositionIDMax();
+        }
+
+        public int AddPosition(string tenchucvu)
+        {
+            return PositionDAO.Instance.AddPosition(tenchucvu);
+        }
+
+        public int UpdatePosition(int macv, string tencv)
+        {
+            return PositionDAO.Instance.UpdatePosition(macv, tencv);
+        }
+
+        public int DeletePosition(int macv)
+        {
+            return PositionDAO.Instance.DeletePosition(macv);
+        }
+
+        public int DeleteAllPosition()
+        {
+            return PositionDAO.Instance.DeleteAllPosition();
+        }
     }
 }

@@ -27,6 +27,8 @@ namespace frmLogin
             LoadListSizeProduct();
             LoadTypeCustomer();
             LoadTypeProduct();
+            LoadPosition();
+            LoadTypeAccount();
         }
 
 
@@ -457,5 +459,174 @@ namespace frmLogin
         }
         #endregion
 
+        #region Position
+        private void btnAddPosition_Click(object sender, EventArgs e)
+        {
+            txtPositionID.Text = PositionBUS.Instance.GetPositionIDMax().ToString();
+            btnSavePosition.Enabled = true;
+        }
+
+        private void btnSavePosition_Click(object sender, EventArgs e)
+        {
+            int count = PositionBUS.Instance.AddPosition(txtPositionName.Text);
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm chức vụ thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thêm chức vụ thất bại");
+            }
+            LoadPosition();
+        }
+
+        public void LoadPosition()
+        {
+            dtgvListPosition.DataSource = PositionBUS.Instance.GetListPosition();
+
+        }
+
+        private void btnEditPosition_Click(object sender, EventArgs e)
+        {
+            int count = PositionBUS.Instance.UpdatePosition(int.Parse(txtPositionID.Text), txtPositionName.Text);
+            if (count > 0)
+            {
+                MessageBox.Show("Sửa chức vụ thành công");
+            }
+            else
+            {
+                MessageBox.Show("Sửa chức vụ thất bại");
+            }
+            LoadPosition();
+        }
+
+        private void dtgvListPosition_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgvListLocation.SelectedRows.Count > 0)
+            {
+                txtPositionID.Text = dtgvListPosition.SelectedRows[0].Cells[0].Value.ToString();
+                txtPositionName.Text = dtgvListPosition.SelectedRows[0].Cells[1].Value.ToString();
+            }
+        }
+
+        private void btnDeletePosition_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả chức vụ này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                int count = PositionBUS.Instance.DeletePosition(int.Parse(txtPositionID.Text));
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa chức vụ thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa chức vụ thất bại");
+                }
+            }
+            LoadPosition();
+        }
+
+        private void btnDeleteAllPosition_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả chức vụ này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                int count = PositionBUS.Instance.DeleteAllPosition();
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa tất cả chức vụ thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa tất cả chức vụ thất bại");
+                }
+            }
+            LoadPosition();
+        }
+
+        #endregion
+
+        #region TypeAccount
+        public void LoadTypeAccount()
+        {
+            dtgvListTypeAccount.DataSource = TypeAccountBUS.Instance.GetListTypeAccount();
+
+        }
+        private void dtgvListTypeAccount_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgvListTypeAccount.SelectedRows.Count > 0)
+            {
+                txtTypeAccountID.Text = dtgvListTypeAccount.SelectedRows[0].Cells[0].Value.ToString();
+                txtTypeAccountName.Text = dtgvListTypeAccount.SelectedRows[0].Cells[1].Value.ToString();
+            }
+        }
+
+        private void btnAddTypeAccount_Click(object sender, EventArgs e)
+        {
+            txtTypeAccountID.Text = TypeAccountBUS.Instance.GetTypeAccountIDMax().ToString();
+            btnSaveTypeAccount.Enabled = true;
+        }
+
+        private void btnSaveTypeAccount_Click(object sender, EventArgs e)
+        {
+            int count = TypeAccountBUS.Instance.AddTypeAccount(txtTypeAccountName.Text);
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm chức vụ thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thêm chức vụ thất bại");
+            }
+            LoadTypeAccount();
+        }
+
+        private void btnEditTypeAccount_Click(object sender, EventArgs e)
+        {
+            int count = TypeAccountBUS.Instance.UpdateTypeAccount(int.Parse(txtTypeAccountID.Text),txtTypeAccountName.Text);
+            if (count > 0)
+            {
+                MessageBox.Show("Sửa loại tài khoản thành công");
+            }
+            else
+            {
+                MessageBox.Show("Sửa loại tài khoản thất bại");
+            }
+            LoadTypeAccount();
+        }
+
+        private void btnDeleteTypeAccount_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa loại tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                int count = TypeAccountBUS.Instance.DeleteTypeAccount(int.Parse(txtTypeAccountID.Text));
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa loại tài khoản thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa loại tài khoản thất bại");
+                }
+            }
+            LoadTypeAccount();
+        }
+
+        private void btnDeleteAllTypeAccount_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả loại tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                int count = TypeAccountBUS.Instance.DeleteAllTypeAccount();
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa tất cả loại tài khoản thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa tất cả loại tài khoản thất bại");
+                }
+            }
+            LoadTypeAccount();
+        }
+        #endregion
     }
 }
