@@ -27,5 +27,10 @@ namespace BUS
         {
             return CustomerMenuDAO.Instance.GetListCustomerMenu();
         }
+
+        public List<CustomerMenu> GetListCustomerMenuDeleted()
+        {
+            return CustomerMenuDAO.Instance.GetListCustomerMenuDeleted();
+        }
     }
 }

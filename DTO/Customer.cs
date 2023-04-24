@@ -15,6 +15,15 @@ namespace DTO
         private int m_LoaiKH;
         private string m_gioiTinh;
 
+        public Customer(string maKH, string tenKH, string soDienThoai, int loaiKH, string gioiTinh)
+        {
+            m_MaKH = maKH;
+            m_TenKH = tenKH;
+            m_SoDienThoai = soDienThoai;
+            m_LoaiKH = loaiKH;
+            m_gioiTinh = gioiTinh;
+        }
+
         public string MaKH { get => m_MaKH; set => m_MaKH = value; }
         public string TenKH { get => m_TenKH; set => m_TenKH = value; }
         public string SoDienThoai { get => m_SoDienThoai; set => m_SoDienThoai = value; }
@@ -26,17 +35,10 @@ namespace DTO
             this.m_MaKH = row["MAKH"].ToString();
             this.m_TenKH = row["TENKH"].ToString();
             this.m_SoDienThoai = row["SODIENTHOAI"].ToString();
-            this.m_LoaiKH = (int)row["LoaiKH"];
+            this.m_LoaiKH = (int) row["LoaiKH"];
             this.m_gioiTinh = row["GioiTinh"].ToString();
         }
 
-        public Customer(string maKH, string tenKH, string soDienThoai, int loaiKH, string gioiTinh)
-        {
-            m_MaKH = maKH;
-            m_TenKH = tenKH;
-            m_SoDienThoai = soDienThoai;
-            m_LoaiKH = loaiKH;
-            m_gioiTinh = gioiTinh;
-        }
+       
     }
 }

@@ -36,5 +36,19 @@ namespace DAO
             }
             return list;
         }
+
+        public List<CustomerMenu> GetListCustomerMenuDeleted()
+        {
+            List<CustomerMenu> list = new List<CustomerMenu>();
+            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b WHERE a.LoaiKH = b.MaLoai and a.TrangThai = 0";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+
+            foreach (DataRow item in data.Rows)
+            {
+                CustomerMenu customerMenu = new CustomerMenu(item);
+                list.Add(customerMenu);
+            }
+            return list;
+        }
     }
 }

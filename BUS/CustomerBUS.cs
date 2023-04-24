@@ -33,14 +33,14 @@ namespace BUS
             return CustomerDAO.Instance.GetListAllCustomer();
         }
 
-        public int AddNewCustomer(string name, string phone, int type)
+        public int AddNewCustomer(string name, string phone, int type,string gender)
         {
-            return CustomerDAO.Instance.AddNewCustomer(name, phone, type);
+            return CustomerDAO.Instance.AddNewCustomer(name, phone, type,gender);
         }
 
-        public int EditCustomer(string id, string name, string phone, int type)
+        public int EditCustomer(string id, string name, string phone, int type, string gender)
         {
-            return CustomerDAO.Instance.EditCustomer(id,name, phone, type);
+            return CustomerDAO.Instance.EditCustomer(id,name, phone, type,gender);
         }
 
         public int DeleteCustomer(string id)
@@ -51,6 +51,22 @@ namespace BUS
         public int DeleteAllCustomer()
         {
             return CustomerDAO.Instance.DeleteAllCustomer();
+        }
+
+        public string GetCustomerID()
+        {
+            return CustomerDAO.Instance.GetCustomerID();
+        }
+
+       
+        public int RestoreCustomer(string id)
+        {
+            return CustomerDAO.Instance.RestoreCustomer(id);
+        }
+
+        public int RestoreAllCustomer()
+        {
+            return CustomerDAO.Instance.RestoreAllCustomer();
         }
     }
 }

@@ -29,10 +29,6 @@ namespace BUS
         {
             return SizeProductDAO.Instance.GetSizeProduct();
         }
-        public int GetSizeIDMax()
-        {
-            return SizeProductDAO.Instance.GetListSizeIDMax();
-        }
 
         public int AddSizeProduct(string sizeName, float sizePrice)
         {

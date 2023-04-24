@@ -25,7 +25,7 @@ namespace DAO
         public List<Customer> GetListCustomer()
         {
             List<Customer> list = new List<Customer>();
-            string query = "SELECT * FROM Customer WHERE TrangThai = 1";
+            string query = "SELECT * FROM KHACHHANG WHERE TrangThai = 1";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach(DataRow item in data.Rows)
             {
@@ -39,7 +39,7 @@ namespace DAO
         public List<Customer> GetListAllCustomer()
         {
             List<Customer> list = new List<Customer>();
-            string query = "SELECT * FROM Customer";
+            string query = "SELECT * FROM KHACHHANG";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
@@ -50,29 +50,30 @@ namespace DAO
             return list;
         }
 
-        public int AddNewCustomer(string name, string phone, int type)
-        {
-<<<<<<< HEAD
-            string id = string.Format("KH{0}", GetListAllCustomer().Count+1);
-=======
-
-            string id = string.Format("KH{0}", count + 1);
->>>>>>> e6a619c7aafe457ca087e59e2c4851fe5e5443df
-            string query = String.Format("INSERT KHACHHANG VALUES('{0}',N'{1}','{2}',1,{3})",id, name, phone, type);
+        public int AddNewCustomer(string name, string phone, int type, string gender)
+        {            
+            string query = String.Format("INSERT KHACHHANG VALUES('{0}',N'{1}','{2}',1,{3},N'{4}')",GetCustomerID(), name, phone, type,gender);
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
 
-        public int EditCustomer(string id, string name, string phone, int type)
+        public string GetCustomerID()
         {
-            string query = String.Format("UPDATE KHACHHANG SET TENKH = {1} , SODIENTHOAI = {2} , LOAIKH = {3} WHERE MAKH = {0}", id, name, phone, type);
+            int numberID = GetListCustomer().Count;
+            string id = string.Format("KH{0}",numberID+1);
+            return id;
+        }
+
+        public int EditCustomer(string id, string name, string phone, int type, string gender)
+        {
+            string query = String.Format("UPDATE KHACHHANG SET TENKH = N'{1}' , SODIENTHOAI = '{2}' , LOAIKH = {3} , GioiTinh = N'{4}' WHERE MAKH = '{0}' ", id, name, phone, type,gender);
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
 
         public int DeleteCustomer(string id)
         {
-            string query = String.Format("UPDATE KHACHHANG SET TRANGTHAI = 0 WHERE MAKH = {0}", id);
+            string query = String.Format("UPDATE KHACHHANG SET TRANGTHAI = 0 WHERE MAKH = '{0}'", id);
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
@@ -80,6 +81,23 @@ namespace DAO
         public int DeleteAllCustomer()
         {
             string query = String.Format("UPDATE KHACHHANG SET TRANGTHAI = 0 ");
+            int row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
+
+        //Deleted
+     
+       
+        public int RestoreCustomer(string id)
+        {
+            string query = String.Format("UPDATE KHACHHANG SET TRANGTHAI = 1 WHERE MAKH = '{0}'", id);
+            int row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
+
+        public int RestoreAllCustomer()
+        {
+            string query = String.Format("UPDATE KHACHHANG SET TRANGTHAI = 1 ");
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
