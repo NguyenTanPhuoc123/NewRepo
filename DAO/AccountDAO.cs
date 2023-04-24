@@ -36,6 +36,11 @@ namespace DAO
             return false;
         }
 
+        public string GetMD5(string passWord)
+        {
+            return Utils.GetMD5(passWord);
+        }
+
         public List<Account> GetListAccount()
         {
             List<Account> lst = new List<Account>();

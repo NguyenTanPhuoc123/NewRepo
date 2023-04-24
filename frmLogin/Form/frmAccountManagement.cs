@@ -1,5 +1,4 @@
-﻿using frmLogin.Data_Access_Layer;
-using frmLogin.Data_Tranfer_Object;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

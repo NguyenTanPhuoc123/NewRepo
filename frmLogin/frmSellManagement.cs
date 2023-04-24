@@ -1,4 +1,4 @@
-﻿using frmLogin.Data_Access_Layer;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using frmLogin.Data_Tranfer_Object;
 using BUS;
 using DTO;
 
@@ -102,11 +101,8 @@ namespace frmLogin
 
         public void ShowBill(int nTableId)
         {
-            List<MenuTable> menus = MenuDAF.Instance.GetListMenu(nTableId);
-            for(int i = 0; i < menus.Count; i++)
-            {
-                ListViewItem lsvItem = new ListViewItem();
-            }
+            
+            
         }
         private void btnTable_Click(object sender, EventArgs e)
         {

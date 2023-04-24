@@ -1,5 +1,4 @@
-﻿using frmLogin.Data_Access_Layer;
-using frmLogin.Data_Tranfer_Object;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -104,7 +103,7 @@ namespace frmLogin
         private void txtAccept_Click(object sender, EventArgs e)
         {
             string password = account.Password;
-            if (Utils.GetMD5(txtOldPassword.Text) == password)
+            if (AccountBUS.Instance.GetMD5(txtOldPassword.Text) == password)
             {
                 if (string.IsNullOrEmpty(txtNewPassword.Text) || string.IsNullOrEmpty(txtRepeatPassword.Text))
                 {

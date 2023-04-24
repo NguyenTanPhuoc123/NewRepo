@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Web;
+using System.Threading.Tasks;
 
-namespace frmLogin.Data_Access_Layer
+
+namespace frmLogin
 {
-    public class Utils
+     public class Utils
     {
         public static string GetMD5(string str)
         {

@@ -53,20 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data Access Layer\BillDetailDAF.cs" />
-    <Compile Include="Data Access Layer\BillDAF.cs" />
-    <Compile Include="Data Access Layer\CategoryFoodDAF.cs" />
-    <Compile Include="Data Access Layer\DataProvider.cs" />
-    <Compile Include="Data Access Layer\DiscountDAF.cs" />
-    <Compile Include="Data Access Layer\MenuDAF.cs" />
-    <Compile Include="Data Access Layer\ProductDAF.cs" />
-    <Compile Include="Data Access Layer\Utils.cs" />
-    <Compile Include="Data Tranfer Object\Bill.cs" />
-    <Compile Include="Data Tranfer Object\BillDetail.cs" />
-    <Compile Include="Data Tranfer Object\CategoryFood.cs" />
-    <Compile Include="Data Tranfer Object\Discount.cs" />
-    <Compile Include="Data Tranfer Object\MenuTable.cs" />
-    <Compile Include="Data Tranfer Object\Product.cs" />
     <Compile Include="Form\frmAccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>

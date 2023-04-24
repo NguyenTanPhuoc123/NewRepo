@@ -71,5 +71,10 @@ namespace BUS
         {
             return AccountDAO.Instance.EditAccount(username, employeeID, typeEmployID);
         }
+
+        public string GetMD5(string password)
+        {
+            return AccountDAO.Instance.GetMD5(password);
+        }
     }
 }

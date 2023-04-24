@@ -48,15 +48,7 @@ namespace DAO
             }
             return list;
         }
-        public int GetListSizeIDMax()
-        {
-            int sizeID = 0;
-            int id = DataProvider.ExecuteScalarCommand("Select MAX(MAKICHTHUOC) from KICHTHUOC", null);
-            if (id >0)
-                sizeID = id;
-
-            return sizeID+1;
-        }
+        
 
         public int AddSizeProduct(string sizeName, float sizePrice)
         {
