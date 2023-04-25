@@ -559,6 +559,7 @@ namespace frmLogin
             this.Column6.HeaderText = "Mã loại khách hàng";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
+            this.Column6.Visible = false;
             // 
             // frmCustomerManagement
             // 

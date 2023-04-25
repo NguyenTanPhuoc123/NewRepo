@@ -160,5 +160,7 @@ namespace frmLogin
                     MessageBox.Show("Xóa tất cả khách hàng  thất bại", "Xóa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        
     }
 }

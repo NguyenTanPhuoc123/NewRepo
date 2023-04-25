@@ -197,17 +197,15 @@ namespace frmLogin
             {
                 txtCustomerID.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[0].Value.ToString();
                 txtCustomerName.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[1].Value.ToString();
-                string gender = dtgvListCustomerDeleted.SelectedRows[0].Cells[2].Value.ToString();
+                string gender = dtgvListCustomerDeleted.SelectedRows[0].Cells[5].Value.ToString();
                 if (gender == radMale.Text)
-                    radMale.Checked = true;
+                    radCustomerMale.Checked = true;
                 else
-                    radFemale.Checked = true;
-                txtCustomerNumberPhone.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[3].Value.ToString();
+                    radCustomerFemale.Checked = true;
+                txtCustomerNumberPhone.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[2].Value.ToString();
                 txtTypeCustomer.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[4].Value.ToString();
             }
         }
-
-
 
         #endregion
 
@@ -221,6 +219,7 @@ namespace frmLogin
                 {
                     MessageBox.Show("Khôi phục khách hàng thành công", "Khôi phục khách hàng", MessageBoxButtons.OK);
                     LoadCustomerDeleted();
+                   
                 }
                 else
                     MessageBox.Show("Khôi phục khách hàng  thất bại", "Khôi phục khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
