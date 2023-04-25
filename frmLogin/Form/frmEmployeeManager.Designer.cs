@@ -140,10 +140,13 @@ namespace frmLogin
             this.cbFillEmployee.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillEmployee.ItemHeight = 30;
+            this.cbFillEmployee.Items.AddRange(new object[] {
+            "Tất cả ALL"});
             this.cbFillEmployee.Location = new System.Drawing.Point(852, 269);
             this.cbFillEmployee.Name = "cbFillEmployee";
             this.cbFillEmployee.Size = new System.Drawing.Size(163, 36);
             this.cbFillEmployee.TabIndex = 13;
+            this.cbFillEmployee.SelectedIndexChanged += new System.EventHandler(this.cbFillEmployee_SelectedIndexChanged);
             // 
             // dtgvListEmployee
             // 

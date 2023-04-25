@@ -38,6 +38,7 @@ namespace frmLogin
             btnDeleteAllEmployee.Enabled = true;
             btnEditEmployee.Enabled = true;
             radMale.Checked = true;
+            LoadCbFill();
         }
 
         private void dtgvListEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -91,6 +92,15 @@ namespace frmLogin
             frmEmployeeManager_Load(sender, e);
         }
 
+        public void LoadCbFill()
+        {
+            cbFillEmployee.SelectedIndex = 0;
+            List<Position> positions = PositionBUS.Instance.GetListPosition();
+            for (int i=0;i<positions.Count; i++)
+            {
+                cbFillEmployee.Items.Add(positions[i].TenChucVu);
+            }
+        }
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
             int i = EmployeeMenuBUS.Instance.GetListEmployee().Count + 1;
@@ -170,6 +180,11 @@ namespace frmLogin
             {
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID();
             }
+        }
+
+        private void cbFillEmployee_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
