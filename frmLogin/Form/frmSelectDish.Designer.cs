@@ -44,6 +44,8 @@ namespace frmLogin
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearchDish = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpDishDetail = new System.Windows.Forms.GroupBox();
+            this.cbSize = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.numQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDishPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -57,8 +59,6 @@ namespace frmLogin
             this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
             this.flpAddDish = new System.Windows.Forms.FlowLayoutPanel();
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cbSize = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.grpDishDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -139,7 +139,7 @@ namespace frmLogin
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth16Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(80, 80);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
@@ -158,7 +158,6 @@ namespace frmLogin
             this.cbCategoryDish.Name = "cbCategoryDish";
             this.cbCategoryDish.Size = new System.Drawing.Size(155, 36);
             this.cbCategoryDish.TabIndex = 4;
-            this.cbCategoryDish.SelectedIndexChanged += new System.EventHandler(this.cbCategoryDish_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -209,6 +208,30 @@ namespace frmLogin
             this.grpDishDetail.TabIndex = 8;
             this.grpDishDetail.TabStop = false;
             this.grpDishDetail.Text = "Chi tiết món";
+            // 
+            // cbSize
+            // 
+            this.cbSize.BackColor = System.Drawing.Color.Transparent;
+            this.cbSize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSize.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSize.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbSize.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbSize.ItemHeight = 30;
+            this.cbSize.Location = new System.Drawing.Point(258, 355);
+            this.cbSize.Name = "cbSize";
+            this.cbSize.Size = new System.Drawing.Size(74, 36);
+            this.cbSize.TabIndex = 10;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(170, 362);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 18);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Kích thước:";
             // 
             // numQuantity
             // 
@@ -332,11 +355,11 @@ namespace frmLogin
             // 
             // pbPictureDish
             // 
+            this.pbPictureDish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbPictureDish.ImageRotate = 0F;
             this.pbPictureDish.Location = new System.Drawing.Point(72, 27);
             this.pbPictureDish.Name = "pbPictureDish";
             this.pbPictureDish.Size = new System.Drawing.Size(229, 152);
-            this.pbPictureDish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPictureDish.TabIndex = 0;
             this.pbPictureDish.TabStop = false;
             // 
@@ -383,7 +406,6 @@ namespace frmLogin
             this.flpAddDish.Name = "flpAddDish";
             this.flpAddDish.Size = new System.Drawing.Size(304, 535);
             this.flpAddDish.TabIndex = 10;
-            this.flpAddDish.DoubleClick += new System.EventHandler(this.flowLayoutPanel1_DoubleClick);
             // 
             // btnSelectDish
             // 
@@ -402,30 +424,6 @@ namespace frmLogin
             this.btnSelectDish.Size = new System.Drawing.Size(150, 45);
             this.btnSelectDish.TabIndex = 11;
             this.btnSelectDish.Text = "Lên món";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(170, 362);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 18);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Kích thước:";
-            // 
-            // cbSize
-            // 
-            this.cbSize.BackColor = System.Drawing.Color.Transparent;
-            this.cbSize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbSize.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbSize.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbSize.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbSize.ItemHeight = 30;
-            this.cbSize.Location = new System.Drawing.Point(258, 355);
-            this.cbSize.Name = "cbSize";
-            this.cbSize.Size = new System.Drawing.Size(74, 36);
-            this.cbSize.TabIndex = 10;
             // 
             // frmSelectDish
             // 

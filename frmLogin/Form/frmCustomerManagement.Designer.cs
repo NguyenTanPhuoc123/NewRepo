@@ -39,6 +39,12 @@ namespace frmLogin
             this.cbFillCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchCustomer = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtgvListCustomer = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpCustomerInfo = new System.Windows.Forms.GroupBox();
             this.radFemale = new System.Windows.Forms.RadioButton();
             this.radMale = new System.Windows.Forms.RadioButton();
@@ -58,13 +64,7 @@ namespace frmLogin
             this.btnDeleteAllCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomerDeleted = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearchCustomer = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListCustomer)).BeginInit();
             this.grpCustomerInfo.SuspendLayout();
             this.grpFunctionCustomer.SuspendLayout();
@@ -89,6 +89,11 @@ namespace frmLogin
             this.cbSortCustomer.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbSortCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortCustomer.ItemHeight = 30;
+            this.cbSortCustomer.Items.AddRange(new object[] {
+            "Theo mã khách hàng (thuận)",
+            "Theo mã khách hàng(nghịch)",
+            "Theo tên khách hàng(thuận)",
+            "Theo tên khách hàng(nghịch)"});
             this.cbSortCustomer.Location = new System.Drawing.Point(12, 293);
             this.cbSortCustomer.Name = "cbSortCustomer";
             this.cbSortCustomer.Size = new System.Drawing.Size(186, 36);
@@ -137,6 +142,7 @@ namespace frmLogin
             this.txtSearchCustomer.SelectedText = "";
             this.txtSearchCustomer.Size = new System.Drawing.Size(272, 36);
             this.txtSearchCustomer.TabIndex = 4;
+            this.txtSearchCustomer.TextChanged += new System.EventHandler(this.txtSearchCustomer_TextChanged);
             // 
             // dtgvListCustomer
             // 
@@ -200,6 +206,49 @@ namespace frmLogin
             this.dtgvListCustomer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListCustomer.SelectionChanged += new System.EventHandler(this.dtgvListCustomer_SelectionChanged);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "ID";
+            this.Column1.HeaderText = "Mã khách hàng";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Name";
+            this.Column2.HeaderText = "Tên khách hàng";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Gender";
+            this.Column3.HeaderText = "Giới tính";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Phone";
+            this.Column4.HeaderText = "Số điện thoại";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "TypeName";
+            this.Column5.HeaderText = "Loại khách hàng";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "TypeID";
+            this.Column6.HeaderText = "Mã loại khách hàng";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Visible = false;
+            // 
             // grpCustomerInfo
             // 
             this.grpCustomerInfo.Controls.Add(this.radFemale);
@@ -261,7 +310,7 @@ namespace frmLogin
             this.cbTypeCustomer.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbTypeCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbTypeCustomer.ItemHeight = 30;
-            this.cbTypeCustomer.Location = new System.Drawing.Point(173, 201);
+            this.cbTypeCustomer.Location = new System.Drawing.Point(162, 201);
             this.cbTypeCustomer.Name = "cbTypeCustomer";
             this.cbTypeCustomer.Size = new System.Drawing.Size(175, 36);
             this.cbTypeCustomer.TabIndex = 7;
@@ -502,64 +551,22 @@ namespace frmLogin
             this.btnCustomerDeleted.Text = "Khách hàng đã xóa";
             this.btnCustomerDeleted.Click += new System.EventHandler(this.btnCustomerDeleted_Click);
             // 
-            // guna2Button1
+            // btnSearchCustomer
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(671, 292);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(105, 36);
-            this.guna2Button1.TabIndex = 5;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "ID";
-            this.Column1.HeaderText = "Mã khách hàng";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Name";
-            this.Column2.HeaderText = "Tên khách hàng";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Gender";
-            this.Column3.HeaderText = "Giới tính";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Phone";
-            this.Column4.HeaderText = "Số điện thoại";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "TypeName";
-            this.Column5.HeaderText = "Loại khách hàng";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "TypeID";
-            this.Column6.HeaderText = "Mã loại khách hàng";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Visible = false;
+            this.btnSearchCustomer.BorderRadius = 10;
+            this.btnSearchCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchCustomer.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSearchCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearchCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnSearchCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchCustomer.Image")));
+            this.btnSearchCustomer.Location = new System.Drawing.Point(671, 292);
+            this.btnSearchCustomer.Name = "btnSearchCustomer";
+            this.btnSearchCustomer.Size = new System.Drawing.Size(105, 36);
+            this.btnSearchCustomer.TabIndex = 5;
+            this.btnSearchCustomer.Click += new System.EventHandler(this.btnSearchCustomer_Click);
             // 
             // frmCustomerManagement
             // 
@@ -569,7 +576,7 @@ namespace frmLogin
             this.Controls.Add(this.grpFunctionCustomer);
             this.Controls.Add(this.grpCustomerInfo);
             this.Controls.Add(this.dtgvListCustomer);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnSearchCustomer);
             this.Controls.Add(this.txtSearchCustomer);
             this.Controls.Add(this.cbFillCustomer);
             this.Controls.Add(this.label2);
@@ -595,7 +602,7 @@ namespace frmLogin
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ComboBox cbFillCustomer;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchCustomer;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnSearchCustomer;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvListCustomer;
         private Guna.UI2.WinForms.Guna2Button btnDeleteAllCustomer;
         private Guna.UI2.WinForms.Guna2Button btnCustomerDeleted;

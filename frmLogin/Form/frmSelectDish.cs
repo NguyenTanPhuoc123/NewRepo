@@ -69,22 +69,13 @@ namespace frmLogin
             if (lstvListDish.SelectedItems.Count > 0)
             {
                 int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
-                pbPictureDish.Image = imageList1.Images[i];
+               pbPictureDish.Image = imageList1.Images[i];
+                pbPictureDish.SizeMode = PictureBoxSizeMode.Zoom;
                 txtDishName.Text = lstvListDish.SelectedItems[0].Text;
                 txtCategoryDish.Text = lstvListDish.SelectedItems[0].SubItems[1].Text;
                 txtDishPrice.Text = lstvListDish.SelectedItems[0].SubItems[2].Text;
             }
-        }
-
-        private void flowLayoutPanel1_DoubleClick(object sender, EventArgs e)
-        {
-            Usercontrol usercontrol = new Usercontrol();
-            this.Controls.Remove(usercontrol);
-        }
-
-        private void cbCategoryDish_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
+        }       
+    
     }
 }

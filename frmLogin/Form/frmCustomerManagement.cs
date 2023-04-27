@@ -17,6 +17,7 @@ namespace frmLogin
         public frmCustomerManagement()
         {
             InitializeComponent();
+           
         }
 
         private void btnCustomerDeleted_Click(object sender, EventArgs e)
@@ -32,6 +33,7 @@ namespace frmLogin
             cbTypeCustomer.DisplayMember = "TypeName";
             dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.GetListCustomerMenu();
             ResetInfo();
+           
         }
 
         public void ResetInfo()
@@ -41,8 +43,8 @@ namespace frmLogin
             txtCustomerNumberPhone.Clear();
             txtSearchCustomer.Clear();
             cbTypeCustomer.SelectedIndex = 0;
-            //cbFillCustomer.SelectedIndex = 0;
-            //cbSortCustomer.SelectedIndex = 0;
+            cbFillCustomer.SelectedIndex = 0;
+            cbSortCustomer.SelectedIndex = 0;
             radMale.Checked = true;
             btnSaveCustomer.Enabled = false;
             btnEditCustomer.Enabled = true;
@@ -161,6 +163,14 @@ namespace frmLogin
             }
         }
 
-        
+        private void txtSearchCustomer_TextChanged(object sender, EventArgs e)
+        {
+            dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SearchCustomerByName(txtSearchCustomer.Text);
+        }
+
+        private void btnSearchCustomer_Click(object sender, EventArgs e)
+        {
+            dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SearchCustomerByName(txtSearchCustomer.Text);
+        }
     }
 }

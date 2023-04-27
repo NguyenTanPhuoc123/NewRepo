@@ -32,5 +32,12 @@ namespace BUS
         {
             return CustomerMenuDAO.Instance.GetListCustomerMenuDeleted();
         }
+
+        public List<CustomerMenu> SearchCustomerByName(string name)
+        {
+            return CustomerMenuDAO.Instance.SearchCustomerByName(name);
+        }
+
+       
     }
 }

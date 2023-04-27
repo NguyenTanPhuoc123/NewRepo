@@ -30,7 +30,6 @@ D:\DOANWINFORM\DAO\bin\Debug\DTO.dll
 D:\DOANWINFORM\DAO\bin\Debug\DTO.pdb
 D:\DOANWINFORM\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
 D:\DOANWINFORM\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
-D:\DOANWINFORM\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\DOANWINFORM\DAO\obj\Debug\DAO.dll
 D:\DOANWINFORM\DAO\obj\Debug\DAO.pdb
 C:\Users\Admin\Desktop\DOAN\DAO\bin\Debug\DAO.dll

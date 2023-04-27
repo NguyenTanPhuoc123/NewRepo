@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
-
+using System.Data.SqlClient;
 namespace DAO
 {
     public class CustomerMenuDAO
@@ -50,5 +50,21 @@ namespace DAO
             }
             return list;
         }
+
+        public List<CustomerMenu> SearchCustomerByName(string name)
+        {
+            List<CustomerMenu> list = new List<CustomerMenu>();
+            string query = string.Format("SELECT * FROM KHACHHANG a, LOAIKHACHHANG b WHERE a.LoaiKH = b.MaLoai and a.TrangThai = 1 and   dbo.fChuyenCoDauThanhKhongDau(a.TenKH) LIKE dbo.fChuyenCoDauThanhKhongDau(N'%{0}%')", name);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+
+            foreach (DataRow item in data.Rows)
+            {
+                CustomerMenu customerMenu = new CustomerMenu(item);
+                list.Add(customerMenu);
+            }
+            return list;
+        }
+
+        
     }
 }
