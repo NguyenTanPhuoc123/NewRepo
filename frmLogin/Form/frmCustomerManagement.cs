@@ -165,6 +165,7 @@ namespace frmLogin
 
         private void txtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
+            //laod
             dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SearchCustomerByName(txtSearchCustomer.Text);
         }
 
