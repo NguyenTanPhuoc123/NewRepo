@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -99,15 +100,11 @@ namespace frmLogin
             
         }
 
-        public void ShowBill(int nTableId)
-        {
-            
-            
-        }
+        
         private void btnTable_Click(object sender, EventArgs e)
         {
-            int nTableId = ((sender as Button).Tag as Table).MaBanAn;
-          
+            int tableID = ((sender as Button).Tag as Table).MaBanAn;
+            ShowBill(tableID);
         }
         #region Method
        
@@ -149,7 +146,25 @@ namespace frmLogin
             }
         }
 
+        public void ShowBill(int tableID)
+        {
+            lstvMenuDish.Items.Clear();
+            float total = 0;
 
+            List<MenuDish> listMenuDish = MenuDishBUS.Instance.GetListMenuDishByTableID(tableID);
+            foreach(MenuDish menuDish in listMenuDish)
+            {
+                ListViewItem item = new ListViewItem(menuDish.DishName);
+                item.SubItems.Add(menuDish.Size);
+                item.SubItems.Add(menuDish.Count.ToString());
+                item.SubItems.Add(menuDish.Price.ToString());
+                item.SubItems.Add(menuDish.TotalPrice.ToString());                
+                total += menuDish.TotalPrice;
+                lstvMenuDish.Items.Add(item);
+            }
+            CultureInfo culture = new CultureInfo("vi-VN");
+            lblToltalPrice.Text = total.ToString("c",culture);
+        }
         #endregion
         private void cbLocationTable_SelectedIndexChanged(object sender, EventArgs e)
         {

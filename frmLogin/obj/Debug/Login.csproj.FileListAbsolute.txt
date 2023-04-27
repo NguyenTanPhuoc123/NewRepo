@@ -77,4 +77,3 @@ D:\doanWInform\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
 D:\doanWInform\frmLogin\obj\Debug\zh\frmLogin.resources.dll
 D:\doanWInform\frmLogin\obj\Debug\frmLogin.exe
 D:\doanWInform\frmLogin\obj\Debug\frmLogin.pdb
-D:\doanWInform\frmLogin\obj\Debug\Login.csproj.CopyComplete

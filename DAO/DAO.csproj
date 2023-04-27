@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="AccountDAO.cs" />
     <Compile Include="AccountMenuDAO.cs" />
+    <Compile Include="BillDAO.cs" />
+    <Compile Include="BillInfoDAO.cs" />
     <Compile Include="CategoryFoodDAO.cs" />
     <Compile Include="CustomerDAO.cs" />
     <Compile Include="CustomerMenuDAO.cs" />
@@ -50,6 +52,7 @@
     <Compile Include="EmployeeDAO.cs" />
     <Compile Include="EmployeeMenuDAO.cs" />
     <Compile Include="LocationDAO.cs" />
+    <Compile Include="MenuDishDAO.cs" />
     <Compile Include="PositionDAO.cs" />
     <Compile Include="ProductDAO.cs" />
     <Compile Include="SizeProductDAO.cs" />

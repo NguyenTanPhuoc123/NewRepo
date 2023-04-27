@@ -43,12 +43,15 @@
   <ItemGroup>
     <Compile Include="AccountBUS.cs" />
     <Compile Include="AccountMenuBUS.cs" />
+    <Compile Include="BillBUS.cs" />
+    <Compile Include="BillInfoBUS.cs" />
     <Compile Include="CategoryFoodBUS.cs" />
     <Compile Include="CustomerBUS.cs" />
     <Compile Include="CustomerMenuBUS.cs" />
     <Compile Include="EmployeeBUS.cs" />
     <Compile Include="EmployeeMenuBUS.cs" />
     <Compile Include="LocationBUS.cs" />
+    <Compile Include="MenuDishBUS.cs" />
     <Compile Include="PositionBUS.cs" />
     <Compile Include="ProductBUS.cs" />
     <Compile Include="SizeProductBUS.cs" />
