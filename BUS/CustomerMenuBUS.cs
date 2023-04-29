@@ -38,9 +38,9 @@ namespace BUS
             return CustomerMenuDAO.Instance.SearchCustomerByName(name);
         }
 
-<<<<<<< HEAD
+
        
-=======
+
         public List<CustomerMenu> SortCustomerByID(int typeID)
         {
             return CustomerMenuDAO.Instance.SortCustomerByID(typeID);
@@ -65,6 +65,5 @@ namespace BUS
         {
             return CustomerMenuDAO.Instance.FillListCustomerMenu(typeID);
         }
->>>>>>> 48c3914ddd7f5b16947abace3ded29db95a6cf44
     }
 }

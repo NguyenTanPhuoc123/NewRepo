@@ -9,13 +9,12 @@ namespace DAO
 {
     public class DataProvider
     {
-<<<<<<< HEAD
+
         private static string connect = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
         //private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
-=======
+
         //private static string connect = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
-        private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
->>>>>>> 48c3914ddd7f5b16947abace3ded29db95a6cf44
+        //private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
         //private static string connect = @"Data Source=NTP;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
 
        

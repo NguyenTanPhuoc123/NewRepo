@@ -17,18 +17,18 @@ namespace frmLogin
         public frmCustomerManagement()
         {
             InitializeComponent();
-           
+
         }
-       
+
         private void frmCustomerManagement_Load(object sender, EventArgs e)
-        {          
+        {
             cbTypeCustomer.DataSource = TypeCustomerBUS.Instance.GetListTypeCustomer();
             cbTypeCustomer.ValueMember = "TypeID";
             cbTypeCustomer.DisplayMember = "TypeName";
             dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.GetListCustomerMenu();
             LoadFillCustomerItem();
             ResetInfo();
-           
+
         }
         #region Method
         public void ResetInfo()
@@ -187,8 +187,8 @@ namespace frmLogin
         {
             dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SearchCustomerByName(txtSearchCustomer.Text);
         }
-<<<<<<< HEAD
-=======
+
+
 
         private void cbSortCustomer_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -233,7 +233,5 @@ namespace frmLogin
             }
         }
         #endregion
-       
->>>>>>> 48c3914ddd7f5b16947abace3ded29db95a6cf44
     }
 }
