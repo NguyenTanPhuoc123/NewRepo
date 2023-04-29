@@ -56,11 +56,11 @@ namespace frmLogin
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnChangeTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnSale = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblToltalPrice = new System.Windows.Forms.Label();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.numSale)).BeginInit();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -306,6 +306,7 @@ namespace frmLogin
             this.btnDelete.Size = new System.Drawing.Size(130, 45);
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lstvMenuDish
             // 
@@ -315,6 +316,7 @@ namespace frmLogin
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
+            this.lstvMenuDish.FullRowSelect = true;
             this.lstvMenuDish.GridLines = true;
             this.lstvMenuDish.HideSelection = false;
             this.lstvMenuDish.Location = new System.Drawing.Point(668, 170);
@@ -343,6 +345,11 @@ namespace frmLogin
             // 
             this.columnHeader4.Text = "Đơn giá";
             this.columnHeader4.Width = 124;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Thành tiền";
+            this.columnHeader5.Width = 213;
             // 
             // btnChangeTable
             // 
@@ -379,6 +386,7 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(1082, 487);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 18);
@@ -388,16 +396,12 @@ namespace frmLogin
             // lblToltalPrice
             // 
             this.lblToltalPrice.AutoSize = true;
+            this.lblToltalPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblToltalPrice.Location = new System.Drawing.Point(1161, 487);
             this.lblToltalPrice.Name = "lblToltalPrice";
             this.lblToltalPrice.Size = new System.Drawing.Size(16, 18);
             this.lblToltalPrice.TabIndex = 26;
             this.lblToltalPrice.Text = "0";
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Thành tiền";
-            this.columnHeader5.Width = 213;
             // 
             // frmSellManagement
             // 

@@ -36,5 +36,18 @@ namespace DAO
             return list;
         }
 
+        public string GetBIllIDByTableID(int tableID)
+        {
+           
+            string query = string.Format("Select * from HOADON WHERE TRANGTHAI = 1 and SOBAN = {0}",tableID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            while ( data.Rows.Count>0)
+            {
+                Bill bill = new Bill(data.Rows[0]);
+                return bill.ID;
+            }
+
+            return null;
+        }
     }
 }

@@ -64,7 +64,7 @@ namespace frmLogin
         private void btnSelectDish_Click(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
-            frmSelectDish frm = new frmSelectDish();
+            frmSelectDish frm = new frmSelectDish(this);
             frm.Show();
         }
 
@@ -165,6 +165,21 @@ namespace frmLogin
             CultureInfo culture = new CultureInfo("vi-VN");
             lblToltalPrice.Text = total.ToString("c",culture);
         }
+
+        public void GetListDishSelected(MenuDish menu)
+        {
+            Table table = lstvMenuDish.Tag as Table;          
+            float total = 0;
+            ListViewItem item = new ListViewItem(menu.DishName);
+            item.SubItems.Add(menu.Size.ToString());
+            item.SubItems.Add(menu.Count.ToString());
+            item.SubItems.Add(menu.Price.ToString());
+            item.SubItems.Add((menu.TotalPrice.ToString()));
+            total += menu.TotalPrice;
+            lstvMenuDish.Items.Add(item);
+            CultureInfo culture = new CultureInfo("vi-VN");
+            lblToltalPrice.Text = total.ToString("c", culture);
+        }
         #endregion
         private void cbLocationTable_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -177,6 +192,12 @@ namespace frmLogin
             GetListTableByLocationID(id);
         }
 
-        
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (lstvMenuDish.SelectedItems.Count > 0)
+            {
+                lstvMenuDish.SelectedItems[0].Remove();
+            }
+        }
     }
 }

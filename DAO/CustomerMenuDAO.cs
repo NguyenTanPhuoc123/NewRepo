@@ -65,6 +65,56 @@ namespace DAO
             return list;
         }
 
-        
+        public List<CustomerMenu> SortCustomerByID()
+        {
+            List<CustomerMenu> list = new List<CustomerMenu>();
+            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 Order by MAKH";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow row in data.Rows)
+            {
+                CustomerMenu cus = new CustomerMenu(row);
+                list.Add(cus);
+            }
+            return list;
+        }
+
+        public List<CustomerMenu> SortCustomerByIDDecrease()
+        {
+            List<CustomerMenu> list = new List<CustomerMenu>();
+            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 Order by MAKH DESC";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow row in data.Rows)
+            {
+                CustomerMenu cus = new CustomerMenu(row);
+                list.Add(cus);
+            }
+            return list;
+        }
+
+        public List<CustomerMenu> SortCustomerByName()
+        {
+            List<CustomerMenu> list = new List<CustomerMenu>();
+            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 Order by LTRIM(RIGHT (TENKH, CHARINDEX(CHAR(32), REVERSE(TENKH))))";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow row in data.Rows)
+            {
+                CustomerMenu cus = new CustomerMenu(row);
+                list.Add(cus);
+            }
+            return list;
+        }
+
+        public List<CustomerMenu> SortCustomerByNameDecrease()
+        {
+            List<CustomerMenu> list = new List<CustomerMenu>();
+            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 Order by LTRIM(RIGHT (TENKH, CHARINDEX(CHAR(32), REVERSE(TENKH)))) DESC";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow row in data.Rows)
+            {
+                CustomerMenu cus = new CustomerMenu(row);
+                list.Add(cus);
+            }
+            return list;
+        }
     }
 }

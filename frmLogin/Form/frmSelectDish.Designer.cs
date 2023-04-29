@@ -424,6 +424,7 @@ namespace frmLogin
             this.btnSelectDish.Size = new System.Drawing.Size(150, 45);
             this.btnSelectDish.TabIndex = 11;
             this.btnSelectDish.Text = "Lên món";
+            this.btnSelectDish.Click += new System.EventHandler(this.btnSelectDish_Click);
             // 
             // frmSelectDish
             // 

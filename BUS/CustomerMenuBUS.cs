@@ -38,6 +38,26 @@ namespace BUS
             return CustomerMenuDAO.Instance.SearchCustomerByName(name);
         }
 
-       
+        public List<CustomerMenu> SortCustomerByID()
+        {
+            return CustomerMenuDAO.Instance.SortCustomerByID();
+        }
+
+        public List<CustomerMenu> SortCustomerByIDDecrease()
+        {
+            return CustomerMenuDAO.Instance.SortCustomerByIDDecrease();
+        }
+
+        public List<CustomerMenu> SortCustomerByName()
+        {
+            return CustomerMenuDAO.Instance.SortCustomerByName();
+        }
+
+        public List<CustomerMenu> SortCustomerByNameDecrease()
+        {
+            return CustomerMenuDAO.Instance.SortCustomerByNameDecrease();
+        }
+
+
     }
 }

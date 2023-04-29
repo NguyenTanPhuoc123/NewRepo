@@ -14,10 +14,12 @@ using System.IO;
 namespace frmLogin
 {
     public partial class frmSelectDish : Form
-    {
-        public frmSelectDish()
+    {       
+        frmSellManagement frmSell = new frmSellManagement(null);
+        public frmSelectDish(frmSellManagement frm)
         {
             InitializeComponent();
+            frmSell = frm;
         }
 
         private void btnExitFomSelectDish_Click(object sender, EventArgs e)
@@ -40,6 +42,9 @@ namespace frmLogin
             cbCategoryDish.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
             cbCategoryDish.ValueMember = "CategoryID";
             cbCategoryDish.DisplayMember = "CategoryName";
+            cbSize.DataSource = SizeProductBUS.Instance.GetListSizeProduct();
+            cbSize.ValueMember = "SizeID";
+            cbSize.DisplayMember = "SizeName";
         }
         private Image convertbytetoimage(byte[] b)
         {
@@ -75,7 +80,29 @@ namespace frmLogin
                 txtCategoryDish.Text = lstvListDish.SelectedItems[0].SubItems[1].Text;
                 txtDishPrice.Text = lstvListDish.SelectedItems[0].SubItems[2].Text;
             }
-        }       
-    
+        }
+        
+        private void btnSelectDish_Click(object sender, EventArgs e)
+        {
+            float price = float.Parse(txtDishPrice.Text);
+            int sizeID = int.Parse(cbSize.SelectedValue.ToString());
+            float sizePrice = 0;
+            string sizeName = "";
+            foreach(SizeProduct sizeProduct in SizeProductBUS.Instance.GetListSizeProduct())
+            {
+                if (sizeID == sizeProduct.SizeID)
+                {
+                    sizePrice = sizeProduct.Price;
+                    sizeName = sizeProduct.SizeName;
+                }
+            }
+
+            int count = int.Parse(numQuantity.Value.ToString());
+            
+            float totalPrice = price*count+sizePrice;
+            MenuDish menu = new MenuDish(txtDishName.Text,sizeName, int.Parse(numQuantity.Value.ToString()),price,totalPrice);
+            frmSell.GetListDishSelected(menu);
+        }
+        
     }
 }

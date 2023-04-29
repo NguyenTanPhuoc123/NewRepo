@@ -101,5 +101,6 @@ namespace DAO
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
+
     }
 }

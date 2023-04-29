@@ -43,7 +43,7 @@ namespace frmLogin
             txtCustomerNumberPhone.Clear();
             txtSearchCustomer.Clear();
             cbTypeCustomer.SelectedIndex = 0;
-            cbFillCustomer.SelectedIndex = 0;
+            //cbFillCustomer.SelectedIndex = 0;
             cbSortCustomer.SelectedIndex = 0;
             radMale.Checked = true;
             btnSaveCustomer.Enabled = false;
@@ -172,6 +172,20 @@ namespace frmLogin
         private void btnSearchCustomer_Click(object sender, EventArgs e)
         {
             dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SearchCustomerByName(txtSearchCustomer.Text);
+        }
+
+        private void cbSortCustomer_SelectedIndexChanged(object sender, EventArgs e)
+        {           
+             if (cbSortCustomer.SelectedIndex == 1)
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByID();
+            else if(cbSortCustomer.SelectedIndex == 2)
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByIDDecrease();
+            else if (cbSortCustomer.SelectedIndex == 3)
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByName();
+            else if (cbSortCustomer.SelectedIndex == 4)
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByNameDecrease();
+            else
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.GetListCustomerMenu();
         }
     }
 }
