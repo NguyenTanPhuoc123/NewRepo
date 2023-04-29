@@ -12,15 +12,14 @@ namespace DTO
         private string m_BillID;
         private string m_ProductID;
         private int m_SizeID;
-        private int m_Count;           
+        private int m_Count;  
 
         public BillInfo(string billID, string productID, int sizeID, int count)
         {
             m_BillID = billID;
             m_ProductID = productID;
             m_SizeID = sizeID;
-            m_Count = count;
-           
+            m_Count = count;          
         }
 
         public string BillID { get => m_BillID; set => m_BillID = value; }
@@ -33,7 +32,7 @@ namespace DTO
             this.m_BillID = row["MAHD"].ToString();
             this.m_ProductID = row["MASP"].ToString();
             this.m_SizeID = (int)row["KICHTHUOC"];
-            this.m_Count = (int)row["SOLUONG"];           
+            this.m_Count = (int)row["SOLUONG"];    
         }
     }
 }

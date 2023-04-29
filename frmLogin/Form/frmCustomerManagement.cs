@@ -19,23 +19,18 @@ namespace frmLogin
             InitializeComponent();
            
         }
-
-        private void btnCustomerDeleted_Click(object sender, EventArgs e)
-        {
-            frmRecycleBin frm = new frmRecycleBin();
-            frm.Show();
-        }
-
+       
         private void frmCustomerManagement_Load(object sender, EventArgs e)
         {          
             cbTypeCustomer.DataSource = TypeCustomerBUS.Instance.GetListTypeCustomer();
             cbTypeCustomer.ValueMember = "TypeID";
             cbTypeCustomer.DisplayMember = "TypeName";
             dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.GetListCustomerMenu();
+            LoadFillCustomerItem();
             ResetInfo();
            
         }
-
+        #region Method
         public void ResetInfo()
         {
             txtCustomerID.Clear();
@@ -43,7 +38,7 @@ namespace frmLogin
             txtCustomerNumberPhone.Clear();
             txtSearchCustomer.Clear();
             cbTypeCustomer.SelectedIndex = 0;
-            //cbFillCustomer.SelectedIndex = 0;
+            cbFillCustomer.SelectedIndex = 0;
             cbSortCustomer.SelectedIndex = 0;
             radMale.Checked = true;
             btnSaveCustomer.Enabled = false;
@@ -52,6 +47,21 @@ namespace frmLogin
             btnDeleteAllCustomer.Enabled = true;
         }
 
+        public void LoadFillCustomerItem()
+        {
+            cbFillCustomer.Items.Clear();
+            cbFillCustomer.Items.Add("Tất cả");
+            List<TypeCustomer> listType = TypeCustomerBUS.Instance.GetListTypeCustomer();
+            foreach (TypeCustomer item in listType)
+            {
+                cbFillCustomer.Items.Add(item.TypeName);
+            }
+        }
+
+
+        #endregion
+
+        #region Events
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             txtCustomerID.Text = CustomerBUS.Instance.GetCustomerID();
@@ -69,7 +79,7 @@ namespace frmLogin
 
         private void btnSaveCustomer_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtCustomerName.Text) || string.IsNullOrEmpty(txtCustomerNumberPhone.Text))
+            if (string.IsNullOrEmpty(txtCustomerName.Text) || string.IsNullOrEmpty(txtCustomerNumberPhone.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -78,13 +88,13 @@ namespace frmLogin
             string gender = radMale.Checked ? "Nam" : "Nữ";
             int count = CustomerBUS.Instance.AddNewCustomer(txtCustomerName.Text, txtCustomerNumberPhone.Text, int.Parse(cbTypeCustomer.SelectedValue.ToString()), gender);
 
-            if(count>0)
+            if (count > 0)
             {
                 MessageBox.Show("Thêm khách hàng mới thành công", "Thêm khách hàng", MessageBoxButtons.OK);
                 frmCustomerManagement_Load(sender, e);
             }
             else
-                MessageBox.Show("Thêm khách hàng mới thất bại", "Thêm khách hàng", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Thêm khách hàng mới thất bại", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void dtgvListCustomer_SelectionChanged(object sender, EventArgs e)
@@ -108,9 +118,14 @@ namespace frmLogin
             }
         }
 
+        private void btnCustomerDeleted_Click(object sender, EventArgs e)
+        {
+            frmRecycleBin frm = new frmRecycleBin();
+            frm.Show();
+        }
         private void btnEditCustomer_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn chắc muốn thay đổi thông tin khách hàng này ?","Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn chắc muốn thay đổi thông tin khách hàng này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (string.IsNullOrEmpty(txtCustomerName.Text) || string.IsNullOrEmpty(txtCustomerNumberPhone.Text))
                 {
@@ -119,7 +134,7 @@ namespace frmLogin
                 }
 
                 string gender = radMale.Checked ? "Nam" : "Nữ";
-                int count = CustomerBUS.Instance.EditCustomer(txtCustomerID.Text,txtCustomerName.Text, txtCustomerNumberPhone.Text, int.Parse(cbTypeCustomer.SelectedValue.ToString()), gender);
+                int count = CustomerBUS.Instance.EditCustomer(txtCustomerID.Text, txtCustomerName.Text, txtCustomerNumberPhone.Text, int.Parse(cbTypeCustomer.SelectedValue.ToString()), gender);
 
                 if (count > 0)
                 {
@@ -165,7 +180,6 @@ namespace frmLogin
 
         private void txtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
-            //laod
             dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SearchCustomerByName(txtSearchCustomer.Text);
         }
 
@@ -175,17 +189,48 @@ namespace frmLogin
         }
 
         private void cbSortCustomer_SelectedIndexChanged(object sender, EventArgs e)
-        {           
-             if (cbSortCustomer.SelectedIndex == 1)
-                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByID();
-            else if(cbSortCustomer.SelectedIndex == 2)
-                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByIDDecrease();
-            else if (cbSortCustomer.SelectedIndex == 3)
-                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByName();
-            else if (cbSortCustomer.SelectedIndex == 4)
-                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByNameDecrease();
-            else
+        {
+            if (cbFillCustomer.SelectedIndex == 0 && cbSortCustomer.SelectedIndex == 0)
+            {
                 dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.GetListCustomerMenu();
+            }
+            else if (cbSortCustomer.SelectedIndex == 1)
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByID(cbFillCustomer.SelectedIndex);
+            else if (cbSortCustomer.SelectedIndex == 2)
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByIDDecrease(cbFillCustomer.SelectedIndex);
+            else if (cbSortCustomer.SelectedIndex == 3)
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByName(cbFillCustomer.SelectedIndex);
+            else
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByNameDecrease(cbFillCustomer.SelectedIndex);
         }
+
+        private void cbFillCustomer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbFillCustomer.SelectedIndex == 0 && cbSortCustomer.SelectedIndex == 0)
+            {
+                dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.GetListCustomerMenu();
+            }
+            else
+            {
+                for (int i = 1; i <= cbFillCustomer.Items.Count; i++)
+                {
+                    if (cbFillCustomer.SelectedIndex == i)
+                    {
+                        if (cbSortCustomer.SelectedIndex == 0)
+                            dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.FillListCustomerMenu(cbFillCustomer.SelectedIndex);
+                        else if (cbSortCustomer.SelectedIndex == 1)
+                            dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByID(cbFillCustomer.SelectedIndex);
+                        else if (cbSortCustomer.SelectedIndex == 2)
+                            dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByIDDecrease(cbFillCustomer.SelectedIndex);
+                        else if (cbSortCustomer.SelectedIndex == 3)
+                            dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByName(cbFillCustomer.SelectedIndex);
+                        else if (cbSortCustomer.SelectedIndex == 4)
+                            dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByNameDecrease(cbFillCustomer.SelectedIndex);
+                    }
+                }
+            }
+        }
+        #endregion
+       
     }
 }

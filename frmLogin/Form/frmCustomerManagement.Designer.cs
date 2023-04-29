@@ -124,6 +124,7 @@ namespace frmLogin
             this.cbFillCustomer.Name = "cbFillCustomer";
             this.cbFillCustomer.Size = new System.Drawing.Size(171, 36);
             this.cbFillCustomer.TabIndex = 3;
+            this.cbFillCustomer.SelectedIndexChanged += new System.EventHandler(this.cbFillCustomer_SelectedIndexChanged);
             // 
             // txtSearchCustomer
             // 
@@ -448,10 +449,10 @@ namespace frmLogin
             this.btnSaveCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnSaveCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCustomer.Image")));
             this.btnSaveCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveCustomer.Location = new System.Drawing.Point(250, 27);
+            this.btnSaveCustomer.Location = new System.Drawing.Point(236, 27);
             this.btnSaveCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveCustomer.Name = "btnSaveCustomer";
-            this.btnSaveCustomer.Size = new System.Drawing.Size(174, 44);
+            this.btnSaveCustomer.Size = new System.Drawing.Size(188, 44);
             this.btnSaveCustomer.TabIndex = 40;
             this.btnSaveCustomer.Text = "Lưu";
             this.btnSaveCustomer.Click += new System.EventHandler(this.btnSaveCustomer_Click);
@@ -508,9 +509,9 @@ namespace frmLogin
             this.btnDeleteAllCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllCustomer.Image")));
             this.btnDeleteAllCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllCustomer.Location = new System.Drawing.Point(250, 158);
+            this.btnDeleteAllCustomer.Location = new System.Drawing.Point(236, 158);
             this.btnDeleteAllCustomer.Name = "btnDeleteAllCustomer";
-            this.btnDeleteAllCustomer.Size = new System.Drawing.Size(174, 43);
+            this.btnDeleteAllCustomer.Size = new System.Drawing.Size(188, 43);
             this.btnDeleteAllCustomer.TabIndex = 32;
             this.btnDeleteAllCustomer.Text = "Xóa tất cả";
             this.btnDeleteAllCustomer.Click += new System.EventHandler(this.btnDeleteAllCustomer_Click);
@@ -546,9 +547,9 @@ namespace frmLogin
             this.btnCustomerDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnCustomerDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomerDeleted.Image")));
             this.btnCustomerDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCustomerDeleted.Location = new System.Drawing.Point(250, 84);
+            this.btnCustomerDeleted.Location = new System.Drawing.Point(236, 84);
             this.btnCustomerDeleted.Name = "btnCustomerDeleted";
-            this.btnCustomerDeleted.Size = new System.Drawing.Size(174, 45);
+            this.btnCustomerDeleted.Size = new System.Drawing.Size(188, 45);
             this.btnCustomerDeleted.TabIndex = 31;
             this.btnCustomerDeleted.Text = "Khách hàng đã xóa";
             this.btnCustomerDeleted.Click += new System.EventHandler(this.btnCustomerDeleted_Click);

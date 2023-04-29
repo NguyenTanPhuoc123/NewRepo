@@ -36,7 +36,7 @@ namespace DAO
             return list;
         }
 
-        public string GetBIllIDByTableID(int tableID)
+        public string GetBillIDByTableID(int tableID)
         {
            
             string query = string.Format("Select * from HOADON WHERE TRANGTHAI = 1 and SOBAN = {0}",tableID);
@@ -48,6 +48,23 @@ namespace DAO
             }
 
             return null;
+        }
+
+        public int AddNewBill(string billID, string dayCheckIn, string dayCheckOut,int employeeID, string customerID, string discountID, int tableID)
+        {
+            int row;
+            string query = String.Format("INSERT HOADON values('{0}','{1}','{2}',{3},'{4}','{5}',{6},0,1)", billID, dayCheckIn, dayCheckOut, employeeID, customerID, discountID, tableID);
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+
+            }
+            catch
+            {
+                row = 0;
+            }
+
+            return row;
         }
     }
 }

@@ -65,10 +65,14 @@ namespace DAO
             return list;
         }
 
-        public List<CustomerMenu> SortCustomerByID()
+        public List<CustomerMenu> SortCustomerByID(int typeID)
         {
             List<CustomerMenu> list = new List<CustomerMenu>();
-            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 Order by MAKH";
+            string query = "";
+            if (typeID > 0)
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 and a.LoaiKH = {0} Order by MAKH", typeID);
+            else
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1  Order by MAKH ");
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow row in data.Rows)
             {
@@ -78,10 +82,14 @@ namespace DAO
             return list;
         }
 
-        public List<CustomerMenu> SortCustomerByIDDecrease()
+        public List<CustomerMenu> SortCustomerByIDDecrease(int typeID)
         {
             List<CustomerMenu> list = new List<CustomerMenu>();
-            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 Order by MAKH DESC";
+            string query = ""; 
+            if (typeID > 0)
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 and a.LoaiKH = {0} Order by MAKH DESC", typeID);
+            else
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1  Order by MAKH DESC");
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow row in data.Rows)
             {
@@ -91,10 +99,15 @@ namespace DAO
             return list;
         }
 
-        public List<CustomerMenu> SortCustomerByName()
+        public List<CustomerMenu> SortCustomerByName(int typeID)
         {
             List<CustomerMenu> list = new List<CustomerMenu>();
-            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 Order by LTRIM(RIGHT (TENKH, CHARINDEX(CHAR(32), REVERSE(TENKH))))";
+            string query = "";
+            if (typeID > 0)
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 and a.LoaiKH = {0}  Order by LTRIM(RIGHT (TENKH, CHARINDEX(CHAR(32), REVERSE(TENKH))))", typeID); 
+            else
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1  Order by LTRIM(RIGHT (TENKH, CHARINDEX(CHAR(32), REVERSE(TENKH))))");
+
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow row in data.Rows)
             {
@@ -104,10 +117,14 @@ namespace DAO
             return list;
         }
 
-        public List<CustomerMenu> SortCustomerByNameDecrease()
+        public List<CustomerMenu> SortCustomerByNameDecrease(int typeID)
         {
             List<CustomerMenu> list = new List<CustomerMenu>();
-            string query = "SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 Order by LTRIM(RIGHT (TENKH, CHARINDEX(CHAR(32), REVERSE(TENKH)))) DESC";
+            string query = "";
+            if(typeID>0)
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1 and a.LoaiKH = {0} Order by LTRIM(RIGHT (TENKH, CHARINDEX(CHAR(32), REVERSE(TENKH)))) DESC", typeID);
+            else
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b where a.LoaiKH = b.MaLoai and a.TRANGTHAI = 1  Order by LTRIM(RIGHT (TENKH, CHARINDEX(CHAR(32), REVERSE(TENKH)))) DESC");
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow row in data.Rows)
             {
@@ -116,5 +133,29 @@ namespace DAO
             }
             return list;
         }
+
+        public List<CustomerMenu> FillListCustomerMenu(int typeID)
+        {
+            List<CustomerMenu> list = new List<CustomerMenu>();
+            string query = "";
+            if (typeID > 0)
+            
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b WHERE a.LoaiKH = b.MaLoai and a.TrangThai = 1 and a.LoaiKH = {0}", typeID);
+
+            else
+            {
+                query = string.Format("SELECT * FROM KHACHHANG a, LoaiKhachHang b WHERE a.LoaiKH = b.MaLoai and a.TrangThai = 1");
+            }
+
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+
+            foreach (DataRow item in data.Rows)
+            {
+                CustomerMenu customerMenu = new CustomerMenu(item);
+                list.Add(customerMenu);
+            }
+            return list;
+        }
+
     }
 }

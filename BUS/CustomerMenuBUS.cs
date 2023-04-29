@@ -38,26 +38,29 @@ namespace BUS
             return CustomerMenuDAO.Instance.SearchCustomerByName(name);
         }
 
-        public List<CustomerMenu> SortCustomerByID()
+        public List<CustomerMenu> SortCustomerByID(int typeID)
         {
-            return CustomerMenuDAO.Instance.SortCustomerByID();
+            return CustomerMenuDAO.Instance.SortCustomerByID(typeID);
         }
 
-        public List<CustomerMenu> SortCustomerByIDDecrease()
+        public List<CustomerMenu> SortCustomerByIDDecrease(int typeID)
         {
-            return CustomerMenuDAO.Instance.SortCustomerByIDDecrease();
+            return CustomerMenuDAO.Instance.SortCustomerByIDDecrease(typeID);
         }
 
-        public List<CustomerMenu> SortCustomerByName()
+        public List<CustomerMenu> SortCustomerByName(int typeID)
         {
-            return CustomerMenuDAO.Instance.SortCustomerByName();
+            return CustomerMenuDAO.Instance.SortCustomerByName(typeID);
         }
 
-        public List<CustomerMenu> SortCustomerByNameDecrease()
+        public List<CustomerMenu> SortCustomerByNameDecrease(int typeID)
         {
-            return CustomerMenuDAO.Instance.SortCustomerByNameDecrease();
+            return CustomerMenuDAO.Instance.SortCustomerByNameDecrease(typeID);
         }
 
-
+        public List<CustomerMenu> FillListCustomerMenu(int typeID)
+        {
+            return CustomerMenuDAO.Instance.FillListCustomerMenu(typeID);
+        }
     }
 }
