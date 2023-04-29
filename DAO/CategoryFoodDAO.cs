@@ -108,5 +108,28 @@ namespace DAO
             row = DataProvider.ExecuteInsertCommand(query, parameters);
             return row;
         }
+        public string GetCategory(int CategoryID)
+        {
+            string query = string.Format("Select TENDANHMUC from DANHMUC where MADANHMUC = {0}", CategoryID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                string TENDANHMUC = item["TENDANHMUC"].ToString();
+                return TENDANHMUC;
+            }
+            return null;
+        }
+        public List<CategoryFood> GetFillCategoryFoods(int CategoryID)
+        {
+            string query = string.Format("Select * from DANHMUC where xoa = 0 and madanhmuc = {0}",CategoryID);
+            List <CategoryFood> listCategoryFood = new List<CategoryFood>();
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                CategoryFood categoryFood = new CategoryFood(item);
+                listCategoryFood.Add(categoryFood);
+            }
+            return listCategoryFood;
+        }
     }
 }

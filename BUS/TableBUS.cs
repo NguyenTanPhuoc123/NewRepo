@@ -66,5 +66,9 @@ namespace BUS
         {
             return TableDAO.Instance.RestoreAllTable();
         }
+        public int UpdateTable(int tableid)
+        {
+            return TableDAO.Instance.UpdateTable(tableid);
+        }
     }
 }

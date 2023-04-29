@@ -36,6 +36,8 @@ namespace DAO
             return list;
         }
 
+<<<<<<< HEAD
+=======
         public string GetBillIDByTableID(int tableID)
         {
            
@@ -66,5 +68,6 @@ namespace DAO
 
             return row;
         }
+>>>>>>> 48c3914ddd7f5b16947abace3ded29db95a6cf44
     }
 }

@@ -187,6 +187,8 @@ namespace frmLogin
         {
             dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SearchCustomerByName(txtSearchCustomer.Text);
         }
+<<<<<<< HEAD
+=======
 
         private void cbSortCustomer_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -232,5 +234,6 @@ namespace frmLogin
         }
         #endregion
        
+>>>>>>> 48c3914ddd7f5b16947abace3ded29db95a6cf44
     }
 }

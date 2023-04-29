@@ -65,6 +65,9 @@ namespace DAO
             return list;
         }
 
+<<<<<<< HEAD
+        
+=======
         public List<CustomerMenu> SortCustomerByID(int typeID)
         {
             List<CustomerMenu> list = new List<CustomerMenu>();
@@ -157,5 +160,6 @@ namespace DAO
             return list;
         }
 
+>>>>>>> 48c3914ddd7f5b16947abace3ded29db95a6cf44
     }
 }

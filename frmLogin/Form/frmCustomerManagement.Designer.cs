@@ -90,16 +90,14 @@ namespace frmLogin
             this.cbSortCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortCustomer.ItemHeight = 30;
             this.cbSortCustomer.Items.AddRange(new object[] {
-            "Mặc định",
-            "Mã khách hàng (Tăng)",
-            "Mã khách hàng(GIảm)",
-            "Tên khách hàng(Tăng)",
-            "Tên khách hàng(Giảm)"});
+            "Theo mã khách hàng (thuận)",
+            "Theo mã khách hàng(nghịch)",
+            "Theo tên khách hàng(thuận)",
+            "Theo tên khách hàng(nghịch)"});
             this.cbSortCustomer.Location = new System.Drawing.Point(12, 293);
             this.cbSortCustomer.Name = "cbSortCustomer";
-            this.cbSortCustomer.Size = new System.Drawing.Size(260, 36);
+            this.cbSortCustomer.Size = new System.Drawing.Size(186, 36);
             this.cbSortCustomer.TabIndex = 1;
-            this.cbSortCustomer.SelectedIndexChanged += new System.EventHandler(this.cbSortCustomer_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -179,12 +177,12 @@ namespace frmLogin
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListCustomer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListCustomer.Location = new System.Drawing.Point(12, 349);
+            this.dtgvListCustomer.Location = new System.Drawing.Point(12, 335);
             this.dtgvListCustomer.Name = "dtgvListCustomer";
             this.dtgvListCustomer.RowHeadersVisible = false;
             this.dtgvListCustomer.RowHeadersWidth = 51;
             this.dtgvListCustomer.RowTemplate.Height = 24;
-            this.dtgvListCustomer.Size = new System.Drawing.Size(1153, 154);
+            this.dtgvListCustomer.Size = new System.Drawing.Size(1153, 168);
             this.dtgvListCustomer.TabIndex = 6;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.Font = null;

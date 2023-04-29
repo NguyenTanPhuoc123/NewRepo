@@ -118,5 +118,12 @@ namespace DAO
 
             return row;
         }
+        public int UpdateTable(int maBAN)
+        {
+            string query = string.Format("Update BANAN SET TRANGTHAI = N'Có Người' where MABANAN = {0}",maBAN);
+            int row = 0;
+            row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
     }
 }

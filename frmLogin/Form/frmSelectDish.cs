@@ -14,12 +14,18 @@ using System.IO;
 namespace frmLogin
 {
     public partial class frmSelectDish : Form
-    {       
-        frmSellManagement frmSell = new frmSellManagement(null);
-        public frmSelectDish(frmSellManagement frm)
+    {
+        private Account loginAccount;
+
+        public Account LoginAccount
+        {
+            get { return this.loginAccount; }
+            private set { this.loginAccount = value; }
+        }
+        public frmSelectDish()
         {
             InitializeComponent();
-            frmSell = frm;
+            cbCategoryDish.SelectedIndex = 0;
         }
 
         private void btnExitFomSelectDish_Click(object sender, EventArgs e)
@@ -29,22 +35,32 @@ namespace frmLogin
 
         private void frmSelectDish_Load(object sender, EventArgs e)
         {
-            List<Product> products = ProductBUS.Instance.GetProduct();
-            for (int i = 0; i < products.Count; i++)
-            {
-                imageList1.Images.Add(convertbytetoimage(products[i].image));
-                ListViewItem item = new ListViewItem(products[i].TenSanPham);
-                item.ImageIndex =i;
-                item.SubItems.Add(products[i].DanhMuc.ToString());
-                item.SubItems.Add(products[i].DonGia.ToString());
-                lstvListDish.Items.Add(item);
-            }
             cbCategoryDish.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
             cbCategoryDish.ValueMember = "CategoryID";
             cbCategoryDish.DisplayMember = "CategoryName";
             cbSize.DataSource = SizeProductBUS.Instance.GetListSizeProduct();
-            cbSize.ValueMember = "SizeID";
             cbSize.DisplayMember = "SizeName";
+            cbSize.ValueMember = "SizeID";
+        }
+        private void LoadProduct()
+        {
+            if (cbCategoryDish.SelectedIndex == 0)
+            {
+                List<Product> products = ProductBUS.Instance.GetProduct();
+                for (int i = 0; i < products.Count; i++)
+                {
+                    imageList1.Images.Add(convertbytetoimage(products[i].image));
+                    ListViewItem item = new ListViewItem(products[i].TenSanPham);
+                    item.ImageIndex = i;
+                    item.SubItems.Add(products[i].DanhMuc.ToString());
+                    item.SubItems.Add(products[i].DonGia.ToString());
+                    lstvListDish.Items.Add(item);
+                }
+            }
+            else
+            {
+
+            }    
         }
         private Image convertbytetoimage(byte[] b)
         {
@@ -60,49 +76,76 @@ namespace frmLogin
             if (lstvListDish.SelectedItems.Count > 0)
             {
                 int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
-                uc.HinhAnh  = imageList1.Images[i];
-                uc.TenSP = " " + txtDishName.Text;
-                uc.SoLuong = " " + numQuantity.Value.ToString();
-                uc.DonGia = " " + txtDishPrice.Text;
+                uc.HinhAnh = imageList1.Images[i];
+                uc.TenSP = txtDishName.Text;
+                uc.SoLuong = numQuantity.Value.ToString();
+                uc.DonGia = txtDishPrice.Text;
+                uc.KichthuocName1 = cbSize.Text;
+                uc.TenSP1 = txtDishName.Text;
+                uc.SoLuong1 = numQuantity.Value.ToString();
+                uc.DonGia1 = txtDishPrice.Text;
+                uc.KichThuoc1 =Convert.ToInt32(cbSize.SelectedValue);
                 flpAddDish.Controls.Add(uc);
+
             }
         }
 
         private void lstvListDish_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
             if (lstvListDish.SelectedItems.Count > 0)
             {
                 int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
-               pbPictureDish.Image = imageList1.Images[i];
+                pbPictureDish.Image = imageList1.Images[i];
                 pbPictureDish.SizeMode = PictureBoxSizeMode.Zoom;
                 txtDishName.Text = lstvListDish.SelectedItems[0].Text;
-                txtCategoryDish.Text = lstvListDish.SelectedItems[0].SubItems[1].Text;
+                string Danhmuc = lstvListDish.SelectedItems[0].SubItems[1].Text;
+                txtCategoryDish.Text =CategoryFoodBUS.Instance.GetCategory(Convert.ToInt32(Danhmuc));
                 txtDishPrice.Text = lstvListDish.SelectedItems[0].SubItems[2].Text;
             }
-        }
         
-        private void btnSelectDish_Click(object sender, EventArgs e)
-        {
-            float price = float.Parse(txtDishPrice.Text);
-            int sizeID = int.Parse(cbSize.SelectedValue.ToString());
-            float sizePrice = 0;
-            string sizeName = "";
-            foreach(SizeProduct sizeProduct in SizeProductBUS.Instance.GetListSizeProduct())
-            {
-                if (sizeID == sizeProduct.SizeID)
+        }
+         private void btnSelectDish_Click(object sender, EventArgs e)
+         {
+            string masp;
+            string soluong;
+            int kichthuoc;
+            int tableID = frmSellManagement.GetTableID();
+            if (MenuDishBUS.Instance.CheckHD(tableID)) {
+                if (MenuDishBUS.Instance.ADDBILL(tableID))
                 {
-                    sizePrice = sizeProduct.Price;
-                    sizeName = sizeProduct.SizeName;
+                    foreach (Control c in flpAddDish.Controls)
+                    {
+                        if (c is Usercontrol)
+                        {
+                            Usercontrol userControl = (Usercontrol)c;
+                            masp = MenuDishBUS.Instance.ProductID(userControl.TenSP1);
+                            soluong = userControl.SoLuong1;
+                            kichthuoc = userControl.KichThuoc1;
+                            MenuDishBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
+                        }
+                    }
                 }
             }
+            else
+            {
+                foreach (Control c in flpAddDish.Controls)
+                {
+                    if (c is Usercontrol)
+                    {
+                        Usercontrol userControl = (Usercontrol)c;
+                        masp = MenuDishBUS.Instance.ProductID(userControl.TenSP1);
+                        soluong = userControl.SoLuong1;
+                        kichthuoc = userControl.KichThuoc1;
+                        MenuDishBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
+                    }
+                }
+            }
+            this.Close();
+         }
 
-            int count = int.Parse(numQuantity.Value.ToString());
-            
-            float totalPrice = price*count+sizePrice;
-            MenuDish menu = new MenuDish(txtDishName.Text,sizeName, int.Parse(numQuantity.Value.ToString()),price,totalPrice);
-            frmSell.GetListDishSelected(menu);
+        private void cbCategoryDish_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
-        
     }
 }

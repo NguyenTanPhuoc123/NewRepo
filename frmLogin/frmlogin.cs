@@ -60,7 +60,7 @@ namespace frmLogin
             
             if(AccountBUS.Instance.CheckLogin(txtUsername.Text, txtPassword.Text))
             {
-                Account loginAccount = AccountBUS.Instance.GetAccountForUsername(txtUsername.Text);
+                DTO.Account loginAccount = AccountBUS.Instance.GetAccountForUsername(txtUsername.Text);
                 frmSellManagement login = new frmSellManagement(loginAccount);
                 this.Hide();
                 login.ShowDialog();

@@ -52,5 +52,13 @@ namespace BUS
         {
             return CategoryFoodBUS.Instance.RestoreAllCategoryFood();
         }
+        public string GetCategory(int CategoryID)
+        {
+            return CategoryFoodDAO.Instance.GetCategory(CategoryID);
+        }
+        public List<CategoryFood> GetFillCategoryFoods(int CategoryID)
+        {
+            return CategoryFoodBUS.instance.GetFillCategoryFoods(CategoryID);
+        }
     }
 }

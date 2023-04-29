@@ -27,7 +27,6 @@ namespace DTO
             this.m_employeeID = employeeID;
         }
 
-       
         public Account(DataRow row)
         {
             this.m_username = row["TENDANGNHAP"].ToString();

@@ -16,12 +16,23 @@ namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
+        private static int tableID=0;
         private Account loginAccount;
 
         public Account LoginAccount
         {
             get { return this.loginAccount; }
             private set { this.loginAccount = value; }
+        }
+
+        public static int GetTableID()
+        {
+            return tableID;
+        }
+
+        public static void SetTableID(int value)
+        {
+            tableID = value;
         }
 
         public frmSellManagement(Account acc)
@@ -63,9 +74,17 @@ namespace frmLogin
 
         private void btnSelectDish_Click(object sender, EventArgs e)
         {
-            this.IsMdiContainer = true;
-            frmSelectDish frm = new frmSelectDish(this);
-            frm.Show();
+            if (GetTableID() == 0)
+            {
+                MessageBox.Show("Ban chua chon ban");
+                return;
+            }
+            else
+            {
+                this.IsMdiContainer = true;
+                frmSelectDish frm = new frmSelectDish();
+                frm.Show();
+            }
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
@@ -91,19 +110,18 @@ namespace frmLogin
 
         private void frmSellManagement_Load(object sender, EventArgs e)
         {
-            
             tstlblPosition.Text = GetTypeAccountName() + " : ";
             tsslblName.Text = GetEmployeeName();
             cbLocationTable.DataSource = LocationBUS.Instance.GetListLocation();
             cbLocationTable.DisplayMember = "TenViTri";
             cbLocationTable.ValueMember = "MaViTri";
-            
         }
 
         
         private void btnTable_Click(object sender, EventArgs e)
         {
             int tableID = ((sender as Button).Tag as Table).MaBanAn;
+            SetTableID(tableID);
             ShowBill(tableID);
         }
         #region Method
@@ -164,21 +182,10 @@ namespace frmLogin
             }
             CultureInfo culture = new CultureInfo("vi-VN");
             lblToltalPrice.Text = total.ToString("c",culture);
-        }
-
-        public void GetListDishSelected(MenuDish menu)
-        {
-            Table table = lstvMenuDish.Tag as Table;          
-            float total = 0;
-            ListViewItem item = new ListViewItem(menu.DishName);
-            item.SubItems.Add(menu.Size.ToString());
-            item.SubItems.Add(menu.Count.ToString());
-            item.SubItems.Add(menu.Price.ToString());
-            item.SubItems.Add((menu.TotalPrice.ToString()));
-            total += menu.TotalPrice;
-            lstvMenuDish.Items.Add(item);
-            CultureInfo culture = new CultureInfo("vi-VN");
-            lblToltalPrice.Text = total.ToString("c", culture);
+            if (lstvMenuDish.Items.Count > 0)
+            {
+                TableBUS.Instance.UpdateTable(tableID);
+            }
         }
         #endregion
         private void cbLocationTable_SelectedIndexChanged(object sender, EventArgs e)
@@ -190,14 +197,6 @@ namespace frmLogin
             Location selected = cb.SelectedItem as Location;
             id = selected.MaViTri;
             GetListTableByLocationID(id);
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            if (lstvMenuDish.SelectedItems.Count > 0)
-            {
-                lstvMenuDish.SelectedItems[0].Remove();
-            }
         }
     }
 }

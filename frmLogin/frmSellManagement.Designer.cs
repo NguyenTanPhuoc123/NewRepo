@@ -200,7 +200,7 @@ namespace frmLogin
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(501, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 55);
+            this.label2.Size = new System.Drawing.Size(332, 65);
             this.label2.TabIndex = 0;
             this.label2.Text = "BÁN HÀNG";
             // 
@@ -211,29 +211,29 @@ namespace frmLogin
             this.tstlblPosition,
             this.tsslblName,
             this.tsslblTime});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 597);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1292, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1292, 32);
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tstlblPosition
             // 
             this.tstlblPosition.Name = "tstlblPosition";
-            this.tstlblPosition.Size = new System.Drawing.Size(82, 20);
+            this.tstlblPosition.Size = new System.Drawing.Size(100, 25);
             this.tstlblPosition.Text = "Nhân viên: ";
             // 
             // tsslblName
             // 
             this.tsslblName.Name = "tsslblName";
-            this.tsslblName.Size = new System.Drawing.Size(49, 20);
+            this.tsslblName.Size = new System.Drawing.Size(59, 25);
             this.tsslblName.Text = "Name";
             // 
             // tsslblTime
             // 
             this.tsslblTime.Margin = new System.Windows.Forms.Padding(900, 4, 0, 2);
             this.tsslblTime.Name = "tsslblTime";
-            this.tsslblTime.Size = new System.Drawing.Size(0, 20);
+            this.tsslblTime.Size = new System.Drawing.Size(0, 26);
             // 
             // timer1
             // 
@@ -245,7 +245,7 @@ namespace frmLogin
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(12, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 18);
+            this.label3.Size = new System.Drawing.Size(81, 22);
             this.label3.TabIndex = 15;
             this.label3.Text = "Vị trí bàn";
             // 
@@ -306,7 +306,6 @@ namespace frmLogin
             this.btnDelete.Size = new System.Drawing.Size(130, 45);
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Xóa";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lstvMenuDish
             // 
@@ -316,7 +315,6 @@ namespace frmLogin
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
-            this.lstvMenuDish.FullRowSelect = true;
             this.lstvMenuDish.GridLines = true;
             this.lstvMenuDish.HideSelection = false;
             this.lstvMenuDish.Location = new System.Drawing.Point(668, 170);
@@ -386,26 +384,24 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(1082, 487);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 18);
+            this.label1.Size = new System.Drawing.Size(91, 22);
             this.label1.TabIndex = 25;
             this.label1.Text = "Tổng tiền:";
             // 
             // lblToltalPrice
             // 
             this.lblToltalPrice.AutoSize = true;
-            this.lblToltalPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblToltalPrice.Location = new System.Drawing.Point(1161, 487);
             this.lblToltalPrice.Name = "lblToltalPrice";
-            this.lblToltalPrice.Size = new System.Drawing.Size(16, 18);
+            this.lblToltalPrice.Size = new System.Drawing.Size(20, 22);
             this.lblToltalPrice.TabIndex = 26;
             this.lblToltalPrice.Text = "0";
             // 
             // frmSellManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1292, 629);
