@@ -174,17 +174,32 @@ namespace frmLogin
             }
             else if (cbSortEmployee.SelectedIndex == 1)
             {
-                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName();
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(cbFillEmployee.SelectedIndex);
             }
             else
             {
-                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID();
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(cbFillEmployee.SelectedIndex);
             }
         }
 
         private void cbFillEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if(cbFillEmployee.SelectedIndex == 0 )
+            {
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
+            }
+            else if (cbSortEmployee.SelectedIndex == 1)
+            {
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(cbFillEmployee.SelectedIndex);
+            }
+            else if(cbSortEmployee.SelectedIndex == 2)
+            {
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(cbFillEmployee.SelectedIndex);
+            }
+            else
+            {
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.FillEmployeeByPosition(cbFillEmployee.SelectedIndex);
+            }
         }
     }
 }

@@ -31,19 +31,24 @@ namespace BUS
             return EmployeeMenuDAO.Instance.GetListPosition();
         }
 
-        public List<Employee> SearchEmloyeeName(string employeeName)
+        public List<EmployeeMenu> SearchEmloyeeName(string employeeName)
         {
             return EmployeeMenuDAO.Instance.SearchEmloyeeName(employeeName);
         }
 
-        public List<EmployeeMenu> SortListEmployeeByEmployeeID()
+        public List<EmployeeMenu> SortListEmployeeByEmployeeID(int positionID)
         {
-            return EmployeeMenuDAO.Instance.SortListEmployeeByEmployeeID();
+            return EmployeeMenuDAO.Instance.SortListEmployeeByEmployeeID(positionID);
         }
 
-        public List<EmployeeMenu> SortListEmployeeByEmployeeName()
+        public List<EmployeeMenu> SortListEmployeeByEmployeeName(int positionID)
         {
-            return EmployeeMenuDAO.Instance.SortListEmployeeByEmployeeName();
+            return EmployeeMenuDAO.Instance.SortListEmployeeByEmployeeName(positionID);
+        }
+
+        public List<EmployeeMenu> FillEmployeeByPosition(int positionID)
+        {
+            return EmployeeMenuDAO.Instance.FillEmployeeByPosition(positionID);
         }
     }
 }

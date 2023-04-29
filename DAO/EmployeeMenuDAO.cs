@@ -48,23 +48,10 @@ namespace DAO
             return listPosition;
         }
 
-        public List<Employee> SearchEmloyeeName(string employeeName)
-        {
-            List<Employee> lst = new List<Employee>();
-            string query = string.Format("select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU and dbo.fChuyenCoDauThanhKhongDau(b.TENNV) like dbo.fChuyenCoDauThanhKhongDau(N'%{0}%')", employeeName);
-            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
-            foreach (DataRow item in data.Rows)
-            {
-                Employee acc = new Employee(item);
-                lst.Add(acc);
-            }
-            return lst;
-        }
-
-        public List<EmployeeMenu> SortListEmployeeByEmployeeID()
+        public List<EmployeeMenu> SearchEmloyeeName(string employeeName)
         {
             List<EmployeeMenu> lst = new List<EmployeeMenu>();
-            string query = "select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU order by b.manv";
+            string query = string.Format("select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU and dbo.fChuyenCoDauThanhKhongDau(b.TENNV) like dbo.fChuyenCoDauThanhKhongDau(N'%{0}%')", employeeName);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
@@ -74,10 +61,49 @@ namespace DAO
             return lst;
         }
 
-        public List<EmployeeMenu> SortListEmployeeByEmployeeName()
+        public List<EmployeeMenu> SortListEmployeeByEmployeeID(int positionID)
         {
             List<EmployeeMenu> lst = new List<EmployeeMenu>();
-            string query = "select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU order by LTRIM(RIGHT (TENNV, CHARINDEX(CHAR(32), REVERSE(TENNV))))";
+            string query = string.Format("select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU and a.MACHUCVU = {0} order by b.manv", positionID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                EmployeeMenu acc = new EmployeeMenu(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
+
+        public List<EmployeeMenu> SortListEmployeeByEmployeeName(int positionID)
+        {
+            List<EmployeeMenu> lst = new List<EmployeeMenu>();
+            string query = string.Format("select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU and a.MACHUCVU = {0} order by LTRIM(RIGHT (TENNV, CHARINDEX(CHAR(32), REVERSE(TENNV))))", positionID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                EmployeeMenu acc = new EmployeeMenu(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
+
+        public List<EmployeeMenu> FillEmployeeByPosition(int positionID)
+        {
+            List<EmployeeMenu> lst = new List<EmployeeMenu>();
+            string query = string.Format("select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU and a.MACHUCVU = {0}", positionID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                EmployeeMenu acc = new EmployeeMenu(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
+
+        public List<EmployeeMenu> FillEmployee()
+        {
+            List<EmployeeMenu> lst = new List<EmployeeMenu>();
+            string query = "select * from CHUCVU a, NHANVIEN b where b.trangthai=1 and a.MACHUCVU = b.MACHUCVU";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
