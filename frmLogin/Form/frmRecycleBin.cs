@@ -20,6 +20,7 @@ namespace frmLogin
         {
             InitializeComponent();
             dtgvListEmployeeDeleted.AutoGenerateColumns = false;
+            dtgvListProductDeleted.AutoGenerateColumns = false;
         }
 
         private void frmRecycleBin_Load(object sender, EventArgs e)
@@ -144,7 +145,7 @@ namespace frmLogin
         #region Product
         private void LoadProductDeleted()
         {
-            dtgvListProductDeleted.DataSource = ProductBUS.Instance.GetListProductDeleted();
+            dtgvListProductDeleted.DataSource = ProductBUS.Instance.GetProductDeleted();
         }
         private void dtgvListProductDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -176,7 +177,6 @@ namespace frmLogin
             }
         }
         #endregion
-
         #region Customer
         public void LoadCustomerDeleted()
         {

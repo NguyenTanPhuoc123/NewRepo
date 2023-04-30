@@ -24,6 +24,7 @@ namespace frmLogin
             InitializeComponent();
             dtgvListProduct.AutoGenerateColumns = false;
             cbFillProduct.SelectedIndex = 0;
+
         }
 
         private void btnProductDeleted_Click(object sender, EventArgs e)
@@ -34,14 +35,23 @@ namespace frmLogin
         }
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            Product product = new Product(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
-            int count = ProductBUS.Instance.ExecuteInsertCommand(product);
-            MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
-            LoadProduct();
-            ResetText();
+            txtProductID.Text = ProductBUS.Instance.GetProductID();
+
         }
 
-
+        private void btnSaveProduct_Click(object sender, EventArgs e)
+        {
+            Product product = new Product(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
+            if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham))
+            {
+                int count = ProductBUS.Instance.ExecuteInsertCommand(product);
+                MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
+                LoadProduct();
+                ResetText();
+            }
+            else
+                MessageBox.Show("Ten san pham da co");
+        }
         private void pbProduct_Click(object sender, EventArgs e)
         {
             ofdImage.Filter = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
@@ -110,6 +120,13 @@ namespace frmLogin
             numQuantity.Value = 1;
             cbCategory.SelectedIndex = 0;
             pbProduct.Image = null;
+        }
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
         private void dtgvListProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -180,5 +197,7 @@ namespace frmLogin
             else
                 dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaDESC(cbFillProduct.Text);
         }
+
+
     }
 }

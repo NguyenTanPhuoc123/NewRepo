@@ -400,6 +400,7 @@ namespace frmLogin
             this.btnSearchDish.Name = "btnSearchDish";
             this.btnSearchDish.Size = new System.Drawing.Size(80, 36);
             this.btnSearchDish.TabIndex = 7;
+            this.btnSearchDish.Click += new System.EventHandler(this.btnSearchDish_Click);
             // 
             // flpAddDish
             // 

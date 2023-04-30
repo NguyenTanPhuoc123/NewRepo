@@ -17,7 +17,7 @@ namespace frmLogin
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new frmCategoyManagement());
+            Application.Run(new frmRecycleBin());
 
         }
     }

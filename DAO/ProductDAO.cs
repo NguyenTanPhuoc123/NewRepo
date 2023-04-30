@@ -22,14 +22,7 @@ namespace DAO
         public DataTable GetListProduct()
         {
             DataTable da = new DataTable();
-            string query = "Select * from SanPham where TRANGTHAI=1";
-            da = DataProvider.ExcecuteSelectCommand(query, null);
-            return da;
-        }
-        public DataTable GetListProductDeleted()
-        {
-            DataTable da = new DataTable();
-            string query = "Select * from SanPham where TRANGTHAI=0";
+            string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1";
             da = DataProvider.ExcecuteSelectCommand(query, null);
             return da;
         }
@@ -44,6 +37,27 @@ namespace DAO
                 lst.Add(acc);
             }
             return lst;
+        }
+        public DataTable GetProductDeleted()
+        {
+            DataTable da = new DataTable();
+            string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 0";
+            da = DataProvider.ExcecuteSelectCommand(query, null);
+            return da;
+        }
+        public string GetProductID()
+        {
+            string query = "SELECT COUNT(*) FROM SANPHAM";
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            data += 1;
+            string billID = string.Format("SP" + data);
+            return billID;
+        }
+        public bool CheckNameProduct(string productName)
+        {
+            string query = string.Format("Select Count(*) From SanPham Where TENSANPHAM=N'{0}'", productName);
+            int count = DataProvider.ExecuteScalarCommand(query, null);
+            return (count > 0 ? false : true);
         }
         public int ExecuteInsertCommand(Product product)
         {
@@ -114,7 +128,7 @@ namespace DAO
         public DataTable GetListFindProduct(string tensanpham)
         {
             DataTable lst = new DataTable();
-            string query = string.Format("select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 AND a.tensanpham LIKE N'%{0}%'", tensanpham);
+            string query = string.Format("select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 AND dbo.fChuyenCoDauThanhKhongDau(a.TENSANPHAM) like dbo.fChuyenCoDauThanhKhongDau(N'%{0}%')", tensanpham);
             lst = DataProvider.ExcecuteSelectCommand(query, null);
             return lst;
         }
@@ -196,6 +210,32 @@ namespace DAO
             SqlParameter[] parameters = new SqlParameter[1];
             parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
             lst = DataProvider.ExcecuteSelectCommand(query, parameters);
+            return lst;
+        }
+        public List<Product> GetListFillProductSelectDish(string tendanhmuc)
+        {
+            List<Product> lst = new List<Product>();
+            string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 and b.tendanhmuc=@tendanhmuc";
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, parameters);
+            foreach (DataRow item in data.Rows)
+            {
+                Product acc = new Product(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
+        public List<Product> GetListFindProductSelectDish(string tensanpham)
+        {
+            List<Product> lst = new List<Product>();
+            string query = string.Format("select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 AND dbo.fChuyenCoDauThanhKhongDau(a.TENSANPHAM) like dbo.fChuyenCoDauThanhKhongDau(N'%{0}%')", tensanpham);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                Product acc = new Product(item);
+                lst.Add(acc);
+            }
             return lst;
         }
     }

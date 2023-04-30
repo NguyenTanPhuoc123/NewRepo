@@ -348,6 +348,7 @@ namespace frmLogin
             this.txtPrice.SelectedText = "";
             this.txtPrice.Size = new System.Drawing.Size(141, 36);
             this.txtPrice.TabIndex = 10;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // label7
             // 

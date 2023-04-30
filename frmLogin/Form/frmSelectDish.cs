@@ -36,32 +36,31 @@ namespace frmLogin
         private void frmSelectDish_Load(object sender, EventArgs e)
         {
             LoadProduct();
-            cbCategoryDish.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
-            cbCategoryDish.ValueMember = "CategoryID";
-            cbCategoryDish.DisplayMember = "CategoryName";
+            LoadcbCategoryFoof();
             cbSize.DataSource = SizeProductBUS.Instance.GetListSizeProduct();
             cbSize.DisplayMember = "SizeName";
             cbSize.ValueMember = "SizeID";
         }
+        private void LoadcbCategoryFoof()
+        {
+            List<CategoryFood> categoryFoods = CategoryFoodBUS.Instance.GetCategoryFoods();
+            for (int i = 0; i < categoryFoods.Count; i++)
+            {
+                cbCategoryDish.Items.Add(categoryFoods[i].CategoryName);
+            }
+        }
         private void LoadProduct()
         {
-            //if (cbCategoryDish.SelectedIndex == 0)
-            //{
-                List<Product> products = ProductBUS.Instance.GetProduct();
-                for (int i = 0; i < products.Count; i++)
-                {
-                    imageList1.Images.Add(convertbytetoimage(products[i].image));
-                    ListViewItem item = new ListViewItem(products[i].TenSanPham);
-                    item.ImageIndex = i;
-                    item.SubItems.Add(products[i].DanhMuc.ToString());
-                    item.SubItems.Add(products[i].DonGia.ToString());
-                    lstvListDish.Items.Add(item);
-                }
-            //}
-            //else
-            //{
-
-            //}    
+            List<Product> products = ProductBUS.Instance.GetProduct();
+            for (int i = 0; i < products.Count; i++)
+            {
+                imageList1.Images.Add(convertbytetoimage(products[i].image));
+                ListViewItem item = new ListViewItem(products[i].TenSanPham);
+                item.ImageIndex = i;
+                item.SubItems.Add(products[i].DanhMuc.ToString());
+                item.SubItems.Add(products[i].DonGia.ToString());
+                lstvListDish.Items.Add(item);
+            }
         }
         private Image convertbytetoimage(byte[] b)
         {
@@ -81,7 +80,7 @@ namespace frmLogin
                 uc.TenSP = txtDishName.Text;
                 uc.SoLuong = numQuantity.Value.ToString();
                 uc.DonGia = txtDishPrice.Text;
-                uc.KichThuoc =Convert.ToInt32(cbSize.SelectedValue);
+                uc.KichThuoc = Convert.ToInt32(cbSize.SelectedValue);
                 uc.KichThuocName = cbSize.Text;
                 flpAddDish.Controls.Add(uc);
 
@@ -97,18 +96,19 @@ namespace frmLogin
                 pbPictureDish.SizeMode = PictureBoxSizeMode.Zoom;
                 txtDishName.Text = lstvListDish.SelectedItems[0].Text;
                 string Danhmuc = lstvListDish.SelectedItems[0].SubItems[1].Text;
-                txtCategoryDish.Text =CategoryFoodBUS.Instance.GetCategory(Convert.ToInt32(Danhmuc));
+                txtCategoryDish.Text = CategoryFoodBUS.Instance.GetCategory(Convert.ToInt32(Danhmuc));
                 txtDishPrice.Text = lstvListDish.SelectedItems[0].SubItems[2].Text;
             }
-        
+
         }
-         private void btnSelectDish_Click(object sender, EventArgs e)
-         {
+        private void btnSelectDish_Click(object sender, EventArgs e)
+        {
             string masp;
             string soluong;
             int kichthuoc;
             int tableID = frmSellManagement.GetTableID();
-            if (MenuDishBUS.Instance.CheckHD(tableID)) {
+            if (MenuDishBUS.Instance.CheckHD(tableID))
+            {
                 if (MenuDishBUS.Instance.ADDBILL(tableID))
                 {
                     foreach (Control c in flpAddDish.Controls)
@@ -139,11 +139,52 @@ namespace frmLogin
                 }
             }
             this.Close();
-         }
+        }
 
         private void cbCategoryDish_SelectedIndexChanged(object sender, EventArgs e)
         {
+            lstvListDish.Clear();
+            if (cbCategoryDish.SelectedIndex == 0)
+            {
+                List<Product> products = ProductBUS.Instance.GetProduct();
+                for (int i = 0; i < products.Count; i++)
+                {
+                    imageList1.Images.Add(convertbytetoimage(products[i].image));
+                    ListViewItem item = new ListViewItem(products[i].TenSanPham);
+                    item.ImageIndex = i;
+                    item.SubItems.Add(products[i].DanhMuc.ToString());
+                    item.SubItems.Add(products[i].DonGia.ToString());
+                    lstvListDish.Items.Add(item);
+                }
+            }
+            else
+            {
+                List<Product> products = ProductBUS.Instance.GetListFillProductSelectDish(cbCategoryDish.Text);
+                for (int i = 0; i < products.Count; i++)
+                {
+                    imageList1.Images.Add(convertbytetoimage(products[i].image));
+                    ListViewItem item = new ListViewItem(products[i].TenSanPham);
+                    item.ImageIndex = i;
+                    item.SubItems.Add(products[i].DanhMuc.ToString());
+                    item.SubItems.Add(products[i].DonGia.ToString());
+                    lstvListDish.Items.Add(item);
+                }
+            }
+        }
 
+        private void btnSearchDish_Click(object sender, EventArgs e)
+        {
+            lstvListDish.Clear();
+            List<Product> products = ProductBUS.Instance.GetListFindProductSelectDish(txtSearchDish.Text);
+            for (int i = 0; i < products.Count; i++)
+            {
+                imageList1.Images.Add(convertbytetoimage(products[i].image));
+                ListViewItem item = new ListViewItem(products[i].TenSanPham);
+                item.ImageIndex = i;
+                item.SubItems.Add(products[i].DanhMuc.ToString());
+                item.SubItems.Add(products[i].DonGia.ToString());
+                lstvListDish.Items.Add(item);
+            }
         }
     }
 }

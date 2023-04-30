@@ -21,9 +21,17 @@ namespace BUS
         {
             return ProductDAO.Instance.GetListProduct();
         }
-        public DataTable GetListProductDeleted()
+        public string GetProductID()
         {
-            return ProductDAO.Instance.GetListProductDeleted();
+            return ProductDAO.Instance.GetProductID();
+        }
+        public bool CheckNameProduct(string productName)
+        {
+            return ProductDAO.Instance.CheckNameProduct(productName);
+        }
+        public DataTable GetProductDeleted()
+        {
+            return ProductDAO.Instance.GetProductDeleted();
         }
         public List<Product> GetProduct()
         {
@@ -76,6 +84,14 @@ namespace BUS
         public int RestoreProductAll()
         {
             return ProductDAO.Instance.RestoreProductAll();
+        }
+        public List<Product> GetListFillProductSelectDish(string tendanhmuc)
+        {
+            return ProductDAO.Instance.GetListFillProductSelectDish(tendanhmuc);
+        }
+        public List<Product> GetListFindProductSelectDish(string tensanpham)
+        {
+            return ProductDAO.Instance.GetListFindProductSelectDish(tensanpham);
         }
     }
 }
