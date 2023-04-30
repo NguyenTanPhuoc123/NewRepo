@@ -148,6 +148,7 @@ namespace frmLogin
             this.Controls.Add(this.pictureBox1);
             this.Name = "Usercontrol";
             this.Size = new System.Drawing.Size(378, 214);
+            this.Load += new System.EventHandler(this.Usercontrol_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

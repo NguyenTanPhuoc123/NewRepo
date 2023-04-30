@@ -16,7 +16,7 @@ namespace frmLogin
         private string soLuong;
         private string donGia;
         private int Kichthuoc;
-        private string KichthuocName;
+        private string kichThuocName;
         private Image hinhAnh;
         public Usercontrol()
         {
@@ -24,25 +24,12 @@ namespace frmLogin
 
         }
 
-        public Usercontrol(string tenSP, string soLuong, string donGia, Image hinhAnh, int KichThuoc)
-        {
-            this.tenSP = tenSP;
-            this.soLuong = soLuong;
-            this.donGia = donGia;
-            this.hinhAnh = hinhAnh;
-            this.Kichthuoc = KichThuoc;
-        }
-
-        public string TenSP { get => tenSP; set => lbTenSP.Text += value; }
-        public string SoLuong { get => soLuong; set => lbSoLuong.Text += value; }
-        public string DonGia { get => donGia; set => lbDonGia.Text += value; }
-        public Image HinhAnh { get => hinhAnh; set => pictureBox1.Image = value; }
-        public string KichthuocName1 { get => KichthuocName; set => lbKichThuoc.Text = value; }
-
-        public string TenSP1 { get => tenSP; set => tenSP = value ; }
-        public string SoLuong1 { get => soLuong; set => soLuong = value; }
-        public string DonGia1 { get => donGia; set => donGia = value; }
-        public int KichThuoc1 { get => Kichthuoc; set => Kichthuoc = value; }
+        public string TenSP { get => tenSP; set => tenSP = value ; }
+        public string SoLuong { get => soLuong; set => soLuong = value; }
+        public string DonGia { get => donGia; set => donGia = value; }
+        public int KichThuoc { get => Kichthuoc; set => Kichthuoc = value; }
+        public string KichThuocName { get => kichThuocName; set => kichThuocName = value; }
+        public Image HinhAnh { get => hinhAnh; set => hinhAnh = value; }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -57,6 +44,15 @@ namespace frmLogin
                 lbDonGia = null;
             }
             this.Parent.Controls.Remove(this);
+        }
+
+        private void Usercontrol_Load(object sender, EventArgs e)
+        {
+            lbTenSP.Text = TenSP;
+            lbDonGia.Text = DonGia;
+            lbSoLuong.Text = SoLuong;
+            lbKichThuoc.Text = KichThuocName;
+            pictureBox1.Image = HinhAnh;
         }
     }
 }

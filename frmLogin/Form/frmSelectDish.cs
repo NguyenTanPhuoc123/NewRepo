@@ -35,6 +35,7 @@ namespace frmLogin
 
         private void frmSelectDish_Load(object sender, EventArgs e)
         {
+            LoadProduct();
             cbCategoryDish.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
             cbCategoryDish.ValueMember = "CategoryID";
             cbCategoryDish.DisplayMember = "CategoryName";
@@ -44,8 +45,8 @@ namespace frmLogin
         }
         private void LoadProduct()
         {
-            if (cbCategoryDish.SelectedIndex == 0)
-            {
+            //if (cbCategoryDish.SelectedIndex == 0)
+            //{
                 List<Product> products = ProductBUS.Instance.GetProduct();
                 for (int i = 0; i < products.Count; i++)
                 {
@@ -56,11 +57,11 @@ namespace frmLogin
                     item.SubItems.Add(products[i].DonGia.ToString());
                     lstvListDish.Items.Add(item);
                 }
-            }
-            else
-            {
+            //}
+            //else
+            //{
 
-            }    
+            //}    
         }
         private Image convertbytetoimage(byte[] b)
         {
@@ -80,11 +81,8 @@ namespace frmLogin
                 uc.TenSP = txtDishName.Text;
                 uc.SoLuong = numQuantity.Value.ToString();
                 uc.DonGia = txtDishPrice.Text;
-                uc.KichthuocName1 = cbSize.Text;
-                uc.TenSP1 = txtDishName.Text;
-                uc.SoLuong1 = numQuantity.Value.ToString();
-                uc.DonGia1 = txtDishPrice.Text;
-                uc.KichThuoc1 =Convert.ToInt32(cbSize.SelectedValue);
+                uc.KichThuoc =Convert.ToInt32(cbSize.SelectedValue);
+                uc.KichThuocName = cbSize.Text;
                 flpAddDish.Controls.Add(uc);
 
             }
@@ -118,9 +116,9 @@ namespace frmLogin
                         if (c is Usercontrol)
                         {
                             Usercontrol userControl = (Usercontrol)c;
-                            masp = MenuDishBUS.Instance.ProductID(userControl.TenSP1);
-                            soluong = userControl.SoLuong1;
-                            kichthuoc = userControl.KichThuoc1;
+                            masp = MenuDishBUS.Instance.ProductID(userControl.TenSP);
+                            soluong = userControl.SoLuong;
+                            kichthuoc = userControl.KichThuoc;
                             MenuDishBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
                         }
                     }
@@ -133,9 +131,9 @@ namespace frmLogin
                     if (c is Usercontrol)
                     {
                         Usercontrol userControl = (Usercontrol)c;
-                        masp = MenuDishBUS.Instance.ProductID(userControl.TenSP1);
-                        soluong = userControl.SoLuong1;
-                        kichthuoc = userControl.KichThuoc1;
+                        masp = MenuDishBUS.Instance.ProductID(userControl.TenSP);
+                        soluong = userControl.SoLuong;
+                        kichthuoc = userControl.KichThuoc;
                         MenuDishBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
                     }
                 }
