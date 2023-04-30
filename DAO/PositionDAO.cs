@@ -85,5 +85,33 @@ namespace DAO
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
+
+        public List<Position> GetListPositionDeleted()
+        {
+            List<Position> listPosition = new List<Position>();
+            string query = string.Format("Select * from CHUCVU where xoa = 1");
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Position employee = new Position(item);
+                listPosition.Add(employee);
+            }
+            return listPosition;
+        }
+
+        public int RestorePosition(int macv)
+        {
+            string query = string.Format("update chucvu set xoa = 0 where machucvu={0}", macv);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int RestoreAllPosition()
+        {
+            string query = string.Format("update chucvu set xoa = 0");
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
     }
 }

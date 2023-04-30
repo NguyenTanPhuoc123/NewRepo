@@ -116,3 +116,4 @@ C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Deb
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.CopyComplete
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.exe
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.pdb
+D:\DOAN\frmLogin\obj\Debug\Login.csproj.CopyComplete

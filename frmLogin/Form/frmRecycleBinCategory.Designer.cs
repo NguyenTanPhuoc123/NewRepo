@@ -190,9 +190,9 @@ namespace frmLogin
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1041, 111);
+            this.panel1.Size = new System.Drawing.Size(694, 72);
             this.panel1.TabIndex = 0;
             // 
             // btnExitFormRecycleBinCategory
@@ -200,10 +200,10 @@ namespace frmLogin
             this.btnExitFormRecycleBinCategory.FlatAppearance.BorderSize = 0;
             this.btnExitFormRecycleBinCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitFormRecycleBinCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnExitFormRecycleBinCategory.Image")));
-            this.btnExitFormRecycleBinCategory.Location = new System.Drawing.Point(958, 4);
-            this.btnExitFormRecycleBinCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnExitFormRecycleBinCategory.Location = new System.Drawing.Point(639, 3);
+            this.btnExitFormRecycleBinCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnExitFormRecycleBinCategory.Name = "btnExitFormRecycleBinCategory";
-            this.btnExitFormRecycleBinCategory.Size = new System.Drawing.Size(78, 56);
+            this.btnExitFormRecycleBinCategory.Size = new System.Drawing.Size(52, 36);
             this.btnExitFormRecycleBinCategory.TabIndex = 8;
             this.btnExitFormRecycleBinCategory.UseVisualStyleBackColor = true;
             this.btnExitFormRecycleBinCategory.Click += new System.EventHandler(this.btnExitFormRecycleBinCategory_Click);
@@ -214,9 +214,10 @@ namespace frmLogin
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(325, 21);
+            this.label1.Location = new System.Drawing.Point(217, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 65);
+            this.label1.Size = new System.Drawing.Size(279, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "RECYCLE BIN";
             // 
@@ -232,11 +233,11 @@ namespace frmLogin
             this.tctrlCategoryDeleted.Controls.Add(this.tpTypeCustomerDeleted);
             this.tctrlCategoryDeleted.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tctrlCategoryDeleted.ItemSize = new System.Drawing.Size(180, 40);
-            this.tctrlCategoryDeleted.Location = new System.Drawing.Point(0, 111);
-            this.tctrlCategoryDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tctrlCategoryDeleted.Location = new System.Drawing.Point(0, 72);
+            this.tctrlCategoryDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tctrlCategoryDeleted.Name = "tctrlCategoryDeleted";
             this.tctrlCategoryDeleted.SelectedIndex = 0;
-            this.tctrlCategoryDeleted.Size = new System.Drawing.Size(1041, 495);
+            this.tctrlCategoryDeleted.Size = new System.Drawing.Size(694, 322);
             this.tctrlCategoryDeleted.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tctrlCategoryDeleted.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.tctrlCategoryDeleted.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -262,10 +263,10 @@ namespace frmLogin
             this.tpTypeAccountDeleted.Controls.Add(this.grpFunctionTypeAccount);
             this.tpTypeAccountDeleted.Controls.Add(this.grpTypeAccountInfo);
             this.tpTypeAccountDeleted.Location = new System.Drawing.Point(184, 4);
-            this.tpTypeAccountDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTypeAccountDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tpTypeAccountDeleted.Name = "tpTypeAccountDeleted";
-            this.tpTypeAccountDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpTypeAccountDeleted.Size = new System.Drawing.Size(853, 487);
+            this.tpTypeAccountDeleted.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpTypeAccountDeleted.Size = new System.Drawing.Size(506, 314);
             this.tpTypeAccountDeleted.TabIndex = 0;
             this.tpTypeAccountDeleted.Text = "Loại tài khoản";
             this.tpTypeAccountDeleted.UseVisualStyleBackColor = true;
@@ -296,13 +297,13 @@ namespace frmLogin
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListTypeAccountDeleted.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListTypeAccountDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTypeAccountDeleted.Location = new System.Drawing.Point(44, 249);
-            this.dtgvListTypeAccountDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvListTypeAccountDeleted.Location = new System.Drawing.Point(29, 162);
+            this.dtgvListTypeAccountDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgvListTypeAccountDeleted.Name = "dtgvListTypeAccountDeleted";
             this.dtgvListTypeAccountDeleted.RowHeadersVisible = false;
             this.dtgvListTypeAccountDeleted.RowHeadersWidth = 51;
             this.dtgvListTypeAccountDeleted.RowTemplate.Height = 24;
-            this.dtgvListTypeAccountDeleted.Size = new System.Drawing.Size(738, 226);
+            this.dtgvListTypeAccountDeleted.Size = new System.Drawing.Size(492, 147);
             this.dtgvListTypeAccountDeleted.TabIndex = 3;
             this.dtgvListTypeAccountDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTypeAccountDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -325,6 +326,7 @@ namespace frmLogin
             this.dtgvListTypeAccountDeleted.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvListTypeAccountDeleted.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListTypeAccountDeleted.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvListTypeAccountDeleted.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTypeAccountDeleted_CellContentClick);
             // 
             // Column3
             // 
@@ -344,11 +346,11 @@ namespace frmLogin
             // 
             this.grpFunctionTypeAccount.Controls.Add(this.btnRestoreAllTypeAccount);
             this.grpFunctionTypeAccount.Controls.Add(this.btnRestoreTypeAccount);
-            this.grpFunctionTypeAccount.Location = new System.Drawing.Point(513, 8);
-            this.grpFunctionTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionTypeAccount.Location = new System.Drawing.Point(342, 5);
+            this.grpFunctionTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpFunctionTypeAccount.Name = "grpFunctionTypeAccount";
-            this.grpFunctionTypeAccount.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpFunctionTypeAccount.Size = new System.Drawing.Size(307, 195);
+            this.grpFunctionTypeAccount.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionTypeAccount.Size = new System.Drawing.Size(205, 127);
             this.grpFunctionTypeAccount.TabIndex = 2;
             this.grpFunctionTypeAccount.TabStop = false;
             this.grpFunctionTypeAccount.Text = "Chức năng";
@@ -363,12 +365,13 @@ namespace frmLogin
             this.btnRestoreAllTypeAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllTypeAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllTypeAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllTypeAccount.Location = new System.Drawing.Point(52, 121);
-            this.btnRestoreAllTypeAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreAllTypeAccount.Location = new System.Drawing.Point(35, 79);
+            this.btnRestoreAllTypeAccount.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreAllTypeAccount.Name = "btnRestoreAllTypeAccount";
-            this.btnRestoreAllTypeAccount.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreAllTypeAccount.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreAllTypeAccount.TabIndex = 3;
             this.btnRestoreAllTypeAccount.Text = "Khôi phục tất cả";
+            this.btnRestoreAllTypeAccount.Click += new System.EventHandler(this.btnRestoreAllTypeAccount_Click);
             // 
             // btnRestoreTypeAccount
             // 
@@ -380,12 +383,13 @@ namespace frmLogin
             this.btnRestoreTypeAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreTypeAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreTypeAccount.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreTypeAccount.Location = new System.Drawing.Point(52, 28);
-            this.btnRestoreTypeAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreTypeAccount.Location = new System.Drawing.Point(35, 18);
+            this.btnRestoreTypeAccount.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreTypeAccount.Name = "btnRestoreTypeAccount";
-            this.btnRestoreTypeAccount.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreTypeAccount.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreTypeAccount.TabIndex = 2;
             this.btnRestoreTypeAccount.Text = "Khôi phục";
+            this.btnRestoreTypeAccount.Click += new System.EventHandler(this.btnRestoreTypeAccount_Click);
             // 
             // grpTypeAccountInfo
             // 
@@ -393,11 +397,11 @@ namespace frmLogin
             this.grpTypeAccountInfo.Controls.Add(this.label4);
             this.grpTypeAccountInfo.Controls.Add(this.txtTypeAccountID);
             this.grpTypeAccountInfo.Controls.Add(this.label5);
-            this.grpTypeAccountInfo.Location = new System.Drawing.Point(7, 8);
-            this.grpTypeAccountInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpTypeAccountInfo.Location = new System.Drawing.Point(5, 5);
+            this.grpTypeAccountInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpTypeAccountInfo.Name = "grpTypeAccountInfo";
-            this.grpTypeAccountInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpTypeAccountInfo.Size = new System.Drawing.Size(369, 195);
+            this.grpTypeAccountInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpTypeAccountInfo.Size = new System.Drawing.Size(246, 127);
             this.grpTypeAccountInfo.TabIndex = 1;
             this.grpTypeAccountInfo.TabStop = false;
             this.grpTypeAccountInfo.Text = "Thông tin loại tài khoản";
@@ -414,21 +418,22 @@ namespace frmLogin
             this.txtTypeAccountName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeAccountName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeAccountName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeAccountName.Location = new System.Drawing.Point(100, 102);
-            this.txtTypeAccountName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTypeAccountName.Location = new System.Drawing.Point(67, 66);
+            this.txtTypeAccountName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTypeAccountName.Name = "txtTypeAccountName";
             this.txtTypeAccountName.PasswordChar = '\0';
             this.txtTypeAccountName.PlaceholderText = "";
             this.txtTypeAccountName.SelectedText = "";
-            this.txtTypeAccountName.Size = new System.Drawing.Size(224, 44);
+            this.txtTypeAccountName.Size = new System.Drawing.Size(149, 29);
             this.txtTypeAccountName.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 114);
+            this.label4.Location = new System.Drawing.Point(5, 74);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 20);
+            this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 2;
             this.label4.Text = "Tên loại:";
             // 
@@ -444,21 +449,22 @@ namespace frmLogin
             this.txtTypeAccountID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeAccountID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeAccountID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeAccountID.Location = new System.Drawing.Point(100, 28);
-            this.txtTypeAccountID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTypeAccountID.Location = new System.Drawing.Point(67, 18);
+            this.txtTypeAccountID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTypeAccountID.Name = "txtTypeAccountID";
             this.txtTypeAccountID.PasswordChar = '\0';
             this.txtTypeAccountID.PlaceholderText = "";
             this.txtTypeAccountID.SelectedText = "";
-            this.txtTypeAccountID.Size = new System.Drawing.Size(224, 44);
+            this.txtTypeAccountID.Size = new System.Drawing.Size(149, 29);
             this.txtTypeAccountID.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 39);
+            this.label5.Location = new System.Drawing.Point(5, 25);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 20);
+            this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Mã loại:";
             // 
@@ -468,10 +474,10 @@ namespace frmLogin
             this.tpPositionDeleted.Controls.Add(this.grpFunctionPosition);
             this.tpPositionDeleted.Controls.Add(this.grpPositionInfo);
             this.tpPositionDeleted.Location = new System.Drawing.Point(184, 4);
-            this.tpPositionDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpPositionDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tpPositionDeleted.Name = "tpPositionDeleted";
-            this.tpPositionDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpPositionDeleted.Size = new System.Drawing.Size(853, 487);
+            this.tpPositionDeleted.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpPositionDeleted.Size = new System.Drawing.Size(506, 314);
             this.tpPositionDeleted.TabIndex = 1;
             this.tpPositionDeleted.Text = "Chức vụ";
             this.tpPositionDeleted.UseVisualStyleBackColor = true;
@@ -504,13 +510,13 @@ namespace frmLogin
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListPositionDeleted.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListPositionDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListPositionDeleted.Location = new System.Drawing.Point(46, 288);
-            this.dtgvListPositionDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvListPositionDeleted.Location = new System.Drawing.Point(31, 187);
+            this.dtgvListPositionDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgvListPositionDeleted.Name = "dtgvListPositionDeleted";
             this.dtgvListPositionDeleted.RowHeadersVisible = false;
             this.dtgvListPositionDeleted.RowHeadersWidth = 51;
             this.dtgvListPositionDeleted.RowTemplate.Height = 24;
-            this.dtgvListPositionDeleted.Size = new System.Drawing.Size(732, 188);
+            this.dtgvListPositionDeleted.Size = new System.Drawing.Size(488, 122);
             this.dtgvListPositionDeleted.TabIndex = 4;
             this.dtgvListPositionDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListPositionDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -533,6 +539,7 @@ namespace frmLogin
             this.dtgvListPositionDeleted.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvListPositionDeleted.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListPositionDeleted.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvListPositionDeleted.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListPositionDeleted_CellContentClick);
             // 
             // Column5
             // 
@@ -552,11 +559,11 @@ namespace frmLogin
             // 
             this.grpFunctionPosition.Controls.Add(this.RestoreAllPosition);
             this.grpFunctionPosition.Controls.Add(this.RestorePosition);
-            this.grpFunctionPosition.Location = new System.Drawing.Point(513, 8);
-            this.grpFunctionPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionPosition.Location = new System.Drawing.Point(342, 5);
+            this.grpFunctionPosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpFunctionPosition.Name = "grpFunctionPosition";
-            this.grpFunctionPosition.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpFunctionPosition.Size = new System.Drawing.Size(307, 195);
+            this.grpFunctionPosition.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionPosition.Size = new System.Drawing.Size(205, 127);
             this.grpFunctionPosition.TabIndex = 3;
             this.grpFunctionPosition.TabStop = false;
             this.grpFunctionPosition.Text = "Chức năng";
@@ -571,12 +578,13 @@ namespace frmLogin
             this.RestoreAllPosition.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.RestoreAllPosition.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.RestoreAllPosition.ForeColor = System.Drawing.Color.Black;
-            this.RestoreAllPosition.Location = new System.Drawing.Point(52, 121);
-            this.RestoreAllPosition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RestoreAllPosition.Location = new System.Drawing.Point(35, 79);
+            this.RestoreAllPosition.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.RestoreAllPosition.Name = "RestoreAllPosition";
-            this.RestoreAllPosition.Size = new System.Drawing.Size(204, 58);
+            this.RestoreAllPosition.Size = new System.Drawing.Size(136, 38);
             this.RestoreAllPosition.TabIndex = 3;
             this.RestoreAllPosition.Text = "Khôi phục tất cả";
+            this.RestoreAllPosition.Click += new System.EventHandler(this.RestoreAllPosition_Click);
             // 
             // RestorePosition
             // 
@@ -588,12 +596,13 @@ namespace frmLogin
             this.RestorePosition.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.RestorePosition.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.RestorePosition.ForeColor = System.Drawing.Color.Black;
-            this.RestorePosition.Location = new System.Drawing.Point(52, 28);
-            this.RestorePosition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RestorePosition.Location = new System.Drawing.Point(35, 18);
+            this.RestorePosition.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.RestorePosition.Name = "RestorePosition";
-            this.RestorePosition.Size = new System.Drawing.Size(204, 58);
+            this.RestorePosition.Size = new System.Drawing.Size(136, 38);
             this.RestorePosition.TabIndex = 2;
             this.RestorePosition.Text = "Khôi phục";
+            this.RestorePosition.Click += new System.EventHandler(this.RestorePosition_Click);
             // 
             // grpPositionInfo
             // 
@@ -601,11 +610,11 @@ namespace frmLogin
             this.grpPositionInfo.Controls.Add(this.label6);
             this.grpPositionInfo.Controls.Add(this.txtPositionID);
             this.grpPositionInfo.Controls.Add(this.label7);
-            this.grpPositionInfo.Location = new System.Drawing.Point(7, 8);
-            this.grpPositionInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpPositionInfo.Location = new System.Drawing.Point(5, 5);
+            this.grpPositionInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpPositionInfo.Name = "grpPositionInfo";
-            this.grpPositionInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpPositionInfo.Size = new System.Drawing.Size(369, 195);
+            this.grpPositionInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpPositionInfo.Size = new System.Drawing.Size(246, 127);
             this.grpPositionInfo.TabIndex = 2;
             this.grpPositionInfo.TabStop = false;
             this.grpPositionInfo.Text = "Thông tin chức vụ";
@@ -622,21 +631,22 @@ namespace frmLogin
             this.txtPositionName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPositionName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPositionName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPositionName.Location = new System.Drawing.Point(138, 102);
-            this.txtPositionName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtPositionName.Location = new System.Drawing.Point(92, 66);
+            this.txtPositionName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPositionName.Name = "txtPositionName";
             this.txtPositionName.PasswordChar = '\0';
             this.txtPositionName.PlaceholderText = "";
             this.txtPositionName.SelectedText = "";
-            this.txtPositionName.Size = new System.Drawing.Size(224, 44);
+            this.txtPositionName.Size = new System.Drawing.Size(149, 29);
             this.txtPositionName.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 114);
+            this.label6.Location = new System.Drawing.Point(5, 74);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 20);
+            this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 2;
             this.label6.Text = "Tên chức vụ:";
             // 
@@ -652,21 +662,22 @@ namespace frmLogin
             this.txtPositionID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPositionID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPositionID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPositionID.Location = new System.Drawing.Point(138, 28);
-            this.txtPositionID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtPositionID.Location = new System.Drawing.Point(92, 18);
+            this.txtPositionID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPositionID.Name = "txtPositionID";
             this.txtPositionID.PasswordChar = '\0';
             this.txtPositionID.PlaceholderText = "";
             this.txtPositionID.SelectedText = "";
-            this.txtPositionID.Size = new System.Drawing.Size(224, 44);
+            this.txtPositionID.Size = new System.Drawing.Size(149, 29);
             this.txtPositionID.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 39);
+            this.label7.Location = new System.Drawing.Point(9, 25);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 20);
+            this.label7.Size = new System.Drawing.Size(67, 13);
             this.label7.TabIndex = 0;
             this.label7.Text = "Mã chức vụ:";
             // 
@@ -676,10 +687,10 @@ namespace frmLogin
             this.tpLocationDeleted.Controls.Add(this.grpFunctionLocationDeleted);
             this.tpLocationDeleted.Controls.Add(this.grpLocationInfo);
             this.tpLocationDeleted.Location = new System.Drawing.Point(184, 4);
-            this.tpLocationDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpLocationDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tpLocationDeleted.Name = "tpLocationDeleted";
-            this.tpLocationDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpLocationDeleted.Size = new System.Drawing.Size(853, 487);
+            this.tpLocationDeleted.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpLocationDeleted.Size = new System.Drawing.Size(506, 314);
             this.tpLocationDeleted.TabIndex = 2;
             this.tpLocationDeleted.Text = "Vị trí bàn ăn";
             this.tpLocationDeleted.UseVisualStyleBackColor = true;
@@ -711,13 +722,13 @@ namespace frmLogin
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListLocationDeleted.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtgvListLocationDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListLocationDeleted.Location = new System.Drawing.Point(29, 252);
-            this.dtgvListLocationDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvListLocationDeleted.Location = new System.Drawing.Point(19, 164);
+            this.dtgvListLocationDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgvListLocationDeleted.Name = "dtgvListLocationDeleted";
             this.dtgvListLocationDeleted.RowHeadersVisible = false;
             this.dtgvListLocationDeleted.RowHeadersWidth = 51;
             this.dtgvListLocationDeleted.RowTemplate.Height = 24;
-            this.dtgvListLocationDeleted.Size = new System.Drawing.Size(664, 222);
+            this.dtgvListLocationDeleted.Size = new System.Drawing.Size(443, 144);
             this.dtgvListLocationDeleted.TabIndex = 2;
             this.dtgvListLocationDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListLocationDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -760,11 +771,11 @@ namespace frmLogin
             // 
             this.grpFunctionLocationDeleted.Controls.Add(this.btnRestoreAllLocation);
             this.grpFunctionLocationDeleted.Controls.Add(this.btnRestoreLocation);
-            this.grpFunctionLocationDeleted.Location = new System.Drawing.Point(403, 8);
-            this.grpFunctionLocationDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionLocationDeleted.Location = new System.Drawing.Point(269, 5);
+            this.grpFunctionLocationDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpFunctionLocationDeleted.Name = "grpFunctionLocationDeleted";
-            this.grpFunctionLocationDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpFunctionLocationDeleted.Size = new System.Drawing.Size(307, 195);
+            this.grpFunctionLocationDeleted.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionLocationDeleted.Size = new System.Drawing.Size(205, 127);
             this.grpFunctionLocationDeleted.TabIndex = 1;
             this.grpFunctionLocationDeleted.TabStop = false;
             this.grpFunctionLocationDeleted.Text = "Chức năng";
@@ -779,10 +790,10 @@ namespace frmLogin
             this.btnRestoreAllLocation.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllLocation.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllLocation.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllLocation.Location = new System.Drawing.Point(52, 121);
-            this.btnRestoreAllLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreAllLocation.Location = new System.Drawing.Point(35, 79);
+            this.btnRestoreAllLocation.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreAllLocation.Name = "btnRestoreAllLocation";
-            this.btnRestoreAllLocation.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreAllLocation.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreAllLocation.TabIndex = 3;
             this.btnRestoreAllLocation.Text = "Khôi phục tất cả";
             this.btnRestoreAllLocation.Click += new System.EventHandler(this.btnRestoreAllLocation_Click);
@@ -797,10 +808,10 @@ namespace frmLogin
             this.btnRestoreLocation.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreLocation.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreLocation.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreLocation.Location = new System.Drawing.Point(52, 28);
-            this.btnRestoreLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreLocation.Location = new System.Drawing.Point(35, 18);
+            this.btnRestoreLocation.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreLocation.Name = "btnRestoreLocation";
-            this.btnRestoreLocation.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreLocation.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreLocation.TabIndex = 2;
             this.btnRestoreLocation.Text = "Khôi phục";
             this.btnRestoreLocation.Click += new System.EventHandler(this.btnRestoreLocation_Click);
@@ -811,11 +822,11 @@ namespace frmLogin
             this.grpLocationInfo.Controls.Add(this.label3);
             this.grpLocationInfo.Controls.Add(this.txtLocationID);
             this.grpLocationInfo.Controls.Add(this.label2);
-            this.grpLocationInfo.Location = new System.Drawing.Point(7, 8);
-            this.grpLocationInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpLocationInfo.Location = new System.Drawing.Point(5, 5);
+            this.grpLocationInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpLocationInfo.Name = "grpLocationInfo";
-            this.grpLocationInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpLocationInfo.Size = new System.Drawing.Size(369, 195);
+            this.grpLocationInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpLocationInfo.Size = new System.Drawing.Size(246, 127);
             this.grpLocationInfo.TabIndex = 0;
             this.grpLocationInfo.TabStop = false;
             this.grpLocationInfo.Text = "Thông tin vị trí bàn";
@@ -832,21 +843,22 @@ namespace frmLogin
             this.txtLocationName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLocationName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLocationName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLocationName.Location = new System.Drawing.Point(100, 102);
-            this.txtLocationName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtLocationName.Location = new System.Drawing.Point(67, 66);
+            this.txtLocationName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtLocationName.Name = "txtLocationName";
             this.txtLocationName.PasswordChar = '\0';
             this.txtLocationName.PlaceholderText = "";
             this.txtLocationName.SelectedText = "";
-            this.txtLocationName.Size = new System.Drawing.Size(224, 44);
+            this.txtLocationName.Size = new System.Drawing.Size(149, 29);
             this.txtLocationName.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 114);
+            this.label3.Location = new System.Drawing.Point(5, 74);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tên vị trí:";
             // 
@@ -862,21 +874,22 @@ namespace frmLogin
             this.txtLocationID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLocationID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLocationID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLocationID.Location = new System.Drawing.Point(100, 28);
-            this.txtLocationID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtLocationID.Location = new System.Drawing.Point(67, 18);
+            this.txtLocationID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtLocationID.Name = "txtLocationID";
             this.txtLocationID.PasswordChar = '\0';
             this.txtLocationID.PlaceholderText = "";
             this.txtLocationID.SelectedText = "";
-            this.txtLocationID.Size = new System.Drawing.Size(224, 44);
+            this.txtLocationID.Size = new System.Drawing.Size(149, 29);
             this.txtLocationID.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 39);
+            this.label2.Location = new System.Drawing.Point(5, 25);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã vị trí:";
             // 
@@ -886,10 +899,10 @@ namespace frmLogin
             this.tpTypeProductDeleted.Controls.Add(this.grpFunctionTypeProduct);
             this.tpTypeProductDeleted.Controls.Add(this.grpTypeProductInfo);
             this.tpTypeProductDeleted.Location = new System.Drawing.Point(184, 4);
-            this.tpTypeProductDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTypeProductDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tpTypeProductDeleted.Name = "tpTypeProductDeleted";
-            this.tpTypeProductDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpTypeProductDeleted.Size = new System.Drawing.Size(853, 487);
+            this.tpTypeProductDeleted.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpTypeProductDeleted.Size = new System.Drawing.Size(506, 314);
             this.tpTypeProductDeleted.TabIndex = 3;
             this.tpTypeProductDeleted.Text = "Loại sản phẩm";
             this.tpTypeProductDeleted.UseVisualStyleBackColor = true;
@@ -920,13 +933,13 @@ namespace frmLogin
             dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListTypeProductDeleted.DefaultCellStyle = dataGridViewCellStyle12;
             this.dtgvListTypeProductDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTypeProductDeleted.Location = new System.Drawing.Point(46, 281);
-            this.dtgvListTypeProductDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvListTypeProductDeleted.Location = new System.Drawing.Point(31, 183);
+            this.dtgvListTypeProductDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgvListTypeProductDeleted.Name = "dtgvListTypeProductDeleted";
             this.dtgvListTypeProductDeleted.RowHeadersVisible = false;
             this.dtgvListTypeProductDeleted.RowHeadersWidth = 51;
             this.dtgvListTypeProductDeleted.RowTemplate.Height = 24;
-            this.dtgvListTypeProductDeleted.Size = new System.Drawing.Size(736, 194);
+            this.dtgvListTypeProductDeleted.Size = new System.Drawing.Size(491, 126);
             this.dtgvListTypeProductDeleted.TabIndex = 4;
             this.dtgvListTypeProductDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTypeProductDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -969,11 +982,11 @@ namespace frmLogin
             // 
             this.grpFunctionTypeProduct.Controls.Add(this.btnRestoreAllTypeProduct);
             this.grpFunctionTypeProduct.Controls.Add(this.btnRestoreTypeProduct);
-            this.grpFunctionTypeProduct.Location = new System.Drawing.Point(513, 8);
-            this.grpFunctionTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionTypeProduct.Location = new System.Drawing.Point(342, 5);
+            this.grpFunctionTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpFunctionTypeProduct.Name = "grpFunctionTypeProduct";
-            this.grpFunctionTypeProduct.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpFunctionTypeProduct.Size = new System.Drawing.Size(307, 195);
+            this.grpFunctionTypeProduct.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionTypeProduct.Size = new System.Drawing.Size(205, 127);
             this.grpFunctionTypeProduct.TabIndex = 3;
             this.grpFunctionTypeProduct.TabStop = false;
             this.grpFunctionTypeProduct.Text = "Chức năng";
@@ -988,10 +1001,10 @@ namespace frmLogin
             this.btnRestoreAllTypeProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllTypeProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllTypeProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllTypeProduct.Location = new System.Drawing.Point(52, 121);
-            this.btnRestoreAllTypeProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreAllTypeProduct.Location = new System.Drawing.Point(35, 79);
+            this.btnRestoreAllTypeProduct.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreAllTypeProduct.Name = "btnRestoreAllTypeProduct";
-            this.btnRestoreAllTypeProduct.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreAllTypeProduct.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreAllTypeProduct.TabIndex = 3;
             this.btnRestoreAllTypeProduct.Text = "Khôi phục tất cả";
             this.btnRestoreAllTypeProduct.Click += new System.EventHandler(this.btnRestoreAllLocation_Click);
@@ -1006,10 +1019,10 @@ namespace frmLogin
             this.btnRestoreTypeProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreTypeProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreTypeProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreTypeProduct.Location = new System.Drawing.Point(52, 28);
-            this.btnRestoreTypeProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreTypeProduct.Location = new System.Drawing.Point(35, 18);
+            this.btnRestoreTypeProduct.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreTypeProduct.Name = "btnRestoreTypeProduct";
-            this.btnRestoreTypeProduct.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreTypeProduct.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreTypeProduct.TabIndex = 2;
             this.btnRestoreTypeProduct.Text = "Khôi phục";
             this.btnRestoreTypeProduct.Click += new System.EventHandler(this.btnRestoreTypeProduct_Click);
@@ -1020,11 +1033,11 @@ namespace frmLogin
             this.grpTypeProductInfo.Controls.Add(this.label8);
             this.grpTypeProductInfo.Controls.Add(this.txtTypeProductID);
             this.grpTypeProductInfo.Controls.Add(this.label9);
-            this.grpTypeProductInfo.Location = new System.Drawing.Point(7, 8);
-            this.grpTypeProductInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpTypeProductInfo.Location = new System.Drawing.Point(5, 5);
+            this.grpTypeProductInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpTypeProductInfo.Name = "grpTypeProductInfo";
-            this.grpTypeProductInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpTypeProductInfo.Size = new System.Drawing.Size(369, 195);
+            this.grpTypeProductInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpTypeProductInfo.Size = new System.Drawing.Size(246, 127);
             this.grpTypeProductInfo.TabIndex = 2;
             this.grpTypeProductInfo.TabStop = false;
             this.grpTypeProductInfo.Text = "Thông tin loại sản phẩm";
@@ -1041,21 +1054,22 @@ namespace frmLogin
             this.txtTypeProductName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeProductName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeProductName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeProductName.Location = new System.Drawing.Point(100, 102);
-            this.txtTypeProductName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTypeProductName.Location = new System.Drawing.Point(67, 66);
+            this.txtTypeProductName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTypeProductName.Name = "txtTypeProductName";
             this.txtTypeProductName.PasswordChar = '\0';
             this.txtTypeProductName.PlaceholderText = "";
             this.txtTypeProductName.SelectedText = "";
-            this.txtTypeProductName.Size = new System.Drawing.Size(224, 44);
+            this.txtTypeProductName.Size = new System.Drawing.Size(149, 29);
             this.txtTypeProductName.TabIndex = 3;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 114);
+            this.label8.Location = new System.Drawing.Point(5, 74);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 20);
+            this.label8.Size = new System.Drawing.Size(48, 13);
             this.label8.TabIndex = 2;
             this.label8.Text = "Tên loại:";
             // 
@@ -1071,21 +1085,22 @@ namespace frmLogin
             this.txtTypeProductID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeProductID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeProductID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeProductID.Location = new System.Drawing.Point(100, 28);
-            this.txtTypeProductID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTypeProductID.Location = new System.Drawing.Point(67, 18);
+            this.txtTypeProductID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTypeProductID.Name = "txtTypeProductID";
             this.txtTypeProductID.PasswordChar = '\0';
             this.txtTypeProductID.PlaceholderText = "";
             this.txtTypeProductID.SelectedText = "";
-            this.txtTypeProductID.Size = new System.Drawing.Size(224, 44);
+            this.txtTypeProductID.Size = new System.Drawing.Size(149, 29);
             this.txtTypeProductID.TabIndex = 1;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 39);
+            this.label9.Location = new System.Drawing.Point(5, 25);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 20);
+            this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 0;
             this.label9.Text = "Mã loại:";
             // 
@@ -1095,10 +1110,10 @@ namespace frmLogin
             this.tpSizeProductDeleted.Controls.Add(this.grpFunctionSize);
             this.tpSizeProductDeleted.Controls.Add(this.grpSizeProductInfo);
             this.tpSizeProductDeleted.Location = new System.Drawing.Point(184, 4);
-            this.tpSizeProductDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpSizeProductDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tpSizeProductDeleted.Name = "tpSizeProductDeleted";
-            this.tpSizeProductDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpSizeProductDeleted.Size = new System.Drawing.Size(853, 487);
+            this.tpSizeProductDeleted.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpSizeProductDeleted.Size = new System.Drawing.Size(506, 314);
             this.tpSizeProductDeleted.TabIndex = 4;
             this.tpSizeProductDeleted.Text = "Kích thước sản phẩm";
             this.tpSizeProductDeleted.UseVisualStyleBackColor = true;
@@ -1130,13 +1145,13 @@ namespace frmLogin
             dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListSizeDeleted.DefaultCellStyle = dataGridViewCellStyle15;
             this.dtgvListSizeDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListSizeDeleted.Location = new System.Drawing.Point(53, 288);
-            this.dtgvListSizeDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvListSizeDeleted.Location = new System.Drawing.Point(35, 187);
+            this.dtgvListSizeDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgvListSizeDeleted.Name = "dtgvListSizeDeleted";
             this.dtgvListSizeDeleted.RowHeadersVisible = false;
             this.dtgvListSizeDeleted.RowHeadersWidth = 51;
             this.dtgvListSizeDeleted.RowTemplate.Height = 24;
-            this.dtgvListSizeDeleted.Size = new System.Drawing.Size(727, 188);
+            this.dtgvListSizeDeleted.Size = new System.Drawing.Size(485, 122);
             this.dtgvListSizeDeleted.TabIndex = 5;
             this.dtgvListSizeDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListSizeDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1182,11 +1197,11 @@ namespace frmLogin
             // 
             this.grpFunctionSize.Controls.Add(this.btnRestoreAllSize);
             this.grpFunctionSize.Controls.Add(this.btnRestoreSize);
-            this.grpFunctionSize.Location = new System.Drawing.Point(513, 8);
-            this.grpFunctionSize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionSize.Location = new System.Drawing.Point(342, 5);
+            this.grpFunctionSize.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpFunctionSize.Name = "grpFunctionSize";
-            this.grpFunctionSize.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpFunctionSize.Size = new System.Drawing.Size(307, 195);
+            this.grpFunctionSize.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionSize.Size = new System.Drawing.Size(205, 127);
             this.grpFunctionSize.TabIndex = 4;
             this.grpFunctionSize.TabStop = false;
             this.grpFunctionSize.Text = "Chức năng";
@@ -1201,10 +1216,10 @@ namespace frmLogin
             this.btnRestoreAllSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllSize.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllSize.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllSize.Location = new System.Drawing.Point(52, 121);
-            this.btnRestoreAllSize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreAllSize.Location = new System.Drawing.Point(35, 79);
+            this.btnRestoreAllSize.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreAllSize.Name = "btnRestoreAllSize";
-            this.btnRestoreAllSize.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreAllSize.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreAllSize.TabIndex = 3;
             this.btnRestoreAllSize.Text = "Khôi phục tất cả";
             // 
@@ -1218,10 +1233,10 @@ namespace frmLogin
             this.btnRestoreSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreSize.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreSize.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreSize.Location = new System.Drawing.Point(52, 28);
-            this.btnRestoreSize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreSize.Location = new System.Drawing.Point(35, 18);
+            this.btnRestoreSize.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreSize.Name = "btnRestoreSize";
-            this.btnRestoreSize.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreSize.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreSize.TabIndex = 2;
             this.btnRestoreSize.Text = "Khôi phục";
             // 
@@ -1233,11 +1248,11 @@ namespace frmLogin
             this.grpSizeProductInfo.Controls.Add(this.label10);
             this.grpSizeProductInfo.Controls.Add(this.txtSizeID);
             this.grpSizeProductInfo.Controls.Add(this.label11);
-            this.grpSizeProductInfo.Location = new System.Drawing.Point(7, 8);
-            this.grpSizeProductInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpSizeProductInfo.Location = new System.Drawing.Point(5, 5);
+            this.grpSizeProductInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpSizeProductInfo.Name = "grpSizeProductInfo";
-            this.grpSizeProductInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpSizeProductInfo.Size = new System.Drawing.Size(369, 231);
+            this.grpSizeProductInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpSizeProductInfo.Size = new System.Drawing.Size(246, 150);
             this.grpSizeProductInfo.TabIndex = 3;
             this.grpSizeProductInfo.TabStop = false;
             this.grpSizeProductInfo.Text = "Thông tin kích thước";
@@ -1254,21 +1269,22 @@ namespace frmLogin
             this.txtSizePrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSizePrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSizePrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSizePrice.Location = new System.Drawing.Point(138, 156);
-            this.txtSizePrice.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtSizePrice.Location = new System.Drawing.Point(92, 101);
+            this.txtSizePrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSizePrice.Name = "txtSizePrice";
             this.txtSizePrice.PasswordChar = '\0';
             this.txtSizePrice.PlaceholderText = "";
             this.txtSizePrice.SelectedText = "";
-            this.txtSizePrice.Size = new System.Drawing.Size(224, 44);
+            this.txtSizePrice.Size = new System.Drawing.Size(149, 29);
             this.txtSizePrice.TabIndex = 5;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(56, 172);
+            this.label12.Location = new System.Drawing.Point(37, 112);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 20);
+            this.label12.Size = new System.Drawing.Size(47, 13);
             this.label12.TabIndex = 4;
             this.label12.Text = "Đơn giá:";
             // 
@@ -1284,21 +1300,22 @@ namespace frmLogin
             this.txtSizeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSizeName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSizeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSizeName.Location = new System.Drawing.Point(138, 102);
-            this.txtSizeName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtSizeName.Location = new System.Drawing.Point(92, 66);
+            this.txtSizeName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSizeName.Name = "txtSizeName";
             this.txtSizeName.PasswordChar = '\0';
             this.txtSizeName.PlaceholderText = "";
             this.txtSizeName.SelectedText = "";
-            this.txtSizeName.Size = new System.Drawing.Size(224, 44);
+            this.txtSizeName.Size = new System.Drawing.Size(149, 29);
             this.txtSizeName.TabIndex = 3;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 114);
+            this.label10.Location = new System.Drawing.Point(5, 74);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 20);
+            this.label10.Size = new System.Drawing.Size(84, 13);
             this.label10.TabIndex = 2;
             this.label10.Text = "Tên kích thước:";
             // 
@@ -1314,21 +1331,22 @@ namespace frmLogin
             this.txtSizeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSizeID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSizeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSizeID.Location = new System.Drawing.Point(138, 28);
-            this.txtSizeID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtSizeID.Location = new System.Drawing.Point(92, 18);
+            this.txtSizeID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSizeID.Name = "txtSizeID";
             this.txtSizeID.PasswordChar = '\0';
             this.txtSizeID.PlaceholderText = "";
             this.txtSizeID.SelectedText = "";
-            this.txtSizeID.Size = new System.Drawing.Size(224, 44);
+            this.txtSizeID.Size = new System.Drawing.Size(149, 29);
             this.txtSizeID.TabIndex = 1;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(14, 39);
+            this.label11.Location = new System.Drawing.Point(9, 25);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(111, 20);
+            this.label11.Size = new System.Drawing.Size(80, 13);
             this.label11.TabIndex = 0;
             this.label11.Text = "Mã kích thước:";
             // 
@@ -1338,10 +1356,10 @@ namespace frmLogin
             this.tpDiscountDeleted.Controls.Add(this.grpFunctionDiscount);
             this.tpDiscountDeleted.Controls.Add(this.grpDiscountInfo);
             this.tpDiscountDeleted.Location = new System.Drawing.Point(184, 4);
-            this.tpDiscountDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpDiscountDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tpDiscountDeleted.Name = "tpDiscountDeleted";
-            this.tpDiscountDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpDiscountDeleted.Size = new System.Drawing.Size(853, 487);
+            this.tpDiscountDeleted.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpDiscountDeleted.Size = new System.Drawing.Size(506, 314);
             this.tpDiscountDeleted.TabIndex = 5;
             this.tpDiscountDeleted.Text = "Giảm giá";
             this.tpDiscountDeleted.UseVisualStyleBackColor = true;
@@ -1375,13 +1393,13 @@ namespace frmLogin
             dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListDiscountDeleted.DefaultCellStyle = dataGridViewCellStyle18;
             this.dtgvListDiscountDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListDiscountDeleted.Location = new System.Drawing.Point(7, 332);
-            this.dtgvListDiscountDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvListDiscountDeleted.Location = new System.Drawing.Point(5, 216);
+            this.dtgvListDiscountDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgvListDiscountDeleted.Name = "dtgvListDiscountDeleted";
             this.dtgvListDiscountDeleted.RowHeadersVisible = false;
             this.dtgvListDiscountDeleted.RowHeadersWidth = 51;
             this.dtgvListDiscountDeleted.RowTemplate.Height = 24;
-            this.dtgvListDiscountDeleted.Size = new System.Drawing.Size(813, 142);
+            this.dtgvListDiscountDeleted.Size = new System.Drawing.Size(542, 92);
             this.dtgvListDiscountDeleted.TabIndex = 6;
             this.dtgvListDiscountDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListDiscountDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1444,11 +1462,11 @@ namespace frmLogin
             // 
             this.grpFunctionDiscount.Controls.Add(this.btnRestoreAllDiscount);
             this.grpFunctionDiscount.Controls.Add(this.btnRestoreDiscount);
-            this.grpFunctionDiscount.Location = new System.Drawing.Point(476, 8);
-            this.grpFunctionDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionDiscount.Location = new System.Drawing.Point(317, 5);
+            this.grpFunctionDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpFunctionDiscount.Name = "grpFunctionDiscount";
-            this.grpFunctionDiscount.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpFunctionDiscount.Size = new System.Drawing.Size(344, 195);
+            this.grpFunctionDiscount.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionDiscount.Size = new System.Drawing.Size(229, 127);
             this.grpFunctionDiscount.TabIndex = 5;
             this.grpFunctionDiscount.TabStop = false;
             this.grpFunctionDiscount.Text = "Chức năng";
@@ -1463,10 +1481,10 @@ namespace frmLogin
             this.btnRestoreAllDiscount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllDiscount.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllDiscount.Location = new System.Drawing.Point(81, 110);
-            this.btnRestoreAllDiscount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreAllDiscount.Location = new System.Drawing.Point(54, 71);
+            this.btnRestoreAllDiscount.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreAllDiscount.Name = "btnRestoreAllDiscount";
-            this.btnRestoreAllDiscount.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreAllDiscount.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreAllDiscount.TabIndex = 3;
             this.btnRestoreAllDiscount.Text = "Khôi phục tất cả";
             // 
@@ -1480,10 +1498,10 @@ namespace frmLogin
             this.btnRestoreDiscount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreDiscount.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreDiscount.Location = new System.Drawing.Point(81, 28);
-            this.btnRestoreDiscount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreDiscount.Location = new System.Drawing.Point(54, 18);
+            this.btnRestoreDiscount.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreDiscount.Name = "btnRestoreDiscount";
-            this.btnRestoreDiscount.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreDiscount.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreDiscount.TabIndex = 2;
             this.btnRestoreDiscount.Text = "Khôi phục";
             // 
@@ -1499,11 +1517,11 @@ namespace frmLogin
             this.grpDiscountInfo.Controls.Add(this.label14);
             this.grpDiscountInfo.Controls.Add(this.txtDiscountID);
             this.grpDiscountInfo.Controls.Add(this.label15);
-            this.grpDiscountInfo.Location = new System.Drawing.Point(7, 8);
-            this.grpDiscountInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpDiscountInfo.Location = new System.Drawing.Point(5, 5);
+            this.grpDiscountInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpDiscountInfo.Name = "grpDiscountInfo";
-            this.grpDiscountInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpDiscountInfo.Size = new System.Drawing.Size(382, 301);
+            this.grpDiscountInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpDiscountInfo.Size = new System.Drawing.Size(255, 196);
             this.grpDiscountInfo.TabIndex = 4;
             this.grpDiscountInfo.TabStop = false;
             this.grpDiscountInfo.Text = "Thông tin giảm giá";
@@ -1513,21 +1531,22 @@ namespace frmLogin
             this.dtpDateEnd.Checked = true;
             this.dtpDateEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpDateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpDateEnd.Location = new System.Drawing.Point(138, 240);
-            this.dtpDateEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtpDateEnd.Location = new System.Drawing.Point(92, 156);
+            this.dtpDateEnd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtpDateEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDateEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpDateEnd.Name = "dtpDateEnd";
-            this.dtpDateEnd.Size = new System.Drawing.Size(225, 45);
+            this.dtpDateEnd.Size = new System.Drawing.Size(150, 29);
             this.dtpDateEnd.TabIndex = 9;
             this.dtpDateEnd.Value = new System.DateTime(2023, 4, 22, 14, 58, 9, 643);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(7, 255);
+            this.label17.Location = new System.Drawing.Point(5, 166);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(110, 20);
+            this.label17.Size = new System.Drawing.Size(77, 13);
             this.label17.TabIndex = 8;
             this.label17.Text = "Ngày kết thúc:";
             // 
@@ -1536,21 +1555,22 @@ namespace frmLogin
             this.dtpDateStart.Checked = true;
             this.dtpDateStart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpDateStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpDateStart.Location = new System.Drawing.Point(138, 188);
-            this.dtpDateStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtpDateStart.Location = new System.Drawing.Point(92, 122);
+            this.dtpDateStart.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtpDateStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDateStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpDateStart.Name = "dtpDateStart";
-            this.dtpDateStart.Size = new System.Drawing.Size(225, 45);
+            this.dtpDateStart.Size = new System.Drawing.Size(150, 29);
             this.dtpDateStart.TabIndex = 7;
             this.dtpDateStart.Value = new System.DateTime(2023, 4, 22, 14, 58, 9, 643);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(7, 199);
+            this.label16.Location = new System.Drawing.Point(5, 129);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(107, 20);
+            this.label16.Size = new System.Drawing.Size(75, 13);
             this.label16.TabIndex = 6;
             this.label16.Text = "Ngày bắt đầu:";
             // 
@@ -1566,21 +1586,22 @@ namespace frmLogin
             this.txtDiscountPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiscountPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiscountPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscountPrice.Location = new System.Drawing.Point(138, 135);
-            this.txtDiscountPrice.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtDiscountPrice.Location = new System.Drawing.Point(92, 88);
+            this.txtDiscountPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtDiscountPrice.Name = "txtDiscountPrice";
             this.txtDiscountPrice.PasswordChar = '\0';
             this.txtDiscountPrice.PlaceholderText = "";
             this.txtDiscountPrice.SelectedText = "";
-            this.txtDiscountPrice.Size = new System.Drawing.Size(224, 44);
+            this.txtDiscountPrice.Size = new System.Drawing.Size(149, 29);
             this.txtDiscountPrice.TabIndex = 5;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(47, 146);
+            this.label13.Location = new System.Drawing.Point(31, 95);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 20);
+            this.label13.Size = new System.Drawing.Size(47, 13);
             this.label13.TabIndex = 4;
             this.label13.Text = "Đơn giá:";
             // 
@@ -1596,21 +1617,22 @@ namespace frmLogin
             this.txtDiscountName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiscountName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiscountName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscountName.Location = new System.Drawing.Point(138, 81);
-            this.txtDiscountName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtDiscountName.Location = new System.Drawing.Point(92, 53);
+            this.txtDiscountName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtDiscountName.Name = "txtDiscountName";
             this.txtDiscountName.PasswordChar = '\0';
             this.txtDiscountName.PlaceholderText = "";
             this.txtDiscountName.SelectedText = "";
-            this.txtDiscountName.Size = new System.Drawing.Size(224, 44);
+            this.txtDiscountName.Size = new System.Drawing.Size(149, 29);
             this.txtDiscountName.TabIndex = 3;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(10, 92);
+            this.label14.Location = new System.Drawing.Point(7, 60);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(103, 20);
+            this.label14.Size = new System.Drawing.Size(71, 13);
             this.label14.TabIndex = 2;
             this.label14.Text = "Tên giảm giá:";
             // 
@@ -1626,21 +1648,22 @@ namespace frmLogin
             this.txtDiscountID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiscountID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiscountID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscountID.Location = new System.Drawing.Point(138, 28);
-            this.txtDiscountID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtDiscountID.Location = new System.Drawing.Point(92, 18);
+            this.txtDiscountID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtDiscountID.Name = "txtDiscountID";
             this.txtDiscountID.PasswordChar = '\0';
             this.txtDiscountID.PlaceholderText = "";
             this.txtDiscountID.SelectedText = "";
-            this.txtDiscountID.Size = new System.Drawing.Size(224, 44);
+            this.txtDiscountID.Size = new System.Drawing.Size(149, 29);
             this.txtDiscountID.TabIndex = 1;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(17, 39);
+            this.label15.Location = new System.Drawing.Point(11, 25);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(98, 20);
+            this.label15.Size = new System.Drawing.Size(67, 13);
             this.label15.TabIndex = 0;
             this.label15.Text = "Mã giảm giá:";
             // 
@@ -1650,10 +1673,10 @@ namespace frmLogin
             this.tpTypeCustomerDeleted.Controls.Add(this.grpFunctionTypeCustomer);
             this.tpTypeCustomerDeleted.Controls.Add(this.grpTypeCustomerInfo);
             this.tpTypeCustomerDeleted.Location = new System.Drawing.Point(184, 4);
-            this.tpTypeCustomerDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTypeCustomerDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tpTypeCustomerDeleted.Name = "tpTypeCustomerDeleted";
-            this.tpTypeCustomerDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpTypeCustomerDeleted.Size = new System.Drawing.Size(853, 487);
+            this.tpTypeCustomerDeleted.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpTypeCustomerDeleted.Size = new System.Drawing.Size(506, 314);
             this.tpTypeCustomerDeleted.TabIndex = 6;
             this.tpTypeCustomerDeleted.Text = "Loại khách hàng";
             this.tpTypeCustomerDeleted.UseVisualStyleBackColor = true;
@@ -1684,13 +1707,13 @@ namespace frmLogin
             dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListTypeCustomerDeleted.DefaultCellStyle = dataGridViewCellStyle21;
             this.dtgvListTypeCustomerDeleted.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTypeCustomerDeleted.Location = new System.Drawing.Point(45, 251);
-            this.dtgvListTypeCustomerDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvListTypeCustomerDeleted.Location = new System.Drawing.Point(30, 163);
+            this.dtgvListTypeCustomerDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgvListTypeCustomerDeleted.Name = "dtgvListTypeCustomerDeleted";
             this.dtgvListTypeCustomerDeleted.RowHeadersVisible = false;
             this.dtgvListTypeCustomerDeleted.RowHeadersWidth = 51;
             this.dtgvListTypeCustomerDeleted.RowTemplate.Height = 24;
-            this.dtgvListTypeCustomerDeleted.Size = new System.Drawing.Size(738, 226);
+            this.dtgvListTypeCustomerDeleted.Size = new System.Drawing.Size(492, 147);
             this.dtgvListTypeCustomerDeleted.TabIndex = 4;
             this.dtgvListTypeCustomerDeleted.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTypeCustomerDeleted.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1733,11 +1756,11 @@ namespace frmLogin
             // 
             this.grpFunctionTypeCustomer.Controls.Add(this.btnRestoreAllTypeCustomer);
             this.grpFunctionTypeCustomer.Controls.Add(this.btnRestoreTypeCustomer);
-            this.grpFunctionTypeCustomer.Location = new System.Drawing.Point(513, 8);
-            this.grpFunctionTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionTypeCustomer.Location = new System.Drawing.Point(342, 5);
+            this.grpFunctionTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpFunctionTypeCustomer.Name = "grpFunctionTypeCustomer";
-            this.grpFunctionTypeCustomer.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpFunctionTypeCustomer.Size = new System.Drawing.Size(307, 195);
+            this.grpFunctionTypeCustomer.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionTypeCustomer.Size = new System.Drawing.Size(205, 127);
             this.grpFunctionTypeCustomer.TabIndex = 3;
             this.grpFunctionTypeCustomer.TabStop = false;
             this.grpFunctionTypeCustomer.Text = "Chức năng";
@@ -1752,10 +1775,10 @@ namespace frmLogin
             this.btnRestoreAllTypeCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnRestoreAllTypeCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreAllTypeCustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAllTypeCustomer.Location = new System.Drawing.Point(52, 121);
-            this.btnRestoreAllTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreAllTypeCustomer.Location = new System.Drawing.Point(35, 79);
+            this.btnRestoreAllTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreAllTypeCustomer.Name = "btnRestoreAllTypeCustomer";
-            this.btnRestoreAllTypeCustomer.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreAllTypeCustomer.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreAllTypeCustomer.TabIndex = 3;
             this.btnRestoreAllTypeCustomer.Text = "Khôi phục tất cả";
             this.btnRestoreAllTypeCustomer.Click += new System.EventHandler(this.btnRestoreAllTypeCustomer_Click);
@@ -1770,10 +1793,10 @@ namespace frmLogin
             this.btnRestoreTypeCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
             this.btnRestoreTypeCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRestoreTypeCustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreTypeCustomer.Location = new System.Drawing.Point(52, 28);
-            this.btnRestoreTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestoreTypeCustomer.Location = new System.Drawing.Point(35, 18);
+            this.btnRestoreTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRestoreTypeCustomer.Name = "btnRestoreTypeCustomer";
-            this.btnRestoreTypeCustomer.Size = new System.Drawing.Size(204, 58);
+            this.btnRestoreTypeCustomer.Size = new System.Drawing.Size(136, 38);
             this.btnRestoreTypeCustomer.TabIndex = 2;
             this.btnRestoreTypeCustomer.Text = "Khôi phục";
             this.btnRestoreTypeCustomer.Click += new System.EventHandler(this.btnRestoreTypeCustomer_Click);
@@ -1784,11 +1807,11 @@ namespace frmLogin
             this.grpTypeCustomerInfo.Controls.Add(this.label18);
             this.grpTypeCustomerInfo.Controls.Add(this.txtTypeCustomerID);
             this.grpTypeCustomerInfo.Controls.Add(this.label19);
-            this.grpTypeCustomerInfo.Location = new System.Drawing.Point(7, 8);
-            this.grpTypeCustomerInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpTypeCustomerInfo.Location = new System.Drawing.Point(5, 5);
+            this.grpTypeCustomerInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpTypeCustomerInfo.Name = "grpTypeCustomerInfo";
-            this.grpTypeCustomerInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpTypeCustomerInfo.Size = new System.Drawing.Size(369, 195);
+            this.grpTypeCustomerInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpTypeCustomerInfo.Size = new System.Drawing.Size(246, 127);
             this.grpTypeCustomerInfo.TabIndex = 2;
             this.grpTypeCustomerInfo.TabStop = false;
             this.grpTypeCustomerInfo.Text = "Thông tin loại khách hàng";
@@ -1805,21 +1828,22 @@ namespace frmLogin
             this.txtTypeCustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeCustomerName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeCustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeCustomerName.Location = new System.Drawing.Point(100, 102);
-            this.txtTypeCustomerName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTypeCustomerName.Location = new System.Drawing.Point(67, 66);
+            this.txtTypeCustomerName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTypeCustomerName.Name = "txtTypeCustomerName";
             this.txtTypeCustomerName.PasswordChar = '\0';
             this.txtTypeCustomerName.PlaceholderText = "";
             this.txtTypeCustomerName.SelectedText = "";
-            this.txtTypeCustomerName.Size = new System.Drawing.Size(224, 44);
+            this.txtTypeCustomerName.Size = new System.Drawing.Size(149, 29);
             this.txtTypeCustomerName.TabIndex = 3;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(7, 114);
+            this.label18.Location = new System.Drawing.Point(5, 74);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(68, 20);
+            this.label18.Size = new System.Drawing.Size(48, 13);
             this.label18.TabIndex = 2;
             this.label18.Text = "Tên loại:";
             // 
@@ -1835,33 +1859,34 @@ namespace frmLogin
             this.txtTypeCustomerID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeCustomerID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeCustomerID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeCustomerID.Location = new System.Drawing.Point(100, 28);
-            this.txtTypeCustomerID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtTypeCustomerID.Location = new System.Drawing.Point(67, 18);
+            this.txtTypeCustomerID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTypeCustomerID.Name = "txtTypeCustomerID";
             this.txtTypeCustomerID.PasswordChar = '\0';
             this.txtTypeCustomerID.PlaceholderText = "";
             this.txtTypeCustomerID.SelectedText = "";
-            this.txtTypeCustomerID.Size = new System.Drawing.Size(224, 44);
+            this.txtTypeCustomerID.Size = new System.Drawing.Size(149, 29);
             this.txtTypeCustomerID.TabIndex = 1;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(7, 39);
+            this.label19.Location = new System.Drawing.Point(5, 25);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(63, 20);
+            this.label19.Size = new System.Drawing.Size(44, 13);
             this.label19.TabIndex = 0;
             this.label19.Text = "Mã loại:";
             // 
             // frmRecycleBinCategory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1041, 606);
+            this.ClientSize = new System.Drawing.Size(694, 394);
             this.Controls.Add(this.tctrlCategoryDeleted);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "frmRecycleBinCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRecycleBinCategory";

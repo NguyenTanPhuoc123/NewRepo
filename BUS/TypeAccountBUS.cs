@@ -52,6 +52,21 @@ namespace BUS
             return TypeAccountDAO.Instance.DeleteAllTypeAccount();
         }
 
+        public int RestoreTypeAccount(int maloai)
+        {
+            return TypeAccountDAO.Instance.RestoreTypeAccount(maloai);
+        }
+
+        public int RestoreAllTypeAccount()
+        {
+            return TypeAccountDAO.Instance.RestoreAllTypeAccount();
+        }
+
+        public List<TypeAccount> GetListTypeAccountDelete()
+        {
+            return TypeAccountDAO.Instance.GetListTypeAccountDelete();
+        }
+
         public int GetTypeAccountIDMax()
         {
             return TypeAccountDAO.Instance.GetTypeAccountIDMax();

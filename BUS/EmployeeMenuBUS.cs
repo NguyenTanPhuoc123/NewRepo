@@ -26,6 +26,11 @@ namespace BUS
             return EmployeeMenuDAO.Instance.GetListEmployee();
         }
 
+        public List<EmployeeMenu> GetListEmployeeDeleted()
+        {
+            return EmployeeMenuDAO.Instance.GetListEmployeeDeleted();
+        }
+
         public List<Position> GetListPosition()
         {
             return EmployeeMenuDAO.Instance.GetListPosition();

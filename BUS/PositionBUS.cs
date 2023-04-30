@@ -55,5 +55,20 @@ namespace BUS
         {
             return PositionDAO.Instance.DeleteAllPosition();
         }
+
+        public List<Position> GetListPositionDeleted()
+        {
+            return PositionDAO.Instance.GetListPositionDeleted();
+        }
+
+        public int RestorePosition(int macv)
+        {
+            return PositionDAO.Instance.RestorePosition(macv);
+        }
+
+        public int RestoreAllPosition()
+        {
+            return PositionDAO.Instance.RestoreAllPosition();
+        }
     }
 }

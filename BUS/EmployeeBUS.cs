@@ -49,5 +49,15 @@ namespace BUS
         {
             return EmployeeDAO.Instance.DeleteAllEmployee();
         }
+
+        public int RestoreEmployeeInfo(int employeeID)
+        {
+            return EmployeeDAO.Instance.RestoreEmployeeInfo(employeeID);
+        }
+
+        public int RestoreAllEmployee()
+        {
+            return EmployeeDAO.Instance.RestoreAllEmployee();
+        }
     }
 }

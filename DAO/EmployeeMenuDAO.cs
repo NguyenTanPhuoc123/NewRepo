@@ -34,6 +34,19 @@ namespace DAO
             return lst;
         }
 
+        public List<EmployeeMenu> GetListEmployeeDeleted()
+        {
+            List<EmployeeMenu> lst = new List<EmployeeMenu>();
+            string query = "select * from CHUCVU a, NHANVIEN b where b.trangthai=0 and a.MACHUCVU = b.MACHUCVU";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                EmployeeMenu acc = new EmployeeMenu(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
+
         public List<Position> GetListPosition()
         {
             List<Position> listPosition = new List<Position>();

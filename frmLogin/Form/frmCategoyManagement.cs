@@ -633,5 +633,16 @@ namespace frmLogin
             LoadTypeAccount();
         }
         #endregion
+
+        private void btnPositionDeleted_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTypeAccountDeleted_Click(object sender, EventArgs e)
+        {
+            frmRecycleBinCategory frm = new frmRecycleBinCategory();
+            frm.Show();
+        }
     }
 }

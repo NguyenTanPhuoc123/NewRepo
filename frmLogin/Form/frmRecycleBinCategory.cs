@@ -18,12 +18,15 @@ namespace frmLogin
         public frmRecycleBinCategory()
         {
             InitializeComponent();
+            dtgvListTypeAccountDeleted.AutoGenerateColumns = false;
         }
 
         private void frmRecycleBinCategory_Load(object sender, EventArgs e)
         {
             LoadLocationDeleted();
             LoadTypeCustomerDeleted();
+            LoadTypeAccountDeleted();
+            LoadPositionDeleted();
         }
 
         #region Location
@@ -33,9 +36,9 @@ namespace frmLogin
         }
         public void LoadLocationDeleted()
         {
-        txtLocationID.Clear();
-        txtLocationName.Clear();
-        dtgvListLocationDeleted.DataSource = LocationBUS.Instance.GetListLocationDeleted();
+            txtLocationID.Clear();
+            txtLocationName.Clear();
+            dtgvListLocationDeleted.DataSource = LocationBUS.Instance.GetListLocationDeleted();
         }
 
         private void dtgvListLocationDeleted_SelectionChanged(object sender, EventArgs e)
@@ -44,7 +47,7 @@ namespace frmLogin
             {
                 txtLocationID.Text = dtgvListLocationDeleted.SelectedRows[0].Cells[0].Value.ToString();
                 txtLocationName.Text = dtgvListLocationDeleted.SelectedRows[0].Cells[1].Value.ToString();
-                
+
             }
         }
 
@@ -83,12 +86,12 @@ namespace frmLogin
 
         #region Type Customer
         public void LoadTypeCustomerDeleted()
-       {
+        {
             dtgvListTypeCustomerDeleted.DataSource = TypeCustomerBUS.Instance.GetListTypeCustomerDeleted();
             txtTypeCustomerID.Clear();
             txtTypeCustomerName.Clear();
 
-       }
+        }
 
         private void dtgvListTypeCustomerDeleted_SelectionChanged(object sender, EventArgs e)
         {
@@ -171,6 +174,77 @@ namespace frmLogin
             this.Close();
         }
 
-       
+        #region TypeAccount
+        private void LoadTypeAccountDeleted()
+        {
+            dtgvListTypeAccountDeleted.DataSource = TypeAccountBUS.Instance.GetListTypeAccountDelete();
+        }
+
+        private void dtgvListTypeAccountDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = e.RowIndex;
+            if (i == -1) return;
+            txtTypeAccountID.Text = dtgvListTypeAccountDeleted.Rows[i].Cells[0].Value.ToString();
+            txtTypeAccountName.Text = dtgvListTypeAccountDeleted.Rows[i].Cells[1].Value.ToString();
+        }
+
+        private void btnRestoreTypeAccount_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục loại tài khoản này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int count = TypeAccountBUS.Instance.RestoreTypeAccount(Convert.ToInt32(txtTypeAccountID.Text));
+                MessageBox.Show(count > 0 ? "Khôi phục thành công" : "Khôi phục thất bại");
+                LoadTypeAccountDeleted();
+            }
+        }
+
+        private void btnRestoreAllTypeAccount_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục tất cả loại tài khoản này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int count = TypeAccountBUS.Instance.RestoreAllTypeAccount();
+                MessageBox.Show(count > 0 ? "Khôi phục thành công" : "Khôi phục thất bại");
+                LoadTypeAccountDeleted();
+            }       
+        }
+        #endregion
+
+        #region Position
+
+        public void LoadPositionDeleted()
+        {
+            dtgvListPositionDeleted.DataSource = PositionBUS.Instance.GetListPositionDeleted();
+        }
+
+        private void RestorePosition_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục loại chức vụ này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int count = PositionBUS.Instance.RestorePosition(Convert.ToInt32(txtPositionID.Text));
+                MessageBox.Show(count > 0 ? "Khôi phục thành công" : "Khôi phục thất bại");
+                LoadTypeAccountDeleted();
+            }
+        }
+
+        private void RestoreAllPosition_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục tất cả loại chức vụ này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                int count = PositionBUS.Instance.RestoreAllPosition();
+                MessageBox.Show(count > 0 ? "Khôi phục thành công" : "Khôi phục thất bại");
+                LoadTypeAccountDeleted();
+            }
+        }
+
+        private void dtgvListPositionDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = e.RowIndex;
+            if (i == -1) return;
+            txtPositionID.Text = dtgvListPositionDeleted.Rows[i].Cells[0].Value.ToString();
+            txtPositionName.Text = dtgvListPositionDeleted.Rows[i].Cells[1].Value.ToString();
+        }
+        #endregion
+
+
     }
 }

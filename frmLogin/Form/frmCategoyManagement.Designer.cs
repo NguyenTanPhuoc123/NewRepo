@@ -468,6 +468,7 @@ namespace frmLogin
             this.btnTypeAccountDeleted.Size = new System.Drawing.Size(97, 36);
             this.btnTypeAccountDeleted.TabIndex = 37;
             this.btnTypeAccountDeleted.Text = "Loại đã xóa";
+            this.btnTypeAccountDeleted.Click += new System.EventHandler(this.btnTypeAccountDeleted_Click);
             // 
             // grpTypeAccountInfo
             // 
@@ -770,6 +771,7 @@ namespace frmLogin
             this.btnPositionDeleted.Size = new System.Drawing.Size(105, 36);
             this.btnPositionDeleted.TabIndex = 37;
             this.btnPositionDeleted.Text = "Chức vụ đã xóa";
+            this.btnPositionDeleted.Click += new System.EventHandler(this.btnPositionDeleted_Click);
             // 
             // grpPositionInfo
             // 

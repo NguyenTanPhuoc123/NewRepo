@@ -86,5 +86,32 @@ namespace DAO
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
+
+        public List<TypeAccount> GetListTypeAccountDelete()
+        {
+            List<TypeAccount> type = new List<TypeAccount>();
+            string query = "select * from loaitaikhoan where xoa=1";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                TypeAccount typeacc = new TypeAccount(item);
+                type.Add(typeacc);
+            }
+            return type;
+        }
+
+        public int RestoreTypeAccount(int maloai)
+        {
+            string query = string.Format("update LOAITAIKHOAN set xoa = 0 where MALOAI={0}", maloai);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int RestoreAllTypeAccount()
+        {
+            string query = string.Format("update LOAITAIKHOAN set xoa = 0");
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
     }
 }

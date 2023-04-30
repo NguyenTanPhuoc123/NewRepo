@@ -83,5 +83,19 @@ namespace DAO
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
+
+        public int RestoreEmployeeInfo(int employeeID)
+        {
+            string query = string.Format("update nhanvien set trangthai = 1 where manv = '{0}'", employeeID);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
+        public int RestoreAllEmployee()
+        {
+            string query = "update nhanvien set trangthai = 1";
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
     }
 }

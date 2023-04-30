@@ -19,6 +19,7 @@ namespace frmLogin
         public frmRecycleBin()
         {
             InitializeComponent();
+            dtgvListEmployeeDeleted.AutoGenerateColumns = false;
         }
 
         private void frmRecycleBin_Load(object sender, EventArgs e)
@@ -27,6 +28,7 @@ namespace frmLogin
             LoadTableFoodDeleted();
             LoadCustomerDeleted();
             LoadProductDeleted();
+            LoadEmployeeDeleted();
         }
 
         private void btnExitFormSelectDish_Click(object sender, EventArgs e)
@@ -241,5 +243,61 @@ namespace frmLogin
                     MessageBox.Show("Khôi phục tất cả khách hàng  thất bại", "Khôi phục khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        #region Employee
+        public void LoadEmployeeDeleted()
+        {
+            
+            dtgvListEmployeeDeleted.DataSource = EmployeeMenuBUS.Instance.GetListEmployeeDeleted();
+            cbPosition.DataSource = PositionBUS.Instance.GetListPosition();
+            cbPosition.DisplayMember = "TENCHUCVU";
+            cbPosition.ValueMember = "MACHUCVU";
+        }
+
+        private void btnRestoreEmployee_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn phục hồi lại nhân viên này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                int count = EmployeeBUS.Instance.RestoreEmployeeInfo(Convert.ToInt32(txtEmployeeID.Text));
+                if (count > 0)
+                    MessageBox.Show("Khôi phục thành công", "Khôi phục nhân viên", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Khôi phục thất bại", "Khôi phục nhân viên", MessageBoxButtons.OK);
+            }
+            frmRecycleBin_Load(sender, e);
+        }
+
+        private void btnRestoreAllEmployee_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn phục hồi lại tất cả nhân viên này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                int count = EmployeeBUS.Instance.RestoreAllEmployee();
+                if (count > 0)
+                    MessageBox.Show("Khôi phục thành công", "Khôi phục nhân viên", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Khôi phục thất bại", "Khôi phục nhân viên", MessageBoxButtons.OK);
+            }
+            frmRecycleBin_Load(sender, e);
+        }
+
+        private void dtgvListEmployeeDeleted_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgvListEmployeeDeleted.SelectedRows.Count > 0)
+            {
+                txtEmployeeID.Text = dtgvListEmployeeDeleted.SelectedRows[0].Cells[0].Value.ToString();
+                txtEmployeeName.Text = dtgvListEmployeeDeleted.SelectedRows[0].Cells[1].Value.ToString();
+                dtpBirthday.Text = dtgvListEmployeeDeleted.SelectedRows[0].Cells[2].Value.ToString();
+                txtNumberPhone.Text = dtgvListEmployeeDeleted.SelectedRows[0].Cells[4].Value.ToString();
+                richtxtAddress.Text = dtgvListEmployeeDeleted.SelectedRows[0].Cells[5].Value.ToString();
+                dtpWorkingDay.Text = dtgvListEmployeeDeleted.SelectedRows[0].Cells[6].Value.ToString();
+                string gender = dtgvListEmployeeDeleted.SelectedRows[0].Cells[3].Value.ToString();
+                if (gender == radMale.Text)
+                    radMale.Checked = true;
+                else
+                    radFemale.Checked = true;
+                cbPosition.SelectedValue = Convert.ToInt32(dtgvListEmployeeDeleted.SelectedRows[0].Cells[8].Value.ToString());
+            }
+        }
+        #endregion
     }
 }

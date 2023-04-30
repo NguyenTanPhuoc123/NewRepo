@@ -201,5 +201,17 @@ namespace frmLogin
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.FillEmployeeByPosition(cbFillEmployee.SelectedIndex);
             }
         }
+
+        private void txtNumberPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txtEmployeeName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }
