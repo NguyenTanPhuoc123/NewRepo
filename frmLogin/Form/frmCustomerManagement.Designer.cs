@@ -29,9 +29,9 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerManagement));
             this.label1 = new System.Windows.Forms.Label();
             this.cbSortCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -73,7 +73,7 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 273);
+            this.label1.Location = new System.Drawing.Point(13, 289);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 0;
@@ -90,19 +90,20 @@ namespace frmLogin
             this.cbSortCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortCustomer.ItemHeight = 30;
             this.cbSortCustomer.Items.AddRange(new object[] {
-            "Theo mã khách hàng (thuận)",
-            "Theo mã khách hàng(nghịch)",
-            "Theo tên khách hàng(thuận)",
-            "Theo tên khách hàng(nghịch)"});
-            this.cbSortCustomer.Location = new System.Drawing.Point(12, 293);
+            "Mặc định",
+            "Mã khách hàng (thuận)",
+            "Mã khách hàng(nghịch)",
+            "Tên khách hàng(thuận)",
+            "Tên khách hàng(nghịch)"});
+            this.cbSortCustomer.Location = new System.Drawing.Point(12, 309);
             this.cbSortCustomer.Name = "cbSortCustomer";
-            this.cbSortCustomer.Size = new System.Drawing.Size(186, 36);
+            this.cbSortCustomer.Size = new System.Drawing.Size(264, 36);
             this.cbSortCustomer.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(991, 273);
+            this.label2.Location = new System.Drawing.Point(991, 289);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 17);
             this.label2.TabIndex = 2;
@@ -118,7 +119,7 @@ namespace frmLogin
             this.cbFillCustomer.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillCustomer.ItemHeight = 30;
-            this.cbFillCustomer.Location = new System.Drawing.Point(994, 293);
+            this.cbFillCustomer.Location = new System.Drawing.Point(994, 309);
             this.cbFillCustomer.Name = "cbFillCustomer";
             this.cbFillCustomer.Size = new System.Drawing.Size(171, 36);
             this.cbFillCustomer.TabIndex = 3;
@@ -135,7 +136,7 @@ namespace frmLogin
             this.txtSearchCustomer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchCustomer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchCustomer.Location = new System.Drawing.Point(393, 292);
+            this.txtSearchCustomer.Location = new System.Drawing.Point(393, 309);
             this.txtSearchCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchCustomer.Name = "txtSearchCustomer";
             this.txtSearchCustomer.PasswordChar = '\0';
@@ -149,16 +150,16 @@ namespace frmLogin
             // 
             this.dtgvListCustomer.AllowUserToAddRows = false;
             this.dtgvListCustomer.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvListCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvListCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvListCustomer.ColumnHeadersHeight = 20;
             this.dtgvListCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -168,21 +169,21 @@ namespace frmLogin
             this.Column4,
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListCustomer.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListCustomer.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListCustomer.Location = new System.Drawing.Point(12, 335);
+            this.dtgvListCustomer.Location = new System.Drawing.Point(12, 351);
             this.dtgvListCustomer.Name = "dtgvListCustomer";
             this.dtgvListCustomer.RowHeadersVisible = false;
             this.dtgvListCustomer.RowHeadersWidth = 51;
             this.dtgvListCustomer.RowTemplate.Height = 24;
-            this.dtgvListCustomer.Size = new System.Drawing.Size(1153, 168);
+            this.dtgvListCustomer.Size = new System.Drawing.Size(1153, 152);
             this.dtgvListCustomer.TabIndex = 6;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListCustomer.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -265,7 +266,7 @@ namespace frmLogin
             this.grpCustomerInfo.Controls.Add(this.label3);
             this.grpCustomerInfo.Location = new System.Drawing.Point(12, 12);
             this.grpCustomerInfo.Name = "grpCustomerInfo";
-            this.grpCustomerInfo.Size = new System.Drawing.Size(525, 243);
+            this.grpCustomerInfo.Size = new System.Drawing.Size(525, 253);
             this.grpCustomerInfo.TabIndex = 33;
             this.grpCustomerInfo.TabStop = false;
             this.grpCustomerInfo.Text = "Thông tin khách hàng";
@@ -346,6 +347,7 @@ namespace frmLogin
             this.txtCustomerNumberPhone.SelectedText = "";
             this.txtCustomerNumberPhone.Size = new System.Drawing.Size(246, 35);
             this.txtCustomerNumberPhone.TabIndex = 5;
+            this.txtCustomerNumberPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCustomerNumberPhone_KeyPress);
             // 
             // label5
             // 
@@ -377,6 +379,7 @@ namespace frmLogin
             this.txtCustomerName.SelectedText = "";
             this.txtCustomerName.Size = new System.Drawing.Size(246, 35);
             this.txtCustomerName.TabIndex = 3;
+            this.txtCustomerName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCustomerName_KeyPress);
             // 
             // label4
             // 
@@ -429,7 +432,7 @@ namespace frmLogin
             this.grpFunctionCustomer.Controls.Add(this.btnCustomerDeleted);
             this.grpFunctionCustomer.Location = new System.Drawing.Point(735, 12);
             this.grpFunctionCustomer.Name = "grpFunctionCustomer";
-            this.grpFunctionCustomer.Size = new System.Drawing.Size(430, 243);
+            this.grpFunctionCustomer.Size = new System.Drawing.Size(430, 253);
             this.grpFunctionCustomer.TabIndex = 34;
             this.grpFunctionCustomer.TabStop = false;
             this.grpFunctionCustomer.Text = "Chức năng";
@@ -563,7 +566,7 @@ namespace frmLogin
             this.btnSearchCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearchCustomer.ForeColor = System.Drawing.Color.White;
             this.btnSearchCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchCustomer.Image")));
-            this.btnSearchCustomer.Location = new System.Drawing.Point(671, 292);
+            this.btnSearchCustomer.Location = new System.Drawing.Point(671, 309);
             this.btnSearchCustomer.Name = "btnSearchCustomer";
             this.btnSearchCustomer.Size = new System.Drawing.Size(105, 36);
             this.btnSearchCustomer.TabIndex = 5;

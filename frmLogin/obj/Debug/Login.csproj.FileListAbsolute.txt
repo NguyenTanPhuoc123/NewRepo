@@ -35,7 +35,6 @@ D:\DOAN\frmLogin\obj\Debug\Login.csproj.GenerateResource.cache
 D:\DOAN\frmLogin\obj\Debug\Login.csproj.CoreCompileInputs.cache
 D:\DOAN\frmLogin\obj\Debug\en-CA\frmLogin.resources.dll
 D:\DOAN\frmLogin\obj\Debug\zh\frmLogin.resources.dll
-D:\DOAN\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\DOAN\frmLogin\obj\Debug\frmLogin.exe
 D:\DOAN\frmLogin\obj\Debug\frmLogin.pdb
 D:\doanWInform\frmLogin\bin\Debug\frmLogin.exe.config

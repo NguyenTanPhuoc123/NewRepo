@@ -85,6 +85,12 @@ namespace frmLogin
                 return;
             }
 
+            if(!CustomerBUS.Instance.CheckNumberPhone(txtCustomerNumberPhone.Text))
+            {
+                MessageBox.Show("Số điện thoại không đúng định dạng ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string gender = radMale.Checked ? "Nam" : "Nữ";
             int count = CustomerBUS.Instance.AddNewCustomer(txtCustomerName.Text, txtCustomerNumberPhone.Text, int.Parse(cbTypeCustomer.SelectedValue.ToString()), gender);
 
@@ -130,6 +136,12 @@ namespace frmLogin
                 if (string.IsNullOrEmpty(txtCustomerName.Text) || string.IsNullOrEmpty(txtCustomerNumberPhone.Text))
                 {
                     MessageBox.Show("Vui lòng điền đầy đủ thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!CustomerBUS.Instance.CheckNumberPhone(txtCustomerNumberPhone.Text))
+                {
+                    MessageBox.Show("Số điện thoại không đúng định dạng hoặc đã tồn tại ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -233,5 +245,17 @@ namespace frmLogin
             }
         }
         #endregion
+
+        private void txtCustomerNumberPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txtCustomerName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }

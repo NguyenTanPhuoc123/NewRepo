@@ -85,7 +85,22 @@ namespace DAO
             return row;
         }
 
-        //Deleted
+        public bool CheckNumberPhone(string phone)
+        {
+            int outputNum;                    
+            if (phone.Length > 11 || !int.TryParse(phone, out outputNum))
+                return false;
+
+            if (!phone.StartsWith("0"))
+                return false;
+            
+            string query = string.Format("SELECT COUNT(MAKH) FROM KHACHHANG WHERE SODIENTHOAI = {0} ", phone);         
+            int row = DataProvider.ExecuteScalarCommand(query,null);
+            if (row > 0)
+                return false;
+
+            return true; 
+        }
      
        
         public int RestoreCustomer(string id)
