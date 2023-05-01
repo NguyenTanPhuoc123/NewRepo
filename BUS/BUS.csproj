@@ -45,9 +45,11 @@
     <Compile Include="AccountMenuBUS.cs" />
     <Compile Include="BillBUS.cs" />
     <Compile Include="BillInfoBUS.cs" />
+    <Compile Include="BillMenuBUS.cs" />
     <Compile Include="CategoryFoodBUS.cs" />
     <Compile Include="CustomerBUS.cs" />
     <Compile Include="CustomerMenuBUS.cs" />
+    <Compile Include="DiscountBUS.cs" />
     <Compile Include="EmployeeBUS.cs" />
     <Compile Include="EmployeeMenuBUS.cs" />
     <Compile Include="LocationBUS.cs" />

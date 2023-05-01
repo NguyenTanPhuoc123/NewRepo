@@ -25,6 +25,12 @@ namespace BUS
         {
             return SizeProductDAO.Instance.GetListSizeProduct();
         }
+
+        public List<SizeProduct> GetListSizeProductDeleted()
+        {
+            return SizeProductDAO.Instance.GetListSizeProductDeleted();
+        }
+
         public List<SizeProduct> GetSizeProduct()
         {
             return SizeProductDAO.Instance.GetSizeProduct();
@@ -48,6 +54,16 @@ namespace BUS
         public int DeleteAllSizeProduct()
         {
             return SizeProductDAO.Instance.DeleteAllSizeProduct();
+        }
+
+        public int RestoreSizeProduct(int sizeID)
+        {
+            return SizeProductDAO.Instance.RestoreSizeProduct(sizeID);
+        }
+
+        public int RestoreAllSizeProduct()
+        {
+            return SizeProductDAO.Instance.RestoreAllSizeProduct();
         }
     }
 }

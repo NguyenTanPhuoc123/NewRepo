@@ -85,7 +85,7 @@ namespace DAO
             return row;
         }
 
-        public bool CheckNumberPhone(string phone)
+        public bool CheckNumberPhone(string phone,string customerID)
         {
             int outputNum;                    
             if (phone.Length > 11 || !int.TryParse(phone, out outputNum))
@@ -94,7 +94,7 @@ namespace DAO
             if (!phone.StartsWith("0"))
                 return false;
             
-            string query = string.Format("SELECT COUNT(MAKH) FROM KHACHHANG WHERE SODIENTHOAI = {0} ", phone);         
+            string query = string.Format("SELECT COUNT(MAKH) FROM KHACHHANG WHERE SODIENTHOAI = {0} AND MAKH !={1} ", phone,customerID);         
             int row = DataProvider.ExecuteScalarCommand(query,null);
             if (row > 0)
                 return false;
@@ -105,8 +105,9 @@ namespace DAO
        
         public int RestoreCustomer(string id)
         {
+            int row = 0;
             string query = String.Format("UPDATE KHACHHANG SET TRANGTHAI = 1 WHERE MAKH = '{0}'", id);
-            int row = DataProvider.ExecuteInsertCommand(query, null);
+            row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
 
@@ -116,5 +117,15 @@ namespace DAO
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
+
+        public bool CheckExistTypeCustomer(int typeID)
+        {
+            string query = string.Format("SELECT COUNT(*) FROM LoaiKhachHang WHERE TrangThai = 1 AND MaLoai = {0} ", typeID);
+            int row = DataProvider.ExecuteScalarCommand(query, null);
+            if (row > 0)
+                return true;
+            return false;
+        }
+
     }
 }

@@ -35,6 +35,21 @@ namespace DAO
             }
             return list;
         }
+
+        public List<SizeProduct> GetListSizeProductDeleted()
+        {
+            List<SizeProduct> list = new List<SizeProduct>();
+            string query = "Select * from KICHTHUOC where TRANGTHAI = 0";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+
+            foreach (DataRow item in data.Rows)
+            {
+                SizeProduct sizeProduct = new SizeProduct(item);
+                list.Add(sizeProduct);
+            }
+            return list;
+        }
+
         public List<SizeProduct> GetSizeProduct()
         {
             List<SizeProduct> list = new List<SizeProduct>();
@@ -77,6 +92,22 @@ namespace DAO
         public int DeleteAllSizeProduct()
         {
             string query = string.Format("Update KICHTHUOC SET TRANGTHAI = 0  ");
+            int row = 0;
+            row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
+
+        public int RestoreSizeProduct(int sizeID)
+        {
+            string query = string.Format("Update KICHTHUOC SET TRANGTHAI = 1  WHERE MAKICHTHUOC = {0}", sizeID);
+            int row = 0;
+            row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
+
+        public int RestoreAllSizeProduct()
+        {
+            string query = string.Format("Update KICHTHUOC SET TRANGTHAI = 1  ");
             int row = 0;
             row = DataProvider.ExecuteInsertCommand(query, null);
             return row;

@@ -50,7 +50,6 @@ D:\DOAN\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 D:\DOAN\DAO\obj\Debug\DAO.dll
 D:\DOAN\DAO\obj\Debug\DAO.pdb
 D:\doanWInform\DAO\obj\Debug\DAO.csproj.CopyComplete
-D:\DOAN\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\bin\Debug\DAO.dll
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\bin\Debug\DAO.pdb
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\bin\Debug\DTO.dll

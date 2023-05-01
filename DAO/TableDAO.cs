@@ -56,12 +56,16 @@ namespace DAO
 
         public int GetTableIDMax()
         {
-            int max = 0;
+            int max;           
             string query = "Select MAX(MABANAN) from BANAN";
-            int data = DataProvider.ExecuteScalarCommand(query, null);
-            if (data != null)
-                max = data;
-
+            try
+            {
+                max = DataProvider.ExecuteScalarCommand(query, null);
+            }
+            catch
+            {
+                max = 0;
+            }
             return max + 1;
         }
 

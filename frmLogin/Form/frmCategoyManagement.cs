@@ -18,6 +18,13 @@ namespace frmLogin
         public frmCategoyManagement()
         {
             InitializeComponent();
+            dtgvListDiscount.AutoGenerateColumns = false;
+            dtgvListLocation.AutoGenerateColumns = false;
+            dtgvListPosition.AutoGenerateColumns = false;
+            dtgvListSize.AutoGenerateColumns = false;
+            dtgvListTypeAccount.AutoGenerateColumns = false;
+            dtgvListTypeCustomer.AutoGenerateColumns = false;
+            dtgvListTypeProduct.AutoGenerateColumns = false;
         }
 
 
@@ -29,6 +36,7 @@ namespace frmLogin
             LoadTypeProduct();
             LoadPosition();
             LoadTypeAccount();
+            LoadListDiscount();
         }
 
 
@@ -644,5 +652,148 @@ namespace frmLogin
             frmRecycleBinCategory frm = new frmRecycleBinCategory();
             frm.Show();
         }
+
+        #region Discount
+
+       public void LoadListDiscount()
+        {
+            dtgvListDiscount.DataSource = DiscountBUS.Instance.GetListDiscount();
+            ResetDiscountInfo();
+            
+        }
+
+        public void ResetDiscountInfo()
+        {
+            txtDiscountID.Clear();
+            txtDiscountName.Clear();
+            txtDiscountPrice.Clear();
+            dtpDateStart.Value = DateTime.Now;
+            dtpDateEnd.Value = DateTime.Now;
+            btnSaveDiscount.Enabled = false;
+            btnEditDiscount.Enabled = true;
+            btnDeleteDiscount.Enabled = true;
+            btnDeleteAllDiscount.Enabled = true;            
+        }
+
+        private void btnAddDiscount_Click(object sender, EventArgs e)
+        {
+            ResetDiscountInfo();
+            btnSaveDiscount.Enabled = true;
+            btnEditDiscount.Enabled = false;
+            btnDeleteDiscount.Enabled = false;
+            btnDeleteAllDiscount.Enabled = false;
+            
+        }
+
+        private void dtgvListDiscount_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgvListDiscount.SelectedRows.Count > 0)
+            {
+                txtDiscountID.Text = dtgvListDiscount.SelectedRows[0].Cells[0].Value.ToString();
+                txtDiscountName.Text = dtgvListDiscount.SelectedRows[0].Cells[1].Value.ToString();
+                txtDiscountPrice.Text = dtgvListDiscount.SelectedRows[0].Cells[2].Value.ToString();
+                dtpDateStart.Text = dtgvListDiscount.SelectedRows[0].Cells[3].Value.ToString();
+                dtpDateEnd.Text = dtgvListDiscount.SelectedRows[0].Cells[4].Value.ToString();
+
+                btnSaveDiscount.Enabled = false;
+                btnEditDiscount.Enabled = true;
+                btnDeleteDiscount.Enabled = true;
+                btnDeleteAllDiscount.Enabled = true;
+            }
+        }
+
+        private void btnSaveDiscount_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtDiscountName.Text) || string.IsNullOrEmpty(txtDiscountPrice.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin giảm giá", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string discountName = txtDiscountName.Text;
+            float discountPrice = float.Parse(txtDiscountPrice.Text);
+            string startDay = dtpDateStart.Value.ToString("yyyy/MM/dd");
+            string endDay = dtpDateEnd.Value.ToString("yyyy/MM/dd");
+
+            int count = DiscountBUS.Instance.AddNewDiscount(discountName, startDay, endDay, discountPrice);
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm giảm giá mới thành công", "Thêm giảm giá", MessageBoxButtons.OK);
+                LoadListDiscount();
+            }
+            else
+                MessageBox.Show("Thêm giảm giá mới thất bại", "Thêm giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void btnEditDiscount_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn thay đổi thông tin này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (string.IsNullOrEmpty(txtDiscountName.Text) || string.IsNullOrEmpty(txtDiscountPrice.Text))
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin giảm giá", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                string discountID = txtDiscountID.Text;
+                string discountName = txtDiscountName.Text;
+                float discountPrice = float.Parse(txtDiscountPrice.Text);
+                string startDay = dtpDateStart.Value.ToString("yyyy/MM/dd");
+                string endDay = dtpDateEnd.Value.ToString("yyyy/MM/dd");
+
+                int count = DiscountBUS.Instance.EditDiscount(discountID, discountName, startDay, endDay, discountPrice);
+                if (count > 0)
+                {
+                    MessageBox.Show("Sửa giảm giá thành công", "Sửa giảm giá", MessageBoxButtons.OK);
+                    LoadListDiscount();
+                }
+                else
+                    MessageBox.Show("Sửa giảm giá hất bại", "Sửa giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnDeleteDiscount_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn xóa giảm giá này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+
+                string discountID = txtDiscountID.Text;
+
+                int count = DiscountBUS.Instance.DeleteDiscount(discountID);
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa giảm giá thành công", "Xóa giảm giá", MessageBoxButtons.OK);
+                    LoadListDiscount();
+                }
+                else
+                    MessageBox.Show("Xóa giảm giá thất bại", "Xóa giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnDeleteAllDiscount_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn xóa tất cả giảm giá này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+               
+                int count = DiscountBUS.Instance.DeleteAllDiscount();
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa tất cả giảm giá thành công", "Xóa giảm giá", MessageBoxButtons.OK);
+                    LoadListDiscount();
+                }
+                else
+                    MessageBox.Show("Xóa tất cả giảm giá thất bại", "Xóa giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnDiscountDeleted_Click(object sender, EventArgs e)
+        {
+            frmRecycleBinCategory frm = new frmRecycleBinCategory();
+            frm.Show();
+        }
+
+        #endregion
+
+
     }
 }

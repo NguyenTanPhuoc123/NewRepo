@@ -67,7 +67,7 @@ namespace frmLogin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 221);
+            this.label1.Location = new System.Drawing.Point(14, 255);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 0;
@@ -85,9 +85,11 @@ namespace frmLogin
             this.cbSortTable.ItemHeight = 30;
             this.cbSortTable.Items.AddRange(new object[] {
             "Mặc định",
-            "Sắp xếp theo tên bàn",
-            "Sắp xếp theo vị trí"});
-            this.cbSortTable.Location = new System.Drawing.Point(36, 242);
+            "Mã bàn(Tăng)",
+            "Mã bàn(Giảm)",
+            "Vị trí(Tăng)",
+            "Vị trí(Giảm)"});
+            this.cbSortTable.Location = new System.Drawing.Point(12, 276);
             this.cbSortTable.Name = "cbSortTable";
             this.cbSortTable.Size = new System.Drawing.Size(203, 36);
             this.cbSortTable.TabIndex = 1;
@@ -96,7 +98,7 @@ namespace frmLogin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(847, 221);
+            this.label2.Location = new System.Drawing.Point(871, 255);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 18);
             this.label2.TabIndex = 2;
@@ -112,13 +114,7 @@ namespace frmLogin
             this.cbFillTable.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbFillTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillTable.ItemHeight = 30;
-            this.cbFillTable.Items.AddRange(new object[] {
-            "Tất cả",
-            "Bên trong tầng 1",
-            "Bên ngoài tầng 1",
-            "Bên trong tầng 2",
-            "Bên ngoài tầng 2 "});
-            this.cbFillTable.Location = new System.Drawing.Point(850, 242);
+            this.cbFillTable.Location = new System.Drawing.Point(874, 276);
             this.cbFillTable.Name = "cbFillTable";
             this.cbFillTable.Size = new System.Drawing.Size(167, 36);
             this.cbFillTable.TabIndex = 3;
@@ -136,7 +132,7 @@ namespace frmLogin
             this.txtSearchTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchTable.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchTable.Location = new System.Drawing.Point(349, 237);
+            this.txtSearchTable.Location = new System.Drawing.Point(353, 271);
             this.txtSearchTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchTable.Name = "txtSearchTable";
             this.txtSearchTable.PasswordChar = '\0';
@@ -177,12 +173,12 @@ namespace frmLogin
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvListTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTable.Location = new System.Drawing.Point(36, 284);
+            this.dtgvListTable.Location = new System.Drawing.Point(12, 324);
             this.dtgvListTable.Name = "dtgvListTable";
             this.dtgvListTable.RowHeadersVisible = false;
             this.dtgvListTable.RowHeadersWidth = 51;
             this.dtgvListTable.RowTemplate.Height = 24;
-            this.dtgvListTable.Size = new System.Drawing.Size(981, 220);
+            this.dtgvListTable.Size = new System.Drawing.Size(1029, 180);
             this.dtgvListTable.TabIndex = 5;
             this.dtgvListTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -489,7 +485,7 @@ namespace frmLogin
             this.btnSearchTable.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearchTable.ForeColor = System.Drawing.Color.White;
             this.btnSearchTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchTable.Image")));
-            this.btnSearchTable.Location = new System.Drawing.Point(637, 237);
+            this.btnSearchTable.Location = new System.Drawing.Point(652, 271);
             this.btnSearchTable.Name = "btnSearchTable";
             this.btnSearchTable.Size = new System.Drawing.Size(99, 41);
             this.btnSearchTable.TabIndex = 6;

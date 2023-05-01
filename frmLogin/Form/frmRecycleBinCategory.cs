@@ -19,6 +19,13 @@ namespace frmLogin
         {
             InitializeComponent();
             dtgvListTypeAccountDeleted.AutoGenerateColumns = false;
+            dtgvListDiscountDeleted.AutoGenerateColumns = false;
+            dtgvListPositionDeleted.AutoGenerateColumns = false;
+            dtgvListLocationDeleted.AutoGenerateColumns = false;
+            dtgvListTypeProductDeleted.AutoGenerateColumns = false;
+            dtgvListSizeDeleted.AutoGenerateColumns = false;
+            dtgvListTypeCustomerDeleted.AutoGenerateColumns = false;
+            
         }
 
         private void frmRecycleBinCategory_Load(object sender, EventArgs e)
@@ -27,6 +34,13 @@ namespace frmLogin
             LoadTypeCustomerDeleted();
             LoadTypeAccountDeleted();
             LoadPositionDeleted();
+            LoadDiscountDeleted();
+            LoadSizeProductDeleted();
+        }
+
+        private void btnExitFormRecycleBinCategory_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         #region Location
@@ -169,11 +183,6 @@ namespace frmLogin
         }
         #endregion
 
-        private void btnExitFormRecycleBinCategory_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         #region TypeAccount
         private void LoadTypeAccountDeleted()
         {
@@ -243,6 +252,133 @@ namespace frmLogin
             txtPositionID.Text = dtgvListPositionDeleted.Rows[i].Cells[0].Value.ToString();
             txtPositionName.Text = dtgvListPositionDeleted.Rows[i].Cells[1].Value.ToString();
         }
+        #endregion
+
+        #region Discount
+        public void LoadDiscountDeleted()
+        {
+            dtgvListDiscountDeleted.DataSource = DiscountBUS.Instance.GetListDiscountDeleted();
+            ResetInfoDiscount();
+        }
+
+        public void ResetInfoDiscount()
+        {
+            txtDiscountID.Clear();
+            txtDiscountName.Clear();
+            txtDiscountPrice.Clear();
+            txtStartDayDiscount.Clear();
+            txtEndDayDiscount.Clear();
+        }
+        
+        private void dtgvListDiscountDeleted_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgvListDiscountDeleted.SelectedRows.Count > 0)
+            {
+                txtDiscountID.Text = dtgvListDiscountDeleted.SelectedRows[0].Cells[0].Value.ToString();
+                txtDiscountName.Text = dtgvListDiscountDeleted.SelectedRows[0].Cells[1].Value.ToString();
+                txtDiscountPrice.Text = dtgvListDiscountDeleted.SelectedRows[0].Cells[2].Value.ToString();
+                txtStartDayDiscount.Text = dtgvListDiscountDeleted.SelectedRows[0].Cells[3].Value.ToString();
+                txtEndDayDiscount.Text = dtgvListDiscountDeleted.SelectedRows[0].Cells[4].Value.ToString();
+            }
+        }
+
+        private void btnRestoreDiscount_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn khôi phục giảm giá này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+
+                string discountID = txtDiscountID.Text;
+
+                int count = DiscountBUS.Instance.RestoreDiscount(discountID);
+                if (count > 0)
+                {
+                    MessageBox.Show("Khôi phục giảm giá thành công", "Khôi phục giảm giá", MessageBoxButtons.OK);
+                    LoadDiscountDeleted();
+                }
+                else
+                    MessageBox.Show("Khôi phục giảm giá thất bại", "Khôi phục giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnRestoreAllDiscount_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn chắc chắn muốn khôi phục tất cả giảm giá này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+
+                int count = DiscountBUS.Instance.RestoreAllDiscount();
+                if (count > 0)
+                {
+                    MessageBox.Show("Khôi phục tất cả giảm giá thành công", "Khôi phục giảm giá", MessageBoxButtons.OK);
+                    LoadDiscountDeleted();
+                }
+                else
+                    MessageBox.Show("Khôi phục tất cả giảm giá thất bại", "Khôi phục giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        #endregion
+
+        #region Size
+        public void LoadSizeProductDeleted()
+        {
+            dtgvListSizeDeleted.DataSource = SizeProductBUS.Instance.GetListSizeProductDeleted();
+            ResetInfoSize();
+        }
+
+        public void ResetInfoSize()
+        {
+            txtSizeID.Clear();
+            txtSizeName.Clear();
+            txtSizePrice.Clear();
+        }
+
+        private void dtgvListSizeDeleted_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgvListSizeDeleted.SelectedRows.Count > 0)
+            {
+                txtSizeID.Text = dtgvListSizeDeleted.SelectedRows[0].Cells[0].Value.ToString();
+                txtSizeName.Text = dtgvListSizeDeleted.SelectedRows[0].Cells[1].Value.ToString();
+                txtSizePrice.Text = dtgvListSizeDeleted.SelectedRows[0].Cells[2].Value.ToString();
+            }
+        }
+
+
+
+
+        private void btnRestoreSize_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn khôi phục kích thước này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+
+                int count = SizeProductBUS.Instance.RestoreSizeProduct(int.Parse(txtSizeID.Text));
+                if (count > 0)
+                {
+                    MessageBox.Show("Khôi phục kích thước thành công", "Khôi phục kích thước", MessageBoxButtons.OK);
+                    LoadSizeProductDeleted();
+                }
+
+                else
+                    MessageBox.Show("Khôi phục kích thước thất bại", "Khôi phục kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnRestoreAllSize_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn khôi phục tất cả các kích thước này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+
+                int count = SizeProductBUS.Instance.RestoreAllSizeProduct();
+                if (count > 0)
+                {
+                    MessageBox.Show("Khôi phục tất cả kích thước thành công", "Khôi phục kích thước", MessageBoxButtons.OK);
+                    LoadSizeProductDeleted();
+                }
+                else
+                    MessageBox.Show("Khôi phục tất cả kích thước thất bại", "Khôi phục kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         #endregion
 
 

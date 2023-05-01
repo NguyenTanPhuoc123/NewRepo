@@ -69,9 +69,9 @@ namespace BUS
             return CustomerDAO.Instance.RestoreAllCustomer();
         }
 
-        public bool CheckNumberPhone(string phone)
+        public bool CheckNumberPhone(string phone,string customerID)
         {
-            return CustomerDAO.Instance.CheckNumberPhone(phone);
+            return CustomerDAO.Instance.CheckNumberPhone(phone,customerID);
         }
     }
 }

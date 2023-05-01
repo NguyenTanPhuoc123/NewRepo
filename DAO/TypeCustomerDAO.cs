@@ -38,29 +38,66 @@ namespace DAO
 
         public int AddTypeCustomer(string typeName)
         {
+            int row;
             string query = string.Format("INSERT LOAIKHACHHANG(TENLOAI,TRANGTHAI) VALUES(N'{0}',1)", typeName);
-            int row = DataProvider.ExecuteInsertCommand(query, null);
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 
         public int EditTypeCustomer(int typeID,string typeName)
         {
+            int row;
             string query = string.Format("UPDATE LOAIKHACHHANG SET TENLOAI = N'{0}' WHERE MALOAI = {1} ", typeName,typeID);
-            int row = DataProvider.ExecuteInsertCommand(query, null);
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 
         public int DeleteTypeCustomer(int typeID)
         {
-            string query = string.Format("UPDATE LOAIKHACHHANG SET TrangThai = 0  WHERE MALOAI = {0} ", typeID);
-            int row = DataProvider.ExecuteInsertCommand(query, null);
+            int row = 0;
+            if (!CheckExistTypeCustomer(typeID))
+            {
+                string query = string.Format("UPDATE LOAIKHACHHANG SET TrangThai = 0  WHERE MALOAI = {0} ", typeID);
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+
             return row;
         }
 
         public int DeleteAllTypeCustomer()
         {
-            string query = string.Format("UPDATE LOAIKHACHHANG SET TrangThai = 0");
-            int row = DataProvider.ExecuteInsertCommand(query, null);
+            int count = 0;
+            int row = 0;
+            List<TypeCustomer> typeCustomers = GetListTypeCustomer();
+            List<Customer> customers = CustomerDAO.Instance.GetListCustomer();
+            foreach(TypeCustomer typeCustomer in typeCustomers)
+            {
+                foreach(Customer customer in customers)
+                {
+                    if (customer.LoaiKH == typeCustomer.TypeID)
+                        count++;
+                }
+            }
+            if (count == 0)
+            {
+                string query = string.Format("UPDATE LOAIKHACHHANG SET TrangThai = 0");
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+
             return row;
         }
 
@@ -91,6 +128,15 @@ namespace DAO
                 list.Add(typeCus);
             }
             return list;
+        }
+
+        public bool CheckExistTypeCustomer(int typeID)
+        {
+            string query = string.Format("SELECT COUNT(MaKH) FROM KhachHang WHERE TrangThai = 1 AND LoaiKH = {0} ", typeID);
+            int row = DataProvider.ExecuteScalarCommand(query, null);
+            if (row > 0)
+                return true;
+            return false;
         }
 
         public int RestoreTypeCustomer(int typeID)

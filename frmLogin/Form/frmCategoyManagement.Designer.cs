@@ -29,28 +29,28 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCategoyManagement));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle140 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle141 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle142 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle143 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle144 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle145 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle146 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle147 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tctrlCagtegoryManagement = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpTypeAccount = new System.Windows.Forms.TabPage();
             this.dtgvListTypeAccount = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -136,12 +136,7 @@ namespace frmLogin
             this.txtSizeID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tpDiscount = new System.Windows.Forms.TabPage();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvListDiscount = new Guna.UI2.WinForms.Guna2DataGridView();
             this.grpFunctionDiscount = new System.Windows.Forms.GroupBox();
             this.btnSaveDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddDiscount = new Guna.UI2.WinForms.Guna2Button();
@@ -177,6 +172,11 @@ namespace frmLogin
             this.txtTypeCustomerID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tctrlCagtegoryManagement.SuspendLayout();
             this.tpTypeAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListTypeAccount)).BeginInit();
@@ -199,7 +199,7 @@ namespace frmLogin
             this.grpFunctionSize.SuspendLayout();
             this.grpSizeProductInfo.SuspendLayout();
             this.tpDiscount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvListDiscount)).BeginInit();
             this.grpFunctionDiscount.SuspendLayout();
             this.grpDiscountInfo.SuspendLayout();
             this.tpTypeCustomer.SuspendLayout();
@@ -221,10 +221,10 @@ namespace frmLogin
             this.tctrlCagtegoryManagement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tctrlCagtegoryManagement.ItemSize = new System.Drawing.Size(180, 40);
             this.tctrlCagtegoryManagement.Location = new System.Drawing.Point(0, 0);
-            this.tctrlCagtegoryManagement.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tctrlCagtegoryManagement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tctrlCagtegoryManagement.Name = "tctrlCagtegoryManagement";
             this.tctrlCagtegoryManagement.SelectedIndex = 0;
-            this.tctrlCagtegoryManagement.Size = new System.Drawing.Size(723, 385);
+            this.tctrlCagtegoryManagement.Size = new System.Drawing.Size(964, 474);
             this.tctrlCagtegoryManagement.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tctrlCagtegoryManagement.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.tctrlCagtegoryManagement.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -250,47 +250,47 @@ namespace frmLogin
             this.tpTypeAccount.Controls.Add(this.grpFunctionTypeAccount);
             this.tpTypeAccount.Controls.Add(this.grpTypeAccountInfo);
             this.tpTypeAccount.Location = new System.Drawing.Point(184, 4);
-            this.tpTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpTypeAccount.Name = "tpTypeAccount";
-            this.tpTypeAccount.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpTypeAccount.Size = new System.Drawing.Size(535, 377);
+            this.tpTypeAccount.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTypeAccount.Size = new System.Drawing.Size(776, 466);
             this.tpTypeAccount.TabIndex = 0;
             this.tpTypeAccount.Text = "Loại tài khoản";
             this.tpTypeAccount.UseVisualStyleBackColor = true;
             // 
             // dtgvListTypeAccount
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.dtgvListTypeAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListTypeAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle130.BackColor = System.Drawing.Color.White;
+            this.dtgvListTypeAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle130;
+            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle131.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle131.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle131.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle131.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle131.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle131.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListTypeAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle131;
             this.dtgvListTypeAccount.ColumnHeadersHeight = 19;
             this.dtgvListTypeAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListTypeAccount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListTypeAccount.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle132.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle132.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle132.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle132.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle132.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle132.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListTypeAccount.DefaultCellStyle = dataGridViewCellStyle132;
             this.dtgvListTypeAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTypeAccount.Location = new System.Drawing.Point(5, 230);
-            this.dtgvListTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtgvListTypeAccount.Location = new System.Drawing.Point(7, 283);
+            this.dtgvListTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvListTypeAccount.Name = "dtgvListTypeAccount";
             this.dtgvListTypeAccount.RowHeadersVisible = false;
             this.dtgvListTypeAccount.RowHeadersWidth = 51;
             this.dtgvListTypeAccount.RowTemplate.Height = 24;
-            this.dtgvListTypeAccount.Size = new System.Drawing.Size(571, 142);
+            this.dtgvListTypeAccount.Size = new System.Drawing.Size(761, 175);
             this.dtgvListTypeAccount.TabIndex = 2;
             this.dtgvListTypeAccount.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTypeAccount.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -337,11 +337,11 @@ namespace frmLogin
             this.grpFunctionTypeAccount.Controls.Add(this.btnDeleteAllTypeAccount);
             this.grpFunctionTypeAccount.Controls.Add(this.btnDeleteTypeAccount);
             this.grpFunctionTypeAccount.Controls.Add(this.btnTypeAccountDeleted);
-            this.grpFunctionTypeAccount.Location = new System.Drawing.Point(326, 5);
-            this.grpFunctionTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionTypeAccount.Location = new System.Drawing.Point(435, 6);
+            this.grpFunctionTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpFunctionTypeAccount.Name = "grpFunctionTypeAccount";
-            this.grpFunctionTypeAccount.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpFunctionTypeAccount.Size = new System.Drawing.Size(250, 169);
+            this.grpFunctionTypeAccount.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionTypeAccount.Size = new System.Drawing.Size(333, 208);
             this.grpFunctionTypeAccount.TabIndex = 1;
             this.grpFunctionTypeAccount.TabStop = false;
             this.grpFunctionTypeAccount.Text = "Chức năng";
@@ -359,10 +359,10 @@ namespace frmLogin
             this.btnSaveTypeAccount.ForeColor = System.Drawing.Color.Black;
             this.btnSaveTypeAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveTypeAccount.Image")));
             this.btnSaveTypeAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveTypeAccount.Location = new System.Drawing.Point(149, 20);
-            this.btnSaveTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSaveTypeAccount.Location = new System.Drawing.Point(199, 25);
+            this.btnSaveTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveTypeAccount.Name = "btnSaveTypeAccount";
-            this.btnSaveTypeAccount.Size = new System.Drawing.Size(97, 36);
+            this.btnSaveTypeAccount.Size = new System.Drawing.Size(129, 44);
             this.btnSaveTypeAccount.TabIndex = 39;
             this.btnSaveTypeAccount.Text = "Lưu";
             this.btnSaveTypeAccount.Click += new System.EventHandler(this.btnSaveTypeAccount_Click);
@@ -380,10 +380,10 @@ namespace frmLogin
             this.btnAddTypeAccount.ForeColor = System.Drawing.Color.Black;
             this.btnAddTypeAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTypeAccount.Image")));
             this.btnAddTypeAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddTypeAccount.Location = new System.Drawing.Point(5, 20);
-            this.btnAddTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAddTypeAccount.Location = new System.Drawing.Point(7, 25);
+            this.btnAddTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddTypeAccount.Name = "btnAddTypeAccount";
-            this.btnAddTypeAccount.Size = new System.Drawing.Size(95, 36);
+            this.btnAddTypeAccount.Size = new System.Drawing.Size(127, 44);
             this.btnAddTypeAccount.TabIndex = 34;
             this.btnAddTypeAccount.Text = "Thêm";
             this.btnAddTypeAccount.Click += new System.EventHandler(this.btnAddTypeAccount_Click);
@@ -400,10 +400,10 @@ namespace frmLogin
             this.btnEditTypeAccount.ForeColor = System.Drawing.Color.Black;
             this.btnEditTypeAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnEditTypeAccount.Image")));
             this.btnEditTypeAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditTypeAccount.Location = new System.Drawing.Point(5, 74);
-            this.btnEditTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEditTypeAccount.Location = new System.Drawing.Point(7, 91);
+            this.btnEditTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditTypeAccount.Name = "btnEditTypeAccount";
-            this.btnEditTypeAccount.Size = new System.Drawing.Size(95, 36);
+            this.btnEditTypeAccount.Size = new System.Drawing.Size(127, 44);
             this.btnEditTypeAccount.TabIndex = 35;
             this.btnEditTypeAccount.Text = "Sửa";
             this.btnEditTypeAccount.Click += new System.EventHandler(this.btnEditTypeAccount_Click);
@@ -422,10 +422,10 @@ namespace frmLogin
             this.btnDeleteAllTypeAccount.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllTypeAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllTypeAccount.Image")));
             this.btnDeleteAllTypeAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllTypeAccount.Location = new System.Drawing.Point(149, 127);
-            this.btnDeleteAllTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteAllTypeAccount.Location = new System.Drawing.Point(199, 156);
+            this.btnDeleteAllTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteAllTypeAccount.Name = "btnDeleteAllTypeAccount";
-            this.btnDeleteAllTypeAccount.Size = new System.Drawing.Size(97, 35);
+            this.btnDeleteAllTypeAccount.Size = new System.Drawing.Size(129, 43);
             this.btnDeleteAllTypeAccount.TabIndex = 38;
             this.btnDeleteAllTypeAccount.Text = "Xóa tất cả";
             this.btnDeleteAllTypeAccount.Click += new System.EventHandler(this.btnDeleteAllTypeAccount_Click);
@@ -442,10 +442,10 @@ namespace frmLogin
             this.btnDeleteTypeAccount.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteTypeAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteTypeAccount.Image")));
             this.btnDeleteTypeAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteTypeAccount.Location = new System.Drawing.Point(5, 127);
-            this.btnDeleteTypeAccount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteTypeAccount.Location = new System.Drawing.Point(7, 156);
+            this.btnDeleteTypeAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteTypeAccount.Name = "btnDeleteTypeAccount";
-            this.btnDeleteTypeAccount.Size = new System.Drawing.Size(95, 36);
+            this.btnDeleteTypeAccount.Size = new System.Drawing.Size(127, 44);
             this.btnDeleteTypeAccount.TabIndex = 36;
             this.btnDeleteTypeAccount.Text = "Xóa";
             this.btnDeleteTypeAccount.Click += new System.EventHandler(this.btnDeleteTypeAccount_Click);
@@ -462,10 +462,10 @@ namespace frmLogin
             this.btnTypeAccountDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnTypeAccountDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnTypeAccountDeleted.Image")));
             this.btnTypeAccountDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTypeAccountDeleted.Location = new System.Drawing.Point(149, 74);
-            this.btnTypeAccountDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnTypeAccountDeleted.Location = new System.Drawing.Point(199, 91);
+            this.btnTypeAccountDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTypeAccountDeleted.Name = "btnTypeAccountDeleted";
-            this.btnTypeAccountDeleted.Size = new System.Drawing.Size(97, 36);
+            this.btnTypeAccountDeleted.Size = new System.Drawing.Size(129, 44);
             this.btnTypeAccountDeleted.TabIndex = 37;
             this.btnTypeAccountDeleted.Text = "Loại đã xóa";
             this.btnTypeAccountDeleted.Click += new System.EventHandler(this.btnTypeAccountDeleted_Click);
@@ -476,11 +476,11 @@ namespace frmLogin
             this.grpTypeAccountInfo.Controls.Add(this.label4);
             this.grpTypeAccountInfo.Controls.Add(this.txtTypeAccountID);
             this.grpTypeAccountInfo.Controls.Add(this.label3);
-            this.grpTypeAccountInfo.Location = new System.Drawing.Point(5, 5);
-            this.grpTypeAccountInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpTypeAccountInfo.Location = new System.Drawing.Point(7, 6);
+            this.grpTypeAccountInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpTypeAccountInfo.Name = "grpTypeAccountInfo";
-            this.grpTypeAccountInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpTypeAccountInfo.Size = new System.Drawing.Size(298, 169);
+            this.grpTypeAccountInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpTypeAccountInfo.Size = new System.Drawing.Size(397, 208);
             this.grpTypeAccountInfo.TabIndex = 0;
             this.grpTypeAccountInfo.TabStop = false;
             this.grpTypeAccountInfo.Text = "Thông tin loại tài khoản";
@@ -497,22 +497,21 @@ namespace frmLogin
             this.txtTypeAccountName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeAccountName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeAccountName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeAccountName.Location = new System.Drawing.Point(121, 90);
-            this.txtTypeAccountName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTypeAccountName.Location = new System.Drawing.Point(161, 111);
+            this.txtTypeAccountName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTypeAccountName.Name = "txtTypeAccountName";
             this.txtTypeAccountName.PasswordChar = '\0';
             this.txtTypeAccountName.PlaceholderText = "";
             this.txtTypeAccountName.SelectedText = "";
-            this.txtTypeAccountName.Size = new System.Drawing.Size(172, 39);
+            this.txtTypeAccountName.Size = new System.Drawing.Size(229, 48);
             this.txtTypeAccountName.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 104);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(7, 128);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 13);
+            this.label4.Size = new System.Drawing.Size(125, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Tên loại tài khoản:";
             // 
@@ -529,22 +528,21 @@ namespace frmLogin
             this.txtTypeAccountID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeAccountID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeAccountID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeAccountID.Location = new System.Drawing.Point(121, 18);
-            this.txtTypeAccountID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTypeAccountID.Location = new System.Drawing.Point(161, 22);
+            this.txtTypeAccountID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTypeAccountID.Name = "txtTypeAccountID";
             this.txtTypeAccountID.PasswordChar = '\0';
             this.txtTypeAccountID.PlaceholderText = "";
             this.txtTypeAccountID.SelectedText = "";
-            this.txtTypeAccountID.Size = new System.Drawing.Size(172, 39);
+            this.txtTypeAccountID.Size = new System.Drawing.Size(229, 48);
             this.txtTypeAccountID.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 29);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(7, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.Size = new System.Drawing.Size(119, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã loại tài khoản:";
             // 
@@ -554,47 +552,47 @@ namespace frmLogin
             this.tpPosition.Controls.Add(this.grpFunctionPosition);
             this.tpPosition.Controls.Add(this.grpPositionInfo);
             this.tpPosition.Location = new System.Drawing.Point(184, 4);
-            this.tpPosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpPosition.Name = "tpPosition";
-            this.tpPosition.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpPosition.Size = new System.Drawing.Size(535, 377);
+            this.tpPosition.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpPosition.Size = new System.Drawing.Size(776, 466);
             this.tpPosition.TabIndex = 1;
             this.tpPosition.Text = "Chức vụ";
             this.tpPosition.UseVisualStyleBackColor = true;
             // 
             // dtgvListPosition
             // 
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            this.dtgvListPosition.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListPosition.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle133.BackColor = System.Drawing.Color.White;
+            this.dtgvListPosition.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle133;
+            dataGridViewCellStyle134.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle134.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle134.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle134.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle134.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle134.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle134.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListPosition.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle134;
             this.dtgvListPosition.ColumnHeadersHeight = 19;
             this.dtgvListPosition.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListPosition.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListPosition.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle135.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle135.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle135.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle135.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle135.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle135.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListPosition.DefaultCellStyle = dataGridViewCellStyle135;
             this.dtgvListPosition.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListPosition.Location = new System.Drawing.Point(5, 218);
-            this.dtgvListPosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtgvListPosition.Location = new System.Drawing.Point(7, 268);
+            this.dtgvListPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvListPosition.Name = "dtgvListPosition";
             this.dtgvListPosition.RowHeadersVisible = false;
             this.dtgvListPosition.RowHeadersWidth = 51;
             this.dtgvListPosition.RowTemplate.Height = 24;
-            this.dtgvListPosition.Size = new System.Drawing.Size(573, 155);
+            this.dtgvListPosition.Size = new System.Drawing.Size(764, 191);
             this.dtgvListPosition.TabIndex = 3;
             this.dtgvListPosition.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListPosition.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -641,11 +639,11 @@ namespace frmLogin
             this.grpFunctionPosition.Controls.Add(this.btnDeleteAllPosition);
             this.grpFunctionPosition.Controls.Add(this.btnDeletePosition);
             this.grpFunctionPosition.Controls.Add(this.btnPositionDeleted);
-            this.grpFunctionPosition.Location = new System.Drawing.Point(328, 6);
-            this.grpFunctionPosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionPosition.Location = new System.Drawing.Point(437, 7);
+            this.grpFunctionPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpFunctionPosition.Name = "grpFunctionPosition";
-            this.grpFunctionPosition.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpFunctionPosition.Size = new System.Drawing.Size(250, 169);
+            this.grpFunctionPosition.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionPosition.Size = new System.Drawing.Size(333, 208);
             this.grpFunctionPosition.TabIndex = 2;
             this.grpFunctionPosition.TabStop = false;
             this.grpFunctionPosition.Text = "Chức năng";
@@ -663,10 +661,10 @@ namespace frmLogin
             this.btnSavePosition.ForeColor = System.Drawing.Color.Black;
             this.btnSavePosition.Image = ((System.Drawing.Image)(resources.GetObject("btnSavePosition.Image")));
             this.btnSavePosition.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSavePosition.Location = new System.Drawing.Point(140, 20);
-            this.btnSavePosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSavePosition.Location = new System.Drawing.Point(187, 25);
+            this.btnSavePosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSavePosition.Name = "btnSavePosition";
-            this.btnSavePosition.Size = new System.Drawing.Size(105, 36);
+            this.btnSavePosition.Size = new System.Drawing.Size(140, 44);
             this.btnSavePosition.TabIndex = 39;
             this.btnSavePosition.Text = "Lưu";
             // 
@@ -683,10 +681,10 @@ namespace frmLogin
             this.btnAddPosition.ForeColor = System.Drawing.Color.Black;
             this.btnAddPosition.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPosition.Image")));
             this.btnAddPosition.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddPosition.Location = new System.Drawing.Point(5, 20);
-            this.btnAddPosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAddPosition.Location = new System.Drawing.Point(7, 25);
+            this.btnAddPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddPosition.Name = "btnAddPosition";
-            this.btnAddPosition.Size = new System.Drawing.Size(95, 36);
+            this.btnAddPosition.Size = new System.Drawing.Size(127, 44);
             this.btnAddPosition.TabIndex = 34;
             this.btnAddPosition.Text = "Thêm";
             this.btnAddPosition.Click += new System.EventHandler(this.btnAddPosition_Click);
@@ -703,10 +701,10 @@ namespace frmLogin
             this.btnEditPosition.ForeColor = System.Drawing.Color.Black;
             this.btnEditPosition.Image = ((System.Drawing.Image)(resources.GetObject("btnEditPosition.Image")));
             this.btnEditPosition.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditPosition.Location = new System.Drawing.Point(5, 74);
-            this.btnEditPosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEditPosition.Location = new System.Drawing.Point(7, 91);
+            this.btnEditPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditPosition.Name = "btnEditPosition";
-            this.btnEditPosition.Size = new System.Drawing.Size(95, 36);
+            this.btnEditPosition.Size = new System.Drawing.Size(127, 44);
             this.btnEditPosition.TabIndex = 35;
             this.btnEditPosition.Text = "Sửa";
             this.btnEditPosition.Click += new System.EventHandler(this.btnEditPosition_Click);
@@ -725,10 +723,10 @@ namespace frmLogin
             this.btnDeleteAllPosition.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllPosition.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllPosition.Image")));
             this.btnDeleteAllPosition.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllPosition.Location = new System.Drawing.Point(140, 127);
-            this.btnDeleteAllPosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteAllPosition.Location = new System.Drawing.Point(187, 156);
+            this.btnDeleteAllPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteAllPosition.Name = "btnDeleteAllPosition";
-            this.btnDeleteAllPosition.Size = new System.Drawing.Size(105, 35);
+            this.btnDeleteAllPosition.Size = new System.Drawing.Size(140, 43);
             this.btnDeleteAllPosition.TabIndex = 38;
             this.btnDeleteAllPosition.Text = "Xóa tất cả";
             this.btnDeleteAllPosition.Click += new System.EventHandler(this.btnDeleteAllPosition_Click);
@@ -745,10 +743,10 @@ namespace frmLogin
             this.btnDeletePosition.ForeColor = System.Drawing.Color.Black;
             this.btnDeletePosition.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletePosition.Image")));
             this.btnDeletePosition.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeletePosition.Location = new System.Drawing.Point(5, 127);
-            this.btnDeletePosition.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeletePosition.Location = new System.Drawing.Point(7, 156);
+            this.btnDeletePosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeletePosition.Name = "btnDeletePosition";
-            this.btnDeletePosition.Size = new System.Drawing.Size(95, 36);
+            this.btnDeletePosition.Size = new System.Drawing.Size(127, 44);
             this.btnDeletePosition.TabIndex = 36;
             this.btnDeletePosition.Text = "Xóa";
             this.btnDeletePosition.Click += new System.EventHandler(this.btnDeletePosition_Click);
@@ -765,10 +763,10 @@ namespace frmLogin
             this.btnPositionDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnPositionDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnPositionDeleted.Image")));
             this.btnPositionDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPositionDeleted.Location = new System.Drawing.Point(140, 74);
-            this.btnPositionDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnPositionDeleted.Location = new System.Drawing.Point(187, 91);
+            this.btnPositionDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPositionDeleted.Name = "btnPositionDeleted";
-            this.btnPositionDeleted.Size = new System.Drawing.Size(105, 36);
+            this.btnPositionDeleted.Size = new System.Drawing.Size(140, 44);
             this.btnPositionDeleted.TabIndex = 37;
             this.btnPositionDeleted.Text = "Chức vụ đã xóa";
             this.btnPositionDeleted.Click += new System.EventHandler(this.btnPositionDeleted_Click);
@@ -779,11 +777,11 @@ namespace frmLogin
             this.grpPositionInfo.Controls.Add(this.label5);
             this.grpPositionInfo.Controls.Add(this.txtPositionID);
             this.grpPositionInfo.Controls.Add(this.label6);
-            this.grpPositionInfo.Location = new System.Drawing.Point(5, 6);
-            this.grpPositionInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpPositionInfo.Location = new System.Drawing.Point(7, 7);
+            this.grpPositionInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpPositionInfo.Name = "grpPositionInfo";
-            this.grpPositionInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpPositionInfo.Size = new System.Drawing.Size(298, 169);
+            this.grpPositionInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpPositionInfo.Size = new System.Drawing.Size(397, 208);
             this.grpPositionInfo.TabIndex = 1;
             this.grpPositionInfo.TabStop = false;
             this.grpPositionInfo.Text = "Thông tin chức vụ";
@@ -800,22 +798,21 @@ namespace frmLogin
             this.txtPositionName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPositionName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPositionName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPositionName.Location = new System.Drawing.Point(121, 90);
-            this.txtPositionName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtPositionName.Location = new System.Drawing.Point(161, 111);
+            this.txtPositionName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPositionName.Name = "txtPositionName";
             this.txtPositionName.PasswordChar = '\0';
             this.txtPositionName.PlaceholderText = "";
             this.txtPositionName.SelectedText = "";
-            this.txtPositionName.Size = new System.Drawing.Size(172, 39);
+            this.txtPositionName.Size = new System.Drawing.Size(229, 48);
             this.txtPositionName.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 104);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(7, 128);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.Size = new System.Drawing.Size(90, 17);
             this.label5.TabIndex = 2;
             this.label5.Text = "Tên chức vụ:";
             // 
@@ -832,22 +829,21 @@ namespace frmLogin
             this.txtPositionID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPositionID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPositionID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPositionID.Location = new System.Drawing.Point(121, 18);
-            this.txtPositionID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtPositionID.Location = new System.Drawing.Point(161, 22);
+            this.txtPositionID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPositionID.Name = "txtPositionID";
             this.txtPositionID.PasswordChar = '\0';
             this.txtPositionID.PlaceholderText = "";
             this.txtPositionID.SelectedText = "";
-            this.txtPositionID.Size = new System.Drawing.Size(172, 39);
+            this.txtPositionID.Size = new System.Drawing.Size(229, 48);
             this.txtPositionID.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 29);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(7, 36);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.Size = new System.Drawing.Size(84, 17);
             this.label6.TabIndex = 0;
             this.label6.Text = "Mã chức vụ:";
             // 
@@ -857,47 +853,47 @@ namespace frmLogin
             this.tpLocationTable.Controls.Add(this.grpFunctionLocation);
             this.tpLocationTable.Controls.Add(this.grpLocationInfo);
             this.tpLocationTable.Location = new System.Drawing.Point(184, 4);
-            this.tpLocationTable.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpLocationTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpLocationTable.Name = "tpLocationTable";
-            this.tpLocationTable.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpLocationTable.Size = new System.Drawing.Size(535, 377);
+            this.tpLocationTable.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpLocationTable.Size = new System.Drawing.Size(776, 466);
             this.tpLocationTable.TabIndex = 2;
             this.tpLocationTable.Text = "Vị trí bàn ăn";
             this.tpLocationTable.UseVisualStyleBackColor = true;
             // 
             // dtgvListLocation
             // 
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            this.dtgvListLocation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListLocation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle136.BackColor = System.Drawing.Color.White;
+            this.dtgvListLocation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle136;
+            dataGridViewCellStyle137.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle137.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle137.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle137.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle137.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle137.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle137.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListLocation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle137;
             this.dtgvListLocation.ColumnHeadersHeight = 19;
             this.dtgvListLocation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListLocation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListLocation.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle138.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle138.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle138.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle138.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle138.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle138.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle138.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListLocation.DefaultCellStyle = dataGridViewCellStyle138;
             this.dtgvListLocation.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListLocation.Location = new System.Drawing.Point(5, 195);
-            this.dtgvListLocation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtgvListLocation.Location = new System.Drawing.Point(7, 240);
+            this.dtgvListLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvListLocation.Name = "dtgvListLocation";
             this.dtgvListLocation.RowHeadersVisible = false;
             this.dtgvListLocation.RowHeadersWidth = 51;
             this.dtgvListLocation.RowTemplate.Height = 24;
-            this.dtgvListLocation.Size = new System.Drawing.Size(571, 179);
+            this.dtgvListLocation.Size = new System.Drawing.Size(761, 220);
             this.dtgvListLocation.TabIndex = 2;
             this.dtgvListLocation.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListLocation.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -945,11 +941,11 @@ namespace frmLogin
             this.grpFunctionLocation.Controls.Add(this.btnDeleteAllLocation);
             this.grpFunctionLocation.Controls.Add(this.btnDeleteLocation);
             this.grpFunctionLocation.Controls.Add(this.btnLocationDeleted);
-            this.grpFunctionLocation.Location = new System.Drawing.Point(326, 5);
-            this.grpFunctionLocation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionLocation.Location = new System.Drawing.Point(435, 6);
+            this.grpFunctionLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpFunctionLocation.Name = "grpFunctionLocation";
-            this.grpFunctionLocation.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpFunctionLocation.Size = new System.Drawing.Size(250, 185);
+            this.grpFunctionLocation.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionLocation.Size = new System.Drawing.Size(333, 228);
             this.grpFunctionLocation.TabIndex = 1;
             this.grpFunctionLocation.TabStop = false;
             this.grpFunctionLocation.Text = "Chức năng";
@@ -967,10 +963,10 @@ namespace frmLogin
             this.btnSaveLocation.ForeColor = System.Drawing.Color.Black;
             this.btnSaveLocation.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveLocation.Image")));
             this.btnSaveLocation.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveLocation.Location = new System.Drawing.Point(134, 20);
-            this.btnSaveLocation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSaveLocation.Location = new System.Drawing.Point(179, 25);
+            this.btnSaveLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveLocation.Name = "btnSaveLocation";
-            this.btnSaveLocation.Size = new System.Drawing.Size(111, 36);
+            this.btnSaveLocation.Size = new System.Drawing.Size(148, 44);
             this.btnSaveLocation.TabIndex = 33;
             this.btnSaveLocation.Text = "Lưu";
             this.btnSaveLocation.Click += new System.EventHandler(this.btnSaveLocation_Click);
@@ -988,10 +984,10 @@ namespace frmLogin
             this.btnAddLocation.ForeColor = System.Drawing.Color.Black;
             this.btnAddLocation.Image = ((System.Drawing.Image)(resources.GetObject("btnAddLocation.Image")));
             this.btnAddLocation.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddLocation.Location = new System.Drawing.Point(6, 20);
-            this.btnAddLocation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAddLocation.Location = new System.Drawing.Point(8, 25);
+            this.btnAddLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddLocation.Name = "btnAddLocation";
-            this.btnAddLocation.Size = new System.Drawing.Size(111, 36);
+            this.btnAddLocation.Size = new System.Drawing.Size(148, 44);
             this.btnAddLocation.TabIndex = 28;
             this.btnAddLocation.Text = "Thêm";
             this.btnAddLocation.Click += new System.EventHandler(this.btnAddLocation_Click);
@@ -1008,10 +1004,10 @@ namespace frmLogin
             this.btnEditLocation.ForeColor = System.Drawing.Color.Black;
             this.btnEditLocation.Image = ((System.Drawing.Image)(resources.GetObject("btnEditLocation.Image")));
             this.btnEditLocation.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditLocation.Location = new System.Drawing.Point(6, 66);
-            this.btnEditLocation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEditLocation.Location = new System.Drawing.Point(8, 81);
+            this.btnEditLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditLocation.Name = "btnEditLocation";
-            this.btnEditLocation.Size = new System.Drawing.Size(111, 36);
+            this.btnEditLocation.Size = new System.Drawing.Size(148, 44);
             this.btnEditLocation.TabIndex = 29;
             this.btnEditLocation.Text = "Sửa";
             this.btnEditLocation.Click += new System.EventHandler(this.btnEditLocation_Click);
@@ -1030,10 +1026,10 @@ namespace frmLogin
             this.btnDeleteAllLocation.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllLocation.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllLocation.Image")));
             this.btnDeleteAllLocation.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllLocation.Location = new System.Drawing.Point(134, 123);
-            this.btnDeleteAllLocation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteAllLocation.Location = new System.Drawing.Point(179, 151);
+            this.btnDeleteAllLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteAllLocation.Name = "btnDeleteAllLocation";
-            this.btnDeleteAllLocation.Size = new System.Drawing.Size(111, 35);
+            this.btnDeleteAllLocation.Size = new System.Drawing.Size(148, 43);
             this.btnDeleteAllLocation.TabIndex = 32;
             this.btnDeleteAllLocation.Text = "Xóa tất cả";
             this.btnDeleteAllLocation.Click += new System.EventHandler(this.btnDeleteAllLocation_Click);
@@ -1050,10 +1046,10 @@ namespace frmLogin
             this.btnDeleteLocation.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteLocation.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteLocation.Image")));
             this.btnDeleteLocation.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteLocation.Location = new System.Drawing.Point(6, 122);
-            this.btnDeleteLocation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteLocation.Location = new System.Drawing.Point(8, 150);
+            this.btnDeleteLocation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteLocation.Name = "btnDeleteLocation";
-            this.btnDeleteLocation.Size = new System.Drawing.Size(111, 36);
+            this.btnDeleteLocation.Size = new System.Drawing.Size(148, 44);
             this.btnDeleteLocation.TabIndex = 30;
             this.btnDeleteLocation.Text = "Xóa";
             this.btnDeleteLocation.Click += new System.EventHandler(this.btnDeleteLocation_Click);
@@ -1070,10 +1066,10 @@ namespace frmLogin
             this.btnLocationDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnLocationDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnLocationDeleted.Image")));
             this.btnLocationDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLocationDeleted.Location = new System.Drawing.Point(134, 66);
-            this.btnLocationDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnLocationDeleted.Location = new System.Drawing.Point(179, 81);
+            this.btnLocationDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLocationDeleted.Name = "btnLocationDeleted";
-            this.btnLocationDeleted.Size = new System.Drawing.Size(111, 36);
+            this.btnLocationDeleted.Size = new System.Drawing.Size(148, 44);
             this.btnLocationDeleted.TabIndex = 31;
             this.btnLocationDeleted.Text = "Bàn đã xóa";
             this.btnLocationDeleted.Click += new System.EventHandler(this.btnLocationDeleted_Click);
@@ -1084,11 +1080,11 @@ namespace frmLogin
             this.grpLocationInfo.Controls.Add(this.label2);
             this.grpLocationInfo.Controls.Add(this.txtLocationID);
             this.grpLocationInfo.Controls.Add(this.label1);
-            this.grpLocationInfo.Location = new System.Drawing.Point(5, 5);
-            this.grpLocationInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpLocationInfo.Location = new System.Drawing.Point(7, 6);
+            this.grpLocationInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpLocationInfo.Name = "grpLocationInfo";
-            this.grpLocationInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpLocationInfo.Size = new System.Drawing.Size(305, 185);
+            this.grpLocationInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpLocationInfo.Size = new System.Drawing.Size(407, 228);
             this.grpLocationInfo.TabIndex = 0;
             this.grpLocationInfo.TabStop = false;
             this.grpLocationInfo.Text = "Thông tin vị trí bàn";
@@ -1105,22 +1101,21 @@ namespace frmLogin
             this.txtLocationName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLocationName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLocationName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLocationName.Location = new System.Drawing.Point(83, 103);
-            this.txtLocationName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtLocationName.Location = new System.Drawing.Point(111, 127);
+            this.txtLocationName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLocationName.Name = "txtLocationName";
             this.txtLocationName.PasswordChar = '\0';
             this.txtLocationName.PlaceholderText = "";
             this.txtLocationName.SelectedText = "";
-            this.txtLocationName.Size = new System.Drawing.Size(169, 39);
+            this.txtLocationName.Size = new System.Drawing.Size(225, 48);
             this.txtLocationName.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 118);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(7, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(67, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên vị trí:";
             // 
@@ -1137,22 +1132,21 @@ namespace frmLogin
             this.txtLocationID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLocationID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLocationID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLocationID.Location = new System.Drawing.Point(83, 18);
-            this.txtLocationID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtLocationID.Location = new System.Drawing.Point(111, 22);
+            this.txtLocationID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLocationID.Name = "txtLocationID";
             this.txtLocationID.PasswordChar = '\0';
             this.txtLocationID.PlaceholderText = "";
             this.txtLocationID.SelectedText = "";
-            this.txtLocationID.Size = new System.Drawing.Size(169, 39);
+            this.txtLocationID.Size = new System.Drawing.Size(225, 48);
             this.txtLocationID.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã vị trí:";
             // 
@@ -1162,47 +1156,47 @@ namespace frmLogin
             this.tpTypeProduct.Controls.Add(this.grpFunctionTypeProduct);
             this.tpTypeProduct.Controls.Add(this.grpTypeProductInfo);
             this.tpTypeProduct.Location = new System.Drawing.Point(184, 4);
-            this.tpTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpTypeProduct.Name = "tpTypeProduct";
-            this.tpTypeProduct.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpTypeProduct.Size = new System.Drawing.Size(535, 377);
+            this.tpTypeProduct.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTypeProduct.Size = new System.Drawing.Size(776, 466);
             this.tpTypeProduct.TabIndex = 3;
             this.tpTypeProduct.Text = "Loại sản phẩm";
             this.tpTypeProduct.UseVisualStyleBackColor = true;
             // 
             // dtgvListTypeProduct
             // 
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
-            this.dtgvListTypeProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListTypeProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle139.BackColor = System.Drawing.Color.White;
+            this.dtgvListTypeProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle139;
+            dataGridViewCellStyle140.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle140.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle140.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle140.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle140.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle140.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle140.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListTypeProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle140;
             this.dtgvListTypeProduct.ColumnHeadersHeight = 19;
             this.dtgvListTypeProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListTypeProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column7,
             this.Column8});
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListTypeProduct.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle141.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle141.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle141.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle141.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle141.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle141.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle141.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListTypeProduct.DefaultCellStyle = dataGridViewCellStyle141;
             this.dtgvListTypeProduct.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTypeProduct.Location = new System.Drawing.Point(5, 220);
-            this.dtgvListTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtgvListTypeProduct.Location = new System.Drawing.Point(7, 271);
+            this.dtgvListTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvListTypeProduct.Name = "dtgvListTypeProduct";
             this.dtgvListTypeProduct.RowHeadersVisible = false;
             this.dtgvListTypeProduct.RowHeadersWidth = 51;
             this.dtgvListTypeProduct.RowTemplate.Height = 24;
-            this.dtgvListTypeProduct.Size = new System.Drawing.Size(571, 153);
+            this.dtgvListTypeProduct.Size = new System.Drawing.Size(761, 188);
             this.dtgvListTypeProduct.TabIndex = 3;
             this.dtgvListTypeProduct.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTypeProduct.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1249,11 +1243,11 @@ namespace frmLogin
             this.grpFunctionTypeProduct.Controls.Add(this.btnDeleteAllTypeProduct);
             this.grpFunctionTypeProduct.Controls.Add(this.btnDeleteTypeProduct);
             this.grpFunctionTypeProduct.Controls.Add(this.btnTypeProductDeleted);
-            this.grpFunctionTypeProduct.Location = new System.Drawing.Point(326, 6);
-            this.grpFunctionTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionTypeProduct.Location = new System.Drawing.Point(435, 7);
+            this.grpFunctionTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpFunctionTypeProduct.Name = "grpFunctionTypeProduct";
-            this.grpFunctionTypeProduct.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpFunctionTypeProduct.Size = new System.Drawing.Size(250, 169);
+            this.grpFunctionTypeProduct.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionTypeProduct.Size = new System.Drawing.Size(333, 208);
             this.grpFunctionTypeProduct.TabIndex = 2;
             this.grpFunctionTypeProduct.TabStop = false;
             this.grpFunctionTypeProduct.Text = "Chức năng";
@@ -1271,10 +1265,10 @@ namespace frmLogin
             this.btnSaveTypeProduct.ForeColor = System.Drawing.Color.Black;
             this.btnSaveTypeProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveTypeProduct.Image")));
             this.btnSaveTypeProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveTypeProduct.Location = new System.Drawing.Point(149, 20);
-            this.btnSaveTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSaveTypeProduct.Location = new System.Drawing.Point(199, 25);
+            this.btnSaveTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveTypeProduct.Name = "btnSaveTypeProduct";
-            this.btnSaveTypeProduct.Size = new System.Drawing.Size(97, 36);
+            this.btnSaveTypeProduct.Size = new System.Drawing.Size(129, 44);
             this.btnSaveTypeProduct.TabIndex = 39;
             this.btnSaveTypeProduct.Text = "Lưu";
             this.btnSaveTypeProduct.Click += new System.EventHandler(this.btnSaveTypeProduct_Click);
@@ -1292,10 +1286,10 @@ namespace frmLogin
             this.btnAddTypeProduct.ForeColor = System.Drawing.Color.Black;
             this.btnAddTypeProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTypeProduct.Image")));
             this.btnAddTypeProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddTypeProduct.Location = new System.Drawing.Point(5, 20);
-            this.btnAddTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAddTypeProduct.Location = new System.Drawing.Point(7, 25);
+            this.btnAddTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddTypeProduct.Name = "btnAddTypeProduct";
-            this.btnAddTypeProduct.Size = new System.Drawing.Size(95, 36);
+            this.btnAddTypeProduct.Size = new System.Drawing.Size(127, 44);
             this.btnAddTypeProduct.TabIndex = 34;
             this.btnAddTypeProduct.Text = "Thêm";
             this.btnAddTypeProduct.Click += new System.EventHandler(this.btnAddTypeProduct_Click);
@@ -1312,10 +1306,10 @@ namespace frmLogin
             this.btnEditTypeProduct.ForeColor = System.Drawing.Color.Black;
             this.btnEditTypeProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnEditTypeProduct.Image")));
             this.btnEditTypeProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditTypeProduct.Location = new System.Drawing.Point(5, 74);
-            this.btnEditTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEditTypeProduct.Location = new System.Drawing.Point(7, 91);
+            this.btnEditTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditTypeProduct.Name = "btnEditTypeProduct";
-            this.btnEditTypeProduct.Size = new System.Drawing.Size(95, 36);
+            this.btnEditTypeProduct.Size = new System.Drawing.Size(127, 44);
             this.btnEditTypeProduct.TabIndex = 35;
             this.btnEditTypeProduct.Text = "Sửa";
             this.btnEditTypeProduct.Click += new System.EventHandler(this.btnEditTypeProduct_Click);
@@ -1334,10 +1328,10 @@ namespace frmLogin
             this.btnDeleteAllTypeProduct.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllTypeProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllTypeProduct.Image")));
             this.btnDeleteAllTypeProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllTypeProduct.Location = new System.Drawing.Point(149, 127);
-            this.btnDeleteAllTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteAllTypeProduct.Location = new System.Drawing.Point(199, 156);
+            this.btnDeleteAllTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteAllTypeProduct.Name = "btnDeleteAllTypeProduct";
-            this.btnDeleteAllTypeProduct.Size = new System.Drawing.Size(97, 35);
+            this.btnDeleteAllTypeProduct.Size = new System.Drawing.Size(129, 43);
             this.btnDeleteAllTypeProduct.TabIndex = 38;
             this.btnDeleteAllTypeProduct.Text = "Xóa tất cả";
             this.btnDeleteAllTypeProduct.Click += new System.EventHandler(this.btnDeleteAllTypeProduct_Click);
@@ -1354,10 +1348,10 @@ namespace frmLogin
             this.btnDeleteTypeProduct.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteTypeProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteTypeProduct.Image")));
             this.btnDeleteTypeProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteTypeProduct.Location = new System.Drawing.Point(5, 127);
-            this.btnDeleteTypeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteTypeProduct.Location = new System.Drawing.Point(7, 156);
+            this.btnDeleteTypeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteTypeProduct.Name = "btnDeleteTypeProduct";
-            this.btnDeleteTypeProduct.Size = new System.Drawing.Size(95, 36);
+            this.btnDeleteTypeProduct.Size = new System.Drawing.Size(127, 44);
             this.btnDeleteTypeProduct.TabIndex = 36;
             this.btnDeleteTypeProduct.Text = "Xóa";
             this.btnDeleteTypeProduct.Click += new System.EventHandler(this.btnDeleteTypeProduct_Click);
@@ -1374,10 +1368,10 @@ namespace frmLogin
             this.btnTypeProductDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnTypeProductDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnTypeProductDeleted.Image")));
             this.btnTypeProductDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTypeProductDeleted.Location = new System.Drawing.Point(149, 74);
-            this.btnTypeProductDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnTypeProductDeleted.Location = new System.Drawing.Point(199, 91);
+            this.btnTypeProductDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTypeProductDeleted.Name = "btnTypeProductDeleted";
-            this.btnTypeProductDeleted.Size = new System.Drawing.Size(97, 36);
+            this.btnTypeProductDeleted.Size = new System.Drawing.Size(129, 44);
             this.btnTypeProductDeleted.TabIndex = 37;
             this.btnTypeProductDeleted.Text = "Loại đã xóa";
             // 
@@ -1387,11 +1381,11 @@ namespace frmLogin
             this.grpTypeProductInfo.Controls.Add(this.label7);
             this.grpTypeProductInfo.Controls.Add(this.txtTypeProductID);
             this.grpTypeProductInfo.Controls.Add(this.label8);
-            this.grpTypeProductInfo.Location = new System.Drawing.Point(5, 6);
-            this.grpTypeProductInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpTypeProductInfo.Location = new System.Drawing.Point(7, 7);
+            this.grpTypeProductInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpTypeProductInfo.Name = "grpTypeProductInfo";
-            this.grpTypeProductInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpTypeProductInfo.Size = new System.Drawing.Size(298, 169);
+            this.grpTypeProductInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpTypeProductInfo.Size = new System.Drawing.Size(397, 208);
             this.grpTypeProductInfo.TabIndex = 1;
             this.grpTypeProductInfo.TabStop = false;
             this.grpTypeProductInfo.Text = "Thông tin loại sản phẩm";
@@ -1408,22 +1402,21 @@ namespace frmLogin
             this.txtTypeProductName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeProductName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeProductName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeProductName.Location = new System.Drawing.Point(121, 90);
-            this.txtTypeProductName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTypeProductName.Location = new System.Drawing.Point(161, 111);
+            this.txtTypeProductName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTypeProductName.Name = "txtTypeProductName";
             this.txtTypeProductName.PasswordChar = '\0';
             this.txtTypeProductName.PlaceholderText = "";
             this.txtTypeProductName.SelectedText = "";
-            this.txtTypeProductName.Size = new System.Drawing.Size(172, 39);
+            this.txtTypeProductName.Size = new System.Drawing.Size(229, 48);
             this.txtTypeProductName.TabIndex = 3;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 104);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(7, 128);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 13);
+            this.label7.Size = new System.Drawing.Size(129, 17);
             this.label7.TabIndex = 2;
             this.label7.Text = "Tên loại sản phẩm:";
             // 
@@ -1440,22 +1433,21 @@ namespace frmLogin
             this.txtTypeProductID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeProductID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeProductID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeProductID.Location = new System.Drawing.Point(121, 18);
-            this.txtTypeProductID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTypeProductID.Location = new System.Drawing.Point(161, 22);
+            this.txtTypeProductID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTypeProductID.Name = "txtTypeProductID";
             this.txtTypeProductID.PasswordChar = '\0';
             this.txtTypeProductID.PlaceholderText = "";
             this.txtTypeProductID.SelectedText = "";
-            this.txtTypeProductID.Size = new System.Drawing.Size(172, 39);
+            this.txtTypeProductID.Size = new System.Drawing.Size(229, 48);
             this.txtTypeProductID.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 29);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(7, 36);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 13);
+            this.label8.Size = new System.Drawing.Size(123, 17);
             this.label8.TabIndex = 0;
             this.label8.Text = "Mã loại sản phẩm:";
             // 
@@ -1465,48 +1457,48 @@ namespace frmLogin
             this.tpSizeProduct.Controls.Add(this.grpFunctionSize);
             this.tpSizeProduct.Controls.Add(this.grpSizeProductInfo);
             this.tpSizeProduct.Location = new System.Drawing.Point(184, 4);
-            this.tpSizeProduct.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpSizeProduct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpSizeProduct.Name = "tpSizeProduct";
-            this.tpSizeProduct.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpSizeProduct.Size = new System.Drawing.Size(535, 377);
+            this.tpSizeProduct.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpSizeProduct.Size = new System.Drawing.Size(776, 466);
             this.tpSizeProduct.TabIndex = 4;
             this.tpSizeProduct.Text = "Kích thước";
             this.tpSizeProduct.UseVisualStyleBackColor = true;
             // 
             // dtgvListSize
             // 
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-            this.dtgvListSize.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListSize.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle142.BackColor = System.Drawing.Color.White;
+            this.dtgvListSize.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle142;
+            dataGridViewCellStyle143.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle143.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle143.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle143.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle143.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle143.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle143.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListSize.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle143;
             this.dtgvListSize.ColumnHeadersHeight = 19;
             this.dtgvListSize.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListSize.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column9,
             this.Column10,
             this.Column11});
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListSize.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle144.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle144.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle144.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle144.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle144.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle144.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle144.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListSize.DefaultCellStyle = dataGridViewCellStyle144;
             this.dtgvListSize.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListSize.Location = new System.Drawing.Point(7, 201);
-            this.dtgvListSize.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtgvListSize.Location = new System.Drawing.Point(9, 247);
+            this.dtgvListSize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvListSize.Name = "dtgvListSize";
             this.dtgvListSize.RowHeadersVisible = false;
             this.dtgvListSize.RowHeadersWidth = 51;
             this.dtgvListSize.RowTemplate.Height = 24;
-            this.dtgvListSize.Size = new System.Drawing.Size(571, 172);
+            this.dtgvListSize.Size = new System.Drawing.Size(761, 212);
             this.dtgvListSize.TabIndex = 4;
             this.dtgvListSize.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListSize.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1560,11 +1552,11 @@ namespace frmLogin
             this.grpFunctionSize.Controls.Add(this.btnDeleteAllSize);
             this.grpFunctionSize.Controls.Add(this.btnDeleteSize);
             this.grpFunctionSize.Controls.Add(this.btnSizeDeleted);
-            this.grpFunctionSize.Location = new System.Drawing.Point(328, 6);
-            this.grpFunctionSize.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionSize.Location = new System.Drawing.Point(437, 7);
+            this.grpFunctionSize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpFunctionSize.Name = "grpFunctionSize";
-            this.grpFunctionSize.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpFunctionSize.Size = new System.Drawing.Size(250, 189);
+            this.grpFunctionSize.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionSize.Size = new System.Drawing.Size(333, 233);
             this.grpFunctionSize.TabIndex = 3;
             this.grpFunctionSize.TabStop = false;
             this.grpFunctionSize.Text = "Chức năng";
@@ -1582,10 +1574,10 @@ namespace frmLogin
             this.btnSaveSize.ForeColor = System.Drawing.Color.Black;
             this.btnSaveSize.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveSize.Image")));
             this.btnSaveSize.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveSize.Location = new System.Drawing.Point(121, 20);
-            this.btnSaveSize.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSaveSize.Location = new System.Drawing.Point(161, 25);
+            this.btnSaveSize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveSize.Name = "btnSaveSize";
-            this.btnSaveSize.Size = new System.Drawing.Size(124, 36);
+            this.btnSaveSize.Size = new System.Drawing.Size(165, 44);
             this.btnSaveSize.TabIndex = 39;
             this.btnSaveSize.Text = "Lưu";
             this.btnSaveSize.Click += new System.EventHandler(this.btnSaveSize_Click);
@@ -1603,10 +1595,10 @@ namespace frmLogin
             this.btnAddSize.ForeColor = System.Drawing.Color.Black;
             this.btnAddSize.Image = ((System.Drawing.Image)(resources.GetObject("btnAddSize.Image")));
             this.btnAddSize.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddSize.Location = new System.Drawing.Point(5, 20);
-            this.btnAddSize.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAddSize.Location = new System.Drawing.Point(7, 25);
+            this.btnAddSize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddSize.Name = "btnAddSize";
-            this.btnAddSize.Size = new System.Drawing.Size(95, 36);
+            this.btnAddSize.Size = new System.Drawing.Size(127, 44);
             this.btnAddSize.TabIndex = 34;
             this.btnAddSize.Text = "Thêm";
             this.btnAddSize.Click += new System.EventHandler(this.btnAddSize_Click);
@@ -1623,10 +1615,10 @@ namespace frmLogin
             this.btnEditSize.ForeColor = System.Drawing.Color.Black;
             this.btnEditSize.Image = ((System.Drawing.Image)(resources.GetObject("btnEditSize.Image")));
             this.btnEditSize.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditSize.Location = new System.Drawing.Point(5, 74);
-            this.btnEditSize.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEditSize.Location = new System.Drawing.Point(7, 91);
+            this.btnEditSize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditSize.Name = "btnEditSize";
-            this.btnEditSize.Size = new System.Drawing.Size(95, 36);
+            this.btnEditSize.Size = new System.Drawing.Size(127, 44);
             this.btnEditSize.TabIndex = 35;
             this.btnEditSize.Text = "Sửa";
             this.btnEditSize.Click += new System.EventHandler(this.btnEditSize_Click);
@@ -1645,10 +1637,10 @@ namespace frmLogin
             this.btnDeleteAllSize.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllSize.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllSize.Image")));
             this.btnDeleteAllSize.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllSize.Location = new System.Drawing.Point(121, 127);
-            this.btnDeleteAllSize.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteAllSize.Location = new System.Drawing.Point(161, 156);
+            this.btnDeleteAllSize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteAllSize.Name = "btnDeleteAllSize";
-            this.btnDeleteAllSize.Size = new System.Drawing.Size(124, 35);
+            this.btnDeleteAllSize.Size = new System.Drawing.Size(165, 43);
             this.btnDeleteAllSize.TabIndex = 38;
             this.btnDeleteAllSize.Text = "Xóa tất cả";
             this.btnDeleteAllSize.Click += new System.EventHandler(this.btnDeleteAllSize_Click);
@@ -1665,10 +1657,10 @@ namespace frmLogin
             this.btnDeleteSize.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteSize.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteSize.Image")));
             this.btnDeleteSize.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteSize.Location = new System.Drawing.Point(5, 127);
-            this.btnDeleteSize.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteSize.Location = new System.Drawing.Point(7, 156);
+            this.btnDeleteSize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteSize.Name = "btnDeleteSize";
-            this.btnDeleteSize.Size = new System.Drawing.Size(95, 36);
+            this.btnDeleteSize.Size = new System.Drawing.Size(127, 44);
             this.btnDeleteSize.TabIndex = 36;
             this.btnDeleteSize.Text = "Xóa";
             this.btnDeleteSize.Click += new System.EventHandler(this.btnDeleteSize_Click);
@@ -1685,10 +1677,10 @@ namespace frmLogin
             this.btnSizeDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnSizeDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnSizeDeleted.Image")));
             this.btnSizeDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSizeDeleted.Location = new System.Drawing.Point(121, 74);
-            this.btnSizeDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSizeDeleted.Location = new System.Drawing.Point(161, 91);
+            this.btnSizeDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSizeDeleted.Name = "btnSizeDeleted";
-            this.btnSizeDeleted.Size = new System.Drawing.Size(124, 36);
+            this.btnSizeDeleted.Size = new System.Drawing.Size(165, 44);
             this.btnSizeDeleted.TabIndex = 37;
             this.btnSizeDeleted.Text = "Kích thước đã xóa";
             this.btnSizeDeleted.Click += new System.EventHandler(this.btnSizeDeleted_Click);
@@ -1701,11 +1693,11 @@ namespace frmLogin
             this.grpSizeProductInfo.Controls.Add(this.label9);
             this.grpSizeProductInfo.Controls.Add(this.txtSizeID);
             this.grpSizeProductInfo.Controls.Add(this.label10);
-            this.grpSizeProductInfo.Location = new System.Drawing.Point(5, 6);
-            this.grpSizeProductInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpSizeProductInfo.Location = new System.Drawing.Point(7, 7);
+            this.grpSizeProductInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpSizeProductInfo.Name = "grpSizeProductInfo";
-            this.grpSizeProductInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpSizeProductInfo.Size = new System.Drawing.Size(298, 189);
+            this.grpSizeProductInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpSizeProductInfo.Size = new System.Drawing.Size(397, 233);
             this.grpSizeProductInfo.TabIndex = 2;
             this.grpSizeProductInfo.TabStop = false;
             this.grpSizeProductInfo.Text = "Thông tin kích thước sản phẩm";
@@ -1722,23 +1714,22 @@ namespace frmLogin
             this.txtSizePrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSizePrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSizePrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSizePrice.Location = new System.Drawing.Point(121, 127);
-            this.txtSizePrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtSizePrice.Location = new System.Drawing.Point(161, 156);
+            this.txtSizePrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSizePrice.Name = "txtSizePrice";
             this.txtSizePrice.PasswordChar = '\0';
             this.txtSizePrice.PlaceholderText = "";
             this.txtSizePrice.SelectedText = "";
-            this.txtSizePrice.Size = new System.Drawing.Size(172, 39);
+            this.txtSizePrice.Size = new System.Drawing.Size(229, 48);
             this.txtSizePrice.TabIndex = 5;
             this.txtSizePrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSizePrice_KeyPress);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(33, 140);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(44, 172);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 13);
+            this.label11.Size = new System.Drawing.Size(61, 17);
             this.label11.TabIndex = 4;
             this.label11.Text = "Đơn giá:";
             // 
@@ -1754,22 +1745,21 @@ namespace frmLogin
             this.txtSizeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSizeName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSizeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSizeName.Location = new System.Drawing.Point(121, 72);
-            this.txtSizeName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtSizeName.Location = new System.Drawing.Point(161, 89);
+            this.txtSizeName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSizeName.Name = "txtSizeName";
             this.txtSizeName.PasswordChar = '\0';
             this.txtSizeName.PlaceholderText = "";
             this.txtSizeName.SelectedText = "";
-            this.txtSizeName.Size = new System.Drawing.Size(172, 39);
+            this.txtSizeName.Size = new System.Drawing.Size(229, 48);
             this.txtSizeName.TabIndex = 3;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(0, 90);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(0, 111);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 13);
+            this.label9.Size = new System.Drawing.Size(105, 17);
             this.label9.TabIndex = 2;
             this.label9.Text = "Tên kích thước:";
             // 
@@ -1786,132 +1776,99 @@ namespace frmLogin
             this.txtSizeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSizeID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSizeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSizeID.Location = new System.Drawing.Point(121, 18);
-            this.txtSizeID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtSizeID.Location = new System.Drawing.Point(161, 22);
+            this.txtSizeID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSizeID.Name = "txtSizeID";
             this.txtSizeID.PasswordChar = '\0';
             this.txtSizeID.PlaceholderText = "";
             this.txtSizeID.SelectedText = "";
-            this.txtSizeID.Size = new System.Drawing.Size(172, 39);
+            this.txtSizeID.Size = new System.Drawing.Size(229, 48);
             this.txtSizeID.TabIndex = 1;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(5, 29);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(7, 36);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 13);
+            this.label10.Size = new System.Drawing.Size(99, 17);
             this.label10.TabIndex = 0;
             this.label10.Text = "Mã kích thước:";
             // 
             // tpDiscount
             // 
-            this.tpDiscount.Controls.Add(this.guna2DataGridView1);
+            this.tpDiscount.Controls.Add(this.dtgvListDiscount);
             this.tpDiscount.Controls.Add(this.grpFunctionDiscount);
             this.tpDiscount.Controls.Add(this.grpDiscountInfo);
             this.tpDiscount.Location = new System.Drawing.Point(184, 4);
-            this.tpDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpDiscount.Name = "tpDiscount";
-            this.tpDiscount.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpDiscount.Size = new System.Drawing.Size(535, 377);
+            this.tpDiscount.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpDiscount.Size = new System.Drawing.Size(776, 466);
             this.tpDiscount.TabIndex = 5;
             this.tpDiscount.Text = "Giảm giá";
             this.tpDiscount.UseVisualStyleBackColor = true;
             // 
-            // guna2DataGridView1
+            // dtgvListDiscount
             // 
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
-            this.guna2DataGridView1.ColumnHeadersHeight = 19;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvListDiscount.AllowUserToAddRows = false;
+            this.dtgvListDiscount.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle127.BackColor = System.Drawing.Color.White;
+            this.dtgvListDiscount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle127;
+            dataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle128.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle128.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle128.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle128.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle128.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle128.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListDiscount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle128;
+            this.dtgvListDiscount.ColumnHeadersHeight = 19;
+            this.dtgvListDiscount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvListDiscount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column12,
             this.Column13,
             this.Column14,
             this.Column15,
             this.Column16});
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle39;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(5, 251);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(571, 121);
-            this.guna2DataGridView1.TabIndex = 5;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 19;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "MaGiamGia";
-            this.Column12.HeaderText = "Mã giảm giá";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            // 
-            // Column13
-            // 
-            this.Column13.DataPropertyName = "TenGiamGia";
-            this.Column13.HeaderText = "Tên giảm giá";
-            this.Column13.MinimumWidth = 6;
-            this.Column13.Name = "Column13";
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "DonGia";
-            this.Column14.HeaderText = "Đơn giá";
-            this.Column14.MinimumWidth = 6;
-            this.Column14.Name = "Column14";
-            // 
-            // Column15
-            // 
-            this.Column15.DataPropertyName = "NgayBatDau";
-            this.Column15.HeaderText = "Ngày bắt đầu";
-            this.Column15.MinimumWidth = 6;
-            this.Column15.Name = "Column15";
-            // 
-            // Column16
-            // 
-            this.Column16.DataPropertyName = "NgayKetThuc";
-            this.Column16.HeaderText = "Ngày kết thúc";
-            this.Column16.MinimumWidth = 6;
-            this.Column16.Name = "Column16";
+            dataGridViewCellStyle129.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle129.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle129.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle129.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle129.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle129.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle129.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListDiscount.DefaultCellStyle = dataGridViewCellStyle129;
+            this.dtgvListDiscount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvListDiscount.Location = new System.Drawing.Point(7, 309);
+            this.dtgvListDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvListDiscount.Name = "dtgvListDiscount";
+            this.dtgvListDiscount.RowHeadersVisible = false;
+            this.dtgvListDiscount.RowHeadersWidth = 51;
+            this.dtgvListDiscount.RowTemplate.Height = 24;
+            this.dtgvListDiscount.Size = new System.Drawing.Size(761, 149);
+            this.dtgvListDiscount.TabIndex = 5;
+            this.dtgvListDiscount.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvListDiscount.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgvListDiscount.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgvListDiscount.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgvListDiscount.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgvListDiscount.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvListDiscount.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvListDiscount.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgvListDiscount.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvListDiscount.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgvListDiscount.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgvListDiscount.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvListDiscount.ThemeStyle.HeaderStyle.Height = 19;
+            this.dtgvListDiscount.ThemeStyle.ReadOnly = false;
+            this.dtgvListDiscount.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvListDiscount.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvListDiscount.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgvListDiscount.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvListDiscount.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgvListDiscount.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvListDiscount.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvListDiscount.SelectionChanged += new System.EventHandler(this.dtgvListDiscount_SelectionChanged);
             // 
             // grpFunctionDiscount
             // 
@@ -1921,11 +1878,11 @@ namespace frmLogin
             this.grpFunctionDiscount.Controls.Add(this.btnDeleteAllDiscount);
             this.grpFunctionDiscount.Controls.Add(this.btnDeleteDiscount);
             this.grpFunctionDiscount.Controls.Add(this.btnDiscountDeleted);
-            this.grpFunctionDiscount.Location = new System.Drawing.Point(319, 6);
-            this.grpFunctionDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionDiscount.Location = new System.Drawing.Point(425, 7);
+            this.grpFunctionDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpFunctionDiscount.Name = "grpFunctionDiscount";
-            this.grpFunctionDiscount.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpFunctionDiscount.Size = new System.Drawing.Size(257, 189);
+            this.grpFunctionDiscount.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionDiscount.Size = new System.Drawing.Size(343, 233);
             this.grpFunctionDiscount.TabIndex = 4;
             this.grpFunctionDiscount.TabStop = false;
             this.grpFunctionDiscount.Text = "Chức năng";
@@ -1943,12 +1900,13 @@ namespace frmLogin
             this.btnSaveDiscount.ForeColor = System.Drawing.Color.Black;
             this.btnSaveDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveDiscount.Image")));
             this.btnSaveDiscount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveDiscount.Location = new System.Drawing.Point(156, 20);
-            this.btnSaveDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSaveDiscount.Location = new System.Drawing.Point(208, 25);
+            this.btnSaveDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveDiscount.Name = "btnSaveDiscount";
-            this.btnSaveDiscount.Size = new System.Drawing.Size(97, 36);
+            this.btnSaveDiscount.Size = new System.Drawing.Size(129, 44);
             this.btnSaveDiscount.TabIndex = 39;
             this.btnSaveDiscount.Text = "Lưu";
+            this.btnSaveDiscount.Click += new System.EventHandler(this.btnSaveDiscount_Click);
             // 
             // btnAddDiscount
             // 
@@ -1963,12 +1921,13 @@ namespace frmLogin
             this.btnAddDiscount.ForeColor = System.Drawing.Color.Black;
             this.btnAddDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDiscount.Image")));
             this.btnAddDiscount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddDiscount.Location = new System.Drawing.Point(5, 20);
-            this.btnAddDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAddDiscount.Location = new System.Drawing.Point(7, 25);
+            this.btnAddDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddDiscount.Name = "btnAddDiscount";
-            this.btnAddDiscount.Size = new System.Drawing.Size(95, 36);
+            this.btnAddDiscount.Size = new System.Drawing.Size(127, 44);
             this.btnAddDiscount.TabIndex = 34;
             this.btnAddDiscount.Text = "Thêm";
+            this.btnAddDiscount.Click += new System.EventHandler(this.btnAddDiscount_Click);
             // 
             // btnEditDiscount
             // 
@@ -1982,12 +1941,13 @@ namespace frmLogin
             this.btnEditDiscount.ForeColor = System.Drawing.Color.Black;
             this.btnEditDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnEditDiscount.Image")));
             this.btnEditDiscount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditDiscount.Location = new System.Drawing.Point(5, 74);
-            this.btnEditDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEditDiscount.Location = new System.Drawing.Point(7, 91);
+            this.btnEditDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditDiscount.Name = "btnEditDiscount";
-            this.btnEditDiscount.Size = new System.Drawing.Size(95, 36);
+            this.btnEditDiscount.Size = new System.Drawing.Size(127, 44);
             this.btnEditDiscount.TabIndex = 35;
             this.btnEditDiscount.Text = "Sửa";
+            this.btnEditDiscount.Click += new System.EventHandler(this.btnEditDiscount_Click);
             // 
             // btnDeleteAllDiscount
             // 
@@ -2003,12 +1963,13 @@ namespace frmLogin
             this.btnDeleteAllDiscount.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllDiscount.Image")));
             this.btnDeleteAllDiscount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllDiscount.Location = new System.Drawing.Point(156, 129);
-            this.btnDeleteAllDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteAllDiscount.Location = new System.Drawing.Point(208, 159);
+            this.btnDeleteAllDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteAllDiscount.Name = "btnDeleteAllDiscount";
-            this.btnDeleteAllDiscount.Size = new System.Drawing.Size(97, 35);
+            this.btnDeleteAllDiscount.Size = new System.Drawing.Size(129, 43);
             this.btnDeleteAllDiscount.TabIndex = 38;
             this.btnDeleteAllDiscount.Text = "Xóa tất cả";
+            this.btnDeleteAllDiscount.Click += new System.EventHandler(this.btnDeleteAllDiscount_Click);
             // 
             // btnDeleteDiscount
             // 
@@ -2022,12 +1983,13 @@ namespace frmLogin
             this.btnDeleteDiscount.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteDiscount.Image")));
             this.btnDeleteDiscount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteDiscount.Location = new System.Drawing.Point(5, 127);
-            this.btnDeleteDiscount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteDiscount.Location = new System.Drawing.Point(7, 156);
+            this.btnDeleteDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteDiscount.Name = "btnDeleteDiscount";
-            this.btnDeleteDiscount.Size = new System.Drawing.Size(95, 36);
+            this.btnDeleteDiscount.Size = new System.Drawing.Size(127, 44);
             this.btnDeleteDiscount.TabIndex = 36;
             this.btnDeleteDiscount.Text = "Xóa";
+            this.btnDeleteDiscount.Click += new System.EventHandler(this.btnDeleteDiscount_Click);
             // 
             // btnDiscountDeleted
             // 
@@ -2041,12 +2003,13 @@ namespace frmLogin
             this.btnDiscountDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnDiscountDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscountDeleted.Image")));
             this.btnDiscountDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDiscountDeleted.Location = new System.Drawing.Point(156, 75);
-            this.btnDiscountDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDiscountDeleted.Location = new System.Drawing.Point(208, 92);
+            this.btnDiscountDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDiscountDeleted.Name = "btnDiscountDeleted";
-            this.btnDiscountDeleted.Size = new System.Drawing.Size(97, 36);
+            this.btnDiscountDeleted.Size = new System.Drawing.Size(129, 44);
             this.btnDiscountDeleted.TabIndex = 37;
             this.btnDiscountDeleted.Text = "Giảm đã xóa";
+            this.btnDiscountDeleted.Click += new System.EventHandler(this.btnDiscountDeleted_Click);
             // 
             // grpDiscountInfo
             // 
@@ -2060,11 +2023,11 @@ namespace frmLogin
             this.grpDiscountInfo.Controls.Add(this.label13);
             this.grpDiscountInfo.Controls.Add(this.txtDiscountID);
             this.grpDiscountInfo.Controls.Add(this.label14);
-            this.grpDiscountInfo.Location = new System.Drawing.Point(5, 6);
-            this.grpDiscountInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpDiscountInfo.Location = new System.Drawing.Point(7, 7);
+            this.grpDiscountInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpDiscountInfo.Name = "grpDiscountInfo";
-            this.grpDiscountInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpDiscountInfo.Size = new System.Drawing.Size(298, 220);
+            this.grpDiscountInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpDiscountInfo.Size = new System.Drawing.Size(397, 271);
             this.grpDiscountInfo.TabIndex = 3;
             this.grpDiscountInfo.TabStop = false;
             this.grpDiscountInfo.Text = "Thông tin giảm giá";
@@ -2074,22 +2037,21 @@ namespace frmLogin
             this.dtpDateEnd.Checked = true;
             this.dtpDateEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpDateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpDateEnd.Location = new System.Drawing.Point(121, 175);
-            this.dtpDateEnd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtpDateEnd.Location = new System.Drawing.Point(161, 215);
+            this.dtpDateEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpDateEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDateEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpDateEnd.Name = "dtpDateEnd";
-            this.dtpDateEnd.Size = new System.Drawing.Size(150, 29);
+            this.dtpDateEnd.Size = new System.Drawing.Size(200, 36);
             this.dtpDateEnd.TabIndex = 13;
             this.dtpDateEnd.Value = new System.DateTime(2023, 4, 22, 14, 58, 9, 643);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(5, 175);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(7, 215);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 13);
+            this.label17.Size = new System.Drawing.Size(99, 17);
             this.label17.TabIndex = 12;
             this.label17.Text = "Ngày kết thúc:";
             // 
@@ -2098,22 +2060,21 @@ namespace frmLogin
             this.dtpDateStart.Checked = true;
             this.dtpDateStart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpDateStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpDateStart.Location = new System.Drawing.Point(121, 131);
-            this.dtpDateStart.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtpDateStart.Location = new System.Drawing.Point(161, 161);
+            this.dtpDateStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpDateStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDateStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpDateStart.Name = "dtpDateStart";
-            this.dtpDateStart.Size = new System.Drawing.Size(150, 29);
+            this.dtpDateStart.Size = new System.Drawing.Size(200, 36);
             this.dtpDateStart.TabIndex = 11;
             this.dtpDateStart.Value = new System.DateTime(2023, 4, 22, 14, 58, 9, 643);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(8, 140);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(11, 172);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 13);
+            this.label16.Size = new System.Drawing.Size(97, 17);
             this.label16.TabIndex = 10;
             this.label16.Text = "Ngày bắt đầu:";
             // 
@@ -2126,17 +2087,16 @@ namespace frmLogin
             this.txtDiscountPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtDiscountPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiscountPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiscountPrice.Enabled = false;
             this.txtDiscountPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiscountPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiscountPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscountPrice.Location = new System.Drawing.Point(121, 94);
-            this.txtDiscountPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtDiscountPrice.Location = new System.Drawing.Point(161, 116);
+            this.txtDiscountPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiscountPrice.Name = "txtDiscountPrice";
             this.txtDiscountPrice.PasswordChar = '\0';
             this.txtDiscountPrice.PlaceholderText = "";
             this.txtDiscountPrice.SelectedText = "";
-            this.txtDiscountPrice.Size = new System.Drawing.Size(172, 32);
+            this.txtDiscountPrice.Size = new System.Drawing.Size(229, 39);
             this.txtDiscountPrice.TabIndex = 6;
             // 
             // txtDiscountName
@@ -2148,36 +2108,33 @@ namespace frmLogin
             this.txtDiscountName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtDiscountName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiscountName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiscountName.Enabled = false;
             this.txtDiscountName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiscountName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiscountName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscountName.Location = new System.Drawing.Point(121, 56);
-            this.txtDiscountName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtDiscountName.Location = new System.Drawing.Point(161, 69);
+            this.txtDiscountName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiscountName.Name = "txtDiscountName";
             this.txtDiscountName.PasswordChar = '\0';
             this.txtDiscountName.PlaceholderText = "";
             this.txtDiscountName.SelectedText = "";
-            this.txtDiscountName.Size = new System.Drawing.Size(172, 32);
+            this.txtDiscountName.Size = new System.Drawing.Size(229, 39);
             this.txtDiscountName.TabIndex = 5;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(33, 112);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(44, 138);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 13);
+            this.label12.Size = new System.Drawing.Size(61, 17);
             this.label12.TabIndex = 4;
             this.label12.Text = "Đơn giá:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(8, 62);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(11, 76);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 13);
+            this.label13.Size = new System.Drawing.Size(94, 17);
             this.label13.TabIndex = 2;
             this.label13.Text = "Tên giảm giá:";
             // 
@@ -2194,22 +2151,21 @@ namespace frmLogin
             this.txtDiscountID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiscountID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiscountID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscountID.Location = new System.Drawing.Point(121, 18);
-            this.txtDiscountID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtDiscountID.Location = new System.Drawing.Point(161, 22);
+            this.txtDiscountID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiscountID.Name = "txtDiscountID";
             this.txtDiscountID.PasswordChar = '\0';
             this.txtDiscountID.PlaceholderText = "";
             this.txtDiscountID.SelectedText = "";
-            this.txtDiscountID.Size = new System.Drawing.Size(172, 32);
+            this.txtDiscountID.Size = new System.Drawing.Size(229, 39);
             this.txtDiscountID.TabIndex = 1;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 27);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(17, 33);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 13);
+            this.label14.Size = new System.Drawing.Size(88, 17);
             this.label14.TabIndex = 0;
             this.label14.Text = "Mã giảm giá:";
             // 
@@ -2219,47 +2175,47 @@ namespace frmLogin
             this.tpTypeCustomer.Controls.Add(this.grpFunctionTypeCustomer);
             this.tpTypeCustomer.Controls.Add(this.grpTypeCustomerInfo);
             this.tpTypeCustomer.Location = new System.Drawing.Point(184, 4);
-            this.tpTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tpTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpTypeCustomer.Name = "tpTypeCustomer";
-            this.tpTypeCustomer.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tpTypeCustomer.Size = new System.Drawing.Size(535, 377);
+            this.tpTypeCustomer.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTypeCustomer.Size = new System.Drawing.Size(776, 466);
             this.tpTypeCustomer.TabIndex = 6;
             this.tpTypeCustomer.Text = "Loại khách hàng";
             this.tpTypeCustomer.UseVisualStyleBackColor = true;
             // 
             // dtgvListTypeCustomer
             // 
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.White;
-            this.dtgvListTypeCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListTypeCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle145.BackColor = System.Drawing.Color.White;
+            this.dtgvListTypeCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle145;
+            dataGridViewCellStyle146.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle146.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle146.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle146.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle146.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle146.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle146.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListTypeCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle146;
             this.dtgvListTypeCustomer.ColumnHeadersHeight = 19;
             this.dtgvListTypeCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListTypeCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListTypeCustomer.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle147.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle147.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle147.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle147.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle147.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle147.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle147.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListTypeCustomer.DefaultCellStyle = dataGridViewCellStyle147;
             this.dtgvListTypeCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListTypeCustomer.Location = new System.Drawing.Point(5, 220);
-            this.dtgvListTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtgvListTypeCustomer.Location = new System.Drawing.Point(7, 271);
+            this.dtgvListTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvListTypeCustomer.Name = "dtgvListTypeCustomer";
             this.dtgvListTypeCustomer.RowHeadersVisible = false;
             this.dtgvListTypeCustomer.RowHeadersWidth = 51;
             this.dtgvListTypeCustomer.RowTemplate.Height = 24;
-            this.dtgvListTypeCustomer.Size = new System.Drawing.Size(571, 152);
+            this.dtgvListTypeCustomer.Size = new System.Drawing.Size(761, 187);
             this.dtgvListTypeCustomer.TabIndex = 3;
             this.dtgvListTypeCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListTypeCustomer.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -2306,11 +2262,11 @@ namespace frmLogin
             this.grpFunctionTypeCustomer.Controls.Add(this.btnDeleteAllTypeCustomer);
             this.grpFunctionTypeCustomer.Controls.Add(this.btnDeleteTypeCustomer);
             this.grpFunctionTypeCustomer.Controls.Add(this.btnTypeCustomerDeleted);
-            this.grpFunctionTypeCustomer.Location = new System.Drawing.Point(328, 6);
-            this.grpFunctionTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpFunctionTypeCustomer.Location = new System.Drawing.Point(437, 7);
+            this.grpFunctionTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpFunctionTypeCustomer.Name = "grpFunctionTypeCustomer";
-            this.grpFunctionTypeCustomer.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpFunctionTypeCustomer.Size = new System.Drawing.Size(250, 169);
+            this.grpFunctionTypeCustomer.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpFunctionTypeCustomer.Size = new System.Drawing.Size(333, 208);
             this.grpFunctionTypeCustomer.TabIndex = 2;
             this.grpFunctionTypeCustomer.TabStop = false;
             this.grpFunctionTypeCustomer.Text = "Chức năng";
@@ -2328,10 +2284,10 @@ namespace frmLogin
             this.btnSaveTypeCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnSaveTypeCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveTypeCustomer.Image")));
             this.btnSaveTypeCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveTypeCustomer.Location = new System.Drawing.Point(149, 20);
-            this.btnSaveTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSaveTypeCustomer.Location = new System.Drawing.Point(199, 25);
+            this.btnSaveTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSaveTypeCustomer.Name = "btnSaveTypeCustomer";
-            this.btnSaveTypeCustomer.Size = new System.Drawing.Size(97, 36);
+            this.btnSaveTypeCustomer.Size = new System.Drawing.Size(129, 44);
             this.btnSaveTypeCustomer.TabIndex = 39;
             this.btnSaveTypeCustomer.Text = "Lưu";
             this.btnSaveTypeCustomer.Click += new System.EventHandler(this.btnSaveTypeCustomer_Click);
@@ -2349,10 +2305,10 @@ namespace frmLogin
             this.btnAddTypeCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnAddTypeCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTypeCustomer.Image")));
             this.btnAddTypeCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddTypeCustomer.Location = new System.Drawing.Point(5, 20);
-            this.btnAddTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAddTypeCustomer.Location = new System.Drawing.Point(7, 25);
+            this.btnAddTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddTypeCustomer.Name = "btnAddTypeCustomer";
-            this.btnAddTypeCustomer.Size = new System.Drawing.Size(95, 36);
+            this.btnAddTypeCustomer.Size = new System.Drawing.Size(127, 44);
             this.btnAddTypeCustomer.TabIndex = 34;
             this.btnAddTypeCustomer.Text = "Thêm";
             this.btnAddTypeCustomer.Click += new System.EventHandler(this.btnAddTypeCustomer_Click);
@@ -2369,10 +2325,10 @@ namespace frmLogin
             this.btnEditTypeCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnEditTypeCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnEditTypeCustomer.Image")));
             this.btnEditTypeCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditTypeCustomer.Location = new System.Drawing.Point(5, 74);
-            this.btnEditTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEditTypeCustomer.Location = new System.Drawing.Point(7, 91);
+            this.btnEditTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditTypeCustomer.Name = "btnEditTypeCustomer";
-            this.btnEditTypeCustomer.Size = new System.Drawing.Size(95, 36);
+            this.btnEditTypeCustomer.Size = new System.Drawing.Size(127, 44);
             this.btnEditTypeCustomer.TabIndex = 35;
             this.btnEditTypeCustomer.Text = "Sửa";
             this.btnEditTypeCustomer.Click += new System.EventHandler(this.btnEditTypeCustomer_Click);
@@ -2391,10 +2347,10 @@ namespace frmLogin
             this.btnDeleteAllTypeCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllTypeCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllTypeCustomer.Image")));
             this.btnDeleteAllTypeCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllTypeCustomer.Location = new System.Drawing.Point(149, 127);
-            this.btnDeleteAllTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteAllTypeCustomer.Location = new System.Drawing.Point(199, 156);
+            this.btnDeleteAllTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteAllTypeCustomer.Name = "btnDeleteAllTypeCustomer";
-            this.btnDeleteAllTypeCustomer.Size = new System.Drawing.Size(97, 35);
+            this.btnDeleteAllTypeCustomer.Size = new System.Drawing.Size(129, 43);
             this.btnDeleteAllTypeCustomer.TabIndex = 38;
             this.btnDeleteAllTypeCustomer.Text = "Xóa tất cả";
             this.btnDeleteAllTypeCustomer.Click += new System.EventHandler(this.btnDeleteAllTypeCustomer_Click);
@@ -2411,10 +2367,10 @@ namespace frmLogin
             this.btnDeleteTypeCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteTypeCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteTypeCustomer.Image")));
             this.btnDeleteTypeCustomer.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteTypeCustomer.Location = new System.Drawing.Point(5, 127);
-            this.btnDeleteTypeCustomer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteTypeCustomer.Location = new System.Drawing.Point(7, 156);
+            this.btnDeleteTypeCustomer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteTypeCustomer.Name = "btnDeleteTypeCustomer";
-            this.btnDeleteTypeCustomer.Size = new System.Drawing.Size(95, 36);
+            this.btnDeleteTypeCustomer.Size = new System.Drawing.Size(127, 44);
             this.btnDeleteTypeCustomer.TabIndex = 36;
             this.btnDeleteTypeCustomer.Text = "Xóa";
             this.btnDeleteTypeCustomer.Click += new System.EventHandler(this.btnDeleteTypeCustomer_Click);
@@ -2431,10 +2387,10 @@ namespace frmLogin
             this.btnTypeCustomerDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnTypeCustomerDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnTypeCustomerDeleted.Image")));
             this.btnTypeCustomerDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTypeCustomerDeleted.Location = new System.Drawing.Point(149, 74);
-            this.btnTypeCustomerDeleted.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnTypeCustomerDeleted.Location = new System.Drawing.Point(199, 91);
+            this.btnTypeCustomerDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTypeCustomerDeleted.Name = "btnTypeCustomerDeleted";
-            this.btnTypeCustomerDeleted.Size = new System.Drawing.Size(97, 36);
+            this.btnTypeCustomerDeleted.Size = new System.Drawing.Size(129, 44);
             this.btnTypeCustomerDeleted.TabIndex = 37;
             this.btnTypeCustomerDeleted.Text = "Loại đã xóa";
             this.btnTypeCustomerDeleted.Click += new System.EventHandler(this.btnTypeCustomerDeleted_Click);
@@ -2445,11 +2401,11 @@ namespace frmLogin
             this.grpTypeCustomerInfo.Controls.Add(this.label15);
             this.grpTypeCustomerInfo.Controls.Add(this.txtTypeCustomerID);
             this.grpTypeCustomerInfo.Controls.Add(this.label18);
-            this.grpTypeCustomerInfo.Location = new System.Drawing.Point(5, 6);
-            this.grpTypeCustomerInfo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpTypeCustomerInfo.Location = new System.Drawing.Point(7, 7);
+            this.grpTypeCustomerInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpTypeCustomerInfo.Name = "grpTypeCustomerInfo";
-            this.grpTypeCustomerInfo.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.grpTypeCustomerInfo.Size = new System.Drawing.Size(298, 169);
+            this.grpTypeCustomerInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpTypeCustomerInfo.Size = new System.Drawing.Size(397, 208);
             this.grpTypeCustomerInfo.TabIndex = 1;
             this.grpTypeCustomerInfo.TabStop = false;
             this.grpTypeCustomerInfo.Text = "Thông tin loại khách hàng";
@@ -2466,22 +2422,21 @@ namespace frmLogin
             this.txtTypeCustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeCustomerName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeCustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeCustomerName.Location = new System.Drawing.Point(121, 90);
-            this.txtTypeCustomerName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTypeCustomerName.Location = new System.Drawing.Point(161, 111);
+            this.txtTypeCustomerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTypeCustomerName.Name = "txtTypeCustomerName";
             this.txtTypeCustomerName.PasswordChar = '\0';
             this.txtTypeCustomerName.PlaceholderText = "";
             this.txtTypeCustomerName.SelectedText = "";
-            this.txtTypeCustomerName.Size = new System.Drawing.Size(172, 39);
+            this.txtTypeCustomerName.Size = new System.Drawing.Size(229, 48);
             this.txtTypeCustomerName.TabIndex = 3;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(5, 104);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(7, 128);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(108, 13);
+            this.label15.Size = new System.Drawing.Size(141, 17);
             this.label15.TabIndex = 2;
             this.label15.Text = "Tên loại khách hàng:";
             // 
@@ -2498,33 +2453,67 @@ namespace frmLogin
             this.txtTypeCustomerID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTypeCustomerID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTypeCustomerID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTypeCustomerID.Location = new System.Drawing.Point(121, 18);
-            this.txtTypeCustomerID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTypeCustomerID.Location = new System.Drawing.Point(161, 22);
+            this.txtTypeCustomerID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTypeCustomerID.Name = "txtTypeCustomerID";
             this.txtTypeCustomerID.PasswordChar = '\0';
             this.txtTypeCustomerID.PlaceholderText = "";
             this.txtTypeCustomerID.SelectedText = "";
-            this.txtTypeCustomerID.Size = new System.Drawing.Size(172, 39);
+            this.txtTypeCustomerID.Size = new System.Drawing.Size(229, 48);
             this.txtTypeCustomerID.TabIndex = 1;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(5, 29);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(7, 36);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(104, 13);
+            this.label18.Size = new System.Drawing.Size(135, 17);
             this.label18.TabIndex = 0;
             this.label18.Text = "Mã loại khách hàng:";
             // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "DiscountID";
+            this.Column12.HeaderText = "Mã giảm giá";
+            this.Column12.MinimumWidth = 6;
+            this.Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "DiscountName";
+            this.Column13.HeaderText = "Tên giảm giá";
+            this.Column13.MinimumWidth = 6;
+            this.Column13.Name = "Column13";
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "Price";
+            this.Column14.HeaderText = "Đơn giá";
+            this.Column14.MinimumWidth = 6;
+            this.Column14.Name = "Column14";
+            // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "StartDay";
+            this.Column15.HeaderText = "Ngày bắt đầu";
+            this.Column15.MinimumWidth = 6;
+            this.Column15.Name = "Column15";
+            // 
+            // Column16
+            // 
+            this.Column16.DataPropertyName = "EndDay";
+            this.Column16.HeaderText = "Ngày kết thúc";
+            this.Column16.MinimumWidth = 6;
+            this.Column16.Name = "Column16";
+            // 
             // frmCategoyManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 385);
+            this.ClientSize = new System.Drawing.Size(964, 474);
             this.Controls.Add(this.tctrlCagtegoryManagement);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmCategoyManagement";
             this.Text = "frmCategoyManagement";
             this.Load += new System.EventHandler(this.frmCategoyManagement_Load);
@@ -2555,7 +2544,7 @@ namespace frmLogin
             this.grpSizeProductInfo.ResumeLayout(false);
             this.grpSizeProductInfo.PerformLayout();
             this.tpDiscount.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvListDiscount)).EndInit();
             this.grpFunctionDiscount.ResumeLayout(false);
             this.grpDiscountInfo.ResumeLayout(false);
             this.grpDiscountInfo.PerformLayout();
@@ -2653,7 +2642,7 @@ namespace frmLogin
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox txtSizeID;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgvListDiscount;
         private System.Windows.Forms.GroupBox grpFunctionDiscount;
         private Guna.UI2.WinForms.Guna2Button btnSaveDiscount;
         private Guna.UI2.WinForms.Guna2Button btnAddDiscount;
@@ -2672,11 +2661,6 @@ namespace frmLogin
         private System.Windows.Forms.Label label17;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpDateStart;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
@@ -2696,5 +2680,10 @@ namespace frmLogin
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
     }
 }

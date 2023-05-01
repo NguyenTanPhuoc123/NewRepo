@@ -45,9 +45,11 @@
     <Compile Include="AccountMenu.cs" />
     <Compile Include="Bill.cs" />
     <Compile Include="BillInfo.cs" />
+    <Compile Include="BillMenu.cs" />
     <Compile Include="CategoryFood.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerMenu.cs" />
+    <Compile Include="Discount.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeMenu.cs" />
     <Compile Include="Location.cs" />

@@ -45,10 +45,12 @@
     <Compile Include="AccountMenuDAO.cs" />
     <Compile Include="BillDAO.cs" />
     <Compile Include="BillInfoDAO.cs" />
+    <Compile Include="BillMenuDAO.cs" />
     <Compile Include="CategoryFoodDAO.cs" />
     <Compile Include="CustomerDAO.cs" />
     <Compile Include="CustomerMenuDAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="DiscountDAO.cs" />
     <Compile Include="EmployeeDAO.cs" />
     <Compile Include="EmployeeMenuDAO.cs" />
     <Compile Include="LocationDAO.cs" />

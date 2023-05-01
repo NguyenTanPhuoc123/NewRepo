@@ -51,16 +51,35 @@ namespace DAO
 
         public int DeleteLocationTable(int id)
         {
-            string query = string.Format("UPDATE VITRI SET XOA = 1 WHERE MAVITRI = {0} ", id);
-            int row = DataProvider.ExecuteInsertCommand(query, null);
+            int row = 0;
+            if (!CheckExistLocationTable(id))
+            {
+                string query = string.Format("UPDATE VITRI SET XOA = 1 WHERE MAVITRI = {0} ", id);
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
 
             return row;
         }
 
         public int DeleteAllLocationTable()
         {
-            string query = string.Format("UPDATE VITRI SET XOA = 1 ");
-            int row = DataProvider.ExecuteInsertCommand(query, null);
+            int count = 0;
+            int row = 0;
+            List<Location> locations = GetListLocation();
+            List<Table> tables = TableDAO.Instance.GetListTables();
+            foreach (Location location in locations)
+            {
+                foreach (Table table in tables)
+                {
+                    if (table.ViTri == location.MaViTri)
+                        count++;
+                }
+            }
+            if (count == 0)
+            {
+                string query = string.Format("UPDATE VITRI SET XOA = 1 ");
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
 
             return row;
         }
@@ -76,6 +95,15 @@ namespace DAO
                 listLocation.Add(location);
             }
             return listLocation;
+        }
+
+        public bool CheckExistLocationTable(int locationID)
+        {
+            string query = string.Format("SELECT COUNT(MABANAN) FROM BANAN WHERE XOA = 0 AND VITRI = {0} ", locationID);
+            int row = DataProvider.ExecuteScalarCommand(query, null);
+            if (row > 0)
+                return true;
+            return false;
         }
 
         public int RestoreLocation(int id)

@@ -30,6 +30,7 @@ namespace frmLogin
             ResetInfo();
 
         }
+
         #region Method
         public void ResetInfo()
         {
@@ -62,6 +63,19 @@ namespace frmLogin
         #endregion
 
         #region Events
+
+        private void txtCustomerNumberPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txtCustomerName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             txtCustomerID.Text = CustomerBUS.Instance.GetCustomerID();
@@ -85,7 +99,7 @@ namespace frmLogin
                 return;
             }
 
-            if(!CustomerBUS.Instance.CheckNumberPhone(txtCustomerNumberPhone.Text))
+            if(!CustomerBUS.Instance.CheckNumberPhone(txtCustomerNumberPhone.Text,txtCustomerID.Text))
             {
                 MessageBox.Show("Số điện thoại không đúng định dạng ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -139,7 +153,7 @@ namespace frmLogin
                     return;
                 }
 
-                if (!CustomerBUS.Instance.CheckNumberPhone(txtCustomerNumberPhone.Text))
+                if (!CustomerBUS.Instance.CheckNumberPhone(txtCustomerNumberPhone.Text,txtCustomerID.Text))
                 {
                     MessageBox.Show("Số điện thoại không đúng định dạng hoặc đã tồn tại ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -224,6 +238,19 @@ namespace frmLogin
             {
                 dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.GetListCustomerMenu();
             }
+
+            else if(cbFillCustomer.SelectedIndex == 0 && cbSortCustomer.SelectedIndex != 0)
+            {
+                if (cbSortCustomer.SelectedIndex == 1)
+                    dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByID(0);
+                else if (cbSortCustomer.SelectedIndex == 2)
+                    dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByIDDecrease(0);
+                else if (cbSortCustomer.SelectedIndex == 3)
+                    dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByName(0);
+                else
+                    dtgvListCustomer.DataSource = CustomerMenuBUS.Instance.SortCustomerByNameDecrease(0);
+            }
+
             else
             {
                 for (int i = 1; i <= cbFillCustomer.Items.Count; i++)
@@ -246,16 +273,5 @@ namespace frmLogin
         }
         #endregion
 
-        private void txtCustomerNumberPhone_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-                e.Handled = true;
-        }
-
-        private void txtCustomerName_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-                e.Handled = true;
-        }
     }
 }

@@ -36,20 +36,31 @@ namespace BUS
         {
             return TableMenuDAO.Instance.SearchTableFoodByTableName(tableName);
         }
+      
 
-        public List<TableMenu> FillTableFood(int maViTri)
+        public List<TableMenu> SortTableByID(int locationID)
         {
-            return TableMenuDAO.Instance.FillTableFood(maViTri);
+            return TableMenuDAO.Instance.SortTableByID(locationID);
         }
 
-        public List<TableMenu> SortListTableMenuByTableName()
+        public List<TableMenu> SortTableByIDDecrease(int locationID)
         {
-            return TableMenuDAO.Instance.SortListTableMenuByTableName();
+            return TableMenuDAO.Instance.SortTableByIDDecrease(locationID);
         }
 
-        public List<TableMenu> SortListTableMenuByLocation()
+        public List<TableMenu> SortTableByLocationID(int locationID)
         {
-            return TableMenuDAO.Instance.SortListTableMenuByLocation();
+            return TableMenuDAO.Instance.SortTableByLocationID(locationID);
+        }
+
+        public List<TableMenu> SortTableByLocationIDDecrease(int locationID)
+        {
+            return TableMenuDAO.Instance.SortTableByLocationIDDecrease(locationID);
+        }
+
+        public List<TableMenu> FillListTableMenu(int locationID)
+        {
+            return TableMenuDAO.Instance.FillListTableMenu(locationID);
         }
     }
 }
