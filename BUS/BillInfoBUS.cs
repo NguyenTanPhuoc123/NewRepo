@@ -27,7 +27,7 @@ namespace BUS
             return BillInfoDAO.Instance.GetListBillInfo();
         }
 
-        public int InsertNewBillInfo(string billID, string productID, int size, int count)
+        public int InsertNewBillInfo(string billID, string productID, int size, string count)
         {
             return BillInfoDAO.Instance.InsertNewBillInfo(billID, productID, size, count);
         }

@@ -134,7 +134,8 @@ namespace frmLogin
                         masp = ProductBUS.Instance.ProductID(userControl.TenSP);
                         soluong = userControl.SoLuong;
                         kichthuoc = userControl.KichThuoc;
-                        BillInfoBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
+                        string mahd = BillBUS.Instance.HDID(tableID);
+                        int data = BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, kichthuoc, soluong);
                     }
                 }
             }

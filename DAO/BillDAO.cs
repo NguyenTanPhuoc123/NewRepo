@@ -93,5 +93,15 @@ namespace DAO
             int count = DataProvider.ExecuteScalarCommand(query, null);
             return (count > 0 ? false : true);
         }
+        public string HDID(int TableID)
+        {
+            string query = string.Format("SELECT MAHD FROM HOADON WHERE SOBAN = {0} AND TRANGTHAI=1", TableID);
+            DataTable count = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach(DataRow row in count.Rows)
+            {
+                return row["MAHD"].ToString();
+            }
+            return null;
+        }
     }
 }

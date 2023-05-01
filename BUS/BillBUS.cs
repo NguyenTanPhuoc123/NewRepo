@@ -39,5 +39,9 @@ namespace BUS
         {
             return BillDAO.Instance.CheckHD(TableID);
         }
+        public string HDID(int TableID)
+        {
+            return BillDAO.Instance.HDID(TableID);
+        }
     }
 }
