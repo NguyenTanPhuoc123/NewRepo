@@ -26,21 +26,5 @@ namespace BUS
         {
             return MenuDishDAO.Instance.GetListMenuDishByTableID(tableID);
         }
-        public bool ADDBILL(int tableID)
-        {
-            return MenuDishDAO.Instance.ADDBILL(tableID);
-        }
-        public void ADDBILLINFO(string masp, int kichthuoc, string soluong)
-        {
-           MenuDishDAO.Instance.ADDBILLINFO(masp,kichthuoc,soluong);
-        }
-        public string ProductID(string tensp)
-        {
-            return MenuDishDAO.Instance.ProductID(tensp);
-        }
-        public bool CheckHD(int Maban)
-        {
-            return MenuDishDAO.Instance.CheckHD(Maban);
-        }
     }
 }

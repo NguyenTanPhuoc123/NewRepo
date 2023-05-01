@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -162,18 +161,24 @@ namespace frmLogin
         }
         private void btnRestoreProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon khoi phuc san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int cout = ProductBUS.Instance.RestoreProduct(txtProductID.Text);
-                MessageBox.Show(cout > 0 ? "Khoi phuc thanh cong" : "Khoi phuc that bai");
+                if(cout>0)
+                    MessageBox.Show("Khôi phục thành công", "Thông Báo",MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
         private void btnRestoreAllProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon khoi phuc tat ca san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("BBạn có muốn khôi phục tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int cout = ProductBUS.Instance.RestoreProductAll();
-                MessageBox.Show(cout > 0 ? "Khoi phuc thanh cong" : "Khoi phuc that bai");
+                if (cout > 0)
+                    MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         #endregion

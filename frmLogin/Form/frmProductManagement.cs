@@ -45,12 +45,15 @@ namespace frmLogin
             if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham))
             {
                 int count = ProductBUS.Instance.ExecuteInsertCommand(product);
-                MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
+                if(count>0)
+                    MessageBox.Show( "Thêm sản phẩm mới thành công","Thông báo",MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Thêm sản phẩm mới thất bại", "Thông báo", MessageBoxButtons.OK);
                 LoadProduct();
                 ResetText();
             }
             else
-                MessageBox.Show("Ten san pham da co");
+                MessageBox.Show("Ten san pham da co", "Thông báo", MessageBoxButtons.OK);
         }
         private void pbProduct_Click(object sender, EventArgs e)
         {
@@ -102,10 +105,13 @@ namespace frmLogin
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int data = ProductBUS.Instance.DeleteProduct(txtProductID.Text);
-                MessageBox.Show(data > 0 ? "Xoa thanh cong" : "Xoa that bai");
+                if(data>0)
+                    MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK);
                 frmProductManagement_Load(sender, e);
                 LoadProduct();
                 Resettext();
@@ -144,14 +150,17 @@ namespace frmLogin
 
         private void btnEditProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon sua san pham", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn sửa sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 Product product = new Product
                     (
                         txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text
                     );
                 int cout = ProductBUS.Instance.UpdateProduct(product);
-                MessageBox.Show(cout > 0 ? "Sua thanh cong" : "Sua that bai");
+                if(cout>0)
+                    MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Sửa thất bại", "Thông báo", MessageBoxButtons.OK);
                 Resettext();
                 LoadProduct();
             }
@@ -174,7 +183,7 @@ namespace frmLogin
         {
             if (string.IsNullOrEmpty(txtSearchProduct.Text))
             {
-                MessageBox.Show("Ban chua nhap ten san pham de tim kiem");
+                MessageBox.Show("Bạn chưa nhập tên sản phẩm để tìm kiếm", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
             dtgvListProduct.DataSource = null;

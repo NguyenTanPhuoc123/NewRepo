@@ -31,5 +31,13 @@ namespace BUS
         {
             return BillDAO.Instance.AddNewBill(billID, dayCheckIn, dayCheckOut, employeeID, customerID, discountID, tableID);
         }
+        public bool ADDBILL(int tableID)
+        {
+            return BillDAO.Instance.ADDBILL(tableID);
+        }
+        public bool CheckHD(int TableID)
+        {
+            return BillDAO.Instance.CheckHD(TableID);
+        }
     }
 }

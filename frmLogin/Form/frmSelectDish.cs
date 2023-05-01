@@ -83,8 +83,8 @@ namespace frmLogin
                 uc.KichThuoc = Convert.ToInt32(cbSize.SelectedValue);
                 uc.KichThuocName = cbSize.Text;
                 flpAddDish.Controls.Add(uc);
-
             }
+            numQuantity.Value = 1;
         }
 
         private void lstvListDish_SelectedIndexChanged(object sender, EventArgs e)
@@ -107,19 +107,19 @@ namespace frmLogin
             string soluong;
             int kichthuoc;
             int tableID = frmSellManagement.GetTableID();
-            if (MenuDishBUS.Instance.CheckHD(tableID))
+            if (BillBUS.Instance.CheckHD(tableID))
             {
-                if (MenuDishBUS.Instance.ADDBILL(tableID))
+                if (BillBUS.Instance.ADDBILL(tableID))
                 {
                     foreach (Control c in flpAddDish.Controls)
                     {
                         if (c is Usercontrol)
                         {
                             Usercontrol userControl = (Usercontrol)c;
-                            masp = MenuDishBUS.Instance.ProductID(userControl.TenSP);
+                            masp = ProductBUS.Instance.ProductID(userControl.TenSP);
                             soluong = userControl.SoLuong;
                             kichthuoc = userControl.KichThuoc;
-                            MenuDishBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
+                            BillInfoBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
                         }
                     }
                 }
@@ -131,10 +131,10 @@ namespace frmLogin
                     if (c is Usercontrol)
                     {
                         Usercontrol userControl = (Usercontrol)c;
-                        masp = MenuDishBUS.Instance.ProductID(userControl.TenSP);
+                        masp = ProductBUS.Instance.ProductID(userControl.TenSP);
                         soluong = userControl.SoLuong;
                         kichthuoc = userControl.KichThuoc;
-                        MenuDishBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
+                        BillInfoBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
                     }
                 }
             }
@@ -144,6 +144,7 @@ namespace frmLogin
         private void cbCategoryDish_SelectedIndexChanged(object sender, EventArgs e)
         {
             lstvListDish.Clear();
+            imageList1.Images.Clear();
             if (cbCategoryDish.SelectedIndex == 0)
             {
                 List<Product> products = ProductBUS.Instance.GetProduct();
@@ -174,6 +175,11 @@ namespace frmLogin
 
         private void btnSearchDish_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtSearchDish.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập tên sản phẩm để tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             lstvListDish.Clear();
             List<Product> products = ProductBUS.Instance.GetListFindProductSelectDish(txtSearchDish.Text);
             for (int i = 0; i < products.Count; i++)

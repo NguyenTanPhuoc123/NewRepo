@@ -63,7 +63,6 @@ namespace frmLogin
             this.label1 = new System.Windows.Forms.Label();
             this.pbProduct = new System.Windows.Forms.PictureBox();
             this.grpFunction = new System.Windows.Forms.GroupBox();
-            this.btnRefreshProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteAllProduct = new Guna.UI2.WinForms.Guna2Button();
@@ -71,6 +70,7 @@ namespace frmLogin
             this.btnProductDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchProduct = new Guna.UI2.WinForms.Guna2Button();
             this.ofdImage = new System.Windows.Forms.OpenFileDialog();
+            this.btnSaveProduct = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProduct)).BeginInit();
             this.grpProductInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -107,11 +107,11 @@ namespace frmLogin
             this.cbSortProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortProduct.ItemHeight = 30;
             this.cbSortProduct.Items.AddRange(new object[] {
-            "Tên Sản Phẩm",
-            "Số Lượng Tăng dần",
-            "Số Lượng  Giảm dần",
-            "Đơn giá  Tăng dần",
-            "Đơn giá Giảm dần"});
+            "Tên sản phẩm",
+            "Số lượng tăng dần",
+            "Số lượng giảm dần",
+            "Đơn giá tăng dần",
+            "Đơn giá giảm dần"});
             this.cbSortProduct.Location = new System.Drawing.Point(86, 294);
             this.cbSortProduct.Name = "cbSortProduct";
             this.cbSortProduct.Size = new System.Drawing.Size(174, 36);
@@ -149,7 +149,7 @@ namespace frmLogin
             this.cbFillProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillProduct.ItemHeight = 30;
             this.cbFillProduct.Items.AddRange(new object[] {
-            "Tat ca"});
+            "Tất cả"});
             this.cbFillProduct.Location = new System.Drawing.Point(799, 294);
             this.cbFillProduct.Name = "cbFillProduct";
             this.cbFillProduct.Size = new System.Drawing.Size(161, 36);
@@ -490,7 +490,7 @@ namespace frmLogin
             // 
             // grpFunction
             // 
-            this.grpFunction.Controls.Add(this.btnRefreshProduct);
+            this.grpFunction.Controls.Add(this.btnSaveProduct);
             this.grpFunction.Controls.Add(this.btnAddProduct);
             this.grpFunction.Controls.Add(this.btnEditProduct);
             this.grpFunction.Controls.Add(this.btnDeleteAllProduct);
@@ -502,24 +502,6 @@ namespace frmLogin
             this.grpFunction.TabIndex = 27;
             this.grpFunction.TabStop = false;
             this.grpFunction.Text = "Chức năng";
-            // 
-            // btnRefreshProduct
-            // 
-            this.btnRefreshProduct.BorderRadius = 20;
-            this.btnRefreshProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefreshProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefreshProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRefreshProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRefreshProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.btnRefreshProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRefreshProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnRefreshProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshProduct.Image")));
-            this.btnRefreshProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnRefreshProduct.Location = new System.Drawing.Point(177, 23);
-            this.btnRefreshProduct.Name = "btnRefreshProduct";
-            this.btnRefreshProduct.Size = new System.Drawing.Size(141, 45);
-            this.btnRefreshProduct.TabIndex = 26;
-            this.btnRefreshProduct.Text = "Làm mới";
             // 
             // btnAddProduct
             // 
@@ -637,6 +619,26 @@ namespace frmLogin
             // 
             this.ofdImage.FileName = "openFileDialog1";
             // 
+            // btnSaveProduct
+            // 
+            this.btnSaveProduct.BorderRadius = 20;
+            this.btnSaveProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSaveProduct.Enabled = false;
+            this.btnSaveProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnSaveProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSaveProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveProduct.Image")));
+            this.btnSaveProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSaveProduct.Location = new System.Drawing.Point(177, 20);
+            this.btnSaveProduct.Name = "btnSaveProduct";
+            this.btnSaveProduct.Size = new System.Drawing.Size(141, 45);
+            this.btnSaveProduct.TabIndex = 31;
+            this.btnSaveProduct.Text = "Lưu";
+            this.btnSaveProduct.Click += new System.EventHandler(this.btnSaveProduct_Click);
+            // 
             // frmProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -694,7 +696,6 @@ namespace frmLogin
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbProduct;
         private System.Windows.Forms.GroupBox grpFunction;
-        private Guna.UI2.WinForms.Guna2Button btnRefreshProduct;
         private System.Windows.Forms.OpenFileDialog ofdImage;
         private System.Windows.Forms.DataGridViewImageColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -704,5 +705,6 @@ namespace frmLogin
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private Guna.UI2.WinForms.Guna2Button btnSaveProduct;
     }
 }

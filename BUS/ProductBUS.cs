@@ -41,57 +41,61 @@ namespace BUS
         {
             return ProductDAO.Instance.ExecuteInsertCommand(product);
         }
-        public int DeleteProduct(string Masp)
+        public int DeleteProduct(string ProductID)
         {
-            return ProductDAO.Instance.DeleteProduct(Masp);
+            return ProductDAO.Instance.DeleteProduct(ProductID);
         }
         public int UpdateProduct(Product product)
         {
             return ProductDAO.Instance.UpdateProduct(product);
         }
-        public DataTable GetListFillProduct(string tendanhmuc)
+        public DataTable GetListFillProduct(string CategoryName)
         {
-            return ProductDAO.Instance.GetListFillProduct(tendanhmuc);
+            return ProductDAO.Instance.GetListFillProduct(CategoryName);
         }
-        public DataTable GetListFindProduct(string tensanpham)
+        public DataTable GetListFindProduct(string productName)
         {
-            return ProductDAO.Instance.GetListFindProduct(tensanpham);
+            return ProductDAO.Instance.GetListFindProduct(productName);
         }
-        public DataTable SortProductName(string tendanhmuc)
+        public DataTable SortProductName(string CategoryName)
         {
-            return ProductDAO.Instance.SortProductName(tendanhmuc);
+            return ProductDAO.Instance.SortProductName(CategoryName);
         }
-        public DataTable SortSoLuongASC(string tendanhmuc)
+        public DataTable SortSoLuongASC(string CategoryName)
         {
-            return ProductDAO.Instance.SortSoLuongASC(tendanhmuc);
+            return ProductDAO.Instance.SortSoLuongASC(CategoryName);
         }
-        public DataTable SortSoLuongDESC(string tendanhmuc)
+        public DataTable SortSoLuongDESC(string CategoryName)
         {
-            return ProductDAO.Instance.SortSoLuongDESC(tendanhmuc);
+            return ProductDAO.Instance.SortSoLuongDESC(CategoryName);
         }
-        public DataTable SortDonGiaASC(string tendanhmuc)
+        public DataTable SortDonGiaASC(string CategoryName)
         {
-            return ProductDAO.Instance.SortDonGiaASC(tendanhmuc);
+            return ProductDAO.Instance.SortDonGiaASC(CategoryName);
         }
-        public DataTable SortDonGiaDESC(string tendanhmuc)
+        public DataTable SortDonGiaDESC(string CategoryName)
         {
-            return ProductDAO.Instance.SortDonGiaDESC(tendanhmuc);
+            return ProductDAO.Instance.SortDonGiaDESC(CategoryName);
         }
-        public int RestoreProduct(string Masp)
+        public int RestoreProduct(string PricductID)
         {
-            return ProductBUS.Instance.RestoreProduct(Masp);
+            return ProductBUS.Instance.RestoreProduct(PricductID);
         }
         public int RestoreProductAll()
         {
             return ProductDAO.Instance.RestoreProductAll();
         }
-        public List<Product> GetListFillProductSelectDish(string tendanhmuc)
+        public List<Product> GetListFillProductSelectDish(string CategoryName)
         {
-            return ProductDAO.Instance.GetListFillProductSelectDish(tendanhmuc);
+            return ProductDAO.Instance.GetListFillProductSelectDish(CategoryName);
         }
-        public List<Product> GetListFindProductSelectDish(string tensanpham)
+        public List<Product> GetListFindProductSelectDish(string ProductName)
         {
-            return ProductDAO.Instance.GetListFindProductSelectDish(tensanpham);
+            return ProductDAO.Instance.GetListFindProductSelectDish(ProductName);
+        }
+        public string ProductID(string ProductName)
+        {
+            return ProductDAO.Instance.ProductID(ProductName);
         }
     }
 }

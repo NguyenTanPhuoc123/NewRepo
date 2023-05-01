@@ -75,20 +75,20 @@ namespace DAO
             rows = DataProvider.ExecuteInsertCommand(query, parameter);
             return rows;
         }
-        public int DeleteProduct(string Masp)
+        public int DeleteProduct(string ProductID)
         {
             string query = "UPDATE SANPHAM SET TRANGTHAI=0 WHERE MASANPHAM=@SANPHAM";
             SqlParameter[] parameter = new SqlParameter[1];
-            parameter[0] = new SqlParameter("@SANPHAM", Masp);
+            parameter[0] = new SqlParameter("@SANPHAM", ProductID);
             int row = 0;
             row = DataProvider.ExecuteInsertCommand(query, parameter);
             return row;
         }
-        public int RestoreProduct(string Masp)
+        public int RestoreProduct(string ProductID)
         {
             string query = "UPDATE SANPHAM SET TRANGTHAI=1 WHERE MASANPHAM=@SANPHAM";
             SqlParameter[] parameter = new SqlParameter[1];
-            parameter[0] = new SqlParameter("@SANPHAM", Masp);
+            parameter[0] = new SqlParameter("@SANPHAM", ProductID);
             int row = 0;
             row = DataProvider.ExecuteInsertCommand(query, parameter);
             return row;
@@ -132,11 +132,11 @@ namespace DAO
             lst = DataProvider.ExcecuteSelectCommand(query, null);
             return lst;
         }
-        public DataTable SortProductName(string tendanhmuc)
+        public DataTable SortProductName(string CategoryName)
         {
             DataTable lst = new DataTable();
             string query;
-            if (tendanhmuc == "Tat ca")
+            if (CategoryName == "Tất ca")
             {
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 ORDER BY TENSANPHAM ASC";
 
@@ -144,15 +144,15 @@ namespace DAO
             else
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 and b.tendanhmuc=@tendanhmuc ORDER BY TENSANPHAM ASC";
             SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
+            parameters[0] = new SqlParameter("@tendanhmuc", CategoryName);
             lst = DataProvider.ExcecuteSelectCommand(query, parameters);
             return lst;
         }
-        public DataTable SortSoLuongASC(string tendanhmuc)
+        public DataTable SortSoLuongASC(string CategoryName)
         {
             DataTable lst = new DataTable();
             string query;
-            if (tendanhmuc == "Tat ca")
+            if (CategoryName == "Tất cả")
             {
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 ORDER BY SOLUONG ASC";
 
@@ -160,15 +160,15 @@ namespace DAO
             else
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 and b.tendanhmuc=@tendanhmuc ORDER BY SOLUONG ASC";
             SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
+            parameters[0] = new SqlParameter("@tendanhmuc", CategoryName);
             lst = DataProvider.ExcecuteSelectCommand(query, parameters);
             return lst;
         }
-        public DataTable SortSoLuongDESC(string tendanhmuc)
+        public DataTable SortSoLuongDESC(string CategoryName)
         {
             DataTable lst = new DataTable();
             string query;
-            if (tendanhmuc == "Tat ca")
+            if (CategoryName == "Tất cả")
             {
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 ORDER BY SOLUONG DESC";
 
@@ -176,15 +176,15 @@ namespace DAO
             else
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 and b.tendanhmuc=@tendanhmuc ORDER BY SOLUONG DESC";
             SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
+            parameters[0] = new SqlParameter("@tendanhmuc", CategoryName);
             lst = DataProvider.ExcecuteSelectCommand(query, parameters);
             return lst;
         }
-        public DataTable SortDonGiaASC(string tendanhmuc)
+        public DataTable SortDonGiaASC(string CategoryName)
         {
             DataTable lst = new DataTable();
             string query;
-            if (tendanhmuc == "Tat ca")
+            if (CategoryName == "Tat ca")
             {
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 ORDER BY DONGIA ASC";
 
@@ -192,15 +192,15 @@ namespace DAO
             else
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 and b.tendanhmuc=@tendanhmuc ORDER BY DONGIA ASC";
             SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
+            parameters[0] = new SqlParameter("@tendanhmuc", CategoryName);
             lst = DataProvider.ExcecuteSelectCommand(query, parameters);
             return lst;
         }
-        public DataTable SortDonGiaDESC(string tendanhmuc)
+        public DataTable SortDonGiaDESC(string CategoryName)
         {
             DataTable lst = new DataTable();
             string query;
-            if (tendanhmuc == "Tat ca")
+            if (CategoryName == "Tát cả")
             {
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 ORDER BY DONGIA DESC";
 
@@ -208,16 +208,16 @@ namespace DAO
             else
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 and b.tendanhmuc=@tendanhmuc ORDER BY DONGIA DESC";
             SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
+            parameters[0] = new SqlParameter("@tendanhmuc", CategoryName);
             lst = DataProvider.ExcecuteSelectCommand(query, parameters);
             return lst;
         }
-        public List<Product> GetListFillProductSelectDish(string tendanhmuc)
+        public List<Product> GetListFillProductSelectDish(string CategoryName)
         {
             List<Product> lst = new List<Product>();
             string query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 and b.tendanhmuc=@tendanhmuc";
             SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@tendanhmuc", tendanhmuc);
+            parameters[0] = new SqlParameter("@tendanhmuc", CategoryName);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, parameters);
             foreach (DataRow item in data.Rows)
             {
@@ -226,10 +226,10 @@ namespace DAO
             }
             return lst;
         }
-        public List<Product> GetListFindProductSelectDish(string tensanpham)
+        public List<Product> GetListFindProductSelectDish(string ProductName)
         {
             List<Product> lst = new List<Product>();
-            string query = string.Format("select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 AND dbo.fChuyenCoDauThanhKhongDau(a.TENSANPHAM) like dbo.fChuyenCoDauThanhKhongDau(N'%{0}%')", tensanpham);
+            string query = string.Format("select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 AND dbo.fChuyenCoDauThanhKhongDau(a.TENSANPHAM) like dbo.fChuyenCoDauThanhKhongDau(N'%{0}%')", ProductName);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
@@ -237,6 +237,19 @@ namespace DAO
                 lst.Add(acc);
             }
             return lst;
+        }
+        //Lay ra ma san pham tu ten san pham
+        public string ProductID(string ProductName)
+        {
+            string ID;
+            string query = string.Format("SELECT MASANPHAM FROM SANPHAM WHERE TENSANPHAM = N'{0}'", ProductName);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow row in data.Rows)
+            {
+                ID = row["MASANPHAM"].ToString();
+                return ID;
+            }
+            return null;
         }
     }
 }

@@ -164,20 +164,26 @@ namespace frmLogin
         }
         private void btnRestoreTypeProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon khoi phuc loai san pham", "Thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục loại sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int count = CategoryFoodBUS.Instance.RestoreCategoryFood(txtTypeProductID.Text);
-                MessageBox.Show(count > 0 ? "Khoi phuc thanh cong" : "Khoi phuc that bai");
+                if (count > 0)
+                    MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 LoadTypeProductDeleted();
             }
         }
 
         private void btnRestoreAllTypeProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon khoi phuc tat ca loai san pham", "Thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int count = CategoryFoodBUS.Instance.RestoreCategoryFood(txtTypeProductID.Text);
-                MessageBox.Show(count > 0 ? "Khoi phuc tat ca thanh cong" : "Khoi phuc tat ca that bai");
+                if (count > 0)
+                    MessageBox.Show("Khôi phục tất cả loại sản phẩm thành công", "Thông Báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Khôi phục tất cả loại sản phẩm thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 LoadTypeProductDeleted();
             }
         }

@@ -31,5 +31,9 @@ namespace BUS
         {
             return BillInfoDAO.Instance.InsertNewBillInfo(billID, productID, size, count);
         }
+        public void ADDBILLINFO(string masp, int kichthuoc, string soluong)
+        {
+            BillInfoDAO.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
+        }
     }
 }

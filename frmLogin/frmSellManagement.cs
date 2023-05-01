@@ -76,7 +76,7 @@ namespace frmLogin
         {
             if (GetTableID() == 0)
             {
-                MessageBox.Show("Ban chua chon ban");
+                MessageBox.Show("Bạn chưa chọn bàn để chọn món", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
