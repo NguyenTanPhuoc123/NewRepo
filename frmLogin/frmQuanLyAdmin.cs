@@ -129,12 +129,6 @@ namespace frmLogin
             
         }
 
-        private void btnCustomerManagement_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmCustomerManagement(), sender);
-            lblTitle.Text = btnCustomerManagement.Text;
-            ActiveButton(sender);
-        }
 
    
 

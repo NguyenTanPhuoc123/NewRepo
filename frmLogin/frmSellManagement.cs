@@ -34,7 +34,6 @@ namespace frmLogin
         {
             tableID = value;
         }
-
         public frmSellManagement(Account acc)
         {
             InitializeComponent();
@@ -82,7 +81,7 @@ namespace frmLogin
             else
             {
                 this.IsMdiContainer = true;
-                frmSelectDish frm = new frmSelectDish();
+                frmSelectDish frm = new frmSelectDish(this);
                 frm.Show();
             }
         }
@@ -137,6 +136,11 @@ namespace frmLogin
                 Employee employee = EmployeeBUS.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
                 return employee.TenNV;
             }
+        public int GetEmployeeID()
+        {
+            int manv = loginAccount.EmployeeID;
+            return manv;
+        }
 
         public int GetTypeAccount()
             {
@@ -173,7 +177,6 @@ namespace frmLogin
             foreach(MenuDish menuDish in listMenuDish)
             {
                 ListViewItem item = new ListViewItem(menuDish.DishName);
-                item.SubItems.Add(menuDish.Size);
                 item.SubItems.Add(menuDish.Count.ToString());
                 item.SubItems.Add(menuDish.Price.ToString());
                 item.SubItems.Add(menuDish.TotalPrice.ToString());                

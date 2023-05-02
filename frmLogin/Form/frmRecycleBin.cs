@@ -26,7 +26,6 @@ namespace frmLogin
         {
             LoadAccountDeleted();
             LoadTableFoodDeleted();
-            LoadCustomerDeleted();
             LoadProductDeleted();
             LoadEmployeeDeleted();
         }
@@ -182,73 +181,7 @@ namespace frmLogin
             }
         }
         #endregion
-        #region Customer
-        public void LoadCustomerDeleted()
-        {
-            dtgvListCustomerDeleted.DataSource = CustomerMenuBUS.Instance.GetListCustomerMenuDeleted();
-            ResetInfo();
-        }
-
-        public void ResetInfo()
-        {
-            txtCustomerID.Clear();
-            txtCustomerName.Clear();
-            txtCustomerNumberPhone.Clear();
-            txtTypeCustomer.Clear();
-            radMale.Checked = true;
-        }
-
-        private void dtgvListCustomerDeleted_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dtgvListCustomerDeleted.SelectedRows.Count > 0)
-            {
-                txtCustomerID.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[0].Value.ToString();
-                txtCustomerName.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[1].Value.ToString();
-                string gender = dtgvListCustomerDeleted.SelectedRows[0].Cells[5].Value.ToString();
-                if (gender == radMale.Text)
-                    radCustomerMale.Checked = true;
-                else
-                    radCustomerFemale.Checked = true;
-                txtCustomerNumberPhone.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[2].Value.ToString();
-                txtTypeCustomer.Text = dtgvListCustomerDeleted.SelectedRows[0].Cells[4].Value.ToString();
-            }
-        }
-
-        #endregion
-
-        private void btnRestoreCustomer_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn chắc muốn khôi phục khách hàng này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                int count = CustomerBUS.Instance.RestoreCustomer(txtCustomerID.Text);
-
-                if (count > 0)
-                {
-                    MessageBox.Show("Khôi phục khách hàng thành công", "Khôi phục khách hàng", MessageBoxButtons.OK);
-                    LoadCustomerDeleted();
-                   
-                }
-                else
-                    MessageBox.Show("Khôi phục khách hàng  thất bại", "Khôi phục khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnRestoreAllCustomer_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn chắc muốn khôi phục tất cả khách hàng này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-                int count = CustomerBUS.Instance.RestoreAllCustomer();
-
-                if (count > 0)
-                {
-                    MessageBox.Show("Khôi phục tất cả khách hàng thành công", "Khôi phục khách hàng", MessageBoxButtons.OK);
-                    LoadCustomerDeleted();
-                }
-                else
-                    MessageBox.Show("Khôi phục tất cả khách hàng  thất bại", "Khôi phục khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
+      
         #region Employee
         public void LoadEmployeeDeleted()
         {

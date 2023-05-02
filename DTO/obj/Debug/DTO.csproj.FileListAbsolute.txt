@@ -40,3 +40,9 @@ C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\D
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.dll
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.pdb
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\bin\Debug\DTO.dll
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\bin\Debug\DTO.pdb
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.dll
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.pdb

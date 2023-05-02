@@ -59,3 +59,12 @@ C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\D
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\bin\Debug\DAO.dll
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\bin\Debug\DAO.pdb
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\bin\Debug\DTO.dll
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\bin\Debug\DTO.pdb
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
+C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb

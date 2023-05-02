@@ -23,19 +23,16 @@ namespace frmLogin
             dtgvListPositionDeleted.AutoGenerateColumns = false;
             dtgvListLocationDeleted.AutoGenerateColumns = false;
             dtgvListTypeProductDeleted.AutoGenerateColumns = false;
-            dtgvListSizeDeleted.AutoGenerateColumns = false;
-            dtgvListTypeCustomerDeleted.AutoGenerateColumns = false;
             
         }
 
         private void frmRecycleBinCategory_Load(object sender, EventArgs e)
         {
             LoadLocationDeleted();
-            LoadTypeCustomerDeleted();
+
             LoadTypeAccountDeleted();
             LoadPositionDeleted();
             LoadDiscountDeleted();
-            LoadSizeProductDeleted();
         }
 
         private void btnExitFormRecycleBinCategory_Click(object sender, EventArgs e)
@@ -98,57 +95,6 @@ namespace frmLogin
         }
         #endregion
 
-        #region Type Customer
-        public void LoadTypeCustomerDeleted()
-        {
-            dtgvListTypeCustomerDeleted.DataSource = TypeCustomerBUS.Instance.GetListTypeCustomerDeleted();
-            txtTypeCustomerID.Clear();
-            txtTypeCustomerName.Clear();
-
-        }
-
-        private void dtgvListTypeCustomerDeleted_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dtgvListTypeCustomerDeleted.SelectedRows.Count > 0)
-            {
-                txtTypeCustomerID.Text = dtgvListTypeCustomerDeleted.SelectedRows[0].Cells[0].Value.ToString();
-                txtTypeCustomerName.Text = dtgvListTypeCustomerDeleted.SelectedRows[0].Cells[1].Value.ToString();
-            }
-        }
-
-        private void btnRestoreTypeCustomer_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn chắc chắn muốn khôi phục lại loại khách hàng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                int count = TypeCustomerBUS.Instance.RestoreTypeCustomer(int.Parse(txtTypeCustomerID.Text));
-                if (count > 0)
-                {
-                    MessageBox.Show("Khôi phục loại khách hàng thành công", "Khôi phục loại khách hàng", MessageBoxButtons.OK);
-                    LoadTypeCustomerDeleted();
-                }
-                else
-                    MessageBox.Show("Khôi phục loại khách hàng thất bại", "Khôi phục loại khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-        }
-
-        private void btnRestoreAllTypeCustomer_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn chắc chắn muốn khôi phục tất cả  loại khách hàng này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-            {
-                int count = TypeCustomerBUS.Instance.RestoreAllTypeCustomer();
-                if (count > 0)
-                {
-                    MessageBox.Show("Khôi phục tất cả loại khách hàng thành công", "Khôi phục loại khách hàng", MessageBoxButtons.OK);
-                    LoadTypeCustomerDeleted();
-                }
-                else
-                    MessageBox.Show("Khôi phục tất cả loại khách hàng thất bại", "Khôi phục loại khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-        }
-
-        #endregion
 
         #region TypeProduct
         private void LoadTypeProductDeleted()
@@ -325,67 +271,6 @@ namespace frmLogin
 
         #endregion
 
-        #region Size
-        public void LoadSizeProductDeleted()
-        {
-            dtgvListSizeDeleted.DataSource = SizeProductBUS.Instance.GetListSizeProductDeleted();
-            ResetInfoSize();
-        }
-
-        public void ResetInfoSize()
-        {
-            txtSizeID.Clear();
-            txtSizeName.Clear();
-            txtSizePrice.Clear();
-        }
-
-        private void dtgvListSizeDeleted_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dtgvListSizeDeleted.SelectedRows.Count > 0)
-            {
-                txtSizeID.Text = dtgvListSizeDeleted.SelectedRows[0].Cells[0].Value.ToString();
-                txtSizeName.Text = dtgvListSizeDeleted.SelectedRows[0].Cells[1].Value.ToString();
-                txtSizePrice.Text = dtgvListSizeDeleted.SelectedRows[0].Cells[2].Value.ToString();
-            }
-        }
-
-
-
-
-        private void btnRestoreSize_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn khôi phục kích thước này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-
-                int count = SizeProductBUS.Instance.RestoreSizeProduct(int.Parse(txtSizeID.Text));
-                if (count > 0)
-                {
-                    MessageBox.Show("Khôi phục kích thước thành công", "Khôi phục kích thước", MessageBoxButtons.OK);
-                    LoadSizeProductDeleted();
-                }
-
-                else
-                    MessageBox.Show("Khôi phục kích thước thất bại", "Khôi phục kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnRestoreAllSize_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn khôi phục tất cả các kích thước này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-            {
-
-                int count = SizeProductBUS.Instance.RestoreAllSizeProduct();
-                if (count > 0)
-                {
-                    MessageBox.Show("Khôi phục tất cả kích thước thành công", "Khôi phục kích thước", MessageBoxButtons.OK);
-                    LoadSizeProductDeleted();
-                }
-                else
-                    MessageBox.Show("Khôi phục tất cả kích thước thất bại", "Khôi phục kích thước", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        #endregion
 
 
     }

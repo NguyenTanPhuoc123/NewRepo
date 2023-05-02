@@ -53,7 +53,7 @@ namespace frmLogin
                 ResetText();
             }
             else
-                MessageBox.Show("Ten san pham da co", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Tên sản phẩm đã có", "Thông báo", MessageBoxButtons.OK);
         }
         private void pbProduct_Click(object sender, EventArgs e)
         {

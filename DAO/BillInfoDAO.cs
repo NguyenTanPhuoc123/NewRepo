@@ -38,10 +38,10 @@ namespace DAO
         }
         
 
-        public int InsertNewBillInfo(string billID, string productID, int size,string count, float total)
+        public int InsertNewBillInfo(string billID, string productID,float price,string count, float total)
         {
             int row;
-            string query = string.Format("INSERT INTO CHITIETHOADON(MAHD,MASP,KICHTHUOC,SOLUONG,THANHTIEN,TRANGTHAI) VALUES('{0}','{1}',{2},{3},{4},1)", billID, productID, size, count,total);
+            string query = string.Format("INSERT INTO CHITIETHOADON(MAHD,MASP,SOLUONG,DONGIA,THANHTIEN,TRANGTHAI) VALUES('{0}','{1}',{2},{3},{4},1)", billID, productID, count, price, total);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);
@@ -90,16 +90,15 @@ namespace DAO
             return billID;
         }
         //them vao chi tiet hoa don
-        public void ADDBILLINFO(string masp, int kichthuoc, string soluong)
+        public void ADDBILLINFO(string masp, string soluong)
         {
             int BillID = BILLMAXID();
             string MAHD = string.Format("HD{0}", BillID);
-            string query = "INSERT INTO CHITIETHOADON(MAHD,MASP,KICHTHUOC,SOLUONG,TRANGTHAI) VALUES(@MAHD,@MASP,@KICHTHUOC,@SOLUONG,1)";
-            SqlParameter[] parameters = new SqlParameter[4];
+            string query = "INSERT INTO CHITIETHOADON(MAHD,MASP,SOLUONG,TRANGTHAI) VALUES(@MAHD,@MASP,@SOLUONG,1)";
+            SqlParameter[] parameters = new SqlParameter[3];
             parameters[0] = new SqlParameter("@MAHD", MAHD);
             parameters[1] = new SqlParameter("@MASP", masp);
-            parameters[2] = new SqlParameter("@KICHTHUOC", kichthuoc);
-            parameters[3] = new SqlParameter("@SOLUONG", soluong);
+            parameters[2] = new SqlParameter("@SOLUONG", soluong);
             DataProvider.ExecuteInsertCommand(query, parameters);
         }
     }

@@ -44,8 +44,6 @@ namespace frmLogin
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearchDish = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpDishDetail = new System.Windows.Forms.GroupBox();
-            this.cbSize = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.numQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDishPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -194,8 +192,6 @@ namespace frmLogin
             // 
             // grpDishDetail
             // 
-            this.grpDishDetail.Controls.Add(this.cbSize);
-            this.grpDishDetail.Controls.Add(this.label8);
             this.grpDishDetail.Controls.Add(this.numQuantity);
             this.grpDishDetail.Controls.Add(this.label7);
             this.grpDishDetail.Controls.Add(this.txtDishPrice);
@@ -211,30 +207,6 @@ namespace frmLogin
             this.grpDishDetail.TabIndex = 8;
             this.grpDishDetail.TabStop = false;
             this.grpDishDetail.Text = "Chi tiết món";
-            // 
-            // cbSize
-            // 
-            this.cbSize.BackColor = System.Drawing.Color.Transparent;
-            this.cbSize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbSize.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbSize.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbSize.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbSize.ItemHeight = 30;
-            this.cbSize.Location = new System.Drawing.Point(258, 355);
-            this.cbSize.Name = "cbSize";
-            this.cbSize.Size = new System.Drawing.Size(74, 36);
-            this.cbSize.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(170, 362);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 22);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Kích thước:";
             // 
             // numQuantity
             // 
@@ -491,7 +463,5 @@ namespace frmLogin
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ImageList imageList1;
         private Guna.UI2.WinForms.Guna2Button btnSelectDish;
-        private Guna.UI2.WinForms.Guna2ComboBox cbSize;
-        private System.Windows.Forms.Label label8;
     }
 }

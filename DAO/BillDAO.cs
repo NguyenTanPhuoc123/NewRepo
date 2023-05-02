@@ -52,20 +52,11 @@ namespace DAO
             return null;
         }
 
-        public int AddNewBill(string billID, string dayCheckIn, string dayCheckOut,int employeeID, string customerID, string discountID, int tableID, float totalPrice)
+        public int AddNewBill(string dayCheckIn, string dayCheckOut,int employeeID, string discountID, int tableID, float totalPrice)
         {
             int row;
-            string query = String.Format("INSERT HOADON values('{0}','{1}','{2}',{3},'{4}','{5}',{6},0,{7},1)", billID, dayCheckIn, dayCheckOut, employeeID, customerID, discountID, tableID,totalPrice);
-            try
-            {
+            string query = String.Format("INSERT HOADON(MAHD,NGAYLAPHD,NGAYXUATHD,MANHANVIEN,SOBAN,TRANGTHAITHANHTOAN,TRANGTHAI) values('{0}',{1},{2},{3},{4},0,1)", BILLID(), dayCheckIn, dayCheckOut, employeeID, tableID);
                 row = DataProvider.ExecuteInsertCommand(query, null);
-
-            }
-            catch
-            {
-                row = 0;
-            }
-
             return row;
         }
         public string BILLID()

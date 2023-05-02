@@ -15,12 +15,9 @@ namespace frmLogin
 {
     public partial class frmSelectDish : Form
     {
-        
-
-        public frmSelectDish()
+        public frmSelectDish(frmSellManagement frmSell)
         {
             InitializeComponent();
-            
             cbCategoryDish.SelectedIndex = 0;
         }
 
@@ -33,9 +30,6 @@ namespace frmLogin
         {
             LoadProduct();
             LoadcbCategoryFoof();
-            cbSize.DataSource = SizeProductBUS.Instance.GetListSizeProduct();
-            cbSize.DisplayMember = "SizeName";
-            cbSize.ValueMember = "SizeID";
         }
         private void LoadcbCategoryFoof()
         {
@@ -76,8 +70,6 @@ namespace frmLogin
                 uc.TenSP = txtDishName.Text;
                 uc.SoLuong = numQuantity.Value.ToString();
                 uc.DonGia = txtDishPrice.Text;
-                uc.KichThuoc = Convert.ToInt32(cbSize.SelectedValue);
-                uc.KichThuocName = cbSize.Text;
                 flpAddDish.Controls.Add(uc);
             }
             numQuantity.Value = 1;
@@ -101,21 +93,24 @@ namespace frmLogin
         {
             string masp;
             string soluong;
-            int kichthuoc;
+            float dongia;
+            float thanhtien;
             int tableID = frmSellManagement.GetTableID();
             if (BillBUS.Instance.CheckHD(tableID))
             {
-                if (BillBUS.Instance.ADDBILL(tableID))
+                if (BillBUS.Instance.AddNewBill("GETDATE()", "GETDATE()", 1,null,tableID,0)>0)
                 {
                     foreach (Control c in flpAddDish.Controls)
                     {
                         if (c is Usercontrol)
                         {
                             Usercontrol userControl = (Usercontrol)c;
-                            masp = ProductBUS.Instance.GetProductID();
+                            masp = ProductBUS.Instance.ProductID(userControl.TenSP);
                             soluong = userControl.SoLuong;
-                            kichthuoc = userControl.KichThuoc;
-                            BillInfoBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
+                            dongia =float.Parse(userControl.DonGia);
+                            thanhtien =float.Parse(soluong) * dongia;
+                            string mahd = BillBUS.Instance.HDID(tableID);
+                            int data = BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, dongia, soluong, thanhtien);
                         }
                     }
                 }
@@ -130,9 +125,10 @@ namespace frmLogin
                         Usercontrol userControl = (Usercontrol)c;
                         masp = ProductBUS.Instance.ProductID(userControl.TenSP);
                         soluong = userControl.SoLuong;
-                        kichthuoc = userControl.KichThuoc;
+                        dongia = float.Parse(userControl.DonGia);
+                        thanhtien = float.Parse(soluong) * dongia;
                         string mahd = BillBUS.Instance.HDID(tableID);
-                        int data = BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, kichthuoc, soluong);
+                        int data = BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp,dongia, soluong, thanhtien);
                     }
                 }
             }          
