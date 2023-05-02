@@ -45,6 +45,7 @@
     <Compile Include="AccountMenuDAO.cs" />
     <Compile Include="BillDAO.cs" />
     <Compile Include="BillInfoDAO.cs" />
+    <Compile Include="BillInfoMenuDAO.cs" />
     <Compile Include="BillMenuDAO.cs" />
     <Compile Include="CategoryFoodDAO.cs" />
     <Compile Include="CustomerDAO.cs" />

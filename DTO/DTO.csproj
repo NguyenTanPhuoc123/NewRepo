@@ -45,6 +45,7 @@
     <Compile Include="AccountMenu.cs" />
     <Compile Include="Bill.cs" />
     <Compile Include="BillInfo.cs" />
+    <Compile Include="BillInfoMenu.cs" />
     <Compile Include="BillMenu.cs" />
     <Compile Include="CategoryFood.cs" />
     <Compile Include="Customer.cs" />

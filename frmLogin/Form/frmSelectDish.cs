@@ -116,7 +116,7 @@ namespace frmLogin
                         if (c is Usercontrol)
                         {
                             Usercontrol userControl = (Usercontrol)c;
-                            masp = ProductBUS.Instance.ProductID(userControl.TenSP);
+                            masp = ProductBUS.Instance.GetProductID();
                             soluong = userControl.SoLuong;
                             kichthuoc = userControl.KichThuoc;
                             BillInfoBUS.Instance.ADDBILLINFO(masp, kichthuoc, soluong);

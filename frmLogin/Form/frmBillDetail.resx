@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDeleteAllBillDetail.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -148,19 +166,6 @@
         HiK5Wfxf8W+qalJv2Aluybcd5CXY/9eeG2WVSn8A7ig9LTyeth8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnRefreshBillDetail.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABlUlEQVRYR+3WPShFYRzH8UsYvCSvk1CU
-        t5QssigpWaRMipGZVQarSZHJwsaOsJhlsFCIRSkDCyl59/11PfV0es7t3Lj/ya8+dTqde37POd3neU7q
-        P79IGxaxhT6dsEo11vCBPZTDLL24wRd2UQSzDOMZKr9FFcwyiBeoXCZglg48wpWfIh8mKcMFXLlMwiyr
-        8MsfUIKcpB1dnjF8wh/ADvxrOvFnUaHmtl+YiQY3hbjMYCF9mDzTCJWFzCEu43APo3tmFY06Wha1jLgM
-        4RXuWg1Ebzdx8rAOv9C3gbhp2IMnRH+jNWQAiVMI/eGiN9pH3PKrzekO0d84mkHdSBxNt0O4GxyhFKHU
-        4Rp+YYiW8CYkjna+8x81OhFIJbQ6hgpDLlGLxGlEQ/owmFnom8A5Q7T0BP4188hZoqvnO5phlmP4A9iE
-        WbR5vcGV67gVZhmF//QrMM02XLmmXAXMokXG3z1HYBqtkq48016Rk+hpXbm+lrWUm0VL6z1UrrdQDLPU
-        4wqabtrGC2CWfhxgCS068Z/sk0p9A/tVsWwdyhArAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnDeleteBillDetail.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -176,17 +181,6 @@
         +kpkF1GgViH9wNGK7QawzrABevpKZBdRoFYhfcHQD/EA4dwPlC6iQFpI73CaYrsB7DLyTdEpXUSBtJDs
         nmc3IWMZrlH029I+Rad0EQWskOKGqxdrzlJFFDiKdhhNQdsV9WidcR5PYmlsX9s90L7Oj3Vqf2slNAA7
         +Q+Vyl9Wy6MdmQ06XgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnEditBillInfo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABHUlEQVRYR+2WvU7CABRGuzjwAg4mrAws
-        PgQP4UjCyosYeBQGEyadjBuyMZE4GDAOJrIZIzFoPJ/QpIO09/a2kz3JCT9Dv0PLX9LwHzg73Jp5wTeH
-        eQzxHXu/j4zooHMcGz2Gxr9RAa4IBeQd2EI6foW6BAs0R0QD0vEbPNET0MYt6tineiKPSEA6/omveI4t
-        VMwX9rGQsgHZ097BFSriDs3jokxAdjw97V3coWtceAP+Gnef9iyegMrHhTWglnFhCahtXBQF1Dou8gIi
-        4yPUt2EhxwKirzwUMMDoaQ8FTPEBI9c8FDDD6/3d0m+4UMAjPuMtrtE7LkIBT7hE/bBM8AK9hAKqoAlw
-        BdzjZcXqk2QK0L+Yj5rcYENDhiT5AWTitAZ1L1cyAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnExitFomBillDetail.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -36,11 +36,43 @@ namespace DAO
 
             return list;
         }
+        
 
         public int InsertNewBillInfo(string billID, string productID, int size,string count)
         {
             int row;
             string query = string.Format("INSERT INTO CHITIETHOADON(MAHD,MASP,KICHTHUOC,SOLUONG,TRANGTHAI) VALUES('{0}','{1}',{2},{3},1)", billID, productID, size, count);
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
+            return row;
+        }
+
+
+        public int DeleteBillInfo(string billID, string productID)
+        {
+            int row;
+            string query = string.Format("UPDATE CHITIETHOADON SET TrangThai = 0 WHERE billID = {0} and productID = {1}", billID, productID);
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
+            return row;
+        }
+
+        public int DeleteAllBillInfo()
+        {
+            int row;
+            string query = string.Format("UPDATE CHITIETHOADON SET TrangThai = 0");
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);

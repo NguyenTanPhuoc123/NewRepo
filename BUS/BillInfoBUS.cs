@@ -31,9 +31,23 @@ namespace BUS
         {
             return BillInfoDAO.Instance.InsertNewBillInfo(billID, productID, size, count);
         }
+
+
+        public int DeleteBillInfo(string billID, string productID)
+        {
+            return BillInfoDAO.Instance.DeleteBillInfo(billID, productID);
+        }
+
+        public int DeleteAllBillInfo()
+        {
+            return BillInfoDAO.Instance.DeleteAllBillInfo();
+        }
+
+
         public void ADDBILLINFO(string masp, int kichthuoc, string soluong)
         {
             BillInfoDAO.Instance.ADDBILLINFO(masp, kichthuoc, soluong);
         }
+
     }
 }
