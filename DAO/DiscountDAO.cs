@@ -27,7 +27,7 @@ namespace DAO
             string query = "SELECT * FROM GIAMGIA WHERE TRANGTHAI = 1";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
 
-            foreach(DataRow item in data.Rows)
+            foreach (DataRow item in data.Rows)
             {
                 Discount discount = new Discount(item);
                 list.Add(discount);
@@ -52,7 +52,7 @@ namespace DAO
         public int AddNewDiscount(string discountName, string startDay, string endDay, float price)
         {
             int row;
-            string query = string.Format("CREATE_NEW_DISCOUNT   N'{0}','{1}','{2}',{3}",discountName,startDay,endDay,price);
+            string query = string.Format("CREATE_NEW_DISCOUNT   N'{0}','{1}','{2}',{3}", discountName, startDay, endDay, price);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);
@@ -82,7 +82,7 @@ namespace DAO
         public int DeleteDiscount(string discountID)
         {
             int row;
-            string query = string.Format("UPDATE GIAMGIA SET TrangThai = 0  WHERE MAGIAM = '{0}' ",discountID);
+            string query = string.Format("UPDATE GIAMGIA SET TrangThai = 0  WHERE MAGIAM = '{0}' ", discountID);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);

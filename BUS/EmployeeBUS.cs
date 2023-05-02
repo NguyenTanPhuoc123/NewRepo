@@ -21,9 +21,19 @@ namespace BUS
         {
             return EmployeeDAO.Instance.GetEmployeeByEmployeeID(employeeID);
         }
-        public bool CheckNumberPhone(string Numberphone)
+        public bool CheckNumberPhone(string Numberphone, string ID)
         {
-            return EmployeeDAO.Instance.CheckNumberPhone(Numberphone);
+            return EmployeeDAO.Instance.CheckNumberPhone(Numberphone, ID);
+        }
+
+        public bool CheckNumberPhoneCreate(string Numberphone)
+        {
+            return EmployeeDAO.Instance.CheckNumberPhoneCreate(Numberphone);
+        }
+
+        public bool CheckAge(DateTime BirthYear)
+        {
+            return EmployeeDAO.Instance.CheckAge(BirthYear);
         }
         public int UpdateEmployeeInFo(int employeeID, string SDT, string NgaySinh, string GioiTinh, string DiaChi)
         {

@@ -59,3 +59,4 @@ C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\D
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
 C:\Users\Admin\Desktop\DOAN1\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb
+D:\DOAN\DAO\obj\Debug\DAO.csproj.CopyComplete

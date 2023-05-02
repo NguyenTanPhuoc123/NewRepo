@@ -21,17 +21,45 @@ namespace DAO
         {
 
         }
-        public bool CheckNumberPhone(string Numberphone)
+        public bool CheckNumberPhone(string phone, string ID)
+        {
+            int outputNum;
+            if (phone.Length == 11 || !int.TryParse(phone, out outputNum))
+                return false;
+
+            if (!phone.StartsWith("0"))
+                return false;
+
+            string query = string.Format("SELECT COUNT(MANV) FROM NHANVIEN WHERE SODIENTHOAI = {0} and MANV != {1}", phone, ID);
+            int row = DataProvider.ExecuteScalarCommand(query, null);
+            if (row > 0)
+                return false;
+
+            return true;
+        }
+
+        public bool CheckNumberPhoneCreate(string phone)
+        {
+            int outputNum;
+            if (phone.Length == 11 || !int.TryParse(phone, out outputNum))
+                return false;
+
+            if (!phone.StartsWith("0"))
+                return false;
+
+            string query = string.Format("SELECT COUNT(MANV) FROM NHANVIEN WHERE SODIENTHOAI = {0}", phone);
+            int row = DataProvider.ExecuteScalarCommand(query, null);
+            if (row > 0)
+                return false;
+
+            return true;
+        }
+
+        public bool CheckAge(DateTime BirthYear)
         {
             List<EmployeeMenu> employees = EmployeeMenuDAO.Instance.GetListEmployee();
-            if (Numberphone.Length < 11)
+            if (DateTime.Today.Year - BirthYear.Year >= 18)
             {
-                for (int i = 0 ;i <employees.Count; i++){
-                    if(Numberphone == employees[i].SoDienThoai)
-                    {
-                        return false;
-                    }
-                }
                 return true;
             }
             return false;

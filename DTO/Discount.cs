@@ -32,7 +32,7 @@ namespace DTO
 
         public Discount(DataRow row)
         {
-            this.m_DiscountID = row["MAGIAM"].ToString();
+            this.m_DiscountID = row["MAGIAMGIA"].ToString();
             this.m_DiscountName = row["TENGIAMGIA"].ToString();
             this.m_Price = float.Parse(row["DONGIA"].ToString());
             this.m_StartDay = row["NgayBatDau"].ToString();

@@ -63,16 +63,24 @@ namespace frmLogin
         private void btnEditEmployee_Click(object sender, EventArgs e)
         {
             string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            int count = EmployeeBUS.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
-            if (count > 0)
+            if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text, txtEmployeeID.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
             {
-                MessageBox.Show("Sửa tài khoản thành công");
+                int count = EmployeeBUS.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
+                if (count > 0)
+                {
+                    MessageBox.Show("Sửa tài khoản thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Sửa tài khoản thất bại");
+                }
+                frmEmployeeManager_Load(sender, e);
             }
             else
             {
-                MessageBox.Show("Sửa tài khoản thất bại");
+                MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi");
             }
-            frmEmployeeManager_Load(sender, e);
+
         }
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
@@ -88,15 +96,16 @@ namespace frmLogin
                 {
                     MessageBox.Show("Xóa tài khoản thất bại");
                 }
+                frmEmployeeManager_Load(sender, e);
             }
-            frmEmployeeManager_Load(sender, e);
+
         }
 
         public void LoadCbFill()
         {
             cbFillEmployee.SelectedIndex = 0;
             List<Position> positions = PositionBUS.Instance.GetListPosition();
-            for (int i=0;i<positions.Count; i++)
+            for (int i = 0; i < positions.Count; i++)
             {
                 cbFillEmployee.Items.Add(positions[i].TenChucVu);
             }
@@ -120,7 +129,7 @@ namespace frmLogin
         private void btnSaveEmployee_Click(object sender, EventArgs e)
         {
             string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text))
+            if (EmployeeBUS.Instance.CheckNumberPhoneCreate(txtNumberPhone.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
             {
                 int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
                 if (count > 0)
@@ -135,7 +144,7 @@ namespace frmLogin
             }
             else
             {
-                MessageBox.Show("Số điện thoại phải có 10 số và không được trùng nhau");
+                MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi");
             }
         }
 
@@ -168,37 +177,47 @@ namespace frmLogin
 
         private void cbSortEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbSortEmployee.SelectedIndex == 0)
+            if(cbSortEmployee.SelectedIndex == 0 && cbFillEmployee.SelectedIndex == 0)
             {
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
             }
+
             else if (cbSortEmployee.SelectedIndex == 1)
-            {
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(cbFillEmployee.SelectedIndex);
-            }
-            else
-            {
+            else if (cbSortEmployee.SelectedIndex == 2)
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(cbFillEmployee.SelectedIndex);
-            }
+            
         }
 
         private void cbFillEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cbFillEmployee.SelectedIndex == 0 )
+
+            if (cbFillEmployee.SelectedIndex == 0 && cbSortEmployee.SelectedIndex == 0)
             {
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
             }
-            else if (cbSortEmployee.SelectedIndex == 1)
+
+            else if (cbFillEmployee.SelectedIndex == 0 && cbSortEmployee.SelectedIndex == 1)
             {
-                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(cbFillEmployee.SelectedIndex);
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(0);
+                
             }
-            else if(cbSortEmployee.SelectedIndex == 2)
-            {
-                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(cbFillEmployee.SelectedIndex);
-            }
+
+            else if (cbFillEmployee.SelectedIndex == 0 && cbSortEmployee.SelectedIndex == 2)
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(0);
+
             else
             {
-                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.FillEmployeeByPosition(cbFillEmployee.SelectedIndex);
+                for (int i = 1; i <= cbFillEmployee.Items.Count; i++)
+                {
+                    if (cbFillEmployee.SelectedIndex == i)
+                    {
+                        if (cbSortEmployee.SelectedIndex == 1)
+                            dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(cbFillEmployee.SelectedIndex);
+                        else if (cbSortEmployee.SelectedIndex == 2)
+                            dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(cbFillEmployee.SelectedIndex);
+                    }
+                }
             }
         }
 
@@ -213,5 +232,7 @@ namespace frmLogin
             if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
+        
     }
 }

@@ -47,7 +47,7 @@ namespace frmLogin
 
         private void btnDeleteAllAccount_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation))
+            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
             {
                 int count = AccountBUS.Instance.DeleteAllAccount();
                 if (count > 0)
@@ -107,8 +107,6 @@ namespace frmLogin
             frmAccountManagement_Load(sender, e);
         }
 
-
-
         private void dtgvListAccount_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtUsername.Text = dtgvListAccount.SelectedRows[0].Cells[0].Value.ToString();
@@ -123,16 +121,23 @@ namespace frmLogin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
-            if (count > 0)
+            if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckPassword(txtPassword.Text))
             {
-                MessageBox.Show("Thêm tài khoản thành công");
+                int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
+                if (count > 0)
+                {
+                    MessageBox.Show("Thêm tài khoản thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm tài khoản thất bại");
+                }
+                frmAccountManagement_Load(sender, e);
             }
             else
             {
-                MessageBox.Show("Thêm tài khoản thất bại");
+                MessageBox.Show("Tạo tài khoản không hợp lệ");
             }
-            frmAccountManagement_Load(sender, e);
         }
 
         private void txtSearchAccount_TextChanged(object sender, EventArgs e)

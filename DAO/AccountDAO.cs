@@ -36,6 +36,21 @@ namespace DAO
             return false;
         }
 
+        public bool CheckUsername(string userName)
+        {
+            string query = string.Format("Select Count(*) From TAIKHOAN Where TENDANGNHAP=N'{0}'", userName);
+            int count = DataProvider.ExecuteScalarCommand(query, null);
+            return (count > 0 ? false : true);
+        }
+
+        public bool CheckPassword(string password)
+        {
+            int outputPass;
+            if (password.Length <= 8 || !int.TryParse(password, out outputPass))
+                return false;
+            return true;
+        }
+
         public string GetMD5(string passWord)
         {
             return Utils.GetMD5(passWord);
