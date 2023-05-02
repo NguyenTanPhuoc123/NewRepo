@@ -38,10 +38,10 @@ namespace DAO
         }
         
 
-        public int InsertNewBillInfo(string billID, string productID, int size,string count)
+        public int InsertNewBillInfo(string billID, string productID, int size,string count, float total)
         {
             int row;
-            string query = string.Format("INSERT INTO CHITIETHOADON(MAHD,MASP,KICHTHUOC,SOLUONG,TRANGTHAI) VALUES('{0}','{1}',{2},{3},1)", billID, productID, size, count);
+            string query = string.Format("INSERT INTO CHITIETHOADON(MAHD,MASP,KICHTHUOC,SOLUONG,THANHTIEN,TRANGTHAI) VALUES('{0}','{1}',{2},{3},{4},1)", billID, productID, size, count,total);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);

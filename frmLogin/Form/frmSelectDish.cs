@@ -15,16 +15,12 @@ namespace frmLogin
 {
     public partial class frmSelectDish : Form
     {
-        private Account loginAccount;
+        
 
-        public Account LoginAccount
-        {
-            get { return this.loginAccount; }
-            private set { this.loginAccount = value; }
-        }
         public frmSelectDish()
         {
             InitializeComponent();
+            
             cbCategoryDish.SelectedIndex = 0;
         }
 
@@ -123,6 +119,7 @@ namespace frmLogin
                         }
                     }
                 }
+                
             }
             else
             {
@@ -138,7 +135,7 @@ namespace frmLogin
                         int data = BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, kichthuoc, soluong);
                     }
                 }
-            }
+            }          
             this.Close();
         }
 

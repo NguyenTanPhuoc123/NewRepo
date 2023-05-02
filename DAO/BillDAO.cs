@@ -52,10 +52,10 @@ namespace DAO
             return null;
         }
 
-        public int AddNewBill(string billID, string dayCheckIn, string dayCheckOut,int employeeID, string customerID, string discountID, int tableID)
+        public int AddNewBill(string billID, string dayCheckIn, string dayCheckOut,int employeeID, string customerID, string discountID, int tableID, float totalPrice)
         {
             int row;
-            string query = String.Format("INSERT HOADON values('{0}','{1}','{2}',{3},'{4}','{5}',{6},0,1)", billID, dayCheckIn, dayCheckOut, employeeID, customerID, discountID, tableID);
+            string query = String.Format("INSERT HOADON values('{0}','{1}','{2}',{3},'{4}','{5}',{6},0,{7},1)", billID, dayCheckIn, dayCheckOut, employeeID, customerID, discountID, tableID,totalPrice);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);

@@ -33,7 +33,6 @@ namespace frmLogin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSellManagement));
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
-            this.numSale = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.cbLocationTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,10 +57,10 @@ namespace frmLogin
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnChangeTable = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSale = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblToltalPrice = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numSale)).BeginInit();
+            this.cbDiscount = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnSale = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -105,17 +104,6 @@ namespace frmLogin
             this.btnPay.TabIndex = 7;
             this.btnPay.Text = "Thanh toán";
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
-            // 
-            // numSale
-            // 
-            this.numSale.BackColor = System.Drawing.Color.Transparent;
-            this.numSale.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numSale.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numSale.Location = new System.Drawing.Point(914, 507);
-            this.numSale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.numSale.Name = "numSale";
-            this.numSale.Size = new System.Drawing.Size(113, 36);
-            this.numSale.TabIndex = 8;
             // 
             // flpTable
             // 
@@ -200,7 +188,7 @@ namespace frmLogin
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(501, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(332, 65);
+            this.label2.Size = new System.Drawing.Size(283, 55);
             this.label2.TabIndex = 0;
             this.label2.Text = "BÁN HÀNG";
             // 
@@ -211,29 +199,29 @@ namespace frmLogin
             this.tstlblPosition,
             this.tsslblName,
             this.tsslblTime});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 597);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 603);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1292, 32);
+            this.statusStrip1.Size = new System.Drawing.Size(1292, 26);
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tstlblPosition
             // 
             this.tstlblPosition.Name = "tstlblPosition";
-            this.tstlblPosition.Size = new System.Drawing.Size(100, 25);
+            this.tstlblPosition.Size = new System.Drawing.Size(82, 20);
             this.tstlblPosition.Text = "Nhân viên: ";
             // 
             // tsslblName
             // 
             this.tsslblName.Name = "tsslblName";
-            this.tsslblName.Size = new System.Drawing.Size(59, 25);
+            this.tsslblName.Size = new System.Drawing.Size(49, 20);
             this.tsslblName.Text = "Name";
             // 
             // tsslblTime
             // 
             this.tsslblTime.Margin = new System.Windows.Forms.Padding(900, 4, 0, 2);
             this.tsslblTime.Name = "tsslblTime";
-            this.tsslblTime.Size = new System.Drawing.Size(0, 26);
+            this.tsslblTime.Size = new System.Drawing.Size(0, 20);
             // 
             // timer1
             // 
@@ -245,7 +233,7 @@ namespace frmLogin
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(12, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 22);
+            this.label3.Size = new System.Drawing.Size(64, 18);
             this.label3.TabIndex = 15;
             this.label3.Text = "Vị trí bàn";
             // 
@@ -365,6 +353,39 @@ namespace frmLogin
             this.btnChangeTable.TabIndex = 23;
             this.btnChangeTable.Text = "Chuyển bàn";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1082, 487);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 18);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Tổng tiền:";
+            // 
+            // lblToltalPrice
+            // 
+            this.lblToltalPrice.AutoSize = true;
+            this.lblToltalPrice.Location = new System.Drawing.Point(1161, 487);
+            this.lblToltalPrice.Name = "lblToltalPrice";
+            this.lblToltalPrice.Size = new System.Drawing.Size(16, 18);
+            this.lblToltalPrice.TabIndex = 26;
+            this.lblToltalPrice.Text = "0";
+            // 
+            // cbDiscount
+            // 
+            this.cbDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.cbDiscount.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbDiscount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDiscount.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDiscount.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbDiscount.ItemHeight = 30;
+            this.cbDiscount.Location = new System.Drawing.Point(897, 508);
+            this.cbDiscount.Name = "cbDiscount";
+            this.cbDiscount.Size = new System.Drawing.Size(151, 36);
+            this.cbDiscount.TabIndex = 27;
+            // 
             // btnSale
             // 
             this.btnSale.BackColor = System.Drawing.Color.Transparent;
@@ -381,30 +402,13 @@ namespace frmLogin
             this.btnSale.TabIndex = 24;
             this.btnSale.Text = "Giảm giá";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1082, 487);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 22);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Tổng tiền:";
-            // 
-            // lblToltalPrice
-            // 
-            this.lblToltalPrice.AutoSize = true;
-            this.lblToltalPrice.Location = new System.Drawing.Point(1161, 487);
-            this.lblToltalPrice.Name = "lblToltalPrice";
-            this.lblToltalPrice.Size = new System.Drawing.Size(20, 22);
-            this.lblToltalPrice.TabIndex = 26;
-            this.lblToltalPrice.Text = "0";
-            // 
             // frmSellManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1292, 629);
+            this.Controls.Add(this.cbDiscount);
             this.Controls.Add(this.lblToltalPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSale);
@@ -419,7 +423,6 @@ namespace frmLogin
             this.Controls.Add(this.btnSelectDish);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpTable);
-            this.Controls.Add(this.numSale);
             this.Controls.Add(this.btnPay);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -428,7 +431,6 @@ namespace frmLogin
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSellManagement";
             this.Load += new System.EventHandler(this.frmSellManagement_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numSale)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -442,7 +444,6 @@ namespace frmLogin
 
         private Guna.UI2.WinForms.Guna2Button btnSelectDish;
         private Guna.UI2.WinForms.Guna2Button btnPay;
-        private Guna.UI2.WinForms.Guna2NumericUpDown numSale;
         private System.Windows.Forms.FlowLayoutPanel flpTable;
         private Guna.UI2.WinForms.Guna2ComboBox cbLocationTable;
         private System.Windows.Forms.Panel panel1;
@@ -462,7 +463,6 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private System.Windows.Forms.ListView lstvMenuDish;
         private Guna.UI2.WinForms.Guna2Button btnChangeTable;
-        private Guna.UI2.WinForms.Guna2Button btnSale;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblToltalPrice;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -470,5 +470,7 @@ namespace frmLogin
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private Guna.UI2.WinForms.Guna2ComboBox cbDiscount;
+        private Guna.UI2.WinForms.Guna2Button btnSale;
     }
 }
