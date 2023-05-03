@@ -27,13 +27,9 @@ namespace BUS
             return BillDAO.Instance.GetListBill();
         }
 
-        public int AddNewBill(string dayCheckIn, string dayCheckOut, int employeeID, string discountID, int tableID, float totalPrice)
+        public bool AddNewBill(int employeeID, int tableID)
         {
-            return BillDAO.Instance.AddNewBill(dayCheckIn, dayCheckOut, employeeID, discountID, tableID, totalPrice);
-        }
-        public bool ADDBILL(int tableID)
-        {
-            return BillDAO.Instance.ADDBILL(tableID);
+            return BillDAO.Instance.AddNewBill(employeeID, tableID);
         }
         public bool CheckHD(int TableID)
         {

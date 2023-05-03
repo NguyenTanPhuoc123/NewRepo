@@ -152,45 +152,33 @@ namespace frmLogin
 
         private void cbSortAccount_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbSortAccount.SelectedIndex == 0 && cbFillAccount.SelectedIndex == 0)
+            if (cbSortAccount.SelectedIndex == 0)
             {
                 dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
             }
-
             else if (cbSortAccount.SelectedIndex == 1)
-                dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByUsername(cbFillAccount.SelectedIndex);
-            else if (cbSortAccount.SelectedIndex == 2)
-                dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByEmployeeName(cbFillAccount.SelectedIndex);
+            {
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByUsername();
+            }
+            else
+            {
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByEmployeeName();
+            }
         }
 
         private void cbFillAccount_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbFillAccount.SelectedIndex == 0 && cbSortAccount.SelectedIndex == 0)
+            if (cbFillAccount.SelectedIndex == 0)
             {
                 dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
             }
-
-            else if (cbFillAccount.SelectedIndex == 0 && cbSortAccount.SelectedIndex == 1)
+            else if (cbFillAccount.SelectedIndex == 1)
             {
-                dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByUsername(0);
-
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.FillListAccountIsSeller();
             }
-
-            else if (cbFillAccount.SelectedIndex == 0 && cbSortAccount.SelectedIndex == 2)
-                dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByEmployeeName(0);
-
             else
             {
-                for (int i = 1; i <= cbFillAccount.Items.Count; i++)
-                {
-                    if (cbFillAccount.SelectedIndex == i)
-                    {
-                        if (cbSortAccount.SelectedIndex == 1)
-                            dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByUsername(cbFillAccount.SelectedIndex);
-                        else if (cbSortAccount.SelectedIndex == 2)
-                            dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByEmployeeName(cbFillAccount.SelectedIndex);
-                    }
-                }
+                dtgvListAccount.DataSource = AccountMenuBUS.Instance.FillListAccountIsManager();
             }
         }
     }

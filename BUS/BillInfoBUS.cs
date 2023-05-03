@@ -43,10 +43,13 @@ namespace BUS
             return BillInfoDAO.Instance.DeleteAllBillInfo();
         }
 
-
-        public void ADDBILLINFO(string masp, string soluong)
+        public bool CheckProduct(string ProductID,string BillID)
         {
-            BillInfoDAO.Instance.ADDBILLINFO(masp, soluong);
+            return BillInfoDAO.Instance.CheckProduct(ProductID,BillID);
+        }
+        public void UpdateCount(string soluong, string ProductID,string BillID)
+        {
+            BillInfoDAO.Instance.UpdateCount(soluong, ProductID,BillID);
         }
 
     }

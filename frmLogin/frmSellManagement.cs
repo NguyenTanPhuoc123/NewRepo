@@ -18,11 +18,21 @@ namespace frmLogin
     {
         private static int tableID=0;
         private Account loginAccount;
-
+        private static int manv;
         public Account LoginAccount
         {
             get { return this.loginAccount; }
             private set { this.loginAccount = value; }
+        }
+
+        public static int GetMANV()
+        {
+            return manv;
+        }
+
+        public static void SetMANV(int value)
+        {
+            manv = value;
         }
 
         public static int GetTableID()
@@ -81,7 +91,7 @@ namespace frmLogin
             else
             {
                 this.IsMdiContainer = true;
-                frmSelectDish frm = new frmSelectDish(this);
+                frmSelectDish frm = new frmSelectDish();
                 frm.Show();
             }
         }
@@ -132,20 +142,17 @@ namespace frmLogin
             }
 
         public string GetEmployeeName()
-            {
-                Employee employee = EmployeeBUS.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
-                return employee.TenNV;
-            }
-        public int GetEmployeeID()
         {
-            int manv = loginAccount.EmployeeID;
-            return manv;
+            Employee employee = EmployeeBUS.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
+            SetMANV(loginAccount.EmployeeID);
+            return employee.TenNV;
         }
 
+
         public int GetTypeAccount()
-            {
-                return loginAccount.TypeAccount;
-            }
+        {
+            return loginAccount.TypeAccount;
+        }
         
         public void GetListTableByLocationID(int id)
         {

@@ -42,14 +42,7 @@ namespace DAO
         {
             int row;
             string query = string.Format("INSERT INTO CHITIETHOADON(MAHD,MASP,SOLUONG,DONGIA,THANHTIEN,TRANGTHAI) VALUES('{0}','{1}',{2},{3},{4},1)", billID, productID, count, price, total);
-            try
-            {
-                row = DataProvider.ExecuteInsertCommand(query, null);
-            }
-            catch
-            {
-                row = 0;
-            }
+            row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
 
@@ -83,23 +76,16 @@ namespace DAO
             }
             return row;
         }
-        public int BILLMAXID()
+        public bool CheckProduct(string ProductID,string mahd)
         {
-            string query = "SELECT COUNT(*) FROM HOADON";
-            int billID = DataProvider.ExecuteScalarCommand(query, null);
-            return billID;
+            string query =string.Format("Select count(*) from Chitiethoadon where MASP = '{0}' AND MAHD = '{1}'",ProductID,mahd);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return (data > 0 ? true : false);
         }
-        //them vao chi tiet hoa don
-        public void ADDBILLINFO(string masp, string soluong)
+        public void UpdateCount(string soluong,string ProductID, string mahd)
         {
-            int BillID = BILLMAXID();
-            string MAHD = string.Format("HD{0}", BillID);
-            string query = "INSERT INTO CHITIETHOADON(MAHD,MASP,SOLUONG,TRANGTHAI) VALUES(@MAHD,@MASP,@SOLUONG,1)";
-            SqlParameter[] parameters = new SqlParameter[3];
-            parameters[0] = new SqlParameter("@MAHD", MAHD);
-            parameters[1] = new SqlParameter("@MASP", masp);
-            parameters[2] = new SqlParameter("@SOLUONG", soluong);
-            DataProvider.ExecuteInsertCommand(query, parameters);
+            string query = string.Format("UPDATE CHITIETHOADON SET SOLUONG = SOLUONG + {0},THANHTIEN = THANHTIEN +(DONGIA*{1}) where MASP = '{2}' AND MAHD = '{3}'", soluong,soluong, ProductID,mahd);
+            DataProvider.ExecuteInsertCommand(query, null);
         }
     }
 }

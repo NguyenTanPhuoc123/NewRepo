@@ -52,12 +52,12 @@ namespace DAO
             return null;
         }
 
-        public int AddNewBill(string dayCheckIn, string dayCheckOut,int employeeID, string discountID, int tableID, float totalPrice)
+        public bool AddNewBill(int employeeID, int tableID)
         {
             int row;
-            string query = String.Format("INSERT HOADON(MAHD,NGAYLAPHD,NGAYXUATHD,MANHANVIEN,SOBAN,TRANGTHAITHANHTOAN,TRANGTHAI) values('{0}',{1},{2},{3},{4},0,1)", BILLID(), dayCheckIn, dayCheckOut, employeeID, tableID);
-                row = DataProvider.ExecuteInsertCommand(query, null);
-            return row;
+            string query = String.Format("INSERT HOADON(MAHD,NGAYLAPHD,MANHANVIEN,SOBAN,TRANGTHAITHANHTOAN,TRANGTHAI) values('{0}',GETDATE(),{1},{2},0,1)", BILLID(), employeeID, tableID);
+            row = DataProvider.ExecuteInsertCommand(query, null);
+            return (row > 0 ? true : false);
         }
         public string BILLID()
         {
@@ -67,17 +67,7 @@ namespace DAO
             string billID = string.Format("HD" + data);
             return billID;
         }
-        //Them vao hoa don moi
-        public bool ADDBILL(int tableID)
-        {
-            string MAHD = BILLID();
-            string query = "INSERT INTO HOADON(MAHD,SOBAN,MANHANVIEN,MAKHACHHANG,MAGIAMGIA,TRANGTHAITHANHTOAN) VALUES(@MAHD,@MABAN,null,null,null,1)";
-            SqlParameter[] parameters = new SqlParameter[2];
-            parameters[0] = new SqlParameter("@MAHD", MAHD);
-            parameters[1] = new SqlParameter("@MABAN", tableID);
-            int count = DataProvider.ExecuteInsertCommand(query, parameters);
-            return (count > 0 ? true : false);
-        }
+
         public bool CheckHD(int TableID)
         {
             string query = string.Format("SELECT COUNT(*) FROM HOADON WHERE SOBAN = {0} AND TRANGTHAI=1", TableID);

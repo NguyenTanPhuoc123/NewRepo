@@ -15,7 +15,7 @@ namespace frmLogin
 {
     public partial class frmSelectDish : Form
     {
-        public frmSelectDish(frmSellManagement frmSell)
+        public frmSelectDish()
         {
             InitializeComponent();
             cbCategoryDish.SelectedIndex = 0;
@@ -96,9 +96,10 @@ namespace frmLogin
             float dongia;
             float thanhtien;
             int tableID = frmSellManagement.GetTableID();
+            int manv = frmSellManagement.GetMANV();
             if (BillBUS.Instance.CheckHD(tableID))
             {
-                if (BillBUS.Instance.AddNewBill("GETDATE()", "GETDATE()", 1,null,tableID,0)>0)
+                if (BillBUS.Instance.AddNewBill(manv,tableID))
                 {
                     foreach (Control c in flpAddDish.Controls)
                     {
@@ -114,7 +115,6 @@ namespace frmLogin
                         }
                     }
                 }
-                
             }
             else
             {
@@ -128,7 +128,12 @@ namespace frmLogin
                         dongia = float.Parse(userControl.DonGia);
                         thanhtien = float.Parse(soluong) * dongia;
                         string mahd = BillBUS.Instance.HDID(tableID);
-                        int data = BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp,dongia, soluong, thanhtien);
+                        if (BillInfoBUS.Instance.CheckProduct(masp,mahd))
+                        {
+                            BillInfoBUS.Instance.UpdateCount(soluong, masp, mahd);
+                        }
+                        else
+                         BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, dongia, soluong, thanhtien);
                     }
                 }
             }          

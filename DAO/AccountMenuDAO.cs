@@ -49,14 +49,10 @@ namespace DAO
             return lst;
         }
 
-        public List<AccountMenu> SortListAccountByUsername(int typeAccount)
+        public List<AccountMenu> SortListAccountByUsername()
         {
             List<AccountMenu> lst = new List<AccountMenu>();
-            string query = "";
-            if (typeAccount > 0)
-                query = string.Format("select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV and a.LOAITAIKHOAN = {0} order by a.TENDANGNHAP", typeAccount);
-            else
-                query = "select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV order by a.TENDANGNHAP";
+            string query = "select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV and a.LOAITAIKHOAN = c.MALOAI order by a.TENDANGNHAP";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
@@ -66,15 +62,10 @@ namespace DAO
             return lst;
         }
 
-        public List<AccountMenu> SortListAccountByEmployeeName(int typeAccount)
+        public List<AccountMenu> SortListAccountByEmployeeName()
         {
             List<AccountMenu> lst = new List<AccountMenu>();
-            string query = "";
-            if (typeAccount > 0)
-                query = string.Format("select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV and a.LOAITAIKHOAN = {0} order by LTRIM(RIGHT (TENNV, CHARINDEX(CHAR(32), REVERSE(TENNV))))", typeAccount);
-            else
-                query = "select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV order by LTRIM(RIGHT (TENNV, CHARINDEX(CHAR(32), REVERSE(TENNV))))";
-            
+            string query = "select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV and a.LOAITAIKHOAN = c.MALOAI order by LTRIM(RIGHT (TENNV, CHARINDEX(CHAR(32), REVERSE(TENNV))))";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
@@ -84,14 +75,10 @@ namespace DAO
             return lst;
         }
 
-        public List<AccountMenu> FillListAccount(int typeAccount)
+        public List<AccountMenu> FillListAccountIsSeller()
         {
             List<AccountMenu> lst = new List<AccountMenu>();
-            string query = "";
-            if (typeAccount > 0)
-                query = string.Format("select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV and c.MALOAI={0}", typeAccount);
-            else
-                query = "select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV";
+            string query = "select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV and a.LOAITAIKHOAN = c.MALOAI and a.LOAITAIKHOAN=2";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
@@ -101,6 +88,17 @@ namespace DAO
             return lst;
         }
 
-        
+        public List<AccountMenu> FillListAccountIsManager()
+        {
+            List<AccountMenu> lst = new List<AccountMenu>();
+            string query = "select * from TAIKHOAN a, NHANVIEN b, LOAITAIKHOAN c where a.trangthai=1 and a.MANV = b.MANV and a.LOAITAIKHOAN = c.MALOAI and a.LOAITAIKHOAN=1";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                AccountMenu acc = new AccountMenu(item);
+                lst.Add(acc);
+            }
+            return lst;
+        }
     }
 }

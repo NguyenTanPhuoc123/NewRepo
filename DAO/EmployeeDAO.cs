@@ -65,26 +65,6 @@ namespace DAO
             return false;
         }
 
-        public bool CheckAccountDelete(string employeeName)
-        {
-            string query = string.Format("select COUNT(a.tendangnhap) from TAIKHOAN a, NHANVIEN b where a.MANV =b.MANV and b.TENNV=N'{0}' and a.TRANGTHAI = 1", employeeName);
-            int row = DataProvider.ExecuteScalarCommand(query, null);
-            if (row > 0)
-                return false;
-
-            return true;
-        }
-
-        public bool CheckAccountDeleteAll()
-        {
-            string query = "select COUNT(a.tendangnhap) from TAIKHOAN a, NHANVIEN b where a.MANV =b.MANV and a.TRANGTHAI = 1";
-            int row = DataProvider.ExecuteScalarCommand(query, null);
-            if (row > 0)
-                return false;
-
-            return true;
-        }
-
         public Employee GetEmployeeByEmployeeID(int employeeID)
         {
             string query = string.Format("Select * from NHANVIEN WHERE MANV = {0}", employeeID);
