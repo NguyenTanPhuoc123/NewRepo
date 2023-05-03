@@ -85,18 +85,26 @@ namespace frmLogin
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
+
             if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
             {
-                int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
-                if (count > 0)
+                if (EmployeeBUS.Instance.CheckAccountDelete(txtEmployeeName.Text))
                 {
-                    MessageBox.Show("Xóa tài khoản thành công");
+                    int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Xóa nhân viên thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa nhân viên thất bại");
+                    }
+                    frmEmployeeManager_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Xóa tài khoản thất bại");
+                    MessageBox.Show("Tài khoản của nhân viên vẫn còn tồn tại");
                 }
-                frmEmployeeManager_Load(sender, e);
             }
 
         }
@@ -152,15 +160,23 @@ namespace frmLogin
         {
             if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa toàn bộ nhân viên", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
             {
-                int count = EmployeeBUS.Instance.DeleteAllEmployee();
-                if (count > 0)
+                if (EmployeeBUS.Instance.CheckAccountDeleteAll())
                 {
-                    MessageBox.Show("Xóa tất cả tài khoản thành công");
+                    int count = EmployeeBUS.Instance.DeleteAllEmployee();
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Xóa tất cả tài khoản thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa tất cả tài khoản thất bại");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Xóa tất cả tài khoản thất bại");
+                    MessageBox.Show("Bạn không thể thực hiện chức năng khi chưa xóa tài khoản");
                 }
+
             }
             frmEmployeeManager_Load(sender, e);
         }
@@ -177,7 +193,7 @@ namespace frmLogin
 
         private void cbSortEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cbSortEmployee.SelectedIndex == 0 && cbFillEmployee.SelectedIndex == 0)
+            if (cbSortEmployee.SelectedIndex == 0 && cbFillEmployee.SelectedIndex == 0)
             {
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
             }
@@ -186,7 +202,7 @@ namespace frmLogin
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(cbFillEmployee.SelectedIndex);
             else if (cbSortEmployee.SelectedIndex == 2)
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(cbFillEmployee.SelectedIndex);
-            
+
         }
 
         private void cbFillEmployee_SelectedIndexChanged(object sender, EventArgs e)
@@ -200,7 +216,7 @@ namespace frmLogin
             else if (cbFillEmployee.SelectedIndex == 0 && cbSortEmployee.SelectedIndex == 1)
             {
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(0);
-                
+
             }
 
             else if (cbFillEmployee.SelectedIndex == 0 && cbSortEmployee.SelectedIndex == 2)
@@ -233,6 +249,6 @@ namespace frmLogin
                 e.Handled = true;
         }
 
-        
+
     }
 }

@@ -51,9 +51,9 @@ namespace BUS
             return EmployeeMenuDAO.Instance.SortListEmployeeByEmployeeName(positionID);
         }
 
-        public List<EmployeeMenu> FillEmployeeByPosition(int positionID)
+        public List<EmployeeMenu> FillEmployee(int positionID)
         {
-            return EmployeeMenuDAO.Instance.FillEmployeeByPosition(positionID);
+            return EmployeeMenuDAO.Instance.FillEmployee(positionID);
         }
     }
 }
