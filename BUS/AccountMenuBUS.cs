@@ -27,24 +27,19 @@ namespace BUS
             return AccountMenuDAO.Instance.SearchAccountByEmloyeeName(employeeName);
         }
 
-        public List<AccountMenu> SortListAccountByUsername()
+        public List<AccountMenu> SortListAccountByUsername(int typeAccount)
         {
-            return AccountMenuDAO.Instance.SortListAccountByUsername();
+            return AccountMenuDAO.Instance.SortListAccountByUsername(typeAccount);
         }
 
-        public List<AccountMenu> SortListAccountByEmployeeName()
+        public List<AccountMenu> SortListAccountByEmployeeName(int typeAccount)
         {
-            return AccountMenuDAO.Instance.SortListAccountByEmployeeName();
+            return AccountMenuDAO.Instance.SortListAccountByEmployeeName(typeAccount);
         }
 
-        public List<AccountMenu> FillListAccountIsSeller()
+        public List<AccountMenu> FillListAccount(int typeAccount)
         {
-            return AccountMenuDAO.Instance.FillListAccountIsSeller();
-        }
-
-        public List<AccountMenu> FillListAccountIsManager()
-        {
-            return AccountMenuDAO.Instance.FillListAccountIsManager();
+            return AccountMenuDAO.Instance.FillListAccount(typeAccount);
         }
     }
 }

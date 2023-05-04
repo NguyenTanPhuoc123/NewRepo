@@ -13,7 +13,6 @@ D:\doan\frmLogin\bin\Debug\DAO.pdb
 D:\doan\frmLogin\obj\Debug\Login.csproj.AssemblyReference.cache
 D:\doan\frmLogin\obj\Debug\frmLogin.frmAccountManagement.resources
 D:\doan\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
-D:\doan\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
 D:\doan\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.resources
 D:\doan\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
 D:\doan\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources
