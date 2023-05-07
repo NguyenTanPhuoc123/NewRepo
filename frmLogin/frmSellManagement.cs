@@ -239,7 +239,12 @@ namespace frmLogin
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            GetListTableByLocationID(1);
+            int index = lstvMenuDish.SelectedItems[0].Index;
+            ListViewItem item = lstvMenuDish.SelectedItems[0];
+            string mahd = BillBUS.Instance.HDID(tableID);
+            string masp = ProductBUS.Instance.ProductID(item.Text);
+            BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
+            lstvMenuDish.Items.RemoveAt(index);
         }
         private void btnChangeTable_Click(object sender, EventArgs e)
         {

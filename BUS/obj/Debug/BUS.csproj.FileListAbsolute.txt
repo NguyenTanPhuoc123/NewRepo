@@ -108,3 +108,14 @@ D:\DOANC#\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 D:\DOANC#\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\DOANC#\BUS\obj\Debug\BUS.dll
 D:\DOANC#\BUS\obj\Debug\BUS.pdb
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\bin\Debug\BUS.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\bin\Debug\BUS.pdb
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\bin\Debug\DAO.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\bin\Debug\DTO.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\bin\Debug\DAO.pdb
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.pdb
