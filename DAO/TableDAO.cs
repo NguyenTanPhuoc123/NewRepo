@@ -124,7 +124,29 @@ namespace DAO
         }
         public int UpdateTable(int maBAN)
         {
-            string query = string.Format("Update BANAN SET TRANGTHAI = N'Có Người' where MABANAN = {0}",maBAN);
+            string query = string.Format("Update BANAN SET TRANGTHAI = N'Trống' where MABANAN = {0}",maBAN);
+            int row = 0;
+            row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
+        public List<Table> GetListTablesTrong()
+        {
+            string query = "";
+            List<Table> listTable = new List<Table>();
+            query = string.Format("select * from BANAN where XOA = 0 and TrangThai = N'Trống'");
+
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                Table table = new Table(item);
+                listTable.Add(table);
+            }
+
+            return listTable;
+        }
+        public int UpdateTable1(string maBAN)
+        {
+            string query = string.Format("Update BANAN SET TRANGTHAI = N'Có Người' where MABANAN = {0}", maBAN);
             int row = 0;
             row = DataProvider.ExecuteInsertCommand(query, null);
             return row;

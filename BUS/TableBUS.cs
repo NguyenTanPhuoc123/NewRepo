@@ -66,9 +66,17 @@ namespace BUS
         {
             return TableDAO.Instance.RestoreAllTable();
         }
-        public int UpdateTable(int tableid)
+        public int UpdateTableNull(int tableid)
         {
             return TableDAO.Instance.UpdateTable(tableid);
+        }
+        public List<Table> GetListTablesTrong()
+        {
+            return TableDAO.Instance.GetListTablesTrong();
+        }
+        public int UpdateTable(string maBAN)
+        {
+            return TableDAO.Instance.UpdateTable1(maBAN);
         }
     }
 }

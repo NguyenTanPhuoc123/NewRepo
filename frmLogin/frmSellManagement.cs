@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,22 +24,22 @@ namespace frmLogin
             private set { this.loginAccount = value; }
         }
 
-        public static int GetMANV()
+        public int GetMANV()
         {
             return manv;
         }
 
-        public static void SetMANV(int value)
+        public void SetMANV(int value)
         {
             manv = value;
         }
 
-        public static int GetTableID()
+        public int GetTableID()
         {
             return tableID;
         }
 
-        public static void SetTableID(int value)
+        public void SetTableID(int value)
         {
             tableID = value;
         }
@@ -49,7 +48,6 @@ namespace frmLogin
             InitializeComponent();
             this.loginAccount = acc;
             timer1.Start();
-            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -91,7 +89,7 @@ namespace frmLogin
             else
             {
                 this.IsMdiContainer = true;
-                frmSelectDish frm = new frmSelectDish();
+                frmSelectDish frm = new frmSelectDish(this);
                 frm.Show();
             }
         }
@@ -115,8 +113,6 @@ namespace frmLogin
             WindowState = FormWindowState.Minimized;
         }
 
-      
-
         private void frmSellManagement_Load(object sender, EventArgs e)
         {
             tstlblPosition.Text = GetTypeAccountName() + " : ";
@@ -124,9 +120,14 @@ namespace frmLogin
             cbLocationTable.DataSource = LocationBUS.Instance.GetListLocation();
             cbLocationTable.DisplayMember = "TenViTri";
             cbLocationTable.ValueMember = "MaViTri";
+            LoadTableNull();
         }
-
-        
+        public void LoadTableNull()
+        {
+            cbChangeTable.DataSource = TableBUS.Instance.GetListTablesTrong();
+            cbChangeTable.DisplayMember = "TenBan";
+            cbChangeTable.ValueMember = "MaBanAn";
+        }
         private void btnTable_Click(object sender, EventArgs e)
         {
             int tableID = ((sender as Button).Tag as Table).MaBanAn;
@@ -147,7 +148,6 @@ namespace frmLogin
             SetMANV(loginAccount.EmployeeID);
             return employee.TenNV;
         }
-
 
         public int GetTypeAccount()
         {
@@ -192,10 +192,6 @@ namespace frmLogin
             }
             CultureInfo culture = new CultureInfo("vi-VN");
             lblToltalPrice.Text = total.ToString("c",culture);
-            if (lstvMenuDish.Items.Count > 0)
-            {
-                TableBUS.Instance.UpdateTable(tableID);
-            }
         }
         #endregion
         private void cbLocationTable_SelectedIndexChanged(object sender, EventArgs e)
@@ -208,5 +204,27 @@ namespace frmLogin
             id = selected.MaViTri;
             GetListTableByLocationID(id);
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            GetListTableByLocationID(1);
+        }
+        private void btnChangeTable_Click(object sender, EventArgs e)
+        {
+            int tableid = GetTableID();
+            string tablenew =cbChangeTable.SelectedValue.ToString();
+            if (BillBUS.Instance.UpdateBill(tableid, tablenew))
+            {
+                MessageBox.Show("Chuyển bàn thành công");
+                TableBUS.Instance.UpdateTableNull(tableid);
+                TableBUS.Instance.UpdateTable(tablenew);
+                LoadTableNull();
+                GetListTableByLocationID(1);
+            }
+            else
+                MessageBox.Show("Chuyen ban that bai");
+        }
+
+
     }
 }

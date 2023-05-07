@@ -15,10 +15,12 @@ namespace frmLogin
 {
     public partial class frmSelectDish : Form
     {
-        public frmSelectDish()
+        private frmSellManagement FrmSellManagement;
+        public frmSelectDish(frmSellManagement frmSell)
         {
             InitializeComponent();
             cbCategoryDish.SelectedIndex = 0;
+            this.FrmSellManagement = frmSell;
         }
 
         private void btnExitFomSelectDish_Click(object sender, EventArgs e)
@@ -95,8 +97,8 @@ namespace frmLogin
             string soluong;
             float dongia;
             float thanhtien;
-            int tableID = frmSellManagement.GetTableID();
-            int manv = frmSellManagement.GetMANV();
+            int tableID = this.FrmSellManagement.GetTableID();
+            int manv = this.FrmSellManagement.GetMANV();
             if (BillBUS.Instance.CheckHD(tableID))
             {
                 if (BillBUS.Instance.AddNewBill(manv,tableID))
@@ -138,6 +140,8 @@ namespace frmLogin
                 }
             }          
             this.Close();
+            this.FrmSellManagement.GetListTableByLocationID(1);
+            this.FrmSellManagement.LoadTableNull();
         }
 
         private void cbCategoryDish_SelectedIndexChanged(object sender, EventArgs e)

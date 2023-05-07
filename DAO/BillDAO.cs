@@ -84,5 +84,12 @@ namespace DAO
             }
             return null;
         }
+        public bool UpdateBill(int tableid, string tablenew)
+        {
+            int row;
+            string query = String.Format("Update HOADON SET SOBAN ={0} WHERE SOBAN = {1}", tablenew, tableid);
+            row = DataProvider.ExecuteInsertCommand(query, null);
+            return (row > 0 ? true : false);
+        }
     }
 }

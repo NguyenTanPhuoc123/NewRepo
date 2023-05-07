@@ -293,6 +293,7 @@ namespace frmLogin
             this.btnDelete.Size = new System.Drawing.Size(130, 45);
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lstvMenuDish
             // 
@@ -346,6 +347,7 @@ namespace frmLogin
             this.btnChangeTable.Size = new System.Drawing.Size(151, 45);
             this.btnChangeTable.TabIndex = 23;
             this.btnChangeTable.Text = "Chuyển bàn";
+            this.btnChangeTable.Click += new System.EventHandler(this.btnChangeTable_Click);
             // 
             // label1
             // 

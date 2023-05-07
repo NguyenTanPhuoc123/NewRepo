@@ -52,7 +52,6 @@ C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Deb
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmAccountManagement.resources
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmBillManagement.resources
-C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmCustomerManagement.resources
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.resources
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmProductManagement.resources
 C:\Users\Admin\Desktop\DOAN\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmRecycleBin.resources

@@ -39,5 +39,9 @@ namespace BUS
         {
             return BillDAO.Instance.HDID(TableID);
         }
+        public bool UpdateBill(int tableid, string tablenew)
+        {
+            return BillDAO.Instance.UpdateBill(tableid, tablenew);
+        }
     }
 }
