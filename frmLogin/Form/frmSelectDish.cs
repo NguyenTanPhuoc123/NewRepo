@@ -97,8 +97,8 @@ namespace frmLogin
             string soluong;
             float dongia;
             float thanhtien;
-            int tableID = this.FrmSellManagement.GetTableID();
-            int manv = this.FrmSellManagement.GetMANV();
+            int tableID = frmSellManagement.GetTableID();
+            int manv = frmSellManagement.GetMANV();
             if (BillBUS.Instance.CheckHD(tableID))
             {
                 if (BillBUS.Instance.AddNewBill(manv,tableID))

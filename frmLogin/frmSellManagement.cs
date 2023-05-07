@@ -15,33 +15,55 @@ namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
-        private static int tableID=0;
+        private static int tableID = 0;
         private Account loginAccount;
         private static int manv;
+        private static float total;
+        private static string tennv;
         public Account LoginAccount
         {
             get { return this.loginAccount; }
             private set { this.loginAccount = value; }
         }
 
-        public int GetMANV()
+        public static int GetMANV()
         {
             return manv;
         }
 
-        public void SetMANV(int value)
+        public static void SetMANV(int value)
         {
             manv = value;
         }
 
-        public int GetTableID()
+        public static int GetTableID()
         {
             return tableID;
         }
 
-        public void SetTableID(int value)
+        public static void SetTableID(int value)
         {
             tableID = value;
+        }
+
+        public static string GetTENNV()
+        {
+            return tennv;
+        }
+
+        public static void SetTENNV(string value)
+        {
+            tennv = value;
+        }
+
+        public static float GetTotal()
+        {
+            return total;
+        }
+
+        public static void SetTotal(float value)
+        {
+            total = value;
         }
         public frmSellManagement(Account acc)
         {
@@ -103,9 +125,17 @@ namespace frmLogin
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            this.IsMdiContainer = true;
-            frmPay frm = new frmPay();
-            frm.Show();
+            if (GetTableID() == 0)
+            {
+                MessageBox.Show("Bạn chưa chọn bàn để chọn món", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                this.IsMdiContainer = true;
+                frmPay frm = new frmPay();
+                frm.Show();
+            }
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -146,6 +176,7 @@ namespace frmLogin
         {
             Employee employee = EmployeeBUS.Instance.GetEmployeeByEmployeeID(loginAccount.EmployeeID);
             SetMANV(loginAccount.EmployeeID);
+            SetTENNV(employee.TenNV);
             return employee.TenNV;
         }
 
@@ -192,6 +223,7 @@ namespace frmLogin
             }
             CultureInfo culture = new CultureInfo("vi-VN");
             lblToltalPrice.Text = total.ToString("c",culture);
+            SetTotal(total);
         }
         #endregion
         private void cbLocationTable_SelectedIndexChanged(object sender, EventArgs e)

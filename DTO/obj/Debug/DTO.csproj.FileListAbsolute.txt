@@ -52,3 +52,9 @@ C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.AssemblyRe
 C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.dll
 C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.pdb
+D:\DOANC#\DTO\bin\Debug\DTO.dll
+D:\DOANC#\DTO\bin\Debug\DTO.pdb
+D:\DOANC#\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\DOANC#\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\DOANC#\DTO\obj\Debug\DTO.dll
+D:\DOANC#\DTO\obj\Debug\DTO.pdb
