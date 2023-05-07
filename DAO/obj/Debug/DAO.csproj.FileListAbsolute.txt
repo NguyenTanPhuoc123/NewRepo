@@ -69,3 +69,12 @@ C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DA
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb
 D:\DOAN\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\bin\Debug\DAO.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\bin\Debug\DAO.pdb
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\bin\Debug\DTO.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\bin\Debug\DTO.pdb
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb

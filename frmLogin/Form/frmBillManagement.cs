@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,13 +23,15 @@ namespace frmLogin
 
         private void btnShowDetail_Click(object sender, EventArgs e)
         {
-            frmBillDetail frm = new frmBillDetail();
+            Bill bill = BillBUS.Instance.GetBillByBillID(txtBillID.Text);
+            frmBillDetail frm = new frmBillDetail(bill);
             frm.Show();
         }
 
         private void frmBillManagement_Load(object sender, EventArgs e)
         {
             dtgvListBill.DataSource = BillMenuBUS.Instance.GetListBillMenu();
+
         }
 
         private void dtgvListBill_SelectionChanged(object sender, EventArgs e)
@@ -38,9 +41,15 @@ namespace frmLogin
                 txtBillID.Text = dtgvListBill.SelectedRows[0].Cells[0].Value.ToString();
                 txtDayCheckIn.Text = dtgvListBill.SelectedRows[0].Cells[1].Value.ToString();
                 txtEmployeeName.Text = dtgvListBill.SelectedRows[0].Cells[2].Value.ToString();
-                txtCustomerName.Text = dtgvListBill.SelectedRows[0].Cells[3].Value.ToString();
-                txtTable.Text = dtgvListBill.SelectedRows[0].Cells[5].Value.ToString();
-                txtDayCheckOut.Text = dtgvListBill.SelectedRows[0].Cells[6].Value.ToString();
+                if (dtgvListBill.SelectedRows[0].Cells[3].Value != null)
+                    txtDiscount.Text = dtgvListBill.SelectedRows[0].Cells[3].Value.ToString();
+                else
+                    txtDiscount.Text = "Không giảm giá";
+                txtTable.Text = dtgvListBill.SelectedRows[0].Cells[4].Value.ToString();
+                txtDayCheckOut.Text = dtgvListBill.SelectedRows[0].Cells[5].Value.ToString();
+                CultureInfo culture = new CultureInfo("vi-VN");
+                float total = float.Parse(dtgvListBill.SelectedRows[0].Cells[6].Value.ToString());
+                txtTotalBill.Text = total.ToString("c", culture);
                 bool statusCheckOut = bool.Parse(dtgvListBill.SelectedRows[0].Cells[7].Value.ToString());
                 if (statusCheckOut == true)
                     cbStatusCheckOut.SelectedIndex = 0;
@@ -48,5 +57,6 @@ namespace frmLogin
                     cbStatusCheckOut.SelectedIndex = 1;
             }
         }
+
     }
 }

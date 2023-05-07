@@ -86,3 +86,14 @@ C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BU
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.dll
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.pdb
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\bin\Debug\BUS.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\bin\Debug\BUS.pdb
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\bin\Debug\DAO.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\bin\Debug\DTO.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\bin\Debug\DAO.pdb
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\bin\Debug\DTO.pdb
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.pdb

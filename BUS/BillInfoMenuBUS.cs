@@ -24,7 +24,7 @@ namespace BUS
 
             public List<BillInfoMenu> GetListBillInfoMenu(string billID)
             {
-            return BillInfoMenuDAO.Instance.GetListBillInfoMenuByBillID(billID);
+                return BillInfoMenuDAO.Instance.GetListBillInfoMenuByBillID(billID);
             }
         }
 }

@@ -46,3 +46,9 @@ C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DT
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.dll
 C:\Users\Admin\Source\Repos\NguyenTanPhuoc123\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.pdb
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\bin\Debug\DTO.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\bin\Debug\DTO.pdb
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.dll
+C:\Users\DELL\Source\Repos\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.pdb

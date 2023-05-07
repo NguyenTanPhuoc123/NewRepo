@@ -52,6 +52,20 @@ namespace DAO
             return null;
         }
 
+        public Bill GetBillByBillID(string billID)
+        {
+
+            string query = string.Format("Select * from HOADON WHERE TRANGTHAI = 1 and MAHD = '{0}' ", billID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            while (data.Rows.Count > 0)
+            {
+                Bill bill = new Bill(data.Rows[0]);
+                return bill;
+            }
+
+            return null;
+        }
+
         public bool AddNewBill(int employeeID, int tableID)
         {
             int row;

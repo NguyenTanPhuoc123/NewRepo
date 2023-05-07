@@ -50,7 +50,7 @@ namespace DAO
         public int DeleteBillInfo(string billID, string productID)
         {
             int row;
-            string query = string.Format("UPDATE CHITIETHOADON SET TrangThai = 0 WHERE billID = {0} and productID = {1}", billID, productID);
+            string query = string.Format("UPDATE CHITIETHOADON SET TrangThai = 0 WHERE MAHD = '{0}' and MASP = '{1}' ", billID, productID);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);

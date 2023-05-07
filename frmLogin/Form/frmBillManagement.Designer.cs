@@ -29,10 +29,9 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBillManagement));
             this.dtgvListBill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txtSearchBill = new Guna.UI2.WinForms.Guna2TextBox();
@@ -43,6 +42,8 @@ namespace frmLogin
             this.btnShowDetail = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchBill = new Guna.UI2.WinForms.Guna2Button();
             this.grpBillInfo = new System.Windows.Forms.GroupBox();
+            this.txtDiscount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtDayCheckOut = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtDayCheckIn = new Guna.UI2.WinForms.Guna2TextBox();
@@ -50,28 +51,24 @@ namespace frmLogin
             this.label8 = new System.Windows.Forms.Label();
             this.txtTable = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtCustomerName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTotalBill = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmployeeName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBillID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtDiscount = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListBill)).BeginInit();
             this.grpBillInfo.SuspendLayout();
             this.SuspendLayout();
@@ -80,39 +77,38 @@ namespace frmLogin
             // 
             this.dtgvListBill.AllowUserToAddRows = false;
             this.dtgvListBill.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvListBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvListBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvListBill.ColumnHeadersHeight = 20;
             this.dtgvListBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4,
             this.Column5,
             this.Column6,
             this.Column7,
+            this.Column4,
             this.Column8,
             this.Column9,
-            this.Column10,
             this.Column11,
             this.Column12});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListBill.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListBill.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListBill.Location = new System.Drawing.Point(15, 353);
             this.dtgvListBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -120,7 +116,7 @@ namespace frmLogin
             this.dtgvListBill.RowHeadersVisible = false;
             this.dtgvListBill.RowHeadersWidth = 51;
             this.dtgvListBill.RowTemplate.Height = 24;
-            this.dtgvListBill.Size = new System.Drawing.Size(1155, 152);
+            this.dtgvListBill.Size = new System.Drawing.Size(1154, 152);
             this.dtgvListBill.TabIndex = 39;
             this.dtgvListBill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListBill.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -200,10 +196,18 @@ namespace frmLogin
             this.cbSortBill.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbSortBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortBill.ItemHeight = 30;
+            this.cbSortBill.Items.AddRange(new object[] {
+            "Mặc định",
+            "Mã HD(Tăng)",
+            "Mã HD(Giảm)",
+            "Ngày lập(Tăng)",
+            "Ngày lập(Giảm)",
+            "Tổng tiền(tăng)",
+            "Tổng tiền(giảm)"});
             this.cbSortBill.Location = new System.Drawing.Point(15, 295);
             this.cbSortBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbSortBill.Name = "cbSortBill";
-            this.cbSortBill.Size = new System.Drawing.Size(145, 36);
+            this.cbSortBill.Size = new System.Drawing.Size(192, 36);
             this.cbSortBill.TabIndex = 34;
             // 
             // label1
@@ -261,7 +265,7 @@ namespace frmLogin
             this.grpBillInfo.Controls.Add(this.label8);
             this.grpBillInfo.Controls.Add(this.txtTable);
             this.grpBillInfo.Controls.Add(this.label7);
-            this.grpBillInfo.Controls.Add(this.txtCustomerName);
+            this.grpBillInfo.Controls.Add(this.txtTotalBill);
             this.grpBillInfo.Controls.Add(this.label6);
             this.grpBillInfo.Controls.Add(this.label5);
             this.grpBillInfo.Controls.Add(this.txtEmployeeName);
@@ -276,6 +280,36 @@ namespace frmLogin
             this.grpBillInfo.TabIndex = 41;
             this.grpBillInfo.TabStop = false;
             this.grpBillInfo.Text = "Thông tin hóa đơn";
+            // 
+            // txtDiscount
+            // 
+            this.txtDiscount.BorderRadius = 10;
+            this.txtDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDiscount.DefaultText = "";
+            this.txtDiscount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiscount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDiscount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiscount.Location = new System.Drawing.Point(645, 21);
+            this.txtDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.PasswordChar = '\0';
+            this.txtDiscount.PlaceholderText = "";
+            this.txtDiscount.SelectedText = "";
+            this.txtDiscount.Size = new System.Drawing.Size(204, 41);
+            this.txtDiscount.TabIndex = 16;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(542, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 17);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Giảm giá :";
             // 
             // txtDayCheckOut
             // 
@@ -380,41 +414,41 @@ namespace frmLogin
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(557, 84);
+            this.label7.Location = new System.Drawing.Point(542, 84);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 17);
             this.label7.TabIndex = 8;
             this.label7.Text = "Số bàn:";
             // 
-            // txtCustomerName
+            // txtTotalBill
             // 
-            this.txtCustomerName.BorderRadius = 10;
-            this.txtCustomerName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCustomerName.DefaultText = "";
-            this.txtCustomerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCustomerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCustomerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCustomerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCustomerName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCustomerName.Location = new System.Drawing.Point(645, 22);
-            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.PasswordChar = '\0';
-            this.txtCustomerName.PlaceholderText = "";
-            this.txtCustomerName.SelectedText = "";
-            this.txtCustomerName.Size = new System.Drawing.Size(204, 41);
-            this.txtCustomerName.TabIndex = 7;
+            this.txtTotalBill.BorderRadius = 10;
+            this.txtTotalBill.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTotalBill.DefaultText = "";
+            this.txtTotalBill.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTotalBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTotalBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotalBill.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotalBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotalBill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTotalBill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotalBill.Location = new System.Drawing.Point(645, 120);
+            this.txtTotalBill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTotalBill.Name = "txtTotalBill";
+            this.txtTotalBill.PasswordChar = '\0';
+            this.txtTotalBill.PlaceholderText = "";
+            this.txtTotalBill.SelectedText = "";
+            this.txtTotalBill.Size = new System.Drawing.Size(204, 41);
+            this.txtTotalBill.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(526, 33);
+            this.label6.Location = new System.Drawing.Point(542, 129);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 17);
+            this.label6.Size = new System.Drawing.Size(72, 17);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Khách hàng:";
+            this.label6.Text = "Tổng tiền:";
             // 
             // label5
             // 
@@ -485,12 +519,6 @@ namespace frmLogin
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã hóa đơn:";
             // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
             // Column1
             // 
             this.Column1.DataPropertyName = "ID";
@@ -511,13 +539,6 @@ namespace frmLogin
             this.Column3.HeaderText = "Nhân viên";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "CustomerName";
-            this.Column4.HeaderText = "Khách hàng";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
             // 
             // Column5
             // 
@@ -540,6 +561,13 @@ namespace frmLogin
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Total";
+            this.Column4.HeaderText = "Tổng tiền";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
             // Column8
             // 
             this.Column8.DataPropertyName = "StatusCheckOut";
@@ -554,14 +582,6 @@ namespace frmLogin
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.Visible = false;
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "CustomerID";
-            this.Column10.HeaderText = "Mã khách hàng";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Visible = false;
             // 
             // Column11
             // 
@@ -578,36 +598,6 @@ namespace frmLogin
             this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
             this.Column12.Visible = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(542, 138);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 17);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Giảm giá :";
-            // 
-            // txtDiscount
-            // 
-            this.txtDiscount.BorderRadius = 10;
-            this.txtDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiscount.DefaultText = "";
-            this.txtDiscount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiscount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDiscount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscount.Location = new System.Drawing.Point(645, 120);
-            this.txtDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtDiscount.Name = "txtDiscount";
-            this.txtDiscount.PasswordChar = '\0';
-            this.txtDiscount.PlaceholderText = "";
-            this.txtDiscount.SelectedText = "";
-            this.txtDiscount.Size = new System.Drawing.Size(204, 41);
-            this.txtDiscount.TabIndex = 16;
             // 
             // frmBillManagement
             // 
@@ -654,26 +644,24 @@ namespace frmLogin
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox txtTable;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox txtCustomerName;
+        private Guna.UI2.WinForms.Guna2TextBox txtTotalBill;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2TextBox txtDayCheckOut;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox txtDayCheckIn;
+        private Guna.UI2.WinForms.Guna2TextBox txtDiscount;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private Guna.UI2.WinForms.Guna2TextBox txtDiscount;
-        private System.Windows.Forms.Label label10;
     }
 }

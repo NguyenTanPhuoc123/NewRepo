@@ -12,19 +12,15 @@ namespace DTO
         private string m_BillID;
         private string m_ProductID;
         private string m_ProductName;
-        private int m_SizeID;
-        private string m_SizeName;
         private int m_Count;
         private float m_Price;
         private float m_Total;
 
-        public BillInfoMenu(string billID, string productID, string productName, int sizeID, string sizeName, int count, float price, float total)
+        public BillInfoMenu(string billID, string productID, string productName, int count, float price, float total)
         {
             m_BillID = billID;
             m_ProductID = productID;
             m_ProductName = productName;
-            m_SizeID = sizeID;
-            m_SizeName = sizeName;
             m_Count = count;
             m_Price = price;
             m_Total = total;
@@ -33,23 +29,20 @@ namespace DTO
         public string BillID { get => m_BillID; set => m_BillID = value; }
         public string ProductID { get => m_ProductID; set => m_ProductID = value; }
         public string ProductName { get => m_ProductName; set => m_ProductName = value; }
-        public int SizeID { get => m_SizeID; set => m_SizeID = value; }
-        public string SizeName { get => m_SizeName; set => m_SizeName = value; }
         public int Count { get => m_Count; set => m_Count = value; }
         public float Price { get => m_Price; set => m_Price = value; }
         public float Total { get => m_Total; set => m_Total = value; }
 
-        public BillInfoMenu(DataRow row) {
+        public BillInfoMenu(DataRow row)
+        {
             this.m_BillID = row["MAHD"].ToString();
             this.m_ProductID = row["MASP"].ToString();
             this.m_ProductName = row["TENSANPHAM"].ToString();
-            this.m_SizeID = (int)row["KICHTHUOC"];
-            this.m_SizeName = row["TENKICHTHUOC"].ToString();
-            this.m_Count = (int) row["SOLUONG"];
+            this.m_Count = (int)row["SOLUONG"];
             this.m_Price = float.Parse(row["DONGIA"].ToString());
             this.m_Total = float.Parse(row["THANHTIEN"].ToString());
         }
 
-        
+
     }
 }

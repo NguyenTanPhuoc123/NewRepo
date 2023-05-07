@@ -25,7 +25,7 @@ namespace DAO
         public List<BillInfoMenu> GetListBillInfoMenuByBillID(string billID)
         {
             List<BillInfoMenu> list = new List<BillInfoMenu>();
-            string query = string.Format("GetListBillInfoMenuByBillID {0} ", billID);
+            string query = string.Format("GetListBillInfoMenuByBillID '{0}' ", billID);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach(DataRow item in data.Rows)
             {

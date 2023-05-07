@@ -26,7 +26,7 @@ namespace DAO
         public List<BillMenu> GetListBillMenu()
         {
             List<BillMenu> list = new List<BillMenu>();
-            string query = "SELECT * FROM HOADON a, BANAN b, NHANVIEN c, KHACHHANG d WHERE a.MANHANVIEN = c.MANV AND a.SOBAN = b.MABANAN and a.MAKHACHHANG = d.MAKH and a.TrangThai = 1";
+            string query = "SELECT * FROM HOADON a, BANAN b, NHANVIEN c , GIAMGIA d WHERE a.MAGIAMGIA = d.MAGIAM and a.MANHANVIEN = c.MANV AND a.SOBAN = b.MABANAN and a.TrangThai = 1";
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach(DataRow item in data.Rows)
             {
