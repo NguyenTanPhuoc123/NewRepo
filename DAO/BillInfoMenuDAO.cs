@@ -35,6 +35,20 @@ namespace DAO
 
             return list;
         }
-            
+
+        public List<BillInfoMenu> GetListBillInfoMenuDeleted()
+        {
+            List<BillInfoMenu> list = new List<BillInfoMenu>();
+            string query = string.Format("SELECT a.MAHD , a.MASP , b.TENSANPHAM , a.SOLUONG , a.DONGIA , a.THANHTIEN  FROM CHITIETHOADON a, SANPHAM b, HOADON c WHERE a.MAHD = c.MAHD and a.MASP = b.MASANPHAM  and a.TRANGTHAI = 0 ");
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                BillInfoMenu billInfoMenu = new BillInfoMenu(item);
+                list.Add(billInfoMenu);
+            }
+
+            return list;
+        }
+
     }
 }

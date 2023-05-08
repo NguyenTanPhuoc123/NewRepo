@@ -43,6 +43,17 @@ namespace BUS
             return BillInfoDAO.Instance.DeleteAllBillInfo();
         }
 
+        public int RestoreBillInfo(string billID, string productID)
+        {
+            return BillInfoDAO.Instance.RestoreBillInfo(billID, productID);
+        }
+
+        public int RestoreAllBillInfo()
+        {
+            return BillInfoDAO.Instance.RestoreAllBillInfo();
+        }
+
+
         public bool CheckProduct(string ProductID,string BillID)
         {
             return BillInfoDAO.Instance.CheckProduct(ProductID,BillID);
@@ -51,6 +62,13 @@ namespace BUS
         {
             BillInfoDAO.Instance.UpdateCount(soluong, ProductID,BillID);
         }
-
+        public bool CheckProductDeleted(string ProductID, string mahd)
+        {
+           return BillInfoDAO.Instance.CheckProductDeleted(ProductID, mahd);
+        }
+        public void UpdateProduct(string soluong, string ProductID, string mahd, float thanhtien)
+        {
+            BillInfoDAO.Instance.UpdateProduct(soluong, ProductID, mahd, thanhtien);
+        }
     }
 }

@@ -96,3 +96,12 @@ C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csp
 C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
 C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb
+D:\đồ án\QuanLyCuaHangTimo\DAO\bin\Debug\DAO.dll
+D:\đồ án\QuanLyCuaHangTimo\DAO\bin\Debug\DAO.pdb
+D:\đồ án\QuanLyCuaHangTimo\DAO\bin\Debug\DTO.dll
+D:\đồ án\QuanLyCuaHangTimo\DAO\bin\Debug\DTO.pdb
+D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
+D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb

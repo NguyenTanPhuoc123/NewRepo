@@ -18,11 +18,12 @@ namespace frmLogin
         Bill getBill;
 
         public Bill GetBill { get => getBill; set => getBill = value; }
-
-        public frmBillDetail(Bill bill)
+        frmBillManagement frmBillManagement;
+        public frmBillDetail(Bill bill, frmBillManagement frmBill)
         {
             InitializeComponent();
             getBill = bill;
+            this.frmBillManagement = frmBill;
         }
 
         private void btnExitFomBillDetail_Click(object sender, EventArgs e)
@@ -38,9 +39,7 @@ namespace frmLogin
 
         private void frmBillDetail_Load(object sender, EventArgs e)
         {
-            dtgvBillDetail.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(getBill.ID);
-            CultureInfo culture = new CultureInfo("vi-VN");
-            lblTotal.Text = getBill.TotalPrice.ToString("c", culture);
+            dtgvBillDetail.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(getBill.ID);            
         }
 
         private void btnDeleteBillDetail_Click(object sender, EventArgs e)
@@ -55,7 +54,9 @@ namespace frmLogin
                 if (count > 0)
                 {
                     MessageBox.Show("Xóa chi tiết hóa đơn thành công", "Xóa chi tiết hóa đơn", MessageBoxButtons.OK);
+                    this.frmBillManagement.LoadBill();
                     frmBillDetail_Load(sender, e);
+                    
                 }
                 else
                     MessageBox.Show("Xóa chi tiết hóa đơn thất bại", "Xóa chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -83,7 +84,9 @@ namespace frmLogin
                 if (count > 0)
                 {
                     MessageBox.Show("Xóa tất cả chi tiết hóa đơn thành công", "Xóa chi tiết hóa đơn", MessageBoxButtons.OK);
+                    this.frmBillManagement.LoadBill();
                     frmBillDetail_Load(sender, e);
+                    
                 }
                 else
                     MessageBox.Show("Xóa tất cả chi tiết hóa đơn thất bại", "Xóa chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);

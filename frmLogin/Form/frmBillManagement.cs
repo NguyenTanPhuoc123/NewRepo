@@ -24,14 +24,18 @@ namespace frmLogin
         private void btnShowDetail_Click(object sender, EventArgs e)
         {
             Bill bill = BillBUS.Instance.GetBillByBillID(txtBillID.Text);
-            frmBillDetail frm = new frmBillDetail(bill);
+            frmBillDetail frm = new frmBillDetail(bill,this);
             frm.Show();
         }
 
         private void frmBillManagement_Load(object sender, EventArgs e)
         {
-            dtgvListBill.DataSource = BillMenuBUS.Instance.GetListBillMenu();
+            LoadBill();
 
+        }
+        public void LoadBill()
+        {
+            dtgvListBill.DataSource = BillMenuBUS.Instance.GetListBillMenu();
         }
 
         private void dtgvListBill_SelectionChanged(object sender, EventArgs e)

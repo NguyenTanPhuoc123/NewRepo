@@ -44,7 +44,7 @@ namespace BUS
 
         public int EditTable(int maBan, string tenBan, int maViTri)
         {
-            return TableDAO.Instance.EditTable(maBan, tenBan, maViTri);
+            return TableDAO.Instance.EditTable(maBan,tenBan,maViTri);
         }
 
         public int DeleteTable(int maBan)
@@ -77,11 +77,6 @@ namespace BUS
         public int UpdateTable(string maBAN)
         {
             return TableDAO.Instance.UpdateTable1(maBAN);
-        }
-
-        public int UpdateTablePay(int TableID)
-        {
-            return TableDAO.Instance.UpdateTablePay(TableID);
         }
     }
 }

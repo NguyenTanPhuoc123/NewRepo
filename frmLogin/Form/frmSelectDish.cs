@@ -130,12 +130,19 @@ namespace frmLogin
                         dongia = float.Parse(userControl.DonGia);
                         thanhtien = float.Parse(soluong) * dongia;
                         string mahd = BillBUS.Instance.HDID(tableID);
-                        if (BillInfoBUS.Instance.CheckProduct(masp,mahd))
+                        if (BillInfoBUS.Instance.CheckProductDeleted(masp, mahd))
                         {
-                            BillInfoBUS.Instance.UpdateCount(soluong, masp, mahd);
+                            BillInfoBUS.Instance.UpdateProduct(soluong, masp, mahd, thanhtien);
                         }
                         else
-                         BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, dongia, soluong, thanhtien);
+                        {
+                            if (BillInfoBUS.Instance.CheckProduct(masp, mahd))
+                            {
+                                BillInfoBUS.Instance.UpdateCount(soluong, masp, mahd);
+                            }
+                            else
+                                BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, dongia, soluong, thanhtien);
+                        }
                     }
                 }
             }          

@@ -18,8 +18,11 @@ namespace frmLogin
         public frmRecycleBin()
         {
             InitializeComponent();
+            dtgvListAccountDeleted.AutoGenerateColumns = false;
             dtgvListEmployeeDeleted.AutoGenerateColumns = false;
             dtgvListProductDeleted.AutoGenerateColumns = false;
+            dtgvListTableFoodDeleted.AutoGenerateColumns = false;
+            dtgvListBillDetailDeleted.AutoGenerateColumns = false;
         }
 
         private void frmRecycleBin_Load(object sender, EventArgs e)
@@ -28,6 +31,7 @@ namespace frmLogin
             LoadTableFoodDeleted();
             LoadProductDeleted();
             LoadEmployeeDeleted();
+            LoadBillInfoDeleted();
         }
 
         private void btnExitFormSelectDish_Click(object sender, EventArgs e)
@@ -237,5 +241,76 @@ namespace frmLogin
             }
         }
         #endregion
+
+        #region Bill Info
+        public void LoadBillInfoDeleted()
+        {
+            dtgvListBillDetailDeleted.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenuDeleted();
+            ResetBillInfo();
+        }
+
+        public void ResetBillInfo()
+        {
+            txtBillID.Clear();
+            txtProductNameBill.Clear();
+            numCountBillInfo.Value = 1;
+            txtPriceBillInfo.Clear();
+            txtTotalBillInfo.Clear();
+        }
+
+        private void dtgvListBillDetailDeleted_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
+            {
+                txtBillID.Text = dtgvListBillDetailDeleted.SelectedRows[0].Cells[0].Value.ToString();
+                txtProductNameBill.Text = dtgvListBillDetailDeleted.SelectedRows[0].Cells[1].Value.ToString();
+                numCountBillInfo.Value = int.Parse(dtgvListBillDetailDeleted.SelectedRows[0].Cells[2].Value.ToString());
+                txtPriceBillInfo.Text = dtgvListBillDetailDeleted.SelectedRows[0].Cells[3].Value.ToString();
+                txtTotalBillInfo.Text = dtgvListBillDetailDeleted.SelectedRows[0].Cells[4].Value.ToString();
+            }
+        }
+
+        private void btnRestoreBillDetail_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn khôi phục chi tiết hóa đơn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                string productID = "";
+                if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
+                    productID = dtgvListBillDetailDeleted.SelectedRows[0].Cells[5].Value.ToString();
+                int count = BillInfoBUS.Instance.RestoreBillInfo(txtBillID.Text, productID);
+
+                if (count > 0)
+                {
+                    MessageBox.Show("Khôi phục chi tiết hóa đơn thành công", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK);
+                    LoadBillInfoDeleted();
+                }
+                else
+                    MessageBox.Show("Khôi phục chi tiết hóa đơn thất bại", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnRestoreAllBillDetail_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn khôi phục tất cả chi tiết hóa đơn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                string productID = "";
+                if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
+                    productID = dtgvListBillDetailDeleted.SelectedRows[0].Cells[5].Value.ToString();
+                int count = BillInfoBUS.Instance.RestoreAllBillInfo();
+
+                if (count > 0)
+                {
+                    MessageBox.Show("Khôi phục tất cả chi tiết hóa đơn thành công", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK);
+                    LoadBillInfoDeleted();
+                }
+                else
+                    MessageBox.Show("Khôi phục tất cả chi tiết hóa đơn thất bại", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        #endregion
+
+
     }
 }

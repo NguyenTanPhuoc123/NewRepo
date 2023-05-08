@@ -69,7 +69,7 @@ namespace DAO
         public bool AddNewBill(int employeeID, int tableID)
         {
             int row;
-            string query = String.Format("INSERT HOADON(MAHD,NGAYLAPHD,MANHANVIEN,SOBAN,TRANGTHAITHANHTOAN,TRANGTHAI) values('{0}',GETDATE(),{1},{2},0,1)", BILLID(), employeeID, tableID);
+            string query = String.Format("INSERT HOADON(MAHD,NGAYLAPHD,MANHANVIEN,MAGIAMGIA,SOBAN,TRANGTHAITHANHTOAN,TRANGTHAI) values('{0}',GETDATE(),{1},0,{2},0,1)", BILLID(), employeeID, tableID);
             row = DataProvider.ExecuteInsertCommand(query, null);
             return (row > 0 ? true : false);
         }
@@ -84,13 +84,13 @@ namespace DAO
 
         public bool CheckHD(int TableID)
         {
-            string query = string.Format("SELECT COUNT(*) FROM HOADON WHERE SOBAN = {0} AND TRANGTHAI=1 And TRANGTHAITHANHTOAN = 0", TableID);
+            string query = string.Format("SELECT COUNT(*) FROM HOADON WHERE SOBAN = {0} AND TRANGTHAI=1", TableID);
             int count = DataProvider.ExecuteScalarCommand(query, null);
             return (count > 0 ? false : true);
         }
         public string HDID(int TableID)
         {
-            string query = string.Format("SELECT MAHD FROM HOADON WHERE SOBAN = {0} AND TRANGTHAI=1 And TRANGTHAITHANHTOAN = 0", TableID);
+            string query = string.Format("SELECT MAHD FROM HOADON WHERE SOBAN = {0} AND TRANGTHAI=1", TableID);
             DataTable count = DataProvider.ExcecuteSelectCommand(query, null);
             foreach(DataRow row in count.Rows)
             {
@@ -104,13 +104,6 @@ namespace DAO
             string query = String.Format("Update HOADON SET SOBAN ={0} WHERE SOBAN = {1}", tablenew, tableid);
             row = DataProvider.ExecuteInsertCommand(query, null);
             return (row > 0 ? true : false);
-        }
-
-        public int OutputBill(string BillID, float Total)
-        {
-            string query = string.Format("update hoadon set ngayxuathd=getdate(), trangthaithanhtoan = 1, tongtien={0} where mahd='{1}'", Total, BillID);
-            int data = DataProvider.ExecuteInsertCommand(query, null);
-            return data;
         }
     }
 }

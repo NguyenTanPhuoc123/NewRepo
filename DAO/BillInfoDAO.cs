@@ -76,6 +76,37 @@ namespace DAO
             }
             return row;
         }
+
+        public int RestoreBillInfo(string billID, string productID)
+        {
+            int row;
+            string query = string.Format("UPDATE CHITIETHOADON SET TrangThai = 1 WHERE MAHD = '{0}' and MASP = '{1}' ", billID, productID);
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
+            return row;
+        }
+
+        public int RestoreAllBillInfo()
+        {
+            int row;
+            string query = string.Format("UPDATE CHITIETHOADON SET TrangThai = 1 ");
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
+            return row;
+        }
+
         public bool CheckProduct(string ProductID,string mahd)
         {
             string query =string.Format("Select count(*) from Chitiethoadon where MASP = '{0}' AND MAHD = '{1}'",ProductID,mahd);
@@ -85,6 +116,17 @@ namespace DAO
         public void UpdateCount(string soluong,string ProductID, string mahd)
         {
             string query = string.Format("UPDATE CHITIETHOADON SET SOLUONG = SOLUONG + {0},THANHTIEN = THANHTIEN +(DONGIA*{1}) where MASP = '{2}' AND MAHD = '{3}'", soluong,soluong, ProductID,mahd);
+            DataProvider.ExecuteInsertCommand(query, null);
+        }
+        public bool CheckProductDeleted(string ProductID, string mahd)
+        {
+            string query = string.Format("Select count(*) from Chitiethoadon where MASP = '{0}' AND MAHD = '{1}' AND TRANGTHAI=0", ProductID, mahd);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return (data > 0 ? true : false);
+        }
+        public void UpdateProduct(string soluong, string ProductID, string mahd,float thanhtien)
+        {
+            string query = string.Format("UPDATE CHITIETHOADON SET SOLUONG = {0},THANHTIEN ={1},TRANGTHAI=1 where MASP = '{2}' AND MAHD = '{3}'", soluong, thanhtien, ProductID, mahd);
             DataProvider.ExecuteInsertCommand(query, null);
         }
     }
