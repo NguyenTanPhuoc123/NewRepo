@@ -151,5 +151,12 @@ namespace DAO
             row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
+
+        public int UpdateTablePay(int TableID)
+        {
+            string query = string.Format("Update BANAN SET TRANGTHAI = N'Trống' where MABANAN = {0} and TRANGTHAI=N'Có người'", TableID);
+            int row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
     }
 }

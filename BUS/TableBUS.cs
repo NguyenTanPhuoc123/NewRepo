@@ -78,5 +78,10 @@ namespace BUS
         {
             return TableDAO.Instance.UpdateTable1(maBAN);
         }
+
+        public int UpdateTablePay(int TableID)
+        {
+            return TableDAO.Instance.UpdateTablePay(TableID);
+        }
     }
 }
