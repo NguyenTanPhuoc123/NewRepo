@@ -48,5 +48,10 @@ namespace BUS
         {
             return BillDAO.Instance.UpdateBill(tableid, tablenew);
         }
+
+        public int OutputBill(string BillID, float Total)
+        {
+            return BillDAO.Instance.OutputBill(BillID, Total);
+        }
     }
 }

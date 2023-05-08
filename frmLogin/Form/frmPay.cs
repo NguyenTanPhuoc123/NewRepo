@@ -41,9 +41,35 @@ namespace frmLogin
             txtBillID.Text = BillID.ToString();
             txtEmployeeID.Text = EmployeeID.ToString();
             txtEmployeeName.Text = EmployeeName;
-            dtpDateBill.Text = DateTime.Now.ToString();
+            txtCheckIn.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss");
             lblTotal.Text = Total.ToString();
             dtgvBill.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(BillID);
+            LoadDiscount();
+        }
+
+        public void LoadDiscount()
+        {
+            cbDiscount.SelectedIndex = 0;
+            List<Discount> lst = DiscountBUS.Instance.GetListDiscount();
+            for(int i = 0; i < lst.Count; i++)
+            {
+                cbDiscount.Items.Add(lst[0].DiscountName);
+            }
+        }
+
+        private void btnOutputBill_Click(object sender, EventArgs e)
+        {
+            int row = TableBUS.Instance.UpdateTablePay(TableID);
+            int count = BillBUS.Instance.OutputBill(txtBillID.Text, Total);
+            if (count > 0 && row > 0)
+            {
+                MessageBox.Show("Thanh toán thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thanh toán thất bại");
+            }
+            frmPay_Load(sender, e);
         }
     }
 }
