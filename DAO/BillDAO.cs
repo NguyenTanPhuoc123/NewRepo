@@ -69,7 +69,7 @@ namespace DAO
         public bool AddNewBill(int employeeID, int tableID)
         {
             int row;
-            string query = String.Format("INSERT HOADON(MAHD,NGAYLAPHD,MANHANVIEN,MAGIAMGIA,SOBAN,TRANGTHAITHANHTOAN,TRANGTHAI) values('{0}',GETDATE(),{1},0,{2},0,1)", BILLID(), employeeID, tableID);
+            string query = String.Format("INSERT HOADON(MAHD,NGAYLAPHD,MANHANVIEN,MAGIAMGIA,SOBAN,TRANGTHAITHANHTOAN,TRANGTHAI,TONGTIEN) values('{0}',GETDATE(),{1},0,{2},0,1,0)", BILLID(), employeeID, tableID);
             row = DataProvider.ExecuteInsertCommand(query, null);
             return (row > 0 ? true : false);
         }
