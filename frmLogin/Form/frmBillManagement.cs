@@ -31,11 +31,13 @@ namespace frmLogin
         private void frmBillManagement_Load(object sender, EventArgs e)
         {
             LoadBill();
-
+            chkFillBill.Checked = false;
+            cbSortBill.SelectedIndex = 0;
         }
         public void LoadBill()
         {
             dtgvListBill.DataSource = BillMenuBUS.Instance.GetListBillMenu();
+
         }
 
         private void dtgvListBill_SelectionChanged(object sender, EventArgs e)
@@ -62,5 +64,75 @@ namespace frmLogin
             }
         }
 
+        private void cbSortBill_SelectedIndexChanged(object sender, EventArgs e)
+        {   if (chkFillBill.Checked == true)
+            {
+                string dayCheckIn = dtpFillBill.Value.ToString("yyyy/MM/dd");
+
+                if (cbSortBill.SelectedIndex == 1)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillID(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 2)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillIDDesc(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 3)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckIn(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 4)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckInDesc(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 5)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotal(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 6)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotalDesc(dayCheckIn);
+                else
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.FillBillByDayCheckIn(dayCheckIn);
+            }
+            else
+            {
+                if (cbSortBill.SelectedIndex == 0)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.GetListBillMenu();
+                else  if (cbSortBill.SelectedIndex == 1)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillID(null);
+                else if (cbSortBill.SelectedIndex == 2)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillIDDesc(null);
+                else if (cbSortBill.SelectedIndex == 3)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckIn(null);
+                else if (cbSortBill.SelectedIndex == 4)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckInDesc(null);
+                else if (cbSortBill.SelectedIndex == 5)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotal(null);
+                else if (cbSortBill.SelectedIndex == 6)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotalDesc(null);
+              
+            }
+        }
+
+        private void chkFillBill_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFillBill.Checked == true)
+                dtpFillBill.Enabled = true;
+            else
+                dtpFillBill.Enabled = false;
+        }
+
+        private void dtpFillBill_ValueChanged(object sender, EventArgs e)
+        {
+            if(chkFillBill.Checked == true)
+            {
+                string dayCheckIn = dtpFillBill.Value.ToString("yyyy/MM/dd");
+
+                if (cbSortBill.SelectedIndex == 1)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillID(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 2)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillIDDesc(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 3)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckIn(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 4)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckInDesc(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 5)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotal(dayCheckIn);
+                else if (cbSortBill.SelectedIndex == 6)
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotalDesc(dayCheckIn);
+                else
+                    dtgvListBill.DataSource = BillMenuBUS.Instance.FillBillByDayCheckIn(dayCheckIn);
+            }
+        }
     }
 }
