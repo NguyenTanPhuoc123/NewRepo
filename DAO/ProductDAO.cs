@@ -136,7 +136,7 @@ namespace DAO
         {
             DataTable lst = new DataTable();
             string query;
-            if (CategoryName == "Tất ca")
+            if (CategoryName == "Tất cả")
             {
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 ORDER BY TENSANPHAM ASC";
 
@@ -184,7 +184,7 @@ namespace DAO
         {
             DataTable lst = new DataTable();
             string query;
-            if (CategoryName == "Tat ca")
+            if (CategoryName == "Tất cả")
             {
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 ORDER BY DONGIA ASC";
 
@@ -200,7 +200,7 @@ namespace DAO
         {
             DataTable lst = new DataTable();
             string query;
-            if (CategoryName == "Tát cả")
+            if (CategoryName == "Tất cả")
             {
                 query = "select a.* ,b.tendanhmuc from sanpham a,Danhmuc b where a.danhmuc=b.madanhmuc and TRANGTHAI = 1 ORDER BY DONGIA DESC";
 
