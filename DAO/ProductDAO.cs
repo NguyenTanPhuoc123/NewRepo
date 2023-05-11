@@ -251,6 +251,30 @@ namespace DAO
             }
             return null;
         }
+        //Lay ra so luong san pham tu bang san pham
+        public int ProductCount(string ProductName)
+        {
+            int ID;
+            string query = string.Format("SELECT * FROM SANPHAM WHERE TENSANPHAM = N'{0}'", ProductName);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow row in data.Rows)
+            {
+                ID = Convert.ToInt32(row["SOLUONG"].ToString());
+                return ID;
+            }
+            return 0;
+        }
+        //Cap nhat so luong san pham khi them vao chi tiet hd
+        public int UpdateProductCount(string ProductID, string count)
+        {
+            int data = 0;
+            string query = "Update SANPHAM SET SOLUONG = SOLUONG - @SOLUONG where MASANPHAM = @MASP";
+            SqlParameter[] parameter = new SqlParameter[2];
+            parameter[0] = new SqlParameter("MASP", ProductID);
+            parameter[1] = new SqlParameter("@SOLUONG", count);
+            data = DataProvider.ExecuteInsertCommand(query, parameter);
+            return data;
+        }
     }
 }
 
