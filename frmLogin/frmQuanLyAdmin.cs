@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//abc
+using DTO;
+using BUS;
+using Microsoft.Reporting.WinForms;
+
 namespace frmLogin
 {   
 
@@ -19,7 +22,8 @@ namespace frmLogin
         public frmQuanLyAdmin()
         {
             InitializeComponent();
-        
+           
+
         }
 
         private void frmQuanLyAdmin_FormClosing(object sender, FormClosingEventArgs e)
@@ -144,6 +148,14 @@ namespace frmLogin
             OpenChildForm(new frmBillManagement(), sender);
             lblTitle.Text = btnBillManagement.Text;
             ActiveButton(sender);
+        }
+
+        private void frmQuanLyAdmin_Load(object sender, EventArgs e)
+        {
+            List<BillMenu> list = BillMenuBUS.Instance.GetListBillMenu();
+            this.rpvRevenue.LocalReport.ReportEmbeddedResource = "frmLogin.RevenueReport.rdlc";
+            this.rpvRevenue.LocalReport.DataSources.Add(new ReportDataSource("Data", list));
+            this.rpvRevenue.RefreshReport();
         }
     }
 }

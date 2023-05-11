@@ -244,8 +244,6 @@ namespace frmLogin
             string mahd = BillBUS.Instance.HDID(tableID);
             string masp = ProductBUS.Instance.ProductID(item.Text);
             BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
-            int Soluong =Convert.ToInt32(item.SubItems[1].Text);
-            ProductBUS.Instance.UpdateProductDelete(masp, Soluong);
             lstvMenuDish.Items.RemoveAt(index);
         }
         private void btnChangeTable_Click(object sender, EventArgs e)

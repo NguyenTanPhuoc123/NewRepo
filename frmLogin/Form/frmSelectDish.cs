@@ -64,25 +64,17 @@ namespace frmLogin
         }
         private void btnAddDish_Click(object sender, EventArgs e)
         {
-            string tenSP = txtDishName.Text;
-            int soLuong = ProductBUS.Instance.ProductCount(tenSP);
-            int soLuongChon =Convert.ToInt32(numQuantity.Value.ToString());
-            if (soLuongChon <= soLuong)
+            Usercontrol uc = new Usercontrol();
+            if (lstvListDish.SelectedItems.Count > 0)
             {
-                Usercontrol uc = new Usercontrol();
-                if (lstvListDish.SelectedItems.Count > 0)
-                {
-                    int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
-                    uc.HinhAnh = imageList1.Images[i];
-                    uc.TenSP = tenSP;
-                    uc.SoLuong = numQuantity.Value.ToString();
-                    uc.DonGia = txtDishPrice.Text;
-                    flpAddDish.Controls.Add(uc);
-                }
-                numQuantity.Value = 1;
+                int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
+                uc.HinhAnh = imageList1.Images[i];
+                uc.TenSP = txtDishName.Text;
+                uc.SoLuong = numQuantity.Value.ToString();
+                uc.DonGia = txtDishPrice.Text;
+                flpAddDish.Controls.Add(uc);
             }
-            else
-                MessageBox.Show("So luong san pham da chon khong du", "Thong bao");
+            numQuantity.Value = 1;
         }
 
         private void lstvListDish_SelectedIndexChanged(object sender, EventArgs e)
@@ -121,11 +113,7 @@ namespace frmLogin
                             dongia =float.Parse(userControl.DonGia);
                             thanhtien =float.Parse(soluong) * dongia;
                             string mahd = BillBUS.Instance.HDID(tableID);
-                            int data;
-                            if (BillInfoBUS.Instance.CheckExistBillInfo(mahd, masp))
-                                data = BillInfoBUS.Instance.UpdateCountBillInfo(int.Parse(soluong), mahd, masp);
-                            else
-                                data = BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, dongia, soluong, thanhtien);
+                            int data = BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, dongia, soluong, thanhtien);
                         }
                     }
                 }
@@ -145,14 +133,12 @@ namespace frmLogin
                         if (BillInfoBUS.Instance.CheckProductDeleted(masp, mahd))
                         {
                             BillInfoBUS.Instance.UpdateProduct(soluong, masp, mahd, thanhtien);
-                            ProductBUS.Instance.UpdateProductCount(masp, soluong);
                         }
                         else
                         {
                             if (BillInfoBUS.Instance.CheckProduct(masp, mahd))
                             {
                                 BillInfoBUS.Instance.UpdateCount(soluong, masp, mahd);
-                                ProductBUS.Instance.UpdateProductCount(masp, soluong);
                             }
                             else
                                 BillInfoBUS.Instance.InsertNewBillInfo(mahd, masp, dongia, soluong, thanhtien);

@@ -30,18 +30,14 @@ namespace frmLogin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyAdmin));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnTableManagement = new System.Windows.Forms.Button();
             this.btnBillManagement = new System.Windows.Forms.Button();
@@ -57,7 +53,6 @@ namespace frmLogin
             this.panelMain = new System.Windows.Forms.Panel();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tbpRevenue = new System.Windows.Forms.TabPage();
-            this.chartRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnStatisticalRevenue = new Guna.UI2.WinForms.Guna2Button();
             this.dtpRevenueEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -82,6 +77,7 @@ namespace frmLogin
             this.btnbtnStatisticalBill = new Guna.UI2.WinForms.Guna2Button();
             this.dtpBillEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpBillStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.rpvRevenue = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -89,7 +85,6 @@ namespace frmLogin
             this.panelMain.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.tbpRevenue.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
             this.panel1.SuspendLayout();
             this.tpbProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartProduct)).BeginInit();
@@ -251,7 +246,7 @@ namespace frmLogin
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(279, 32);
+            this.lblTitle.Location = new System.Drawing.Point(328, 48);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(307, 69);
             this.lblTitle.TabIndex = 2;
@@ -299,7 +294,7 @@ namespace frmLogin
             // 
             // tbpRevenue
             // 
-            this.tbpRevenue.Controls.Add(this.chartRevenue);
+            this.tbpRevenue.Controls.Add(this.rpvRevenue);
             this.tbpRevenue.Controls.Add(this.panel1);
             this.tbpRevenue.Location = new System.Drawing.Point(184, 4);
             this.tbpRevenue.Name = "tbpRevenue";
@@ -309,34 +304,14 @@ namespace frmLogin
             this.tbpRevenue.Text = "Doanh thu";
             this.tbpRevenue.UseVisualStyleBackColor = true;
             // 
-            // chartRevenue
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartRevenue.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartRevenue.Legends.Add(legend1);
-            this.chartRevenue.Location = new System.Drawing.Point(9, 90);
-            this.chartRevenue.Name = "chartRevenue";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Doanh thu";
-            this.chartRevenue.Series.Add(series1);
-            this.chartRevenue.Size = new System.Drawing.Size(824, 431);
-            this.chartRevenue.TabIndex = 2;
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            title1.Name = "Doanh Thu";
-            title1.Text = "DOANH THU";
-            this.chartRevenue.Titles.Add(title1);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnStatisticalRevenue);
             this.panel1.Controls.Add(this.dtpRevenueEnd);
             this.panel1.Controls.Add(this.dtpRevenueStart);
-            this.panel1.Location = new System.Drawing.Point(6, 8);
+            this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(928, 76);
+            this.panel1.Size = new System.Drawing.Size(829, 76);
             this.panel1.TabIndex = 0;
             // 
             // btnStatisticalRevenue
@@ -358,29 +333,33 @@ namespace frmLogin
             // dtpRevenueEnd
             // 
             this.dtpRevenueEnd.Checked = true;
+            this.dtpRevenueEnd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
             this.dtpRevenueEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpRevenueEnd.ForeColor = System.Drawing.Color.White;
-            this.dtpRevenueEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpRevenueEnd.Location = new System.Drawing.Point(627, 8);
+            this.dtpRevenueEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpRevenueEnd.Location = new System.Drawing.Point(627, 10);
             this.dtpRevenueEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpRevenueEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpRevenueEnd.Name = "dtpRevenueEnd";
             this.dtpRevenueEnd.Size = new System.Drawing.Size(200, 55);
             this.dtpRevenueEnd.TabIndex = 1;
+            this.dtpRevenueEnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dtpRevenueEnd.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
             // dtpRevenueStart
             // 
             this.dtpRevenueStart.Checked = true;
+            this.dtpRevenueStart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
             this.dtpRevenueStart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpRevenueStart.ForeColor = System.Drawing.Color.White;
-            this.dtpRevenueStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpRevenueStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpRevenueStart.Location = new System.Drawing.Point(3, 10);
             this.dtpRevenueStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpRevenueStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpRevenueStart.Name = "dtpRevenueStart";
             this.dtpRevenueStart.Size = new System.Drawing.Size(200, 55);
             this.dtpRevenueStart.TabIndex = 0;
+            this.dtpRevenueStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dtpRevenueStart.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
             // tpbProduct
@@ -397,23 +376,23 @@ namespace frmLogin
             // 
             // chartProduct
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartProduct.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartProduct.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartProduct.Legends.Add(legend3);
             this.chartProduct.Location = new System.Drawing.Point(6, 120);
             this.chartProduct.Name = "chartProduct";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Doanh thu";
-            this.chartProduct.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Doanh thu";
+            this.chartProduct.Series.Add(series3);
             this.chartProduct.Size = new System.Drawing.Size(827, 412);
             this.chartProduct.TabIndex = 3;
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            title2.Name = "Product";
-            title2.Text = "SẢN PHẨM";
-            this.chartProduct.Titles.Add(title2);
+            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            title3.Name = "Product";
+            title3.Text = "SẢN PHẨM";
+            this.chartProduct.Titles.Add(title3);
             // 
             // panel2
             // 
@@ -531,23 +510,23 @@ namespace frmLogin
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(6, 151);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
+            this.chart1.Location = new System.Drawing.Point(11, 151);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Doanh thu";
-            this.chart1.Series.Add(series3);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Doanh thu";
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(827, 381);
             this.chart1.TabIndex = 4;
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            title3.Name = "Product";
-            title3.Text = "HÓA ĐƠN";
-            this.chart1.Titles.Add(title3);
+            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            title4.Name = "Product";
+            title4.Text = "HÓA ĐƠN";
+            this.chart1.Titles.Add(title4);
             // 
             // panel3
             // 
@@ -670,6 +649,14 @@ namespace frmLogin
             this.dtpBillStart.TabIndex = 0;
             this.dtpBillStart.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
+            // rpvRevenue
+            // 
+            this.rpvRevenue.Location = new System.Drawing.Point(6, 88);
+            this.rpvRevenue.Name = "rpvRevenue";
+            this.rpvRevenue.ServerReport.BearerToken = null;
+            this.rpvRevenue.Size = new System.Drawing.Size(827, 449);
+            this.rpvRevenue.TabIndex = 1;
+            // 
             // frmQuanLyAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -685,6 +672,7 @@ namespace frmLogin
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmQuanLyAdmin";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQuanLyAdmin_FormClosing);
+            this.Load += new System.EventHandler(this.frmQuanLyAdmin_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
@@ -693,7 +681,6 @@ namespace frmLogin
             this.panelMain.ResumeLayout(false);
             this.guna2TabControl1.ResumeLayout(false);
             this.tbpRevenue.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tpbProduct.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartProduct)).EndInit();
@@ -724,7 +711,6 @@ namespace frmLogin
         private System.Windows.Forms.Panel panelMain;
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.TabPage tbpRevenue;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartRevenue;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnStatisticalRevenue;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpRevenueEnd;
@@ -749,5 +735,6 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2Button btnbtnStatisticalBill;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpBillEnd;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpBillStart;
+        private Microsoft.Reporting.WinForms.ReportViewer rpvRevenue;
     }
 }

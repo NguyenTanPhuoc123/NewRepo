@@ -32,10 +32,7 @@ namespace BUS
             return BillInfoDAO.Instance.InsertNewBillInfo(billID, productID, price,count, total);
         }
 
-        public bool CheckExistBillInfo(string billID, string productID)
-        {
-            return BillInfoDAO.Instance.CheckExistBillInfo(billID, productID);
-        }
+
         public int DeleteBillInfo(string billID, string productID)
         {
             return BillInfoDAO.Instance.DeleteBillInfo(billID, productID);
@@ -56,10 +53,7 @@ namespace BUS
             return BillInfoDAO.Instance.RestoreAllBillInfo();
         }
 
-        public int UpdateCountBillInfo(int count, string billID, string productID)
-        {
-            return BillInfoDAO.Instance.UpdateCountBillInfo(count, billID, productID);
-        }
+
         public bool CheckProduct(string ProductID,string BillID)
         {
             return BillInfoDAO.Instance.CheckProduct(ProductID,BillID);

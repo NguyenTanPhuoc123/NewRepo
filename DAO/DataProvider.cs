@@ -10,8 +10,8 @@ namespace DAO
     public class DataProvider
     {
        
-        private static string connect = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
-        //private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
+        //private static string connect = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
+        private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
         //private static string connect = @"Data Source=NTP;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
 
        
@@ -66,7 +66,7 @@ namespace DAO
             {
                 cmd.Parameters.AddRange(parameters);
             }
-            rows = cmd.ExecuteNonQuery();
+           rows = cmd.ExecuteNonQuery();
             connection.Close();
             return rows;
         }
