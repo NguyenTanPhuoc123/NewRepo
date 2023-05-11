@@ -97,5 +97,17 @@ namespace BUS
         {
             return ProductDAO.Instance.ProductID(ProductName);
         }
+        public int UpdateProductDelete(string ProductID, int count)
+        {
+            return ProductDAO.Instance.UpdateProductDelete(ProductID, count);
+        }
+        public int UpdateProductCount(string ProductID, string count)
+        {
+            return ProductDAO.Instance.UpdateProductCount(ProductID, count);
+        }
+        public int ProductCount(string ProductName)
+        {
+            return ProductDAO.Instance.ProductCount(ProductName);
+        }
     }
 }

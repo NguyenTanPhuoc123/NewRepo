@@ -275,3 +275,8 @@ D:\đồ án\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.ReportViewer.Common.
 D:\đồ án\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\đồ án\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
 D:\đồ án\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Desktop\NguyenTanPhuoc123\QuanLyCuaHangTimo\frmLogin\bin\Debug\Microsoft.ReportViewer.WinForms.xml

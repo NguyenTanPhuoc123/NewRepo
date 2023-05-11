@@ -46,7 +46,14 @@ namespace DAO
             return row;
         }
 
-
+        public bool CheckExistBillInfo(string billID, string productID)
+        {
+            string query = string.Format("SELECT COUNT(*) FROM CHITIETHOADON WHERE MAHD = '{0}' and MASP = '{1}' ", billID, productID);
+            int count = DataProvider.ExecuteScalarCommand(query, null);
+            if (count > 0)
+                return true;
+            return false;
+        }
         public int DeleteBillInfo(string billID, string productID)
         {
             int row;
@@ -81,6 +88,21 @@ namespace DAO
         {
             int row;
             string query = string.Format("UPDATE CHITIETHOADON SET TrangThai = 1 WHERE MAHD = '{0}' and MASP = '{1}' ", billID, productID);
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
+            return row;
+        }
+
+        public int UpdateCountBillInfo(int count, string billID, string productID)
+        {
+            int row;
+            string query = string.Format("UPDATE CHITIETHOADON SET SOLUONG = {2}  WHERE MAHD = '{0}' and MASP = '{1}' ", billID, productID,count);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);
