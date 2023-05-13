@@ -42,13 +42,10 @@ namespace frmLogin
             this.txtEmployeeName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblMoneyReceive = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.lblMoneyPay = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnOutputBill = new Guna.UI2.WinForms.Guna2Button();
@@ -147,11 +144,6 @@ namespace frmLogin
             resources.ApplyResources(this.lblTotal, "lblTotal");
             this.lblTotal.Name = "lblTotal";
             // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
@@ -162,11 +154,6 @@ namespace frmLogin
             resources.ApplyResources(this.lblMoneyReceive, "lblMoneyReceive");
             this.lblMoneyReceive.Name = "lblMoneyReceive";
             // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
             // label
             // 
             resources.ApplyResources(this.label, "label");
@@ -176,11 +163,6 @@ namespace frmLogin
             // 
             resources.ApplyResources(this.lblMoneyPay, "lblMoneyPay");
             this.lblMoneyPay.Name = "lblMoneyPay";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
             // 
             // label13
             // 
@@ -401,13 +383,10 @@ namespace frmLogin
             this.Controls.Add(this.btnOutputBill);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.lblMoneyPay);
             this.Controls.Add(this.label);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.lblMoneyReceive);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtEmployeeName);
@@ -436,13 +415,10 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2TextBox txtEmployeeName;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblMoneyReceive;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label lblMoneyPay;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2Button btnOutputBill;

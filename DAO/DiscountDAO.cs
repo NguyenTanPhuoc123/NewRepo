@@ -141,14 +141,14 @@ namespace DAO
 
         public Discount GetDiscountForID(string ID)
         {
-            string query = string.Format("Select * from giamgia where magiam='{0}' and trangthai=1", ID);
+            string query = string.Format("Select * from giamgia where magiam='{0}' and trangthai=1 ", ID);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
 
             foreach (DataRow item in data.Rows)
             {
                 return new Discount(item);
             }
-
+            
             return null;
         }
 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using System.Globalization;
 
 namespace frmLogin
 {
@@ -43,8 +44,10 @@ namespace frmLogin
             txtEmployeeName.Text = EmployeeName;
             txtCheckIn.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss");
             lblTotal.Text = Total.ToString();
-            dtgvBill.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(BillID);
             LoadDiscount();
+            cbDiscount.SelectedIndex = 0;
+            dtgvBill.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(BillID);
+            
         }
 
         public void LoadDiscount()
@@ -72,11 +75,13 @@ namespace frmLogin
 
         private void cbDiscount_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string ID = cbDiscount.SelectedValue.ToString();
-            
-            lblMoneyPay.Text = DiscountBUS.Instance.GetDiscountForID(ID).Price.ToString();
-            //Total = Total - float.Parse(discount.Price.ToString());
-            
+            CultureInfo culture = new CultureInfo("vi-VN");
+            string id = cbDiscount.SelectedValue.ToString();
+            float price = 0;
+            if (DiscountBUS.Instance.GetDiscountForID(id) != null)
+                price = DiscountBUS.Instance.GetDiscountForID(id).Price; 
+            lblMoneyPay.Text = price.ToString("c",culture);
+
         }
     }
 }
