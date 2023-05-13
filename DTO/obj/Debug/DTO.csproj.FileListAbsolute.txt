@@ -69,3 +69,4 @@ D:\đồ án\QuanLyCuaHangTimo\DTO\bin\Debug\DTO.pdb
 D:\đồ án\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\đồ án\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.dll
 D:\đồ án\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.pdb
+D:\đồ án\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache

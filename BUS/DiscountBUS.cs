@@ -32,9 +32,9 @@ namespace BUS
             return DiscountDAO.Instance.AddNewDiscount(discountName, startDay, endDay, price);
         }
 
-        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price)
+        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price, int available)
         {
-            return DiscountDAO.Instance.EditDiscount(discountID, discountName, startDay, endDay, price);
+            return DiscountDAO.Instance.EditDiscount(discountID, discountName, startDay, endDay, price, available);
         }
 
         public int DeleteDiscount(string discountID)

@@ -14,21 +14,24 @@ namespace DTO
         private string m_StartDay;
         private string m_EndDay;
         private float m_Price;
+        private bool m_Available;
+       
+        public string DiscountID { get => m_DiscountID; set => m_DiscountID = value; }
+        public string DiscountName { get => m_DiscountName; set => m_DiscountName = value; }
+        public string StartDay { get => m_StartDay; set => m_StartDay = value; }
+        public string EndDay { get => m_EndDay; set => m_EndDay = value; }
+        public float Price { get => m_Price; set => m_Price = value; }
+        public bool Available { get => m_Available; set => m_Available = value; }
 
-        public Discount(string discountID, string discountName, string startDay, string endDay, float price)
+        public Discount(string discountID, string discountName, string startDay, string endDay, float price, bool available)
         {
             m_DiscountID = discountID;
             m_DiscountName = discountName;
             m_StartDay = startDay;
             m_EndDay = endDay;
             m_Price = price;
+            m_Available = available;
         }
-
-        public string DiscountID { get => m_DiscountID; set => m_DiscountID = value; }
-        public string DiscountName { get => m_DiscountName; set => m_DiscountName = value; }
-        public string StartDay { get => m_StartDay; set => m_StartDay = value; }
-        public string EndDay { get => m_EndDay; set => m_EndDay = value; }
-        public float Price { get => m_Price; set => m_Price = value; }
 
         public Discount(DataRow row)
         {
@@ -37,7 +40,9 @@ namespace DTO
             this.m_Price = float.Parse(row["DONGIA"].ToString());
             this.m_StartDay = row["NgayBatDau"].ToString();
             this.m_EndDay = row["NgayKetThuc"].ToString();
+            this.m_Available = (bool) row["HoatDong"];
         }
-      
+
+        
     } 
 }

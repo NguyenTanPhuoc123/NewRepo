@@ -64,10 +64,10 @@ namespace DAO
             return row;
         }
 
-        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price)
+        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price, int available)
         {
             int row;
-            string query = string.Format("UPDATE GIAMGIA SET TENGIAMGIA = N'{0}' , NgayBatDau = '{1}' , NgayKetThuc = '{2}' , DONGIA = {3} WHERE MAGIAM = '{4}' ", discountName, startDay, endDay, price, discountID);
+            string query = string.Format("UPDATE GIAMGIA SET TENGIAMGIA = N'{0}' , NgayBatDau = '{1}' , NgayKetThuc = '{2}' , DONGIA = {3} , Hoatdong = {5} WHERE MAGIAM = '{4}' ", discountName, startDay, endDay, price, discountID, available);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);

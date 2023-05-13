@@ -82,7 +82,7 @@ namespace frmLogin
                 numQuantity.Value = 1;
             }
             else
-                MessageBox.Show("So luong san pham da chon khong du", "Thong bao");
+                MessageBox.Show("Số lượng món không đủ", "Thông báo");
         }
 
         private void lstvListDish_SelectedIndexChanged(object sender, EventArgs e)

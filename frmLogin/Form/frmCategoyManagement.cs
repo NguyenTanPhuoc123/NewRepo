@@ -424,6 +424,7 @@ namespace frmLogin
             txtDiscountPrice.Clear();
             dtpDateStart.Value = DateTime.Now;
             dtpDateEnd.Value = DateTime.Now;
+            cbAvailableDiscount.SelectedIndex = 0;
             btnSaveDiscount.Enabled = false;
             btnEditDiscount.Enabled = true;
             btnDeleteDiscount.Enabled = true;
@@ -449,7 +450,8 @@ namespace frmLogin
                 txtDiscountPrice.Text = dtgvListDiscount.SelectedRows[0].Cells[2].Value.ToString();
                 dtpDateStart.Text = dtgvListDiscount.SelectedRows[0].Cells[3].Value.ToString();
                 dtpDateEnd.Text = dtgvListDiscount.SelectedRows[0].Cells[4].Value.ToString();
-
+                bool available = bool.Parse(dtgvListDiscount.SelectedRows[0].Cells[5].Value.ToString());
+                cbAvailableDiscount.SelectedIndex = available == true ? 0 : 1;
                 btnSaveDiscount.Enabled = false;
                 btnEditDiscount.Enabled = true;
                 btnDeleteDiscount.Enabled = true;
@@ -495,16 +497,18 @@ namespace frmLogin
                 float discountPrice = float.Parse(txtDiscountPrice.Text);
                 string startDay = dtpDateStart.Value.ToString("yyyy/MM/dd");
                 string endDay = dtpDateEnd.Value.ToString("yyyy/MM/dd");
+                int available = cbAvailableDiscount.SelectedIndex == 0 ? 1 : 0;
 
-                int count = DiscountBUS.Instance.EditDiscount(discountID, discountName, startDay, endDay, discountPrice);
+                int count = DiscountBUS.Instance.EditDiscount(discountID, discountName, startDay, endDay, discountPrice, available);
                 if (count > 0)
                 {
                     MessageBox.Show("Sửa giảm giá thành công", "Sửa giảm giá", MessageBoxButtons.OK);
                     LoadListDiscount();
                 }
                 else
-                    MessageBox.Show("Sửa giảm giá hất bại", "Sửa giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Sửa giảm giá thất bại", "Sửa giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
         }
 
         private void btnDeleteDiscount_Click(object sender, EventArgs e)
