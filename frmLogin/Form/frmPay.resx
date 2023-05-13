@@ -117,11 +117,63 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;btnExitFomPay.Name" xml:space="preserve">
+    <value>btnExitFomPay</value>
+  </data>
+  <data name="&gt;&gt;btnExitFomPay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExitFomPay.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnExitFomPay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1032, 125</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
   <data name="btnExitFomPay.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnExitFomPay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -133,15 +185,14 @@
 </value>
   </data>
   <data name="btnExitFomPay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>849, 0</value>
+    <value>955, 0</value>
   </data>
   <data name="btnExitFomPay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="btnExitFomPay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 46</value>
+    <value>78, 58</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnExitFomPay.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -164,10 +215,10 @@
     <value>Microsoft Sans Serif, 28.2pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>269, 18</value>
+    <value>303, 22</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>346, 55</value>
+    <value>407, 65</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -187,41 +238,14 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>917, 100</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 121</value>
+    <value>606, 151</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 17</value>
+    <value>107, 20</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -245,13 +269,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="txtEmployeeID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>651, 107</value>
+    <value>732, 134</value>
   </data>
   <data name="txtEmployeeID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>3, 5, 3, 5</value>
   </data>
   <data name="txtEmployeeID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 39</value>
+    <value>287, 49</value>
   </data>
   <data name="txtEmployeeID.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -272,10 +296,10 @@
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 174</value>
+    <value>606, 218</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 17</value>
+    <value>112, 20</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -299,13 +323,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="txtEmployeeName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>651, 155</value>
+    <value>732, 194</value>
   </data>
   <data name="txtEmployeeName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>3, 5, 3, 5</value>
   </data>
   <data name="txtEmployeeName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 39</value>
+    <value>287, 49</value>
   </data>
   <data name="txtEmployeeName.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -326,10 +350,10 @@
     <value>True</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>715, 473</value>
+    <value>804, 591</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 17</value>
+    <value>79, 20</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -353,10 +377,10 @@
     <value>True</value>
   </data>
   <data name="lblTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>793, 473</value>
+    <value>892, 591</value>
   </data>
   <data name="lblTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 17</value>
+    <value>18, 20</value>
   </data>
   <data name="lblTotal.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -380,10 +404,10 @@
     <value>True</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>695, 511</value>
+    <value>782, 639</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 17</value>
+    <value>103, 20</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -407,10 +431,10 @@
     <value>True</value>
   </data>
   <data name="lblMoneyReceive.Location" type="System.Drawing.Point, System.Drawing">
-    <value>793, 511</value>
+    <value>892, 639</value>
   </data>
   <data name="lblMoneyReceive.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 17</value>
+    <value>18, 20</value>
   </data>
   <data name="lblMoneyReceive.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -434,10 +458,10 @@
     <value>True</value>
   </data>
   <data name="label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>706, 545</value>
+    <value>794, 681</value>
   </data>
   <data name="label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 17</value>
+    <value>90, 20</value>
   </data>
   <data name="label.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -461,10 +485,10 @@
     <value>True</value>
   </data>
   <data name="lblMoneyPay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>793, 545</value>
+    <value>892, 681</value>
   </data>
   <data name="lblMoneyPay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 17</value>
+    <value>18, 20</value>
   </data>
   <data name="lblMoneyPay.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -488,10 +512,10 @@
     <value>True</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 473</value>
+    <value>24, 578</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 17</value>
+    <value>180, 20</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -511,47 +535,53 @@
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="guna2ComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="cbPay.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt</value>
   </data>
-  <data name="guna2ComboBox1.ItemHeight" type="System.Int32, mscorlib">
+  <data name="cbPay.ItemHeight" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
-  <data name="guna2ComboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 492</value>
+  <data name="cbPay.Items" xml:space="preserve">
+    <value>Tiền mặt</value>
   </data>
-  <data name="guna2ComboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cbPay.Items1" xml:space="preserve">
+    <value>MoMo</value>
+  </data>
+  <data name="cbPay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 603</value>
+  </data>
+  <data name="cbPay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="guna2ComboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 36</value>
+  <data name="cbPay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 36</value>
   </data>
-  <data name="guna2ComboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="cbPay.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="&gt;&gt;guna2ComboBox1.Name" xml:space="preserve">
-    <value>guna2ComboBox1</value>
+  <data name="&gt;&gt;cbPay.Name" xml:space="preserve">
+    <value>cbPay</value>
   </data>
-  <data name="&gt;&gt;guna2ComboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;cbPay.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;guna2ComboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cbPay.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;guna2ComboBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cbPay.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="btnOutputBill.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="btnOutputBill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>676, 590</value>
+    <value>760, 738</value>
   </data>
   <data name="btnOutputBill.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="btnOutputBill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 44</value>
+    <value>202, 55</value>
   </data>
   <data name="btnOutputBill.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -575,16 +605,19 @@
     <value>True</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 473</value>
+    <value>329, 578</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 17</value>
+    <value>168, 20</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
     <value>Nhập số tiền khách trả</value>
+  </data>
+  <data name="label15.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
@@ -602,16 +635,19 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="txtMoneyPay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 494</value>
+    <value>333, 603</value>
   </data>
   <data name="txtMoneyPay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>3, 5, 3, 5</value>
   </data>
   <data name="txtMoneyPay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 43</value>
+    <value>258, 54</value>
   </data>
   <data name="txtMoneyPay.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
+  </data>
+  <data name="txtMoneyPay.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;txtMoneyPay.Name" xml:space="preserve">
     <value>txtMoneyPay</value>
@@ -689,7 +725,7 @@
     <value>6</value>
   </data>
   <data name="dtgvBill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 201</value>
+    <value>17, 251</value>
   </data>
   <data name="dtgvBill.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -698,7 +734,7 @@
     <value>51</value>
   </data>
   <data name="dtgvBill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>891, 229</value>
+    <value>1002, 286</value>
   </data>
   <data name="dtgvBill.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -722,13 +758,13 @@
     <value>30</value>
   </data>
   <data name="cbDiscount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 590</value>
+    <value>28, 738</value>
   </data>
   <data name="cbDiscount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="cbDiscount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 36</value>
+    <value>224, 36</value>
   </data>
   <data name="cbDiscount.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -752,10 +788,10 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 570</value>
+    <value>24, 713</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 17</value>
+    <value>94, 20</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -779,13 +815,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="txtCheckIn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 155</value>
+    <value>163, 194</value>
   </data>
   <data name="txtCheckIn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>3, 5, 3, 5</value>
   </data>
   <data name="txtCheckIn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 39</value>
+    <value>287, 49</value>
   </data>
   <data name="txtCheckIn.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -809,10 +845,10 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 174</value>
+    <value>15, 218</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 17</value>
+    <value>136, 20</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -836,13 +872,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="txtBillID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 103</value>
+    <value>163, 129</value>
   </data>
   <data name="txtBillID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>3, 5, 3, 5</value>
   </data>
   <data name="txtBillID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 43</value>
+    <value>287, 54</value>
   </data>
   <data name="txtBillID.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -866,10 +902,10 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 121</value>
+    <value>55, 151</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 17</value>
+    <value>97, 20</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -893,10 +929,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>917, 703</value>
+    <value>1032, 879</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>

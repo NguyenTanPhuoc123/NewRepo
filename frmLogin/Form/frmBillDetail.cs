@@ -33,13 +33,17 @@ namespace frmLogin
 
         private void btnBillDetailDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin();
+            frmRecycleBin frm = new frmRecycleBin(this);
             frm.Show();
         }
 
         private void frmBillDetail_Load(object sender, EventArgs e)
         {
-            dtgvBillDetail.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(getBill.ID);            
+            LoadBillDetail();
+        }
+        public void LoadBillDetail()
+        {
+            dtgvBillDetail.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(getBill.ID);
         }
 
         private void btnDeleteBillDetail_Click(object sender, EventArgs e)

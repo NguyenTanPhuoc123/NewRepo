@@ -79,7 +79,7 @@ namespace BUS
         }
         public int RestoreProduct(string PricductID)
         {
-            return ProductBUS.Instance.RestoreProduct(PricductID);
+            return ProductDAO.Instance.RestoreProduct(PricductID);
         }
         public int RestoreProductAll()
         {

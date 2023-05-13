@@ -38,7 +38,7 @@ namespace frmLogin
         #region Events
         private void btnTableDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin();
+            frmRecycleBin frm = new frmRecycleBin(this);
             frm.Show();
         }
 
@@ -66,9 +66,13 @@ namespace frmLogin
             cbLocation.DataSource = LocationBUS.Instance.GetListLocation();
             cbLocation.ValueMember = "MaViTri";
             cbLocation.DisplayMember = "TenViTri";
-            dtgvListTable.DataSource = TableMenuBUS.Instance.GetListTableMenu();
             cbFillTable.SelectedIndex = 0;
             cbSortTable.SelectedIndex = 0;
+            LoadTable();
+        }
+        public void LoadTable()
+        {
+            dtgvListTable.DataSource = TableMenuBUS.Instance.GetListTableMenu();
         }
 
         private void dtgvListTable_CellContentClick(object sender, DataGridViewCellEventArgs e)

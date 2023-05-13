@@ -23,13 +23,13 @@ namespace frmLogin
 
         private void btnEmployeeDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin();
+            frmRecycleBin frm = new frmRecycleBin(this);
             frm.Show();
         }
 
         private void frmEmployeeManager_Load(object sender, EventArgs e)
         {
-            dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
+            LoadEmployee();
             cbPosition.DataSource = PositionBUS.Instance.GetListPosition();
             cbPosition.DisplayMember = "TENCHUCVU";
             cbPosition.ValueMember = "MACHUCVU";
@@ -40,7 +40,10 @@ namespace frmLogin
             radMale.Checked = true;
             LoadCbFill();
         }
-
+        public void LoadEmployee()
+        {
+            dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
+        }
         private void dtgvListEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dtgvListEmployee.SelectedRows.Count > 0)

@@ -83,5 +83,20 @@ namespace frmLogin
             lblMoneyPay.Text = price.ToString("c",culture);
 
         }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbPay.SelectedIndex == 0)
+            {
+                label15.Visible = true;
+                txtMoneyPay.Visible = true;
+            }
+            else
+            {
+                label15.Visible = false;
+                txtMoneyPay.Visible = false;
+            }
+
+        }
     }
 }

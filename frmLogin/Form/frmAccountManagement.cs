@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +23,7 @@ namespace frmLogin
 
         private void frmAccountManagement_Load(object sender, EventArgs e)
         {
-            dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
+            LoadAccount();
             cbTypeAccount.DataSource = TypeAccountBUS.Instance.GetListTypeAccount();
             cbTypeAccount.DisplayMember = "TenLoai";
             cbTypeAccount.ValueMember = "MaLoai";
@@ -37,10 +36,13 @@ namespace frmLogin
             btnDeleteAccount.Enabled = true;
             btnEditAccount.Enabled = true;
         }
-
+        public void LoadAccount()
+        {
+            dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
+        }
         private void btnAccountDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin();
+            frmRecycleBin frm = new frmRecycleBin(this);
             frm.Show();
 
         }

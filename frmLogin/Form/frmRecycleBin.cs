@@ -15,18 +15,45 @@ namespace frmLogin
 {
     public partial class frmRecycleBin : Form
     {
-        public frmRecycleBin()
+        frmProductManagement frmProduct;
+        frmAccountManagement frmAccount;
+        frmTableManagement frmTable;
+        frmEmployeeManager frmEmployee;
+        frmBillDetail frmBill;
+        public frmRecycleBin(frmProductManagement form)
         {
             InitializeComponent();
+            frmProduct = form;
+        }
+        public frmRecycleBin(frmTableManagement form)
+        {
+            InitializeComponent();
+            frmTable = form;
+        } 
+        public frmRecycleBin(frmEmployeeManager form)
+        {
+            InitializeComponent();
+            frmEmployee = form;
+        } 
+        public frmRecycleBin(frmBillDetail form)
+        {
+            InitializeComponent();
+            frmBill = form;
+        }
+
+        public frmRecycleBin(frmAccountManagement form)
+        {
+            InitializeComponent();
+            frmAccount = form;
+        }
+
+        private void frmRecycleBin_Load(object sender, EventArgs e)
+        {
             dtgvListAccountDeleted.AutoGenerateColumns = false;
             dtgvListEmployeeDeleted.AutoGenerateColumns = false;
             dtgvListProductDeleted.AutoGenerateColumns = false;
             dtgvListTableFoodDeleted.AutoGenerateColumns = false;
             dtgvListBillDetailDeleted.AutoGenerateColumns = false;
-        }
-
-        private void frmRecycleBin_Load(object sender, EventArgs e)
-        {
             LoadAccountDeleted();
             LoadTableFoodDeleted();
             LoadProductDeleted();
@@ -73,6 +100,7 @@ namespace frmLogin
                     MessageBox.Show(ex.Message);
                 }
                 LoadTableFoodDeleted();
+                frmTable.LoadTable();
             }
         }
 
@@ -93,6 +121,7 @@ namespace frmLogin
                     MessageBox.Show(ex.Message);
                 }
                 LoadTableFoodDeleted();
+                frmTable.LoadTable();
             }
         }
         #endregion
@@ -110,7 +139,7 @@ namespace frmLogin
                     MessageBox.Show("Khôi phục thất bại", "Khôi phục tài khoản", MessageBoxButtons.OK);
             }
             frmRecycleBin_Load(sender, e);
-
+            frmAccount.LoadAccount();
         }
 
         private void btnRestoreAllAccount_Click(object sender, EventArgs e)
@@ -123,6 +152,8 @@ namespace frmLogin
                 else
                     MessageBox.Show("Khôi phục thất bại", "Khôi phục tài khoản", MessageBoxButtons.OK);
             }
+            frmRecycleBin_Load(sender, e);
+            frmAccount.LoadAccount();
         }
 
         public void LoadAccountDeleted()
@@ -167,19 +198,27 @@ namespace frmLogin
             if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int cout = ProductBUS.Instance.RestoreProduct(txtProductID.Text);
-                if(cout>0)
-                    MessageBox.Show("Khôi phục thành công", "Thông Báo",MessageBoxButtons.OK);
+                if (cout > 0)
+                {
+                    MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
+                    LoadProductDeleted();
+                    frmProduct.LoadProduct();
+                }
                 else
-                    MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         private void btnRestoreAllProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("BBạn có muốn khôi phục tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int cout = ProductBUS.Instance.RestoreProductAll();
                 if (cout > 0)
+                {
                     MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
+                    LoadProductDeleted();
+                    frmProduct.LoadProduct();
+                }
                 else
                     MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -207,6 +246,7 @@ namespace frmLogin
                     MessageBox.Show("Khôi phục thất bại", "Khôi phục nhân viên", MessageBoxButtons.OK);
             }
             frmRecycleBin_Load(sender, e);
+            frmEmployee.LoadEmployee();
         }
 
         private void btnRestoreAllEmployee_Click(object sender, EventArgs e)
@@ -220,6 +260,7 @@ namespace frmLogin
                     MessageBox.Show("Khôi phục thất bại", "Khôi phục nhân viên", MessageBoxButtons.OK);
             }
             frmRecycleBin_Load(sender, e);
+            frmEmployee.LoadEmployee();
         }
 
         private void dtgvListEmployeeDeleted_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -283,6 +324,7 @@ namespace frmLogin
                 {
                     MessageBox.Show("Khôi phục chi tiết hóa đơn thành công", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK);
                     LoadBillInfoDeleted();
+                    frmBill.LoadBillDetail();
                 }
                 else
                     MessageBox.Show("Khôi phục chi tiết hóa đơn thất bại", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -302,6 +344,7 @@ namespace frmLogin
                 {
                     MessageBox.Show("Khôi phục tất cả chi tiết hóa đơn thành công", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK);
                     LoadBillInfoDeleted();
+                    frmBill.LoadBillDetail();
                 }
                 else
                     MessageBox.Show("Khôi phục tất cả chi tiết hóa đơn thất bại", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
