@@ -49,9 +49,10 @@ namespace frmLogin
 
         public void LoadDiscount()
         {
-            cbDiscount.DataSource = DiscountBUS.Instance.GetListDiscount();
+            cbDiscount.DataSource = DiscountBUS.Instance.GetListDiscountAvailable();
             cbDiscount.DisplayMember = "DiscountName";
             cbDiscount.ValueMember = "DiscountID";
+
         }
 
         private void btnOutputBill_Click(object sender, EventArgs e)
@@ -67,6 +68,15 @@ namespace frmLogin
                 MessageBox.Show("Thanh toán thất bại");
             }
             frmPay_Load(sender, e);
+        }
+
+        private void cbDiscount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string ID = cbDiscount.SelectedValue.ToString();
+            
+            lblMoneyPay.Text = DiscountBUS.Instance.GetDiscountForID(ID).Price.ToString();
+            //Total = Total - float.Parse(discount.Price.ToString());
+            
         }
     }
 }

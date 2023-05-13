@@ -334,6 +334,7 @@ namespace frmLogin
             resources.ApplyResources(this.cbDiscount, "cbDiscount");
             this.cbDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbDiscount.Name = "cbDiscount";
+            this.cbDiscount.SelectedIndexChanged += new System.EventHandler(this.cbDiscount_SelectedIndexChanged);
             // 
             // label2
             // 
