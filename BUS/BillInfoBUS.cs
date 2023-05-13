@@ -70,5 +70,9 @@ namespace BUS
         {
             BillInfoDAO.Instance.UpdateProduct(soluong, ProductID, mahd, thanhtien);
         }
+        public bool CheckProduct(string ProductID)
+        {
+            return BillInfoDAO.Instance.CheckProduct(ProductID);
+        }
     }
 }

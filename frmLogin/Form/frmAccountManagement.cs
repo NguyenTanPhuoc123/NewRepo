@@ -42,7 +42,7 @@ namespace frmLogin
         }
         private void btnAccountDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin(this);
+            frmRecycleBin frm = new frmRecycleBin();
             frm.Show();
 
         }

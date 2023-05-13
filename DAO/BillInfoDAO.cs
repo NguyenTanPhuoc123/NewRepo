@@ -129,5 +129,11 @@ namespace DAO
             string query = string.Format("UPDATE CHITIETHOADON SET SOLUONG = {0},THANHTIEN ={1},TRANGTHAI=1 where MASP = '{2}' AND MAHD = '{3}'", soluong, thanhtien, ProductID, mahd);
             DataProvider.ExecuteInsertCommand(query, null);
         }
+        public bool CheckProduct(string ProductID)
+        {
+            string query = string.Format("Select count(*) from Chitiethoadon where MASP = '{0}'", ProductID);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return (data > 0 ? false : true);
+        }
     }
 }

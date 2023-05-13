@@ -38,7 +38,7 @@ namespace frmLogin
         #region Events
         private void btnTableDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin(this);
+            frmRecycleBin frm = new frmRecycleBin();
             frm.Show();
         }
 

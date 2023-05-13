@@ -33,7 +33,7 @@ namespace frmLogin
 
         private void btnBillDetailDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin(this);
+            frmRecycleBin frm = new frmRecycleBin();
             frm.Show();
         }
 

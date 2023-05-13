@@ -29,7 +29,7 @@ namespace frmLogin
 
         private void btnProductDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin(this);
+            frmRecycleBin frm = new frmRecycleBin();
             frm.Show();
 
         }
@@ -105,16 +105,25 @@ namespace frmLogin
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
+
             if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
-                int data = ProductBUS.Instance.DeleteProduct(txtProductID.Text);
-                if(data>0)
-                    MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK);
+                if (BillInfoBUS.Instance.CheckProduct(txtProductID.Text))
+                {
+                    int data = ProductBUS.Instance.DeleteProduct(txtProductID.Text);
+                    if (data > 0)
+                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK);
+                    else
+                        MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    frmProductManagement_Load(sender, e);
+                    LoadProduct();
+                    Resettext();
+                }
                 else
-                    MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK);
-                frmProductManagement_Load(sender, e);
-                LoadProduct();
-                Resettext();
+                {
+                    MessageBox.Show("Sản phẩm đã có trong hóa đơn không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
             }
         }
         public void Resettext()
