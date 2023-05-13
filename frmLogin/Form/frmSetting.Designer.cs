@@ -70,8 +70,6 @@ namespace frmLogin
             this.txtEmployeeFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.grpDisplay = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.cbSizeDisplay = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.cbLanguage = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.grpChangePassword.SuspendLayout();
@@ -133,7 +131,7 @@ namespace frmLogin
             this.txtOldPassword.ForeColor = System.Drawing.Color.Black;
             this.txtOldPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtOldPassword.Location = new System.Drawing.Point(245, 70);
-            this.txtOldPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOldPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtOldPassword.Name = "txtOldPassword";
             this.txtOldPassword.PasswordChar = '\0';
             this.txtOldPassword.PlaceholderText = "";
@@ -181,7 +179,7 @@ namespace frmLogin
             this.txtRepeatPassword.ForeColor = System.Drawing.Color.Black;
             this.txtRepeatPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtRepeatPassword.Location = new System.Drawing.Point(245, 210);
-            this.txtRepeatPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRepeatPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtRepeatPassword.Name = "txtRepeatPassword";
             this.txtRepeatPassword.PasswordChar = '\0';
             this.txtRepeatPassword.PlaceholderText = "";
@@ -213,7 +211,7 @@ namespace frmLogin
             this.txtNewPassword.ForeColor = System.Drawing.Color.Black;
             this.txtNewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNewPassword.Location = new System.Drawing.Point(245, 141);
-            this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '\0';
             this.txtNewPassword.PlaceholderText = "";
@@ -297,7 +295,7 @@ namespace frmLogin
             this.txtDisplayName.ForeColor = System.Drawing.Color.Black;
             this.txtDisplayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDisplayName.Location = new System.Drawing.Point(389, 103);
-            this.txtDisplayName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDisplayName.Margin = new System.Windows.Forms.Padding(4);
             this.txtDisplayName.Name = "txtDisplayName";
             this.txtDisplayName.PasswordChar = '\0';
             this.txtDisplayName.PlaceholderText = "";
@@ -319,7 +317,7 @@ namespace frmLogin
             this.txtUserName.ForeColor = System.Drawing.Color.Black;
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.Location = new System.Drawing.Point(389, 154);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.PlaceholderText = "";
@@ -480,7 +478,7 @@ namespace frmLogin
             this.txtAddress.ForeColor = System.Drawing.Color.Black;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.Location = new System.Drawing.Point(148, 399);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
@@ -514,7 +512,7 @@ namespace frmLogin
             this.txtPosition.ForeColor = System.Drawing.Color.Black;
             this.txtPosition.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPosition.Location = new System.Drawing.Point(148, 203);
-            this.txtPosition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPosition.Margin = new System.Windows.Forms.Padding(4);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.PasswordChar = '\0';
             this.txtPosition.PlaceholderText = "";
@@ -571,7 +569,7 @@ namespace frmLogin
             this.txtNumberPhone.ForeColor = System.Drawing.Color.Black;
             this.txtNumberPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNumberPhone.Location = new System.Drawing.Point(148, 154);
-            this.txtNumberPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumberPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumberPhone.Name = "txtNumberPhone";
             this.txtNumberPhone.PasswordChar = '\0';
             this.txtNumberPhone.PlaceholderText = "";
@@ -604,7 +602,7 @@ namespace frmLogin
             this.txtEmployeeID.ForeColor = System.Drawing.Color.Black;
             this.txtEmployeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeID.Location = new System.Drawing.Point(148, 56);
-            this.txtEmployeeID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmployeeID.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.PasswordChar = '\0';
             this.txtEmployeeID.PlaceholderText = "";
@@ -677,7 +675,7 @@ namespace frmLogin
             this.txtEmployeeFullName.ForeColor = System.Drawing.Color.Black;
             this.txtEmployeeFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeFullName.Location = new System.Drawing.Point(148, 105);
-            this.txtEmployeeFullName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmployeeFullName.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployeeFullName.Name = "txtEmployeeFullName";
             this.txtEmployeeFullName.PasswordChar = '\0';
             this.txtEmployeeFullName.PlaceholderText = "";
@@ -698,8 +696,6 @@ namespace frmLogin
             // 
             // grpDisplay
             // 
-            this.grpDisplay.Controls.Add(this.cbSizeDisplay);
-            this.grpDisplay.Controls.Add(this.label10);
             this.grpDisplay.Controls.Add(this.cbLanguage);
             this.grpDisplay.Controls.Add(this.label8);
             this.grpDisplay.CustomBorderColor = System.Drawing.Color.Black;
@@ -711,35 +707,6 @@ namespace frmLogin
             this.grpDisplay.Size = new System.Drawing.Size(705, 163);
             this.grpDisplay.TabIndex = 8;
             this.grpDisplay.Text = "Cài đặt hiển thị";
-            // 
-            // cbSizeDisplay
-            // 
-            this.cbSizeDisplay.BackColor = System.Drawing.Color.Transparent;
-            this.cbSizeDisplay.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbSizeDisplay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbSizeDisplay.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbSizeDisplay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbSizeDisplay.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbSizeDisplay.ForeColor = System.Drawing.Color.Black;
-            this.cbSizeDisplay.ItemHeight = 30;
-            this.cbSizeDisplay.Items.AddRange(new object[] {
-            "Lớn",
-            "Vừa",
-            "Nhỏ"});
-            this.cbSizeDisplay.Location = new System.Drawing.Point(349, 77);
-            this.cbSizeDisplay.Name = "cbSizeDisplay";
-            this.cbSizeDisplay.Size = new System.Drawing.Size(172, 36);
-            this.cbSizeDisplay.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(345, 54);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 20);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Kích thước";
             // 
             // cbLanguage
             // 
@@ -844,8 +811,6 @@ namespace frmLogin
         private System.Windows.Forms.RadioButton radMale;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2GroupBox grpDisplay;
-        private Guna.UI2.WinForms.Guna2ComboBox cbSizeDisplay;
-        private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2ComboBox cbLanguage;
         private System.Windows.Forms.Label label8;
     }

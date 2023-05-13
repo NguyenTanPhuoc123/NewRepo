@@ -23,7 +23,7 @@ namespace frmLogin
 
             grpChangePassword.Visible = false;
             cbLanguage.SelectedIndex = 0;
-            cbSizeDisplay.SelectedIndex = 1;
+            
         }
 
     

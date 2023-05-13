@@ -36,13 +36,22 @@ namespace frmLogin
 
         private void btnExitFormSelectDish_Click(object sender, EventArgs e)
         {
+           
+            
+                    
             this.Close();
+        }
+
+        public void CloseForm(object sender, EventArgs e)
+        {
+           
         }
 
         #region TableFood 
         void LoadTableFoodDeleted()
         {
             dtgvListTableFoodDeleted.DataSource = TableMenuBUS.Instance.GetListTableMenuDeleted();
+            frmTableManagement.ActiveForm.Load += new EventHandler(CloseForm);
         }
 
         private void dtgvListTableFoodDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -128,6 +137,8 @@ namespace frmLogin
         public void LoadAccountDeleted()
         {
             dtgvListAccountDeleted.DataSource = AccountBUS.Instance.GetListAccountDeleted();
+            frmAccountManagement.ActiveForm.Load += new EventHandler(CloseForm);
+
         }
 
         private void dtgvListAccountDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -148,6 +159,7 @@ namespace frmLogin
         private void LoadProductDeleted()
         {
             dtgvListProductDeleted.DataSource = ProductBUS.Instance.GetProductDeleted();
+            frmProductManagement.ActiveForm.Load += new EventHandler(CloseForm);
         }
         private void dtgvListProductDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -197,7 +209,7 @@ namespace frmLogin
         #region Employee
         public void LoadEmployeeDeleted()
         {
-            
+            frmEmployeeManager.ActiveForm.Load += new EventHandler(CloseForm);
             dtgvListEmployeeDeleted.DataSource = EmployeeMenuBUS.Instance.GetListEmployeeDeleted();
             cbPosition.DataSource = PositionBUS.Instance.GetListPosition();
             cbPosition.DisplayMember = "TENCHUCVU";
@@ -256,6 +268,7 @@ namespace frmLogin
         public void LoadBillInfoDeleted()
         {
             dtgvListBillDetailDeleted.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenuDeleted();
+            frmBillDetail.ActiveForm.Load += new EventHandler(CloseForm);
             ResetBillInfo();
         }
 

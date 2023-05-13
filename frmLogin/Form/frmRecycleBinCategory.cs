@@ -29,7 +29,6 @@ namespace frmLogin
         private void frmRecycleBinCategory_Load(object sender, EventArgs e)
         {
             LoadLocationDeleted();
-
             LoadTypeAccountDeleted();
             LoadPositionDeleted();
             LoadDiscountDeleted();
@@ -40,10 +39,16 @@ namespace frmLogin
             this.Close();
         }
 
+        public void CloseForm(object sender, EventArgs e)
+        {
+
+        }
+
         #region Location
         private void tpLocationDeleted_Click(object sender, EventArgs e)
         {
             LoadLocationDeleted();
+            frmCategoyManagement.ActiveForm.Load += new EventHandler(CloseForm);
         }
         public void LoadLocationDeleted()
         {
@@ -100,6 +105,7 @@ namespace frmLogin
         private void LoadTypeProductDeleted()
         {
             dtgvListTypeProductDeleted.DataSource = CategoryFoodBUS.Instance.GetCategoryFoodsDeleted();
+            frmCategoyManagement.ActiveForm.Load += new EventHandler(CloseForm);
         }
         private void dtgvListTypeProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -138,6 +144,7 @@ namespace frmLogin
         #region TypeAccount
         private void LoadTypeAccountDeleted()
         {
+            frmCategoyManagement.ActiveForm.Load += new EventHandler(CloseForm);
             dtgvListTypeAccountDeleted.DataSource = TypeAccountBUS.Instance.GetListTypeAccountDelete();
         }
 
@@ -175,6 +182,7 @@ namespace frmLogin
         public void LoadPositionDeleted()
         {
             dtgvListPositionDeleted.DataSource = PositionBUS.Instance.GetListPositionDeleted();
+            frmCategoyManagement.ActiveForm.Load += new EventHandler(CloseForm);
         }
 
         private void RestorePosition_Click(object sender, EventArgs e)
@@ -210,6 +218,7 @@ namespace frmLogin
         public void LoadDiscountDeleted()
         {
             dtgvListDiscountDeleted.DataSource = DiscountBUS.Instance.GetListDiscountDeleted();
+            frmCategoyManagement.ActiveForm.Load += new EventHandler(CloseForm);
             ResetInfoDiscount();
         }
 
