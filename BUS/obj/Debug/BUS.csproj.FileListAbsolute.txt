@@ -130,3 +130,7 @@ D:\đồ án\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 D:\đồ án\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\đồ án\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.dll
 D:\đồ án\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.pdb
+D:\DOANWINFORM\BUS\bin\Debug\zxing.dll
+D:\DOANWINFORM\BUS\bin\Debug\zxing.presentation.dll
+D:\DOANWINFORM\BUS\bin\Debug\zxing.xml
+D:\DOANWINFORM\BUS\bin\Debug\zxing.presentation.xml

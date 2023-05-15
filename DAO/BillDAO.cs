@@ -106,9 +106,9 @@ namespace DAO
             return (row > 0 ? true : false);
         }
 
-        public int OutputBill(string BillID, float Total)
+        public int OutputBill(string BillID, float Total, string DiscountID)
         {
-            string query = string.Format("update hoadon set ngayxuathd=getdate(), trangthaithanhtoan = 1, tongtien={0} where mahd='{1}'", Total, BillID);
+            string query = string.Format("update hoadon set ngayxuathd=getdate(), trangthaithanhtoan = 1, tongtien={0}, magiamgia='{1}' where mahd='{2}'", Total, DiscountID, BillID);
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }

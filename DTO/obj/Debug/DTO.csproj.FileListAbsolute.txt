@@ -70,3 +70,8 @@ D:\đồ án\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\đồ án\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.dll
 D:\đồ án\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.pdb
 D:\đồ án\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\DOANWINFORM\DTO\bin\Debug\zxing.dll
+D:\DOANWINFORM\DTO\bin\Debug\zxing.presentation.dll
+D:\DOANWINFORM\DTO\bin\Debug\zxing.xml
+D:\DOANWINFORM\DTO\bin\Debug\zxing.presentation.xml
+D:\DOANWINFORM\DTO\obj\Debug\DTO.csproj.CopyComplete

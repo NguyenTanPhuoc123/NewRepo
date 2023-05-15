@@ -105,3 +105,7 @@ D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
 D:\đồ án\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb
+D:\DOANWINFORM\DAO\bin\Debug\zxing.dll
+D:\DOANWINFORM\DAO\bin\Debug\zxing.presentation.dll
+D:\DOANWINFORM\DAO\bin\Debug\zxing.xml
+D:\DOANWINFORM\DAO\bin\Debug\zxing.presentation.xml

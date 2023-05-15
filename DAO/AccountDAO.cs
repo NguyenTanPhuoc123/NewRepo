@@ -43,12 +43,11 @@ namespace DAO
             return (count > 0 ? false : true);
         }
 
-        public bool CheckPassword(string password)
+        public bool CheckExistEmployee(int employeeID)
         {
-            int outputPass;
-            if (password.Length <= 8 || !int.TryParse(password, out outputPass))
-                return false;
-            return true;
+            string query = string.Format("Select Count(*) From TAIKHOAN Where manv={0}", employeeID);
+            int count = DataProvider.ExecuteScalarCommand(query, null);
+            return (count > 0 ? false : true);
         }
 
         public string GetMD5(string passWord)

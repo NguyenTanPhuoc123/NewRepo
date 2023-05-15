@@ -27,9 +27,9 @@ namespace BUS
             return AccountDAO.Instance.CheckUsername(userName);
         }
 
-        public bool CheckPassword(string password)
+        public bool CheckExistEmployee(int employeeID)
         {
-            return AccountDAO.Instance.CheckPassword(password);
+            return AccountDAO.Instance.CheckExistEmployee(employeeID);
         }
 
         public List<Account> GetListAccount()

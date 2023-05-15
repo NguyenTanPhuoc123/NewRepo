@@ -123,7 +123,7 @@ namespace frmLogin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckPassword(txtPassword.Text))
+            if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckExistEmployee(Convert.ToInt32(cbEmloyee.SelectedValue.ToString())))
             {
                 int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
                 if (count > 0)
