@@ -422,6 +422,7 @@ namespace frmLogin
             txtDiscountID.Clear();
             txtDiscountName.Clear();
             txtDiscountPrice.Clear();
+            txtLimitDiscount.Clear();
             dtpDateStart.Value = DateTime.Now;
             dtpDateEnd.Value = DateTime.Now;
             cbAvailableDiscount.SelectedIndex = 0;
@@ -452,6 +453,8 @@ namespace frmLogin
                 dtpDateEnd.Text = dtgvListDiscount.SelectedRows[0].Cells[4].Value.ToString();
                 bool available = bool.Parse(dtgvListDiscount.SelectedRows[0].Cells[5].Value.ToString());
                 cbAvailableDiscount.SelectedIndex = available == true ? 0 : 1;
+                txtLimitDiscount.Text = dtgvListDiscount.SelectedRows[0].Cells[6].Value.ToString();
+                
                 btnSaveDiscount.Enabled = false;
                 btnEditDiscount.Enabled = true;
                 btnDeleteDiscount.Enabled = true;
@@ -471,8 +474,8 @@ namespace frmLogin
             float discountPrice = float.Parse(txtDiscountPrice.Text);
             string startDay = dtpDateStart.Value.ToString("yyyy/MM/dd");
             string endDay = dtpDateEnd.Value.ToString("yyyy/MM/dd");
-
-            int count = DiscountBUS.Instance.AddNewDiscount(discountName, startDay, endDay, discountPrice);
+            float limitDiscount = txtLimitDiscount.Text==null ? 0 : float.Parse(txtLimitDiscount.Text);
+            int count = DiscountBUS.Instance.AddNewDiscount(discountName, startDay, endDay, discountPrice,limitDiscount);
             if (count > 0)
             {
                 MessageBox.Show("Thêm giảm giá mới thành công", "Thêm giảm giá", MessageBoxButtons.OK);
@@ -498,8 +501,10 @@ namespace frmLogin
                 string startDay = dtpDateStart.Value.ToString("yyyy/MM/dd");
                 string endDay = dtpDateEnd.Value.ToString("yyyy/MM/dd");
                 int available = cbAvailableDiscount.SelectedIndex == 0 ? 1 : 0;
+                float limitDiscount = float.Parse(txtLimitDiscount.Text);
 
-                int count = DiscountBUS.Instance.EditDiscount(discountID, discountName, startDay, endDay, discountPrice, available);
+
+                int count = DiscountBUS.Instance.EditDiscount(discountID, discountName, startDay, endDay, discountPrice, available,limitDiscount);
                 if (count > 0)
                 {
                     MessageBox.Show("Sửa giảm giá thành công", "Sửa giảm giá", MessageBoxButtons.OK);

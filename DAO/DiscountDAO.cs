@@ -49,10 +49,10 @@ namespace DAO
             return list;
         }
 
-        public int AddNewDiscount(string discountName, string startDay, string endDay, float price)
+        public int AddNewDiscount(string discountName, string startDay, string endDay, float price, float limit)
         {
             int row;
-            string query = string.Format("CREATE_NEW_DISCOUNT   N'{0}','{1}','{2}',{3}", discountName, startDay, endDay, price);
+            string query = string.Format("CREATE_NEW_DISCOUNT   N'{0}','{1}','{2}',{3},{4}", discountName, startDay, endDay, price,limit);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);
@@ -64,10 +64,10 @@ namespace DAO
             return row;
         }
 
-        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price, int available)
+        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price, int available, float limit)
         {
             int row;
-            string query = string.Format("UPDATE GIAMGIA SET TENGIAMGIA = N'{0}' , NgayBatDau = '{1}' , NgayKetThuc = '{2}' , DONGIA = {3} , Hoatdong = {5} WHERE MAGIAM = '{4}' ", discountName, startDay, endDay, price, discountID, available);
+            string query = string.Format("UPDATE GIAMGIA SET TENGIAMGIA = N'{0}' , NgayBatDau = '{1}' , NgayKetThuc = '{2}' , DONGIA = {3} , Hoatdong = {5} , HANMUC = {6} WHERE MAGIAM = '{4}' ", discountName, startDay, endDay, price, discountID, available,limit);
             try
             {
                 row = DataProvider.ExecuteInsertCommand(query, null);

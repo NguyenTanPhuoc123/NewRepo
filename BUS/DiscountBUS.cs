@@ -27,14 +27,14 @@ namespace BUS
             return DiscountDAO.Instance.GetListDiscount();
         }
 
-        public int AddNewDiscount(string discountName, string startDay, string endDay, float price)
+        public int AddNewDiscount(string discountName, string startDay, string endDay, float price,float limit)
         {
-            return DiscountDAO.Instance.AddNewDiscount(discountName, startDay, endDay, price);
+            return DiscountDAO.Instance.AddNewDiscount(discountName, startDay, endDay, price,limit);
         }
 
-        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price, int available)
+        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price, int available,float limit)
         {
-            return DiscountDAO.Instance.EditDiscount(discountID, discountName, startDay, endDay, price, available);
+            return DiscountDAO.Instance.EditDiscount(discountID, discountName, startDay, endDay, price, available,limit);
         }
 
         public int DeleteDiscount(string discountID)

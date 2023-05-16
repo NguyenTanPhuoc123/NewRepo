@@ -109,3 +109,16 @@ D:\DOANWINFORM\DAO\bin\Debug\zxing.dll
 D:\DOANWINFORM\DAO\bin\Debug\zxing.presentation.dll
 D:\DOANWINFORM\DAO\bin\Debug\zxing.xml
 D:\DOANWINFORM\DAO\bin\Debug\zxing.presentation.xml
+D:\đồ án Winform\DAO\bin\Debug\DAO.dll
+D:\đồ án Winform\DAO\bin\Debug\DAO.pdb
+D:\đồ án Winform\DAO\bin\Debug\DTO.dll
+D:\đồ án Winform\DAO\bin\Debug\zxing.dll
+D:\đồ án Winform\DAO\bin\Debug\zxing.presentation.dll
+D:\đồ án Winform\DAO\bin\Debug\DTO.pdb
+D:\đồ án Winform\DAO\bin\Debug\zxing.xml
+D:\đồ án Winform\DAO\bin\Debug\zxing.presentation.xml
+D:\đồ án Winform\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\đồ án Winform\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\đồ án Winform\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\đồ án Winform\DAO\obj\Debug\DAO.dll
+D:\đồ án Winform\DAO\obj\Debug\DAO.pdb

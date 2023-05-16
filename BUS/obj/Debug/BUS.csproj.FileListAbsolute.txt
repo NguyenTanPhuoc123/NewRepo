@@ -134,3 +134,18 @@ D:\DOANWINFORM\BUS\bin\Debug\zxing.dll
 D:\DOANWINFORM\BUS\bin\Debug\zxing.presentation.dll
 D:\DOANWINFORM\BUS\bin\Debug\zxing.xml
 D:\DOANWINFORM\BUS\bin\Debug\zxing.presentation.xml
+D:\đồ án Winform\BUS\bin\Debug\BUS.dll
+D:\đồ án Winform\BUS\bin\Debug\BUS.pdb
+D:\đồ án Winform\BUS\bin\Debug\DAO.dll
+D:\đồ án Winform\BUS\bin\Debug\DTO.dll
+D:\đồ án Winform\BUS\bin\Debug\zxing.dll
+D:\đồ án Winform\BUS\bin\Debug\zxing.presentation.dll
+D:\đồ án Winform\BUS\bin\Debug\DAO.pdb
+D:\đồ án Winform\BUS\bin\Debug\DTO.pdb
+D:\đồ án Winform\BUS\bin\Debug\zxing.xml
+D:\đồ án Winform\BUS\bin\Debug\zxing.presentation.xml
+D:\đồ án Winform\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\đồ án Winform\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\đồ án Winform\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\đồ án Winform\BUS\obj\Debug\BUS.dll
+D:\đồ án Winform\BUS\obj\Debug\BUS.pdb
