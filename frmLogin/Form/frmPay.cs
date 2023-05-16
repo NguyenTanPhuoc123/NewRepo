@@ -19,6 +19,7 @@ namespace frmLogin
 {
     public partial class frmPay : Form
     {
+        BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
         public frmPay()
         {
             InitializeComponent();
@@ -28,30 +29,26 @@ namespace frmLogin
         {
             this.Close();
         }
-
-        int TableID = frmSellManagement.GetTableID();
-        string BillID = BillBUS.Instance.HDID(frmSellManagement.GetTableID());
-        int EmployeeID = frmSellManagement.GetMANV();
-        float Total = frmSellManagement.GetTotal();
-        string EmployeeName = frmSellManagement.GetTENNV();
+               
 
         private void txtMoneyPay_TextChanged(object sender, EventArgs e)
         {
-            lblMoneyReceive.Text = txtMoneyPay.Text;
-            lblMoneyPay.Text = (Convert.ToInt32(lblMoneyReceive.Text) - Convert.ToInt32(lblTotal.Text)).ToString();
+            float moneyPay = float.Parse(txtMoneyPay.Text);           
+            lblMoneyReceive.Text = moneyPay.ToString("c");
+            lblMoneyPay.Text = (moneyPay - billMenu.Total).ToString("c");
         }
 
         private void frmPay_Load(object sender, EventArgs e)
         {
-            txtBillID.Text = BillID.ToString();
-            txtEmployeeID.Text = EmployeeID.ToString();
-            txtEmployeeName.Text = EmployeeName;
-            txtTableID.Text = TableID.ToString();
-            lblTotal.Text = Total.ToString();
+            txtBillID.Text = billMenu.ID;
+            txtEmployeeID.Text = billMenu.EmployeeID.ToString();
+            txtEmployeeName.Text = billMenu.EmployeeName;
+            txtTableID.Text = billMenu.TableName;
+            lblTotal.Text = billMenu.Total.ToString("c");
             LoadDiscount();
             cbDiscount.SelectedIndex = 0;
             cbPay.SelectedIndex = 0;
-            dtgvBill.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(BillID);
+            dtgvBill.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(billMenu.ID);
         }
 
         public void LoadDiscount()
@@ -63,15 +60,16 @@ namespace frmLogin
 
         private void btnOutputBill_Click(object sender, EventArgs e)
         {
+            float total = billMenu.Total;
             string id = cbDiscount.SelectedValue.ToString();
             float price = 0;
             if (DiscountBUS.Instance.GetDiscountForID(id) != null)
             {
                 price = DiscountBUS.Instance.GetDiscountForID(id).Price;
             }
-            Total = Total - price;
-            int row = TableBUS.Instance.UpdateTablePay(TableID);
-            int count = BillBUS.Instance.OutputBill(txtBillID.Text, Total, cbDiscount.SelectedValue.ToString());
+            total = total - price;
+            int row = TableBUS.Instance.UpdateTablePay(billMenu.TableID);
+            int count = BillBUS.Instance.OutputBill(txtBillID.Text,total, cbDiscount.SelectedValue.ToString());
             if (count > 0 && row > 0)
             {
                 MessageBox.Show("Thanh toán thành công");
@@ -87,14 +85,14 @@ namespace frmLogin
         {
             CultureInfo culture = new CultureInfo("vi-VN");
             string id = cbDiscount.SelectedValue.ToString();
+            Discount discount = DiscountBUS.Instance.GetDiscountForID(id);
             float price = 0;
-            if (DiscountBUS.Instance.GetDiscountForID(id) != null)
-            {
-                price = DiscountBUS.Instance.GetDiscountForID(id).Price;
-                if (Total > price)
+            if (discount != null)
+            {               
+                if (billMenu.Total > discount.Limit)
                 {
-                    //lblMoneyPay.Text = price.ToString("c", culture);
-                    lblTotal.Text = (Total - price).ToString("c", culture);
+                    
+                    lblTotal.Text = (billMenu.Total - price).ToString("c", culture);
                 }
                 else
                 {
@@ -127,7 +125,7 @@ namespace frmLogin
         #region QRCodeMoMo
         private void QRCode_Click(object sender, EventArgs e)
         {
-            var qrcode_text = $"2|99|{"0969475617"}|{"Nguyễn Tấn Phước"}|0|0|{Total}";
+            var qrcode_text = $"2|99|{"0969475617"}|{"Nguyễn Tấn Phước"}|0|0|{billMenu.Total}";
             BarcodeWriter barcodeWriter = new BarcodeWriter();
             EncodingOptions encodingOptions = new EncodingOptions() { Width = 175, Height = 175, Margin = 0, PureBarcode = false };
             encodingOptions.Hints.Add(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);

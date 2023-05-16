@@ -113,6 +113,9 @@ namespace frmLogin
                 this.IsMdiContainer = true;
                 frmSelectDish frm = new frmSelectDish(this);
                 frm.Show();
+                LoadBackColorMDI();
+
+
             }
         }
 
@@ -121,6 +124,7 @@ namespace frmLogin
             this.IsMdiContainer = true;
             frmSetting frm = new frmSetting(loginAccount);
             frm.Show();
+            LoadBackColorMDI();
         }
 
         private void btnPay_Click(object sender, EventArgs e)
@@ -135,6 +139,7 @@ namespace frmLogin
                 this.IsMdiContainer = true;
                 frmPay frm = new frmPay();
                 frm.Show();
+                LoadBackColorMDI();
             }
         }
 
@@ -165,7 +170,24 @@ namespace frmLogin
             ShowBill(tableID);
         }
         #region Method
-       
+
+        public void LoadBackColorMDI()
+        {
+            MdiClient mdiCtrl;
+            foreach (Control ctrl in this.Controls)
+            {
+                try
+                {
+                    mdiCtrl = (MdiClient)ctrl;
+                    mdiCtrl.BackColor = System.Drawing.Color.Gainsboro;
+                }
+                catch (InvalidCastException ex)
+                {
+
+                }
+            }
+        }
+
         public string GetTypeAccountName()
             {
                 TypeAccount typeAccount = TypeAccountBUS.Instance.GetTypeAccountForTypeAccountID(loginAccount.TypeAccount);

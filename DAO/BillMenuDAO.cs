@@ -37,6 +37,17 @@ namespace DAO
             return list;
         }
 
+        public BillMenu GetBillMenuByTableID(int tableID)
+        {
+            string query = string.Format("SELECT * FROM HOADON a, BANAN b, NHANVIEN c , GIAMGIA d WHERE a.MAGIAMGIA = d.MAGIAM and a.MANHANVIEN = c.MANV AND a.SOBAN = b.MABANAN and a.TrangThai = 1 and SOBAN = {0} and TRANGTHAITHANHTOAN = 0 ", tableID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                return new BillMenu(item);
+            }
+            return null;
+        }
+
         public List<BillMenu> SortBillByBillID(string dayCheckIn)
         {
             List<BillMenu> list = new List<BillMenu>();

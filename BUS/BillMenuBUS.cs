@@ -62,5 +62,10 @@ namespace BUS
             return BillMenuDAO.Instance.FillBillByDayCheckIn(dayCheckIn);
         }
 
+        public BillMenu GetBillMenuByTableID(int tableID)
+        {
+            return BillMenuDAO.Instance.GetBillMenuByTableID(tableID);
+        }
+
     }
 }

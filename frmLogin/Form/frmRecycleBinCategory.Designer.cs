@@ -91,10 +91,21 @@ namespace frmLogin
             this.grpTypeProductInfo = new System.Windows.Forms.GroupBox();
             this.tpDiscountDeleted = new System.Windows.Forms.TabPage();
             this.dtgvListDiscountDeleted = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpFunctionDiscount = new System.Windows.Forms.GroupBox();
             this.btnRestoreAllDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.btnRestoreDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.grpDiscountInfo = new System.Windows.Forms.GroupBox();
+            this.txtLimitDiscount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtAvailableDiscount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.txtEndDayDiscount = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtStartDayDiscount = new Guna.UI2.WinForms.Guna2TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -124,17 +135,6 @@ namespace frmLogin
             this.btnRestoreAllTypeProduct = new Guna.UI2.WinForms.Guna2Button();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label18 = new System.Windows.Forms.Label();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtAvailableDiscount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtLimitDiscount = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.tctrlCategoryDeleted.SuspendLayout();
             this.tpTypeAccountDeleted.SuspendLayout();
@@ -188,7 +188,7 @@ namespace frmLogin
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(289, 17);
+            this.label1.Location = new System.Drawing.Point(324, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(356, 55);
             this.label1.TabIndex = 2;
@@ -237,7 +237,7 @@ namespace frmLogin
             this.tpTypeAccountDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpTypeAccountDeleted.Name = "tpTypeAccountDeleted";
             this.tpTypeAccountDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpTypeAccountDeleted.Size = new System.Drawing.Size(737, 388);
+            this.tpTypeAccountDeleted.Size = new System.Drawing.Size(818, 388);
             this.tpTypeAccountDeleted.TabIndex = 0;
             this.tpTypeAccountDeleted.Text = "Loại tài khoản";
             this.tpTypeAccountDeleted.UseVisualStyleBackColor = true;
@@ -446,7 +446,7 @@ namespace frmLogin
             this.tpPositionDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpPositionDeleted.Name = "tpPositionDeleted";
             this.tpPositionDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpPositionDeleted.Size = new System.Drawing.Size(737, 388);
+            this.tpPositionDeleted.Size = new System.Drawing.Size(818, 388);
             this.tpPositionDeleted.TabIndex = 1;
             this.tpPositionDeleted.Text = "Chức vụ";
             this.tpPositionDeleted.UseVisualStyleBackColor = true;
@@ -657,7 +657,7 @@ namespace frmLogin
             this.tpLocationDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpLocationDeleted.Name = "tpLocationDeleted";
             this.tpLocationDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpLocationDeleted.Size = new System.Drawing.Size(737, 388);
+            this.tpLocationDeleted.Size = new System.Drawing.Size(818, 388);
             this.tpLocationDeleted.TabIndex = 2;
             this.tpLocationDeleted.Text = "Vị trí bàn ăn";
             this.tpLocationDeleted.UseVisualStyleBackColor = true;
@@ -867,7 +867,7 @@ namespace frmLogin
             this.tpTypeProductDeleted.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpTypeProductDeleted.Name = "tpTypeProductDeleted";
             this.tpTypeProductDeleted.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpTypeProductDeleted.Size = new System.Drawing.Size(737, 388);
+            this.tpTypeProductDeleted.Size = new System.Drawing.Size(818, 388);
             this.tpTypeProductDeleted.TabIndex = 3;
             this.tpTypeProductDeleted.Text = "Loại sản phẩm";
             this.tpTypeProductDeleted.UseVisualStyleBackColor = true;
@@ -1022,6 +1022,55 @@ namespace frmLogin
             this.dtgvListDiscountDeleted.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListDiscountDeleted.SelectionChanged += new System.EventHandler(this.dtgvListDiscountDeleted_SelectionChanged);
             // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "DiscountID";
+            this.Column12.HeaderText = "Mã giảm giá";
+            this.Column12.MinimumWidth = 6;
+            this.Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "DiscountName";
+            this.Column13.HeaderText = "Tên giảm giá";
+            this.Column13.MinimumWidth = 6;
+            this.Column13.Name = "Column13";
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "Price";
+            this.Column14.HeaderText = "Đơn giá";
+            this.Column14.MinimumWidth = 6;
+            this.Column14.Name = "Column14";
+            // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "StartDay";
+            this.Column15.HeaderText = "Ngày bắt đầu";
+            this.Column15.MinimumWidth = 6;
+            this.Column15.Name = "Column15";
+            // 
+            // Column16
+            // 
+            this.Column16.DataPropertyName = "EndDay";
+            this.Column16.HeaderText = "Ngày kết thúc";
+            this.Column16.MinimumWidth = 6;
+            this.Column16.Name = "Column16";
+            // 
+            // Column17
+            // 
+            this.Column17.DataPropertyName = "Available";
+            this.Column17.HeaderText = "Hoạt động";
+            this.Column17.MinimumWidth = 6;
+            this.Column17.Name = "Column17";
+            // 
+            // Column18
+            // 
+            this.Column18.DataPropertyName = "Limit";
+            this.Column18.HeaderText = "Hạn mức";
+            this.Column18.MinimumWidth = 6;
+            this.Column18.Name = "Column18";
+            // 
             // grpFunctionDiscount
             // 
             this.grpFunctionDiscount.Controls.Add(this.btnRestoreAllDiscount);
@@ -1095,6 +1144,66 @@ namespace frmLogin
             this.grpDiscountInfo.TabIndex = 4;
             this.grpDiscountInfo.TabStop = false;
             this.grpDiscountInfo.Text = "Thông tin giảm giá";
+            // 
+            // txtLimitDiscount
+            // 
+            this.txtLimitDiscount.BorderRadius = 20;
+            this.txtLimitDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLimitDiscount.DefaultText = "";
+            this.txtLimitDiscount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLimitDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLimitDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLimitDiscount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLimitDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLimitDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLimitDiscount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLimitDiscount.Location = new System.Drawing.Point(108, 152);
+            this.txtLimitDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtLimitDiscount.Name = "txtLimitDiscount";
+            this.txtLimitDiscount.PasswordChar = '\0';
+            this.txtLimitDiscount.PlaceholderText = "";
+            this.txtLimitDiscount.SelectedText = "";
+            this.txtLimitDiscount.Size = new System.Drawing.Size(176, 36);
+            this.txtLimitDiscount.TabIndex = 14;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(34, 164);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(68, 17);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "Hạn mức:";
+            // 
+            // txtAvailableDiscount
+            // 
+            this.txtAvailableDiscount.BorderRadius = 20;
+            this.txtAvailableDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAvailableDiscount.DefaultText = "";
+            this.txtAvailableDiscount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAvailableDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAvailableDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAvailableDiscount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAvailableDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAvailableDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAvailableDiscount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAvailableDiscount.Location = new System.Drawing.Point(409, 111);
+            this.txtAvailableDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAvailableDiscount.Name = "txtAvailableDiscount";
+            this.txtAvailableDiscount.PasswordChar = '\0';
+            this.txtAvailableDiscount.PlaceholderText = "";
+            this.txtAvailableDiscount.SelectedText = "";
+            this.txtAvailableDiscount.Size = new System.Drawing.Size(172, 36);
+            this.txtAvailableDiscount.TabIndex = 12;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(325, 117);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(78, 17);
+            this.label18.TabIndex = 11;
+            this.label18.Text = "Hoạt động:";
             // 
             // txtEndDayDiscount
             // 
@@ -1496,115 +1605,6 @@ namespace frmLogin
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.Width = 150;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(325, 117);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(78, 17);
-            this.label18.TabIndex = 11;
-            this.label18.Text = "Hoạt động:";
-            // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "DiscountID";
-            this.Column12.HeaderText = "Mã giảm giá";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            // 
-            // Column13
-            // 
-            this.Column13.DataPropertyName = "DiscountName";
-            this.Column13.HeaderText = "Tên giảm giá";
-            this.Column13.MinimumWidth = 6;
-            this.Column13.Name = "Column13";
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "Price";
-            this.Column14.HeaderText = "Đơn giá";
-            this.Column14.MinimumWidth = 6;
-            this.Column14.Name = "Column14";
-            // 
-            // Column15
-            // 
-            this.Column15.DataPropertyName = "StartDay";
-            this.Column15.HeaderText = "Ngày bắt đầu";
-            this.Column15.MinimumWidth = 6;
-            this.Column15.Name = "Column15";
-            // 
-            // Column16
-            // 
-            this.Column16.DataPropertyName = "EndDay";
-            this.Column16.HeaderText = "Ngày kết thúc";
-            this.Column16.MinimumWidth = 6;
-            this.Column16.Name = "Column16";
-            // 
-            // Column17
-            // 
-            this.Column17.DataPropertyName = "Available";
-            this.Column17.HeaderText = "Hoạt động";
-            this.Column17.MinimumWidth = 6;
-            this.Column17.Name = "Column17";
-            // 
-            // Column18
-            // 
-            this.Column18.DataPropertyName = "Limit";
-            this.Column18.HeaderText = "Hạn mức";
-            this.Column18.MinimumWidth = 6;
-            this.Column18.Name = "Column18";
-            // 
-            // txtAvailableDiscount
-            // 
-            this.txtAvailableDiscount.BorderRadius = 20;
-            this.txtAvailableDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAvailableDiscount.DefaultText = "";
-            this.txtAvailableDiscount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAvailableDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAvailableDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAvailableDiscount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAvailableDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAvailableDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAvailableDiscount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAvailableDiscount.Location = new System.Drawing.Point(409, 111);
-            this.txtAvailableDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtAvailableDiscount.Name = "txtAvailableDiscount";
-            this.txtAvailableDiscount.PasswordChar = '\0';
-            this.txtAvailableDiscount.PlaceholderText = "";
-            this.txtAvailableDiscount.SelectedText = "";
-            this.txtAvailableDiscount.Size = new System.Drawing.Size(172, 36);
-            this.txtAvailableDiscount.TabIndex = 12;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(34, 164);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(68, 17);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "Hạn mức:";
-            // 
-            // txtLimitDiscount
-            // 
-            this.txtLimitDiscount.BorderRadius = 20;
-            this.txtLimitDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLimitDiscount.DefaultText = "";
-            this.txtLimitDiscount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLimitDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLimitDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLimitDiscount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLimitDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLimitDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtLimitDiscount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLimitDiscount.Location = new System.Drawing.Point(108, 152);
-            this.txtLimitDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtLimitDiscount.Name = "txtLimitDiscount";
-            this.txtLimitDiscount.PasswordChar = '\0';
-            this.txtLimitDiscount.PlaceholderText = "";
-            this.txtLimitDiscount.SelectedText = "";
-            this.txtLimitDiscount.Size = new System.Drawing.Size(176, 36);
-            this.txtLimitDiscount.TabIndex = 14;
             // 
             // frmRecycleBinCategory
             // 
