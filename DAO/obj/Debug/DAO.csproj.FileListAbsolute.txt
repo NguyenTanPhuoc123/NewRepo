@@ -122,3 +122,13 @@ D:\đồ án Winform\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 D:\đồ án Winform\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\đồ án Winform\DAO\obj\Debug\DAO.dll
 D:\đồ án Winform\DAO\obj\Debug\DAO.pdb
+D:\DOAN\DAO\bin\Debug\zxing.dll
+D:\DOAN\DAO\bin\Debug\zxing.presentation.dll
+D:\DOAN\DAO\bin\Debug\zxing.xml
+D:\DOAN\DAO\bin\Debug\zxing.presentation.xml
+D:\DOAN\DAO\bin\Debug\AForge.dll
+D:\DOAN\DAO\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOAN\DAO\bin\Debug\AForge.Video.dll
+D:\DOAN\DAO\bin\Debug\AForge.xml
+D:\DOAN\DAO\bin\Debug\AForge.Video.xml
+D:\DOAN\DAO\bin\Debug\AForge.Video.DirectShow.xml

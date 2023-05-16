@@ -149,3 +149,13 @@ D:\đồ án Winform\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 D:\đồ án Winform\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\đồ án Winform\BUS\obj\Debug\BUS.dll
 D:\đồ án Winform\BUS\obj\Debug\BUS.pdb
+D:\DOAN\BUS\bin\Debug\zxing.dll
+D:\DOAN\BUS\bin\Debug\zxing.presentation.dll
+D:\DOAN\BUS\bin\Debug\zxing.xml
+D:\DOAN\BUS\bin\Debug\zxing.presentation.xml
+D:\DOAN\BUS\bin\Debug\AForge.dll
+D:\DOAN\BUS\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOAN\BUS\bin\Debug\AForge.Video.dll
+D:\DOAN\BUS\bin\Debug\AForge.xml
+D:\DOAN\BUS\bin\Debug\AForge.Video.xml
+D:\DOAN\BUS\bin\Debug\AForge.Video.DirectShow.xml

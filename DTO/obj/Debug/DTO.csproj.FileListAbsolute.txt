@@ -86,3 +86,14 @@ D:\đồ án Winform\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\đồ án Winform\DTO\obj\Debug\DTO.csproj.CopyComplete
 D:\đồ án Winform\DTO\obj\Debug\DTO.dll
 D:\đồ án Winform\DTO\obj\Debug\DTO.pdb
+D:\DOAN\DTO\bin\Debug\zxing.dll
+D:\DOAN\DTO\bin\Debug\zxing.presentation.dll
+D:\DOAN\DTO\bin\Debug\zxing.xml
+D:\DOAN\DTO\bin\Debug\zxing.presentation.xml
+D:\DOAN\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\DOAN\DTO\bin\Debug\AForge.dll
+D:\DOAN\DTO\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOAN\DTO\bin\Debug\AForge.Video.dll
+D:\DOAN\DTO\bin\Debug\AForge.xml
+D:\DOAN\DTO\bin\Debug\AForge.Video.xml
+D:\DOAN\DTO\bin\Debug\AForge.Video.DirectShow.xml

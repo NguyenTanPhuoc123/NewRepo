@@ -64,11 +64,8 @@ namespace frmLogin
             this.label7 = new System.Windows.Forms.Label();
             this.txtBillID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.picQRPay = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQRPay)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -374,24 +371,10 @@ namespace frmLogin
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // picQRPay
-            // 
-            this.picQRPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.picQRPay, "picQRPay");
-            this.picQRPay.Name = "picQRPay";
-            this.picQRPay.TabStop = false;
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
             // frmPay
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.picQRPay);
             this.Controls.Add(this.txtTableID);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtBillID);
@@ -421,7 +404,6 @@ namespace frmLogin
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQRPay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,7 +442,5 @@ namespace frmLogin
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtBillID;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox picQRPay;
-        private System.Windows.Forms.Label label3;
     }
 }
