@@ -139,6 +139,11 @@ namespace frmLogin
 
         private void btnSaveEmployee_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtEmployeeName.Text.Trim())||string.IsNullOrEmpty(txtNumberPhone.Text.Trim())||string.IsNullOrEmpty(richtxtAddress.Text.Trim()))
+            {
+                MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
             if (EmployeeBUS.Instance.CheckNumberPhoneCreate(txtNumberPhone.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
             {

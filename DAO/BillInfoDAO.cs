@@ -131,7 +131,7 @@ namespace DAO
         }
         public bool CheckProduct(string ProductID)
         {
-            string query = string.Format("Select count(*) from Chitiethoadon a, HOADON b where a.MAHD = b.MAHD and MASP = '{0}' and a.TrangThaiThanhToan = false ", ProductID);
+            string query = string.Format("Select count(*) from Chitiethoadon a, HOADON b where a.MAHD = b.MAHD and MASP = '{0}' and b.TrangThaiThanhToan = 0 ", ProductID);
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return (data > 0 ? false : true);
         }

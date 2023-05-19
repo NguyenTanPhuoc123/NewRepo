@@ -63,6 +63,7 @@ namespace frmLogin
             this.label1 = new System.Windows.Forms.Label();
             this.pbProduct = new System.Windows.Forms.PictureBox();
             this.grpFunction = new System.Windows.Forms.GroupBox();
+            this.btnSaveProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteAllProduct = new Guna.UI2.WinForms.Guna2Button();
@@ -70,7 +71,6 @@ namespace frmLogin
             this.btnProductDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchProduct = new Guna.UI2.WinForms.Guna2Button();
             this.ofdImage = new System.Windows.Forms.OpenFileDialog();
-            this.btnSaveProduct = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListProduct)).BeginInit();
             this.grpProductInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -465,6 +465,7 @@ namespace frmLogin
             this.txtProductID.Name = "txtProductID";
             this.txtProductID.PasswordChar = '\0';
             this.txtProductID.PlaceholderText = "";
+            this.txtProductID.ReadOnly = true;
             this.txtProductID.SelectedText = "";
             this.txtProductID.Size = new System.Drawing.Size(229, 36);
             this.txtProductID.TabIndex = 2;
@@ -480,6 +481,7 @@ namespace frmLogin
             // 
             // pbProduct
             // 
+            this.pbProduct.Image = ((System.Drawing.Image)(resources.GetObject("pbProduct.Image")));
             this.pbProduct.Location = new System.Drawing.Point(6, 23);
             this.pbProduct.Name = "pbProduct";
             this.pbProduct.Size = new System.Drawing.Size(139, 126);
@@ -502,6 +504,26 @@ namespace frmLogin
             this.grpFunction.TabIndex = 27;
             this.grpFunction.TabStop = false;
             this.grpFunction.Text = "Chức năng";
+            // 
+            // btnSaveProduct
+            // 
+            this.btnSaveProduct.BorderRadius = 20;
+            this.btnSaveProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSaveProduct.Enabled = false;
+            this.btnSaveProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnSaveProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSaveProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveProduct.Image")));
+            this.btnSaveProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSaveProduct.Location = new System.Drawing.Point(177, 20);
+            this.btnSaveProduct.Name = "btnSaveProduct";
+            this.btnSaveProduct.Size = new System.Drawing.Size(141, 45);
+            this.btnSaveProduct.TabIndex = 31;
+            this.btnSaveProduct.Text = "Lưu";
+            this.btnSaveProduct.Click += new System.EventHandler(this.btnSaveProduct_Click);
             // 
             // btnAddProduct
             // 
@@ -618,26 +640,6 @@ namespace frmLogin
             // ofdImage
             // 
             this.ofdImage.FileName = "openFileDialog1";
-            // 
-            // btnSaveProduct
-            // 
-            this.btnSaveProduct.BorderRadius = 20;
-            this.btnSaveProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSaveProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSaveProduct.Enabled = false;
-            this.btnSaveProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.btnSaveProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSaveProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveProduct.Image")));
-            this.btnSaveProduct.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveProduct.Location = new System.Drawing.Point(177, 20);
-            this.btnSaveProduct.Name = "btnSaveProduct";
-            this.btnSaveProduct.Size = new System.Drawing.Size(141, 45);
-            this.btnSaveProduct.TabIndex = 31;
-            this.btnSaveProduct.Text = "Lưu";
-            this.btnSaveProduct.Click += new System.EventHandler(this.btnSaveProduct_Click);
             // 
             // frmProductManagement
             // 

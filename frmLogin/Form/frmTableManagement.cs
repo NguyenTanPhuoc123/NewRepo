@@ -94,7 +94,7 @@ namespace frmLogin
 
         private void btnSaveTable_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtTableName.Text))
+            if (string.IsNullOrEmpty(txtTableName.Text.Trim()))
             {
                 MessageBox.Show("Vui lòng nhập tên bàn ăn vào ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

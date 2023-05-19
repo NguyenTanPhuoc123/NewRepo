@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,12 +63,11 @@ namespace frmLogin
             btnEditLocation.Enabled = false;
             btnDeleteLocation.Enabled = false;
             btnDeleteAllLocation.Enabled = false;
-
         }
 
         private void btnSaveLocation_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtLocationName.Text))
+            if (string.IsNullOrEmpty(txtLocationName.Text.Trim()))
             {
                 MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -89,7 +87,7 @@ namespace frmLogin
 
         private void btnEditLocation_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtLocationName.Text))
+            if (string.IsNullOrEmpty(txtLocationName.Text.Trim()))
             {
                 MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn sửa vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -166,7 +164,13 @@ namespace frmLogin
         {
             dtgvListTypeProduct.DataSource = CategoryFoodBUS.Instance.GetCategoryFoods();
         }
-
+        private void reset()
+        {
+            txtTypeProductID.Clear();
+            txtTypeProductName.Clear();
+            btnAddTypeProduct.Enabled = true;
+            btnSaveTypeProduct.Enabled = false;
+        }
         private void dtgvListTypeProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int i = e.RowIndex;
@@ -181,44 +185,79 @@ namespace frmLogin
             int id = CategoryFoodBUS.Instance.GetCategoryFoodsID().Count + 1;
             txtTypeProductID.Text = id.ToString();
             btnSaveTypeProduct.Enabled = true;
+            btnAddTypeProduct.Enabled = false;
         }
         private void btnSaveTypeProduct_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtTypeProductName.Text))
+            if (string.IsNullOrEmpty(txtTypeProductName.Text.Trim()))
             {
-                MessageBox.Show("Ban chua nhap ten loai san pham", "Thong bao");
+                MessageBox.Show("Bạn chưa nhập tên loại sản phẩm", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
             int count = CategoryFoodBUS.Instance.AddCategoryFood(txtTypeProductName.Text);
-            MessageBox.Show(count > 0 ? "Them thanh cong" : "Them that bai");
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                reset();
+            }
+            else
+                MessageBox.Show("Thêm thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             LoadTypeProduct();
         }
 
         private void btnEditTypeProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon sua loai san pham", "Thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (string.IsNullOrEmpty(txtTypeProductID.Text))
+            {
+                MessageBox.Show("Bạn chưa chọn loại sản phẩm để sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn sửa loại sản phẩm", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int count = CategoryFoodBUS.Instance.UpdateCategoryFood(txtTypeProductID.Text, txtTypeProductName.Text);
-                MessageBox.Show(count > 0 ? "Sua thanh cong" : "Sua that bai");
+                if (count > 0)
+                {
+                    MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK);
+                    reset();
+                }
+                else
+                    MessageBox.Show("Sửa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 LoadTypeProduct();
             }
         }
 
         private void btnDeleteTypeProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa loai san pham", "Thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (string.IsNullOrEmpty(txtTypeProductID.Text))
+            {
+                MessageBox.Show("Bạn chưa chọn loại sản phẩm để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa loại sản phẩm", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int count = CategoryFoodBUS.Instance.DeleteCategoryFood(txtTypeProductID.Text);
-                MessageBox.Show(count > 0 ? "Xoa thanh cong" : "Xoa that bai");
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK);
+                    reset();
+                }
+                else
+                    MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 LoadTypeProduct();
             }
         }
         private void btnDeleteAllTypeProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Ban co muon xoa tat ca loai san pham", "Thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa tất cả loại sản phẩm", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 int count = CategoryFoodBUS.Instance.DeleteAllCategoryFood();
-                MessageBox.Show(count > 0 ? "Xoa thanh cong" : "Xoa that bai");
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK);
+                    reset();
+                }
+                else
+                    MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 LoadTypeProduct();
             }
         }
@@ -235,6 +274,11 @@ namespace frmLogin
 
         private void btnSavePosition_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtPositionName.Text.Trim()))
+            {
+                MessageBox.Show("Vui lòng nhập tên chức vụ muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             int count = PositionBUS.Instance.AddPosition(txtPositionName.Text);
             if (count > 0)
             {
@@ -336,14 +380,19 @@ namespace frmLogin
 
         private void btnSaveTypeAccount_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtTypeAccountName.Text.Trim()))
+            {
+                MessageBox.Show("Vui lòng nhập tên loại tài khoản muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             int count = TypeAccountBUS.Instance.AddTypeAccount(txtTypeAccountName.Text);
             if (count > 0)
             {
-                MessageBox.Show("Thêm chức vụ thành công");
+                MessageBox.Show("Thêm loại tài khoản thành công");
             }
             else
             {
-                MessageBox.Show("Thêm chức vụ thất bại");
+                MessageBox.Show("Thêm loại tài khoản thất bại");
             }
             LoadTypeAccount();
         }
@@ -464,7 +513,7 @@ namespace frmLogin
 
         private void btnSaveDiscount_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtDiscountName.Text) || string.IsNullOrEmpty(txtDiscountPrice.Text))
+            if (string.IsNullOrEmpty(txtDiscountName.Text.Trim()) || string.IsNullOrEmpty(txtDiscountPrice.Text.Trim()))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin giảm giá", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

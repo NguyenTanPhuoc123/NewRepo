@@ -261,12 +261,28 @@ namespace frmLogin
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            int index = lstvMenuDish.SelectedItems[0].Index;
-            ListViewItem item = lstvMenuDish.SelectedItems[0];
-            string mahd = BillBUS.Instance.HDID(tableID);
-            string masp = ProductBUS.Instance.ProductID(item.Text);
-            BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
-            lstvMenuDish.Items.RemoveAt(index);
+            if (lstvMenuDish.SelectedItems.Count > 0)
+            {
+
+                int index = lstvMenuDish.SelectedItems[0].Index;
+                ListViewItem item = lstvMenuDish.SelectedItems[0];
+                string mahd = BillBUS.Instance.HDID(tableID);
+                string masp = ProductBUS.Instance.ProductID(item.Text);
+                if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa món này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    int count = BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Xóa món ăn thành công", "Thông báo", MessageBoxButtons.OK);
+                        lstvMenuDish.Items.RemoveAt(index);
+                    }
+                    else
+                        MessageBox.Show("Xóa món ăn thất bại", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                }
+            }
+            else
+                MessageBox.Show("Bạn chưa chọn món để xóa","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
         }
         private void btnChangeTable_Click(object sender, EventArgs e)
         {
