@@ -179,7 +179,7 @@ namespace frmLogin
                 try
                 {
                     mdiCtrl = (MdiClient)ctrl;
-                    mdiCtrl.BackColor = System.Drawing.Color.Gainsboro;
+                    mdiCtrl.BackColor = System.Drawing.Color.White;
                 }
                 catch (InvalidCastException ex)
                 {

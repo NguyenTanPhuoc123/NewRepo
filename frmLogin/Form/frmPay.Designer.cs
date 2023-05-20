@@ -182,7 +182,7 @@ namespace frmLogin
             resources.GetString("cbPay.Items"),
             resources.GetString("cbPay.Items1")});
             this.cbPay.Name = "cbPay";
-            this.cbPay.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.cbPay.SelectedIndexChanged += new System.EventHandler(this.cbPay_SelectedIndexChanged);
             // 
             // btnOutputBill
             // 
@@ -375,6 +375,7 @@ namespace frmLogin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.txtTableID);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtBillID);

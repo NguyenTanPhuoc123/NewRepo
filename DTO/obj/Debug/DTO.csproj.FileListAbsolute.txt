@@ -125,3 +125,20 @@ D:\DOANC#\DTO\bin\Debug\AForge.Video.DirectShow.xml
 D:\DOANC#\DTO\bin\Debug\zxing.xml
 D:\DOANC#\DTO\bin\Debug\zxing.presentation.xml
 D:\DOANC#\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\đồ án\DTO\bin\Debug\DTO.dll
+D:\đồ án\DTO\bin\Debug\DTO.pdb
+D:\đồ án\DTO\bin\Debug\AForge.dll
+D:\đồ án\DTO\bin\Debug\AForge.Video.DirectShow.dll
+D:\đồ án\DTO\bin\Debug\AForge.Video.dll
+D:\đồ án\DTO\bin\Debug\zxing.dll
+D:\đồ án\DTO\bin\Debug\zxing.presentation.dll
+D:\đồ án\DTO\bin\Debug\AForge.xml
+D:\đồ án\DTO\bin\Debug\AForge.Video.xml
+D:\đồ án\DTO\bin\Debug\AForge.Video.DirectShow.xml
+D:\đồ án\DTO\bin\Debug\zxing.xml
+D:\đồ án\DTO\bin\Debug\zxing.presentation.xml
+D:\đồ án\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\đồ án\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\đồ án\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\đồ án\DTO\obj\Debug\DTO.dll
+D:\đồ án\DTO\obj\Debug\DTO.pdb

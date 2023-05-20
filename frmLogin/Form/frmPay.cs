@@ -46,7 +46,15 @@ namespace frmLogin
         private void txtMoneyPay_TextChanged(object sender, EventArgs e)
         {
             CultureInfo culture = new CultureInfo("vi-VN");
-            float moneyPay = float.Parse(txtMoneyPay.Text);
+            float moneyPay;
+            try
+            {
+                moneyPay = float.Parse(txtMoneyPay.Text);
+            }
+            catch
+            {
+                moneyPay = 0;
+            }
             lblMoneyReceive.Text = moneyPay.ToString("c", culture);
             lblMoneyPay.Text = (moneyPay - billMenu.Total).ToString("c", culture);
         }
@@ -85,18 +93,43 @@ namespace frmLogin
             total = total - price;
             int row = TableBUS.Instance.UpdateTablePay(billMenu.TableID);
             int count = BillBUS.Instance.OutputBill(txtBillID.Text, total, cbDiscount.SelectedValue.ToString());
-            if (count > 0 && row > 0)
+            if (total > 0)
             {
-                MessageBox.Show("Thanh toán thành công");
+                if (count > 0 && row > 0)
+                {
+                    MessageBox.Show("Thanh toán thành công", "Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmPay_Load(sender, e);
+                    this.IsMdiContainer = true;
+                    frmOutputBill frm = new frmOutputBill();
+                    frm.Show();
+                    LoadBackColorMDI();
+                }
+                else
+                {
+                    MessageBox.Show("Thanh toán thất bại", "Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
-                MessageBox.Show("Thanh toán thất bại");
+                MessageBox.Show("Số tiền khách hàng trả không đủ", "Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            frmPay_Load(sender, e);
-            this.IsMdiContainer = true;
-            frmOutputBill frm = new frmOutputBill();
-            frm.Show();
+        }
+
+        public void LoadBackColorMDI()
+        {
+            MdiClient mdiCtrl;
+            foreach (Control ctrl in this.Controls)
+            {
+                try
+                {
+                    mdiCtrl = (MdiClient)ctrl;
+                    mdiCtrl.BackColor = System.Drawing.Color.White;
+                }
+                catch (InvalidCastException ex)
+                {
+
+                }
+            }
         }
 
         private void cbDiscount_SelectedIndexChanged(object sender, EventArgs e)
@@ -125,7 +158,7 @@ namespace frmLogin
 
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbPay_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbPay.SelectedIndex == 0)
             {
@@ -137,7 +170,7 @@ namespace frmLogin
                 this.IsMdiContainer = true;
                 frmQRCode frm = new frmQRCode();
                 frm.Show();
-
+                LoadBackColorMDI();
             }
 
         }
