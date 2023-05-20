@@ -150,6 +150,12 @@
     <Compile Include="Form\frmPay.Designer.cs">
       <DependentUpon>frmPay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\frmOutputBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmOutputBill.Designer.cs">
+      <DependentUpon>frmOutputBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLyAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,11 @@
     <Compile Include="Form\frmTableManagement.Designer.cs">
       <DependentUpon>frmTableManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="OutputBill.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutputBill.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usercontrol.cs">
@@ -194,6 +205,7 @@
     <Compile Include="Usercontrol.Designer.cs">
       <DependentUpon>Usercontrol.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bill.rdlc" />
     <EmbeddedResource Include="Form\frmAccountManagement.resx">
       <DependentUpon>frmAccountManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmEmployeeManager.resx">
       <DependentUpon>frmEmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmOutputBill.resx">
+      <DependentUpon>frmOutputBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmPay.en-CA.resx">
       <DependentUpon>frmPay.cs</DependentUpon>
@@ -257,8 +272,35 @@
     <EmbeddedResource Include="Usercontrol.resx">
       <DependentUpon>Usercontrol.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="OutputBill.xsc">
+      <DependentUpon>OutputBill.xsd</DependentUpon>
+    </None>
+    <None Include="OutputBill.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OutputBill.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="OutputBill.xss">
+      <DependentUpon>OutputBill.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DTO.Account.datasource" />
+    <None Include="Properties\DataSources\DTO.AccountMenu.datasource" />
+    <None Include="Properties\DataSources\DTO.Bill.datasource" />
+    <None Include="Properties\DataSources\DTO.BillInfo.datasource" />
+    <None Include="Properties\DataSources\DTO.BillInfoMenu.datasource" />
     <None Include="Properties\DataSources\DTO.BillMenu.datasource" />
+    <None Include="Properties\DataSources\DTO.CategoryFood.datasource" />
+    <None Include="Properties\DataSources\DTO.Discount.datasource" />
+    <None Include="Properties\DataSources\DTO.Employee.datasource" />
+    <None Include="Properties\DataSources\DTO.EmployeeMenu.datasource" />
+    <None Include="Properties\DataSources\DTO.Location.datasource" />
+    <None Include="Properties\DataSources\DTO.MenuDish.datasource" />
+    <None Include="Properties\DataSources\DTO.Position.datasource" />
+    <None Include="Properties\DataSources\DTO.Product.datasource" />
+    <None Include="Properties\DataSources\DTO.Table.datasource" />
+    <None Include="Properties\DataSources\DTO.TableMenu.datasource" />
+    <None Include="Properties\DataSources\DTO.TypeAccount.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

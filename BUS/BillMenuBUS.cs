@@ -67,5 +67,10 @@ namespace BUS
             return BillMenuDAO.Instance.GetBillMenuByTableID(tableID);
         }
 
+        public List<BillMenu> GetListBillMenuForID(string BillID)
+        {
+            return BillMenuDAO.Instance.GetListBillMenuForID(BillID);
+        }
+
     }
 }

@@ -10,8 +10,8 @@ namespace DAO
     public class DataProvider
     {
        
-        private static string connect = @"Data Source=ADMIN-PC\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
-        //private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
+        //private static string connect = @"Data Source=ADMIN-PC\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
+        private static string connect = @"Data Source=.;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
         //private static string connect = @"Data Source=NTP;Initial Catalog=QUANLYCUAHANGTIMO;Integrated Security=True";
 
 

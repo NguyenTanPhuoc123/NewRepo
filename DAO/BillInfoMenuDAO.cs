@@ -36,6 +36,20 @@ namespace DAO
             return list;
         }
 
+        public List<BillInfoMenu> GetListBillInfoMenuBillID(string billID)
+        {
+            List<BillInfoMenu> list = new List<BillInfoMenu>();
+            string query = string.Format("exec XuatHoaDon '{0}'", billID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                BillInfoMenu billInfoMenu = new BillInfoMenu(item);
+                list.Add(billInfoMenu);
+            }
+
+            return list;
+        }
+
         public List<BillInfoMenu> GetListBillInfoMenuDeleted()
         {
             List<BillInfoMenu> list = new List<BillInfoMenu>();

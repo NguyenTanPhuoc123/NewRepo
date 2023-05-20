@@ -151,3 +151,13 @@ C:\Users\Admin\Desktop\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CoreCompileInp
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\DAO\obj\Debug\DAO.pdb
+D:\DOANC#\DAO\bin\Debug\AForge.dll
+D:\DOANC#\DAO\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOANC#\DAO\bin\Debug\AForge.Video.dll
+D:\DOANC#\DAO\bin\Debug\zxing.dll
+D:\DOANC#\DAO\bin\Debug\zxing.presentation.dll
+D:\DOANC#\DAO\bin\Debug\AForge.xml
+D:\DOANC#\DAO\bin\Debug\AForge.Video.xml
+D:\DOANC#\DAO\bin\Debug\AForge.Video.DirectShow.xml
+D:\DOANC#\DAO\bin\Debug\zxing.xml
+D:\DOANC#\DAO\bin\Debug\zxing.presentation.xml

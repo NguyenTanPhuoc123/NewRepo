@@ -887,3 +887,15 @@ C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\zh\frmLogin.resource
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\Login.csproj.CopyComplete
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.exe
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.pdb
+D:\DOANC#\frmLogin\bin\Debug\AForge.dll
+D:\DOANC#\frmLogin\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOANC#\frmLogin\bin\Debug\AForge.Video.dll
+D:\DOANC#\frmLogin\bin\Debug\zxing.dll
+D:\DOANC#\frmLogin\bin\Debug\zxing.presentation.dll
+D:\DOANC#\frmLogin\bin\Debug\AForge.xml
+D:\DOANC#\frmLogin\bin\Debug\AForge.Video.xml
+D:\DOANC#\frmLogin\bin\Debug\AForge.Video.DirectShow.xml
+D:\DOANC#\frmLogin\bin\Debug\zxing.xml
+D:\DOANC#\frmLogin\bin\Debug\zxing.presentation.xml
+D:\DOANC#\frmLogin\obj\Debug\frmLogin.frmOutputBill.resources
+D:\DOANC#\frmLogin\obj\Debug\frmLogin.frmQRCode.resources

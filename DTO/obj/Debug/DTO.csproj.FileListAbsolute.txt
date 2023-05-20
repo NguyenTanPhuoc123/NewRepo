@@ -114,3 +114,14 @@ C:\Users\Admin\Desktop\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CoreCompileInp
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.csproj.CopyComplete
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\DTO\obj\Debug\DTO.pdb
+D:\DOANC#\DTO\bin\Debug\AForge.dll
+D:\DOANC#\DTO\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOANC#\DTO\bin\Debug\AForge.Video.dll
+D:\DOANC#\DTO\bin\Debug\zxing.dll
+D:\DOANC#\DTO\bin\Debug\zxing.presentation.dll
+D:\DOANC#\DTO\bin\Debug\AForge.xml
+D:\DOANC#\DTO\bin\Debug\AForge.Video.xml
+D:\DOANC#\DTO\bin\Debug\AForge.Video.DirectShow.xml
+D:\DOANC#\DTO\bin\Debug\zxing.xml
+D:\DOANC#\DTO\bin\Debug\zxing.presentation.xml
+D:\DOANC#\DTO\obj\Debug\DTO.csproj.CopyComplete

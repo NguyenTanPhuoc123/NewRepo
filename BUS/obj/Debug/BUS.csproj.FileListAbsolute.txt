@@ -180,3 +180,13 @@ C:\Users\Admin\Desktop\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CoreCompileInp
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.pdb
+D:\DOANC#\BUS\bin\Debug\AForge.dll
+D:\DOANC#\BUS\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOANC#\BUS\bin\Debug\AForge.Video.dll
+D:\DOANC#\BUS\bin\Debug\zxing.dll
+D:\DOANC#\BUS\bin\Debug\zxing.presentation.dll
+D:\DOANC#\BUS\bin\Debug\AForge.xml
+D:\DOANC#\BUS\bin\Debug\AForge.Video.xml
+D:\DOANC#\BUS\bin\Debug\AForge.Video.DirectShow.xml
+D:\DOANC#\BUS\bin\Debug\zxing.xml
+D:\DOANC#\BUS\bin\Debug\zxing.presentation.xml

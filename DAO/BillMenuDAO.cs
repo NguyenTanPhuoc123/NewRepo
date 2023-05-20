@@ -170,5 +170,18 @@ namespace DAO
             return list;
         }
 
+        public List<BillMenu> GetListBillMenuForID(string BillID)
+        {
+            List<BillMenu> list = new List<BillMenu>();
+            string query = string.Format("SELECT * FROM HOADON a, BANAN b, NHANVIEN c , GIAMGIA d WHERE a.MAGIAMGIA = d.MAGIAM and a.MANHANVIEN = c.MANV AND a.SOBAN = b.MABANAN and a.TrangThai = 1 and MAHD='{0}'",BillID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                BillMenu billMenu = new BillMenu(item);
+                list.Add(billMenu);
+            }
+
+            return list;
+        }
     }
 }

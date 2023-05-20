@@ -112,5 +112,19 @@ namespace DAO
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
+
+        public List<Bill> GetListBillForID(string BillID)
+        {
+            List<Bill> list = new List<Bill>();
+            string query = string.Format("Select * from HOADON WHERE TRANGTHAI = 1 and MAHD= '{0}'",BillID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                Bill bill = new Bill(item);
+                list.Add(bill);
+            }
+
+            return list;
+        }
     }
 }

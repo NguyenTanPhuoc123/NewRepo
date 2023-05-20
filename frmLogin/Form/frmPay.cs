@@ -20,21 +20,33 @@ namespace frmLogin
     public partial class frmPay : Form
     {
         BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
+        private static string billID;
+
+        public static void SetBillID(string value)
+        {
+            billID = value;
+        }
+
+        public static string GetBillID()
+        {
+            return billID;
+        }
+
         public frmPay()
         {
             InitializeComponent();
         }
-        
+
         private void btnExitFomPay_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-               
+
 
         private void txtMoneyPay_TextChanged(object sender, EventArgs e)
         {
             CultureInfo culture = new CultureInfo("vi-VN");
-            float moneyPay = float.Parse(txtMoneyPay.Text);           
+            float moneyPay = float.Parse(txtMoneyPay.Text);
             lblMoneyReceive.Text = moneyPay.ToString("c", culture);
             lblMoneyPay.Text = (moneyPay - billMenu.Total).ToString("c", culture);
         }
@@ -43,6 +55,7 @@ namespace frmLogin
         {
             CultureInfo culture = new CultureInfo("vi-VN");
             txtBillID.Text = billMenu.ID;
+            SetBillID(billMenu.ID);
             txtEmployeeID.Text = billMenu.EmployeeID.ToString();
             txtEmployeeName.Text = billMenu.EmployeeName;
             txtTableID.Text = billMenu.TableName;
@@ -71,7 +84,7 @@ namespace frmLogin
             }
             total = total - price;
             int row = TableBUS.Instance.UpdateTablePay(billMenu.TableID);
-            int count = BillBUS.Instance.OutputBill(txtBillID.Text,total, cbDiscount.SelectedValue.ToString());
+            int count = BillBUS.Instance.OutputBill(txtBillID.Text, total, cbDiscount.SelectedValue.ToString());
             if (count > 0 && row > 0)
             {
                 MessageBox.Show("Thanh toán thành công");
@@ -81,6 +94,9 @@ namespace frmLogin
                 MessageBox.Show("Thanh toán thất bại");
             }
             frmPay_Load(sender, e);
+            this.IsMdiContainer = true;
+            frmOutputBill frm = new frmOutputBill();
+            frm.Show();
         }
 
         private void cbDiscount_SelectedIndexChanged(object sender, EventArgs e)
@@ -104,9 +120,9 @@ namespace frmLogin
                         cbDiscount.SelectedIndex = 0;
                     }
                 }
-                
+
             }
-            
+
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -121,7 +137,7 @@ namespace frmLogin
                 this.IsMdiContainer = true;
                 frmQRCode frm = new frmQRCode();
                 frm.Show();
-                
+
             }
 
         }
