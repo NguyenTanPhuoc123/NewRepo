@@ -290,8 +290,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>ViewBill1</DataSetName>
-        <Top>2.45833in</Top>
-        <Left>0.13367in</Left>
+        <Top>2.32862in</Top>
+        <Left>0.13366in</Left>
         <Height>1.38542in</Height>
         <Width>8.22919in</Width>
         <Style>
@@ -453,7 +453,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>1.65625in</Top>
+        <Top>1.43973in</Top>
         <Left>0.9323in</Left>
         <Height>0.25in</Height>
         <Width>0.6875in</Width>
@@ -485,7 +485,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox17</rd:DefaultName>
-        <Top>2.07986in</Top>
+        <Top>1.86334in</Top>
         <Left>0.94097in</Left>
         <Height>0.25in</Height>
         <Width>0.6875in</Width>
@@ -515,8 +515,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox18</rd:DefaultName>
-        <Top>4.30083in</Top>
-        <Left>5.56875in</Left>
+        <Top>3.78348in</Top>
+        <Left>5.43402in</Left>
         <Height>0.25in</Height>
         <Width>0.65625in</Width>
         <ZIndex>7</ZIndex>
@@ -545,7 +545,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox31</rd:DefaultName>
-        <Top>1.65625in</Top>
+        <Top>1.43973in</Top>
         <Left>1.43577in</Left>
         <Height>0.25in</Height>
         <Width>1in</Width>
@@ -575,7 +575,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox21</rd:DefaultName>
-        <Top>2.07986in</Top>
+        <Top>1.86334in</Top>
         <Left>1.44444in</Left>
         <Height>0.25in</Height>
         <Width>1in</Width>
@@ -605,8 +605,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox22</rd:DefaultName>
-        <Top>4.30083in</Top>
-        <Left>6.54618in</Left>
+        <Top>4.42237in</Top>
+        <Left>6.10416in</Left>
         <Height>0.25in</Height>
         <Width>1in</Width>
         <ZIndex>10</ZIndex>
@@ -627,7 +627,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Mã giảm giá:</Value>
+                <Value>Giảm giá:</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -635,10 +635,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox26</rd:DefaultName>
-        <Top>3.92708in</Top>
-        <Left>5.56875in</Left>
+        <Top>4.10293in</Top>
+        <Left>5.43402in</Left>
         <Height>0.25in</Height>
-        <Width>0.90799in</Width>
+        <Width>0.65625in</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -657,7 +657,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!DiscountID.Value, "DataSet2")</Value>
+                <Value>=Sum(Fields!Price.Value, "DataSet3")</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -665,8 +665,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>3.91319in</Top>
-        <Left>6.54618in</Left>
+        <Top>4.10293in</Top>
+        <Left>6.10416in</Left>
         <Height>0.25in</Height>
         <Width>1in</Width>
         <ZIndex>12</ZIndex>
@@ -744,7 +744,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox14</rd:DefaultName>
-        <Top>1.54799in</Top>
+        <Top>1.43973in</Top>
         <Left>4.47658in</Left>
         <Height>0.25in</Height>
         <Width>0.77652in</Width>
@@ -776,7 +776,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>1.9716in</Top>
+        <Top>1.86334in</Top>
         <Left>4.48525in</Left>
         <Height>0.25in</Height>
         <Width>0.6875in</Width>
@@ -806,7 +806,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox23</rd:DefaultName>
-        <Top>1.54799in</Top>
+        <Top>1.43973in</Top>
         <Left>5.30866in</Left>
         <Height>0.25in</Height>
         <Width>2.6332in</Width>
@@ -836,11 +836,71 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox25</rd:DefaultName>
-        <Top>1.9716in</Top>
+        <Top>1.86334in</Top>
         <Left>5.31733in</Left>
         <Height>0.25in</Height>
         <Width>2.62453in</Width>
         <ZIndex>18</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Còn lại:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>4.42237in</Top>
+        <Left>5.43402in</Left>
+        <Height>0.25in</Height>
+        <Width>0.65625in</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!Price.Value, "DataSet3")+Sum(Fields!Total.Value, "DataSet2")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox4</rd:DefaultName>
+        <Top>3.78348in</Top>
+        <Left>6.09027in</Left>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <ZIndex>20</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1018,6 +1078,47 @@
         <rd:DataSetName>DTO</rd:DataSetName>
         <rd:TableName>BillMenu</rd:TableName>
         <rd:ObjectDataSourceType>DTO.BillMenu, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="DataSet3">
+      <Query>
+        <DataSourceName>DTO</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Available">
+          <DataField>Available</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DiscountID">
+          <DataField>DiscountID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DiscountName">
+          <DataField>DiscountName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EndDay">
+          <DataField>EndDay</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Limit">
+          <DataField>Limit</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="Price">
+          <DataField>Price</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="StartDay">
+          <DataField>StartDay</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DTO</rd:DataSetName>
+        <rd:TableName>Discount</rd:TableName>
+        <rd:ObjectDataSourceType>DTO.Discount, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

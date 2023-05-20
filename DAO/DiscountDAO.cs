@@ -165,5 +165,19 @@ namespace DAO
             }
             return list;
         }
+
+        public List<Discount> GetListDiscountForID(string DiscountID)
+        {
+            List<Discount> list = new List<Discount>();
+            string query = string.Format("SELECT * FROM GIAMGIA WHERE TRANGTHAI = 1 and MAGIAM='{0}'",DiscountID);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Discount discount = new Discount(item);
+                list.Add(discount);
+            }
+            return list;
+        }
     }
 }

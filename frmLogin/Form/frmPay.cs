@@ -20,7 +20,9 @@ namespace frmLogin
     public partial class frmPay : Form
     {
         BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
+        
         private static string billID;
+        private static string discountID;
 
         public static void SetBillID(string value)
         {
@@ -30,6 +32,16 @@ namespace frmLogin
         public static string GetBillID()
         {
             return billID;
+        }
+
+        public static void SetDiscountID(string value)
+        {
+            discountID = value;
+        }
+
+        public static string GetDiscountID()
+        {
+            return discountID;
         }
 
         public frmPay()
@@ -85,6 +97,7 @@ namespace frmLogin
         {
             float total = billMenu.Total;
             string id = cbDiscount.SelectedValue.ToString();
+            SetDiscountID(id);
             float price = 0;
             if (DiscountBUS.Instance.GetDiscountForID(id) != null)
             {

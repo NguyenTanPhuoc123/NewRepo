@@ -71,5 +71,10 @@ namespace BUS
         {
             return DiscountDAO.Instance.GetListDiscountAvailable();
         }
+
+        public List<Discount> GetListDiscountForID(string DiscountID)
+        {
+            return DiscountDAO.Instance.GetListDiscountForID(DiscountID);
+        }
     }
 }
