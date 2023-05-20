@@ -192,6 +192,12 @@
     <Compile Include="Form\frmTableManagement.Designer.cs">
       <DependentUpon>frmTableManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStoreReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStoreReport.Designer.cs">
+      <DependentUpon>frmStoreReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="OutputBill.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -206,6 +212,7 @@
       <DependentUpon>Usercontrol.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Bill.rdlc" />
+    <EmbeddedResource Include="BillReport.rdlc" />
     <EmbeddedResource Include="Form\frmAccountManagement.resx">
       <DependentUpon>frmAccountManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSellManagement.resx">
       <DependentUpon>frmSellManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStoreReport.resx">
+      <DependentUpon>frmStoreReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1019,3 +1019,4 @@ D:\đồ án\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\đồ án\frmLogin\obj\Debug\frmLogin.exe
 D:\đồ án\frmLogin\obj\Debug\frmLogin.pdb
 D:\DOAN\frmLogin\obj\Debug\frmLogin.frmOutputBill.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmStoreReport.resources

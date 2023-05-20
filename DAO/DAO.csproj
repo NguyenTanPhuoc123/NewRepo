@@ -72,6 +72,7 @@
     <Compile Include="PositionDAO.cs" />
     <Compile Include="ProductDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatisticalBillDAO.cs" />
     <Compile Include="TableDAO.cs" />
     <Compile Include="TableMenuDAO.cs" />
     <Compile Include="TypeAccountDAO.cs" />

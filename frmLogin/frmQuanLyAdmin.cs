@@ -152,10 +152,38 @@ namespace frmLogin
 
         private void frmQuanLyAdmin_Load(object sender, EventArgs e)
         {
-            List<BillMenu> list = BillMenuBUS.Instance.GetListBillMenu();
-            this.rpvRevenue.LocalReport.ReportEmbeddedResource = "frmLogin.RevenueReport.rdlc";
-            this.rpvRevenue.LocalReport.DataSources.Add(new ReportDataSource("Data", list));
-            this.rpvRevenue.RefreshReport();
+            cbTypeStatisticalBill.SelectedIndex = 0;
+            string startDay = DateTime.Now.ToString("yyyy/MM/dd");
+            string endDay = DateTime.Now.ToString("yyyy/MM/dd");
+            List<StatisticalBill> list = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMaxByDate(startDay,endDay);
+            foreach(StatisticalBill item in list)
+            {
+                chartEmployeeCreateBill.Series["Số hóa đơn lập"].Points.AddXY(item.EmployeeName, item.CountBill);
+            }
+            chartEmployeeCreateBill.Titles.Add("Nhân viên lập nhiều hóa đơn nhất");
+            
+        }
+
+        private void btnbtnStatisticalBill_Click(object sender, EventArgs e)
+        {             
+            chartEmployeeCreateBill.Series.Clear();
+            chartEmployeeCreateBill.Series.Add("Số hóa đơn lập");
+            string startDay = dtpBillStart.Value.ToString("yyyy/MM/dd");
+            string endDay = dtpBillEnd.Value.ToString("yyyy/MM/dd");
+            List<StatisticalBill> list = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMaxByDate(startDay, endDay);
+            foreach (StatisticalBill item in list)
+            {
+                chartEmployeeCreateBill.Series["Số hóa đơn lập"].Points.AddXY(item.EmployeeName, item.CountBill);
+            }
+           
+        }
+
+        private void btnReportEmployCreateBill_Click(object sender, EventArgs e)
+        {
+            frmStoreReport frm = new frmStoreReport();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
     }
 }

@@ -30,14 +30,13 @@ namespace frmLogin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyAdmin));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnTableManagement = new System.Windows.Forms.Button();
             this.btnBillManagement = new System.Windows.Forms.Button();
@@ -53,6 +52,7 @@ namespace frmLogin
             this.panelMain = new System.Windows.Forms.Panel();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tbpRevenue = new System.Windows.Forms.TabPage();
+            this.rpvRevenue = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnStatisticalRevenue = new Guna.UI2.WinForms.Guna2Button();
             this.dtpRevenueEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -67,17 +67,14 @@ namespace frmLogin
             this.dtpProductEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpProductStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tbpBill = new System.Windows.Forms.TabPage();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartEmployeeCreateBill = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtEmployeeName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbEmployeeID = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnReportEmployCreateBill = new Guna.UI2.WinForms.Guna2Button();
+            this.cbTypeStatisticalBill = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnbtnStatisticalBill = new Guna.UI2.WinForms.Guna2Button();
             this.dtpBillEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpBillStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.rpvRevenue = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -90,7 +87,7 @@ namespace frmLogin
             ((System.ComponentModel.ISupportInitialize)(this.chartProduct)).BeginInit();
             this.panel2.SuspendLayout();
             this.tbpBill.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartEmployeeCreateBill)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -304,6 +301,14 @@ namespace frmLogin
             this.tbpRevenue.Text = "Doanh thu";
             this.tbpRevenue.UseVisualStyleBackColor = true;
             // 
+            // rpvRevenue
+            // 
+            this.rpvRevenue.Location = new System.Drawing.Point(6, 88);
+            this.rpvRevenue.Name = "rpvRevenue";
+            this.rpvRevenue.ServerReport.BearerToken = null;
+            this.rpvRevenue.Size = new System.Drawing.Size(827, 449);
+            this.rpvRevenue.TabIndex = 1;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnStatisticalRevenue);
@@ -376,23 +381,23 @@ namespace frmLogin
             // 
             // chartProduct
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartProduct.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartProduct.Legends.Add(legend3);
+            chartArea4.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chartProduct.Legends.Add(legend4);
             this.chartProduct.Location = new System.Drawing.Point(6, 120);
             this.chartProduct.Name = "chartProduct";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Doanh thu";
-            this.chartProduct.Series.Add(series3);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Doanh thu";
+            this.chartProduct.Series.Add(series4);
             this.chartProduct.Size = new System.Drawing.Size(827, 412);
             this.chartProduct.TabIndex = 3;
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            title3.Name = "Product";
-            title3.Text = "SẢN PHẨM";
-            this.chartProduct.Titles.Add(title3);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            title2.Name = "Product";
+            title2.Text = "SẢN PHẨM";
+            this.chartProduct.Titles.Add(title2);
             // 
             // panel2
             // 
@@ -498,7 +503,7 @@ namespace frmLogin
             // 
             // tbpBill
             // 
-            this.tbpBill.Controls.Add(this.chart1);
+            this.tbpBill.Controls.Add(this.chartEmployeeCreateBill);
             this.tbpBill.Controls.Add(this.panel3);
             this.tbpBill.Location = new System.Drawing.Point(184, 4);
             this.tbpBill.Name = "tbpBill";
@@ -508,32 +513,26 @@ namespace frmLogin
             this.tbpBill.Text = "Hóa đơn";
             this.tbpBill.UseVisualStyleBackColor = true;
             // 
-            // chart1
+            // chartEmployeeCreateBill
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
-            this.chart1.Location = new System.Drawing.Point(11, 151);
-            this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Doanh thu";
-            this.chart1.Series.Add(series4);
-            this.chart1.Size = new System.Drawing.Size(827, 381);
-            this.chart1.TabIndex = 4;
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            title4.Name = "Product";
-            title4.Text = "HÓA ĐƠN";
-            this.chart1.Titles.Add(title4);
+            chartArea3.Name = "ChartArea1";
+            this.chartEmployeeCreateBill.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartEmployeeCreateBill.Legends.Add(legend3);
+            this.chartEmployeeCreateBill.Location = new System.Drawing.Point(11, 151);
+            this.chartEmployeeCreateBill.Name = "chartEmployeeCreateBill";
+            this.chartEmployeeCreateBill.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Số hóa đơn lập";
+            this.chartEmployeeCreateBill.Series.Add(series3);
+            this.chartEmployeeCreateBill.Size = new System.Drawing.Size(827, 381);
+            this.chartEmployeeCreateBill.TabIndex = 4;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txtEmployeeName);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.cbEmployeeID);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.btnReportEmployCreateBill);
+            this.panel3.Controls.Add(this.cbTypeStatisticalBill);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.btnbtnStatisticalBill);
             this.panel3.Controls.Add(this.dtpBillEnd);
@@ -544,58 +543,40 @@ namespace frmLogin
             this.panel3.Size = new System.Drawing.Size(835, 142);
             this.panel3.TabIndex = 2;
             // 
-            // txtEmployeeName
+            // btnReportEmployCreateBill
             // 
-            this.txtEmployeeName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmployeeName.DefaultText = "";
-            this.txtEmployeeName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmployeeName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmployeeName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmployeeName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmployeeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEmployeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeName.Location = new System.Drawing.Point(334, 70);
-            this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtEmployeeName.Name = "txtEmployeeName";
-            this.txtEmployeeName.PasswordChar = '\0';
-            this.txtEmployeeName.PlaceholderText = "";
-            this.txtEmployeeName.SelectedText = "";
-            this.txtEmployeeName.Size = new System.Drawing.Size(241, 42);
-            this.txtEmployeeName.TabIndex = 8;
+            this.btnReportEmployCreateBill.BorderRadius = 10;
+            this.btnReportEmployCreateBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportEmployCreateBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportEmployCreateBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReportEmployCreateBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReportEmployCreateBill.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnReportEmployCreateBill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReportEmployCreateBill.ForeColor = System.Drawing.Color.White;
+            this.btnReportEmployCreateBill.Location = new System.Drawing.Point(425, 76);
+            this.btnReportEmployCreateBill.Name = "btnReportEmployCreateBill";
+            this.btnReportEmployCreateBill.Size = new System.Drawing.Size(145, 42);
+            this.btnReportEmployCreateBill.TabIndex = 6;
+            this.btnReportEmployCreateBill.Text = "Xem báo cáo";
+            this.btnReportEmployCreateBill.Click += new System.EventHandler(this.btnReportEmployCreateBill_Click);
             // 
-            // label4
+            // cbTypeStatisticalBill
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(225, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Tên nhân viên:";
-            // 
-            // cbEmployeeID
-            // 
-            this.cbEmployeeID.BackColor = System.Drawing.Color.Transparent;
-            this.cbEmployeeID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbEmployeeID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbEmployeeID.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbEmployeeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbEmployeeID.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbEmployeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbEmployeeID.ItemHeight = 30;
-            this.cbEmployeeID.Location = new System.Drawing.Point(334, 27);
-            this.cbEmployeeID.Name = "cbEmployeeID";
-            this.cbEmployeeID.Size = new System.Drawing.Size(176, 36);
-            this.cbEmployeeID.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(229, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Mã nhân viên:";
+            this.cbTypeStatisticalBill.BackColor = System.Drawing.Color.Transparent;
+            this.cbTypeStatisticalBill.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbTypeStatisticalBill.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTypeStatisticalBill.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbTypeStatisticalBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbTypeStatisticalBill.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbTypeStatisticalBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbTypeStatisticalBill.ItemHeight = 30;
+            this.cbTypeStatisticalBill.Items.AddRange(new object[] {
+            "Nhân viên lập nhiều hóa đơn nhất",
+            "Nhân viên lập ít hóa đơn nhất"});
+            this.cbTypeStatisticalBill.Location = new System.Drawing.Point(265, 17);
+            this.cbTypeStatisticalBill.Name = "cbTypeStatisticalBill";
+            this.cbTypeStatisticalBill.Size = new System.Drawing.Size(305, 36);
+            this.cbTypeStatisticalBill.TabIndex = 5;
             // 
             // label2
             // 
@@ -615,15 +596,17 @@ namespace frmLogin
             this.btnbtnStatisticalBill.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.btnbtnStatisticalBill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnbtnStatisticalBill.ForeColor = System.Drawing.Color.White;
-            this.btnbtnStatisticalBill.Location = new System.Drawing.Point(650, 76);
+            this.btnbtnStatisticalBill.Location = new System.Drawing.Point(265, 76);
             this.btnbtnStatisticalBill.Name = "btnbtnStatisticalBill";
-            this.btnbtnStatisticalBill.Size = new System.Drawing.Size(180, 42);
+            this.btnbtnStatisticalBill.Size = new System.Drawing.Size(135, 42);
             this.btnbtnStatisticalBill.TabIndex = 2;
             this.btnbtnStatisticalBill.Text = "Thống kê";
+            this.btnbtnStatisticalBill.Click += new System.EventHandler(this.btnbtnStatisticalBill_Click);
             // 
             // dtpBillEnd
             // 
             this.dtpBillEnd.Checked = true;
+            this.dtpBillEnd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.dtpBillEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpBillEnd.ForeColor = System.Drawing.Color.White;
             this.dtpBillEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
@@ -638,24 +621,17 @@ namespace frmLogin
             // dtpBillStart
             // 
             this.dtpBillStart.Checked = true;
+            this.dtpBillStart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.dtpBillStart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpBillStart.ForeColor = System.Drawing.Color.White;
             this.dtpBillStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpBillStart.Location = new System.Drawing.Point(3, 34);
+            this.dtpBillStart.Location = new System.Drawing.Point(3, 3);
             this.dtpBillStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpBillStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpBillStart.Name = "dtpBillStart";
             this.dtpBillStart.Size = new System.Drawing.Size(200, 55);
             this.dtpBillStart.TabIndex = 0;
             this.dtpBillStart.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
-            // 
-            // rpvRevenue
-            // 
-            this.rpvRevenue.Location = new System.Drawing.Point(6, 88);
-            this.rpvRevenue.Name = "rpvRevenue";
-            this.rpvRevenue.ServerReport.BearerToken = null;
-            this.rpvRevenue.Size = new System.Drawing.Size(827, 449);
-            this.rpvRevenue.TabIndex = 1;
             // 
             // frmQuanLyAdmin
             // 
@@ -687,7 +663,7 @@ namespace frmLogin
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tbpBill.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartEmployeeCreateBill)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -725,16 +701,14 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpProductEnd;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpProductStart;
         private System.Windows.Forms.TabPage tbpBill;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartEmployeeCreateBill;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmployeeName;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2ComboBox cbEmployeeID;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnbtnStatisticalBill;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpBillEnd;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpBillStart;
         private Microsoft.Reporting.WinForms.ReportViewer rpvRevenue;
+        private Guna.UI2.WinForms.Guna2Button btnReportEmployCreateBill;
+        private Guna.UI2.WinForms.Guna2ComboBox cbTypeStatisticalBill;
     }
 }
