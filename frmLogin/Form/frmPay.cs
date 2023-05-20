@@ -93,6 +93,11 @@ namespace frmLogin
             cbDiscount.ValueMember = "DiscountID";
         }
 
+        public void CloseForm(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnOutputBill_Click(object sender, EventArgs e)
         {
             float total = billMenu.Total;
@@ -116,6 +121,7 @@ namespace frmLogin
                     frmOutputBill frm = new frmOutputBill();
                     frm.Show();
                     LoadBackColorMDI();
+                    frmSellManagement.ActiveForm.Load += new EventHandler(CloseForm);
                 }
                 else
                 {
