@@ -29,9 +29,10 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBillManagement));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtgvListBill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,19 +73,19 @@ namespace frmLogin
             // 
             // dtgvListBill
             // 
+            resources.ApplyResources(this.dtgvListBill, "dtgvListBill");
             this.dtgvListBill.AllowUserToAddRows = false;
             this.dtgvListBill.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtgvListBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtgvListBill.ColumnHeadersHeight = 20;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.dtgvListBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dtgvListBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -98,23 +99,18 @@ namespace frmLogin
             this.Column9,
             this.Column11,
             this.Column12});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListBill.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListBill.DefaultCellStyle = dataGridViewCellStyle12;
             this.dtgvListBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvListBill.Location = new System.Drawing.Point(15, 353);
-            this.dtgvListBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvListBill.Name = "dtgvListBill";
             this.dtgvListBill.RowHeadersVisible = false;
-            this.dtgvListBill.RowHeadersWidth = 51;
             this.dtgvListBill.RowTemplate.Height = 24;
-            this.dtgvListBill.Size = new System.Drawing.Size(1154, 152);
-            this.dtgvListBill.TabIndex = 39;
             this.dtgvListBill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvListBill.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dtgvListBill.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -141,137 +137,110 @@ namespace frmLogin
             // Column1
             // 
             this.Column1.DataPropertyName = "ID";
-            this.Column1.HeaderText = "Mã hóa đơn";
-            this.Column1.MinimumWidth = 6;
+            resources.ApplyResources(this.Column1, "Column1");
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
             this.Column2.DataPropertyName = "DayCheckIn";
-            this.Column2.HeaderText = "Ngày lập hóa đơn";
-            this.Column2.MinimumWidth = 6;
+            resources.ApplyResources(this.Column2, "Column2");
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
             this.Column3.DataPropertyName = "EmployeeName";
-            this.Column3.HeaderText = "Nhân viên";
-            this.Column3.MinimumWidth = 6;
+            resources.ApplyResources(this.Column3, "Column3");
             this.Column3.Name = "Column3";
             // 
             // Column5
             // 
             this.Column5.DataPropertyName = "DiscountName";
-            this.Column5.HeaderText = "Giảm giá";
-            this.Column5.MinimumWidth = 6;
+            resources.ApplyResources(this.Column5, "Column5");
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
             this.Column6.DataPropertyName = "TableName";
-            this.Column6.HeaderText = "Bàn ăn";
-            this.Column6.MinimumWidth = 6;
+            resources.ApplyResources(this.Column6, "Column6");
             this.Column6.Name = "Column6";
             // 
             // Column7
             // 
             this.Column7.DataPropertyName = "DayCheckOut";
-            this.Column7.HeaderText = "Ngày xuất hóa đơn";
-            this.Column7.MinimumWidth = 6;
+            resources.ApplyResources(this.Column7, "Column7");
             this.Column7.Name = "Column7";
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "Total";
-            this.Column4.HeaderText = "Tổng tiền";
-            this.Column4.MinimumWidth = 6;
+            resources.ApplyResources(this.Column4, "Column4");
             this.Column4.Name = "Column4";
             // 
             // Column8
             // 
             this.Column8.DataPropertyName = "StatusCheckOut";
-            this.Column8.HeaderText = "Trạng thái thanh toán";
-            this.Column8.MinimumWidth = 6;
+            resources.ApplyResources(this.Column8, "Column8");
             this.Column8.Name = "Column8";
             // 
             // Column9
             // 
             this.Column9.DataPropertyName = "EmployeeID";
-            this.Column9.HeaderText = "Mã nhân viên";
-            this.Column9.MinimumWidth = 6;
+            resources.ApplyResources(this.Column9, "Column9");
             this.Column9.Name = "Column9";
-            this.Column9.Visible = false;
             // 
             // Column11
             // 
             this.Column11.DataPropertyName = "TableID";
-            this.Column11.HeaderText = "Số bàn";
-            this.Column11.MinimumWidth = 6;
+            resources.ApplyResources(this.Column11, "Column11");
             this.Column11.Name = "Column11";
-            this.Column11.Visible = false;
             // 
             // Column12
             // 
             this.Column12.DataPropertyName = "DiscountID";
-            this.Column12.HeaderText = "Mã giảm giá";
-            this.Column12.MinimumWidth = 6;
+            resources.ApplyResources(this.Column12, "Column12");
             this.Column12.Name = "Column12";
-            this.Column12.Visible = false;
             // 
             // cbSortBill
             // 
+            resources.ApplyResources(this.cbSortBill, "cbSortBill");
             this.cbSortBill.BackColor = System.Drawing.Color.Transparent;
             this.cbSortBill.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbSortBill.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSortBill.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbSortBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbSortBill.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbSortBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbSortBill.ItemHeight = 30;
             this.cbSortBill.Items.AddRange(new object[] {
-            "Mặc định",
-            "Mã HD(Tăng)",
-            "Mã HD(Giảm)",
-            "Ngày lập(Tăng)",
-            "Ngày lập(Giảm)",
-            "Tổng tiền(tăng)",
-            "Tổng tiền(giảm)"});
-            this.cbSortBill.Location = new System.Drawing.Point(15, 299);
-            this.cbSortBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.GetString("cbSortBill.Items"),
+            resources.GetString("cbSortBill.Items1"),
+            resources.GetString("cbSortBill.Items2"),
+            resources.GetString("cbSortBill.Items3"),
+            resources.GetString("cbSortBill.Items4"),
+            resources.GetString("cbSortBill.Items5"),
+            resources.GetString("cbSortBill.Items6")});
             this.cbSortBill.Name = "cbSortBill";
-            this.cbSortBill.Size = new System.Drawing.Size(192, 36);
-            this.cbSortBill.TabIndex = 34;
             this.cbSortBill.SelectedIndexChanged += new System.EventHandler(this.cbSortBill_SelectedIndexChanged);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 276);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Sắp xếp";
             // 
             // btnShowDetail
             // 
+            resources.ApplyResources(this.btnShowDetail, "btnShowDetail");
             this.btnShowDetail.BorderRadius = 20;
             this.btnShowDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnShowDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnShowDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnShowDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnShowDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
-            this.btnShowDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnShowDetail.ForeColor = System.Drawing.Color.Black;
-            this.btnShowDetail.Location = new System.Drawing.Point(871, 198);
-            this.btnShowDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnShowDetail.Name = "btnShowDetail";
-            this.btnShowDetail.Size = new System.Drawing.Size(155, 44);
-            this.btnShowDetail.TabIndex = 40;
-            this.btnShowDetail.Text = "Xem chi tiết";
             this.btnShowDetail.Click += new System.EventHandler(this.btnShowDetail_Click);
             // 
             // grpBillInfo
             // 
+            resources.ApplyResources(this.grpBillInfo, "grpBillInfo");
             this.grpBillInfo.Controls.Add(this.txtDiscount);
             this.grpBillInfo.Controls.Add(this.label10);
             this.grpBillInfo.Controls.Add(this.txtDayCheckOut);
@@ -288,17 +257,12 @@ namespace frmLogin
             this.grpBillInfo.Controls.Add(this.label4);
             this.grpBillInfo.Controls.Add(this.txtBillID);
             this.grpBillInfo.Controls.Add(this.label3);
-            this.grpBillInfo.Location = new System.Drawing.Point(12, 12);
-            this.grpBillInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpBillInfo.Name = "grpBillInfo";
-            this.grpBillInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpBillInfo.Size = new System.Drawing.Size(855, 230);
-            this.grpBillInfo.TabIndex = 41;
             this.grpBillInfo.TabStop = false;
-            this.grpBillInfo.Text = "Thông tin hóa đơn";
             // 
             // txtDiscount
             // 
+            resources.ApplyResources(this.txtDiscount, "txtDiscount");
             this.txtDiscount.BorderRadius = 10;
             this.txtDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiscount.DefaultText = "";
@@ -307,29 +271,21 @@ namespace frmLogin
             this.txtDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiscount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiscount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiscount.Location = new System.Drawing.Point(645, 21);
-            this.txtDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.PasswordChar = '\0';
             this.txtDiscount.PlaceholderText = "";
             this.txtDiscount.ReadOnly = true;
             this.txtDiscount.SelectedText = "";
-            this.txtDiscount.Size = new System.Drawing.Size(204, 41);
-            this.txtDiscount.TabIndex = 16;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(542, 22);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 17);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Giảm giá :";
             // 
             // txtDayCheckOut
             // 
+            resources.ApplyResources(this.txtDayCheckOut, "txtDayCheckOut");
             this.txtDayCheckOut.BorderRadius = 10;
             this.txtDayCheckOut.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDayCheckOut.DefaultText = "";
@@ -338,29 +294,21 @@ namespace frmLogin
             this.txtDayCheckOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDayCheckOut.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDayCheckOut.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDayCheckOut.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDayCheckOut.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDayCheckOut.Location = new System.Drawing.Point(99, 169);
-            this.txtDayCheckOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDayCheckOut.Name = "txtDayCheckOut";
             this.txtDayCheckOut.PasswordChar = '\0';
             this.txtDayCheckOut.PlaceholderText = "";
             this.txtDayCheckOut.ReadOnly = true;
             this.txtDayCheckOut.SelectedText = "";
-            this.txtDayCheckOut.Size = new System.Drawing.Size(204, 41);
-            this.txtDayCheckOut.TabIndex = 14;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 186);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 17);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Ngày xuất:";
             // 
             // txtDayCheckIn
             // 
+            resources.ApplyResources(this.txtDayCheckIn, "txtDayCheckIn");
             this.txtDayCheckIn.BorderRadius = 10;
             this.txtDayCheckIn.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDayCheckIn.DefaultText = "";
@@ -369,49 +317,35 @@ namespace frmLogin
             this.txtDayCheckIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDayCheckIn.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDayCheckIn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDayCheckIn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDayCheckIn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDayCheckIn.Location = new System.Drawing.Point(99, 120);
-            this.txtDayCheckIn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDayCheckIn.Name = "txtDayCheckIn";
             this.txtDayCheckIn.PasswordChar = '\0';
             this.txtDayCheckIn.PlaceholderText = "";
             this.txtDayCheckIn.ReadOnly = true;
             this.txtDayCheckIn.SelectedText = "";
-            this.txtDayCheckIn.Size = new System.Drawing.Size(204, 41);
-            this.txtDayCheckIn.TabIndex = 12;
             // 
             // cbStatusCheckOut
             // 
+            resources.ApplyResources(this.cbStatusCheckOut, "cbStatusCheckOut");
             this.cbStatusCheckOut.BackColor = System.Drawing.Color.Transparent;
             this.cbStatusCheckOut.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbStatusCheckOut.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbStatusCheckOut.Enabled = false;
             this.cbStatusCheckOut.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbStatusCheckOut.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbStatusCheckOut.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbStatusCheckOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbStatusCheckOut.ItemHeight = 30;
             this.cbStatusCheckOut.Items.AddRange(new object[] {
-            "Đã thanh toán",
-            "Chưa thanh toán"});
-            this.cbStatusCheckOut.Location = new System.Drawing.Point(645, 174);
-            this.cbStatusCheckOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.GetString("cbStatusCheckOut.Items"),
+            resources.GetString("cbStatusCheckOut.Items1")});
             this.cbStatusCheckOut.Name = "cbStatusCheckOut";
-            this.cbStatusCheckOut.Size = new System.Drawing.Size(204, 36);
-            this.cbStatusCheckOut.TabIndex = 11;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(465, 186);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(149, 17);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Trạng thái thanh toán:";
             // 
             // txtTable
             // 
+            resources.ApplyResources(this.txtTable, "txtTable");
             this.txtTable.BorderRadius = 10;
             this.txtTable.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTable.DefaultText = "";
@@ -420,29 +354,21 @@ namespace frmLogin
             this.txtTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTable.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTable.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTable.Location = new System.Drawing.Point(645, 71);
-            this.txtTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTable.Name = "txtTable";
             this.txtTable.PasswordChar = '\0';
             this.txtTable.PlaceholderText = "";
             this.txtTable.ReadOnly = true;
             this.txtTable.SelectedText = "";
-            this.txtTable.Size = new System.Drawing.Size(204, 41);
-            this.txtTable.TabIndex = 9;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(542, 84);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 17);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Số bàn:";
             // 
             // txtTotalBill
             // 
+            resources.ApplyResources(this.txtTotalBill, "txtTotalBill");
             this.txtTotalBill.BorderRadius = 10;
             this.txtTotalBill.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTotalBill.DefaultText = "";
@@ -451,38 +377,26 @@ namespace frmLogin
             this.txtTotalBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTotalBill.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTotalBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTotalBill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTotalBill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTotalBill.Location = new System.Drawing.Point(645, 120);
-            this.txtTotalBill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTotalBill.Name = "txtTotalBill";
             this.txtTotalBill.PasswordChar = '\0';
             this.txtTotalBill.PlaceholderText = "";
             this.txtTotalBill.ReadOnly = true;
             this.txtTotalBill.SelectedText = "";
-            this.txtTotalBill.Size = new System.Drawing.Size(204, 41);
-            this.txtTotalBill.TabIndex = 7;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(542, 129);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Tổng tiền:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 138);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Ngày lập:";
             // 
             // txtEmployeeName
             // 
+            resources.ApplyResources(this.txtEmployeeName, "txtEmployeeName");
             this.txtEmployeeName.BorderRadius = 10;
             this.txtEmployeeName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmployeeName.DefaultText = "";
@@ -491,29 +405,21 @@ namespace frmLogin
             this.txtEmployeeName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmployeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeName.Location = new System.Drawing.Point(99, 71);
-            this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.PasswordChar = '\0';
             this.txtEmployeeName.PlaceholderText = "";
             this.txtEmployeeName.ReadOnly = true;
             this.txtEmployeeName.SelectedText = "";
-            this.txtEmployeeName.Size = new System.Drawing.Size(204, 41);
-            this.txtEmployeeName.TabIndex = 3;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 84);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Nhân viên:";
             // 
             // txtBillID
             // 
+            resources.ApplyResources(this.txtBillID, "txtBillID");
             this.txtBillID.BorderRadius = 10;
             this.txtBillID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBillID.DefaultText = "";
@@ -522,60 +428,42 @@ namespace frmLogin
             this.txtBillID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtBillID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtBillID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBillID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBillID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBillID.Location = new System.Drawing.Point(99, 22);
-            this.txtBillID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBillID.Name = "txtBillID";
             this.txtBillID.PasswordChar = '\0';
             this.txtBillID.PlaceholderText = "";
             this.txtBillID.ReadOnly = true;
             this.txtBillID.SelectedText = "";
-            this.txtBillID.Size = new System.Drawing.Size(204, 41);
-            this.txtBillID.TabIndex = 1;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 33);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 17);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Mã hóa đơn:";
             // 
             // dtpFillBill
             // 
+            resources.ApplyResources(this.dtpFillBill, "dtpFillBill");
             this.dtpFillBill.BackColor = System.Drawing.SystemColors.Control;
             this.dtpFillBill.Checked = true;
-            this.dtpFillBill.Enabled = false;
             this.dtpFillBill.FillColor = System.Drawing.Color.Lime;
-            this.dtpFillBill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpFillBill.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFillBill.Location = new System.Drawing.Point(998, 299);
             this.dtpFillBill.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpFillBill.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFillBill.Name = "dtpFillBill";
-            this.dtpFillBill.Size = new System.Drawing.Size(171, 36);
-            this.dtpFillBill.TabIndex = 42;
             this.dtpFillBill.Value = new System.DateTime(2023, 5, 10, 15, 39, 56, 94);
             this.dtpFillBill.ValueChanged += new System.EventHandler(this.dtpFillBill_ValueChanged);
             // 
             // chkFillBill
             // 
-            this.chkFillBill.AutoSize = true;
-            this.chkFillBill.Location = new System.Drawing.Point(998, 272);
+            resources.ApplyResources(this.chkFillBill, "chkFillBill");
             this.chkFillBill.Name = "chkFillBill";
-            this.chkFillBill.Size = new System.Drawing.Size(53, 21);
-            this.chkFillBill.TabIndex = 43;
-            this.chkFillBill.Text = "Lọc";
             this.chkFillBill.UseVisualStyleBackColor = true;
             this.chkFillBill.CheckedChanged += new System.EventHandler(this.chkFillBill_CheckedChanged);
             // 
             // frmBillManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 516);
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.chkFillBill);
             this.Controls.Add(this.dtpFillBill);
             this.Controls.Add(this.grpBillInfo);
@@ -584,9 +472,7 @@ namespace frmLogin
             this.Controls.Add(this.cbSortBill);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmBillManagement";
-            this.Text = "frmBillManagement";
             this.Load += new System.EventHandler(this.frmBillManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListBill)).EndInit();
             this.grpBillInfo.ResumeLayout(false);
@@ -618,6 +504,8 @@ namespace frmLogin
         private Guna.UI2.WinForms.Guna2TextBox txtDayCheckIn;
         private Guna.UI2.WinForms.Guna2TextBox txtDiscount;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFillBill;
+        private System.Windows.Forms.CheckBox chkFillBill;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -629,7 +517,5 @@ namespace frmLogin
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpFillBill;
-        private System.Windows.Forms.CheckBox chkFillBill;
     }
 }

@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
@@ -17,10 +18,10 @@ namespace frmLogin
    
     public partial class frmlogin : Form
     {
+        public static int Language = 0;
         public frmlogin()
         {
             InitializeComponent();
-           
         }
 
 
@@ -78,6 +79,16 @@ namespace frmLogin
             this.Close();
         }
 
-        
+
+        private void frmlogin_Load(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            InitializeComponent();
+        }
+    
     }
 }

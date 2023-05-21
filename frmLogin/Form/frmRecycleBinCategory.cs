@@ -10,13 +10,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using System.Threading;
 
 namespace frmLogin
 {
     public partial class frmRecycleBinCategory : Form
     {
+        private int Language = frmlogin.Language;
         public frmRecycleBinCategory()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             dtgvListTypeAccountDeleted.AutoGenerateColumns = false;
             dtgvListDiscountDeleted.AutoGenerateColumns = false;
@@ -111,14 +117,14 @@ namespace frmLogin
         {
             int i = e.RowIndex;
             if (i == -1) return;
-            txtTypeProductID.Text = dtgvListTypeProductDeleted.Rows[i].Cells[0].Value.ToString();
-            txtTypeProductName.Text = dtgvListTypeProductDeleted.Rows[i].Cells[1].Value.ToString();
+            txtProductID.Text = dtgvListTypeProductDeleted.Rows[i].Cells[0].Value.ToString();
+            txtProductName.Text = dtgvListTypeProductDeleted.Rows[i].Cells[1].Value.ToString();
         }
         private void btnRestoreTypeProduct_Click(object sender, EventArgs e)
         {
             if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục loại sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
-                int count = CategoryFoodBUS.Instance.RestoreCategoryFood(txtTypeProductID.Text);
+                int count = CategoryFoodBUS.Instance.RestoreCategoryFood(txtProductID.Text);
                 if (count > 0)
                     MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
                 else
@@ -131,7 +137,7 @@ namespace frmLogin
         {
             if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
-                int count = CategoryFoodBUS.Instance.RestoreCategoryFood(txtTypeProductID.Text);
+                int count = CategoryFoodBUS.Instance.RestoreCategoryFood(txtProductID.Text);
                 if (count > 0)
                     MessageBox.Show("Khôi phục tất cả loại sản phẩm thành công", "Thông Báo", MessageBoxButtons.OK);
                 else

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
@@ -15,8 +16,13 @@ namespace frmLogin
 {
     public partial class frmBillManagement : Form
     {
+        private int Language = frmlogin.Language;
         public frmBillManagement()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             dtgvListBill.AutoGenerateColumns = false;
         }

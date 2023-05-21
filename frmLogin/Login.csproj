@@ -213,13 +213,46 @@
     </Compile>
     <EmbeddedResource Include="Bill.rdlc" />
     <EmbeddedResource Include="BillReport.rdlc" />
+    <EmbeddedResource Include="Form\frmAccountManagement.en.resx">
+      <DependentUpon>frmAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmAccountManagement.resx">
       <DependentUpon>frmAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmAccountManagement.vi.resx">
+      <DependentUpon>frmAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBillDetail.en.resx">
+      <DependentUpon>frmBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBillDetail.vi.resx">
+      <DependentUpon>frmBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBillManagement.en.resx">
+      <DependentUpon>frmBillManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmBillManagement.resx">
       <DependentUpon>frmBillManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBillManagement.vi.resx">
+      <DependentUpon>frmBillManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCategoyManagement.en.resx">
+      <DependentUpon>frmCategoyManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCategoyManagement.vi.resx">
+      <DependentUpon>frmCategoyManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmEmployeeManager.en.resx">
+      <DependentUpon>frmEmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmEmployeeManager.resx">
+      <DependentUpon>frmEmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmEmployeeManager.vi-VN.resx">
+      <DependentUpon>frmEmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmEmployeeManager.vi.resx">
       <DependentUpon>frmEmployeeManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmOutputBill.resx">
@@ -231,17 +264,47 @@
     <EmbeddedResource Include="Form\frmPay.zh.resx">
       <DependentUpon>frmPay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmProductManagement.en.resx">
+      <DependentUpon>frmProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmProductManagement.resx">
+      <DependentUpon>frmProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmProductManagement.vi.resx">
       <DependentUpon>frmProductManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmQRCode.resx">
       <DependentUpon>frmQRCode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRecycleBin.en.resx">
+      <DependentUpon>frmRecycleBin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmRecycleBin.resx">
       <DependentUpon>frmRecycleBin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRecycleBin.vi.resx">
+      <DependentUpon>frmRecycleBin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRecycleBinCategory.dje-NE.resx">
+      <DependentUpon>frmRecycleBinCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRecycleBinCategory.en.resx">
+      <DependentUpon>frmRecycleBinCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRecycleBinCategory.vi.resx">
+      <DependentUpon>frmRecycleBinCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetting.en.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetting.vi.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTableManagement.en.resx">
+      <DependentUpon>frmTableManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmTableManagement.resx">
       <DependentUpon>frmTableManagement.cs</DependentUpon>
@@ -252,11 +315,23 @@
     <EmbeddedResource Include="Form\frmCategoyManagement.resx">
       <DependentUpon>frmCategoyManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTableManagement.vi.resx">
+      <DependentUpon>frmTableManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.en.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmPay.resx">
       <DependentUpon>frmPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.vi.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyAdmin.en.resx">
+      <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyAdmin.resx">
       <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
@@ -266,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmRecycleBinCategory.resx">
       <DependentUpon>frmRecycleBinCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyAdmin.vi.resx">
+      <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSellManagement.resx">
       <DependentUpon>frmSellManagement.cs</DependentUpon>

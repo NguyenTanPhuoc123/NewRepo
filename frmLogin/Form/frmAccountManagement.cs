@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
@@ -14,8 +15,13 @@ namespace frmLogin
 {
     public partial class frmAccountManagement : Form
     {
+        private int Language = frmlogin.Language;
         public frmAccountManagement()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             cbSortAccount.SelectedIndex = 0;
             cbFillAccount.SelectedIndex = 0;

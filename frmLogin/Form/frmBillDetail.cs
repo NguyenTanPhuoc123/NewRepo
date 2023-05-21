@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
@@ -16,11 +17,15 @@ namespace frmLogin
     public partial class frmBillDetail : Form
     {
         Bill getBill;
-
+        private int Language = frmlogin.Language;
         public Bill GetBill { get => getBill; set => getBill = value; }
         frmBillManagement frmBillManagement;
         public frmBillDetail(Bill bill, frmBillManagement frmBill)
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             getBill = bill;
             this.frmBillManagement = frmBill;

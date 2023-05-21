@@ -10,13 +10,19 @@ using System.Windows.Forms;
 using DTO;
 using BUS;
 using System.IO;
+using System.Threading;
 
 namespace frmLogin
 {
     public partial class frmRecycleBin : Form
     {
-         public frmRecycleBin()
+        private int Language = frmlogin.Language;
+        public frmRecycleBin()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             dtgvListAccountDeleted.AutoGenerateColumns = false;
             dtgvListEmployeeDeleted.AutoGenerateColumns = false;

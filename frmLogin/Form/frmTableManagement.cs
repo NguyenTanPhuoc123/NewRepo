@@ -11,13 +11,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using System.Threading;
 
 namespace frmLogin
 {
     public partial class frmTableManagement : Form
     {
+        private int Language = frmlogin.Language;
         public frmTableManagement()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             
         }

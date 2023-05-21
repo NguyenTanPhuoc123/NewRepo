@@ -9,13 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using System.Threading;
 
 namespace frmLogin
 {
     public partial class frmCategoyManagement : Form
     {
+        private int Language = frmlogin.Language;
         public frmCategoyManagement()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             dtgvListDiscount.AutoGenerateColumns = false;
             dtgvListLocation.AutoGenerateColumns = false;
@@ -605,8 +611,13 @@ namespace frmLogin
             frm.Show();
         }
 
+
         #endregion
 
-
+        private void btnTypeProductDeleted_Click(object sender, EventArgs e)
+        {
+            frmRecycleBin frm = new frmRecycleBin();
+            frm.Show();
+        }
     }
 }

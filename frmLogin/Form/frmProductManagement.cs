@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace frmLogin
@@ -12,9 +13,14 @@ namespace frmLogin
     {
         private string fileAddress;
         private byte[] img;
+        private int Language = frmlogin.Language;
         public frmProductManagement()
         {
             InitializeComponent();
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             dtgvListProduct.AutoGenerateColumns = false;
             cbFillProduct.SelectedIndex = 0;
 

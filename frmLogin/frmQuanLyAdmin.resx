@@ -118,6 +118,846 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbFillProduct.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dtpProductEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dtpBillStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnAccountManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnStatisticalRevenue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnCategoryManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 561</value>
+  </data>
+  <data name="dtpProductEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 55</value>
+  </data>
+  <data name="dtpProductStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnStatisticalProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 66</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeManager.Name" xml:space="preserve">
+    <value>btnEmployeeManager</value>
+  </data>
+  <data name="&gt;&gt;dtpBillEnd.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="pbLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="btnBillManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;panelMenu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnStatisticalProduct.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnCategoryManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 75</value>
+  </data>
+  <data name="rpvRevenue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 449</value>
+  </data>
+  <data name="cbTypeStatisticalBill.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Name" xml:space="preserve">
+    <value>btnStatisticalRevenue</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeManager.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnEmployeeManager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 70</value>
+  </data>
+  <data name="btnbtnStatisticalBill.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="lblTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dtpRevenueEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 10</value>
+  </data>
+  <data name="&gt;&gt;dtpBillEnd.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.Name" xml:space="preserve">
+    <value>cbFillProduct</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnTableManagement.Text" xml:space="preserve">
+    <value>Quản lý bàn ăn</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbCategory.Items" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtpProductEnd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="dtpRevenueStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="btnbtnStatisticalBill.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;cbTypeStatisticalBill.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnTableManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="btnbtnStatisticalBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 42</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1238, 702</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnProducManagement.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chartProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 412</value>
+  </data>
+  <data name="guna2TabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 17</value>
+  </data>
+  <data name="btnReportEmployCreateBill.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="tbpRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="tbpBill.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnbtnStatisticalBill.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="dtpProductEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>662, 8</value>
+  </data>
+  <data name="&gt;&gt;btnbtnStatisticalBill.Name" xml:space="preserve">
+    <value>btnbtnStatisticalBill</value>
+  </data>
+  <data name="&gt;&gt;btnReportEmployCreateBill.Name" xml:space="preserve">
+    <value>btnReportEmployCreateBill</value>
+  </data>
+  <data name="&gt;&gt;btnTableManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnAccountManagement.Text" xml:space="preserve">
+    <value>Quản lý tài khoản</value>
+  </data>
+  <data name="cbFillProduct.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="btnBillManagement.Text" xml:space="preserve">
+    <value>Quản lý hóa đơn</value>
+  </data>
+  <data name="btnbtnStatisticalBill.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="cbFillProduct.Items2" xml:space="preserve">
+    <value>Sản phẩm tồn kho</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Name" xml:space="preserve">
+    <value>panelTitle</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 17</value>
+  </data>
+  <data name="lblTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnTableManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;chartEmployeeCreateBill.Name" xml:space="preserve">
+    <value>chartEmployeeCreateBill</value>
+  </data>
+  <data name="&gt;&gt;dtpBillStart.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;chartEmployeeCreateBill.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Items1" xml:space="preserve">
+    <value>Nhân viên lập ít hóa đơn nhất</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="panelLogo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="dtpBillStart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.Parent" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="dtpProductStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>984, 3</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Name" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnProducManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbLogo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="chartEmployeeCreateBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 381</value>
+  </data>
+  <data name="&gt;&gt;tbpBill.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="&gt;&gt;btnBillManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtpBillEnd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnCategoryManagement.Text" xml:space="preserve">
+    <value>Quản lý danh mục</value>
+  </data>
+  <data name="panelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
+    <value>panelTitle</value>
+  </data>
+  <data name="dtpProductStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="tbpRevenue.Text" xml:space="preserve">
+    <value>Doanh thu</value>
+  </data>
+  <data name="btnAccountManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnReportEmployCreateBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 76</value>
+  </data>
+  <data name="&gt;&gt;btnCategoryManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="dtpBillEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Name" xml:space="preserve">
+    <value>dtpRevenueEnd</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="btnCategoryManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnStatisticalRevenue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;panelLogo.Name" xml:space="preserve">
+    <value>panelLogo</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Parent" xml:space="preserve">
+    <value>panelLogo</value>
+  </data>
+  <data name="cbFillProduct.Items1" xml:space="preserve">
+    <value>Sản phẩm bán chạy nhất</value>
+  </data>
+  <data name="tbpRevenue.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeManager.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.Parent" xml:space="preserve">
+    <value>tbpRevenue</value>
+  </data>
+  <data name="btnProducManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 161</value>
+  </data>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 548</value>
+  </data>
+  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 17</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.Name" xml:space="preserve">
+    <value>tbpRevenue</value>
+  </data>
+  <data name="&gt;&gt;btnCategoryManagement.Name" xml:space="preserve">
+    <value>btnCategoryManagement</value>
+  </data>
+  <data name="dtpBillEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>630, 8</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAOZJREFUWEftlksKwjAYhHMFQcFbuPH26g1c+AA9js4Uf5hFsHn8STb5YKDPmWna
+        hoTJJMIBukDbZc+HDXSCjsveCmfoA90gjxL0oBc96b0K214h3nCHakqoV9YDeZQoDjfU4AXtoVR2EItX
+        j2JJCbdwI6cEwx+QW7iRUqJZuKEBb0hL6Lnc7yWLWIlu4YYGPn/iNo/xXBe0hI5GN4YWGPoKNNw+OD3W
+        dCRi4UbzEv/CDV5jU7Dr75gSbriX0Ck4dXotuSdKjVF1CTUoXZoVl/AIN4pKDF+UclnOCz3CDXrRk96T
+        iRDCF/FzelOcx/ofAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 702</value>
+  </data>
+  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="btnBillManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 70</value>
+  </data>
+  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 17</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="dtpBillStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="tpbProduct.Text" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="&gt;&gt;btnReportEmployCreateBill.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btnReportEmployCreateBill.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.Name" xml:space="preserve">
+    <value>dtpProductStart</value>
+  </data>
+  <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnAccountManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 237</value>
+  </data>
+  <data name="tbpBill.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 36</value>
+  </data>
+  <data name="panelTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmQuanLyAdmin</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeManager.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnBillManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCategoryManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;btnbtnStatisticalBill.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tbpRevenue.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="pbLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 158</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.Name" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="btnStatisticalProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dtpProductStart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 36</value>
+  </data>
+  <data name="rpvRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 88</value>
+  </data>
+  <data name="&gt;&gt;chartEmployeeCreateBill.Parent" xml:space="preserve">
+    <value>tbpBill</value>
+  </data>
+  <data name="btnAccountManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;dtpBillEnd.Name" xml:space="preserve">
+    <value>dtpBillEnd</value>
+  </data>
+  <data name="&gt;&gt;btnbtnStatisticalBill.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="tpbProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="&gt;&gt;btnBillManagement.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 82</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 76</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 111</value>
+  </data>
+  <data name="cbTypeStatisticalBill.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnCategoryManagement.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnEmployeeManager.Text" xml:space="preserve">
+    <value>Quản lý nhân viên</value>
+  </data>
+  <data name="btnExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnReportEmployCreateBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 42</value>
+  </data>
+  <data name="cbFillProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 36</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 142</value>
+  </data>
+  <data name="&gt;&gt;btnBillManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Name" xml:space="preserve">
+    <value>btnStatisticalProduct</value>
+  </data>
+  <data name="tbpBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="&gt;&gt;panelMenu.Name" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="btnbtnStatisticalBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 76</value>
+  </data>
+  <data name="cbFillProduct.Items" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="btnTableManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 70</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="panelTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TabControl, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="dtpRevenueStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;btnAccountManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnEmployeeManager.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnProducManagement.Text" xml:space="preserve">
+    <value>Quản lý sản phẩm</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnProducManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 70</value>
+  </data>
+  <data name="&gt;&gt;dtpBillStart.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
   <data name="pbLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB9AAAAfQCAYAAACaOMR5AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
@@ -1512,212 +2352,418 @@
         //IK9oNTNpDzAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAOZJREFUWEftlksKwjAYhHMFQcFbuPH26g1c+AA9js4Uf5hFsHn8STb5YKDPmWna
-        hoTJJMIBukDbZc+HDXSCjsveCmfoA90gjxL0oBc96b0K214h3nCHakqoV9YDeZQoDjfU4AXtoVR2EItX
-        j2JJCbdwI6cEwx+QW7iRUqJZuKEBb0hL6Lnc7yWLWIlu4YYGPn/iNo/xXBe0hI5GN4YWGPoKNNw+OD3W
-        dCRi4UbzEv/CDV5jU7Dr75gSbriX0Ck4dXotuSdKjVF1CTUoXZoVl/AIN4pKDF+UclnOCz3CDXrRk96T
-        iRDCF/FzelOcx/ofAAAAAElFTkSuQmCC
-</value>
+  <data name="guna2TabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 154</value>
   </data>
+  <data name="&gt;&gt;dtpProductStart.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="btnTableManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 0</value>
+  </data>
+  <data name="&gt;&gt;btnReportEmployCreateBill.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnAccountManagement.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dtpRevenueStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 10</value>
+  </data>
+  <data name="&gt;&gt;chartEmployeeCreateBill.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbTypeStatisticalBill.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnCategoryManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 158</value>
+  </data>
+  <data name="btnBillManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 399</value>
+  </data>
+  <data name="guna2TabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tbpRevenue</value>
+  </data>
+  <data name="btnProducManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.Type" xml:space="preserve">
+    <value>Microsoft.Reporting.WinForms.ReportViewer, Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</value>
+  </data>
+  <data name="btnStatisticalProduct.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="cbFillProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>455, 17</value>
+  </data>
+  <data name="&gt;&gt;cbTypeStatisticalBill.Name" xml:space="preserve">
+    <value>cbTypeStatisticalBill</value>
+  </data>
+  <data name="&gt;&gt;btnAccountManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbTypeStatisticalBill.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="btnEmployeeManager.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 323</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.Name" xml:space="preserve">
+    <value>chartProduct</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="tbpBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 540</value>
+  </data>
+  <data name="&gt;&gt;dtpBillEnd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
+    <value>lblTitle</value>
+  </data>
+  <data name="dtpRevenueStart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tpbProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cbFillProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnReportEmployCreateBill.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnAccountManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 80</value>
+  </data>
+  <data name="dtpRevenueEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="chartEmployeeCreateBill.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="guna2TabControl1.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>180, 40</value>
+  </data>
+  <data name="panelMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;btnBillManagement.Name" xml:space="preserve">
+    <value>btnBillManagement</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panelMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnProducManagement.Name" xml:space="preserve">
+    <value>btnProducManagement</value>
+  </data>
+  <data name="&gt;&gt;btnAccountManagement.Name" xml:space="preserve">
+    <value>btnAccountManagement</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="dtpRevenueEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtpBillStart.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="btnTableManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 475</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="guna2TabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 548</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.Name" xml:space="preserve">
+    <value>cbCategory</value>
+  </data>
+  <data name="tpbProduct.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="btnProducManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnEmployeeManager.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;btnProducManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="chartEmployeeCreateBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 151</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnStatisticalRevenue.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="&gt;&gt;dtpBillStart.Name" xml:space="preserve">
+    <value>dtpBillStart</value>
+  </data>
+  <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="pbLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnBillManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnTableManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnStatisticalProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 42</value>
+  </data>
+  <data name="cbCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="dtpBillStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="btnStatisticalRevenue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 55</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="cbCategory.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="dtpBillEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="pbLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;panelLogo.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="tpbProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 540</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 48</value>
+  </data>
+  <data name="&gt;&gt;tbpBill.Name" xml:space="preserve">
+    <value>tbpBill</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Name" xml:space="preserve">
+    <value>dtpRevenueStart</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="btnEmployeeManager.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="dtpRevenueEnd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.Name" xml:space="preserve">
+    <value>dtpProductEnd</value>
+  </data>
+  <data name="chartProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnTableManagement.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.Name" xml:space="preserve">
+    <value>rpvRevenue</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpBill.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
+    <value>panelTitle</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="tbpBill.Text" xml:space="preserve">
+    <value>Hóa đơn</value>
+  </data>
+  <data name="tbpRevenue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 540</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTableManagement.Name" xml:space="preserve">
+    <value>btnTableManagement</value>
+  </data>
+  <data name="&gt;&gt;panelMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Name" xml:space="preserve">
+    <value>pbLogo</value>
+  </data>
+  <data name="btnReportEmployCreateBill.Text" xml:space="preserve">
+    <value>Xem báo cáo</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="guna2TabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmQuanLyAdmin</value>
+  </data>
+  <data name="pbLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>tbpBill</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Items" xml:space="preserve">
+    <value>Nhân viên lập nhiều hóa đơn nhất</value>
+  </data>
+  <data name="panelTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 154</value>
+  </data>
+  <data name="chartProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 120</value>
+  </data>
+  <data name="rpvRevenue.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnStatisticalRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 10</value>
+  </data>
+  <data name="btnCategoryManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="&gt;&gt;tbpBill.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbCategory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="btnProducManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

@@ -10,20 +10,24 @@ using System.Windows.Forms;
 using DTO;
 using BUS;
 using Microsoft.Reporting.WinForms;
+using System.Threading;
 
 namespace frmLogin
 {   
 
     public partial class frmQuanLyAdmin : Form
     {
+        private int Language = frmlogin.Language;
         private Button currentButton;
         private Form activeForm;
 
         public frmQuanLyAdmin()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
-           
-
         }
 
         private void frmQuanLyAdmin_FormClosing(object sender, FormClosingEventArgs e)

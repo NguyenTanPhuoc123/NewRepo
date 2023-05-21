@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
@@ -14,8 +15,13 @@ namespace frmLogin
 {
     public partial class frmEmployeeManager : Form
     {
+        private int Language = frmlogin.Language;
         public frmEmployeeManager()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             dtgvListEmployee.AutoGenerateColumns = false;
             cbSortEmployee.SelectedIndex = 0;
