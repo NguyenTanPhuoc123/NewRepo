@@ -30,93 +30,65 @@ namespace frmLogin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usercontrol));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.lbTenSP = new System.Windows.Forms.Label();
             this.lbSoLuong = new System.Windows.Forms.Label();
             this.lbDonGia = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 109);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(179, 31);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tên:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(178, 66);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Số lượng:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(179, 120);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Đơn giá:";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(319, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 37);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbTenSP
             // 
-            this.lbTenSP.AutoSize = true;
-            this.lbTenSP.Location = new System.Drawing.Point(259, 31);
+            resources.ApplyResources(this.lbTenSP, "lbTenSP");
             this.lbTenSP.Name = "lbTenSP";
-            this.lbTenSP.Size = new System.Drawing.Size(0, 20);
-            this.lbTenSP.TabIndex = 6;
             // 
             // lbSoLuong
             // 
-            this.lbSoLuong.AutoSize = true;
-            this.lbSoLuong.Location = new System.Drawing.Point(259, 68);
+            resources.ApplyResources(this.lbSoLuong, "lbSoLuong");
             this.lbSoLuong.Name = "lbSoLuong";
-            this.lbSoLuong.Size = new System.Drawing.Size(0, 20);
-            this.lbSoLuong.TabIndex = 7;
             // 
             // lbDonGia
             // 
-            this.lbDonGia.AutoSize = true;
-            this.lbDonGia.Location = new System.Drawing.Point(259, 120);
+            resources.ApplyResources(this.lbDonGia, "lbDonGia");
             this.lbDonGia.Name = "lbDonGia";
-            this.lbDonGia.Size = new System.Drawing.Size(0, 20);
-            this.lbDonGia.TabIndex = 9;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Usercontrol
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.lbDonGia);
             this.Controls.Add(this.lbSoLuong);
             this.Controls.Add(this.lbTenSP);
@@ -126,7 +98,6 @@ namespace frmLogin
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Usercontrol";
-            this.Size = new System.Drawing.Size(378, 181);
             this.Load += new System.EventHandler(this.Usercontrol_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

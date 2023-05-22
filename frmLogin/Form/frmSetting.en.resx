@@ -675,7 +675,7 @@
     <value>43, 25</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>Sex:</value>
+    <value>Gender:</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 516</value>

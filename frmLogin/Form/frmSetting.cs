@@ -18,13 +18,15 @@ namespace frmLogin
     {
         Account account;
         private int Language = frmlogin.Language;
-        public frmSetting(Account acc)
+        frmSellManagement frm;
+        public frmSetting(Account acc, frmSellManagement frmSell)
         {
             if (Language == 0)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
+            frm = frmSell;
             account = acc;
             grpChangePassword.Visible = false;
         }
@@ -34,6 +36,7 @@ namespace frmLogin
         private void btnExitFormSetting_Click(object sender, EventArgs e)
         {
             this.Close();
+            
         }
 
         private void btnChangePassword_Click(object sender, EventArgs e)
@@ -71,6 +74,10 @@ namespace frmLogin
         public void CloseForm(object sender, EventArgs e)
         {
             frmSellManagement.ActiveForm.Dispose();
+        }
+        public void CloseForm1(object sender, EventArgs e)
+        {
+            
         }
         private void LoadThongTin()
         {
@@ -122,7 +129,7 @@ namespace frmLogin
             {
                 if (string.IsNullOrEmpty(txtNumberPhone.Text.Trim()))
                 {
-                    MessageBox.Show("Phone number cannot be blank", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Phone number cannot be null", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 string gioiTinh;
@@ -210,25 +217,6 @@ namespace frmLogin
                     return;
                 }
             }
-        }
-        private void btnLanguageVietNamese_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
-            this.Controls.Clear();
-            InitializeComponent();
-            Language = 0;
-            frmlogin.Language = Language;
-            LoadThongTin();
-        }
-
-        private void btnLanguageEnglish_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-            this.Controls.Clear();
-            InitializeComponent();
-            Language = 1;
-            frmlogin.Language = Language;
-            LoadThongTin();
         }
     }
 }

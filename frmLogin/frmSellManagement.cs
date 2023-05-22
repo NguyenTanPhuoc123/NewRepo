@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
@@ -15,6 +16,7 @@ namespace frmLogin
 {
     public partial class frmSellManagement : Form
     {
+        private int Language =  frmlogin.Language;
         private static int tableID = 0;
         private Account loginAccount;
         private static int manv;
@@ -67,6 +69,10 @@ namespace frmLogin
         }
         public frmSellManagement(Account acc)
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             this.loginAccount = acc;
             timer1.Start();
@@ -122,7 +128,7 @@ namespace frmLogin
         private void btnSetting_Click(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
-            frmSetting frm = new frmSetting(loginAccount);
+            frmSetting frm = new frmSetting(loginAccount,this);
             frm.Show();
             LoadBackColorMDI();
         }
@@ -148,7 +154,9 @@ namespace frmLogin
             WindowState = FormWindowState.Minimized;
         }
 
-        private void frmSellManagement_Load(object sender, EventArgs e)
+        
+
+        public void frmSellManagement_Load(object sender, EventArgs e)
         {
             tstlblPosition.Text = GetTypeAccountName() + " : ";
             tsslblName.Text = GetEmployeeName();

@@ -138,7 +138,7 @@
     <value>Date of birth</value>
   </data>
   <data name="colSex.HeaderText" xml:space="preserve">
-    <value>Sex</value>
+    <value>Gender</value>
   </data>
   <data name="colNumberPhone.HeaderText" xml:space="preserve">
     <value>Number phone</value>
@@ -222,7 +222,7 @@
     <value>46, 22</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Sex:</value>
+    <value>Gender:</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

@@ -89,6 +89,21 @@ namespace frmLogin
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
         }
-    
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            this.Controls.Clear();
+            InitializeComponent();
+            Language = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            this.Controls.Clear();
+            InitializeComponent();
+            Language = 1;
+        }
     }
 }

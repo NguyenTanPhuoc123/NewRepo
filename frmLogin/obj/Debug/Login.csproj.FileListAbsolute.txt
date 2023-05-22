@@ -1036,11 +1036,8 @@ C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmlogin.en
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmlogin.vi.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmAccountManagement.en.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmAccountManagement.vi.resources
-C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\bin\Debug\vi-VN\frmLogin.resources.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.en.resources
-C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.vi-VN.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.vi.resources
-C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\vi-VN\frmLogin.resources.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmBillDetail.en.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmBillDetail.vi.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmBillManagement.en.resources
@@ -1056,3 +1053,11 @@ C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmRecycleB
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.en.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.vi.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\dje-NE\frmLogin.resources.dll
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSellManagement.en.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSellManagement.vi.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSelectDish.en.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSelectDish.vi.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.Usercontrol.en.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.Usercontrol.vi.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmPay.en.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmPay.vi.resources

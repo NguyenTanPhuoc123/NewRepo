@@ -45,7 +45,9 @@ namespace frmLogin
             this.btnAccountManagement = new System.Windows.Forms.Button();
             this.btnProducManagement = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
@@ -73,10 +75,9 @@ namespace frmLogin
             this.btnbtnStatisticalBill = new Guna.UI2.WinForms.Guna2Button();
             this.dtpBillEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpBillStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelTitle.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
@@ -88,7 +89,6 @@ namespace frmLogin
             this.tbpBill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartEmployeeCreateBill)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -170,6 +170,13 @@ namespace frmLogin
             this.panelLogo.Controls.Add(this.pbLogo);
             this.panelLogo.Name = "panelLogo";
             // 
+            // pbLogo
+            // 
+            resources.ApplyResources(this.pbLogo, "pbLogo");
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
+            // 
             // panelTitle
             // 
             resources.ApplyResources(this.panelTitle, "panelTitle");
@@ -177,6 +184,14 @@ namespace frmLogin
             this.panelTitle.Controls.Add(this.btnExit);
             this.panelTitle.Controls.Add(this.lblTitle);
             this.panelTitle.Name = "panelTitle";
+            // 
+            // btnExit
+            // 
+            resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.Name = "btnExit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblTitle
             // 
@@ -482,21 +497,6 @@ namespace frmLogin
             this.dtpBillStart.Name = "dtpBillStart";
             this.dtpBillStart.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
-            // pbLogo
-            // 
-            resources.ApplyResources(this.pbLogo, "pbLogo");
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.TabStop = false;
-            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
-            // 
-            // btnExit
-            // 
-            resources.ApplyResources(this.btnExit, "btnExit");
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.Name = "btnExit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // frmQuanLyAdmin
             // 
             resources.ApplyResources(this, "$this");
@@ -510,6 +510,7 @@ namespace frmLogin
             this.Load += new System.EventHandler(this.frmQuanLyAdmin_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panelMain.ResumeLayout(false);
@@ -524,7 +525,6 @@ namespace frmLogin
             ((System.ComponentModel.ISupportInitialize)(this.chartEmployeeCreateBill)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

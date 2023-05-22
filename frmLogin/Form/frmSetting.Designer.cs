@@ -46,7 +46,9 @@ namespace frmLogin
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExitFormSetting = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.grpPersonalInfomation = new Guna.UI2.WinForms.Guna2GroupBox();
             this.radFemale = new System.Windows.Forms.RadioButton();
@@ -67,18 +69,11 @@ namespace frmLogin
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.txtEmployeeFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.grpDisplay = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.btnLanguageEnglish = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLanguageVietNamese = new Guna.UI2.WinForms.Guna2Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnExitFormSetting = new System.Windows.Forms.Button();
             this.grpChangePassword.SuspendLayout();
             this.grpAccountDetail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.grpPersonalInfomation.SuspendLayout();
-            this.grpDisplay.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grpChangePassword
@@ -276,6 +271,14 @@ namespace frmLogin
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Name = "label1";
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
@@ -283,6 +286,14 @@ namespace frmLogin
             this.panel1.Controls.Add(this.label9);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // btnExitFormSetting
+            // 
+            this.btnExitFormSetting.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnExitFormSetting, "btnExitFormSetting");
+            this.btnExitFormSetting.Name = "btnExitFormSetting";
+            this.btnExitFormSetting.UseVisualStyleBackColor = true;
+            this.btnExitFormSetting.Click += new System.EventHandler(this.btnExitFormSetting_Click);
             // 
             // label9
             // 
@@ -508,66 +519,11 @@ namespace frmLogin
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Name = "label12";
             // 
-            // grpDisplay
-            // 
-            this.grpDisplay.Controls.Add(this.btnLanguageEnglish);
-            this.grpDisplay.Controls.Add(this.btnLanguageVietNamese);
-            this.grpDisplay.Controls.Add(this.label8);
-            this.grpDisplay.CustomBorderColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.grpDisplay, "grpDisplay");
-            this.grpDisplay.ForeColor = System.Drawing.Color.White;
-            this.grpDisplay.Name = "grpDisplay";
-            // 
-            // btnLanguageEnglish
-            // 
-            this.btnLanguageEnglish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLanguageEnglish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLanguageEnglish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLanguageEnglish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.btnLanguageEnglish, "btnLanguageEnglish");
-            this.btnLanguageEnglish.ForeColor = System.Drawing.Color.White;
-            this.btnLanguageEnglish.Name = "btnLanguageEnglish";
-            this.btnLanguageEnglish.Click += new System.EventHandler(this.btnLanguageEnglish_Click);
-            // 
-            // btnLanguageVietNamese
-            // 
-            this.btnLanguageVietNamese.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLanguageVietNamese.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLanguageVietNamese.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLanguageVietNamese.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.btnLanguageVietNamese, "btnLanguageVietNamese");
-            this.btnLanguageVietNamese.ForeColor = System.Drawing.Color.White;
-            this.btnLanguageVietNamese.Name = "btnLanguageVietNamese";
-            this.btnLanguageVietNamese.Click += new System.EventHandler(this.btnLanguageVietNamese_Click);
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Name = "label8";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // btnExitFormSetting
-            // 
-            this.btnExitFormSetting.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnExitFormSetting, "btnExitFormSetting");
-            this.btnExitFormSetting.Name = "btnExitFormSetting";
-            this.btnExitFormSetting.UseVisualStyleBackColor = true;
-            this.btnExitFormSetting.Click += new System.EventHandler(this.btnExitFormSetting_Click);
-            // 
             // frmSetting
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.grpDisplay);
             this.Controls.Add(this.grpAccountDetail);
             this.Controls.Add(this.grpChangePassword);
             this.Controls.Add(this.grpPersonalInfomation);
@@ -579,13 +535,11 @@ namespace frmLogin
             this.grpChangePassword.PerformLayout();
             this.grpAccountDetail.ResumeLayout(false);
             this.grpAccountDetail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.grpPersonalInfomation.ResumeLayout(false);
             this.grpPersonalInfomation.PerformLayout();
-            this.grpDisplay.ResumeLayout(false);
-            this.grpDisplay.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -632,9 +586,5 @@ namespace frmLogin
         private System.Windows.Forms.RadioButton radFemale;
         private System.Windows.Forms.RadioButton radMale;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2GroupBox grpDisplay;
-        private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2Button btnLanguageEnglish;
-        private Guna.UI2.WinForms.Guna2Button btnLanguageVietNamese;
     }
 }

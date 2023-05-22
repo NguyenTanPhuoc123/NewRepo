@@ -10,14 +10,20 @@ using System.Windows.Forms;
 using DTO;
 using BUS;
 using System.IO;
+using System.Threading;
 
 namespace frmLogin
 {
     public partial class frmSelectDish : Form
     {
         private frmSellManagement FrmSellManagement;
+        private int Language = frmlogin.Language;
         public frmSelectDish(frmSellManagement frmSell)
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             cbCategoryDish.SelectedIndex = 0;
             this.FrmSellManagement = frmSell;
@@ -30,7 +36,6 @@ namespace frmLogin
 
         private void frmSelectDish_Load(object sender, EventArgs e)
         {
-            LoadProduct();
             LoadcbCategoryFoof();
         }
         private void LoadcbCategoryFoof()

@@ -14,6 +14,7 @@ using ZXing;
 using ZXing.Common;
 using ZXing.QrCode.Internal;
 using System.Drawing.Drawing2D;
+using System.Threading;
 
 namespace frmLogin
 {
@@ -23,7 +24,7 @@ namespace frmLogin
         
         private static string billID;
         private static string discountID;
-
+        private int Language = frmlogin.Language;
         public static void SetBillID(string value)
         {
             billID = value;
@@ -46,6 +47,10 @@ namespace frmLogin
 
         public frmPay()
         {
+            if (Language == 0)
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            else
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
         }
 
