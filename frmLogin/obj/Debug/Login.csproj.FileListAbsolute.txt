@@ -1220,3 +1220,43 @@ D:\đồ án Win\frmLogin\obj\Debug\dje-NE\frmLogin.resources.dll
 D:\đồ án Win\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\đồ án Win\frmLogin\obj\Debug\frmLogin.exe
 D:\đồ án Win\frmLogin\obj\Debug\frmLogin.pdb
+D:\DOAN\frmLogin\bin\Debug\en\frmLogin.resources.dll
+D:\DOAN\frmLogin\bin\Debug\vi\frmLogin.resources.dll
+D:\DOAN\frmLogin\bin\Debug\dje-NE\frmLogin.resources.dll
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmStoreReport.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmAccountManagement.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmAccountManagement.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmBillDetail.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmBillDetail.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmBillManagement.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmBillManagement.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmPay.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmPay.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmProductManagement.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmProductManagement.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmRecycleBin.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmRecycleBin.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.dje-NE.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmSelectDish.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmSelectDish.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmSetting.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmSetting.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmTableManagement.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmTableManagement.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmlogin.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmlogin.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmSellManagement.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.frmSellManagement.vi.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.Usercontrol.en.resources
+D:\DOAN\frmLogin\obj\Debug\frmLogin.Usercontrol.vi.resources
+D:\DOAN\frmLogin\obj\Debug\en\frmLogin.resources.dll
+D:\DOAN\frmLogin\obj\Debug\vi\frmLogin.resources.dll
+D:\DOAN\frmLogin\obj\Debug\dje-NE\frmLogin.resources.dll

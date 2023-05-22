@@ -135,9 +135,9 @@ namespace DAO
             return data;
         }
 
-        public int EditAccount(string username, string employeeID, string typeEmployID)
+        public int EditAccount(string username, string employeeID, string typeEmployID, string password)
         {
-            string query = string.Format("update taikhoan set manv={0}, loaitaikhoan={1} where tendangnhap='{2}'", employeeID, typeEmployID, username);
+            string query = string.Format("update taikhoan set manv={0}, loaitaikhoan={1}, matkhau='{2}' where tendangnhap='{3}'", employeeID, typeEmployID, Utils.GetMD5(password), username);
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }

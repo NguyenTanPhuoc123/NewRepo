@@ -142,6 +142,8 @@ namespace frmLogin
             }
             else
             {
+                BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
+                int count = BillBUS.Instance.Pay(billMenu.ID, manv);
                 this.IsMdiContainer = true;
                 frmPay frm = new frmPay();
                 frm.Show();

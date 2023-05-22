@@ -77,9 +77,9 @@ namespace BUS
             return AccountDAO.Instance.AddAccount(username, password, employeeID, typeEmployID);
         }
 
-        public int EditAccount(string username, string employeeID, string typeEmployID)
+        public int EditAccount(string username, string employeeID, string typeEmployID, string password)
         {
-            return AccountDAO.Instance.EditAccount(username, employeeID, typeEmployID);
+            return AccountDAO.Instance.EditAccount(username, employeeID, typeEmployID, password);
         }
 
         public string GetMD5(string password)

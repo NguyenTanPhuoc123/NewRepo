@@ -54,6 +54,11 @@ namespace BUS
             return BillDAO.Instance.OutputBill(BillID, Total, DiscountID);
         }
 
+        public int Pay(string BillID, int EmployeeID)
+        {
+            return BillDAO.Instance.Pay(BillID, EmployeeID);
+        }
+
         public List<Bill> GetListBillForID(string BillID)
         {
             return BillDAO.Instance.GetListBillForID(BillID);

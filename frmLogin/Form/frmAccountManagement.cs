@@ -103,7 +103,7 @@ namespace frmLogin
 
         private void btnEditAccount_Click(object sender, EventArgs e)
         {
-            int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
+            int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
             if (count > 0)
             {
                 MessageBox.Show("Sửa tài khoản thành công");

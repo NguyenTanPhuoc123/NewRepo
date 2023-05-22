@@ -113,6 +113,13 @@ namespace DAO
             return data;
         }
 
+        public int Pay(string BillID, int EmployeeID)
+        {
+            string query = string.Format("update hoadon set manhanvien={0} where mahd='{1}'", EmployeeID, BillID);
+            int data = DataProvider.ExecuteInsertCommand(query, null);
+            return data;
+        }
+
         public List<Bill> GetListBillForID(string BillID)
         {
             List<Bill> list = new List<Bill>();
