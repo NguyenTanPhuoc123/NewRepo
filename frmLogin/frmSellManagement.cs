@@ -88,7 +88,7 @@ namespace frmLogin
 
             if (GetTypeAccount() == 1)
             {
-                frmQuanLyAdmin frm = new frmQuanLyAdmin();
+                frmQuanLyAdmin frm = new frmQuanLyAdmin(this);
                 this.Hide();
                 frm.ShowDialog();
                 this.Show();

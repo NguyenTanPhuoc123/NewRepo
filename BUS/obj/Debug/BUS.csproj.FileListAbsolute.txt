@@ -211,3 +211,24 @@ D:\đồ án\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 D:\đồ án\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\đồ án\BUS\obj\Debug\BUS.dll
 D:\đồ án\BUS\obj\Debug\BUS.pdb
+D:\đồ án Win\BUS\bin\Debug\BUS.dll
+D:\đồ án Win\BUS\bin\Debug\BUS.pdb
+D:\đồ án Win\BUS\bin\Debug\AForge.dll
+D:\đồ án Win\BUS\bin\Debug\AForge.Video.DirectShow.dll
+D:\đồ án Win\BUS\bin\Debug\AForge.Video.dll
+D:\đồ án Win\BUS\bin\Debug\DAO.dll
+D:\đồ án Win\BUS\bin\Debug\DTO.dll
+D:\đồ án Win\BUS\bin\Debug\zxing.dll
+D:\đồ án Win\BUS\bin\Debug\zxing.presentation.dll
+D:\đồ án Win\BUS\bin\Debug\DAO.pdb
+D:\đồ án Win\BUS\bin\Debug\DTO.pdb
+D:\đồ án Win\BUS\bin\Debug\AForge.xml
+D:\đồ án Win\BUS\bin\Debug\AForge.Video.xml
+D:\đồ án Win\BUS\bin\Debug\AForge.Video.DirectShow.xml
+D:\đồ án Win\BUS\bin\Debug\zxing.xml
+D:\đồ án Win\BUS\bin\Debug\zxing.presentation.xml
+D:\đồ án Win\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\đồ án Win\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\đồ án Win\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\đồ án Win\BUS\obj\Debug\BUS.dll
+D:\đồ án Win\BUS\obj\Debug\BUS.pdb

@@ -72,5 +72,10 @@ namespace BUS
             return BillMenuDAO.Instance.GetListBillMenuForID(BillID);
         }
 
+        public List<BillMenu> GetListBillMenuByDate(string startDay, string endDay)
+        {
+            return BillMenuDAO.Instance.GetListBillMenuByDate(startDay, endDay);
+        }
+
     }
 }

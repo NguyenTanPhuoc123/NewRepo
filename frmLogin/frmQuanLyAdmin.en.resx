@@ -1541,7 +1541,7 @@
 </value>
   </data>
   <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 82</value>
+    <value>297, 69</value>
   </data>
   <data name="lblTitle.Text" xml:space="preserve">
     <value>Statistical</value>
@@ -1552,6 +1552,9 @@
   <data name="tbpRevenue.Text" xml:space="preserve">
     <value>Revenue</value>
   </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 18</value>
+  </data>
   <data name="btnStatisticalProduct.Text" xml:space="preserve">
     <value>Statistical</value>
   </data>
@@ -1560,6 +1563,9 @@
   </data>
   <data name="btnReportEmployCreateBill.Text" xml:space="preserve">
     <value>View Report</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 18</value>
   </data>
   <data name="btnbtnStatisticalBill.Text" xml:space="preserve">
     <value>Statistical</value>

@@ -34,5 +34,19 @@ namespace DAO
 
             return list;
         }
+
+        public List<StatisticalBill> GetListEmployeeCreateBillMinByDate(string startDay, string endDay)
+        {
+            List<StatisticalBill> list = new List<StatisticalBill>();
+            string query = string.Format("EXEC LoadEmployeeCreateBillMinByDate '{0}' , '{1}' ", startDay, endDay);
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                StatisticalBill bill = new StatisticalBill(item);
+                list.Add(bill);
+            }
+
+            return list;
+        }
     }
 }

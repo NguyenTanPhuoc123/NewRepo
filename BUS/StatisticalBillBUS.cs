@@ -26,5 +26,10 @@ namespace BUS
         {
             return StatisticalBillDAO.Instance.GetListEmployeeCreateBillMaxByDate(startDay, endDay);
         }
+
+        public List<StatisticalBill> GetListEmployeeCreateBillMinByDate(string startDay, string endDay)
+        {
+            return StatisticalBillDAO.Instance.GetListEmployeeCreateBillMinByDate(startDay, endDay);
+        }
     }
 }

@@ -11,6 +11,7 @@ using DTO;
 using BUS;
 using Microsoft.Reporting.WinForms;
 using System.Threading;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace frmLogin
 {   
@@ -20,14 +21,17 @@ namespace frmLogin
         private int Language = frmlogin.Language;
         private Button currentButton;
         private Form activeForm;
+        frmSellManagement frm;
 
-        public frmQuanLyAdmin()
+        public frmQuanLyAdmin(frmSellManagement frmSell)
         {
             if (Language == 0)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
+            cbTypeStatisticalBill.SelectedIndex = 0;
+            frm = frmSell;
         }
 
         private void frmQuanLyAdmin_FormClosing(object sender, FormClosingEventArgs e)
@@ -156,35 +160,59 @@ namespace frmLogin
 
         private void frmQuanLyAdmin_Load(object sender, EventArgs e)
         {
-            cbTypeStatisticalBill.SelectedIndex = 0;
             string startDay = DateTime.Now.ToString("yyyy/MM/dd");
             string endDay = DateTime.Now.ToString("yyyy/MM/dd");
-            List<StatisticalBill> list = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMaxByDate(startDay,endDay);
-            foreach(StatisticalBill item in list)
-            {
-                chartEmployeeCreateBill.Series["Số hóa đơn lập"].Points.AddXY(item.EmployeeName, item.CountBill);
-            }
-            chartEmployeeCreateBill.Titles.Add("Nhân viên lập nhiều hóa đơn nhất");
-            
+            chartEmployeeCreateBill.DataSource = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMaxByDate(startDay, endDay);
+            chartEmployeeCreateBill.Series["CountBill"].XValueMember = "EmployeeName";
+            chartEmployeeCreateBill.Series["CountBill"].XValueType = ChartValueType.String;
+            chartEmployeeCreateBill.Series["CountBill"].YValueMembers = "CountBill";
+            chartEmployeeCreateBill.Series["CountBill"].YValueType = ChartValueType.Int32;
+
         }
 
         private void btnbtnStatisticalBill_Click(object sender, EventArgs e)
-        {             
-            chartEmployeeCreateBill.Series.Clear();
-            chartEmployeeCreateBill.Series.Add("Số hóa đơn lập");
+        {
             string startDay = dtpBillStart.Value.ToString("yyyy/MM/dd");
             string endDay = dtpBillEnd.Value.ToString("yyyy/MM/dd");
-            List<StatisticalBill> list = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMaxByDate(startDay, endDay);
-            foreach (StatisticalBill item in list)
+            if (cbTypeStatisticalBill.SelectedIndex == 0)
             {
-                chartEmployeeCreateBill.Series["Số hóa đơn lập"].Points.AddXY(item.EmployeeName, item.CountBill);
+                chartEmployeeCreateBill.Titles["Title1"].Text = "NHÂN VIÊN LẬP HÓA ĐƠN NHIỀU NHẤT";
+
+                chartEmployeeCreateBill.DataSource = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMaxByDate(startDay, endDay);
             }
-           
+            else
+            {
+                chartEmployeeCreateBill.DataSource = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMinByDate(startDay, endDay);
+                chartEmployeeCreateBill.Titles["Title1"].Text = "NHÂN VIÊN LẬP HÓA ĐƠN ÍT NHẤT";
+            }
+            chartEmployeeCreateBill.Series["CountBill"].XValueMember = "EmployeeName";
+            chartEmployeeCreateBill.Series["CountBill"].XValueType = ChartValueType.String;
+            chartEmployeeCreateBill.Series["CountBill"].YValueMembers = "CountBill";
+            chartEmployeeCreateBill.Series["CountBill"].YValueType = ChartValueType.Int32;
+
+
+        }
+
+        public string GetStartDayBill()
+        {
+            return dtpBillStart.Value.ToString("yyyy/MM/dd");
+        }
+
+        public string GetEndDayBill()
+        {
+            return dtpBillEnd.Value.ToString("yyyy/MM/dd");
+        }
+
+        public Employee GetEmployeeByID()
+        {
+            return EmployeeBUS.Instance.GetEmployeeByEmployeeID(frm.LoginAccount.EmployeeID);
         }
 
         private void btnReportEmployCreateBill_Click(object sender, EventArgs e)
         {
-            frmStoreReport frm = new frmStoreReport();
+            string startDay = dtpBillStart.Value.ToString("yyyy/MM/dd");
+            string endDay = dtpBillEnd.Value.ToString("yyyy/MM/dd");
+            frmStoreReport frm = new frmStoreReport(this);
             this.Hide();
             frm.ShowDialog();
             this.Show();

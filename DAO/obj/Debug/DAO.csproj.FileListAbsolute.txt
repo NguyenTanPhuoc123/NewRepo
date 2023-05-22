@@ -180,3 +180,22 @@ D:\đồ án\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 D:\đồ án\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\đồ án\DAO\obj\Debug\DAO.dll
 D:\đồ án\DAO\obj\Debug\DAO.pdb
+D:\đồ án Win\DAO\bin\Debug\DAO.dll
+D:\đồ án Win\DAO\bin\Debug\DAO.pdb
+D:\đồ án Win\DAO\bin\Debug\AForge.dll
+D:\đồ án Win\DAO\bin\Debug\AForge.Video.DirectShow.dll
+D:\đồ án Win\DAO\bin\Debug\AForge.Video.dll
+D:\đồ án Win\DAO\bin\Debug\DTO.dll
+D:\đồ án Win\DAO\bin\Debug\zxing.dll
+D:\đồ án Win\DAO\bin\Debug\zxing.presentation.dll
+D:\đồ án Win\DAO\bin\Debug\DTO.pdb
+D:\đồ án Win\DAO\bin\Debug\AForge.xml
+D:\đồ án Win\DAO\bin\Debug\AForge.Video.xml
+D:\đồ án Win\DAO\bin\Debug\AForge.Video.DirectShow.xml
+D:\đồ án Win\DAO\bin\Debug\zxing.xml
+D:\đồ án Win\DAO\bin\Debug\zxing.presentation.xml
+D:\đồ án Win\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\đồ án Win\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\đồ án Win\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\đồ án Win\DAO\obj\Debug\DAO.dll
+D:\đồ án Win\DAO\obj\Debug\DAO.pdb
