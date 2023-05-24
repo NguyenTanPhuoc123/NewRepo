@@ -360,6 +360,9 @@
     <EmbeddedResource Include="frmSellManagement.resx">
       <DependentUpon>frmSellManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSellManagement.vai.resx">
+      <DependentUpon>frmSellManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSellManagement.vi.resx">
       <DependentUpon>frmSellManagement.cs</DependentUpon>
     </EmbeddedResource>

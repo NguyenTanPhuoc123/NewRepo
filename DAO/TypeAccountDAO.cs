@@ -113,5 +113,11 @@ namespace DAO
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }
+        public bool checkNameExist(string tenloai)
+        {
+            string query = string.Format("Select count(*) from LOAITAIKHOAN where tenloai={0}", tenloai);
+            int data  = DataProvider.ExecuteScalarCommand(query, null);
+            return data>0?false:true;
+        }
     }
 }

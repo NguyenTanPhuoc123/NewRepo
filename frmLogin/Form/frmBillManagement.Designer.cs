@@ -29,10 +29,10 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBillManagement));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtgvListBill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,19 +73,19 @@ namespace frmLogin
             // 
             // dtgvListBill
             // 
-            resources.ApplyResources(this.dtgvListBill, "dtgvListBill");
             this.dtgvListBill.AllowUserToAddRows = false;
             this.dtgvListBill.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dtgvListBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgvListBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.dtgvListBill, "dtgvListBill");
             this.dtgvListBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -99,14 +99,14 @@ namespace frmLogin
             this.Column9,
             this.Column11,
             this.Column12});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListBill.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListBill.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListBill.Name = "dtgvListBill";
             this.dtgvListBill.RowHeadersVisible = false;
@@ -202,12 +202,12 @@ namespace frmLogin
             // 
             // cbSortBill
             // 
-            resources.ApplyResources(this.cbSortBill, "cbSortBill");
             this.cbSortBill.BackColor = System.Drawing.Color.Transparent;
             this.cbSortBill.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbSortBill.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSortBill.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbSortBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbSortBill, "cbSortBill");
             this.cbSortBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortBill.Items.AddRange(new object[] {
             resources.GetString("cbSortBill.Items"),
@@ -227,20 +227,19 @@ namespace frmLogin
             // 
             // btnShowDetail
             // 
-            resources.ApplyResources(this.btnShowDetail, "btnShowDetail");
             this.btnShowDetail.BorderRadius = 20;
             this.btnShowDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnShowDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnShowDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnShowDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnShowDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
+            resources.ApplyResources(this.btnShowDetail, "btnShowDetail");
             this.btnShowDetail.ForeColor = System.Drawing.Color.Black;
             this.btnShowDetail.Name = "btnShowDetail";
             this.btnShowDetail.Click += new System.EventHandler(this.btnShowDetail_Click);
             // 
             // grpBillInfo
             // 
-            resources.ApplyResources(this.grpBillInfo, "grpBillInfo");
             this.grpBillInfo.Controls.Add(this.txtDiscount);
             this.grpBillInfo.Controls.Add(this.label10);
             this.grpBillInfo.Controls.Add(this.txtDayCheckOut);
@@ -257,12 +256,12 @@ namespace frmLogin
             this.grpBillInfo.Controls.Add(this.label4);
             this.grpBillInfo.Controls.Add(this.txtBillID);
             this.grpBillInfo.Controls.Add(this.label3);
+            resources.ApplyResources(this.grpBillInfo, "grpBillInfo");
             this.grpBillInfo.Name = "grpBillInfo";
             this.grpBillInfo.TabStop = false;
             // 
             // txtDiscount
             // 
-            resources.ApplyResources(this.txtDiscount, "txtDiscount");
             this.txtDiscount.BorderRadius = 10;
             this.txtDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiscount.DefaultText = "";
@@ -271,6 +270,7 @@ namespace frmLogin
             this.txtDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiscount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtDiscount, "txtDiscount");
             this.txtDiscount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.PasswordChar = '\0';
@@ -285,7 +285,6 @@ namespace frmLogin
             // 
             // txtDayCheckOut
             // 
-            resources.ApplyResources(this.txtDayCheckOut, "txtDayCheckOut");
             this.txtDayCheckOut.BorderRadius = 10;
             this.txtDayCheckOut.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDayCheckOut.DefaultText = "";
@@ -294,6 +293,7 @@ namespace frmLogin
             this.txtDayCheckOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDayCheckOut.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDayCheckOut.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtDayCheckOut, "txtDayCheckOut");
             this.txtDayCheckOut.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDayCheckOut.Name = "txtDayCheckOut";
             this.txtDayCheckOut.PasswordChar = '\0';
@@ -308,7 +308,6 @@ namespace frmLogin
             // 
             // txtDayCheckIn
             // 
-            resources.ApplyResources(this.txtDayCheckIn, "txtDayCheckIn");
             this.txtDayCheckIn.BorderRadius = 10;
             this.txtDayCheckIn.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDayCheckIn.DefaultText = "";
@@ -317,6 +316,7 @@ namespace frmLogin
             this.txtDayCheckIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDayCheckIn.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDayCheckIn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtDayCheckIn, "txtDayCheckIn");
             this.txtDayCheckIn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDayCheckIn.Name = "txtDayCheckIn";
             this.txtDayCheckIn.PasswordChar = '\0';
@@ -326,10 +326,10 @@ namespace frmLogin
             // 
             // cbStatusCheckOut
             // 
-            resources.ApplyResources(this.cbStatusCheckOut, "cbStatusCheckOut");
             this.cbStatusCheckOut.BackColor = System.Drawing.Color.Transparent;
             this.cbStatusCheckOut.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbStatusCheckOut.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cbStatusCheckOut, "cbStatusCheckOut");
             this.cbStatusCheckOut.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbStatusCheckOut.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbStatusCheckOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
@@ -345,7 +345,6 @@ namespace frmLogin
             // 
             // txtTable
             // 
-            resources.ApplyResources(this.txtTable, "txtTable");
             this.txtTable.BorderRadius = 10;
             this.txtTable.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTable.DefaultText = "";
@@ -354,6 +353,7 @@ namespace frmLogin
             this.txtTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTable.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtTable, "txtTable");
             this.txtTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTable.Name = "txtTable";
             this.txtTable.PasswordChar = '\0';
@@ -368,7 +368,6 @@ namespace frmLogin
             // 
             // txtTotalBill
             // 
-            resources.ApplyResources(this.txtTotalBill, "txtTotalBill");
             this.txtTotalBill.BorderRadius = 10;
             this.txtTotalBill.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTotalBill.DefaultText = "";
@@ -377,6 +376,7 @@ namespace frmLogin
             this.txtTotalBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTotalBill.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTotalBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtTotalBill, "txtTotalBill");
             this.txtTotalBill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTotalBill.Name = "txtTotalBill";
             this.txtTotalBill.PasswordChar = '\0';
@@ -396,7 +396,6 @@ namespace frmLogin
             // 
             // txtEmployeeName
             // 
-            resources.ApplyResources(this.txtEmployeeName, "txtEmployeeName");
             this.txtEmployeeName.BorderRadius = 10;
             this.txtEmployeeName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmployeeName.DefaultText = "";
@@ -405,6 +404,7 @@ namespace frmLogin
             this.txtEmployeeName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtEmployeeName, "txtEmployeeName");
             this.txtEmployeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.PasswordChar = '\0';
@@ -419,7 +419,6 @@ namespace frmLogin
             // 
             // txtBillID
             // 
-            resources.ApplyResources(this.txtBillID, "txtBillID");
             this.txtBillID.BorderRadius = 10;
             this.txtBillID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBillID.DefaultText = "";
@@ -428,6 +427,7 @@ namespace frmLogin
             this.txtBillID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtBillID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtBillID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtBillID, "txtBillID");
             this.txtBillID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBillID.Name = "txtBillID";
             this.txtBillID.PasswordChar = '\0';
@@ -442,9 +442,9 @@ namespace frmLogin
             // 
             // dtpFillBill
             // 
-            resources.ApplyResources(this.dtpFillBill, "dtpFillBill");
             this.dtpFillBill.BackColor = System.Drawing.SystemColors.Control;
             this.dtpFillBill.Checked = true;
+            resources.ApplyResources(this.dtpFillBill, "dtpFillBill");
             this.dtpFillBill.FillColor = System.Drawing.Color.Lime;
             this.dtpFillBill.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFillBill.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -462,8 +462,8 @@ namespace frmLogin
             // 
             // frmBillManagement
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.chkFillBill);
             this.Controls.Add(this.dtpFillBill);
             this.Controls.Add(this.grpBillInfo);

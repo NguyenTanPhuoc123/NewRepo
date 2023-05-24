@@ -73,8 +73,8 @@ namespace frmLogin
             // 
             // button1
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -87,7 +87,8 @@ namespace frmLogin
             // 
             // Usercontrol
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lbDonGia);
             this.Controls.Add(this.lbSoLuong);
             this.Controls.Add(this.lbTenSP);
@@ -97,7 +98,6 @@ namespace frmLogin
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Usercontrol";
-            resources.ApplyResources(this, "$this");
             this.Load += new System.EventHandler(this.Usercontrol_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

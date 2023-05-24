@@ -158,5 +158,11 @@ namespace DAO
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
+        public bool checkTableExist(string tenban)
+        {
+            string sql = string.Format("Select count(*) from BanAn where TENBAN ={0}",  tenban);
+            int data = DataProvider.ExecuteScalarCommand(sql, null);
+            return data > 0 ? false : true;
+        }
     }
 }

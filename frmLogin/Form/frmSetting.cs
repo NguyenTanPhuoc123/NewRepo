@@ -111,19 +111,25 @@ namespace frmLogin
                     MessageBox.Show("Số điện thoại không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+
                 string gioiTinh;
                 if (radMale.Checked)
                     gioiTinh = "Nam";
                 else
                     gioiTinh = "Nữ";
-                int row = EmployeeBUS.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text), txtNumberPhone.Text, dtpBirthday.Text, gioiTinh, txtAddress.Text);
-                if (row == 1)
+                if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text,txtEmployeeID.Text))
                 {
-                    MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK);
-                    LoadThongTin();
+                    int row = EmployeeBUS.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text), txtNumberPhone.Text, dtpBirthday.Text, gioiTinh, txtAddress.Text);
+                    if (row == 1)
+                    {
+                        MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        LoadThongTin();
+                    }
+                    else
+                        MessageBox.Show("Sửa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
-                    MessageBox.Show("Sửa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau");
             }
             else
             {
@@ -137,14 +143,19 @@ namespace frmLogin
                     gioiTinh = "Nam";
                 else
                     gioiTinh = "Nữ";
-                int row = EmployeeBUS.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text), txtNumberPhone.Text, dtpBirthday.Text, gioiTinh, txtAddress.Text);
-                if (row == 1)
+                if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text, txtEmployeeID.Text))
                 {
-                    MessageBox.Show("Edit successful", "Notice", MessageBoxButtons.OK);
-                    LoadThongTin();
+                    int row = EmployeeBUS.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text), txtNumberPhone.Text, dtpBirthday.Text, gioiTinh, txtAddress.Text);
+                    if (row == 1)
+                    {
+                        MessageBox.Show("Edit successful", "Notice", MessageBoxButtons.OK);
+                        LoadThongTin();
+                    }
+                    else
+                        MessageBox.Show("Edit failed", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
-                    MessageBox.Show("Edit failed", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng");
             }
 
         }

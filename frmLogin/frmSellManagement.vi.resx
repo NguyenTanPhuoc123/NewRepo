@@ -117,12 +117,60 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnMinimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOUlEQVRYR+3DoQ0AIBAEwQdJ/4VQAaED
+        qkHDCezLSxA7yQQAAPhN120+NDX1mC9NFW3mVQEAwBNxAYZ/MtEXu8xkAAAAAElFTkSuQmCC
+</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnMinimize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSetting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAR5JREFUSEvl1U9Kw0AYhvHUtX/Q3kL3ojeoO0F0qT2Bp2m36tIjdVdQBA+g7tQ+
+        DyQwTL9pGEhB8IUflOabb8LMJGn+TS7wgd+WvycYLE/omnceMUhOsEQ+gf8doyojzPCMG8zxg7x5x2vW
+        WOsYx9qjmCmiRjXuEGYXb4gG1XjHPtZyj2iAXnCFvdYlFohqZa+1nOMTebHNj5DnEF7L6+1xhjCn+EI6
+        wDsv5RpprWPtsTHpAyWXpBTXOq11bG9qJjhAWts7QbREbmgpnv+0duMSlTbZ0+KG5hnjFXl9cZP7jqkb
+        6prLO4+ad8JjuvUHzfiYR4Nq3KKYHaQvO39/I2okr1mTvuzsURVfyYO9rkvx45JP8IDBsvVP5l9N06wA
+        SsHWECM9b9YAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnSetting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnExitFormSell.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAOZJREFUWEftlksKwjAYhHMFQcFbuPH26g1c+AA9js4Uf5hFsHn8STb5YKDPmWna
+        hoTJJMIBukDbZc+HDXSCjsveCmfoA90gjxL0oBc96b0K214h3nCHakqoV9YDeZQoDjfU4AXtoVR2EItX
+        j2JJCbdwI6cEwx+QW7iRUqJZuKEBb0hL6Lnc7yWLWIlu4YYGPn/iNo/xXBe0hI5GN4YWGPoKNNw+OD3W
+        dCRi4UbzEv/CDV5jU7Dr75gSbriX0Ck4dXotuSdKjVF1CTUoXZoVl/AIN4pKDF+UclnOCz3CDXrRk96T
+        iRDCF/FzelOcx/ofAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnExitFormSell.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnDelete.ToolTip" xml:space="preserve">
+    <value>Xóa món ăn đã chọn</value>
+  </data>
+  <data name="btnChangeTable.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -130,7 +178,6 @@
   <data name="lblToltalPrice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnStoreManagement.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -142,6 +189,9 @@
         obN8cunAOGawjl64ivbagPbWGZ3IZRbx5REtdBU9acm955CLH8APkB0g95v9i+jDJPeuaYAy+QHMAYag
         P6V/YRg+PiQIvgAOxpx5lOvVlgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="btnStoreManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="btnSelectDish.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -158,6 +208,9 @@
         tu4XuYlMrMQpnE7+5p1MnEjoULIVihb0QPeVqz7kTI7alLMdmdgPHbPmgsaOBmE9ptnwBFErXmAKqtPa
         MESbieP+7a4i3Y/61RgaizGj1n93qiviF7FD2wAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="btnSelectDish.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="btnPay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -177,42 +230,8 @@
         bEsAAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnMinimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOUlEQVRYR+3DoQ0AIBAEwQdJ/4VQAaED
-        qkHDCezLSxA7yQQAAPhN120+NDX1mC9NFW3mVQEAwBNxAYZ/MtEXu8xkAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnMinimize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSetting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAR5JREFUSEvl1U9Kw0AYhvHUtX/Q3kL3ojeoO0F0qT2Bp2m36tIjdVdQBA+g7tQ+
-        DyQwTL9pGEhB8IUflOabb8LMJGn+TS7wgd+WvycYLE/omnceMUhOsEQ+gf8doyojzPCMG8zxg7x5x2vW
-        WOsYx9qjmCmiRjXuEGYXb4gG1XjHPtZyj2iAXnCFvdYlFohqZa+1nOMTebHNj5DnEF7L6+1xhjCn+EI6
-        wDsv5RpprWPtsTHpAyWXpBTXOq11bG9qJjhAWts7QbREbmgpnv+0duMSlTbZ0+KG5hnjFXl9cZP7jqkb
-        6prLO4+ad8JjuvUHzfiYR4Nq3KKYHaQvO39/I2okr1mTvuzsURVfyYO9rkvx45JP8IDBsvVP5l9N06wA
-        SsHWECM9b9YAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnSetting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnExitFormSell.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAOZJREFUWEftlksKwjAYhHMFQcFbuPH26g1c+AA9js4Uf5hFsHn8STb5YKDPmWna
-        hoTJJMIBukDbZc+HDXSCjsveCmfoA90gjxL0oBc96b0K214h3nCHakqoV9YDeZQoDjfU4AXtoVR2EItX
-        j2JJCbdwI6cEwx+QW7iRUqJZuKEBb0hL6Lnc7yWLWIlu4YYGPn/iNo/xXBe0hI5GN4YWGPoKNNw+OD3W
-        dCRi4UbzEv/CDV5jU7Dr75gSbriX0Ck4dXotuSdKjVF1CTUoXZoVl/AIN4pKDF+UclnOCz3CDXrRk96T
-        iRDCF/FzelOcx/ofAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnExitFormSell.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="btnPay.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -411,8 +430,5 @@
         QUndoLa/T9+uASWCIm+x6Ab0nakAKBQKFQCFQqECoFAoVAAUCoUKgEKhUAFQKFQA9EEoFCoACoVCBUCh
         UKgAKBQKFQCFQqECoFAoVAAUCoUKgEKhUAFQKBQqAAqFwlf8f2Q0n8n7MPmgAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

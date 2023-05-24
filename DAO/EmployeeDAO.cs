@@ -24,7 +24,7 @@ namespace DAO
         public bool CheckNumberPhone(string phone, string ID)
         {
             int outputNum;
-            if (phone.Length == 11 || !int.TryParse(phone, out outputNum))
+            if (phone.Length > 11 || phone.Length < 10 || !int.TryParse(phone, out outputNum)) 
                 return false;
 
             if (!phone.StartsWith("0"))
@@ -41,7 +41,7 @@ namespace DAO
         public bool CheckNumberPhoneCreate(string phone)
         {
             int outputNum;
-            if (phone.Length == 11 || !int.TryParse(phone, out outputNum))
+            if (phone.Length > 11 || phone.Length < 10 ||!int.TryParse(phone, out outputNum))
                 return false;
 
             if (!phone.StartsWith("0"))

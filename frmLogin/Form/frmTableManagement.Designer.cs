@@ -30,15 +30,20 @@ namespace frmLogin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTableManagement));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbSortTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbFillTable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchTable = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtgvListTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.colTableID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTableName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocationID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTableInfo = new System.Windows.Forms.GroupBox();
             this.cbLocation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,11 +59,6 @@ namespace frmLogin
             this.btnDeleteTable = new Guna.UI2.WinForms.Guna2Button();
             this.btnTableDeleted = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchTable = new Guna.UI2.WinForms.Guna2Button();
-            this.colTableID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTableName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLocationID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListTable)).BeginInit();
             this.grpTableInfo.SuspendLayout();
             this.grpFunctionTable.SuspendLayout();
@@ -71,12 +71,12 @@ namespace frmLogin
             // 
             // cbSortTable
             // 
-            resources.ApplyResources(this.cbSortTable, "cbSortTable");
             this.cbSortTable.BackColor = System.Drawing.Color.Transparent;
             this.cbSortTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbSortTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSortTable.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbSortTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbSortTable, "cbSortTable");
             this.cbSortTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortTable.Items.AddRange(new object[] {
             resources.GetString("cbSortTable.Items"),
@@ -94,19 +94,18 @@ namespace frmLogin
             // 
             // cbFillTable
             // 
-            resources.ApplyResources(this.cbFillTable, "cbFillTable");
             this.cbFillTable.BackColor = System.Drawing.Color.Transparent;
             this.cbFillTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbFillTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFillTable.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbFillTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbFillTable, "cbFillTable");
             this.cbFillTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillTable.Name = "cbFillTable";
             this.cbFillTable.SelectedIndexChanged += new System.EventHandler(this.cbFillTable_SelectedIndexChanged);
             // 
             // txtSearchTable
             // 
-            resources.ApplyResources(this.txtSearchTable, "txtSearchTable");
             this.txtSearchTable.BorderRadius = 10;
             this.txtSearchTable.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchTable.DefaultText = "";
@@ -115,6 +114,7 @@ namespace frmLogin
             this.txtSearchTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchTable.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtSearchTable, "txtSearchTable");
             this.txtSearchTable.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchTable.Name = "txtSearchTable";
             this.txtSearchTable.PasswordChar = '\0';
@@ -124,19 +124,19 @@ namespace frmLogin
             // 
             // dtgvListTable
             // 
-            resources.ApplyResources(this.dtgvListTable, "dtgvListTable");
             this.dtgvListTable.AllowUserToAddRows = false;
             this.dtgvListTable.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dtgvListTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvListTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            resources.ApplyResources(this.dtgvListTable, "dtgvListTable");
             this.dtgvListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colTableID,
@@ -144,14 +144,14 @@ namespace frmLogin
             this.colLocation,
             this.colStatus,
             this.colLocationID});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListTable.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListTable.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListTable.Name = "dtgvListTable";
             this.dtgvListTable.RowHeadersVisible = false;
@@ -179,198 +179,6 @@ namespace frmLogin
             this.dtgvListTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTable_CellContentClick);
             this.dtgvListTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTable_CellContentClick);
-            // 
-            // grpTableInfo
-            // 
-            resources.ApplyResources(this.grpTableInfo, "grpTableInfo");
-            this.grpTableInfo.Controls.Add(this.cbLocation);
-            this.grpTableInfo.Controls.Add(this.label5);
-            this.grpTableInfo.Controls.Add(this.txtTableName);
-            this.grpTableInfo.Controls.Add(this.label4);
-            this.grpTableInfo.Controls.Add(this.txtTableID);
-            this.grpTableInfo.Controls.Add(this.label3);
-            this.grpTableInfo.Name = "grpTableInfo";
-            this.grpTableInfo.TabStop = false;
-            // 
-            // cbLocation
-            // 
-            resources.ApplyResources(this.cbLocation, "cbLocation");
-            this.cbLocation.BackColor = System.Drawing.Color.Transparent;
-            this.cbLocation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbLocation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbLocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbLocation.Name = "cbLocation";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // txtTableName
-            // 
-            resources.ApplyResources(this.txtTableName, "txtTableName");
-            this.txtTableName.BorderRadius = 10;
-            this.txtTableName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTableName.DefaultText = "";
-            this.txtTableName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTableName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTableName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTableName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTableName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTableName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTableName.Name = "txtTableName";
-            this.txtTableName.PasswordChar = '\0';
-            this.txtTableName.PlaceholderText = "";
-            this.txtTableName.SelectedText = "";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // txtTableID
-            // 
-            resources.ApplyResources(this.txtTableID, "txtTableID");
-            this.txtTableID.BorderRadius = 10;
-            this.txtTableID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTableID.DefaultText = "";
-            this.txtTableID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTableID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTableID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTableID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTableID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTableID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTableID.Name = "txtTableID";
-            this.txtTableID.PasswordChar = '\0';
-            this.txtTableID.PlaceholderText = "";
-            this.txtTableID.ReadOnly = true;
-            this.txtTableID.SelectedText = "";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // grpFunctionTable
-            // 
-            resources.ApplyResources(this.grpFunctionTable, "grpFunctionTable");
-            this.grpFunctionTable.Controls.Add(this.btnSaveTable);
-            this.grpFunctionTable.Controls.Add(this.btnAddTable);
-            this.grpFunctionTable.Controls.Add(this.btnEditTable);
-            this.grpFunctionTable.Controls.Add(this.btnDeleteAllTable);
-            this.grpFunctionTable.Controls.Add(this.btnDeleteTable);
-            this.grpFunctionTable.Controls.Add(this.btnTableDeleted);
-            this.grpFunctionTable.Name = "grpFunctionTable";
-            this.grpFunctionTable.TabStop = false;
-            // 
-            // btnSaveTable
-            // 
-            resources.ApplyResources(this.btnSaveTable, "btnSaveTable");
-            this.btnSaveTable.BorderRadius = 20;
-            this.btnSaveTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSaveTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSaveTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.btnSaveTable.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveTable.Image")));
-            this.btnSaveTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSaveTable.Name = "btnSaveTable";
-            this.btnSaveTable.Click += new System.EventHandler(this.btnSaveTable_Click);
-            // 
-            // btnAddTable
-            // 
-            resources.ApplyResources(this.btnAddTable, "btnAddTable");
-            this.btnAddTable.BorderRadius = 20;
-            this.btnAddTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
-            this.btnAddTable.ForeColor = System.Drawing.Color.Black;
-            this.btnAddTable.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTable.Image")));
-            this.btnAddTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddTable.Name = "btnAddTable";
-            this.btnAddTable.Click += new System.EventHandler(this.btnAddTable_Click);
-            // 
-            // btnEditTable
-            // 
-            resources.ApplyResources(this.btnEditTable, "btnEditTable");
-            this.btnEditTable.BorderRadius = 20;
-            this.btnEditTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
-            this.btnEditTable.ForeColor = System.Drawing.Color.Black;
-            this.btnEditTable.Image = ((System.Drawing.Image)(resources.GetObject("btnEditTable.Image")));
-            this.btnEditTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEditTable.Name = "btnEditTable";
-            this.btnEditTable.Click += new System.EventHandler(this.btnEditTable_Click);
-            // 
-            // btnDeleteAllTable
-            // 
-            resources.ApplyResources(this.btnDeleteAllTable, "btnDeleteAllTable");
-            this.btnDeleteAllTable.BorderColor = System.Drawing.Color.Red;
-            this.btnDeleteAllTable.BorderRadius = 10;
-            this.btnDeleteAllTable.BorderThickness = 2;
-            this.btnDeleteAllTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteAllTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteAllTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteAllTable.FillColor = System.Drawing.Color.White;
-            this.btnDeleteAllTable.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteAllTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllTable.Image")));
-            this.btnDeleteAllTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteAllTable.Name = "btnDeleteAllTable";
-            this.btnDeleteAllTable.Click += new System.EventHandler(this.btnDeleteAllTable_Click);
-            // 
-            // btnDeleteTable
-            // 
-            resources.ApplyResources(this.btnDeleteTable, "btnDeleteTable");
-            this.btnDeleteTable.BorderRadius = 20;
-            this.btnDeleteTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            this.btnDeleteTable.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteTable.Image")));
-            this.btnDeleteTable.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteTable.Name = "btnDeleteTable";
-            this.btnDeleteTable.Click += new System.EventHandler(this.btnDeleteTable_Click);
-            // 
-            // btnTableDeleted
-            // 
-            resources.ApplyResources(this.btnTableDeleted, "btnTableDeleted");
-            this.btnTableDeleted.BorderRadius = 20;
-            this.btnTableDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTableDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTableDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTableDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTableDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
-            this.btnTableDeleted.ForeColor = System.Drawing.Color.Black;
-            this.btnTableDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnTableDeleted.Image")));
-            this.btnTableDeleted.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTableDeleted.Name = "btnTableDeleted";
-            this.btnTableDeleted.Click += new System.EventHandler(this.btnTableDeleted_Click);
-            // 
-            // btnSearchTable
-            // 
-            resources.ApplyResources(this.btnSearchTable, "btnSearchTable");
-            this.btnSearchTable.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearchTable.BorderRadius = 10;
-            this.btnSearchTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearchTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchTable.FillColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSearchTable.ForeColor = System.Drawing.Color.White;
-            this.btnSearchTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchTable.Image")));
-            this.btnSearchTable.Name = "btnSearchTable";
-            this.btnSearchTable.Click += new System.EventHandler(this.btnSearchTable_Click);
             // 
             // colTableID
             // 
@@ -402,10 +210,202 @@ namespace frmLogin
             resources.ApplyResources(this.colLocationID, "colLocationID");
             this.colLocationID.Name = "colLocationID";
             // 
+            // grpTableInfo
+            // 
+            this.grpTableInfo.Controls.Add(this.cbLocation);
+            this.grpTableInfo.Controls.Add(this.label5);
+            this.grpTableInfo.Controls.Add(this.txtTableName);
+            this.grpTableInfo.Controls.Add(this.label4);
+            this.grpTableInfo.Controls.Add(this.txtTableID);
+            this.grpTableInfo.Controls.Add(this.label3);
+            resources.ApplyResources(this.grpTableInfo, "grpTableInfo");
+            this.grpTableInfo.Name = "grpTableInfo";
+            this.grpTableInfo.TabStop = false;
+            // 
+            // cbLocation
+            // 
+            this.cbLocation.BackColor = System.Drawing.Color.Transparent;
+            this.cbLocation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLocation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbLocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbLocation, "cbLocation");
+            this.cbLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbLocation.Name = "cbLocation";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // txtTableName
+            // 
+            this.txtTableName.BorderRadius = 10;
+            this.txtTableName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTableName.DefaultText = "";
+            this.txtTableName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTableName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTableName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTableName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTableName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtTableName, "txtTableName");
+            this.txtTableName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTableName.Name = "txtTableName";
+            this.txtTableName.PasswordChar = '\0';
+            this.txtTableName.PlaceholderText = "";
+            this.txtTableName.SelectedText = "";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // txtTableID
+            // 
+            this.txtTableID.BorderRadius = 10;
+            this.txtTableID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTableID.DefaultText = "";
+            this.txtTableID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTableID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTableID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTableID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTableID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtTableID, "txtTableID");
+            this.txtTableID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTableID.Name = "txtTableID";
+            this.txtTableID.PasswordChar = '\0';
+            this.txtTableID.PlaceholderText = "";
+            this.txtTableID.ReadOnly = true;
+            this.txtTableID.SelectedText = "";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // grpFunctionTable
+            // 
+            this.grpFunctionTable.Controls.Add(this.btnSaveTable);
+            this.grpFunctionTable.Controls.Add(this.btnAddTable);
+            this.grpFunctionTable.Controls.Add(this.btnEditTable);
+            this.grpFunctionTable.Controls.Add(this.btnDeleteAllTable);
+            this.grpFunctionTable.Controls.Add(this.btnDeleteTable);
+            this.grpFunctionTable.Controls.Add(this.btnTableDeleted);
+            resources.ApplyResources(this.grpFunctionTable, "grpFunctionTable");
+            this.grpFunctionTable.Name = "grpFunctionTable";
+            this.grpFunctionTable.TabStop = false;
+            // 
+            // btnSaveTable
+            // 
+            this.btnSaveTable.BorderRadius = 20;
+            this.btnSaveTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.btnSaveTable, "btnSaveTable");
+            this.btnSaveTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            this.btnSaveTable.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveTable.Image")));
+            this.btnSaveTable.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSaveTable.Name = "btnSaveTable";
+            this.btnSaveTable.Click += new System.EventHandler(this.btnSaveTable_Click);
+            // 
+            // btnAddTable
+            // 
+            resources.ApplyResources(this.btnAddTable, "btnAddTable");
+            this.btnAddTable.BorderRadius = 20;
+            this.btnAddTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            this.btnAddTable.ForeColor = System.Drawing.Color.Black;
+            this.btnAddTable.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTable.Image")));
+            this.btnAddTable.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddTable.Name = "btnAddTable";
+            this.btnAddTable.Click += new System.EventHandler(this.btnAddTable_Click);
+            // 
+            // btnEditTable
+            // 
+            this.btnEditTable.BorderRadius = 20;
+            this.btnEditTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.btnEditTable, "btnEditTable");
+            this.btnEditTable.ForeColor = System.Drawing.Color.Black;
+            this.btnEditTable.Image = ((System.Drawing.Image)(resources.GetObject("btnEditTable.Image")));
+            this.btnEditTable.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnEditTable.Name = "btnEditTable";
+            this.btnEditTable.Click += new System.EventHandler(this.btnEditTable_Click);
+            // 
+            // btnDeleteAllTable
+            // 
+            this.btnDeleteAllTable.BorderColor = System.Drawing.Color.Red;
+            this.btnDeleteAllTable.BorderRadius = 10;
+            this.btnDeleteAllTable.BorderThickness = 2;
+            this.btnDeleteAllTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteAllTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteAllTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteAllTable.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnDeleteAllTable, "btnDeleteAllTable");
+            this.btnDeleteAllTable.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteAllTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllTable.Image")));
+            this.btnDeleteAllTable.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteAllTable.Name = "btnDeleteAllTable";
+            this.btnDeleteAllTable.Click += new System.EventHandler(this.btnDeleteAllTable_Click);
+            // 
+            // btnDeleteTable
+            // 
+            this.btnDeleteTable.BorderRadius = 20;
+            this.btnDeleteTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            resources.ApplyResources(this.btnDeleteTable, "btnDeleteTable");
+            this.btnDeleteTable.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteTable.Image")));
+            this.btnDeleteTable.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteTable.Name = "btnDeleteTable";
+            this.btnDeleteTable.Click += new System.EventHandler(this.btnDeleteTable_Click);
+            // 
+            // btnTableDeleted
+            // 
+            this.btnTableDeleted.BorderRadius = 20;
+            this.btnTableDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTableDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTableDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTableDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTableDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
+            resources.ApplyResources(this.btnTableDeleted, "btnTableDeleted");
+            this.btnTableDeleted.ForeColor = System.Drawing.Color.Black;
+            this.btnTableDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnTableDeleted.Image")));
+            this.btnTableDeleted.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTableDeleted.Name = "btnTableDeleted";
+            this.btnTableDeleted.Click += new System.EventHandler(this.btnTableDeleted_Click);
+            // 
+            // btnSearchTable
+            // 
+            this.btnSearchTable.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearchTable.BorderRadius = 10;
+            this.btnSearchTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchTable.FillColor = System.Drawing.Color.MediumSlateBlue;
+            resources.ApplyResources(this.btnSearchTable, "btnSearchTable");
+            this.btnSearchTable.ForeColor = System.Drawing.Color.White;
+            this.btnSearchTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchTable.Image")));
+            this.btnSearchTable.Name = "btnSearchTable";
+            this.btnSearchTable.Click += new System.EventHandler(this.btnSearchTable_Click);
+            // 
             // frmTableManagement
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.grpFunctionTable);
             this.Controls.Add(this.grpTableInfo);
             this.Controls.Add(this.btnSearchTable);

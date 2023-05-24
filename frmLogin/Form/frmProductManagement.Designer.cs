@@ -30,9 +30,9 @@ namespace frmLogin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductManagement));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbSortProduct = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -90,12 +90,12 @@ namespace frmLogin
             // 
             // cbSortProduct
             // 
-            resources.ApplyResources(this.cbSortProduct, "cbSortProduct");
             this.cbSortProduct.BackColor = System.Drawing.Color.Transparent;
             this.cbSortProduct.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbSortProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSortProduct.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbSortProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbSortProduct, "cbSortProduct");
             this.cbSortProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortProduct.Items.AddRange(new object[] {
             resources.GetString("cbSortProduct.Items"),
@@ -108,7 +108,6 @@ namespace frmLogin
             // 
             // txtSearchProduct
             // 
-            resources.ApplyResources(this.txtSearchProduct, "txtSearchProduct");
             this.txtSearchProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchProduct.DefaultText = "";
             this.txtSearchProduct.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -116,6 +115,7 @@ namespace frmLogin
             this.txtSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchProduct.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtSearchProduct, "txtSearchProduct");
             this.txtSearchProduct.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchProduct.Name = "txtSearchProduct";
             this.txtSearchProduct.PasswordChar = '\0';
@@ -124,12 +124,12 @@ namespace frmLogin
             // 
             // cbFillProduct
             // 
-            resources.ApplyResources(this.cbFillProduct, "cbFillProduct");
             this.cbFillProduct.BackColor = System.Drawing.Color.Transparent;
             this.cbFillProduct.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbFillProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFillProduct.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbFillProduct.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbFillProduct, "cbFillProduct");
             this.cbFillProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillProduct.Items.AddRange(new object[] {
             resources.GetString("cbFillProduct.Items")});
@@ -138,18 +138,18 @@ namespace frmLogin
             // 
             // dtgvListProduct
             // 
-            resources.ApplyResources(this.dtgvListProduct, "dtgvListProduct");
             this.dtgvListProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvListProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvListProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            resources.ApplyResources(this.dtgvListProduct, "dtgvListProduct");
             this.dtgvListProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -160,14 +160,14 @@ namespace frmLogin
             this.Column5,
             this.Column6,
             this.Column7});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListProduct.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListProduct.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvListProduct.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListProduct.Name = "dtgvListProduct";
             this.dtgvListProduct.RowHeadersVisible = false;
@@ -248,7 +248,6 @@ namespace frmLogin
             // 
             // grpProductInfo
             // 
-            resources.ApplyResources(this.grpProductInfo, "grpProductInfo");
             this.grpProductInfo.Controls.Add(this.richtxtDescribe);
             this.grpProductInfo.Controls.Add(this.label9);
             this.grpProductInfo.Controls.Add(this.label8);
@@ -263,6 +262,7 @@ namespace frmLogin
             this.grpProductInfo.Controls.Add(this.txtProductID);
             this.grpProductInfo.Controls.Add(this.label1);
             this.grpProductInfo.Controls.Add(this.pbProduct);
+            resources.ApplyResources(this.grpProductInfo, "grpProductInfo");
             this.grpProductInfo.Name = "grpProductInfo";
             this.grpProductInfo.TabStop = false;
             // 
@@ -283,7 +283,6 @@ namespace frmLogin
             // 
             // txtPrice
             // 
-            resources.ApplyResources(this.txtPrice, "txtPrice");
             this.txtPrice.BorderRadius = 10;
             this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrice.DefaultText = "";
@@ -292,6 +291,7 @@ namespace frmLogin
             this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtPrice, "txtPrice");
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';
@@ -306,9 +306,9 @@ namespace frmLogin
             // 
             // numQuantity
             // 
-            resources.ApplyResources(this.numQuantity, "numQuantity");
             this.numQuantity.BackColor = System.Drawing.Color.Transparent;
             this.numQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.numQuantity, "numQuantity");
             this.numQuantity.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -333,12 +333,12 @@ namespace frmLogin
             // 
             // cbCategory
             // 
-            resources.ApplyResources(this.cbCategory, "cbCategory");
             this.cbCategory.BackColor = System.Drawing.Color.Transparent;
             this.cbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbCategory, "cbCategory");
             this.cbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbCategory.Name = "cbCategory";
             // 
@@ -349,7 +349,6 @@ namespace frmLogin
             // 
             // txtProductName
             // 
-            resources.ApplyResources(this.txtProductName, "txtProductName");
             this.txtProductName.BorderRadius = 10;
             this.txtProductName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProductName.DefaultText = "";
@@ -358,6 +357,7 @@ namespace frmLogin
             this.txtProductName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtProductName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtProductName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtProductName, "txtProductName");
             this.txtProductName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.PasswordChar = '\0';
@@ -371,7 +371,6 @@ namespace frmLogin
             // 
             // txtProductID
             // 
-            resources.ApplyResources(this.txtProductID, "txtProductID");
             this.txtProductID.BorderRadius = 10;
             this.txtProductID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProductID.DefaultText = "";
@@ -380,6 +379,7 @@ namespace frmLogin
             this.txtProductID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtProductID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtProductID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtProductID, "txtProductID");
             this.txtProductID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProductID.Name = "txtProductID";
             this.txtProductID.PasswordChar = '\0';
@@ -401,24 +401,24 @@ namespace frmLogin
             // 
             // grpFunction
             // 
-            resources.ApplyResources(this.grpFunction, "grpFunction");
             this.grpFunction.Controls.Add(this.btnSaveProduct);
             this.grpFunction.Controls.Add(this.btnAddProduct);
             this.grpFunction.Controls.Add(this.btnEditProduct);
             this.grpFunction.Controls.Add(this.btnDeleteAllProduct);
             this.grpFunction.Controls.Add(this.btnDeleteProduct);
             this.grpFunction.Controls.Add(this.btnProductDeleted);
+            resources.ApplyResources(this.grpFunction, "grpFunction");
             this.grpFunction.Name = "grpFunction";
             this.grpFunction.TabStop = false;
             // 
             // btnSaveProduct
             // 
-            resources.ApplyResources(this.btnSaveProduct, "btnSaveProduct");
             this.btnSaveProduct.BorderRadius = 20;
             this.btnSaveProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSaveProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSaveProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSaveProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.btnSaveProduct, "btnSaveProduct");
             this.btnSaveProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnSaveProduct.ForeColor = System.Drawing.Color.Black;
             this.btnSaveProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveProduct.Image")));
@@ -428,13 +428,13 @@ namespace frmLogin
             // 
             // btnAddProduct
             // 
-            resources.ApplyResources(this.btnAddProduct, "btnAddProduct");
             this.btnAddProduct.BorderRadius = 20;
             this.btnAddProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            resources.ApplyResources(this.btnAddProduct, "btnAddProduct");
             this.btnAddProduct.ForeColor = System.Drawing.Color.Black;
             this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
             this.btnAddProduct.ImageSize = new System.Drawing.Size(30, 30);
@@ -443,12 +443,12 @@ namespace frmLogin
             // 
             // btnEditProduct
             // 
-            resources.ApplyResources(this.btnEditProduct, "btnEditProduct");
             this.btnEditProduct.BorderRadius = 20;
             this.btnEditProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEditProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEditProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEditProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.btnEditProduct, "btnEditProduct");
             this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
             this.btnEditProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnEditProduct.Image")));
             this.btnEditProduct.ImageSize = new System.Drawing.Size(40, 40);
@@ -457,7 +457,6 @@ namespace frmLogin
             // 
             // btnDeleteAllProduct
             // 
-            resources.ApplyResources(this.btnDeleteAllProduct, "btnDeleteAllProduct");
             this.btnDeleteAllProduct.BorderColor = System.Drawing.Color.Red;
             this.btnDeleteAllProduct.BorderRadius = 10;
             this.btnDeleteAllProduct.BorderThickness = 2;
@@ -466,6 +465,7 @@ namespace frmLogin
             this.btnDeleteAllProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDeleteAllProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDeleteAllProduct.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnDeleteAllProduct, "btnDeleteAllProduct");
             this.btnDeleteAllProduct.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllProduct.Image")));
             this.btnDeleteAllProduct.ImageSize = new System.Drawing.Size(30, 30);
@@ -473,13 +473,13 @@ namespace frmLogin
             // 
             // btnDeleteProduct
             // 
-            resources.ApplyResources(this.btnDeleteProduct, "btnDeleteProduct");
             this.btnDeleteProduct.BorderRadius = 20;
             this.btnDeleteProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDeleteProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDeleteProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            resources.ApplyResources(this.btnDeleteProduct, "btnDeleteProduct");
             this.btnDeleteProduct.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.Image")));
             this.btnDeleteProduct.ImageSize = new System.Drawing.Size(30, 30);
@@ -488,13 +488,13 @@ namespace frmLogin
             // 
             // btnProductDeleted
             // 
-            resources.ApplyResources(this.btnProductDeleted, "btnProductDeleted");
             this.btnProductDeleted.BorderRadius = 20;
             this.btnProductDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnProductDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnProductDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnProductDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnProductDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
+            resources.ApplyResources(this.btnProductDeleted, "btnProductDeleted");
             this.btnProductDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnProductDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnProductDeleted.Image")));
             this.btnProductDeleted.ImageSize = new System.Drawing.Size(30, 30);
@@ -504,17 +504,16 @@ namespace frmLogin
             // ofdImage
             // 
             this.ofdImage.FileName = "openFileDialog1";
-            resources.ApplyResources(this.ofdImage, "ofdImage");
             // 
             // btnSearchProduct
             // 
-            resources.ApplyResources(this.btnSearchProduct, "btnSearchProduct");
             this.btnSearchProduct.BorderRadius = 10;
             this.btnSearchProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSearchProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSearchProduct.FillColor = System.Drawing.Color.MediumSlateBlue;
+            resources.ApplyResources(this.btnSearchProduct, "btnSearchProduct");
             this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
             this.btnSearchProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchProduct.Image")));
             this.btnSearchProduct.Name = "btnSearchProduct";
@@ -522,8 +521,8 @@ namespace frmLogin
             // 
             // frmProductManagement
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.grpFunction);
             this.Controls.Add(this.grpProductInfo);
             this.Controls.Add(this.dtgvListProduct);

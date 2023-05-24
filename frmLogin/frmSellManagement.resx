@@ -117,13 +117,573 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1292, 629</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="flpTable.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="flpTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 170</value>
+  </data>
+  <data name="flpTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 428</value>
+  </data>
+  <data name="flpTable.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;flpTable.Name" xml:space="preserve">
+    <value>flpTable</value>
+  </data>
+  <data name="&gt;&gt;flpTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flpTable.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="cbLocationTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbLocationTable.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbLocationTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 128</value>
+  </data>
+  <data name="cbLocationTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 36</value>
+  </data>
+  <data name="cbLocationTable.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cbLocationTable.Name" xml:space="preserve">
+    <value>cbLocationTable</value>
+  </data>
+  <data name="&gt;&gt;cbLocationTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbLocationTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbLocationTable.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Name" xml:space="preserve">
+    <value>btnMinimize</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnSetting.Name" xml:space="preserve">
+    <value>btnSetting</value>
+  </data>
+  <data name="&gt;&gt;btnSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSetting.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnSetting.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnExitFormSell.Name" xml:space="preserve">
+    <value>btnExitFormSell</value>
+  </data>
+  <data name="&gt;&gt;btnExitFormSell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExitFormSell.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnExitFormSell.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1292, 100</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnMinimize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnMinimize.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnMinimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOUlEQVRYR+3DoQ0AIBAEwQdJ/4VQAaED
+        qkHDCezLSxA7yQQAAPhN120+NDX1mC9NFW3mVQEAwBNxAYZ/MtEXu8xkAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnMinimize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1144, 0</value>
+  </data>
+  <data name="btnMinimize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 46</value>
+  </data>
+  <data name="btnMinimize.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Name" xml:space="preserve">
+    <value>btnMinimize</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSetting.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSetting.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnSetting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAR5JREFUSEvl1U9Kw0AYhvHUtX/Q3kL3ojeoO0F0qT2Bp2m36tIjdVdQBA+g7tQ+
+        DyQwTL9pGEhB8IUflOabb8LMJGn+TS7wgd+WvycYLE/omnceMUhOsEQ+gf8doyojzPCMG8zxg7x5x2vW
+        WOsYx9qjmCmiRjXuEGYXb4gG1XjHPtZyj2iAXnCFvdYlFohqZa+1nOMTebHNj5DnEF7L6+1xhjCn+EI6
+        wDsv5RpprWPtsTHpAyWXpBTXOq11bG9qJjhAWts7QbREbmgpnv+0duMSlTbZ0+KG5hnjFXl9cZP7jqkb
+        6prLO4+ad8JjuvUHzfiYR4Nq3KKYHaQvO39/I2okr1mTvuzsURVfyYO9rkvx45JP8IDBsvVP5l9N06wA
+        SsHWECM9b9YAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1085, 0</value>
+  </data>
+  <data name="btnSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 46</value>
+  </data>
+  <data name="btnSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btnSetting.Name" xml:space="preserve">
+    <value>btnSetting</value>
+  </data>
+  <data name="&gt;&gt;btnSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSetting.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnSetting.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnExitFormSell.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnExitFormSell.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnExitFormSell.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAOZJREFUWEftlksKwjAYhHMFQcFbuPH26g1c+AA9js4Uf5hFsHn8STb5YKDPmWna
+        hoTJJMIBukDbZc+HDXSCjsveCmfoA90gjxL0oBc96b0K214h3nCHakqoV9YDeZQoDjfU4AXtoVR2EItX
+        j2JJCbdwI6cEwx+QW7iRUqJZuKEBb0hL6Lnc7yWLWIlu4YYGPn/iNo/xXBe0hI5GN4YWGPoKNNw+OD3W
+        dCRi4UbzEv/CDV5jU7Dr75gSbriX0Ck4dXotuSdKjVF1CTUoXZoVl/AIN4pKDF+UclnOCz3CDXrRk96T
+        iRDCF/FzelOcx/ofAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnExitFormSell.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1217, 0</value>
+  </data>
+  <data name="btnExitFormSell.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 46</value>
+  </data>
+  <data name="btnExitFormSell.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;btnExitFormSell.Name" xml:space="preserve">
+    <value>btnExitFormSell</value>
+  </data>
+  <data name="&gt;&gt;btnExitFormSell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExitFormSell.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnExitFormSell.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 28.2pt, style=Bold</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>501, 22</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 65</value>
+  </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>BÁN HÀNG</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 597</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1292, 32</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tstlblPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
+  </data>
+  <data name="tstlblPosition.Text" xml:space="preserve">
+    <value>Nhân viên: </value>
+  </data>
+  <data name="tsslblName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 25</value>
+  </data>
+  <data name="tsslblName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="tsslblTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>154, 17</value>
+  </metadata>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 107</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 22</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Vị trí bàn</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbChangeTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbChangeTable.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbChangeTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 508</value>
+  </data>
+  <data name="cbChangeTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 36</value>
+  </data>
+  <data name="cbChangeTable.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;cbChangeTable.Name" xml:space="preserve">
+    <value>cbChangeTable</value>
+  </data>
+  <data name="&gt;&gt;cbChangeTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbChangeTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbChangeTable.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="guna2ColorTransition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>255, 17</value>
+  </metadata>
+  <data name="btnDelete.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>897, 119</value>
+  </data>
+  <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 45</value>
+  </data>
+  <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lstvMenuDish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 170</value>
+  </data>
+  <data name="lstvMenuDish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>612, 300</value>
+  </data>
+  <data name="lstvMenuDish.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;lstvMenuDish.Name" xml:space="preserve">
+    <value>lstvMenuDish</value>
+  </data>
+  <data name="&gt;&gt;lstvMenuDish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstvMenuDish.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstvMenuDish.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Tên món</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>199</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
+    <value>158</value>
+  </data>
+  <data name="btnChangeTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnChangeTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 550</value>
+  </data>
+  <data name="btnChangeTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 45</value>
+  </data>
+  <data name="btnChangeTable.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="btnChangeTable.Text" xml:space="preserve">
+    <value>Chuyển bàn</value>
+  </data>
+  <data name="&gt;&gt;btnChangeTable.Name" xml:space="preserve">
+    <value>btnChangeTable</value>
+  </data>
+  <data name="&gt;&gt;btnChangeTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnChangeTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnChangeTable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1082, 487</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Tổng tiền:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblToltalPrice.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblToltalPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1161, 487</value>
+  </data>
+  <data name="lblToltalPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 22</value>
+  </data>
+  <data name="lblToltalPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblToltalPrice.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblToltalPrice.Name" xml:space="preserve">
+    <value>lblToltalPrice</value>
+  </data>
+  <data name="&gt;&gt;lblToltalPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblToltalPrice.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblToltalPrice.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>495, 17</value>
+  </metadata>
+  <data name="btnStoreManagement.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnStoreManagement.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTklEQVRYR+3WuUoEQRSF4dZAQQ0MXBID
+        zQRXEMQlE2R8AE0UDExF8AFEcc1EfAtD38DMyETQVCMDUTBT3P1P0z32clsGrBaDOvAFc6du1R2mmpnA
+        579mHquOLaCmTOMDnyWo4Mc04wpWswvXaEFhDmA1unQIM2N4g9Xk0jsmkEoDLmA1lOESjahmE9bCMm0j
+        zACeYS0q0wsGEWxFhaw7oyb3Ri1W1FNU30F4+aznfglW4z5OMjU5xV6mJg9YzNREZ1Yv4zIeoTdesQtl
+        EjeIm47RhC6cRTU5Rw90sY6imtxiCsoa4q/6CStIpRWjaA9ffUdPyAh0QDJ16EM/6lVIpBvqSd100gad
+        obN8cunAOGawjl64ivbagPbWGZ3IZRbx5REtdBU9acm955CLH8APkB0g95v9i+jDJPeuaYAy+QHMAYag
+        P6V/YRg+PiQIvgAOxpx5lOvVlgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnStoreManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1065, 119</value>
+  </data>
+  <data name="btnStoreManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 45</value>
+  </data>
+  <data name="btnStoreManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnStoreManagement.Text" xml:space="preserve">
+    <value>Quản lý cửa hàng</value>
+  </data>
+  <data name="btnStoreManagement.ToolTip" xml:space="preserve">
+    <value>F2</value>
+  </data>
+  <data name="&gt;&gt;btnStoreManagement.Name" xml:space="preserve">
+    <value>btnStoreManagement</value>
+  </data>
+  <data name="&gt;&gt;btnStoreManagement.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnStoreManagement.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnStoreManagement.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnSelectDish.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="btnSelectDish.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -141,199 +701,36 @@
         MESbieP+7a4i3Y/61RgaizGj1n93qiviF7FD2wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Tên món</value>
-  </data>
-  <data name="btnPay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 63</value>
-  </data>
-  <data name="&gt;&gt;btnPay.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnMinimize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;flpTable.Name" xml:space="preserve">
-    <value>flpTable</value>
-  </data>
-  <data name="&gt;&gt;tsslblTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 597</value>
+  <data name="btnSelectDish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 119</value>
   </data>
   <data name="btnSelectDish.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 45</value>
   </data>
-  <data name="&gt;&gt;lblToltalPrice.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnSetting.Name" xml:space="preserve">
-    <value>btnSetting</value>
-  </data>
-  <data name="&gt;&gt;cbLocationTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnExitFormSell.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnChangeTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnStoreManagement.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 45</value>
-  </data>
-  <data name="btnStoreManagement.Text" xml:space="preserve">
-    <value>Quản lý cửa hàng</value>
-  </data>
-  <data name="btnSelectDish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 119</value>
-  </data>
-  <data name="tsslblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 25</value>
-  </data>
-  <data name="tsslblName.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="lstvMenuDish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>612, 300</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="cbLocationTable.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="btnChangeTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 45</value>
-  </data>
-  <data name="btnChangeTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 550</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1292, 100</value>
-  </data>
-  <data name="&gt;&gt;cbChangeTable.ZOrder" xml:space="preserve">
+  <data name="btnSelectDish.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;btnPay.Name" xml:space="preserve">
-    <value>btnPay</value>
-  </data>
-  <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>897, 119</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="lblToltalPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 22</value>
-  </data>
-  <data name="btnExitFormSell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 46</value>
   </data>
   <data name="btnSelectDish.Text" xml:space="preserve">
     <value>Chọn món</value>
   </data>
-  <data name="cbLocationTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 36</value>
+  <data name="btnSelectDish.ToolTip" xml:space="preserve">
+    <value>F1</value>
   </data>
-  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
-    <value>columnHeader1</value>
+  <data name="&gt;&gt;btnSelectDish.Name" xml:space="preserve">
+    <value>btnSelectDish</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnSelectDish.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="btnExitFormSell.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cbChangeTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 36</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Tổng tiền:</value>
-  </data>
-  <data name="&gt;&gt;btnStoreManagement.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnSelectDish.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmSellManagement</value>
+  <data name="&gt;&gt;btnSelectDish.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;lstvMenuDish.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnDelete.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnHeader3.Name" xml:space="preserve">
-    <value>columnHeader3</value>
-  </data>
-  <data name="&gt;&gt;cbChangeTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblToltalPrice.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tsslblTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 26</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 107</value>
-  </data>
-  <data name="columnHeader4.Text" xml:space="preserve">
-    <value>Đơn giá</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Vị trí bàn</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;cbLocationTable.Name" xml:space="preserve">
-    <value>cbLocationTable</value>
-  </data>
-  <data name="&gt;&gt;cbLocationTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>495, 17</value>
+  </metadata>
   <data name="btnPay.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
@@ -355,179 +752,47 @@
         bEsAAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1082, 487</value>
+  <data name="btnPay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1152, 537</value>
   </data>
-  <data name="cbLocationTable.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 28.2pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;btnSelectDish.Name" xml:space="preserve">
-    <value>btnSelectDish</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 22</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>199</value>
-  </data>
-  <data name="&gt;&gt;tstlblPosition.Name" xml:space="preserve">
-    <value>tstlblPosition</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="lblToltalPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;columnHeader4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnPay.Text" xml:space="preserve">
-    <value>Thanh toán</value>
-  </data>
-  <data name="cbChangeTable.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="btnChangeTable.Text" xml:space="preserve">
-    <value>Chuyển bàn</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;btnSetting.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="lstvMenuDish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 170</value>
-  </data>
-  <data name="&gt;&gt;lblToltalPrice.Name" xml:space="preserve">
-    <value>lblToltalPrice</value>
-  </data>
-  <data name="&gt;&gt;btnChangeTable.Name" xml:space="preserve">
-    <value>btnChangeTable</value>
-  </data>
-  <data name="&gt;&gt;btnMinimize.Name" xml:space="preserve">
-    <value>btnMinimize</value>
-  </data>
-  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
-    <value>158</value>
-  </data>
-  <data name="cbLocationTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="&gt;&gt;btnSelectDish.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="btnMinimize.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;btnSetting.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1292, 32</value>
-  </data>
-  <data name="btnSelectDish.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="cbChangeTable.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="flpTable.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tsslblName.Name" xml:space="preserve">
-    <value>tsslblName</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>frmSellManagement</value>
-  </data>
-  <data name="&gt;&gt;columnHeader4.Name" xml:space="preserve">
-    <value>columnHeader4</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;tsslblName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cbChangeTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 508</value>
-  </data>
-  <data name="btnStoreManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 45</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnSelectDish.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;btnMinimize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="columnHeader5.Text" xml:space="preserve">
-    <value>Thành tiền</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;cbLocationTable.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lblToltalPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnPay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 63</value>
   </data>
   <data name="btnPay.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="btnPay.Text" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="btnPay.ToolTip" xml:space="preserve">
+    <value>F3</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Name" xml:space="preserve">
+    <value>btnPay</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnPay.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
+  <data name="&gt;&gt;btnPay.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;flpTable.Parent" xml:space="preserve">
-    <value>$this</value>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>495, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>36</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1292, 629</value>
   </data>
-  <data name="&gt;&gt;lstvMenuDish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSetting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 46</value>
-  </data>
-  <data name="&gt;&gt;guna2ColorTransition1.Name" xml:space="preserve">
-    <value>guna2ColorTransition1</value>
-  </data>
-  <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblToltalPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1161, 487</value>
-  </data>
-  <data name="&gt;&gt;btnStoreManagement.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnExitFormSell.Name" xml:space="preserve">
-    <value>btnExitFormSell</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -727,272 +992,76 @@
         UKgAKBQKFQCFQqECoFAoVAAUCoUKgEKhUAFQKBQqAAqFwlf8f2Q0n8n7MPmgAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnSetting.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;btnPay.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmSellManagement</value>
   </data>
-  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
-    <value>btnDelete</value>
-  </data>
-  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;flpTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnMinimize.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnSetting.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 65</value>
-  </data>
-  <data name="&gt;&gt;columnHeader5.Name" xml:space="preserve">
-    <value>columnHeader5</value>
-  </data>
-  <data name="btnSetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1085, 0</value>
-  </data>
-  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnChangeTable.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btnSetting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAR5JREFUSEvl1U9Kw0AYhvHUtX/Q3kL3ojeoO0F0qT2Bp2m36tIjdVdQBA+g7tQ+
-        DyQwTL9pGEhB8IUflOabb8LMJGn+TS7wgd+WvycYLE/omnceMUhOsEQ+gf8doyojzPCMG8zxg7x5x2vW
-        WOsYx9qjmCmiRjXuEGYXb4gG1XjHPtZyj2iAXnCFvdYlFohqZa+1nOMTebHNj5DnEF7L6+1xhjCn+EI6
-        wDsv5RpprWPtsTHpAyWXpBTXOq11bG9qJjhAWts7QbREbmgpnv+0duMSlTbZ0+KG5hnjFXl9cZP7jqkb
-        6prLO4+ad8JjuvUHzfiYR4Nq3KKYHaQvO39/I2okr1mTvuzsURVfyYO9rkvx45JP8IDBsvVP5l9N06wA
-        SsHWECM9b9YAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="&gt;&gt;guna2ColorTransition1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ColorTransition, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 22</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnStoreManagement.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="&gt;&gt;tsslblTime.Name" xml:space="preserve">
-    <value>tsslblTime</value>
-  </data>
-  <data name="&gt;&gt;btnMinimize.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnMinimize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 46</value>
-  </data>
-  <data name="cbLocationTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 128</value>
-  </data>
-  <data name="cbChangeTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="tstlblPosition.Text" xml:space="preserve">
-    <value>Nhân viên: </value>
-  </data>
-  <data name="btnMinimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOUlEQVRYR+3DoQ0AIBAEwQdJ/4VQAaED
-        qkHDCezLSxA7yQQAAPhN120+NDX1mC9NFW3mVQEAwBNxAYZ/MtEXu8xkAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;btnStoreManagement.Name" xml:space="preserve">
-    <value>btnStoreManagement</value>
-  </data>
-  <data name="&gt;&gt;btnChangeTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;cbChangeTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="btnPay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1152, 537</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>BÁN HÀNG</value>
-  </data>
-  <data name="&gt;&gt;columnHeader5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSelectDish.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnChangeTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;flpTable.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;btnStoreManagement.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnPay.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnSelectDish.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblToltalPrice.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnSetting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tstlblPosition.Name" xml:space="preserve">
+    <value>tstlblPosition</value>
   </data>
   <data name="&gt;&gt;tstlblPosition.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnExitFormSell.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;tsslblName.Name" xml:space="preserve">
+    <value>tsslblName</value>
   </data>
-  <data name="&gt;&gt;cbChangeTable.Name" xml:space="preserve">
-    <value>cbChangeTable</value>
+  <data name="&gt;&gt;tsslblName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnChangeTable.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;tsslblTime.Name" xml:space="preserve">
+    <value>tsslblTime</value>
   </data>
-  <data name="flpTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 428</value>
+  <data name="&gt;&gt;tsslblTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblToltalPrice.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
   </data>
-  <data name="&gt;&gt;lstvMenuDish.Name" xml:space="preserve">
-    <value>lstvMenuDish</value>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 22</value>
+  <data name="&gt;&gt;guna2ColorTransition1.Name" xml:space="preserve">
+    <value>guna2ColorTransition1</value>
   </data>
-  <data name="tstlblPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 25</value>
+  <data name="&gt;&gt;guna2ColorTransition1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ColorTransition, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Số lượng</value>
+  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
+    <value>columnHeader1</value>
   </data>
-  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;columnHeader3.Name" xml:space="preserve">
+    <value>columnHeader3</value>
   </data>
-  <data name="&gt;&gt;lstvMenuDish.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnExitFormSell.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;columnHeader4.Name" xml:space="preserve">
+    <value>columnHeader4</value>
   </data>
-  <data name="btnSetting.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;columnHeader4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnMinimize.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;columnHeader5.Name" xml:space="preserve">
+    <value>columnHeader5</value>
   </data>
-  <data name="btnExitFormSell.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAOZJREFUWEftlksKwjAYhHMFQcFbuPH26g1c+AA9js4Uf5hFsHn8STb5YKDPmWna
-        hoTJJMIBukDbZc+HDXSCjsveCmfoA90gjxL0oBc96b0K214h3nCHakqoV9YDeZQoDjfU4AXtoVR2EItX
-        j2JJCbdwI6cEwx+QW7iRUqJZuKEBb0hL6Lnc7yWLWIlu4YYGPn/iNo/xXBe0hI5GN4YWGPoKNNw+OD3W
-        dCRi4UbzEv/CDV5jU7Dr75gSbriX0Ck4dXotuSdKjVF1CTUoXZoVl/AIN4pKDF+UclnOCz3CDXrRk96T
-        iRDCF/FzelOcx/ofAAAAAElFTkSuQmCC
-</value>
+  <data name="&gt;&gt;columnHeader5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="flpTable.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
   </data>
-  <data name="btnDelete.Text" xml:space="preserve">
-    <value>Xóa</value>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnDelete.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmSellManagement</value>
   </data>
-  <data name="lstvMenuDish.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnStoreManagement.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTklEQVRYR+3WuUoEQRSF4dZAQQ0MXBID
-        zQRXEMQlE2R8AE0UDExF8AFEcc1EfAtD38DMyETQVCMDUTBT3P1P0z32clsGrBaDOvAFc6du1R2mmpnA
-        579mHquOLaCmTOMDnyWo4Mc04wpWswvXaEFhDmA1unQIM2N4g9Xk0jsmkEoDLmA1lOESjahmE9bCMm0j
-        zACeYS0q0wsGEWxFhaw7oyb3Ri1W1FNU30F4+aznfglW4z5OMjU5xV6mJg9YzNREZ1Yv4zIeoTdesQtl
-        EjeIm47RhC6cRTU5Rw90sY6imtxiCsoa4q/6CStIpRWjaA9ffUdPyAh0QDJ16EM/6lVIpBvqSd100gad
-        obN8cunAOGawjl64ivbagPbWGZ3IZRbx5REtdBU9acm955CLH8APkB0g95v9i+jDJPeuaYAy+QHMAYag
-        P6V/YRg+PiQIvgAOxpx5lOvVlgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="flpTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 170</value>
-  </data>
-  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
-    <value>149</value>
-  </data>
-  <data name="btnExitFormSell.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="btnExitFormSell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1217, 0</value>
-  </data>
-  <data name="btnMinimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1144, 0</value>
-  </data>
-  <data name="btnStoreManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1065, 119</value>
-  </data>
-  <data name="&gt;&gt;btnExitFormSell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
-  </metadata>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="guna2ColorTransition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>255, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>154, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>36</value>
-  </metadata>
 </root>

@@ -78,6 +78,7 @@ namespace frmLogin
             // 
             // grpChangePassword
             // 
+            resources.ApplyResources(this.grpChangePassword, "grpChangePassword");
             this.grpChangePassword.BackColor = System.Drawing.Color.White;
             this.grpChangePassword.BorderColor = System.Drawing.Color.DarkGray;
             this.grpChangePassword.Controls.Add(this.txtAccept);
@@ -89,23 +90,23 @@ namespace frmLogin
             this.grpChangePassword.Controls.Add(this.txtNewPassword);
             this.grpChangePassword.Controls.Add(this.label4);
             this.grpChangePassword.CustomBorderColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.grpChangePassword, "grpChangePassword");
             this.grpChangePassword.ForeColor = System.Drawing.Color.White;
             this.grpChangePassword.Name = "grpChangePassword";
             // 
             // txtAccept
             // 
+            resources.ApplyResources(this.txtAccept, "txtAccept");
             this.txtAccept.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.txtAccept.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.txtAccept.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.txtAccept.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.txtAccept, "txtAccept");
             this.txtAccept.ForeColor = System.Drawing.Color.White;
             this.txtAccept.Name = "txtAccept";
             this.txtAccept.Click += new System.EventHandler(this.txtAccept_Click);
             // 
             // txtOldPassword
             // 
+            resources.ApplyResources(this.txtOldPassword, "txtOldPassword");
             this.txtOldPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOldPassword.DefaultText = "";
             this.txtOldPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -113,7 +114,6 @@ namespace frmLogin
             this.txtOldPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtOldPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtOldPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtOldPassword, "txtOldPassword");
             this.txtOldPassword.ForeColor = System.Drawing.Color.Black;
             this.txtOldPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtOldPassword.Name = "txtOldPassword";
@@ -123,11 +123,11 @@ namespace frmLogin
             // 
             // btnReturn
             // 
+            resources.ApplyResources(this.btnReturn, "btnReturn");
             this.btnReturn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnReturn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnReturn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReturn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.btnReturn, "btnReturn");
             this.btnReturn.ForeColor = System.Drawing.Color.White;
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
@@ -141,6 +141,7 @@ namespace frmLogin
             // 
             // txtRepeatPassword
             // 
+            resources.ApplyResources(this.txtRepeatPassword, "txtRepeatPassword");
             this.txtRepeatPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRepeatPassword.DefaultText = "";
             this.txtRepeatPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -148,7 +149,6 @@ namespace frmLogin
             this.txtRepeatPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtRepeatPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtRepeatPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtRepeatPassword, "txtRepeatPassword");
             this.txtRepeatPassword.ForeColor = System.Drawing.Color.Black;
             this.txtRepeatPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtRepeatPassword.Name = "txtRepeatPassword";
@@ -165,6 +165,7 @@ namespace frmLogin
             // 
             // txtNewPassword
             // 
+            resources.ApplyResources(this.txtNewPassword, "txtNewPassword");
             this.txtNewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNewPassword.DefaultText = "";
             this.txtNewPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -172,7 +173,6 @@ namespace frmLogin
             this.txtNewPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNewPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNewPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtNewPassword, "txtNewPassword");
             this.txtNewPassword.ForeColor = System.Drawing.Color.Black;
             this.txtNewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNewPassword.Name = "txtNewPassword";
@@ -189,6 +189,7 @@ namespace frmLogin
             // 
             // grpAccountDetail
             // 
+            resources.ApplyResources(this.grpAccountDetail, "grpAccountDetail");
             this.grpAccountDetail.Controls.Add(this.btnLogOff);
             this.grpAccountDetail.Controls.Add(this.btnChangePassword);
             this.grpAccountDetail.Controls.Add(this.txtDisplayName);
@@ -197,41 +198,40 @@ namespace frmLogin
             this.grpAccountDetail.Controls.Add(this.label1);
             this.grpAccountDetail.Controls.Add(this.guna2PictureBox1);
             this.grpAccountDetail.CustomBorderColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.grpAccountDetail, "grpAccountDetail");
             this.grpAccountDetail.ForeColor = System.Drawing.Color.White;
             this.grpAccountDetail.Name = "grpAccountDetail";
             // 
             // btnLogOff
             // 
+            resources.ApplyResources(this.btnLogOff, "btnLogOff");
             this.btnLogOff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLogOff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogOff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogOff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.btnLogOff, "btnLogOff");
             this.btnLogOff.ForeColor = System.Drawing.Color.White;
             this.btnLogOff.Name = "btnLogOff";
             this.btnLogOff.Click += new System.EventHandler(this.btnLogOff_Click);
             // 
             // btnChangePassword
             // 
+            resources.ApplyResources(this.btnChangePassword, "btnChangePassword");
             this.btnChangePassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnChangePassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnChangePassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnChangePassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.btnChangePassword, "btnChangePassword");
             this.btnChangePassword.ForeColor = System.Drawing.Color.White;
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // txtDisplayName
             // 
+            resources.ApplyResources(this.txtDisplayName, "txtDisplayName");
             this.txtDisplayName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDisplayName.DefaultText = "";
             this.txtDisplayName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtDisplayName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtDisplayName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDisplayName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            resources.ApplyResources(this.txtDisplayName, "txtDisplayName");
             this.txtDisplayName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDisplayName.ForeColor = System.Drawing.Color.Black;
             this.txtDisplayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -242,13 +242,13 @@ namespace frmLogin
             // 
             // txtUserName
             // 
+            resources.ApplyResources(this.txtUserName, "txtUserName");
             this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUserName.DefaultText = "";
             this.txtUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            resources.ApplyResources(this.txtUserName, "txtUserName");
             this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.ForeColor = System.Drawing.Color.Black;
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -273,24 +273,24 @@ namespace frmLogin
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.TabStop = false;
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.btnExitFormSetting);
             this.panel1.Controls.Add(this.label9);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // btnExitFormSetting
             // 
-            this.btnExitFormSetting.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnExitFormSetting, "btnExitFormSetting");
+            this.btnExitFormSetting.FlatAppearance.BorderSize = 0;
             this.btnExitFormSetting.Name = "btnExitFormSetting";
             this.btnExitFormSetting.UseVisualStyleBackColor = true;
             this.btnExitFormSetting.Click += new System.EventHandler(this.btnExitFormSetting_Click);
@@ -303,6 +303,7 @@ namespace frmLogin
             // 
             // grpPersonalInfomation
             // 
+            resources.ApplyResources(this.grpPersonalInfomation, "grpPersonalInfomation");
             this.grpPersonalInfomation.BackColor = System.Drawing.Color.White;
             this.grpPersonalInfomation.BorderColor = System.Drawing.Color.DarkGray;
             this.grpPersonalInfomation.Controls.Add(this.radFemale);
@@ -324,7 +325,6 @@ namespace frmLogin
             this.grpPersonalInfomation.Controls.Add(this.txtEmployeeFullName);
             this.grpPersonalInfomation.Controls.Add(this.label12);
             this.grpPersonalInfomation.CustomBorderColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.grpPersonalInfomation, "grpPersonalInfomation");
             this.grpPersonalInfomation.ForeColor = System.Drawing.Color.White;
             this.grpPersonalInfomation.Name = "grpPersonalInfomation";
             // 
@@ -355,6 +355,7 @@ namespace frmLogin
             // 
             // txtAddress
             // 
+            resources.ApplyResources(this.txtAddress, "txtAddress");
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.DefaultText = "";
             this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -362,7 +363,6 @@ namespace frmLogin
             this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtAddress, "txtAddress");
             this.txtAddress.ForeColor = System.Drawing.Color.Black;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.Multiline = true;
@@ -380,13 +380,13 @@ namespace frmLogin
             // 
             // txtPosition
             // 
+            resources.ApplyResources(this.txtPosition, "txtPosition");
             this.txtPosition.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPosition.DefaultText = "";
             this.txtPosition.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPosition.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPosition.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPosition.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            resources.ApplyResources(this.txtPosition, "txtPosition");
             this.txtPosition.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPosition.ForeColor = System.Drawing.Color.Black;
             this.txtPosition.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -404,8 +404,8 @@ namespace frmLogin
             // 
             // dtpWorkingDay
             // 
-            this.dtpWorkingDay.Checked = true;
             resources.ApplyResources(this.dtpWorkingDay, "dtpWorkingDay");
+            this.dtpWorkingDay.Checked = true;
             this.dtpWorkingDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpWorkingDay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpWorkingDay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -421,6 +421,7 @@ namespace frmLogin
             // 
             // txtNumberPhone
             // 
+            resources.ApplyResources(this.txtNumberPhone, "txtNumberPhone");
             this.txtNumberPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNumberPhone.DefaultText = "";
             this.txtNumberPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -428,7 +429,6 @@ namespace frmLogin
             this.txtNumberPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNumberPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNumberPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtNumberPhone, "txtNumberPhone");
             this.txtNumberPhone.ForeColor = System.Drawing.Color.Black;
             this.txtNumberPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNumberPhone.Name = "txtNumberPhone";
@@ -445,13 +445,13 @@ namespace frmLogin
             // 
             // txtEmployeeID
             // 
+            resources.ApplyResources(this.txtEmployeeID, "txtEmployeeID");
             this.txtEmployeeID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmployeeID.DefaultText = "";
             this.txtEmployeeID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtEmployeeID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtEmployeeID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            resources.ApplyResources(this.txtEmployeeID, "txtEmployeeID");
             this.txtEmployeeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeID.ForeColor = System.Drawing.Color.Black;
             this.txtEmployeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -462,8 +462,8 @@ namespace frmLogin
             // 
             // dtpBirthday
             // 
-            this.dtpBirthday.Checked = true;
             resources.ApplyResources(this.dtpBirthday, "dtpBirthday");
+            this.dtpBirthday.Checked = true;
             this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpBirthday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpBirthday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -486,24 +486,24 @@ namespace frmLogin
             // 
             // btnSave
             // 
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Name = "btnSave";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtEmployeeFullName
             // 
+            resources.ApplyResources(this.txtEmployeeFullName, "txtEmployeeFullName");
             this.txtEmployeeFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmployeeFullName.DefaultText = "";
             this.txtEmployeeFullName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtEmployeeFullName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtEmployeeFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            resources.ApplyResources(this.txtEmployeeFullName, "txtEmployeeFullName");
             this.txtEmployeeFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeFullName.ForeColor = System.Drawing.Color.Black;
             this.txtEmployeeFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));

@@ -134,14 +134,24 @@
   <data name="label2.Text" xml:space="preserve">
     <value>SELECT DISH</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbCategoryDish.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 22</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Category</value>
   </data>
+  <data name="txtSearchDish.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="numQuantity.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 350</value>
+  </data>
+  <data name="numQuantity.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 22</value>
@@ -151,6 +161,9 @@
   </data>
   <data name="txtDishPrice.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 302</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 311</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 22</value>
@@ -521,6 +534,9 @@
         TkSuQmCC
 </value>
   </data>
+  <data name="btnSelectDish.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="btnSelectDish.Text" xml:space="preserve">
     <value>Dish up</value>
   </data>
@@ -866,6 +882,9 @@
         TkSuQmCC
 </value>
   </data>
+  <data name="btnAddDish.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="btnAddDish.Text" xml:space="preserve">
     <value>Select Dish</value>
   </data>
@@ -1042,6 +1061,9 @@
         BTjxJMCHPwAsSE0CfPgDwAJd+oT/BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOzmlO838BWh4XXIETABAAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="btnSearchDish.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

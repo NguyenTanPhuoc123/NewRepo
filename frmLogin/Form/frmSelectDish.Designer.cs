@@ -57,6 +57,7 @@ namespace frmLogin
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchDish = new Guna.UI2.WinForms.Guna2Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.grpDishDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
@@ -70,16 +71,16 @@ namespace frmLogin
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.btnExitFomSelectDish);
             this.panel1.Controls.Add(this.label2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // btnExitFomSelectDish
             // 
-            resources.ApplyResources(this.btnExitFomSelectDish, "btnExitFomSelectDish");
             this.btnExitFomSelectDish.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnExitFomSelectDish, "btnExitFomSelectDish");
             this.btnExitFomSelectDish.Name = "btnExitFomSelectDish";
             this.btnExitFomSelectDish.UseVisualStyleBackColor = true;
             this.btnExitFomSelectDish.Click += new System.EventHandler(this.btnExitFomSelectDish_Click);
@@ -92,13 +93,13 @@ namespace frmLogin
             // 
             // lstvListDish
             // 
-            resources.ApplyResources(this.lstvListDish, "lstvListDish");
             this.lstvListDish.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
             this.lstvListDish.HideSelection = false;
             this.lstvListDish.LargeImageList = this.imageList1;
+            resources.ApplyResources(this.lstvListDish, "lstvListDish");
             this.lstvListDish.Name = "lstvListDish";
             this.lstvListDish.UseCompatibleStateImageBehavior = false;
             this.lstvListDish.SelectedIndexChanged += new System.EventHandler(this.lstvListDish_SelectedIndexChanged);
@@ -123,13 +124,13 @@ namespace frmLogin
             // 
             // cbCategoryDish
             // 
-            resources.ApplyResources(this.cbCategoryDish, "cbCategoryDish");
             this.cbCategoryDish.BackColor = System.Drawing.Color.Transparent;
             this.cbCategoryDish.BorderRadius = 10;
             this.cbCategoryDish.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbCategoryDish.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategoryDish.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbCategoryDish.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbCategoryDish, "cbCategoryDish");
             this.cbCategoryDish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbCategoryDish.Items.AddRange(new object[] {
             resources.GetString("cbCategoryDish.Items")});
@@ -143,7 +144,6 @@ namespace frmLogin
             // 
             // txtSearchDish
             // 
-            resources.ApplyResources(this.txtSearchDish, "txtSearchDish");
             this.txtSearchDish.BorderRadius = 10;
             this.txtSearchDish.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchDish.DefaultText = "";
@@ -152,6 +152,7 @@ namespace frmLogin
             this.txtSearchDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchDish.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchDish.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtSearchDish, "txtSearchDish");
             this.txtSearchDish.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchDish.Name = "txtSearchDish";
             this.txtSearchDish.PasswordChar = '\0';
@@ -160,7 +161,6 @@ namespace frmLogin
             // 
             // grpDishDetail
             // 
-            resources.ApplyResources(this.grpDishDetail, "grpDishDetail");
             this.grpDishDetail.Controls.Add(this.numQuantity);
             this.grpDishDetail.Controls.Add(this.label7);
             this.grpDishDetail.Controls.Add(this.txtDishPrice);
@@ -170,14 +170,15 @@ namespace frmLogin
             this.grpDishDetail.Controls.Add(this.txtDishName);
             this.grpDishDetail.Controls.Add(this.label4);
             this.grpDishDetail.Controls.Add(this.pbPictureDish);
+            resources.ApplyResources(this.grpDishDetail, "grpDishDetail");
             this.grpDishDetail.Name = "grpDishDetail";
             this.grpDishDetail.TabStop = false;
             // 
             // numQuantity
             // 
-            resources.ApplyResources(this.numQuantity, "numQuantity");
             this.numQuantity.BackColor = System.Drawing.Color.Transparent;
             this.numQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.numQuantity, "numQuantity");
             this.numQuantity.Minimum = new decimal(new int[] {
             1,
             0,
@@ -197,7 +198,6 @@ namespace frmLogin
             // 
             // txtDishPrice
             // 
-            resources.ApplyResources(this.txtDishPrice, "txtDishPrice");
             this.txtDishPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDishPrice.DefaultText = "";
             this.txtDishPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -205,6 +205,7 @@ namespace frmLogin
             this.txtDishPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDishPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDishPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtDishPrice, "txtDishPrice");
             this.txtDishPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDishPrice.Name = "txtDishPrice";
             this.txtDishPrice.PasswordChar = '\0';
@@ -219,7 +220,6 @@ namespace frmLogin
             // 
             // txtCategoryDish
             // 
-            resources.ApplyResources(this.txtCategoryDish, "txtCategoryDish");
             this.txtCategoryDish.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCategoryDish.DefaultText = "";
             this.txtCategoryDish.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -227,6 +227,7 @@ namespace frmLogin
             this.txtCategoryDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCategoryDish.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCategoryDish.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtCategoryDish, "txtCategoryDish");
             this.txtCategoryDish.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCategoryDish.Name = "txtCategoryDish";
             this.txtCategoryDish.PasswordChar = '\0';
@@ -241,7 +242,6 @@ namespace frmLogin
             // 
             // txtDishName
             // 
-            resources.ApplyResources(this.txtDishName, "txtDishName");
             this.txtDishName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDishName.DefaultText = "";
             this.txtDishName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -249,6 +249,7 @@ namespace frmLogin
             this.txtDishName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDishName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDishName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtDishName, "txtDishName");
             this.txtDishName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDishName.Name = "txtDishName";
             this.txtDishName.PasswordChar = '\0';
@@ -275,28 +276,29 @@ namespace frmLogin
             // 
             // btnSelectDish
             // 
-            resources.ApplyResources(this.btnSelectDish, "btnSelectDish");
             this.btnSelectDish.BorderRadius = 20;
             this.btnSelectDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSelectDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.btnSelectDish, "btnSelectDish");
             this.btnSelectDish.ForeColor = System.Drawing.Color.White;
             this.btnSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectDish.Image")));
             this.btnSelectDish.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSelectDish.Name = "btnSelectDish";
+            this.toolTip1.SetToolTip(this.btnSelectDish, resources.GetString("btnSelectDish.ToolTip"));
             this.btnSelectDish.Click += new System.EventHandler(this.btnSelectDish_Click);
             // 
             // btnAddDish
             // 
-            resources.ApplyResources(this.btnAddDish, "btnAddDish");
             this.btnAddDish.BorderRadius = 20;
             this.btnAddDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            resources.ApplyResources(this.btnAddDish, "btnAddDish");
             this.btnAddDish.ForeColor = System.Drawing.Color.White;
             this.btnAddDish.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDish.Image")));
             this.btnAddDish.ImageSize = new System.Drawing.Size(30, 30);
@@ -305,13 +307,13 @@ namespace frmLogin
             // 
             // btnSearchDish
             // 
-            resources.ApplyResources(this.btnSearchDish, "btnSearchDish");
             this.btnSearchDish.BorderRadius = 10;
             this.btnSearchDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchDish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSearchDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSearchDish.FillColor = System.Drawing.Color.MediumSlateBlue;
+            resources.ApplyResources(this.btnSearchDish, "btnSearchDish");
             this.btnSearchDish.ForeColor = System.Drawing.Color.White;
             this.btnSearchDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchDish.Image")));
             this.btnSearchDish.Name = "btnSearchDish";
@@ -319,8 +321,9 @@ namespace frmLogin
             // 
             // frmSelectDish
             // 
-            resources.ApplyResources(this, "$this");
+            this.AcceptButton = this.btnSelectDish;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.btnSelectDish);
             this.Controls.Add(this.flpAddDish);
             this.Controls.Add(this.btnAddDish);
@@ -373,5 +376,6 @@ namespace frmLogin
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ImageList imageList1;
         private Guna.UI2.WinForms.Guna2Button btnSelectDish;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

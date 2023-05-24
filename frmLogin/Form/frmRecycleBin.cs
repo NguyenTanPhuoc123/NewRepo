@@ -11,6 +11,7 @@ using DTO;
 using BUS;
 using System.IO;
 using System.Threading;
+using Microsoft.ReportingServices.Interfaces;
 
 namespace frmLogin
 {
@@ -73,41 +74,85 @@ namespace frmLogin
 
         private void btnRestoreTable_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn khôi phục lại bàn ăn này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (Language == 0)
             {
-                try
+                if (MessageBox.Show("Bạn muốn khôi phục lại bàn ăn này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    int count = TableBUS.Instance.RestoreTable(int.Parse(txtTableID.Text));
-                    if (count > 0)
-                        MessageBox.Show("Khôi phục thành công ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
-                    else
-                        MessageBox.Show("Khôi phục thất bại ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
+                    try
+                    {
+                        int count = TableBUS.Instance.RestoreTable(int.Parse(txtTableID.Text));
+                        if (count > 0)
+                            MessageBox.Show("Khôi phục thành công ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
+                        else
+                            MessageBox.Show("Khôi phục thất bại ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    LoadTableFoodDeleted();
                 }
-                catch (Exception ex)
+            }
+            else
+            {
+                if (MessageBox.Show("Do you want to restore this dining table?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    MessageBox.Show(ex.Message);
+                    try
+                    {
+                        int count = TableBUS.Instance.RestoreTable(int.Parse(txtTableID.Text));
+                        if (count > 0)
+                            MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    LoadTableFoodDeleted();
                 }
-                LoadTableFoodDeleted();
             }
         }
 
         private void btnRestoreAllTable_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn chắc chắn muốn khôi phục lại tất cả bàn ăn chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (Language == 0)
             {
-                try
+                if (MessageBox.Show("Bạn chắc chắn muốn khôi phục lại tất cả bàn ăn chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    int count = TableBUS.Instance.RestoreAllTable();
-                    if (count > 0)
-                        MessageBox.Show("Khôi phục tất cả thành công ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
-                    else
-                        MessageBox.Show("Khôi phục tất cả thất bại ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
+                    try
+                    {
+                        int count = TableBUS.Instance.RestoreAllTable();
+                        if (count > 0)
+                            MessageBox.Show("Khôi phục tất cả thành công ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
+                        else
+                            MessageBox.Show("Khôi phục tất cả thất bại ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    LoadTableFoodDeleted();
                 }
-                catch (Exception ex)
+            }
+            else
+            {
+                if (MessageBox.Show("Are you sure you want to restore all the dining tables?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    MessageBox.Show(ex.Message);
+                    try
+                    {
+                        int count = TableBUS.Instance.RestoreAllTable();
+                        if (count > 0)
+                            MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    LoadTableFoodDeleted();
                 }
-                LoadTableFoodDeleted();
             }
         }
         #endregion
@@ -116,26 +161,55 @@ namespace frmLogin
         #region Account
         private void btnRestoreAccount_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn phục hồi lại tài khoản này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (Language == 0)
             {
-                int count = AccountBUS.Instance.RestoreAccountByUserName(txtUsername.Text);
-                if (count > 0)
-                    MessageBox.Show("Khôi phục thành công", "Khôi phục tài khoản", MessageBoxButtons.OK);
-                else
-                    MessageBox.Show("Khôi phục thất bại", "Khôi phục tài khoản", MessageBoxButtons.OK);
+                if (MessageBox.Show("Bạn muốn phục hồi lại tài khoản này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int count = AccountBUS.Instance.RestoreAccountByUserName(txtUsername.Text);
+                    if (count > 0)
+                        MessageBox.Show("Khôi phục thành công", "Khôi phục tài khoản", MessageBoxButtons.OK);
+                    else
+                        MessageBox.Show("Khôi phục thất bại", "Khôi phục tài khoản", MessageBoxButtons.OK);
+                }
+                frmRecycleBin_Load(sender, e);
             }
-            frmRecycleBin_Load(sender, e);
+            else
+            {
+                if (MessageBox.Show("Want to recover this account?", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int count = AccountBUS.Instance.RestoreAccountByUserName(txtUsername.Text);
+                    if (count > 0)
+                        MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                frmRecycleBin_Load(sender, e);
+            }
         }
 
         private void btnRestoreAllAccount_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn phục hồi lại tất cả tài khoản này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (Language == 0)
             {
-                int count = AccountBUS.Instance.RestoreAllAccount();
-                if (count > 0)
-                    MessageBox.Show("Khôi phục thành công", "Khôi phục tài khoản", MessageBoxButtons.OK);
-                else
-                    MessageBox.Show("Khôi phục thất bại", "Khôi phục tài khoản", MessageBoxButtons.OK);
+                if (MessageBox.Show("Bạn muốn phục hồi lại tất cả tài khoản này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int count = AccountBUS.Instance.RestoreAllAccount();
+                    if (count > 0)
+                        MessageBox.Show("Khôi phục thành công", "Khôi phục tài khoản", MessageBoxButtons.OK);
+                    else
+                        MessageBox.Show("Khôi phục thất bại", "Khôi phục tài khoản", MessageBoxButtons.OK);
+                }
+            }
+            else
+            {
+                if (MessageBox.Show("Want to recover all these accounts?", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int count = AccountBUS.Instance.RestoreAllAccount();
+                    if (count > 0)
+                        MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             frmRecycleBin_Load(sender, e);
         }
@@ -182,32 +256,63 @@ namespace frmLogin
         }
         private void btnRestoreProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (Language == 0)
             {
-                int cout = ProductBUS.Instance.RestoreProduct(txtProductID.Text);
-                if (cout > 0)
+                if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
-                    LoadProductDeleted();
-                  
+                    int cout = ProductBUS.Instance.RestoreProduct(txtProductID.Text);
+                    if (cout > 0)
+                    {
+                        MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
+                        LoadProductDeleted();
+
+                    }
+                    else
+                        MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else
-                    MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                if (DialogResult.Yes == MessageBox.Show("Do you want to restore the product", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    int cout = ProductBUS.Instance.RestoreProduct(txtProductID.Text);
+                    if (cout > 0)
+                        MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    LoadProductDeleted();
+                }
             }
         }
         private void btnRestoreAllProduct_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (Language == 0)
             {
-                int cout = ProductBUS.Instance.RestoreProductAll();
-                if (cout > 0)
+                if (DialogResult.Yes == MessageBox.Show("Bạn có muốn khôi phục tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
-                    LoadProductDeleted();
-                 
+                    int cout = ProductBUS.Instance.RestoreProductAll();
+                    if (cout > 0)
+                    {
+                        MessageBox.Show("Khôi phục thành công", "Thông Báo", MessageBoxButtons.OK);
+                        LoadProductDeleted();
+
+                    }
+                    else
+                        MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else
-                    MessageBox.Show("Khôi phục thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+
+                if (DialogResult.Yes == MessageBox.Show("Do you want to restore all products", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    int cout = ProductBUS.Instance.RestoreProductAll();
+                    if (cout > 0)
+                        MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    LoadProductDeleted();
+                }
             }
         }
         #endregion
@@ -224,13 +329,27 @@ namespace frmLogin
 
         private void btnRestoreEmployee_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn phục hồi lại nhân viên này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (Language == 0)
             {
-                int count = EmployeeBUS.Instance.RestoreEmployeeInfo(Convert.ToInt32(txtEmployeeID.Text));
-                if (count > 0)
-                    MessageBox.Show("Khôi phục thành công", "Khôi phục nhân viên", MessageBoxButtons.OK);
-                else
-                    MessageBox.Show("Khôi phục thất bại", "Khôi phục nhân viên", MessageBoxButtons.OK);
+                if (MessageBox.Show("Bạn muốn phục hồi lại nhân viên này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int count = EmployeeBUS.Instance.RestoreEmployeeInfo(Convert.ToInt32(txtEmployeeID.Text));
+                    if (count > 0)
+                        MessageBox.Show("Khôi phục thành công", "Khôi phục nhân viên", MessageBoxButtons.OK);
+                    else
+                        MessageBox.Show("Khôi phục thất bại", "Khôi phục nhân viên", MessageBoxButtons.OK);
+                }
+            }
+            else
+            {
+                if (MessageBox.Show("Want to reinstate this employee?", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int count = EmployeeBUS.Instance.RestoreEmployeeInfo(Convert.ToInt32(txtEmployeeID.Text));
+                    if (count > 0)
+                        MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             frmRecycleBin_Load(sender, e);
     
@@ -238,13 +357,27 @@ namespace frmLogin
 
         private void btnRestoreAllEmployee_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn phục hồi lại tất cả nhân viên này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (Language == 0)
             {
-                int count = EmployeeBUS.Instance.RestoreAllEmployee();
-                if (count > 0)
-                    MessageBox.Show("Khôi phục thành công", "Khôi phục nhân viên", MessageBoxButtons.OK);
-                else
-                    MessageBox.Show("Khôi phục thất bại", "Khôi phục nhân viên", MessageBoxButtons.OK);
+                if (MessageBox.Show("Bạn muốn phục hồi lại tất cả nhân viên này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int count = EmployeeBUS.Instance.RestoreAllEmployee();
+                    if (count > 0)
+                        MessageBox.Show("Khôi phục thành công", "Khôi phục nhân viên", MessageBoxButtons.OK);
+                    else
+                        MessageBox.Show("Khôi phục thất bại", "Khôi phục nhân viên", MessageBoxButtons.OK);
+                }
+            }
+            else
+            {
+                if (MessageBox.Show("You want to reinstate all these employees?", "Notification", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    int count = EmployeeBUS.Instance.RestoreAllEmployee();
+                    if (count > 0)
+                        MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             frmRecycleBin_Load(sender, e);
  
@@ -301,41 +434,79 @@ namespace frmLogin
 
         private void btnRestoreBillDetail_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn khôi phục chi tiết hóa đơn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (Language == 0)
             {
-                string productID = "";
-                if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
-                    productID = dtgvListBillDetailDeleted.SelectedRows[0].Cells[5].Value.ToString();
-                int count = BillInfoBUS.Instance.RestoreBillInfo(txtBillID.Text, productID);
-
-                if (count > 0)
+                if (MessageBox.Show("Bạn muốn khôi phục chi tiết hóa đơn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Khôi phục chi tiết hóa đơn thành công", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK);
-                    LoadBillInfoDeleted();
-                
+                    string productID = "";
+                    if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
+                        productID = dtgvListBillDetailDeleted.SelectedRows[0].Cells[5].Value.ToString();
+                    int count = BillInfoBUS.Instance.RestoreBillInfo(txtBillID.Text, productID);
+
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Khôi phục chi tiết hóa đơn thành công", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK);
+                        LoadBillInfoDeleted();
+
+                    }
+                    else
+                        MessageBox.Show("Khôi phục chi tiết hóa đơn thất bại", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else
-                    MessageBox.Show("Khôi phục chi tiết hóa đơn thất bại", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                if (MessageBox.Show("You want to recover this invoice details?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    string productID = "";
+                    if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
+                        productID = dtgvListBillDetailDeleted.SelectedRows[0].Cells[5].Value.ToString();
+                    int count = BillInfoBUS.Instance.RestoreBillInfo(txtBillID.Text, productID);
+
+                    if (count > 0)
+                        MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                LoadBillInfoDeleted();
             }
         }
 
         private void btnRestoreAllBillDetail_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn khôi phục tất cả chi tiết hóa đơn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (Language == 0)
             {
-                string productID = "";
-                if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
-                    productID = dtgvListBillDetailDeleted.SelectedRows[0].Cells[5].Value.ToString();
-                int count = BillInfoBUS.Instance.RestoreAllBillInfo();
-
-                if (count > 0)
+                if (MessageBox.Show("Bạn muốn khôi phục tất cả chi tiết hóa đơn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Khôi phục tất cả chi tiết hóa đơn thành công", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK);
-                    LoadBillInfoDeleted();
-       
+                    string productID = "";
+                    if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
+                        productID = dtgvListBillDetailDeleted.SelectedRows[0].Cells[5].Value.ToString();
+                    int count = BillInfoBUS.Instance.RestoreAllBillInfo();
+
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Khôi phục tất cả chi tiết hóa đơn thành công", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK);
+                        LoadBillInfoDeleted();
+
+                    }
+                    else
+                        MessageBox.Show("Khôi phục tất cả chi tiết hóa đơn thất bại", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else
-                    MessageBox.Show("Khôi phục tất cả chi tiết hóa đơn thất bại", "Khôi phục chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                if (MessageBox.Show("You want to recover all these invoice details ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    string productID = "";
+                    if (dtgvListBillDetailDeleted.SelectedRows.Count > 0)
+                        productID = dtgvListBillDetailDeleted.SelectedRows[0].Cells[5].Value.ToString();
+                    int count = BillInfoBUS.Instance.RestoreAllBillInfo();
+
+                    if (count > 0)
+                        MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                LoadBillInfoDeleted();
             }
         }
 

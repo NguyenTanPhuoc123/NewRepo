@@ -117,29 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="tpTypeAccount.Text" xml:space="preserve">
-    <value>Type Account</value>
-  </data>
-  <data name="tpPosition.Text" xml:space="preserve">
-    <value>Position</value>
-  </data>
-  <data name="tpLocationTable.Text" xml:space="preserve">
-    <value>Location Table</value>
-  </data>
-  <data name="tpTypeProduct.Text" xml:space="preserve">
-    <value>Type Product</value>
-  </data>
-  <data name="tpDiscount.Text" xml:space="preserve">
-    <value>Discount</value>
-  </data>
   <data name="Column3.HeaderText" xml:space="preserve">
     <value>Type Account ID</value>
   </data>
   <data name="Column4.HeaderText" xml:space="preserve">
     <value>Type Account Name</value>
-  </data>
-  <data name="grpFunctionTypeAccount.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnSaveTypeAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -239,15 +221,15 @@
   <data name="btnTypeAccountDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
   </data>
-  <data name="grpTypeAccountInfo.Text" xml:space="preserve">
-    <value>Account type information</value>
+  <data name="grpFunctionTypeAccount.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 17</value>
+    <value>156, 20</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Type Account Name:</value>
@@ -256,19 +238,22 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 17</value>
+    <value>131, 20</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Type Account ID:</value>
+  </data>
+  <data name="grpTypeAccountInfo.Text" xml:space="preserve">
+    <value>Account type information</value>
+  </data>
+  <data name="tpTypeAccount.Text" xml:space="preserve">
+    <value>Type Account</value>
   </data>
   <data name="Column5.HeaderText" xml:space="preserve">
     <value>Position ID</value>
   </data>
   <data name="Column6.HeaderText" xml:space="preserve">
     <value>Position Name</value>
-  </data>
-  <data name="grpFunctionPosition.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <data name="btnSavePosition.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -367,14 +352,14 @@
   <data name="btnPositionDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
   </data>
-  <data name="grpPositionInfo.Text" xml:space="preserve">
-    <value>Position information</value>
+  <data name="grpFunctionPosition.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 17</value>
+    <value>115, 20</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Position Name:</value>
@@ -383,19 +368,22 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 17</value>
+    <value>90, 20</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Position ID:</value>
+  </data>
+  <data name="grpPositionInfo.Text" xml:space="preserve">
+    <value>Position information</value>
+  </data>
+  <data name="tpPosition.Text" xml:space="preserve">
+    <value>Position</value>
   </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>Position ID</value>
   </data>
   <data name="Column2.HeaderText" xml:space="preserve">
     <value>Position Name</value>
-  </data>
-  <data name="grpFunctionLocation.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <data name="btnSaveLocation.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -494,14 +482,14 @@
   <data name="btnLocationDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
   </data>
-  <data name="grpLocationInfo.Text" xml:space="preserve">
-    <value>Table location information</value>
+  <data name="grpFunctionLocation.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 17</value>
+    <value>120, 20</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Location Name:</value>
@@ -510,19 +498,22 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 17</value>
+    <value>95, 20</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Location ID:</value>
+  </data>
+  <data name="grpLocationInfo.Text" xml:space="preserve">
+    <value>Table location information</value>
+  </data>
+  <data name="tpLocationTable.Text" xml:space="preserve">
+    <value>Location Table</value>
   </data>
   <data name="Column7.HeaderText" xml:space="preserve">
     <value>Type Product ID</value>
   </data>
   <data name="Column8.HeaderText" xml:space="preserve">
     <value>Type Product Name</value>
-  </data>
-  <data name="grpFunctionTypeProduct.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <data name="btnSaveTypeProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -621,14 +612,14 @@
   <data name="btnTypeProductDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
   </data>
-  <data name="grpTypeProductInfo.Text" xml:space="preserve">
-    <value>Product Type Information</value>
+  <data name="grpFunctionTypeProduct.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 17</value>
+    <value>152, 20</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Type Product Name:</value>
@@ -637,10 +628,16 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 17</value>
+    <value>127, 20</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Type Product ID:</value>
+  </data>
+  <data name="grpTypeProductInfo.Text" xml:space="preserve">
+    <value>Product Type Information</value>
+  </data>
+  <data name="tpTypeProduct.Text" xml:space="preserve">
+    <value>Type Product</value>
   </data>
   <data name="Column12.HeaderText" xml:space="preserve">
     <value>Discount ID</value>
@@ -649,7 +646,7 @@
     <value>Discount Name</value>
   </data>
   <data name="Column14.HeaderText" xml:space="preserve">
-    <value>Unit price</value>
+    <value>Price</value>
   </data>
   <data name="Column15.HeaderText" xml:space="preserve">
     <value>Start day</value>
@@ -662,9 +659,6 @@
   </data>
   <data name="Column10.HeaderText" xml:space="preserve">
     <value>Level</value>
-  </data>
-  <data name="grpFunctionDiscount.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <data name="btnSaveDiscount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -763,14 +757,17 @@
   <data name="btnDiscountDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
   </data>
-  <data name="grpDiscountInfo.Text" xml:space="preserve">
-    <value>Discount information</value>
+  <data name="grpFunctionDiscount.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 271</value>
+  </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 17</value>
+    <value>50, 20</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Work:</value>
@@ -779,10 +776,10 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 153</value>
+    <value>349, 196</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 17</value>
+    <value>50, 20</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Level:</value>
@@ -791,7 +788,7 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 17</value>
+    <value>78, 20</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
     <value>End date:</value>
@@ -800,7 +797,7 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 17</value>
+    <value>77, 20</value>
   </data>
   <data name="label16.Text" xml:space="preserve">
     <value>Start day:</value>
@@ -808,20 +805,23 @@
   <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 198</value>
+  </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 17</value>
+    <value>48, 20</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
-    <value>Unit price:</value>
+    <value>Price:</value>
   </data>
   <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 99</value>
+    <value>8, 131</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 17</value>
+    <value>122, 20</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>Discount Name:</value>
@@ -830,9 +830,15 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 17</value>
+    <value>97, 20</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>Discount ID:</value>
+  </data>
+  <data name="grpDiscountInfo.Text" xml:space="preserve">
+    <value>Discount information</value>
+  </data>
+  <data name="tpDiscount.Text" xml:space="preserve">
+    <value>Discount</value>
   </data>
 </root>

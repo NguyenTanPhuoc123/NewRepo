@@ -121,5 +121,12 @@ namespace DAO
 
             return row;
         }
+
+        public bool checkNameExist(string locationName)
+        {
+            string query = string.Format("Select count(*) from VITRI where TENVITRI={0}", locationName);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data > 0 ? false : true;
+        }
     }
 }

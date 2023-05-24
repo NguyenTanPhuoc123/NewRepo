@@ -71,51 +71,99 @@ namespace frmLogin
 
         private void btnEditEmployee_Click(object sender, EventArgs e)
         {
-            string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text, txtEmployeeID.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
+            if (Language == 0)
             {
-                int count = EmployeeBUS.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
-                if (count > 0)
+                string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
+                if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text, txtEmployeeID.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
                 {
-                    MessageBox.Show("Sửa tài khoản thành công");
+                    int count = EmployeeBUS.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Sửa tài khoản thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    frmEmployeeManager_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Sửa tài khoản thất bại");
+                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi");
                 }
-                frmEmployeeManager_Load(sender, e);
             }
             else
             {
-                MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi");
+                string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
+                if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text, txtEmployeeID.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
+                {
+                    int count = EmployeeBUS.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Account Edited Successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Repair failed account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    frmEmployeeManager_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Your phone number is up to 10 numbers and the phone numbers cannot be the same or you are under 18 years old");
+                }
             }
 
         }
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
-
-            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            if (Language == 0)
             {
-                if (EmployeeBUS.Instance.CheckAccountDelete(txtEmployeeName.Text))
+                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
-                    if (count > 0)
+                    if (EmployeeBUS.Instance.CheckAccountDelete(txtEmployeeName.Text))
                     {
-                        MessageBox.Show("Xóa nhân viên thành công");
+                        int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa nhân viên thành công","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa nhân viên thất bại","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                        }
+                        frmEmployeeManager_Load(sender, e);
                     }
                     else
                     {
-                        MessageBox.Show("Xóa nhân viên thất bại");
+                        MessageBox.Show("Tài khoản của nhân viên vẫn còn tồn tại");
                     }
-                    frmEmployeeManager_Load(sender, e);
-                }
-                else
-                {
-                    MessageBox.Show("Tài khoản của nhân viên vẫn còn tồn tại");
                 }
             }
-
+            else
+            {
+                if (DialogResult.Yes == MessageBox.Show("You definitely want to delete this employee", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                {
+                    if (EmployeeBUS.Instance.CheckAccountDelete(txtEmployeeName.Text))
+                    {
+                        int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete employee successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Delete employee successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        frmEmployeeManager_Load(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Employee's account still exists");
+                    }
+                }
+            }
         }
 
         public void LoadCbFill()
@@ -145,54 +193,110 @@ namespace frmLogin
 
         private void btnSaveEmployee_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtEmployeeName.Text.Trim())||string.IsNullOrEmpty(txtNumberPhone.Text.Trim())||string.IsNullOrEmpty(richtxtAddress.Text.Trim()))
+            if (Language == 0)
             {
-                MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
-            if (EmployeeBUS.Instance.CheckNumberPhoneCreate(txtNumberPhone.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
-            {
-                int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
-                if (count > 0)
+                if (string.IsNullOrEmpty(txtEmployeeName.Text.Trim()) || string.IsNullOrEmpty(txtNumberPhone.Text.Trim()) || string.IsNullOrEmpty(richtxtAddress.Text.Trim()))
                 {
-                    MessageBox.Show("Thêm tài khoản thành công");
+                    MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
+                if (EmployeeBUS.Instance.CheckNumberPhoneCreate(txtNumberPhone.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
+                {
+                    int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Thêm tài khoản thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm tài khoản thất bại","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    frmEmployeeManager_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Thêm tài khoản thất bại");
+                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi");
                 }
-                frmEmployeeManager_Load(sender, e);
             }
             else
             {
-                MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi");
+                if (string.IsNullOrEmpty(txtEmployeeName.Text.Trim()) || string.IsNullOrEmpty(txtNumberPhone.Text.Trim()) || string.IsNullOrEmpty(richtxtAddress.Text.Trim()))
+                {
+                    MessageBox.Show("Please enter the name of the desk location you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
+                if (EmployeeBUS.Instance.CheckNumberPhoneCreate(txtNumberPhone.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
+                {
+                    int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Account added successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Adding account failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    frmEmployeeManager_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Your phone number is up to 10 numbers and the phone numbers cannot be the same or you are under 18 years old");
+                }
             }
         }
 
         private void btnDeleteAllEmployee_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa toàn bộ nhân viên", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            if (Language == 0)
             {
-                if (EmployeeBUS.Instance.CheckAccountDeleteAll())
+                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa toàn bộ nhân viên", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = EmployeeBUS.Instance.DeleteAllEmployee();
-                    if (count > 0)
+                    if (EmployeeBUS.Instance.CheckAccountDeleteAll())
                     {
-                        MessageBox.Show("Xóa tất cả tài khoản thành công");
+                        int count = EmployeeBUS.Instance.DeleteAllEmployee();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa tất cả tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa tất cả tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tất cả tài khoản thất bại");
+                        MessageBox.Show("Bạn không thể thực hiện chức năng khi chưa xóa tài khoản");
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Bạn không thể thực hiện chức năng khi chưa xóa tài khoản");
-                }
 
+                }
+                frmEmployeeManager_Load(sender, e);
             }
-            frmEmployeeManager_Load(sender, e);
+            else
+            {
+                if (DialogResult.Yes == MessageBox.Show("You definitely want to delete all employees", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                {
+                    if (EmployeeBUS.Instance.CheckAccountDeleteAll())
+                    {
+                        int count = EmployeeBUS.Instance.DeleteAllEmployee();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete all accounts successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Delete all failed accounts", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("You cannot perform the function without deleting the account");
+                    }
+
+                }
+                frmEmployeeManager_Load(sender, e);
+            }
         }
 
         private void txtSearchEmployee_TextChanged(object sender, EventArgs e)

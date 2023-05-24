@@ -117,83 +117,464 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btnCategoryManagement.Name" xml:space="preserve">
-    <value>btnCategoryManagement</value>
-  </data>
-  <data name="&gt;&gt;dtpProductStart.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="&gt;&gt;cbCategory.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+  <data name="dtpProductEnd.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="guna2TabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
-    <value>Left</value>
+  <data name="cbFillProduct.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="dtpProductEnd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 55</value>
+  <data name="dtpBillStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="btnEmployeeManager.Text" xml:space="preserve">
-    <value>Quản lý nhân viên</value>
+  <data name="btnAccountManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnStatisticalRevenue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnCategoryManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 561</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnBillManagement.Text" xml:space="preserve">
+    <value>Quản lý hóa đơn</value>
+  </data>
+  <data name="dtpProductStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tpbProduct.Text" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnStatisticalProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 66</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeManager.Name" xml:space="preserve">
+    <value>btnEmployeeManager</value>
+  </data>
+  <data name="&gt;&gt;dtpBillEnd.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="pbLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnBillManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="lblTitle.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;panelMenu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dtpBillStart.Name" xml:space="preserve">
+    <value>dtpBillStart</value>
+  </data>
+  <data name="btnCategoryManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 75</value>
+  </data>
+  <data name="rpvRevenue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 449</value>
+  </data>
+  <data name="tbpEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnProducManagement.ToolTip" xml:space="preserve">
+    <value>F1</value>
+  </data>
+  <data name="&gt;&gt;tbpEmployee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnEmployeeManager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 70</value>
+  </data>
+  <data name="btnbtnStatisticalBill.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="lblTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnTableManagement.ToolTip" xml:space="preserve">
+    <value>F5</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dtpRevenueEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 10</value>
+  </data>
+  <data name="guna2TabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 158</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.Name" xml:space="preserve">
+    <value>cbFillProduct</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="btnTableManagement.Text" xml:space="preserve">
+    <value>Quản lý bàn ăn</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbCategory.Items" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="tbpRevenue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 540</value>
+  </data>
+  <data name="dtpProductEnd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="dtpRevenueStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="btnbtnStatisticalBill.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;cbTypeStatisticalBill.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="btnReportEmployCreateBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 42</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1238, 702</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtpBillStart.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnProducManagement.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chartProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 412</value>
+  </data>
+  <data name="panelMain.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2TabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 17</value>
+  </data>
+  <data name="btnReportEmployCreateBill.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbpRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="tbpRevenue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tpbProduct.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnbtnStatisticalBill.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="chartEmployeeCreateBill.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtpProductEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>662, 8</value>
+  </data>
+  <data name="&gt;&gt;btnbtnStatisticalBill.Name" xml:space="preserve">
+    <value>btnbtnStatisticalBill</value>
+  </data>
+  <data name="&gt;&gt;btnTableManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnAccountManagement.Text" xml:space="preserve">
+    <value>Quản lý tài khoản</value>
+  </data>
+  <data name="cbFillProduct.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="panelMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;chartEmployeeCreateBill.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbFillProduct.Items2" xml:space="preserve">
+    <value>Sản phẩm tồn kho</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Name" xml:space="preserve">
+    <value>panelTitle</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 17</value>
+  </data>
+  <data name="lblTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnTableManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;chartEmployeeCreateBill.Name" xml:space="preserve">
+    <value>chartEmployeeCreateBill</value>
+  </data>
+  <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;chartEmployeeCreateBill.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Items1" xml:space="preserve">
+    <value>Nhân viên lập ít hóa đơn nhất</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="panelLogo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnEmployeeManager.ToolTip" xml:space="preserve">
+    <value>F3</value>
+  </data>
+  <data name="btnStatisticalRevenue.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.Parent" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="dtpProductStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>984, 3</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Name" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbpEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="&gt;&gt;btnProducManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbLogo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="chartEmployeeCreateBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 381</value>
+  </data>
+  <data name="&gt;&gt;btnBillManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtpBillEnd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbpEmployee.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnCategoryManagement.Text" xml:space="preserve">
+    <value>Quản lý danh mục</value>
+  </data>
+  <data name="panelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dtpRevenueStart.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelLogo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExit.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbCategory.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtpProductStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="btnAccountManagement.ToolTip" xml:space="preserve">
+    <value>F2</value>
+  </data>
+  <data name="tbpRevenue.Text" xml:space="preserve">
+    <value>Doanh thu</value>
+  </data>
+  <data name="btnAccountManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnReportEmployCreateBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 76</value>
+  </data>
+  <data name="&gt;&gt;btnCategoryManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="panel3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnbtnStatisticalBill.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtpBillEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Name" xml:space="preserve">
+    <value>dtpRevenueEnd</value>
+  </data>
+  <data name="dtpProductStart.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtpRevenueEnd.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCategoryManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnStatisticalRevenue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;panelLogo.Name" xml:space="preserve">
+    <value>panelLogo</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Parent" xml:space="preserve">
+    <value>panelLogo</value>
+  </data>
+  <data name="cbFillProduct.Items1" xml:space="preserve">
+    <value>Sản phẩm bán chạy nhất</value>
+  </data>
+  <data name="tbpRevenue.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;btnEmployeeManager.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="btnTableManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;rpvRevenue.Parent" xml:space="preserve">
+    <value>tbpRevenue</value>
   </data>
-  <data name="guna2TabControl1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnProducManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 161</value>
+  </data>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
     <value>1029, 548</value>
   </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 154</value>
-  </data>
-  <data name="&gt;&gt;dtpBillEnd.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="dtpProductStart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="pbLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnBillManagement.Name" xml:space="preserve">
-    <value>btnBillManagement</value>
-  </data>
-  <data name="&gt;&gt;btnReportEmployCreateBill.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelTitle.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;tpbProduct.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;btnbtnStatisticalBill.Name" xml:space="preserve">
-    <value>btnbtnStatisticalBill</value>
+  <data name="&gt;&gt;tbpRevenue.Name" xml:space="preserve">
+    <value>tbpRevenue</value>
   </data>
-  <data name="panelTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;btnCategoryManagement.Name" xml:space="preserve">
+    <value>btnCategoryManagement</value>
   </data>
-  <data name="btnStatisticalProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 42</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dtpBillStart.Type" xml:space="preserve">
+  <data name="&gt;&gt;dtpProductStart.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
-    <value>panelTitle</value>
+  <data name="dtpProductEnd.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;dtpBillStart.Parent" xml:space="preserve">
-    <value>panel3</value>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="rpvRevenue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 449</value>
+  <data name="&gt;&gt;btnTableManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
   </data>
   <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -205,353 +586,110 @@
         iRDCF/FzelOcx/ofAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="cbTypeStatisticalBill.Items" xml:space="preserve">
-    <value>Nhân viên lập nhiều hóa đơn nhất</value>
-  </data>
-  <data name="btnBillManagement.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panelTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dtpBillEnd.Name" xml:space="preserve">
-    <value>dtpBillEnd</value>
-  </data>
-  <data name="&gt;&gt;chartProduct.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="btnCategoryManagement.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="dtpRevenueStart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;tbpRevenue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dtpProductEnd.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="btnCategoryManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnTableManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 475</value>
-  </data>
-  <data name="tpbProduct.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="chartEmployeeCreateBill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 381</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;cbFillProduct.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="btnStatisticalProduct.Text" xml:space="preserve">
-    <value>Thống kê</value>
-  </data>
-  <data name="&gt;&gt;btnProducManagement.Name" xml:space="preserve">
-    <value>btnProducManagement</value>
-  </data>
-  <data name="&gt;&gt;btnAccountManagement.Name" xml:space="preserve">
-    <value>btnAccountManagement</value>
-  </data>
-  <data name="btnbtnStatisticalBill.Text" xml:space="preserve">
-    <value>Thống kê</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>frmQuanLyAdmin</value>
-  </data>
-  <data name="dtpProductStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 55</value>
-  </data>
-  <data name="guna2TabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 702</value>
   </data>
   <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="&gt;&gt;guna2TabControl1.Name" xml:space="preserve">
-    <value>guna2TabControl1</value>
-  </data>
-  <data name="&gt;&gt;dtpBillEnd.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="guna2TabControl1.ItemSize" type="System.Drawing.Size, System.Drawing">
-    <value>180, 40</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tpbProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>841, 540</value>
-  </data>
-  <data name="cbFillProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 36</value>
-  </data>
-  <data name="&gt;&gt;pbLogo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dtpRevenueStart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 41</value>
-  </data>
-  <data name="&gt;&gt;btnTableManagement.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnReportEmployCreateBill.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cbTypeStatisticalBill.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="btnBillManagement.Size" type="System.Drawing.Size, System.Drawing">
     <value>209, 70</value>
   </data>
-  <data name="btnbtnStatisticalBill.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="&gt;&gt;dtpRevenueStart.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="chartEmployeeCreateBill.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 22</value>
   </data>
-  <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 702</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnbtnStatisticalBill.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tpbProduct.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;dtpProductEnd.Name" xml:space="preserve">
-    <value>dtpProductEnd</value>
-  </data>
-  <data name="&gt;&gt;btnProducManagement.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dtpProductEnd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>662, 8</value>
-  </data>
-  <data name="pbLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tpbProduct.Text" xml:space="preserve">
-    <value>Sản phẩm</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cbCategory.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;dtpProductStart.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="panelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="&gt;&gt;tpbProduct.Name" xml:space="preserve">
-    <value>tpbProduct</value>
-  </data>
-  <data name="dtpBillEnd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>630, 8</value>
-  </data>
-  <data name="tbpBill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 4</value>
-  </data>
-  <data name="&gt;&gt;cbTypeStatisticalBill.Name" xml:space="preserve">
-    <value>cbTypeStatisticalBill</value>
-  </data>
-  <data name="tbpBill.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="dtpBillStart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>984, 3</value>
-  </data>
-  <data name="&gt;&gt;cbFillProduct.Name" xml:space="preserve">
-    <value>cbFillProduct</value>
-  </data>
-  <data name="cbTypeStatisticalBill.Items1" xml:space="preserve">
-    <value>Nhân viên lập ít hóa đơn nhất</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.Name" xml:space="preserve">
-    <value>dtpRevenueStart</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 17</value>
-  </data>
-  <data name="guna2TabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnbtnStatisticalBill.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chartProduct.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
   </data>
   <data name="dtpBillStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 55</value>
   </data>
-  <data name="btnAccountManagement.Text" xml:space="preserve">
-    <value>Quản lý tài khoản</value>
+  <data name="pbLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;btnReportEmployCreateBill.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btnReportEmployCreateBill.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.Name" xml:space="preserve">
+    <value>dtpProductStart</value>
+  </data>
+  <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnAccountManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 237</value>
+  </data>
+  <data name="chartProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 120</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 17</value>
+  </data>
+  <data name="dtpProductEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 55</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnStatisticalRevenue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 55</value>
+  <data name="cbTypeStatisticalBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 36</value>
   </data>
-  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 48</value>
+  <data name="panelTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="&gt;&gt;tbpBill.Name" xml:space="preserve">
-    <value>tbpBill</value>
+  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmQuanLyAdmin</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="dtpRevenueEnd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 55</value>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnbtnStatisticalBill.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnStatisticalRevenue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="dtpProductStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
-  </data>
-  <data name="btnAccountManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cbTypeStatisticalBill.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="panelTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 154</value>
-  </data>
-  <data name="&gt;&gt;btnAccountManagement.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCategoryManagement.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnBillManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="chartEmployeeCreateBill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 151</value>
-  </data>
-  <data name="btnReportEmployCreateBill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 42</value>
-  </data>
-  <data name="dtpRevenueStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 10</value>
-  </data>
-  <data name="&gt;&gt;chartEmployeeCreateBill.Parent" xml:space="preserve">
-    <value>tbpEmployee</value>
-  </data>
-  <data name="&gt;&gt;rpvRevenue.Name" xml:space="preserve">
-    <value>rpvRevenue</value>
-  </data>
-  <data name="btnReportEmployCreateBill.Text" xml:space="preserve">
-    <value>Xem báo cáo</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="btnCategoryManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 75</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Name" xml:space="preserve">
-    <value>btnStatisticalRevenue</value>
-  </data>
-  <data name="btnbtnStatisticalBill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 76</value>
-  </data>
-  <data name="&gt;&gt;btnAccountManagement.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalProduct.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="btnReportEmployCreateBill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 76</value>
-  </data>
-  <data name="btnTableManagement.Text" xml:space="preserve">
-    <value>Quản lý bàn ăn</value>
+  <data name="btnCategoryManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pbLogo.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="btnBillManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 399</value>
+  <data name="&gt;&gt;btnbtnStatisticalBill.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;chartProduct.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="tbpRevenue.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="lblTitle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;chartProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="dtpBillStart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="pbLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 158</value>
   </data>
-  <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="cbTypeStatisticalBill.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="&gt;&gt;rpvRevenue.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tbpRevenue.Parent" xml:space="preserve">
+  <data name="&gt;&gt;guna2TabControl1.Name" xml:space="preserve">
     <value>guna2TabControl1</value>
   </data>
-  <data name="dtpProductEnd.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="btnStatisticalProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;btnReportEmployCreateBill.Name" xml:space="preserve">
-    <value>btnReportEmployCreateBill</value>
+  <data name="&gt;&gt;btnEmployeeManager.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -751,56 +889,152 @@
         UKgAKBQKFQCFQqECoFAoVAAUCoUKgEKhUAFQKBQqAAqFwlf8f2Q0n8n7MPmgAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;cbTypeStatisticalBill.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="btnCategoryManagement.ToolTip" xml:space="preserve">
+    <value>F6</value>
   </data>
-  <data name="&gt;&gt;btnEmployeeManager.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rpvRevenue.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;tbpEmployee.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dtpRevenueStart.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;dtpProductStart.Name" xml:space="preserve">
-    <value>dtpProductStart</value>
+  <data name="dtpProductStart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="btnTableManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 70</value>
-  </data>
-  <data name="btnStatisticalRevenue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 10</value>
+  <data name="panelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
   <data name="cbCategory.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 36</value>
   </data>
-  <data name="panelTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 0</value>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 154</value>
   </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="&gt;&gt;chartEmployeeCreateBill.Parent" xml:space="preserve">
+    <value>tbpEmployee</value>
   </data>
   <data name="btnAccountManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dtpBillEnd.Name" xml:space="preserve">
+    <value>dtpBillEnd</value>
+  </data>
+  <data name="&gt;&gt;btnbtnStatisticalBill.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="&gt;&gt;tbpEmployee.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="&gt;&gt;btnBillManagement.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;panelTitle.Name" xml:space="preserve">
-    <value>panelTitle</value>
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 82</value>
   </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 76</value>
   </data>
-  <data name="dtpRevenueStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 55</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 111</value>
+  </data>
+  <data name="cbTypeStatisticalBill.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmQuanLyAdmin</value>
+  </data>
+  <data name="&gt;&gt;btnCategoryManagement.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnReportEmployCreateBill.Text" xml:space="preserve">
+    <value>Xem báo cáo</value>
+  </data>
+  <data name="btnEmployeeManager.Text" xml:space="preserve">
+    <value>Quản lý nhân viên</value>
+  </data>
+  <data name="btnExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Name" xml:space="preserve">
+    <value>pbLogo</value>
+  </data>
+  <data name="btnExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbFillProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 36</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 142</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Name" xml:space="preserve">
+    <value>btnStatisticalProduct</value>
+  </data>
+  <data name="&gt;&gt;panelMenu.Name" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="btnbtnStatisticalBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 76</value>
+  </data>
+  <data name="pbLogo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbFillProduct.Items" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnTableManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 70</value>
+  </data>
+  <data name="rpvRevenue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dtpRevenueStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;btnAccountManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnStatisticalProduct.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnEmployeeManager.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnProducManagement.Text" xml:space="preserve">
+    <value>Quản lý sản phẩm</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Name" xml:space="preserve">
+    <value>btnStatisticalRevenue</value>
+  </data>
+  <data name="btnProducManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 70</value>
+  </data>
+  <data name="&gt;&gt;dtpBillStart.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dtpBillStart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="pbLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2196,575 +2430,266 @@
         //IK9oNTNpDzAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 82</value>
-  </data>
-  <data name="btnAccountManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 237</value>
-  </data>
-  <data name="pbLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 158</value>
-  </data>
-  <data name="cbFillProduct.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="dtpProductStart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnBillManagement.Text" xml:space="preserve">
-    <value>Quản lý hóa đơn</value>
-  </data>
-  <data name="&gt;&gt;tbpRevenue.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cbCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tbpEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="pbLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="tbpBill.Text" xml:space="preserve">
-    <value>Hóa đơn</value>
-  </data>
-  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 36pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;dtpProductEnd.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;cbCategory.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 548</value>
-  </data>
-  <data name="&gt;&gt;cbFillProduct.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="tbpRevenue.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cbCategory.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnProducManagement.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btnTableManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnbtnStatisticalBill.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 111</value>
-  </data>
-  <data name="btnBillManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;chartEmployeeCreateBill.Name" xml:space="preserve">
-    <value>chartEmployeeCreateBill</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>tbpEmployee</value>
-  </data>
-  <data name="btnEmployeeManager.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnProducManagement.Text" xml:space="preserve">
-    <value>Quản lý sản phẩm</value>
-  </data>
-  <data name="&gt;&gt;tbpBill.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panelMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;guna2TabControl1.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="btnStatisticalProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 66</value>
-  </data>
-  <data name="&gt;&gt;btnReportEmployCreateBill.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panelLogo.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
-    <value>panelTitle</value>
-  </data>
-  <data name="btnProducManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 70</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="cbFillProduct.Items2" xml:space="preserve">
-    <value>Sản phẩm tồn kho</value>
-  </data>
-  <data name="cbFillProduct.Items1" xml:space="preserve">
-    <value>Sản phẩm bán chạy nhất</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;cbCategory.Name" xml:space="preserve">
-    <value>cbCategory</value>
-  </data>
-  <data name="&gt;&gt;dtpBillEnd.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="tbpRevenue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 4</value>
-  </data>
-  <data name="&gt;&gt;tbpEmployee.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 76</value>
-  </data>
-  <data name="&gt;&gt;tbpEmployee.Parent" xml:space="preserve">
-    <value>guna2TabControl1</value>
-  </data>
-  <data name="chartProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 412</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 17</value>
-  </data>
-  <data name="dtpBillStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 22</value>
-  </data>
-  <data name="&gt;&gt;chartEmployeeCreateBill.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="lblTitle.Text" xml:space="preserve">
-    <value>Trang chủ</value>
-  </data>
-  <data name="btnTableManagement.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btnEmployeeManager.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 323</value>
-  </data>
-  <data name="&gt;&gt;btnCategoryManagement.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="btnProducManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnBillManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmQuanLyAdmin</value>
-  </data>
-  <data name="&gt;&gt;pbLogo.Name" xml:space="preserve">
-    <value>pbLogo</value>
-  </data>
-  <data name="&gt;&gt;tbpBill.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="btnbtnStatisticalBill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 42</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cbCategory.Items" xml:space="preserve">
-    <value>Tất cả</value>
-  </data>
-  <data name="&gt;&gt;btnAccountManagement.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panelTitle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="dtpBillEnd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 55</value>
-  </data>
-  <data name="&gt;&gt;btnReportEmployCreateBill.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="guna2TabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;panelMenu.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tbpRevenue.Name" xml:space="preserve">
-    <value>tbpRevenue</value>
+  <data name="&gt;&gt;dtpProductStart.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="btnReportEmployCreateBill.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="btnbtnStatisticalBill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 42</value>
   </data>
-  <data name="&gt;&gt;pbLogo.Parent" xml:space="preserve">
-    <value>panelLogo</value>
+  <data name="btnTableManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;panelLogo.Name" xml:space="preserve">
-    <value>panelLogo</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnStatisticalProduct.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="panelTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 0</value>
   </data>
-  <data name="&gt;&gt;cbCategory.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnReportEmployCreateBill.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="dtpBillEnd.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalProduct.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Type" xml:space="preserve">
+  <data name="&gt;&gt;dtpProductEnd.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;btnTableManagement.Name" xml:space="preserve">
-    <value>btnTableManagement</value>
+  <data name="&gt;&gt;btnAccountManagement.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 142</value>
+  <data name="dtpRevenueStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 10</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 22</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnEmployeeManager.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Name" xml:space="preserve">
-    <value>dtpRevenueEnd</value>
-  </data>
-  <data name="tbpRevenue.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tpbProduct.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="&gt;&gt;btnStatisticalProduct.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="pbLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;btnBillManagement.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;dtpRevenueStart.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;dtpRevenueStart.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;tpbProduct.Parent" xml:space="preserve">
-    <value>guna2TabControl1</value>
-  </data>
-  <data name="cbTypeStatisticalBill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 17</value>
-  </data>
-  <data name="cbFillProduct.Items" xml:space="preserve">
-    <value>Tất cả</value>
-  </data>
-  <data name="&gt;&gt;btnEmployeeManager.Name" xml:space="preserve">
-    <value>btnEmployeeManager</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalProduct.Name" xml:space="preserve">
-    <value>btnStatisticalProduct</value>
-  </data>
-  <data name="guna2TabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="btnStatisticalRevenue.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
-    <value>lblTitle</value>
-  </data>
-  <data name="&gt;&gt;tbpBill.Parent" xml:space="preserve">
-    <value>guna2TabControl1</value>
-  </data>
-  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dtpRevenueEnd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 10</value>
-  </data>
-  <data name="btnProducManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 17</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>tpbProduct</value>
-  </data>
-  <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="dtpBillEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
   </data>
   <data name="&gt;&gt;btnCategoryManagement.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="dtpBillStart.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnBillManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 399</value>
+  </data>
+  <data name="btnCategoryManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="guna2TabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
+  </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>tbpRevenue</value>
   </data>
-  <data name="panelMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="btnProducManagement.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="&gt;&gt;chartProduct.Parent" xml:space="preserve">
-    <value>tpbProduct</value>
-  </data>
-  <data name="&gt;&gt;dtpBillStart.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;rpvRevenue.Parent" xml:space="preserve">
-    <value>tbpRevenue</value>
-  </data>
-  <data name="&gt;&gt;rpvRevenue.Type" xml:space="preserve">
-    <value>Microsoft.Reporting.WinForms.ReportViewer, Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dtpBillEnd.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="tpbProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 4</value>
-  </data>
-  <data name="btnEmployeeManager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 70</value>
-  </data>
-  <data name="chartProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 120</value>
-  </data>
-  <data name="&gt;&gt;tpbProduct.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;tbpEmployee.Name" xml:space="preserve">
     <value>tbpEmployee</value>
   </data>
-  <data name="dtpProductEnd.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnbtnStatisticalBill.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="cbTypeStatisticalBill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>305, 36</value>
+  <data name="&gt;&gt;rpvRevenue.Type" xml:space="preserve">
+    <value>Microsoft.Reporting.WinForms.ReportViewer, Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</value>
   </data>
-  <data name="&gt;&gt;btnTableManagement.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pbLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;btnProducManagement.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="pbLogo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 158</value>
-  </data>
-  <data name="btnEmployeeManager.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;guna2TabControl1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TabControl, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cbFillProduct.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="btnStatisticalRevenue.Text" xml:space="preserve">
+  <data name="btnStatisticalProduct.Text" xml:space="preserve">
     <value>Thống kê</value>
-  </data>
-  <data name="&gt;&gt;btnBillManagement.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1238, 702</value>
-  </data>
-  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tbpBill.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="btnStatisticalProduct.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="rpvRevenue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 88</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;cbFillProduct.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;dtpProductStart.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btnCategoryManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbCategory.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="dtpRevenueEnd.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tbpRevenue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>841, 540</value>
-  </data>
-  <data name="&gt;&gt;panelMenu.Name" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;panelMenu.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnProducManagement.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAccountManagement.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="dtpRevenueEnd.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="tbpEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 4</value>
-  </data>
-  <data name="tpbProduct.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tbpRevenue.Text" xml:space="preserve">
-    <value>Doanh thu</value>
-  </data>
-  <data name="&gt;&gt;panelMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dtpBillStart.Name" xml:space="preserve">
-    <value>dtpBillStart</value>
-  </data>
-  <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnAccountManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 80</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cbTypeStatisticalBill.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="btnCategoryManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 561</value>
-  </data>
-  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnProducManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 161</value>
-  </data>
-  <data name="&gt;&gt;dtpProductEnd.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="lblTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;chartProduct.Name" xml:space="preserve">
-    <value>chartProduct</value>
-  </data>
-  <data name="btnCategoryManagement.Text" xml:space="preserve">
-    <value>Quản lý danh mục</value>
   </data>
   <data name="cbFillProduct.Location" type="System.Drawing.Point, System.Drawing">
     <value>455, 17</value>
   </data>
-  <data name="cbFillProduct.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
+  <data name="&gt;&gt;cbTypeStatisticalBill.Name" xml:space="preserve">
+    <value>cbTypeStatisticalBill</value>
   </data>
-  <data name="tbpBill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>841, 540</value>
+  <data name="&gt;&gt;btnAccountManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;guna2TabControl1.ZOrder" xml:space="preserve">
+  <data name="cbTypeStatisticalBill.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="btnEmployeeManager.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 323</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;chartProduct.Name" xml:space="preserve">
+    <value>chartProduct</value>
+  </data>
+  <data name="&gt;&gt;dtpBillEnd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
+    <value>lblTitle</value>
+  </data>
+  <data name="dtpRevenueStart.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="panelLogo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbFillProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnReportEmployCreateBill.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnAccountManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 80</value>
+  </data>
+  <data name="btnStatisticalRevenue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtpRevenueEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="chartEmployeeCreateBill.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="guna2TabControl1.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>180, 40</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="panelMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;btnBillManagement.Name" xml:space="preserve">
+    <value>btnBillManagement</value>
   </data>
   <data name="&gt;&gt;dtpRevenueEnd.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panelLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;btnStatisticalRevenue.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="&gt;&gt;panelLogo.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnEmployeeManager.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btnProducManagement.Name" xml:space="preserve">
+    <value>btnProducManagement</value>
+  </data>
+  <data name="&gt;&gt;btnAccountManagement.Name" xml:space="preserve">
+    <value>btnAccountManagement</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="panelTitle.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="btnBillManagement.ToolTip" xml:space="preserve">
+    <value>F4</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="dtpRevenueEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtpBillStart.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="btnTableManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 475</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="guna2TabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 548</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.Name" xml:space="preserve">
+    <value>cbCategory</value>
+  </data>
+  <data name="rpvRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 88</value>
+  </data>
+  <data name="cbFillProduct.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="btnProducManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnEmployeeManager.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;btnProducManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="chartEmployeeCreateBill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 151</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rpvRevenue.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="btnBillManagement.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnTableManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnStatisticalProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 42</value>
+  </data>
+  <data name="cbCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="dtpBillStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="btnStatisticalRevenue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 55</value>
+  </data>
+  <data name="guna2TabControl1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="&gt;&gt;cbTypeStatisticalBill.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
@@ -2772,19 +2697,196 @@
   <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
     <value>btnExit</value>
   </data>
-  <data name="&gt;&gt;btnTableManagement.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cbFillProduct.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="cbCategory.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;cbTypeStatisticalBill.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;panelLogo.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="tpbProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 540</value>
+  </data>
+  <data name="&gt;&gt;dtpBillEnd.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dtpBillEnd.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rpvRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 39</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Name" xml:space="preserve">
+    <value>dtpRevenueStart</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="dtpBillEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>630, 8</value>
+  </data>
+  <data name="cbTypeStatisticalBill.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnEmployeeManager.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnReportEmployCreateBill.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="dtpRevenueEnd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="tpbProduct.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;btnBillManagement.Type" xml:space="preserve">
+  <data name="tbpEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 540</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.Name" xml:space="preserve">
+    <value>dtpProductEnd</value>
+  </data>
+  <data name="chartProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chartProduct.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tpbProduct.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TabControl, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnTableManagement.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.Name" xml:space="preserve">
+    <value>rpvRevenue</value>
+  </data>
+  <data name="tpbProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 17</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
+    <value>panelTitle</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
+    <value>panelTitle</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTableManagement.Name" xml:space="preserve">
+    <value>btnTableManagement</value>
+  </data>
+  <data name="&gt;&gt;tbpEmployee.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnBillManagement.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;cbCategory.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnReportEmployCreateBill.Name" xml:space="preserve">
+    <value>btnReportEmployCreateBill</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="btnStatisticalRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 10</value>
+  </data>
+  <data name="pbLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>tbpEmployee</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Items" xml:space="preserve">
+    <value>Nhân viên lập nhiều hóa đơn nhất</value>
+  </data>
+  <data name="panelTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 154</value>
+  </data>
+  <data name="btnStatisticalProduct.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeManager.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="cbCategory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="btnProducManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
+    <value>en</value>
   </metadata>
 </root>

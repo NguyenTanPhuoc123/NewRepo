@@ -124,26 +124,32 @@
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 78</value>
-  </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lbTenSP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbTenSP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 31</value>
+  </data>
   <data name="lbSoLuong.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lbSoLuong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 77</value>
   </data>
   <data name="lbDonGia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lbDonGia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 120</value>
+  </data>
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAOZJREFUWEftlksKwjAYhHMFQcFbuPH26g1c+AA9js4Uf5hFsHn8STb5YKDPmWna
+        DgAACw4BQL7hQQAAAOZJREFUWEftlksKwjAYhHMFQcFbuPH26g1c+AA9js4Uf5hFsHn8STb5YKDPmWna
         hoTJJMIBukDbZc+HDXSCjsveCmfoA90gjxL0oBc96b0K214h3nCHakqoV9YDeZQoDjfU4AXtoVR2EItX
         j2JJCbdwI6cEwx+QW7iRUqJZuKEBb0hL6Lnc7yWLWIlu4YYGPn/iNo/xXBe0hI5GN4YWGPoKNNw+OD3W
         dCRi4UbzEv/CDV5jU7Dr75gSbriX0Ck4dXotuSdKjVF1CTUoXZoVl/AIN4pKDF+UclnOCz3CDXrRk96T

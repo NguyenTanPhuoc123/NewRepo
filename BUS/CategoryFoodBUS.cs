@@ -3,6 +3,7 @@ using DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -59,6 +60,10 @@ namespace BUS
         public List<CategoryFood> GetFillCategoryFoods(int CategoryID)
         {
             return CategoryFoodBUS.instance.GetFillCategoryFoods(CategoryID);
+        }
+        public bool checkNameExist(string CategoryName)
+        {
+            return CategoryFoodDAO.Instance.checkNameExist(CategoryName);
         }
     }
 }

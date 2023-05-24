@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -53,25 +54,51 @@ namespace frmLogin
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            if (Language == 0)
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            
-            if(AccountBUS.Instance.CheckLogin(txtUsername.Text, txtPassword.Text))
-            {
-                Account loginAccount = AccountBUS.Instance.GetAccountForUsername(txtUsername.Text);
-                frmSellManagement login = new frmSellManagement(loginAccount);
-                this.Hide();
-                login.ShowDialog();
-                txtPassword.Clear();
-                this.Show();
+                if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                if (AccountBUS.Instance.CheckLogin(txtUsername.Text, txtPassword.Text))
+                {
+                    Account loginAccount = AccountBUS.Instance.GetAccountForUsername(txtUsername.Text);
+                    frmSellManagement login = new frmSellManagement(loginAccount);
+                    this.Hide();
+                    login.ShowDialog();
+                    txtPassword.Clear();
+                    this.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Dữ liệu không hợp lệ", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                }
             }
             else
             {
-                MessageBox.Show("Dữ liệu không hợp lệ", "Thông báo");
+                if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
+                {
+                    MessageBox.Show("Please enter full information", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                if (AccountBUS.Instance.CheckLogin(txtUsername.Text, txtPassword.Text))
+                {
+                    Account loginAccount = AccountBUS.Instance.GetAccountForUsername(txtUsername.Text);
+                    frmSellManagement login = new frmSellManagement(loginAccount);
+                    this.Hide();
+                    login.ShowDialog();
+                    txtPassword.Clear();
+                    this.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid data", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
+            
         }
 
         private void btnLogOff_Click(object sender, EventArgs e)

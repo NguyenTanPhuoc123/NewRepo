@@ -131,5 +131,11 @@ namespace DAO
             }
             return listCategoryFood;
         }
+        public bool checkNameExist( string CategoryName)
+        {
+            string query = string.Format("Select count(*) from DANHMUC where  TENDANHMUC={0}",  CategoryName);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data > 0 ? false : true;
+        }
     }
 }

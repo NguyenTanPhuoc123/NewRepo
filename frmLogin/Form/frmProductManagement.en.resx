@@ -132,10 +132,10 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 22</value>
+    <value>43, 22</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Arrange</value>
+    <value>Sort</value>
   </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>Image</value>
@@ -177,13 +177,13 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 173</value>
+    <value>164, 173</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 22</value>
+    <value>56, 22</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Unit price:</value>
+    <value>Price:</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -197,6 +197,9 @@
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 122</value>
+  </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 22</value>
   </data>
@@ -207,7 +210,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 72</value>
+    <value>164, 72</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 22</value>
@@ -219,7 +222,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 23</value>
+    <value>164, 23</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 22</value>
@@ -2597,7 +2600,7 @@
 </value>
   </data>
   <data name="btnProductDeleted.Text" xml:space="preserve">
-    <value>Item Deleted</value>
+    <value>Deleted</value>
   </data>
   <data name="grpFunction.Text" xml:space="preserve">
     <value>Function</value>

@@ -1541,7 +1541,7 @@
 </value>
   </data>
   <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 69</value>
+    <value>357, 82</value>
   </data>
   <data name="lblTitle.Text" xml:space="preserve">
     <value>Statistical</value>
@@ -1552,9 +1552,6 @@
   <data name="tbpRevenue.Text" xml:space="preserve">
     <value>Revenue</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 18</value>
-  </data>
   <data name="btnStatisticalProduct.Text" xml:space="preserve">
     <value>Statistical</value>
   </data>
@@ -1564,14 +1561,17 @@
   <data name="btnReportEmployCreateBill.Text" xml:space="preserve">
     <value>View Report</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 18</value>
-  </data>
   <data name="btnbtnStatisticalBill.Text" xml:space="preserve">
     <value>Statistical</value>
   </data>
-  <data name="tbpBill.Text" xml:space="preserve">
-    <value>Bill</value>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 142</value>
+  </data>
+  <data name="tbpEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 540</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

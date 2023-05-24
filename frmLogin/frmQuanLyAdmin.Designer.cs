@@ -29,15 +29,16 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyAdmin));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnTableManagement = new System.Windows.Forms.Button();
             this.btnBillManagement = new System.Windows.Forms.Button();
@@ -76,6 +77,7 @@ namespace frmLogin
             this.btnbtnStatisticalBill = new Guna.UI2.WinForms.Guna2Button();
             this.dtpBillEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpBillStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -104,6 +106,7 @@ namespace frmLogin
             this.panelMenu.Controls.Add(this.btnProducManagement);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Name = "panelMenu";
+            this.toolTip1.SetToolTip(this.panelMenu, resources.GetString("panelMenu.ToolTip"));
             // 
             // btnTableManagement
             // 
@@ -112,8 +115,10 @@ namespace frmLogin
             this.btnTableManagement.FlatAppearance.BorderSize = 0;
             this.btnTableManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnTableManagement.Name = "btnTableManagement";
+            this.toolTip1.SetToolTip(this.btnTableManagement, resources.GetString("btnTableManagement.ToolTip"));
             this.btnTableManagement.UseVisualStyleBackColor = false;
             this.btnTableManagement.Click += new System.EventHandler(this.btnTableManagement_Click);
+            this.btnTableManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnTableManagement_KeyDown);
             // 
             // btnBillManagement
             // 
@@ -122,8 +127,10 @@ namespace frmLogin
             this.btnBillManagement.FlatAppearance.BorderSize = 0;
             this.btnBillManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnBillManagement.Name = "btnBillManagement";
+            this.toolTip1.SetToolTip(this.btnBillManagement, resources.GetString("btnBillManagement.ToolTip"));
             this.btnBillManagement.UseVisualStyleBackColor = false;
             this.btnBillManagement.Click += new System.EventHandler(this.btnBillManagement_Click);
+            this.btnBillManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnBillManagement_KeyDown);
             // 
             // btnCategoryManagement
             // 
@@ -132,8 +139,10 @@ namespace frmLogin
             this.btnCategoryManagement.FlatAppearance.BorderSize = 0;
             this.btnCategoryManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnCategoryManagement.Name = "btnCategoryManagement";
+            this.toolTip1.SetToolTip(this.btnCategoryManagement, resources.GetString("btnCategoryManagement.ToolTip"));
             this.btnCategoryManagement.UseVisualStyleBackColor = false;
             this.btnCategoryManagement.Click += new System.EventHandler(this.btnCategoryManagement_Click);
+            this.btnCategoryManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnCategoryManagement_KeyDown);
             // 
             // btnEmployeeManager
             // 
@@ -142,8 +151,10 @@ namespace frmLogin
             this.btnEmployeeManager.FlatAppearance.BorderSize = 0;
             this.btnEmployeeManager.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEmployeeManager.Name = "btnEmployeeManager";
+            this.toolTip1.SetToolTip(this.btnEmployeeManager, resources.GetString("btnEmployeeManager.ToolTip"));
             this.btnEmployeeManager.UseVisualStyleBackColor = false;
             this.btnEmployeeManager.Click += new System.EventHandler(this.btnEmployeeManager_Click);
+            this.btnEmployeeManager.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnEmployeeManager_KeyDown);
             // 
             // btnAccountManagement
             // 
@@ -152,8 +163,10 @@ namespace frmLogin
             this.btnAccountManagement.FlatAppearance.BorderSize = 0;
             this.btnAccountManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAccountManagement.Name = "btnAccountManagement";
+            this.toolTip1.SetToolTip(this.btnAccountManagement, resources.GetString("btnAccountManagement.ToolTip"));
             this.btnAccountManagement.UseVisualStyleBackColor = false;
             this.btnAccountManagement.Click += new System.EventHandler(this.btnAccountManagement_Click);
+            this.btnAccountManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnAccountManagement_KeyDown);
             // 
             // btnProducManagement
             // 
@@ -162,20 +175,24 @@ namespace frmLogin
             this.btnProducManagement.FlatAppearance.BorderSize = 0;
             this.btnProducManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnProducManagement.Name = "btnProducManagement";
+            this.toolTip1.SetToolTip(this.btnProducManagement, resources.GetString("btnProducManagement.ToolTip"));
             this.btnProducManagement.UseVisualStyleBackColor = false;
             this.btnProducManagement.Click += new System.EventHandler(this.btnProducManagement_Click);
+            this.btnProducManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnProducManagement_KeyDown);
             // 
             // panelLogo
             // 
             resources.ApplyResources(this.panelLogo, "panelLogo");
             this.panelLogo.Controls.Add(this.pbLogo);
             this.panelLogo.Name = "panelLogo";
+            this.toolTip1.SetToolTip(this.panelLogo, resources.GetString("panelLogo.ToolTip"));
             // 
             // pbLogo
             // 
             resources.ApplyResources(this.pbLogo, "pbLogo");
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbLogo, resources.GetString("pbLogo.ToolTip"));
             this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
             // panelTitle
@@ -185,12 +202,15 @@ namespace frmLogin
             this.panelTitle.Controls.Add(this.btnExit);
             this.panelTitle.Controls.Add(this.lblTitle);
             this.panelTitle.Name = "panelTitle";
+            this.toolTip1.SetToolTip(this.panelTitle, resources.GetString("panelTitle.ToolTip"));
             // 
             // btnExit
             // 
             resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.Name = "btnExit";
+            this.toolTip1.SetToolTip(this.btnExit, resources.GetString("btnExit.ToolTip"));
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -199,12 +219,14 @@ namespace frmLogin
             resources.ApplyResources(this.lblTitle, "lblTitle");
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Name = "lblTitle";
+            this.toolTip1.SetToolTip(this.lblTitle, resources.GetString("lblTitle.ToolTip"));
             // 
             // panelMain
             // 
             resources.ApplyResources(this.panelMain, "panelMain");
             this.panelMain.Controls.Add(this.guna2TabControl1);
             this.panelMain.Name = "panelMain";
+            this.toolTip1.SetToolTip(this.panelMain, resources.GetString("panelMain.ToolTip"));
             // 
             // guna2TabControl1
             // 
@@ -231,6 +253,7 @@ namespace frmLogin
             this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
             this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.toolTip1.SetToolTip(this.guna2TabControl1, resources.GetString("guna2TabControl1.ToolTip"));
             // 
             // tbpRevenue
             // 
@@ -238,6 +261,7 @@ namespace frmLogin
             this.tbpRevenue.Controls.Add(this.rpvRevenue);
             this.tbpRevenue.Controls.Add(this.panel1);
             this.tbpRevenue.Name = "tbpRevenue";
+            this.toolTip1.SetToolTip(this.tbpRevenue, resources.GetString("tbpRevenue.ToolTip"));
             this.tbpRevenue.UseVisualStyleBackColor = true;
             // 
             // rpvRevenue
@@ -245,6 +269,7 @@ namespace frmLogin
             resources.ApplyResources(this.rpvRevenue, "rpvRevenue");
             this.rpvRevenue.Name = "rpvRevenue";
             this.rpvRevenue.ServerReport.BearerToken = null;
+            this.toolTip1.SetToolTip(this.rpvRevenue, resources.GetString("rpvRevenue.ToolTip"));
             // 
             // panel1
             // 
@@ -253,6 +278,7 @@ namespace frmLogin
             this.panel1.Controls.Add(this.dtpRevenueEnd);
             this.panel1.Controls.Add(this.dtpRevenueStart);
             this.panel1.Name = "panel1";
+            this.toolTip1.SetToolTip(this.panel1, resources.GetString("panel1.ToolTip"));
             // 
             // btnStatisticalRevenue
             // 
@@ -265,6 +291,7 @@ namespace frmLogin
             this.btnStatisticalRevenue.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.btnStatisticalRevenue.ForeColor = System.Drawing.Color.White;
             this.btnStatisticalRevenue.Name = "btnStatisticalRevenue";
+            this.toolTip1.SetToolTip(this.btnStatisticalRevenue, resources.GetString("btnStatisticalRevenue.ToolTip"));
             // 
             // dtpRevenueEnd
             // 
@@ -277,6 +304,7 @@ namespace frmLogin
             this.dtpRevenueEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpRevenueEnd.Name = "dtpRevenueEnd";
             this.dtpRevenueEnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.dtpRevenueEnd, resources.GetString("dtpRevenueEnd.ToolTip"));
             this.dtpRevenueEnd.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
             // dtpRevenueStart
@@ -290,6 +318,7 @@ namespace frmLogin
             this.dtpRevenueStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpRevenueStart.Name = "dtpRevenueStart";
             this.dtpRevenueStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.dtpRevenueStart, resources.GetString("dtpRevenueStart.ToolTip"));
             this.dtpRevenueStart.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
             // tpbProduct
@@ -298,25 +327,27 @@ namespace frmLogin
             this.tpbProduct.Controls.Add(this.chartProduct);
             this.tpbProduct.Controls.Add(this.panel2);
             this.tpbProduct.Name = "tpbProduct";
+            this.toolTip1.SetToolTip(this.tpbProduct, resources.GetString("tpbProduct.ToolTip"));
             this.tpbProduct.UseVisualStyleBackColor = true;
             // 
             // chartProduct
             // 
             resources.ApplyResources(this.chartProduct, "chartProduct");
-            chartArea4.Name = "ChartArea1";
-            this.chartProduct.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartProduct.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartProduct.Legends.Add(legend1);
             this.chartProduct.Name = "chartProduct";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Doanh thu";
-            this.chartProduct.Series.Add(series4);
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
-            title4.Name = "Product";
-            title4.Text = "SẢN PHẨM";
-            this.chartProduct.Titles.Add(title4);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Doanh thu";
+            this.chartProduct.Series.Add(series1);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            title1.Name = "Product";
+            title1.Text = "SẢN PHẨM";
+            this.chartProduct.Titles.Add(title1);
+            this.toolTip1.SetToolTip(this.chartProduct, resources.GetString("chartProduct.ToolTip"));
             // 
             // panel2
             // 
@@ -328,6 +359,7 @@ namespace frmLogin
             this.panel2.Controls.Add(this.dtpProductEnd);
             this.panel2.Controls.Add(this.dtpProductStart);
             this.panel2.Name = "panel2";
+            this.toolTip1.SetToolTip(this.panel2, resources.GetString("panel2.ToolTip"));
             // 
             // cbCategory
             // 
@@ -341,11 +373,13 @@ namespace frmLogin
             this.cbCategory.Items.AddRange(new object[] {
             resources.GetString("cbCategory.Items")});
             this.cbCategory.Name = "cbCategory";
+            this.toolTip1.SetToolTip(this.cbCategory, resources.GetString("cbCategory.ToolTip"));
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // cbFillProduct
             // 
@@ -361,6 +395,7 @@ namespace frmLogin
             resources.GetString("cbFillProduct.Items1"),
             resources.GetString("cbFillProduct.Items2")});
             this.cbFillProduct.Name = "cbFillProduct";
+            this.toolTip1.SetToolTip(this.cbFillProduct, resources.GetString("cbFillProduct.ToolTip"));
             // 
             // btnStatisticalProduct
             // 
@@ -373,6 +408,7 @@ namespace frmLogin
             this.btnStatisticalProduct.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.btnStatisticalProduct.ForeColor = System.Drawing.Color.White;
             this.btnStatisticalProduct.Name = "btnStatisticalProduct";
+            this.toolTip1.SetToolTip(this.btnStatisticalProduct, resources.GetString("btnStatisticalProduct.ToolTip"));
             // 
             // dtpProductEnd
             // 
@@ -383,6 +419,7 @@ namespace frmLogin
             this.dtpProductEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpProductEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpProductEnd.Name = "dtpProductEnd";
+            this.toolTip1.SetToolTip(this.dtpProductEnd, resources.GetString("dtpProductEnd.ToolTip"));
             this.dtpProductEnd.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
             // dtpProductStart
@@ -394,6 +431,7 @@ namespace frmLogin
             this.dtpProductStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpProductStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpProductStart.Name = "dtpProductStart";
+            this.toolTip1.SetToolTip(this.dtpProductStart, resources.GetString("dtpProductStart.ToolTip"));
             this.dtpProductStart.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
             // tbpEmployee
@@ -402,26 +440,28 @@ namespace frmLogin
             this.tbpEmployee.Controls.Add(this.chartEmployeeCreateBill);
             this.tbpEmployee.Controls.Add(this.panel3);
             this.tbpEmployee.Name = "tbpEmployee";
+            this.toolTip1.SetToolTip(this.tbpEmployee, resources.GetString("tbpEmployee.ToolTip"));
             this.tbpEmployee.UseVisualStyleBackColor = true;
             // 
             // chartEmployeeCreateBill
             // 
             resources.ApplyResources(this.chartEmployeeCreateBill, "chartEmployeeCreateBill");
-            chartArea3.Name = "ChartArea1";
-            this.chartEmployeeCreateBill.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartEmployeeCreateBill.Legends.Add(legend3);
+            chartArea2.Name = "ChartArea1";
+            this.chartEmployeeCreateBill.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartEmployeeCreateBill.Legends.Add(legend2);
             this.chartEmployeeCreateBill.Name = "chartEmployeeCreateBill";
             this.chartEmployeeCreateBill.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.LegendText = "Số hóa đơn lập";
-            series3.Name = "CountBill";
-            this.chartEmployeeCreateBill.Series.Add(series3);
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.ForeColor = System.Drawing.Color.Red;
-            title3.Name = "Title1";
-            this.chartEmployeeCreateBill.Titles.Add(title3);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.LegendText = "Số hóa đơn lập";
+            series2.Name = "CountBill";
+            this.chartEmployeeCreateBill.Series.Add(series2);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.ForeColor = System.Drawing.Color.Red;
+            title2.Name = "Title1";
+            this.chartEmployeeCreateBill.Titles.Add(title2);
+            this.toolTip1.SetToolTip(this.chartEmployeeCreateBill, resources.GetString("chartEmployeeCreateBill.ToolTip"));
             // 
             // panel3
             // 
@@ -433,6 +473,7 @@ namespace frmLogin
             this.panel3.Controls.Add(this.dtpBillEnd);
             this.panel3.Controls.Add(this.dtpBillStart);
             this.panel3.Name = "panel3";
+            this.toolTip1.SetToolTip(this.panel3, resources.GetString("panel3.ToolTip"));
             // 
             // btnReportEmployCreateBill
             // 
@@ -445,6 +486,7 @@ namespace frmLogin
             this.btnReportEmployCreateBill.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.btnReportEmployCreateBill.ForeColor = System.Drawing.Color.White;
             this.btnReportEmployCreateBill.Name = "btnReportEmployCreateBill";
+            this.toolTip1.SetToolTip(this.btnReportEmployCreateBill, resources.GetString("btnReportEmployCreateBill.ToolTip"));
             this.btnReportEmployCreateBill.Click += new System.EventHandler(this.btnReportEmployCreateBill_Click);
             // 
             // cbTypeStatisticalBill
@@ -460,11 +502,13 @@ namespace frmLogin
             resources.GetString("cbTypeStatisticalBill.Items"),
             resources.GetString("cbTypeStatisticalBill.Items1")});
             this.cbTypeStatisticalBill.Name = "cbTypeStatisticalBill";
+            this.toolTip1.SetToolTip(this.cbTypeStatisticalBill, resources.GetString("cbTypeStatisticalBill.ToolTip"));
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // btnbtnStatisticalBill
             // 
@@ -477,6 +521,7 @@ namespace frmLogin
             this.btnbtnStatisticalBill.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.btnbtnStatisticalBill.ForeColor = System.Drawing.Color.White;
             this.btnbtnStatisticalBill.Name = "btnbtnStatisticalBill";
+            this.toolTip1.SetToolTip(this.btnbtnStatisticalBill, resources.GetString("btnbtnStatisticalBill.ToolTip"));
             this.btnbtnStatisticalBill.Click += new System.EventHandler(this.btnbtnStatisticalBill_Click);
             // 
             // dtpBillEnd
@@ -489,6 +534,7 @@ namespace frmLogin
             this.dtpBillEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpBillEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpBillEnd.Name = "dtpBillEnd";
+            this.toolTip1.SetToolTip(this.dtpBillEnd, resources.GetString("dtpBillEnd.ToolTip"));
             this.dtpBillEnd.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
             // dtpBillStart
@@ -501,17 +547,20 @@ namespace frmLogin
             this.dtpBillStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpBillStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpBillStart.Name = "dtpBillStart";
+            this.toolTip1.SetToolTip(this.dtpBillStart, resources.GetString("dtpBillStart.ToolTip"));
             this.dtpBillStart.Value = new System.DateTime(2023, 4, 3, 16, 27, 38, 427);
             // 
             // frmQuanLyAdmin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.CancelButton = this.btnExit;
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmQuanLyAdmin";
+            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQuanLyAdmin_FormClosing);
             this.Load += new System.EventHandler(this.frmQuanLyAdmin_Load);
             this.panelMenu.ResumeLayout(false);
@@ -575,5 +624,6 @@ namespace frmLogin
         private Microsoft.Reporting.WinForms.ReportViewer rpvRevenue;
         private Guna.UI2.WinForms.Guna2Button btnReportEmployCreateBill;
         private Guna.UI2.WinForms.Guna2ComboBox cbTypeStatisticalBill;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

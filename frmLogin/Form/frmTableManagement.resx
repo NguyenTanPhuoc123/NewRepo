@@ -117,46 +117,497 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1053, 516</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 255</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 22</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Sắp xếp</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbSortTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbSortTable.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbSortTable.Items" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="cbSortTable.Items1" xml:space="preserve">
+    <value>Mã bàn(Tăng)</value>
+  </data>
+  <data name="cbSortTable.Items2" xml:space="preserve">
+    <value>Mã bàn(Giảm)</value>
+  </data>
+  <data name="cbSortTable.Items3" xml:space="preserve">
+    <value>Vị trí(Tăng)</value>
+  </data>
+  <data name="cbSortTable.Items4" xml:space="preserve">
+    <value>Vị trí(Giảm)</value>
+  </data>
+  <data name="cbSortTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 276</value>
+  </data>
+  <data name="cbSortTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 36</value>
+  </data>
+  <data name="cbSortTable.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cbSortTable.Name" xml:space="preserve">
+    <value>cbSortTable</value>
+  </data>
+  <data name="&gt;&gt;cbSortTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbSortTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbSortTable.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>871, 255</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 22</value>
+  </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Lọc</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cbFillTable.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="txtTableID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;grpTableInfo.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbFillTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
   </data>
   <data name="cbFillTable.ItemHeight" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
-  <data name="&gt;&gt;grpFunctionTable.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="cbFillTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>874, 276</value>
   </data>
-  <data name="cbSortTable.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="cbFillTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 36</value>
   </data>
-  <data name="btnEditTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 45</value>
+  <data name="cbFillTable.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cbFillTable.Name" xml:space="preserve">
+    <value>cbFillTable</value>
+  </data>
+  <data name="&gt;&gt;cbFillTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbFillTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbFillTable.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtSearchTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtSearchTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 271</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtSearchTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtSearchTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 41</value>
+  </data>
+  <data name="txtSearchTable.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtSearchTable.Name" xml:space="preserve">
+    <value>txtSearchTable</value>
+  </data>
+  <data name="&gt;&gt;txtSearchTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtSearchTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtSearchTable.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dtgvListTable.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <metadata name="colTableID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colTableID.HeaderText" xml:space="preserve">
+    <value>Mã bàn ăn</value>
+  </data>
+  <data name="colTableID.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="colTableName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colTableName.HeaderText" xml:space="preserve">
+    <value>Tên bàn ăn</value>
+  </data>
+  <data name="colTableName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="colLocation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colLocation.HeaderText" xml:space="preserve">
+    <value>Vị trí</value>
+  </data>
+  <data name="colLocation.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="colStatus.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colStatus.HeaderText" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="colStatus.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="colLocationID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colLocationID.HeaderText" xml:space="preserve">
+    <value>Mã vị trí</value>
+  </data>
+  <data name="colLocationID.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="colLocationID.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dtgvListTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 324</value>
   </data>
   <data name="dtgvListTable.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="&gt;&gt;btnSearchTable.ZOrder" xml:space="preserve">
+  <data name="dtgvListTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 180</value>
+  </data>
+  <data name="dtgvListTable.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dtgvListTable.Name" xml:space="preserve">
+    <value>dtgvListTable</value>
+  </data>
+  <data name="&gt;&gt;dtgvListTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtgvListTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtgvListTable.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbLocation.Name" xml:space="preserve">
+    <value>cbLocation</value>
+  </data>
+  <data name="&gt;&gt;cbLocation.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbLocation.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;cbLocation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtTableName.Name" xml:space="preserve">
+    <value>txtTableName</value>
+  </data>
+  <data name="&gt;&gt;txtTableName.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtTableName.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;txtTableName.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;btnDeleteAllTable.Name" xml:space="preserve">
-    <value>btnDeleteAllTable</value>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtTableID.Name" xml:space="preserve">
+    <value>txtTableID</value>
+  </data>
+  <data name="&gt;&gt;txtTableID.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtTableID.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;txtTableID.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpTableInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="grpTableInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 206</value>
+  </data>
+  <data name="grpTableInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="grpTableInfo.Text" xml:space="preserve">
+    <value>Thông tin bàn ăn</value>
+  </data>
+  <data name="&gt;&gt;grpTableInfo.Name" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;grpTableInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpTableInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpTableInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbLocation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbLocation.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 143</value>
+  </data>
+  <data name="cbLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 36</value>
+  </data>
+  <data name="cbLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbLocation.Name" xml:space="preserve">
+    <value>cbLocation</value>
+  </data>
+  <data name="&gt;&gt;cbLocation.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbLocation.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;cbLocation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 152</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 22</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Vị trí:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtTableName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtTableName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 80</value>
+  </data>
+  <data name="txtTableName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtTableName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 48</value>
+  </data>
+  <data name="txtTableName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtTableName.Name" xml:space="preserve">
+    <value>txtTableName</value>
+  </data>
+  <data name="&gt;&gt;txtTableName.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtTableName.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;txtTableName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 95</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Tên bàn ăn:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtTableID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtTableID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="txtTableID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtTableID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 48</value>
+  </data>
+  <data name="txtTableID.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtTableID.Name" xml:space="preserve">
+    <value>txtTableID</value>
+  </data>
+  <data name="&gt;&gt;txtTableID.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtTableID.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;txtTableID.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 38</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Mã bàn ăn:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>grpTableInfo</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnSaveTable.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnSaveTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="btnSaveTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -171,48 +622,35 @@
         PjYAAAAASUVORK5CYII=
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtTableName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="btnSaveTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 27</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnSaveTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 45</value>
   </data>
-  <data name="btnEditTable.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="btnSaveTable.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnSaveTable.Text" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="&gt;&gt;btnSaveTable.Name" xml:space="preserve">
+    <value>btnSaveTable</value>
+  </data>
+  <data name="&gt;&gt;btnSaveTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnSaveTable.Parent" xml:space="preserve">
+    <value>grpFunctionTable</value>
   </data>
   <data name="&gt;&gt;btnSaveTable.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;colLocation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnAddTable.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="&gt;&gt;txtTableID.Parent" xml:space="preserve">
-    <value>grpTableInfo</value>
-  </data>
-  <data name="grpFunctionTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 12</value>
-  </data>
-  <data name="cbSortTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="btnDeleteTable.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnAddTable.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnAddTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 45</value>
-  </data>
-  <data name="&gt;&gt;btnAddTable.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtSearchTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 41</value>
-  </data>
-  <data name="cbLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 143</value>
-  </data>
-  <data name="cbSortTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 36</value>
   </data>
   <data name="btnAddTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -222,95 +660,222 @@
         o7s+zLwkcAc2Y3gaEpCABCSQ/imlWl+vV/EnzA7+iU1MBzAQ4AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;cbSortTable.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="dtgvListTable.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAllTable.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnDeleteTable.Text" xml:space="preserve">
-    <value>Xóa</value>
-  </data>
-  <data name="btnTableDeleted.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 83</value>
-  </data>
-  <data name="grpTableInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="btnSearchTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 271</value>
-  </data>
-  <data name="txtTableID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 48</value>
-  </data>
-  <data name="btnEditTable.Text" xml:space="preserve">
-    <value>Sửa</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;txtTableName.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnDeleteAllTable.Text" xml:space="preserve">
-    <value>Xóa tất cả</value>
-  </data>
   <data name="btnAddTable.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 27</value>
   </data>
-  <data name="btnTableDeleted.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="btnAddTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 45</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Sắp xếp</value>
+  <data name="btnAddTable.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmTableManagement</value>
+  <data name="btnAddTable.Text" xml:space="preserve">
+    <value>Thêm</value>
   </data>
-  <data name="&gt;&gt;grpFunctionTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnAddTable.Name" xml:space="preserve">
+    <value>btnAddTable</value>
   </data>
-  <data name="cbSortTable.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="&gt;&gt;btnAddTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;btnEditTable.Name" xml:space="preserve">
-    <value>btnEditTable</value>
+  <data name="&gt;&gt;btnAddTable.Parent" xml:space="preserve">
+    <value>grpFunctionTable</value>
   </data>
-  <data name="colTableID.HeaderText" xml:space="preserve">
-    <value>Mã bàn ăn</value>
-  </data>
-  <data name="cbLocation.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;cbFillTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="dtgvListTable.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colTableID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSaveTable.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="&gt;&gt;btnAddTable.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnEditTable.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="grpTableInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="btnEditTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABHUlEQVRYR+2WvU7CABRGuzjwAg4mrAws
+        PgQP4UjCyosYeBQGEyadjBuyMZE4GDAOJrIZIzFoPJ/QpIO09/a2kz3JCT9Dv0PLX9LwHzg73Jp5wTeH
+        eQzxHXu/j4zooHMcGz2Gxr9RAa4IBeQd2EI6foW6BAs0R0QD0vEbPNET0MYt6tineiKPSEA6/omveI4t
+        VMwX9rGQsgHZ097BFSriDs3jokxAdjw97V3coWtceAP+Gnef9iyegMrHhTWglnFhCahtXBQF1Dou8gIi
+        4yPUt2EhxwKirzwUMMDoaQ8FTPEBI9c8FDDD6/3d0m+4UMAjPuMtrtE7LkIBT7hE/bBM8AK9hAKqoAlw
+        BdzjZcXqk2QK0L+Yj5rcYENDhiT5AWTitAZ1L1cyAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Mã bàn ăn:</value>
+  <data name="btnEditTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 83</value>
+  </data>
+  <data name="btnEditTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 45</value>
+  </data>
+  <data name="btnEditTable.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnEditTable.Text" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="&gt;&gt;btnEditTable.Name" xml:space="preserve">
+    <value>btnEditTable</value>
+  </data>
+  <data name="&gt;&gt;btnEditTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnEditTable.Parent" xml:space="preserve">
+    <value>grpFunctionTable</value>
+  </data>
+  <data name="&gt;&gt;btnEditTable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnDeleteAllTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnDeleteAllTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaUlEQVRYR+2XQU7DQAxFcwo4AtweuEUB
+        AQs4B13AGvALcjX9M447HWiExJO+Gk+cb3fcSNPpn04+j9S76cZ0aRqiZd6jrenCdHLOTNcmmuBzFc5N
+        NMA4FmFOzIvEcvt6FM3c74fwAHMqzUakM/f1ELom4crE3I6F7W7NPG3At32kuNOaedpAmtCJ+qX+aUIn
+        6pf6pwmdqF/qHyXcmx5Nrd8Ga0+muznaR/0i/x1RAsVZfzaVTXD9YuLeAwuC+mlcESVQiOLc8ybK4tqY
+        o34aVywlaBNZcVA/jSuyhLIJtFQc1E/jiiyBYv7N0UkbKItT2HdiqQn107giStDixChrQv00rogSeM9Z
+        10JlE7yqivppXBEl3Jp4z1vfkjXubeZoH/WL/HekCZ2oH9cf35dtfruBlNUb8AMJh4lR/EDyNkcH4kcy
+        jlEjTfBs6XUwHEpfTTz4E8Kr+48ID9D1yLGcbcdjlX9Bf4lp+gJXohWYGBGt/AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnDeleteAllTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 154</value>
+  </data>
+  <data name="btnDeleteAllTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 43</value>
+  </data>
+  <data name="btnDeleteAllTable.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnDeleteAllTable.Text" xml:space="preserve">
+    <value>Xóa tất cả</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAllTable.Name" xml:space="preserve">
+    <value>btnDeleteAllTable</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAllTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAllTable.Parent" xml:space="preserve">
+    <value>grpFunctionTable</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAllTable.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnDeleteTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnDeleteTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACdElEQVRYR+2WW4iNURiGt2MSRUyRQ4gQ
+        Y3IsCUmSIqeQNBemJlGjXHBBuVCKlFJCIRTJhSSJklxQEiEuKEJREjlEUYTn+97Wbs2y0/7X39zNU0+9
+        62+avr33v9a7Kp0UZAbex0/4OdGePcI52GE8xR04CRtruAVfYxfsEH7hCMWaDMQ/2NtXJViNhxOP4G88
+        HT1LPYE2wLHoWbAZ62YxXsYXuLuk9rNdwxVYCPsW7iiW4jq2KBZjPj5XrDIEJyg6o3CMojMOhytWeYhL
+        FYvRhLa9YjbiJUVnDx5UdM7iVsUqb3CWYjGGor10PXwl1qP9noF0gAvYpljlO45VLEYvtDd6kK/EWryp
+        6KQDXMFWRacP2v+w7ZnFV5yo6CzHu4pOOsANjLebnRl2dnTzVQavcK6iswgfKzrpALdxlaIzFT8o5nEP
+        Vyo68/CZopMO8ACXKDoL0c6BbK7iBkVnJtpZH0gHeIILFJ11eEsxjzO4XdGZjO8VnXSAlzhb0dmMFxXz
+        OID7FZ3xaC9mIB3gLU5XdHbhccU8duIpRWck/lR00gHsTmC1HDiEexXz2IRWSoHBaPu6u6/+HcAOnfho
+        PofbFPNIC6k/2gB2wBjxAHYJsZNzmK9EdhEF0kKyi0Z8ssUDhJOzwVciu4gCaSF1RfuU1hNGPEA/tAH6
+        +kpkF1GgViH9wNGK7QawzrABevpKZBdRoFYhfcHQD/EA4dwPlC6iQFpI73CaYrsB7DLyTdEpXUSBtJDs
+        nmc3IWMZrlH029I+Rad0EQWskOKGqxdrzlJFFDiKdhhNQdsV9WidcR5PYmlsX9s90L7Oj3Vqf2slNAA7
+        +Q+Vyl9Wy6MdmQ06XgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnDeleteTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 152</value>
+  </data>
+  <data name="btnDeleteTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 45</value>
+  </data>
+  <data name="btnDeleteTable.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnDeleteTable.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteTable.Name" xml:space="preserve">
+    <value>btnDeleteTable</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteTable.Parent" xml:space="preserve">
+    <value>grpFunctionTable</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteTable.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnTableDeleted.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnTableDeleted.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACyUlEQVRYR8WXS8hNURTHr1fkETMMFFJi
+        5JERI5kQZqSEUvJIIRIp8ppQShQDjwkT8ph4JKEklJJHyTOvTCjyypvfb3931b33u+ee47tX/vXru2ud
+        tfY5Z5+9115fqQMaBXvhEXyHH/AY9sE4+GfqAd74F/zOwGsHoRe0VN78AsSN7sFamAKTYTXchbh+BXpC
+        y7QL4g3XQxeoVWfwQX6CsQegJRoJMehGHTlaA/GwY3U0qx3ggE+gm44cOTt+InNcM03rJjjY1mQV0zow
+        536ycjQD9jTgMziYi7De9XqcA3O+VfjqMRtK78Hg/8FXKC2BE2Viun3rky3mAzj2bYj7LYcqzQSDPiar
+        tXoNjj0vWRkaDwZJPx0tUneICjpJR5aGQDyA+z9PVsFpbT8bajAUGrfwkyKLjAXKeGeukf5qZot8q05w
+        GWLQG2ApzpJb3bhCa+sWGOxhk6VZEDeXp+DsZcnVbtyDZOXoNBi8O1nt5Sn3DIw5BUchFZQG2gbGX0pW
+        jmwsDD6erPbaAF63yg2H/uD094GVUE+HwJzDycqRJ57B15NVrUHwCbzuIVWpLfAFhiWrWhfBnO3JytFC
+        MPhFsqply7UYFkBfHRV6COZZ9WrloeS1FcnKkfvaYPu9eo1HluaAeVK7haMMW2lzNQZioIE6kN/Y6dsP
+        q3TUkVvzGph3B7qCcqZivAk68jQAIiE6mvkQPrfU6AriRlY7P0/ELQU1AsI3VEeefFtXuAnTwc/wqmzX
+        Yxkoy3Kl/w1YG/wc2lZMm9tCeg4mLQIfqLLjreUdOGvKIzb8Fh1buLll2wcqrKtg0uZktQ3kfs8i3sy/
+        4Yv+MZpU+4DCOgYmueiaVbT0Z5JVUJF0NlnNqUMvE9NWqKvNUbR5m5JVUBPBJDkCJncEa3+MMxUKy6Jy
+        HiK5Wfxf8W+qalJv2Aluybcd5CXY/9eeG2WVSn8A7ig9LTyeth8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnTableDeleted.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 83</value>
+  </data>
+  <data name="btnTableDeleted.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 45</value>
+  </data>
+  <data name="btnTableDeleted.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnTableDeleted.Text" xml:space="preserve">
+    <value>Bàn đã xóa</value>
+  </data>
+  <data name="&gt;&gt;btnTableDeleted.Name" xml:space="preserve">
+    <value>btnTableDeleted</value>
+  </data>
+  <data name="&gt;&gt;btnTableDeleted.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnTableDeleted.Parent" xml:space="preserve">
+    <value>grpFunctionTable</value>
+  </data>
+  <data name="&gt;&gt;btnTableDeleted.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpFunctionTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 12</value>
+  </data>
+  <data name="grpFunctionTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 206</value>
+  </data>
+  <data name="grpFunctionTable.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="grpFunctionTable.Text" xml:space="preserve">
+    <value>Chức năng</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionTable.Name" xml:space="preserve">
+    <value>grpFunctionTable</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSearchTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="btnSearchTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -486,569 +1051,76 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOzmlO838BWh4XXIETABAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;txtSearchTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;colLocation.Name" xml:space="preserve">
-    <value>colLocation</value>
-  </data>
-  <data name="&gt;&gt;txtTableName.Name" xml:space="preserve">
-    <value>txtTableName</value>
-  </data>
-  <data name="cbLocation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="&gt;&gt;txtSearchTable.Name" xml:space="preserve">
-    <value>txtSearchTable</value>
-  </data>
-  <data name="&gt;&gt;colTableName.Name" xml:space="preserve">
-    <value>colTableName</value>
-  </data>
-  <data name="&gt;&gt;txtSearchTable.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;grpTableInfo.Name" xml:space="preserve">
-    <value>grpTableInfo</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 22</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="grpTableInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 206</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="colTableName.HeaderText" xml:space="preserve">
-    <value>Tên bàn ăn</value>
-  </data>
-  <data name="&gt;&gt;cbSortTable.Name" xml:space="preserve">
-    <value>cbSortTable</value>
-  </data>
-  <data name="&gt;&gt;colStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSearchTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnAddTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="btnTableDeleted.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACyUlEQVRYR8WXS8hNURTHr1fkETMMFFJi
-        5JERI5kQZqSEUvJIIRIp8ppQShQDjwkT8ph4JKEklJJHyTOvTCjyypvfb3931b33u+ee47tX/vXru2ud
-        tfY5Z5+9115fqQMaBXvhEXyHH/AY9sE4+GfqAd74F/zOwGsHoRe0VN78AsSN7sFamAKTYTXchbh+BXpC
-        y7QL4g3XQxeoVWfwQX6CsQegJRoJMehGHTlaA/GwY3U0qx3ggE+gm44cOTt+InNcM03rJjjY1mQV0zow
-        536ycjQD9jTgMziYi7De9XqcA3O+VfjqMRtK78Hg/8FXKC2BE2Viun3rky3mAzj2bYj7LYcqzQSDPiar
-        tXoNjj0vWRkaDwZJPx0tUneICjpJR5aGQDyA+z9PVsFpbT8bajAUGrfwkyKLjAXKeGeukf5qZot8q05w
-        GWLQG2ApzpJb3bhCa+sWGOxhk6VZEDeXp+DsZcnVbtyDZOXoNBi8O1nt5Sn3DIw5BUchFZQG2gbGX0pW
-        jmwsDD6erPbaAF63yg2H/uD094GVUE+HwJzDycqRJ57B15NVrUHwCbzuIVWpLfAFhiWrWhfBnO3JytFC
-        MPhFsqply7UYFkBfHRV6COZZ9WrloeS1FcnKkfvaYPu9eo1HluaAeVK7haMMW2lzNQZioIE6kN/Y6dsP
-        q3TUkVvzGph3B7qCcqZivAk68jQAIiE6mvkQPrfU6AriRlY7P0/ELQU1AsI3VEeefFtXuAnTwc/wqmzX
-        Yxkoy3Kl/w1YG/wc2lZMm9tCeg4mLQIfqLLjreUdOGvKIzb8Fh1buLll2wcqrKtg0uZktQ3kfs8i3sy/
-        4Yv+MZpU+4DCOgYmueiaVbT0Z5JVUJF0NlnNqUMvE9NWqKvNUbR5m5JVUBPBJDkCJncEa3+MMxUKy6Jy
-        HiK5Wfxf8W+qalJv2Aluybcd5CXY/9eeG2WVSn8A7ig9LTyeth8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="colTableID.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;txtTableName.Parent" xml:space="preserve">
-    <value>grpTableInfo</value>
-  </data>
-  <data name="dtgvListTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 324</value>
-  </data>
-  <data name="&gt;&gt;cbLocation.Name" xml:space="preserve">
-    <value>cbLocation</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>frmTableManagement</value>
-  </data>
-  <data name="btnDeleteTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 152</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnDeleteAllTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="&gt;&gt;btnSearchTable.Name" xml:space="preserve">
-    <value>btnSearchTable</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>grpTableInfo</value>
-  </data>
-  <data name="grpFunctionTable.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;dtgvListTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;colStatus.Name" xml:space="preserve">
-    <value>colStatus</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="txtSearchTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnAddTable.Text" xml:space="preserve">
-    <value>Thêm</value>
-  </data>
-  <data name="btnAddTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="cbFillTable.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btnEditTable.Parent" xml:space="preserve">
-    <value>grpFunctionTable</value>
-  </data>
-  <data name="&gt;&gt;colTableID.Name" xml:space="preserve">
-    <value>colTableID</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnEditTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionTable.Name" xml:space="preserve">
-    <value>grpFunctionTable</value>
-  </data>
-  <data name="btnDeleteAllTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaUlEQVRYR+2XQU7DQAxFcwo4AtweuEUB
-        AQs4B13AGvALcjX9M447HWiExJO+Gk+cb3fcSNPpn04+j9S76cZ0aRqiZd6jrenCdHLOTNcmmuBzFc5N
-        NMA4FmFOzIvEcvt6FM3c74fwAHMqzUakM/f1ELom4crE3I6F7W7NPG3At32kuNOaedpAmtCJ+qX+aUIn
-        6pf6pwmdqF/qHyXcmx5Nrd8Ga0+muznaR/0i/x1RAsVZfzaVTXD9YuLeAwuC+mlcESVQiOLc8ybK4tqY
-        o34aVywlaBNZcVA/jSuyhLIJtFQc1E/jiiyBYv7N0UkbKItT2HdiqQn107giStDixChrQv00rogSeM9Z
-        10JlE7yqivppXBEl3Jp4z1vfkjXubeZoH/WL/HekCZ2oH9cf35dtfruBlNUb8AMJh4lR/EDyNkcH4kcy
-        jlEjTfBs6XUwHEpfTTz4E8Kr+48ID9D1yLGcbcdjlX9Bf4lp+gJXohWYGBGt/AAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cbSortTable.Items2" xml:space="preserve">
-    <value>Mã bàn(Giảm)</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteTable.Name" xml:space="preserve">
-    <value>btnDeleteTable</value>
-  </data>
-  <data name="grpFunctionTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 206</value>
-  </data>
-  <data name="btnDeleteTable.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="cbFillTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="&gt;&gt;cbLocation.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtTableName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 48</value>
-  </data>
-  <data name="&gt;&gt;grpTableInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbLocation.Parent" xml:space="preserve">
-    <value>grpTableInfo</value>
-  </data>
-  <data name="&gt;&gt;cbSortTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="cbSortTable.Items1" xml:space="preserve">
-    <value>Mã bàn(Tăng)</value>
-  </data>
-  <data name="txtTableName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 80</value>
-  </data>
-  <data name="colLocationID.HeaderText" xml:space="preserve">
-    <value>Mã vị trí</value>
-  </data>
-  <data name="&gt;&gt;btnTableDeleted.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 95</value>
-  </data>
-  <data name="colLocation.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
-  </data>
-  <data name="btnSaveTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 45</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>grpTableInfo</value>
-  </data>
-  <data name="cbFillTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 36</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 22</value>
-  </data>
-  <data name="txtSearchTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 271</value>
-  </data>
-  <data name="cbLocation.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="btnSearchTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 271</value>
   </data>
   <data name="btnSearchTable.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 41</value>
   </data>
+  <data name="btnSearchTable.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btnSearchTable.Name" xml:space="preserve">
+    <value>btnSearchTable</value>
+  </data>
+  <data name="&gt;&gt;btnSearchTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
   <data name="&gt;&gt;btnSearchTable.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnEditTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABHUlEQVRYR+2WvU7CABRGuzjwAg4mrAws
-        PgQP4UjCyosYeBQGEyadjBuyMZE4GDAOJrIZIzFoPJ/QpIO09/a2kz3JCT9Dv0PLX9LwHzg73Jp5wTeH
-        eQzxHXu/j4zooHMcGz2Gxr9RAa4IBeQd2EI6foW6BAs0R0QD0vEbPNET0MYt6tineiKPSEA6/omveI4t
-        VMwX9rGQsgHZ097BFSriDs3jokxAdjw97V3coWtceAP+Gnef9iyegMrHhTWglnFhCahtXBQF1Dou8gIi
-        4yPUt2EhxwKirzwUMMDoaQ8FTPEBI9c8FDDD6/3d0m+4UMAjPuMtrtE7LkIBT7hE/bBM8AK9hAKqoAlw
-        BdzjZcXqk2QK0L+Yj5rcYENDhiT5AWTitAZ1L1cyAAAAAElFTkSuQmCC
-</value>
+  <data name="&gt;&gt;btnSearchTable.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;btnDeleteTable.Parent" xml:space="preserve">
-    <value>grpFunctionTable</value>
-  </data>
-  <data name="&gt;&gt;colLocationID.Name" xml:space="preserve">
-    <value>colLocationID</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAllTable.Parent" xml:space="preserve">
-    <value>grpFunctionTable</value>
-  </data>
-  <data name="&gt;&gt;grpTableInfo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 255</value>
-  </data>
-  <data name="&gt;&gt;dtgvListTable.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnTableDeleted.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="txtSearchTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="btnDeleteTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 45</value>
-  </data>
-  <data name="&gt;&gt;cbSortTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnSaveTable.Parent" xml:space="preserve">
-    <value>grpFunctionTable</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>871, 255</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1053, 516</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 152</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbLocation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 36</value>
-  </data>
-  <data name="dtgvListTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 180</value>
-  </data>
-  <data name="&gt;&gt;txtSearchTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnDeleteTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACdElEQVRYR+2WW4iNURiGt2MSRUyRQ4gQ
-        Y3IsCUmSIqeQNBemJlGjXHBBuVCKlFJCIRTJhSSJklxQEiEuKEJREjlEUYTn+97Wbs2y0/7X39zNU0+9
-        62+avr33v9a7Kp0UZAbex0/4OdGePcI52GE8xR04CRtruAVfYxfsEH7hCMWaDMQ/2NtXJViNhxOP4G88
-        HT1LPYE2wLHoWbAZ62YxXsYXuLuk9rNdwxVYCPsW7iiW4jq2KBZjPj5XrDIEJyg6o3CMojMOhytWeYhL
-        FYvRhLa9YjbiJUVnDx5UdM7iVsUqb3CWYjGGor10PXwl1qP9noF0gAvYpljlO45VLEYvtDd6kK/EWryp
-        6KQDXMFWRacP2v+w7ZnFV5yo6CzHu4pOOsANjLebnRl2dnTzVQavcK6iswgfKzrpALdxlaIzFT8o5nEP
-        Vyo68/CZopMO8ACXKDoL0c6BbK7iBkVnJtpZH0gHeIILFJ11eEsxjzO4XdGZjO8VnXSAlzhb0dmMFxXz
-        OID7FZ3xaC9mIB3gLU5XdHbhccU8duIpRWck/lR00gHsTmC1HDiEexXz2IRWSoHBaPu6u6/+HcAOnfho
-        PofbFPNIC6k/2gB2wBjxAHYJsZNzmK9EdhEF0kKyi0Z8ssUDhJOzwVciu4gCaSF1RfuU1hNGPEA/tAH6
-        +kpkF1GgViH9wNGK7QawzrABevpKZBdRoFYhfcHQD/EA4dwPlC6iQFpI73CaYrsB7DLyTdEpXUSBtJDs
-        nmc3IWMZrlH029I+Rad0EQWskOKGqxdrzlJFFDiKdhhNQdsV9WidcR5PYmlsX9s90L7Oj3Vqf2slNAA7
-        +Q+Vyl9Wy6MdmQ06XgAAAABJRU5ErkJggg==
-</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="colLocationID.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmTableManagement</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 22</value>
+  <data name="&gt;&gt;colTableID.Name" xml:space="preserve">
+    <value>colTableID</value>
   </data>
-  <data name="&gt;&gt;btnDeleteAllTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="&gt;&gt;colTableID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="colLocation.HeaderText" xml:space="preserve">
-    <value>Vị trí</value>
-  </data>
-  <data name="&gt;&gt;cbLocation.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="cbSortTable.Items4" xml:space="preserve">
-    <value>Vị trí(Giảm)</value>
-  </data>
-  <data name="&gt;&gt;btnAddTable.Parent" xml:space="preserve">
-    <value>grpFunctionTable</value>
-  </data>
-  <data name="btnEditTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 83</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 38</value>
+  <data name="&gt;&gt;colTableName.Name" xml:space="preserve">
+    <value>colTableName</value>
   </data>
   <data name="&gt;&gt;colTableName.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnDeleteAllTable.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;colLocation.Name" xml:space="preserve">
+    <value>colLocation</value>
   </data>
-  <data name="&gt;&gt;dtgvListTable.Name" xml:space="preserve">
-    <value>dtgvListTable</value>
+  <data name="&gt;&gt;colLocation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>grpTableInfo</value>
+  <data name="&gt;&gt;colStatus.Name" xml:space="preserve">
+    <value>colStatus</value>
   </data>
-  <data name="btnSaveTable.Text" xml:space="preserve">
-    <value>Lưu</value>
+  <data name="&gt;&gt;colStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnDeleteAllTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 154</value>
-  </data>
-  <data name="cbSortTable.Items3" xml:space="preserve">
-    <value>Vị trí(Tăng)</value>
-  </data>
-  <data name="colTableName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Lọc</value>
-  </data>
-  <data name="&gt;&gt;btnAddTable.Name" xml:space="preserve">
-    <value>btnAddTable</value>
-  </data>
-  <data name="btnSaveTable.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Tên bàn ăn:</value>
-  </data>
-  <data name="btnDeleteAllTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 43</value>
-  </data>
-  <data name="btnAddTable.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;txtTableID.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="txtSearchTable.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 22</value>
-  </data>
-  <data name="cbFillTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>874, 276</value>
-  </data>
-  <data name="txtTableID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="btnSearchTable.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="grpTableInfo.Text" xml:space="preserve">
-    <value>Thông tin bàn ăn</value>
+  <data name="&gt;&gt;colLocationID.Name" xml:space="preserve">
+    <value>colLocationID</value>
   </data>
   <data name="&gt;&gt;colLocationID.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnEditTable.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmTableManagement</value>
   </data>
-  <data name="&gt;&gt;btnTableDeleted.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnSaveTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnSaveTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 27</value>
-  </data>
-  <data name="grpFunctionTable.Text" xml:space="preserve">
-    <value>Chức năng</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btnAddTable.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;cbFillTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtTableName.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btnSaveTable.Name" xml:space="preserve">
-    <value>btnSaveTable</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Vị trí:</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtTableID.Name" xml:space="preserve">
-    <value>txtTableID</value>
-  </data>
-  <data name="txtTableID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 24</value>
-  </data>
-  <data name="&gt;&gt;dtgvListTable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="colStatus.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="txtTableID.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="colLocationID.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnTableDeleted.Text" xml:space="preserve">
-    <value>Bàn đã xóa</value>
-  </data>
-  <data name="&gt;&gt;txtTableName.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="cbSortTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 276</value>
-  </data>
-  <data name="cbSortTable.Items" xml:space="preserve">
-    <value>Mặc định</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteTable.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnTableDeleted.Name" xml:space="preserve">
-    <value>btnTableDeleted</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnTableDeleted.Parent" xml:space="preserve">
-    <value>grpFunctionTable</value>
-  </data>
-  <data name="&gt;&gt;cbFillTable.Name" xml:space="preserve">
-    <value>cbFillTable</value>
-  </data>
-  <data name="&gt;&gt;txtTableID.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnTableDeleted.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 45</value>
-  </data>
-  <data name="colStatus.HeaderText" xml:space="preserve">
-    <value>Trạng thái</value>
-  </data>
-  <data name="&gt;&gt;btnSaveTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="txtTableName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnSearchTable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <metadata name="colLocation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colLocationID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colTableName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colTableID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colStatus.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

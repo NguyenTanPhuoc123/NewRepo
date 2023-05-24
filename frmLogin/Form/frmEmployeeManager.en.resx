@@ -123,10 +123,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 22</value>
+    <value>43, 22</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Arrange</value>
+    <value>Sort</value>
   </data>
   <data name="colEmployeeID.HeaderText" xml:space="preserve">
     <value>Employee ID</value>
@@ -158,11 +158,11 @@
   <data name="guna2HtmlLabel1.Text" xml:space="preserve">
     <value>Fillter</value>
   </data>
-  <data name="grpEmployeeInfo.Text" xml:space="preserve">
-    <value>Staff Information</value>
-  </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 177</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 22</value>
@@ -172,6 +172,9 @@
   </data>
   <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 129</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 22</value>
@@ -218,8 +221,11 @@
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 175</value>
+  </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 22</value>
+    <value>75, 22</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Gender:</value>
@@ -251,8 +257,8 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Employee ID:</value>
   </data>
-  <data name="grpFunctionEmployee.Text" xml:space="preserve">
-    <value>Function</value>
+  <data name="grpEmployeeInfo.Text" xml:space="preserve">
+    <value>Staff Information</value>
   </data>
   <data name="btnSaveEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1981,7 +1987,10 @@
 </value>
   </data>
   <data name="btnEmployeeDeleted.Text" xml:space="preserve">
-    <value>Employee Deleted</value>
+    <value>Deleted</value>
+  </data>
+  <data name="grpFunctionEmployee.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="btnSearchEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

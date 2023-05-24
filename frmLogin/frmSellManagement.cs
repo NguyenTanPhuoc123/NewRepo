@@ -9,8 +9,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge;
 using BUS;
 using DTO;
+using Microsoft.ReportingServices.Interfaces;
 
 namespace frmLogin
 {
@@ -85,43 +87,84 @@ namespace frmLogin
 
         private void btnStoreManagement_Click(object sender, EventArgs e)
         {
-
-            if (GetTypeAccount() == 1)
+            if (Language == 0)
             {
-                frmQuanLyAdmin frm = new frmQuanLyAdmin(this);
-                this.Hide();
-                frm.ShowDialog();
-                this.Show();
+                if (GetTypeAccount() == 1)
+                {
+                    frmQuanLyAdmin frm = new frmQuanLyAdmin(this);
+                    this.Hide();
+                    frm.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Bạn không đủ quyền vào quản lý", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
             }
             else
             {
-                MessageBox.Show("Bạn không có phận sự ở đây, cút!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (GetTypeAccount() == 1)
+                {
+                    frmQuanLyAdmin frm = new frmQuanLyAdmin(this);
+                    this.Hide();
+                    frm.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    MessageBox.Show("You do not have the right to manage", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
             }
         }
 
 
         private void btnExitFormSell_Click(object sender, EventArgs e)
-        {   
-            if(MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?","Thông báo",MessageBoxButtons.OKCancel,MessageBoxIcon.Question)==DialogResult.OK)
-                this.Close();
+        {
+            if (Language == 0)
+            {
+                if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    this.Close();
+            }
+            else
+            {
+                if (MessageBox.Show("Want to get rid of this software?", "Notice", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    this.Close();
+            }
         }
 
         private void btnSelectDish_Click(object sender, EventArgs e)
         {
-            if (GetTableID() == 0)
+            if (Language == 0)
             {
-                MessageBox.Show("Bạn chưa chọn bàn để chọn món", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (GetTableID() == 0)
+                {
+                    MessageBox.Show("Bạn chưa chọn bàn để chọn món", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    this.IsMdiContainer = true;
+                    frmSelectDish frm = new frmSelectDish(this);
+                    frm.Show();
+                    LoadBackColorMDI();
+                }
             }
             else
             {
-                this.IsMdiContainer = true;
-                frmSelectDish frm = new frmSelectDish(this);
-                frm.Show();
-                LoadBackColorMDI();
-
-
+                if (GetTableID() == 0)
+                {
+                    MessageBox.Show("You have not selected a table to choose from", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    this.IsMdiContainer = true;
+                    frmSelectDish frm = new frmSelectDish(this);
+                    frm.Show();
+                    LoadBackColorMDI();
+                }
             }
         }
 
@@ -135,19 +178,39 @@ namespace frmLogin
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            if (GetTableID() == 0)
+            if (Language == 0)
             {
-                MessageBox.Show("Bạn chưa chọn bàn để chọn món", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (GetTableID() == 0)
+                {
+                    MessageBox.Show("Bạn chưa chọn bàn để thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
+                    int count = BillBUS.Instance.Pay(billMenu.ID, manv);
+                    this.IsMdiContainer = true;
+                    frmPay frm = new frmPay();
+                    frm.Show();
+                    LoadBackColorMDI();
+                }
             }
             else
             {
-                BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
-                int count = BillBUS.Instance.Pay(billMenu.ID, manv);
-                this.IsMdiContainer = true;
-                frmPay frm = new frmPay();
-                frm.Show();
-                LoadBackColorMDI();
+                if (GetTableID() == 0)
+                {
+                    MessageBox.Show("You have not selected a table to pay", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
+                    int count = BillBUS.Instance.Pay(billMenu.ID, manv);
+                    this.IsMdiContainer = true;
+                    frmPay frm = new frmPay();
+                    frm.Show();
+                    LoadBackColorMDI();
+                }
             }
         }
 
@@ -271,45 +334,112 @@ namespace frmLogin
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (lstvMenuDish.SelectedItems.Count > 0)
+            if (Language == 0)
             {
-
-                int index = lstvMenuDish.SelectedItems[0].Index;
-                ListViewItem item = lstvMenuDish.SelectedItems[0];
-                string mahd = BillBUS.Instance.HDID(tableID);
-                string masp = ProductBUS.Instance.ProductID(item.Text);
-                if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa món này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (lstvMenuDish.SelectedItems.Count > 0)
                 {
-                    int count = BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
-                    if (count > 0)
+
+                    int index = lstvMenuDish.SelectedItems[0].Index;
+                    ListViewItem item = lstvMenuDish.SelectedItems[0];
+                    string mahd = BillBUS.Instance.HDID(tableID);
+                    string masp = ProductBUS.Instance.ProductID(item.Text);
+                    if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa món này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                     {
-                        MessageBox.Show("Xóa món ăn thành công", "Thông báo", MessageBoxButtons.OK);
-                        lstvMenuDish.Items.RemoveAt(index);
+                        int count = BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa món ăn thành công", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                            lstvMenuDish.Items.RemoveAt(index);
+                        }
+                        else
+                            MessageBox.Show("Xóa món ăn thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    else
-                        MessageBox.Show("Xóa món ăn thất bại", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
+                else
+                    MessageBox.Show("Bạn chưa chọn món để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
-                MessageBox.Show("Bạn chưa chọn món để xóa","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            {
+                if (lstvMenuDish.SelectedItems.Count > 0)
+                {
+
+                    int index = lstvMenuDish.SelectedItems[0].Index;
+                    ListViewItem item = lstvMenuDish.SelectedItems[0];
+                    string mahd = BillBUS.Instance.HDID(tableID);
+                    string masp = ProductBUS.Instance.ProductID(item.Text);
+                    if (DialogResult.Yes == MessageBox.Show("Do you want to delete this item", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                    {
+                        int count = BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete successful dish", "Notification", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                            lstvMenuDish.Items.RemoveAt(index);
+                        }
+                        else
+                            MessageBox.Show("Delete successful dish", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                    MessageBox.Show("You have not selected the item to delete", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
         private void btnChangeTable_Click(object sender, EventArgs e)
         {
-            int tableid = GetTableID();
-            string tablenew =cbChangeTable.SelectedValue.ToString();
-            if (BillBUS.Instance.UpdateBill(tableid, tablenew))
+            if (Language == 0)
             {
-                MessageBox.Show("Chuyển bàn thành công");
-                TableBUS.Instance.UpdateTableNull(tableid);
-                TableBUS.Instance.UpdateTable(tablenew);
-                LoadTableNull();
-                GetListTableByLocationID(1);
+                int tableid = GetTableID();
+                string tablenew = cbChangeTable.SelectedValue.ToString();
+                if (BillBUS.Instance.UpdateBill(tableid, tablenew))
+                {
+                    MessageBox.Show("Chuyển bàn thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    TableBUS.Instance.UpdateTableNull(tableid);
+                    TableBUS.Instance.UpdateTable(tablenew);
+                    LoadTableNull();
+                    GetListTableByLocationID(1);
+                }
+                else
+                    MessageBox.Show("Chuyển bàn thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
-                MessageBox.Show("Chuyen ban that bai");
+            {
+                int tableid = GetTableID();
+                string tablenew = cbChangeTable.SelectedValue.ToString();
+                if (BillBUS.Instance.UpdateBill(tableid, tablenew))
+                {
+                    MessageBox.Show("Table transfer successful", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TableBUS.Instance.UpdateTableNull(tableid);
+                    TableBUS.Instance.UpdateTable(tablenew);
+                    LoadTableNull();
+                    GetListTableByLocationID(1);
+                }
+                else
+                    MessageBox.Show("Table transfer failed", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
+        private void btnSelectDish_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                btnSelectDish_Click(sender, e);
+            }
+        }
 
+        private void btnStoreManagement_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2)
+            {
+                btnStoreManagement_Click(sender, e);
+            }
+        }
+
+        private void btnPay_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F3)
+            {
+                btnPay_Click(sender, e);
+            }
+        }
     }
 }

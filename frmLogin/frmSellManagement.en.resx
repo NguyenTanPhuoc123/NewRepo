@@ -183,8 +183,15 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Table location</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="btnDelete.Text" xml:space="preserve">
     <value>Delete</value>
+  </data>
+  <data name="btnDelete.ToolTip" xml:space="preserve">
+    <value>Delete dish selected</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Product Name</value>
@@ -197,6 +204,9 @@
   </data>
   <data name="columnHeader5.Text" xml:space="preserve">
     <value>Total</value>
+  </data>
+  <data name="btnChangeTable.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="btnChangeTable.Text" xml:space="preserve">
     <value>Change Table</value>
@@ -225,6 +235,9 @@
         P6V/YRg+PiQIvgAOxpx5lOvVlgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btnStoreManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="btnStoreManagement.Text" xml:space="preserve">
     <value>Store manager</value>
   </data>
@@ -243,6 +256,9 @@
         tu4XuYlMrMQpnE7+5p1MnEjoULIVihb0QPeVqz7kTI7alLMdmdgPHbPmgsaOBmE9ptnwBFErXmAKqtPa
         MESbieP+7a4i3Y/61RgaizGj1n93qiviF7FD2wAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="btnSelectDish.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="btnSelectDish.Text" xml:space="preserve">
     <value>Select dish</value>
@@ -264,6 +280,9 @@
         qqvFQ2azB3AJde22dSNMxGasQFfEmY7l8D0fvTKWwCPjDad87ntr4e/4l52aFnCvavM/pVD4Ds7MUiGg
         bEsAAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="btnPay.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="btnPay.Text" xml:space="preserve">
     <value>Pay</value>

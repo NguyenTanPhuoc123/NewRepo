@@ -71,5 +71,9 @@ namespace BUS
         {
             return TypeAccountDAO.Instance.GetTypeAccountIDMax();
         }
+        public bool checkNameExist( string tenloai)
+        {
+            return TypeAccountDAO.Instance.checkNameExist(tenloai);
+        }
     }
 }

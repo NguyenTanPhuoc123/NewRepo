@@ -133,11 +133,22 @@ namespace frmLogin
 
         private void pbLogo_Click(object sender, EventArgs e)
         {
-            if (activeForm != null)
-                activeForm.Close();
+            if (Language == 0)
+            {
+                if (activeForm != null)
+                    activeForm.Close();
 
-            lblTitle.Text = "Thống kê";
-            DisableButton();
+                lblTitle.Text = "Thống kê";
+                DisableButton();
+            }
+            else
+            {
+                if (activeForm != null)
+                    activeForm.Close();
+
+                lblTitle.Text = "Statistical";
+                DisableButton();
+            }
             
         }
 
@@ -216,6 +227,54 @@ namespace frmLogin
             this.Hide();
             frm.ShowDialog();
             this.Show();
+        }
+
+        private void btnProducManagement_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                btnProducManagement_Click(sender, e);
+            }
+        }
+
+        private void btnAccountManagement_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2)
+            {
+                btnAccountManagement_Click(sender, e);
+            }
+        }
+
+        private void btnEmployeeManager_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F3)
+            {
+                btnEmployeeManager_Click(sender, e);
+            }
+        }
+
+        private void btnBillManagement_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                btnBillManagement_Click(sender, e);
+            }
+        }
+
+        private void btnTableManagement_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F5)
+            {
+                btnTableManagement_Click(sender, e);
+            }
+        }
+
+        private void btnCategoryManagement_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F6)
+            {
+                btnCategoryManagement_Click(sender, e);
+            }
         }
     }
 }

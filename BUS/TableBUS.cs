@@ -83,5 +83,9 @@ namespace BUS
         {
             return TableDAO.Instance.UpdateTablePay(TableID);
         }
+        public bool checkTableExist(string tenban)
+        {
+            return TableDAO.Instance.checkTableExist(tenban);
+        }
     }
 }

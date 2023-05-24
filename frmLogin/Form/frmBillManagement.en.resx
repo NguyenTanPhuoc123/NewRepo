@@ -143,19 +143,22 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 20</value>
+    <value>39, 20</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Arrange</value>
+    <value>Sort</value>
   </data>
   <data name="btnShowDetail.Text" xml:space="preserve">
     <value>See details</value>
   </data>
-  <data name="grpBillInfo.Text" xml:space="preserve">
-    <value>Invoice information</value>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 35</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Discount :</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 190</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 20</value>
@@ -164,7 +167,7 @@
     <value>Release date:</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 196</value>
+    <value>367, 191</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 20</value>
@@ -176,7 +179,7 @@
     <value>505, 74</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 89</value>
+    <value>367, 84</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 20</value>
@@ -196,20 +199,32 @@
   <data name="label6.Text" xml:space="preserve">
     <value>Total amount:</value>
   </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 133</value>
+  </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 20</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Date founded:</value>
   </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 84</value>
+  </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Employee:</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 35</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 20</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Bill ID:</value>
+  </data>
+  <data name="grpBillInfo.Text" xml:space="preserve">
+    <value>Invoice information</value>
   </data>
   <data name="chkFillBill.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 24</value>

@@ -27,14 +27,14 @@ namespace BUS
             return DiscountDAO.Instance.GetListDiscount();
         }
 
-        public int AddNewDiscount(string discountName, string startDay, string endDay, float price,float limit)
+        public int AddNewDiscount(string discountName, string startDay, string endDay, float price, float limit)
         {
-            return DiscountDAO.Instance.AddNewDiscount(discountName, startDay, endDay, price,limit);
+            return DiscountDAO.Instance.AddNewDiscount(discountName, startDay, endDay, price, limit);
         }
 
-        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price, int available,float limit)
+        public int EditDiscount(string discountID, string discountName, string startDay, string endDay, float price, int available, float limit)
         {
-            return DiscountDAO.Instance.EditDiscount(discountID, discountName, startDay, endDay, price, available,limit);
+            return DiscountDAO.Instance.EditDiscount(discountID, discountName, startDay, endDay, price, available, limit);
         }
 
         public int DeleteDiscount(string discountID)
@@ -75,6 +75,10 @@ namespace BUS
         public List<Discount> GetListDiscountForID(string DiscountID)
         {
             return DiscountDAO.Instance.GetListDiscountForID(DiscountID);
+        }
+        public bool checkNameExist(string TENGIAMGIA)
+        {
+            return DiscountDAO.Instance.checkNameExist(TENGIAMGIA);
         }
     }
 }

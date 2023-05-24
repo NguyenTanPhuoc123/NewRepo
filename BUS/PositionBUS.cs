@@ -70,5 +70,9 @@ namespace BUS
         {
             return PositionDAO.Instance.RestoreAllPosition();
         }
+        public bool checkNameExist( string tenloai)
+        {
+            return PositionDAO.Instance.checkNameExist( tenloai);
+        }
     }
 }

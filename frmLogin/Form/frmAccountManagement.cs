@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DTO;
+using Microsoft.ReportingServices.Interfaces;
 
 namespace frmLogin
 {
@@ -55,19 +56,38 @@ namespace frmLogin
 
         private void btnDeleteAllAccount_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
+            if (Language == 0)
             {
-                int count = AccountBUS.Instance.DeleteAllAccount();
-                if (count > 0)
+                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
                 {
-                    MessageBox.Show("Xóa tất cả thành công");
+                    int count = AccountBUS.Instance.DeleteAllAccount();
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Xóa tất cả thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa tất cả thất bại");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Xóa tất cả thất bại");
-                }
+                frmAccountManagement_Load(sender, e);
             }
-            frmAccountManagement_Load(sender, e);
+            else
+            {
+                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
+                {
+                    int count = AccountBUS.Instance.DeleteAllAccount();
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Xóa tất cả thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa tất cả thất bại");
+                    }
+                }
+                frmAccountManagement_Load(sender, e);
+            }
         }
 
         private void btnAddAccount_Click(object sender, EventArgs e)
@@ -86,16 +106,34 @@ namespace frmLogin
 
         private void btnDeleteAccount_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            if (Language == 0)
             {
-                int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
-                if (count > 0)
+                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    MessageBox.Show("Xóa tài khoản thành công");
+                    int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Xóa tài khoản thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa tài khoản thất bại","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    }
                 }
-                else
+            }
+            else
+            {
+                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    MessageBox.Show("Xóa tài khoản thất bại");
+                    int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Xóa tài khoản thành công", "Notification" ,MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa tài khoản thất bại", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
             frmAccountManagement_Load(sender, e);
@@ -103,16 +141,32 @@ namespace frmLogin
 
         private void btnEditAccount_Click(object sender, EventArgs e)
         {
-            int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
-            if (count > 0)
+            if (Language == 0)
             {
-                MessageBox.Show("Sửa tài khoản thành công");
+                int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
+                if (count > 0)
+                {
+                    MessageBox.Show("Sửa tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Sửa tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                frmAccountManagement_Load(sender, e);
             }
             else
             {
-                MessageBox.Show("Sửa tài khoản thất bại");
+                int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
+                if (count > 0)
+                {
+                    MessageBox.Show("Sửa tài khoản thành công", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Sửa tài khoản thất bại", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                frmAccountManagement_Load(sender, e);
             }
-            frmAccountManagement_Load(sender, e);
         }
 
         private void dtgvListAccount_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -129,27 +183,55 @@ namespace frmLogin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtUsername.Text.Trim())||string.IsNullOrEmpty(txtPassword.Text.Trim()))
+            if (Language == 0)
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckExistEmployee(Convert.ToInt32(cbEmloyee.SelectedValue.ToString())))
-            {
-                int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
-                if (count > 0)
+                if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
                 {
-                    MessageBox.Show("Thêm tài khoản thành công");
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckExistEmployee(Convert.ToInt32(cbEmloyee.SelectedValue.ToString())))
+                {
+                    int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Thêm tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    frmAccountManagement_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Thêm tài khoản thất bại");
+                    MessageBox.Show("Tạo tài khoản không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                frmAccountManagement_Load(sender, e);
             }
             else
             {
-                MessageBox.Show("Tạo tài khoản không hợp lệ");
+                if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckExistEmployee(Convert.ToInt32(cbEmloyee.SelectedValue.ToString())))
+                {
+                    int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Thêm tài khoản thành công", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm tài khoản thất bại", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    frmAccountManagement_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Tạo tài khoản không hợp lệ", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 

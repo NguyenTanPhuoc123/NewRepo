@@ -132,10 +132,10 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 22</value>
+    <value>43, 22</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Arrange</value>
+    <value>Sort</value>
   </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>User Name</value>
@@ -149,9 +149,6 @@
   <data name="Column4.HeaderText" xml:space="preserve">
     <value>TypeAccount</value>
   </data>
-  <data name="grpAccountInfo.Text" xml:space="preserve">
-    <value>Account Information</value>
-  </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -164,6 +161,9 @@
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 133</value>
+  </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 22</value>
   </data>
@@ -172,6 +172,9 @@
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 82</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 22</value>
@@ -183,7 +186,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 40</value>
+    <value>36, 33</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 22</value>
@@ -191,13 +194,13 @@
   <data name="label2.Text" xml:space="preserve">
     <value>User Name:</value>
   </data>
-  <data name="grpFunctionAccount.Text" xml:space="preserve">
-    <value>Function</value>
+  <data name="grpAccountInfo.Text" xml:space="preserve">
+    <value>Account Information</value>
   </data>
   <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAZBJREFUaEPtmjFOA0EQBJ0geAS8GBDPICID/CLgF8BscFJrVKe2b9nxSlxJldxe
+        DAAACwwBP0AiyAAAAZBJREFUaEPtmjFOA0EQBJ0geAS8GBDPICID/CLgF8BscFJrVKe2b9nxSlxJldxe
         T3vkYAP7sLOzs4mb8Cn8Cn8u5HN4FXbRlqDh1b6EXcu4b2I02vUaXoeb0EHkaHLf5mXyoOxoqHPTMjRI
         7cXNy+eLZy9DQ9Re3Lx8rp61DA1Qe3Hz8nn25GUorPbi5uVzst0zFgqqvbh5+Zz8Di0UVHtx8/L5mhYK
         qb24efl8TQuF1F7cvHy+poVC6miok7RQSL0NR3EXUidpoZD6HrbCv6bNPIbUSVooNKMWCs2ohUIzaqHQ
@@ -1921,7 +1924,10 @@
 </value>
   </data>
   <data name="btnAccountDeleted.Text" xml:space="preserve">
-    <value>Account Deleted</value>
+    <value>Deleted</value>
+  </data>
+  <data name="grpFunctionAccount.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="btnSearchAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2096,8 +2102,5 @@
         BTjxJMCHPwAsSE0CfPgDwAJd+oT/BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOzmlO838BWh4XXIETABAAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

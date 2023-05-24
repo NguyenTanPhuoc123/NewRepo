@@ -69,9 +69,10 @@ namespace frmLogin
         }
         private void btnAddDish_Click(object sender, EventArgs e)
         {
-            string tenSP = txtDishName.Text;
-            int soLuong = ProductBUS.Instance.ProductCount(tenSP);
-            int soLuongChon = Convert.ToInt32(numQuantity.Value.ToString());
+         
+                string tenSP = txtDishName.Text;
+                int soLuong = ProductBUS.Instance.ProductCount(tenSP);
+                int soLuongChon = Convert.ToInt32(numQuantity.Value.ToString());
             if (soLuongChon <= soLuong)
             {
                 Usercontrol uc = new Usercontrol();
@@ -87,7 +88,12 @@ namespace frmLogin
                 numQuantity.Value = 1;
             }
             else
-                MessageBox.Show("Số lượng món không đủ", "Thông báo");
+            {
+                if (Language == 0)
+                    MessageBox.Show("Số lượng món không đủ", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                else
+                    MessageBox.Show("The number of items is not enough", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void lstvListDish_SelectedIndexChanged(object sender, EventArgs e)
@@ -208,7 +214,10 @@ namespace frmLogin
         {
             if (string.IsNullOrEmpty(txtSearchDish.Text))
             {
-                MessageBox.Show("Bạn chưa nhập tên sản phẩm để tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if(Language ==0)
+                    MessageBox.Show("Bạn chưa nhập tên sản phẩm để tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                    MessageBox.Show("You have not entered the product name to search", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lstvListDish.Clear();

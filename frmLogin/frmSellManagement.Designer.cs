@@ -58,6 +58,7 @@ namespace frmLogin
             this.btnStoreManagement = new Guna.UI2.WinForms.Guna2Button();
             this.btnSelectDish = new Guna.UI2.WinForms.Guna2Button();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -69,24 +70,24 @@ namespace frmLogin
             // 
             // cbLocationTable
             // 
-            resources.ApplyResources(this.cbLocationTable, "cbLocationTable");
             this.cbLocationTable.BackColor = System.Drawing.Color.White;
             this.cbLocationTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbLocationTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLocationTable.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbLocationTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbLocationTable, "cbLocationTable");
             this.cbLocationTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbLocationTable.Name = "cbLocationTable";
             this.cbLocationTable.SelectedIndexChanged += new System.EventHandler(this.cbLocationTable_SelectedIndexChanged);
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.btnSetting);
             this.panel1.Controls.Add(this.btnExitFormSell);
             this.panel1.Controls.Add(this.label2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // btnMinimize
@@ -121,29 +122,29 @@ namespace frmLogin
             // 
             // statusStrip1
             // 
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tstlblPosition,
             this.tsslblName,
             this.tsslblTime});
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
             // tstlblPosition
             // 
-            resources.ApplyResources(this.tstlblPosition, "tstlblPosition");
             this.tstlblPosition.Name = "tstlblPosition";
+            resources.ApplyResources(this.tstlblPosition, "tstlblPosition");
             // 
             // tsslblName
             // 
-            resources.ApplyResources(this.tsslblName, "tsslblName");
             this.tsslblName.Name = "tsslblName";
+            resources.ApplyResources(this.tsslblName, "tsslblName");
             // 
             // tsslblTime
             // 
-            resources.ApplyResources(this.tsslblTime, "tsslblTime");
             this.tsslblTime.Margin = new System.Windows.Forms.Padding(900, 4, 0, 2);
             this.tsslblTime.Name = "tsslblTime";
+            resources.ApplyResources(this.tsslblTime, "tsslblTime");
             // 
             // timer1
             // 
@@ -157,12 +158,12 @@ namespace frmLogin
             // 
             // cbChangeTable
             // 
-            resources.ApplyResources(this.cbChangeTable, "cbChangeTable");
             this.cbChangeTable.BackColor = System.Drawing.Color.White;
             this.cbChangeTable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbChangeTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChangeTable.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbChangeTable.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbChangeTable, "cbChangeTable");
             this.cbChangeTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbChangeTable.Name = "cbChangeTable";
             // 
@@ -175,20 +176,19 @@ namespace frmLogin
             // 
             // btnDelete
             // 
-            resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.BorderRadius = 20;
             this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lstvMenuDish
             // 
-            resources.ApplyResources(this.lstvMenuDish, "lstvMenuDish");
             this.lstvMenuDish.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader3,
@@ -197,6 +197,7 @@ namespace frmLogin
             this.lstvMenuDish.FullRowSelect = true;
             this.lstvMenuDish.GridLines = true;
             this.lstvMenuDish.HideSelection = false;
+            resources.ApplyResources(this.lstvMenuDish, "lstvMenuDish");
             this.lstvMenuDish.Name = "lstvMenuDish";
             this.lstvMenuDish.UseCompatibleStateImageBehavior = false;
             this.lstvMenuDish.View = System.Windows.Forms.View.Details;
@@ -219,13 +220,13 @@ namespace frmLogin
             // 
             // btnChangeTable
             // 
-            resources.ApplyResources(this.btnChangeTable, "btnChangeTable");
             this.btnChangeTable.BackColor = System.Drawing.Color.White;
             this.btnChangeTable.BorderRadius = 20;
             this.btnChangeTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnChangeTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnChangeTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnChangeTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.btnChangeTable, "btnChangeTable");
             this.btnChangeTable.ForeColor = System.Drawing.Color.White;
             this.btnChangeTable.Name = "btnChangeTable";
             this.btnChangeTable.Click += new System.EventHandler(this.btnChangeTable_Click);
@@ -242,7 +243,6 @@ namespace frmLogin
             // 
             // btnStoreManagement
             // 
-            resources.ApplyResources(this.btnStoreManagement, "btnStoreManagement");
             this.btnStoreManagement.BackColor = System.Drawing.Color.White;
             this.btnStoreManagement.BorderRadius = 20;
             this.btnStoreManagement.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -250,15 +250,17 @@ namespace frmLogin
             this.btnStoreManagement.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnStoreManagement.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnStoreManagement.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            resources.ApplyResources(this.btnStoreManagement, "btnStoreManagement");
             this.btnStoreManagement.ForeColor = System.Drawing.Color.White;
             this.btnStoreManagement.Image = ((System.Drawing.Image)(resources.GetObject("btnStoreManagement.Image")));
             this.btnStoreManagement.ImageSize = new System.Drawing.Size(30, 30);
             this.btnStoreManagement.Name = "btnStoreManagement";
+            this.toolTip1.SetToolTip(this.btnStoreManagement, resources.GetString("btnStoreManagement.ToolTip"));
             this.btnStoreManagement.Click += new System.EventHandler(this.btnStoreManagement_Click);
+            this.btnStoreManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnStoreManagement_KeyDown);
             // 
             // btnSelectDish
             // 
-            resources.ApplyResources(this.btnSelectDish, "btnSelectDish");
             this.btnSelectDish.BackColor = System.Drawing.Color.White;
             this.btnSelectDish.BorderRadius = 10;
             this.btnSelectDish.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -266,15 +268,17 @@ namespace frmLogin
             this.btnSelectDish.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSelectDish.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSelectDish.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(51)))));
+            resources.ApplyResources(this.btnSelectDish, "btnSelectDish");
             this.btnSelectDish.ForeColor = System.Drawing.Color.White;
             this.btnSelectDish.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectDish.Image")));
             this.btnSelectDish.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSelectDish.Name = "btnSelectDish";
+            this.toolTip1.SetToolTip(this.btnSelectDish, resources.GetString("btnSelectDish.ToolTip"));
             this.btnSelectDish.Click += new System.EventHandler(this.btnSelectDish_Click);
+            this.btnSelectDish.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnSelectDish_KeyDown);
             // 
             // btnPay
             // 
-            resources.ApplyResources(this.btnPay, "btnPay");
             this.btnPay.BackColor = System.Drawing.Color.White;
             this.btnPay.BorderRadius = 10;
             this.btnPay.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -282,17 +286,21 @@ namespace frmLogin
             this.btnPay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnPay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            resources.ApplyResources(this.btnPay, "btnPay");
             this.btnPay.ForeColor = System.Drawing.Color.White;
             this.btnPay.Image = ((System.Drawing.Image)(resources.GetObject("btnPay.Image")));
             this.btnPay.ImageSize = new System.Drawing.Size(30, 30);
             this.btnPay.Name = "btnPay";
+            this.toolTip1.SetToolTip(this.btnPay, resources.GetString("btnPay.ToolTip"));
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
+            this.btnPay.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnPay_KeyDown);
             // 
             // frmSellManagement
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.CancelButton = this.btnExitFormSell;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.lblToltalPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnChangeTable);
@@ -348,5 +356,6 @@ namespace frmLogin
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

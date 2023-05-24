@@ -61,5 +61,9 @@ namespace BUS
         {
             return LocationDAO.Instance.RestoreAllLocation();
         }
+        public bool checkNameExist( string locationName)
+        {
+            return LocationDAO.Instance.checkNameExist(locationName);
+        }
     }
 }
