@@ -60,7 +60,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
                 {
-                    int count = AccountBUS.Instance.DeleteAllAccount();
+                    int count = AccountBUS.Instance.DeleteAllAccount(frmlogin.GetUsername());
                     if (count > 0)
                     {
                         MessageBox.Show("Xóa tất cả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -76,7 +76,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("You definitely want to delete all accounts?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
                 {
-                    int count = AccountBUS.Instance.DeleteAllAccount();
+                    int count = AccountBUS.Instance.DeleteAllAccount(frmlogin.GetUsername());
                     if (count > 0)
                     {
                         MessageBox.Show("Delete all successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -108,16 +108,24 @@ namespace frmLogin
         {
             if (Language == 0)
             {
+
                 if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
-                    if (count > 0)
+                    if ((cbEmloyee.SelectedIndex + 1) != frmSellManagement.GetMANV())
                     {
-                        MessageBox.Show("Xóa tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Tài khoản đang được đăng nhập không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -125,14 +133,21 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("You definitely want to delete this account", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
-                    if (count > 0)
+                    if ((cbEmloyee.SelectedIndex + 1) != frmSellManagement.GetMANV())
                     {
-                        MessageBox.Show("Delete all successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete all successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Delete all failures", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Delete all failures", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Logged in account cannot be deleted", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }

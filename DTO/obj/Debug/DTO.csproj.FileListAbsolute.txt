@@ -159,3 +159,9 @@ D:\đồ án Win\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\đồ án Win\DTO\obj\Debug\DTO.csproj.CopyComplete
 D:\đồ án Win\DTO\obj\Debug\DTO.dll
 D:\đồ án Win\DTO\obj\Debug\DTO.pdb
+D:\DOANWINFORM\DTO\bin\Debug\AForge.dll
+D:\DOANWINFORM\DTO\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOANWINFORM\DTO\bin\Debug\AForge.Video.dll
+D:\DOANWINFORM\DTO\bin\Debug\AForge.xml
+D:\DOANWINFORM\DTO\bin\Debug\AForge.Video.xml
+D:\DOANWINFORM\DTO\bin\Debug\AForge.Video.DirectShow.xml

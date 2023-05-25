@@ -100,9 +100,9 @@ namespace DAO
             return data;
         }
 
-        public int DeleteAllAccount()
+        public int DeleteAllAccount(string username)
         {
-            string query = "update taikhoan set trangthai = 0";
+            string query = string.Format("update taikhoan set trangthai = 0 where tendangnhap !='{0}'",username);
             int data = DataProvider.ExecuteInsertCommand(query, null);
             return data;
         }

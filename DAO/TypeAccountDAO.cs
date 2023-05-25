@@ -121,9 +121,11 @@ namespace DAO
         }
         public bool checkExistDelete(string maloai)
         {
-            string query = string.Format("Select count(*) from TAIKHOAN where MALOAI={0}", maloai);
+            string query = string.Format("Select count(*) from taikhoan where loaitaikhoan='{0}'", maloai);
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
         }
+
+
     }
 }

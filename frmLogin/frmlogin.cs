@@ -20,11 +20,21 @@ namespace frmLogin
     public partial class frmlogin : Form
     {
         public static int Language = 0;
+        public static string username;
         public frmlogin()
         {
             InitializeComponent();
         }
 
+        public static string GetUsername()
+        {
+            return username;
+        }
+
+        public static void SetUsername(string value)
+        {
+            username = value;
+        }
 
         private void frmlogin_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -54,6 +64,7 @@ namespace frmLogin
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
+            SetUsername(txtUsername.Text);
             if (Language == 0)
             {
                 if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))

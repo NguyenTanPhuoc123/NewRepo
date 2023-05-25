@@ -232,3 +232,9 @@ D:\đồ án Win\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 D:\đồ án Win\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\đồ án Win\BUS\obj\Debug\BUS.dll
 D:\đồ án Win\BUS\obj\Debug\BUS.pdb
+D:\DOANWINFORM\BUS\bin\Debug\AForge.dll
+D:\DOANWINFORM\BUS\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOANWINFORM\BUS\bin\Debug\AForge.Video.dll
+D:\DOANWINFORM\BUS\bin\Debug\AForge.xml
+D:\DOANWINFORM\BUS\bin\Debug\AForge.Video.xml
+D:\DOANWINFORM\BUS\bin\Debug\AForge.Video.DirectShow.xml

@@ -199,3 +199,9 @@ D:\đồ án Win\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 D:\đồ án Win\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\đồ án Win\DAO\obj\Debug\DAO.dll
 D:\đồ án Win\DAO\obj\Debug\DAO.pdb
+D:\DOANWINFORM\DAO\bin\Debug\AForge.dll
+D:\DOANWINFORM\DAO\bin\Debug\AForge.Video.DirectShow.dll
+D:\DOANWINFORM\DAO\bin\Debug\AForge.Video.dll
+D:\DOANWINFORM\DAO\bin\Debug\AForge.xml
+D:\DOANWINFORM\DAO\bin\Debug\AForge.Video.xml
+D:\DOANWINFORM\DAO\bin\Debug\AForge.Video.DirectShow.xml

@@ -52,9 +52,9 @@ namespace BUS
             return AccountDAO.Instance.UpdatePassword(passwordNew, username);
         }
 
-        public int DeleteAllAccount()
+        public int DeleteAllAccount(string username)
         {
-            return AccountDAO.Instance.DeleteAllAccount();
+            return AccountDAO.Instance.DeleteAllAccount(username);
         }
 
         public int RestoreAllAccount()
