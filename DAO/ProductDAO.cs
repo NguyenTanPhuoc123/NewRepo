@@ -238,7 +238,7 @@ namespace DAO
             }
             return lst;
         }
-        //Lay ra ma san pham tu ten san pham
+
         public string ProductID(string ProductName)
         {
             string ID;
@@ -251,7 +251,7 @@ namespace DAO
             }
             return null;
         }
-        //Lay ra so luong san pham tu bang san pham
+
         public int ProductCount(string ProductName)
         {
             int ID;
@@ -264,7 +264,7 @@ namespace DAO
             }
             return 0;
         }
-        //Cap nhat so luong san pham khi them vao chi tiet hd
+
         public int UpdateProductCount(string ProductID, string count)
         {
             int data = 0;

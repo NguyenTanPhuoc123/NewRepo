@@ -44,7 +44,7 @@ namespace frmLogin
 
 
         #region Location Table Food
-        
+
         public void LoadLocationTable()
         {
             dtgvListLocation.DataSource = LocationBUS.Instance.GetListLocation();
@@ -81,7 +81,7 @@ namespace frmLogin
                     MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (LocationBUS.Instance.checkNameExist( txtLocationName.Text))
+                if (LocationBUS.Instance.checkNameExist(txtLocationName.Text))
                 {
                     int count = LocationBUS.Instance.AddLocationTable(txtLocationName.Text);
                     if (count > 0)
@@ -96,7 +96,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("ten vị trí da ton tai!", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tên vị trí đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadLocationTable();
             }
@@ -107,7 +107,7 @@ namespace frmLogin
                     MessageBox.Show("Please enter the name of the desk location you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (LocationBUS.Instance.checkNameExist( txtLocationName.Text))
+                if (LocationBUS.Instance.checkNameExist(txtLocationName.Text))
                 {
                     int count = LocationBUS.Instance.AddLocationTable(txtLocationName.Text);
                     if (count > 0)
@@ -122,7 +122,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("ten vị trí da ton tai!", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Location name already exists!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadLocationTable();
             }
@@ -153,7 +153,7 @@ namespace frmLogin
                         }
                     }
                     else
-                        MessageBox.Show("ten vị trí da ton tai!", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Tên vị trí đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadLocationTable();
                 }
             }
@@ -180,7 +180,7 @@ namespace frmLogin
                         }
                     }
                     else
-                        MessageBox.Show("ten vị trí da ton tai!", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Location name already exists!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadLocationTable();
                 }
             }
@@ -192,16 +192,23 @@ namespace frmLogin
             {
                 if (MessageBox.Show("Bạn chắc chắn muốn xóa vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
-                    if (count > 0)
+                    if (LocationBUS.Instance.checkExistDelete(txtLocationID.Text))
                     {
-                        MessageBox.Show("Xóa vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
 
-                    else
-                    {
-                        MessageBox.Show("Xóa vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                        int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
+                        else
+                        {
+                            MessageBox.Show("Xóa vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
+                    else
+                        MessageBox.Show("Vị trí bàn đã có trong bàn ăn không thể xóa!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadLocationTable();
                 }
             }
@@ -210,16 +217,21 @@ namespace frmLogin
 
                 if (MessageBox.Show("You definitely want to delete this location?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
-                    if (count > 0)
-                    {
-                        MessageBox.Show("Delete the table position successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
 
-                    else
+                    if (LocationBUS.Instance.checkExistDelete(txtLocationID.Text))
                     {
-                        MessageBox.Show("Delete the table position successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete the table position successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Delete the table position successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
+                    else
+                        MessageBox.Show("The table position already in the dining table cannot be deleted!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadLocationTable();
                 }
             }
@@ -231,16 +243,22 @@ namespace frmLogin
             {
                 if (MessageBox.Show("Bạn chắc chắn muốn xóa tất cả vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    int count = LocationBUS.Instance.DeleteAllLocationTable();
-                    if (count > 0)
-                    {
-                        MessageBox.Show("Xóa tất cả vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
 
-                    else
+                    if (LocationBUS.Instance.checkExistDelete(txtLocationID.Text))
                     {
-                        MessageBox.Show("Xóa tất cả vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        int count = LocationBUS.Instance.DeleteAllLocationTable();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa tất cả vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
+                        else
+                        {
+                            MessageBox.Show("Xóa tất cả vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
+                    else
+                        MessageBox.Show("Vị trí bàn đã có trong bàn ăn không thể xóa!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadLocationTable();
                 }
             }
@@ -248,16 +266,21 @@ namespace frmLogin
             {
                 if (MessageBox.Show("You definitely want to delete all these locations?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    int count = LocationBUS.Instance.DeleteAllLocationTable();
-                    if (count > 0)
+                    if (MessageBox.Show("Bạn chắc chắn muốn xóa tất cả vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                     {
-                        MessageBox.Show("You definitely want to delete all these locations", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                        int count = LocationBUS.Instance.DeleteAllLocationTable();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("You definitely want to delete all these locations", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
 
-                    else
-                    {
-                        MessageBox.Show("Delete all failed table positions!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        else
+                        {
+                            MessageBox.Show("Delete all failed table positions!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
+                    else
+                        MessageBox.Show("The table position already in the dining table cannot be deleted!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadLocationTable();
                 }
             }
@@ -328,7 +351,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten loai san pham da co", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tên loại sản phẩm đã có", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadTypeProduct();
             }
@@ -339,7 +362,7 @@ namespace frmLogin
                     MessageBox.Show("You have not entered the product type name", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (CategoryFoodBUS.Instance.checkNameExist( txtTypeProductName.Text))
+                if (CategoryFoodBUS.Instance.checkNameExist(txtTypeProductName.Text))
                 {
                     int count = CategoryFoodBUS.Instance.AddCategoryFood(txtTypeProductName.Text);
                     if (count > 0)
@@ -352,7 +375,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten loai san pham da co", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Product type name already available", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadTypeProduct();
             }
@@ -369,6 +392,12 @@ namespace frmLogin
                 }
                 if (DialogResult.Yes == MessageBox.Show("Bạn có muốn sửa loại sản phẩm", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
+
+                    if (string.IsNullOrEmpty(txtTypeProductID.Text.Trim()))
+                    {
+                        MessageBox.Show("Vui lòng nhập tên loại muốn sửa vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                     if (CategoryFoodBUS.Instance.checkNameExist(txtTypeProductName.Text))
                     {
                         int count = CategoryFoodBUS.Instance.UpdateCategoryFood(txtTypeProductID.Text, txtTypeProductName.Text);
@@ -381,7 +410,7 @@ namespace frmLogin
                             MessageBox.Show("Sửa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Ten loai san pham da co", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Tên loại sản phẩm đã có", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadTypeProduct();
                 }
             }
@@ -395,19 +424,30 @@ namespace frmLogin
                 }
                 if (DialogResult.Yes == MessageBox.Show("Do you want to edit the product type", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    int count = CategoryFoodBUS.Instance.UpdateCategoryFood(txtTypeProductID.Text, txtTypeProductName.Text);
-                    if (count > 0)
+                    if (string.IsNullOrEmpty(txtTypeProductID.Text.Trim()))
                     {
-                        MessageBox.Show("Successful fix", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        reset();
+                        MessageBox.Show("Please enter the name of the type you want to edit!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    if (CategoryFoodBUS.Instance.checkNameExist(txtTypeProductName.Text))
+                    {
+                        int count = CategoryFoodBUS.Instance.UpdateCategoryFood(txtTypeProductID.Text, txtTypeProductName.Text);
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Successful fix", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            reset();
+                        }
+                        else
+                            MessageBox.Show("Fix failure", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Fix failure", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Product type name already available", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                     LoadTypeProduct();
                 }
             }
         }
-        
+
 
         private void btnDeleteTypeProduct_Click(object sender, EventArgs e)
         {
@@ -420,14 +460,19 @@ namespace frmLogin
                 }
                 if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa loại sản phẩm", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    int count = CategoryFoodBUS.Instance.DeleteCategoryFood(txtTypeProductID.Text);
-                    if (count > 0)
+                    if (CategoryFoodBUS.Instance.checkExistDelete(txtTypeProductID.Text))
                     {
-                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK);
-                        reset();
+                        int count = CategoryFoodBUS.Instance.DeleteCategoryFood(txtTypeProductID.Text);
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK);
+                            reset();
+                        }
+                        else
+                            MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Xóa thất bại loại sản phẩm đã có trong sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadTypeProduct();
                 }
             }
@@ -440,14 +485,19 @@ namespace frmLogin
                 }
                 if (DialogResult.Yes == MessageBox.Show("Do you want to delete the product type", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    int count = CategoryFoodBUS.Instance.DeleteCategoryFood(txtTypeProductID.Text);
-                    if (count > 0)
+                    if (CategoryFoodBUS.Instance.checkExistDelete(txtTypeProductID.Text))
                     {
-                        MessageBox.Show("Delete successfully", "Notification", MessageBoxButtons.OK);
-                        reset();
+                        int count = CategoryFoodBUS.Instance.DeleteCategoryFood(txtTypeProductID.Text);
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete successfully", "Notification", MessageBoxButtons.OK);
+                            reset();
+                        }
+                        else
+                            MessageBox.Show("Delete failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Delete failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Failed to delete product type already in product", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadTypeProduct();
                 }
             }
@@ -458,14 +508,19 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa tất cả loại sản phẩm", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    int count = CategoryFoodBUS.Instance.DeleteAllCategoryFood();
-                    if (count > 0)
+                    if (CategoryFoodBUS.Instance.checkExistDelete(txtTypeProductID.Text))
                     {
-                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        reset();
+                        int count = CategoryFoodBUS.Instance.DeleteAllCategoryFood();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            reset();
+                        }
+                        else
+                            MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Xóa thất bại loại sản phẩm đã có trong sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadTypeProduct();
                 }
             }
@@ -473,14 +528,19 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("Do you want to delete all product categories?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    int count = CategoryFoodBUS.Instance.DeleteAllCategoryFood();
-                    if (count > 0)
+                    if (CategoryFoodBUS.Instance.checkExistDelete(txtTypeProductID.Text))
                     {
-                        MessageBox.Show("Delete successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        reset();
+                        int count = CategoryFoodBUS.Instance.DeleteAllCategoryFood();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            reset();
+                        }
+                        else
+                            MessageBox.Show("Delete failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Delete failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Failed to delete product type already in product", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     LoadTypeProduct();
                 }
             }
@@ -505,7 +565,7 @@ namespace frmLogin
                     MessageBox.Show("Vui lòng nhập tên chức vụ muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (PositionBUS.Instance.checkNameExist( txtPositionName.Text))
+                if (PositionBUS.Instance.checkNameExist(txtPositionName.Text))
                 {
                     int count = PositionBUS.Instance.AddPosition(txtPositionName.Text);
                     if (count > 0)
@@ -519,7 +579,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten chức vụ da ton tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tên chức vụ đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadPosition();
             }
@@ -527,10 +587,10 @@ namespace frmLogin
             {
                 if (string.IsNullOrEmpty(txtPositionName.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập tên chức vụ muốn thêm vào!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please enter the name of the position you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (PositionBUS.Instance.checkNameExist( txtPositionName.Text))
+                if (PositionBUS.Instance.checkNameExist(txtPositionName.Text))
                 {
                     int count = PositionBUS.Instance.AddPosition(txtPositionName.Text);
                     if (count > 0)
@@ -544,7 +604,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten chức vụ da ton tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Job title already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadPosition();
             }
@@ -560,6 +620,11 @@ namespace frmLogin
         {
             if (Language == 0)
             {
+                if (string.IsNullOrEmpty(txtPositionName.Text.Trim()))
+                {
+                    MessageBox.Show("Vui lòng nhập tên chức vụ muốn sửa vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 if (PositionBUS.Instance.checkNameExist(txtPositionName.Text))
                 {
                     int count = PositionBUS.Instance.UpdatePosition(int.Parse(txtPositionID.Text), txtPositionName.Text);
@@ -574,13 +639,17 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten chức vụ da ton tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tên chức vụ đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadPosition();
             }
             else
             {
-
+                if (string.IsNullOrEmpty(txtPositionName.Text.Trim()))
+                {
+                    MessageBox.Show("Please enter the name of the position you want to edit!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 if (PositionBUS.Instance.checkNameExist(txtPositionName.Text))
                 {
                     int count = PositionBUS.Instance.UpdatePosition(int.Parse(txtPositionID.Text), txtPositionName.Text);
@@ -595,7 +664,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten chức vụ da ton tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Job title already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadPosition();
             }
@@ -616,14 +685,21 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa chức vụ này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = PositionBUS.Instance.DeletePosition(int.Parse(txtPositionID.Text));
-                    if (count > 0)
+                    if (PositionBUS.Instance.checkExistDelete(txtPositionID.Text))
                     {
-                        MessageBox.Show("Xóa chức vụ thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = PositionBUS.Instance.DeletePosition(int.Parse(txtPositionID.Text));
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa chức vụ thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa chức vụ thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Xóa chức vụ thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Chức vụ tồn tại trong nhân viên không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 LoadPosition();
@@ -632,14 +708,21 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("You definitely want to delete this position", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = PositionBUS.Instance.DeletePosition(int.Parse(txtPositionID.Text));
-                    if (count > 0)
+                    if (PositionBUS.Instance.checkExistDelete(txtPositionID.Text))
                     {
-                        MessageBox.Show("Delete position successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = PositionBUS.Instance.DeletePosition(int.Parse(txtPositionID.Text));
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete position successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Delete position successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Delete position successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("The position that exists in the employee cannot be deleted", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 LoadPosition();
@@ -652,15 +735,23 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả chức vụ này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = PositionBUS.Instance.DeleteAllPosition();
-                    if (count > 0)
+                    if (PositionBUS.Instance.checkExistDelete(txtPositionID.Text))
                     {
-                        MessageBox.Show("Xóa tất cả chức vụ thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = PositionBUS.Instance.DeleteAllPosition();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa tất cả chức vụ thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa tất cả chức vụ thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tất cả chức vụ thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Chức vụ tồn tại trong nhân viên không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
+
                 }
                 LoadPosition();
             }
@@ -668,14 +759,21 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("You definitely want to delete all these positions", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = PositionBUS.Instance.DeleteAllPosition();
-                    if (count > 0)
+                    if (PositionBUS.Instance.checkExistDelete(txtPositionID.Text))
                     {
-                        MessageBox.Show("Delete all positions successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = PositionBUS.Instance.DeleteAllPosition();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete all positions successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Delete all failed positions", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Delete all failed positions", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("The position that exists in the employee cannot be deleted", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -729,7 +827,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten loại tài khoản da to tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tên loại tài khoản đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadTypeAccount();
             }
@@ -740,7 +838,7 @@ namespace frmLogin
                     MessageBox.Show("Please enter the name of the account type you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (TypeAccountBUS.Instance.checkNameExist( txtTypeAccountName.Text))
+                if (TypeAccountBUS.Instance.checkNameExist(txtTypeAccountName.Text))
                 {
                     int count = TypeAccountBUS.Instance.AddTypeAccount(txtTypeAccountName.Text);
                     if (count > 0)
@@ -754,7 +852,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten loại tài khoản da to tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Name type account already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadTypeAccount();
             }
@@ -764,27 +862,52 @@ namespace frmLogin
         {
             if (Language == 0)
             {
-                int count = TypeAccountBUS.Instance.UpdateTypeAccount(int.Parse(txtTypeAccountID.Text), txtTypeAccountName.Text);
-                if (count > 0)
+                if (string.IsNullOrEmpty(txtTypeAccountName.Text.Trim()))
                 {
-                    MessageBox.Show("Sửa loại tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Vui lòng nhập tên loại tài khoản muốn sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (TypeAccountBUS.Instance.checkNameExist(txtTypeAccountName.Text))
+                {
+                    int count = TypeAccountBUS.Instance.UpdateTypeAccount(int.Parse(txtTypeAccountID.Text), txtTypeAccountName.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Sửa loại tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa loại tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Sửa loại tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tên loại tài khoản đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadTypeAccount();
             }
             else
             {
-                int count = TypeAccountBUS.Instance.UpdateTypeAccount(int.Parse(txtTypeAccountID.Text), txtTypeAccountName.Text);
-                if (count > 0)
+
+                if (string.IsNullOrEmpty(txtTypeAccountName.Text.Trim()))
                 {
-                    MessageBox.Show("Account Type Correction Successful", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Please enter the name of the account type you want to edit!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (TypeAccountBUS.Instance.checkNameExist(txtTypeAccountName.Text))
+                {
+                    int count = TypeAccountBUS.Instance.UpdateTypeAccount(int.Parse(txtTypeAccountID.Text), txtTypeAccountName.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Account Type Correction Successful", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Fix failed account type", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Fix failed account type", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Name type account already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 LoadTypeAccount();
             }
@@ -794,32 +917,48 @@ namespace frmLogin
         {
             if (Language == 0)
             {
+
                 if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa loại tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = TypeAccountBUS.Instance.DeleteTypeAccount(int.Parse(txtTypeAccountID.Text));
-                    if (count > 0)
+                    if (TypeAccountBUS.Instance.checkExistDelete(txtTypeAccountID.Text))
                     {
-                        MessageBox.Show("Xóa loại tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = TypeAccountBUS.Instance.DeleteTypeAccount(int.Parse(txtTypeAccountID.Text));
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa loại tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa loại tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Xóa loại tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Xóa loại tài khoản thất bại loại tài khoản đã tồn tại trong tài khoản", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
+                    LoadTypeAccount();
                 }
-                LoadTypeAccount();
+
             }
             else
             {
                 if (DialogResult.Yes == MessageBox.Show("You definitely want to delete this account type", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = TypeAccountBUS.Instance.DeleteTypeAccount(int.Parse(txtTypeAccountID.Text));
-                    if (count > 0)
+                    if (TypeAccountBUS.Instance.checkExistDelete(txtTypeAccountID.Text))
                     {
-                        MessageBox.Show("Delete Account Type Successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = TypeAccountBUS.Instance.DeleteTypeAccount(int.Parse(txtTypeAccountID.Text));
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete Account Type Successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Delete account type failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Delete account type failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Deleting the account type failed the account type already exists in the account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 LoadTypeAccount();
@@ -832,14 +971,21 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả loại tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = TypeAccountBUS.Instance.DeleteAllTypeAccount();
-                    if (count > 0)
+                    if (TypeAccountBUS.Instance.checkExistDelete(txtTypeAccountID.Text))
                     {
-                        MessageBox.Show("Xóa tất cả loại tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = TypeAccountBUS.Instance.DeleteAllTypeAccount();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa tất cả loại tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa tất cả loại tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tất cả loại tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Xóa loại tài khoản thất bại loại tài khoản đã tồn tại trong tài khoản", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 LoadTypeAccount();
@@ -848,14 +994,22 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("You definitely want to delete all these types of accounts", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    int count = TypeAccountBUS.Instance.DeleteAllTypeAccount();
-                    if (count > 0)
+                    if (TypeAccountBUS.Instance.checkExistDelete(txtTypeAccountID.Text))
                     {
-                        MessageBox.Show("Delete all account types successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int count = TypeAccountBUS.Instance.DeleteAllTypeAccount();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Delete all account types successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+
+                            MessageBox.Show("Delete all account types failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Delete all account types failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Deleting the account type failed the account type already exists in the account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 LoadTypeAccount();
@@ -876,11 +1030,11 @@ namespace frmLogin
 
         #region Discount
 
-       public void LoadListDiscount()
+        public void LoadListDiscount()
         {
             dtgvListDiscount.DataSource = DiscountBUS.Instance.GetListDiscount();
             ResetDiscountInfo();
-            
+
         }
 
         public void ResetDiscountInfo()
@@ -895,7 +1049,7 @@ namespace frmLogin
             btnSaveDiscount.Enabled = false;
             btnEditDiscount.Enabled = true;
             btnDeleteDiscount.Enabled = true;
-            btnDeleteAllDiscount.Enabled = true;            
+            btnDeleteAllDiscount.Enabled = true;
         }
 
         private void btnAddDiscount_Click(object sender, EventArgs e)
@@ -905,7 +1059,7 @@ namespace frmLogin
             btnEditDiscount.Enabled = false;
             btnDeleteDiscount.Enabled = false;
             btnDeleteAllDiscount.Enabled = false;
-            
+
         }
 
         private void dtgvListDiscount_SelectionChanged(object sender, EventArgs e)
@@ -920,7 +1074,7 @@ namespace frmLogin
                 bool available = bool.Parse(dtgvListDiscount.SelectedRows[0].Cells[5].Value.ToString());
                 cbAvailableDiscount.SelectedIndex = available == true ? 0 : 1;
                 txtLimitDiscount.Text = dtgvListDiscount.SelectedRows[0].Cells[6].Value.ToString();
-                
+
                 btnSaveDiscount.Enabled = false;
                 btnEditDiscount.Enabled = true;
                 btnDeleteDiscount.Enabled = true;
@@ -956,7 +1110,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten giảm giá da ton tai", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tên giảm giá đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -972,7 +1126,7 @@ namespace frmLogin
                 string startDay = dtpDateStart.Value.ToString("yyyy/MM/dd");
                 string endDay = dtpDateEnd.Value.ToString("yyyy/MM/dd");
                 float limitDiscount = txtLimitDiscount.Text == null ? 0 : float.Parse(txtLimitDiscount.Text);
-                if (DiscountBUS.Instance.checkNameExist( txtDiscountName.Text))
+                if (DiscountBUS.Instance.checkNameExist(txtDiscountName.Text))
                 {
                     int count = DiscountBUS.Instance.AddNewDiscount(discountName, startDay, endDay, discountPrice, limitDiscount);
                     if (count > 0)
@@ -985,7 +1139,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Ten giảm giá da ton tai", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Discount name already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -1022,7 +1176,7 @@ namespace frmLogin
                             MessageBox.Show("Sửa giảm giá thất bại", "Sửa giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Ten giảm giá da ton tai", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Tên giảm giá đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -1055,7 +1209,7 @@ namespace frmLogin
                             MessageBox.Show("Failed to fix discount", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Ten giảm giá da ton tai", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Discount name already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 
@@ -1073,7 +1227,7 @@ namespace frmLogin
                     int count = DiscountBUS.Instance.DeleteDiscount(discountID);
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa giảm giá thành công", "Xóa giảm giá", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show("Xóa giảm giá thành công", "Xóa giảm giá", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LoadListDiscount();
                     }
                     else
@@ -1090,7 +1244,7 @@ namespace frmLogin
                     int count = DiscountBUS.Instance.DeleteDiscount(discountID);
                     if (count > 0)
                     {
-                        MessageBox.Show("Delete discount successfully", "Notification", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show("Delete discount successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LoadListDiscount();
                     }
                     else
@@ -1124,7 +1278,7 @@ namespace frmLogin
                     int count = DiscountBUS.Instance.DeleteAllDiscount();
                     if (count > 0)
                     {
-                        MessageBox.Show("Remove all successful discounts", "Notification", MessageBoxButtons.OK);
+                        MessageBox.Show("Delete all successful discounts", "Notification", MessageBoxButtons.OK);
                         LoadListDiscount();
                     }
                     else

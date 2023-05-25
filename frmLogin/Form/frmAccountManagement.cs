@@ -63,27 +63,27 @@ namespace frmLogin
                     int count = AccountBUS.Instance.DeleteAllAccount();
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa tất cả thành công");
+                        MessageBox.Show("Xóa tất cả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tất cả thất bại");
+                        MessageBox.Show("Xóa tất cả thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 frmAccountManagement_Load(sender, e);
             }
             else
             {
-                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
+                if (DialogResult.Yes == MessageBox.Show("You definitely want to delete all accounts?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
                 {
                     int count = AccountBUS.Instance.DeleteAllAccount();
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa tất cả thành công");
+                        MessageBox.Show("Delete all successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tất cả thất bại");
+                        MessageBox.Show("Delete all failures", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 frmAccountManagement_Load(sender, e);
@@ -113,26 +113,26 @@ namespace frmLogin
                     int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa tài khoản thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show("Xóa tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tài khoản thất bại","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                        MessageBox.Show("Xóa tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
             else
             {
-                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                if (DialogResult.Yes == MessageBox.Show("You definitely want to delete this account", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
                     int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa tài khoản thành công", "Notification" ,MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Delete all successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tài khoản thất bại", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Delete all failures", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -159,11 +159,11 @@ namespace frmLogin
                 int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
                 if (count > 0)
                 {
-                    MessageBox.Show("Sửa tài khoản thành công", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Account Edited Successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Sửa tài khoản thất bại", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Repair failed account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 frmAccountManagement_Load(sender, e);
             }
@@ -212,7 +212,7 @@ namespace frmLogin
             {
                 if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please enter full information", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckExistEmployee(Convert.ToInt32(cbEmloyee.SelectedValue.ToString())))
@@ -220,17 +220,17 @@ namespace frmLogin
                     int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
                     if (count > 0)
                     {
-                        MessageBox.Show("Thêm tài khoản thành công", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Successfully added account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Thêm tài khoản thất bại", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Adding account failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmAccountManagement_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Tạo tài khoản không hợp lệ", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Invalid account creationInvalid account creation", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }

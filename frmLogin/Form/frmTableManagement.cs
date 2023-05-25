@@ -28,7 +28,7 @@ namespace frmLogin
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
-            
+
         }
 
         #region Method
@@ -37,7 +37,7 @@ namespace frmLogin
             cbFillTable.Items.Clear();
             cbFillTable.Items.Add("Tất cả");
             List<Location> listLocation = LocationBUS.Instance.GetListLocation();
-            foreach(Location location in listLocation)
+            foreach (Location location in listLocation)
             {
                 cbFillTable.Items.Add(location.TenViTri);
             }
@@ -123,7 +123,7 @@ namespace frmLogin
                     }
                     else
                     {
-                        MessageBox.Show("Ten ban da ton tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Tên bàn ăn đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 catch (Exception ex)
@@ -152,7 +152,7 @@ namespace frmLogin
                     }
                     else
                     {
-                        MessageBox.Show("Ten ban da ton tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("The name of the table already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 catch (Exception ex)
@@ -160,7 +160,7 @@ namespace frmLogin
                     MessageBox.Show(ex.Message);
                 }
                 frmTableManagement_Load(sender, e);
-            }    
+            }
         }
 
         private void btnEditTable_Click(object sender, EventArgs e)
@@ -185,11 +185,11 @@ namespace frmLogin
                             if (count > 0)
                                 MessageBox.Show("Sửa bàn ăn thành công ", "Thông báo", MessageBoxButtons.OK);
                             else
-                                MessageBox.Show("Sửa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK);
+                                MessageBox.Show("Sửa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
-                            MessageBox.Show("Ten ban da ton tai", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Tên bàn đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     catch (Exception ex)
@@ -212,12 +212,21 @@ namespace frmLogin
 
                     try
                     {
-                        int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 
-                        if (count > 0)
-                            MessageBox.Show("Successfully repaired the dining table", "Notification", MessageBoxButtons.OK);
+                        if (TableBUS.Instance.checkTableExist(txtTableName.Text))
+                        {
+                            int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
+
+                            if (count > 0)
+                                MessageBox.Show("Successfully repaired the dining table", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            else
+                                MessageBox.Show("Fixing the dining table failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                         else
-                            MessageBox.Show("Fixing the dining table failed", "Notification", MessageBoxButtons.OK);
+                        {
+                            MessageBox.Show("The name of the table already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+
                     }
                     catch (Exception ex)
                     {
@@ -234,19 +243,18 @@ namespace frmLogin
             {
                 if (MessageBox.Show("Bạn muốn xóa bàn này chứ ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    try
+                    if (TableBUS.Instance.checkExistDelete(txtTableID.Text))
                     {
                         int count = TableBUS.Instance.DeleteTable(int.Parse(txtTableID.Text));
 
                         if (count > 0)
-                            MessageBox.Show("Xóa bàn ăn thành công ", "Thông báo", MessageBoxButtons.OK);
+                            MessageBox.Show("Xóa bàn ăn thành công ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Xóa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK);
+                            MessageBox.Show("Xóa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    else
+                        MessageBox.Show("Xóa bàn ăn thất bại ,ban ăn hiện tại đang có khách", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                     frmTableManagement_Load(sender, e);
                 }
             }
@@ -257,12 +265,17 @@ namespace frmLogin
                 {
                     try
                     {
-                        int count = TableBUS.Instance.DeleteTable(int.Parse(txtTableID.Text));
+                        if (TableBUS.Instance.checkExistDelete(txtTableID.Text))
+                        {
+                            int count = TableBUS.Instance.DeleteTable(int.Parse(txtTableID.Text));
 
-                        if (count > 0)
-                            MessageBox.Show("Delete the dining table successfully", "Notification", MessageBoxButtons.OK);
+                            if (count > 0)
+                                MessageBox.Show("Delete the dining table successfully", "Notification", MessageBoxButtons.OK);
+                            else
+                                MessageBox.Show("Delete the dining table failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                         else
-                            MessageBox.Show("Delete the dining table failed", "Notification", MessageBoxButtons.OK);
+                            MessageBox.Show("Delete the dining table failed, the dining table is currently having guests", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     catch (Exception ex)
                     {
@@ -270,7 +283,7 @@ namespace frmLogin
                     }
                     frmTableManagement_Load(sender, e);
                 }
-            }    
+            }
         }
 
         private void btnDeleteAllTable_Click(object sender, EventArgs e)
@@ -281,12 +294,17 @@ namespace frmLogin
                 {
                     try
                     {
-                        int count = TableBUS.Instance.DeleteAllTable();
+                        if (TableBUS.Instance.checkExistDelete(txtTableID.Text))
+                        {
+                            int count = TableBUS.Instance.DeleteAllTable();
 
-                        if (count > 0)
-                            MessageBox.Show("Xóa bàn ăn thành công ", "Thông báo", MessageBoxButtons.OK);
+                            if (count > 0)
+                                MessageBox.Show("Xóa bàn ăn thành công ", "Thông báo", MessageBoxButtons.OK);
+                            else
+                                MessageBox.Show("Xóa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                         else
-                            MessageBox.Show("Xóa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK);
+                            MessageBox.Show("Xóa bàn ăn thất bại ,ban ăn hiện tại đang có khách", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     catch (Exception ex)
                     {
@@ -301,12 +319,17 @@ namespace frmLogin
                 {
                     try
                     {
-                        int count = TableBUS.Instance.DeleteAllTable();
+                        if (TableBUS.Instance.checkExistDelete(txtTableID.Text))
+                        {
+                            int count = TableBUS.Instance.DeleteAllTable();
 
-                        if (count > 0)
-                            MessageBox.Show("Delete the dining table successfully", "Notification", MessageBoxButtons.OK);
+                            if (count > 0)
+                                MessageBox.Show("Delete the dining table successfully", "Notification", MessageBoxButtons.OK);
+                            else
+                                MessageBox.Show("Delete the dining table failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                         else
-                            MessageBox.Show("Delete the dining table failed", "Notification", MessageBoxButtons.OK);
+                            MessageBox.Show("Delete the dining table failed, the dining table is currently having guests", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     catch (Exception ex)
                     {
@@ -348,7 +371,7 @@ namespace frmLogin
         {
             if (cbFillTable.SelectedIndex == 0 && cbSortTable.SelectedIndex == 0)
             {
-                dtgvListTable.DataSource = TableMenuBUS.Instance.GetListTableMenu(); 
+                dtgvListTable.DataSource = TableMenuBUS.Instance.GetListTableMenu();
             }
 
             else if (cbFillTable.SelectedIndex == 0 && cbSortTable.SelectedIndex != 0)

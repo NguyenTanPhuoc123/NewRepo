@@ -137,5 +137,11 @@ namespace DAO
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
         }
+        public bool checkExistDelete(string CategoryID)
+        {
+            string query = string.Format("Select count(*) from SANPHAM where DANHMUC={0}", CategoryID);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data > 0 ? false : true;
+        }
     }
 }

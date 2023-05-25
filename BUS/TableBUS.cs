@@ -87,5 +87,9 @@ namespace BUS
         {
             return TableDAO.Instance.checkTableExist(tenban);
         }
+        public bool checkExistDelete(string TableID)
+        {
+            return TableDAO.Instance.checkExistDelete(TableID);
+        }
     }
 }

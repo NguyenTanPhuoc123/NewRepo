@@ -65,5 +65,9 @@ namespace BUS
         {
             return CategoryFoodDAO.Instance.checkNameExist(CategoryName);
         }
+        public bool checkExistDelete(string CategoryID)
+        {
+            return CategoryFoodDAO.Instance.checkExistDelete(CategoryID);
+        }
     }
 }

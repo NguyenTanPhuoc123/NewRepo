@@ -128,5 +128,11 @@ namespace DAO
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
         }
+        public bool checkExistDelete(string id)
+        {
+            string query = string.Format("Select count(*) from BANAN where VITRI={0}", id);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data > 0 ? false : true;
+        }
     }
 }

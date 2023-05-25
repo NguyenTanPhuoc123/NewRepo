@@ -164,5 +164,11 @@ namespace DAO
             int data = DataProvider.ExecuteScalarCommand(sql, null);
             return data > 0 ? false : true;
         }
+        public bool checkExistDelete(string TableID)
+        {
+            string sql = string.Format("Select count(*) from BanAn where MABANAN ={0} And TRANGTHAI =N'Có người'", TableID);
+            int data = DataProvider.ExecuteScalarCommand(sql, null);
+            return data > 0 ? false : true;
+        }
     }
 }

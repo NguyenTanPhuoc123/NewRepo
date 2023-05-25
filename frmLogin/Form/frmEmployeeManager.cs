@@ -89,7 +89,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi");
+                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -110,7 +110,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Your phone number is up to 10 numbers and the phone numbers cannot be the same or you are under 18 years old");
+                    MessageBox.Show("Your phone number is up to 10 numbers and the phone numbers cannot be the same or you are under 18 years old", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 
@@ -137,7 +137,7 @@ namespace frmLogin
                     }
                     else
                     {
-                        MessageBox.Show("Tài khoản của nhân viên vẫn còn tồn tại");
+                        MessageBox.Show("Tài khoản của nhân viên vẫn còn tồn tại", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -160,7 +160,7 @@ namespace frmLogin
                     }
                     else
                     {
-                        MessageBox.Show("Employee's account still exists");
+                        MessageBox.Show("Employee's account still exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -216,7 +216,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi");
+                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -242,7 +242,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Your phone number is up to 10 numbers and the phone numbers cannot be the same or you are under 18 years old");
+                    MessageBox.Show("Your phone number is up to 10 numbers and the phone numbers cannot be the same or you are under 18 years old", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -267,7 +267,7 @@ namespace frmLogin
                     }
                     else
                     {
-                        MessageBox.Show("Bạn không thể thực hiện chức năng khi chưa xóa tài khoản");
+                        MessageBox.Show("Bạn không thể thực hiện chức năng khi chưa xóa tài khoản", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
 
                 }
@@ -291,7 +291,7 @@ namespace frmLogin
                     }
                     else
                     {
-                        MessageBox.Show("You cannot perform the function without deleting the account");
+                        MessageBox.Show("You cannot perform the function without deleting the account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
 
                 }
