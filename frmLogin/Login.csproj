@@ -156,6 +156,12 @@
     <Compile Include="Form\frmOutputBill.Designer.cs">
       <DependentUpon>frmOutputBill.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProductReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductReport.Designer.cs">
+      <DependentUpon>frmProductReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLyAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,11 +198,11 @@
     <Compile Include="Form\frmTableManagement.Designer.cs">
       <DependentUpon>frmTableManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmStoreReport.cs">
+    <Compile Include="Form\frmEmployeeReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmStoreReport.Designer.cs">
-      <DependentUpon>frmStoreReport.cs</DependentUpon>
+    <Compile Include="Form\frmEmployeeReport.Designer.cs">
+      <DependentUpon>frmEmployeeReport.cs</DependentUpon>
     </Compile>
     <Compile Include="OutputBill.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -339,6 +345,12 @@
     <EmbeddedResource Include="frmlogin.vi.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmProductReport.resx">
+      <DependentUpon>frmProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyAdmin.en-AS.resx">
+      <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyAdmin.en.resx">
       <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -366,9 +378,10 @@
     <EmbeddedResource Include="frmSellManagement.vi.resx">
       <DependentUpon>frmSellManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmStoreReport.resx">
-      <DependentUpon>frmStoreReport.cs</DependentUpon>
+    <EmbeddedResource Include="Form\frmEmployeeReport.resx">
+      <DependentUpon>frmEmployeeReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductReport.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -406,10 +419,13 @@
     <None Include="Properties\DataSources\DTO.Discount.datasource" />
     <None Include="Properties\DataSources\DTO.Employee.datasource" />
     <None Include="Properties\DataSources\DTO.EmployeeMenu.datasource" />
+    <None Include="Properties\DataSources\DTO.Infomation.datasource" />
     <None Include="Properties\DataSources\DTO.Location.datasource" />
     <None Include="Properties\DataSources\DTO.MenuDish.datasource" />
     <None Include="Properties\DataSources\DTO.Position.datasource" />
     <None Include="Properties\DataSources\DTO.Product.datasource" />
+    <None Include="Properties\DataSources\DTO.StatisticalBill.datasource" />
+    <None Include="Properties\DataSources\DTO.StatisticalProduct.datasource" />
     <None Include="Properties\DataSources\DTO.Table.datasource" />
     <None Include="Properties\DataSources\DTO.TableMenu.datasource" />
     <None Include="Properties\DataSources\DTO.TypeAccount.datasource" />

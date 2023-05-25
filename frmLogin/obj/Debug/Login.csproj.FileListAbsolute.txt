@@ -1170,7 +1170,6 @@ D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.resources
 D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmSelectDish.resources
 D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.resources
 D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmSellManagement.resources
-D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmStoreReport.resources
 D:\đồ án Win\frmLogin\obj\Debug\frmLogin.Properties.Resources.resources
 D:\đồ án Win\frmLogin\obj\Debug\frmLogin.Usercontrol.resources
 D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmAccountManagement.en.resources
@@ -1263,3 +1262,11 @@ D:\DOAN\frmLogin\obj\Debug\dje-NE\frmLogin.resources.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\bin\Debug\vai\frmLogin.resources.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSellManagement.vai.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\vai\frmLogin.resources.dll
+D:\đồ án Win\frmLogin\bin\Debug\vai\frmLogin.resources.dll
+D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmSellManagement.vai.resources
+D:\đồ án Win\frmLogin\obj\Debug\vai\frmLogin.resources.dll
+D:\đồ án Win\frmLogin\bin\Debug\en-AS\frmLogin.resources.dll
+D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.en-AS.resources
+D:\đồ án Win\frmLogin\obj\Debug\en-AS\frmLogin.resources.dll
+D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmProductReport.resources
+D:\đồ án Win\frmLogin\obj\Debug\frmLogin.frmEmployeeReport.resources

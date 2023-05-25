@@ -15,9 +15,10 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace frmLogin
 {   
-
+    
     public partial class frmQuanLyAdmin : Form
     {
+        Infomation info = new Infomation();
         private int Language = frmlogin.Language;
         private Button currentButton;
         private Form activeForm;
@@ -30,7 +31,8 @@ namespace frmLogin
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
-            cbTypeStatisticalBill.SelectedIndex = 0;
+            cbTypeStatisticalBill.SelectedIndex = info.firstIndex;
+            cbFillProduct.SelectedIndex = info.firstIndex;
             frm = frmSell;
         }
 
@@ -152,9 +154,6 @@ namespace frmLogin
             
         }
 
-
-   
-
         private void btnTableManagement_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmTableManagement(), sender);
@@ -169,37 +168,48 @@ namespace frmLogin
             ActiveButton(sender);
         }
 
+        public Employee GetEmployeeByID()
+        {
+            return EmployeeBUS.Instance.GetEmployeeByEmployeeID(frm.LoginAccount.EmployeeID);
+        }
+
         private void frmQuanLyAdmin_Load(object sender, EventArgs e)
+        {
+            LoadEmloyeeCreateBill();
+            LoadProduct();
+        }
+        #region Employee
+        public void LoadEmloyeeCreateBill()
         {
             string startDay = DateTime.Now.ToString("yyyy/MM/dd");
             string endDay = DateTime.Now.ToString("yyyy/MM/dd");
             chartEmployeeCreateBill.DataSource = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMaxByDate(startDay, endDay);
-            chartEmployeeCreateBill.Series["CountBill"].XValueMember = "EmployeeName";
-            chartEmployeeCreateBill.Series["CountBill"].XValueType = ChartValueType.String;
-            chartEmployeeCreateBill.Series["CountBill"].YValueMembers = "CountBill";
-            chartEmployeeCreateBill.Series["CountBill"].YValueType = ChartValueType.Int32;
-
+            chartEmployeeCreateBill.Series[info.firstIndex].XValueMember = "EmployeeName";
+            chartEmployeeCreateBill.Series[info.firstIndex].XValueType = ChartValueType.String;
+            chartEmployeeCreateBill.Series[info.firstIndex].YValueMembers = "CountBill";
+            chartEmployeeCreateBill.Series[info.firstIndex].YValueType = ChartValueType.Int32;
         }
+
 
         private void btnbtnStatisticalBill_Click(object sender, EventArgs e)
         {
             string startDay = dtpBillStart.Value.ToString("yyyy/MM/dd");
             string endDay = dtpBillEnd.Value.ToString("yyyy/MM/dd");
-            if (cbTypeStatisticalBill.SelectedIndex == 0)
+            if (cbTypeStatisticalBill.SelectedIndex == info.firstIndex)
             {
-                chartEmployeeCreateBill.Titles["Title1"].Text = "NHÂN VIÊN LẬP HÓA ĐƠN NHIỀU NHẤT";
+                chartEmployeeCreateBill.Titles[info.firstIndex].Text = info.titleChartEmployeeCreateMaxVi;
 
                 chartEmployeeCreateBill.DataSource = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMaxByDate(startDay, endDay);
             }
             else
             {
                 chartEmployeeCreateBill.DataSource = StatisticalBillBUS.Instance.GetListEmployeeCreateBillMinByDate(startDay, endDay);
-                chartEmployeeCreateBill.Titles["Title1"].Text = "NHÂN VIÊN LẬP HÓA ĐƠN ÍT NHẤT";
+                chartEmployeeCreateBill.Titles[info.firstIndex].Text = info.titleChartEmployeeCreateMinVi;
             }
-            chartEmployeeCreateBill.Series["CountBill"].XValueMember = "EmployeeName";
-            chartEmployeeCreateBill.Series["CountBill"].XValueType = ChartValueType.String;
-            chartEmployeeCreateBill.Series["CountBill"].YValueMembers = "CountBill";
-            chartEmployeeCreateBill.Series["CountBill"].YValueType = ChartValueType.Int32;
+            chartEmployeeCreateBill.Series[info.firstIndex].XValueMember = "EmployeeName";
+            chartEmployeeCreateBill.Series[info.firstIndex].XValueType = ChartValueType.String;
+            chartEmployeeCreateBill.Series[info.firstIndex].YValueMembers = "CountBill";
+            chartEmployeeCreateBill.Series[info.firstIndex].YValueType = ChartValueType.Int32;
 
 
         }
@@ -214,21 +224,19 @@ namespace frmLogin
             return dtpBillEnd.Value.ToString("yyyy/MM/dd");
         }
 
-        public Employee GetEmployeeByID()
-        {
-            return EmployeeBUS.Instance.GetEmployeeByEmployeeID(frm.LoginAccount.EmployeeID);
-        }
-
         private void btnReportEmployCreateBill_Click(object sender, EventArgs e)
         {
             string startDay = dtpBillStart.Value.ToString("yyyy/MM/dd");
             string endDay = dtpBillEnd.Value.ToString("yyyy/MM/dd");
-            frmStoreReport frm = new frmStoreReport(this);
+            frmEmployeeReport frm = new frmEmployeeReport(this);
             this.Hide();
             frm.ShowDialog();
             this.Show();
         }
 
+        #endregion
+
+        #region KeyDown
         private void btnProducManagement_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)
@@ -276,5 +284,70 @@ namespace frmLogin
                 btnCategoryManagement_Click(sender, e);
             }
         }
+
+        #endregion
+
+        #region Statistical Product
+
+        public string GetStartDayProduct()
+        {
+            return dtpProductStart.Value.ToString("yyyy/MM/dd");
+        }
+
+        public string GetEndDayProduct()
+        {
+            return dtpProductEnd.Value.ToString("yyyy/MM/dd");
+        }
+
+        public void LoadProduct()
+        {
+            string startDay = DateTime.Now.ToString("yyyy/MM/dd");
+            string endDay = DateTime.Now.ToString("yyyy/MM/dd");
+            chartProduct.Titles[info.firstIndex].Text = info.titleChartProductSoldMaxVi;
+            chartProduct.DataSource = StatisticalProductBUS.Instance.StatisticalProductSoldMaxByDay(startDay, endDay);
+            chartProduct.Series[info.firstIndex].XValueMember = "ProductName";
+            chartProduct.Series[info.firstIndex].XValueType = ChartValueType.String;
+            chartProduct.Series[info.firstIndex].YValueMembers = "TotalCount";
+            chartProduct.Series[info.firstIndex].YValueType = ChartValueType.Int32;
+        }
+
+        private void btnStatisticalProduct_Click(object sender, EventArgs e)
+        {
+            string startDay = dtpProductStart.Value.ToString("yyyy/MM/dd");
+            string endDay = dtpProductEnd.Value.ToString("yyyy/MM/dd");
+            if (cbFillProduct.SelectedIndex == info.firstIndex)
+            {
+                chartProduct.Titles[info.firstIndex].Text = info.titleChartProductSoldMaxVi;
+                chartProduct.DataSource = StatisticalProductBUS.Instance.StatisticalProductSoldMaxByDay(startDay, endDay);
+            }
+            else
+            {
+                chartProduct.DataSource = StatisticalProductBUS.Instance.StatisticalProductSoldMinByDay(startDay, endDay);
+                chartProduct.Titles[info.firstIndex].Text = info.titleChartProductSoldMinVi;
+            }
+
+            chartProduct.Series[info.firstIndex].XValueMember = "ProductName";
+            chartProduct.Series[info.firstIndex].XValueType = ChartValueType.String;
+            chartProduct.Series[info.firstIndex].YValueMembers = "TotalCount";
+            chartProduct.Series[info.firstIndex].YValueType = ChartValueType.Int32;
+        }
+
+        private void btnShowReportProduct_Click(object sender, EventArgs e)
+        {
+            string startDay = dtpProductStart.Value.ToString("yyyy/MM/dd");
+            string endDay = dtpProductEnd.Value.ToString("yyyy/MM/dd");
+            frmProductReport frm = new frmProductReport(this);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+
+
+
+
+        #endregion
+
+
     }
 }

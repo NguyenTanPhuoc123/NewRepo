@@ -1,7 +1,7 @@
 ﻿
 namespace frmLogin
 {
-    partial class frmStoreReport
+    partial class frmEmployeeReport
     {
         /// <summary>
         /// Required designer variable.

@@ -13,10 +13,10 @@ using Microsoft.Reporting.WinForms;
 
 namespace frmLogin
 {
-    public partial class frmStoreReport : Form
+    public partial class frmEmployeeReport : Form
     {
         frmQuanLyAdmin frm;
-        public frmStoreReport(frmQuanLyAdmin admin)
+        public frmEmployeeReport(frmQuanLyAdmin admin)
         {
             InitializeComponent();
             frm = admin;
@@ -32,8 +32,10 @@ namespace frmLogin
             DateTime startDay = DateTime.Parse(frm.GetStartDayBill());
             DateTime endDay = DateTime.Parse(frm.GetEndDayBill());
             List<BillMenu> list = BillMenuBUS.Instance.GetListBillMenuByDate(startDay.ToString("yyyy/MM/dd"), endDay.ToString("yyyy/MM/dd"));
+            
             this.rpvStoreReport.LocalReport.ReportEmbeddedResource = "frmLogin.BillReport.rdlc";
             this.rpvStoreReport.LocalReport.DataSources.Add(new ReportDataSource("StatisticalBill", list));
+            
 
             ReportParameterCollection reportParameters = new ReportParameterCollection();
             reportParameters.Add(new ReportParameter("StartDay", startDay.ToString("dd/MM/yyyy")));

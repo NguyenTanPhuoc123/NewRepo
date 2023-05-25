@@ -275,6 +275,8 @@ namespace DAO
             data = DataProvider.ExecuteInsertCommand(query, parameter);
             return data;
         }
+
+       
     }
 }
 

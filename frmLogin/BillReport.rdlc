@@ -500,7 +500,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>StatisticalBill</DataSetName>
-            <Top>3.8227cm</Top>
+            <Top>4.47126cm</Top>
             <Left>1.4262cm</Left>
             <Height>1.66566cm</Height>
             <Width>15.60917cm</Width>
@@ -654,8 +654,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox14</rd:DefaultName>
-            <Top>5.96053cm</Top>
-            <Left>14.15203cm</Left>
+            <Top>6.77898cm</Top>
+            <Left>13.96387cm</Left>
             <Height>0.6cm</Height>
             <Width>2.5cm</Width>
             <ZIndex>7</ZIndex>
@@ -688,7 +688,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>6.73692cm</Top>
+            <Top>7.55536cm</Top>
             <Left>13.66754cm</Left>
             <Height>0.6cm</Height>
             <Width>3.36783cm</Width>
@@ -704,7 +704,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.19166in</Height>
+        <Height>3.49166in</Height>
         <Style />
       </Body>
       <Width>7.02408in</Width>
