@@ -122,17 +122,11 @@ namespace DAO
             return row;
         }
 
-        public bool checkNameExist(string locationName)
+        public bool CheckNameExist(string locationName)
         {
-            string query = string.Format("Select count(*) from VITRI where TENVITRI={0}", locationName);
+            string query = string.Format("Select count(*) from VITRI where TENVITRI= N'{0}' ", locationName);
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
-        }
-        public bool checkExistDelete(string id)
-        {
-            string query = string.Format("Select count(*) from BANAN where VITRI={0}", id);
-            int data = DataProvider.ExecuteScalarCommand(query, null);
-            return data > 0 ? false : true;
-        }
+        }    
     }
 }

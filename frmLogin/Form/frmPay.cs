@@ -45,13 +45,16 @@ namespace frmLogin
             return discountID;
         }
 
-        public frmPay()
+        frmSellManagement frmSell;
+
+        public frmPay(frmSellManagement sell)
         {
             if (Language == 0)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
+            frmSell = sell;
         }
 
         private void btnExitFomPay_Click(object sender, EventArgs e)
@@ -96,12 +99,7 @@ namespace frmLogin
             cbDiscount.DataSource = DiscountBUS.Instance.GetListDiscountAvailable();
             cbDiscount.DisplayMember = "DiscountName";
             cbDiscount.ValueMember = "DiscountID";
-        }
-
-        public void CloseForm(object sender, EventArgs e)
-        {
-
-        }
+        }     
 
         public string GetMoneyReceive()
         {
@@ -145,7 +143,7 @@ namespace frmLogin
                     frmOutputBill frm = new frmOutputBill(this);
                     frm.Show();
                     LoadBackColorMDI();
-                    frmSellManagement.ActiveForm.Load += new EventHandler(CloseForm);
+                    frmSell.frmSellManagement_Load(sender, e);
                 }
                 else
                 {

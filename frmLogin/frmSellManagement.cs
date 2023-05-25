@@ -190,7 +190,7 @@ namespace frmLogin
                     BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
                     int count = BillBUS.Instance.Pay(billMenu.ID, manv);
                     this.IsMdiContainer = true;
-                    frmPay frm = new frmPay();
+                    frmPay frm = new frmPay(this);
                     frm.Show();
                     LoadBackColorMDI();
                 }
@@ -207,7 +207,7 @@ namespace frmLogin
                     BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
                     int count = BillBUS.Instance.Pay(billMenu.ID, manv);
                     this.IsMdiContainer = true;
-                    frmPay frm = new frmPay();
+                    frmPay frm = new frmPay(this);
                     frm.Show();
                     LoadBackColorMDI();
                 }

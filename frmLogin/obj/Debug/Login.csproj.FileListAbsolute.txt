@@ -1019,7 +1019,6 @@ D:\đồ án\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\đồ án\frmLogin\obj\Debug\frmLogin.exe
 D:\đồ án\frmLogin\obj\Debug\frmLogin.pdb
 D:\DOAN\frmLogin\obj\Debug\frmLogin.frmOutputBill.resources
-D:\đồ án\frmLogin\obj\Debug\frmLogin.frmStoreReport.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmOutputBill.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmStoreReport.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\bin\Debug\en\frmLogin.resources.dll
@@ -1277,3 +1276,50 @@ D:\DOAN\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.en-AS.resources
 D:\DOAN\frmLogin\obj\Debug\frmLogin.frmSellManagement.vai.resources
 D:\DOAN\frmLogin\obj\Debug\en-AS\frmLogin.resources.dll
 D:\DOAN\frmLogin\obj\Debug\vai\frmLogin.resources.dll
+D:\đồ án\frmLogin\bin\Debug\en\frmLogin.resources.dll
+D:\đồ án\frmLogin\bin\Debug\vi\frmLogin.resources.dll
+D:\đồ án\frmLogin\bin\Debug\dje-NE\frmLogin.resources.dll
+D:\đồ án\frmLogin\bin\Debug\en-AS\frmLogin.resources.dll
+D:\đồ án\frmLogin\bin\Debug\vai\frmLogin.resources.dll
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmProductReport.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmEmployeeReport.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmAccountManagement.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmAccountManagement.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmBillDetail.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmBillDetail.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmBillManagement.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmBillManagement.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmCategoyManagement.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmEmployeeManager.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmPay.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmPay.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmProductManagement.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmProductManagement.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmRecycleBin.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmRecycleBin.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.dje-NE.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmRecycleBinCategory.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmSelectDish.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmSelectDish.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmSetting.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmSetting.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmTableManagement.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmTableManagement.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmlogin.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmlogin.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.en-AS.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmSellManagement.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmSellManagement.vai.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmSellManagement.vi.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.Usercontrol.en.resources
+D:\đồ án\frmLogin\obj\Debug\frmLogin.Usercontrol.vi.resources
+D:\đồ án\frmLogin\obj\Debug\en\frmLogin.resources.dll
+D:\đồ án\frmLogin\obj\Debug\vi\frmLogin.resources.dll
+D:\đồ án\frmLogin\obj\Debug\dje-NE\frmLogin.resources.dll
+D:\đồ án\frmLogin\obj\Debug\en-AS\frmLogin.resources.dll
+D:\đồ án\frmLogin\obj\Debug\vai\frmLogin.resources.dll

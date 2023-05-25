@@ -81,7 +81,7 @@ namespace frmLogin
                     MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (LocationBUS.Instance.checkNameExist(txtLocationName.Text))
+                if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text)==true)
                 {
                     int count = LocationBUS.Instance.AddLocationTable(txtLocationName.Text);
                     if (count > 0)
@@ -107,7 +107,7 @@ namespace frmLogin
                     MessageBox.Show("Please enter the name of the desk location you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (LocationBUS.Instance.checkNameExist(txtLocationName.Text))
+                if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text)==true)
                 {
                     int count = LocationBUS.Instance.AddLocationTable(txtLocationName.Text);
                     if (count > 0)
@@ -139,7 +139,7 @@ namespace frmLogin
                 }
                 if (MessageBox.Show("Bạn chắc chắn muốn sửa vị trí bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    if (LocationBUS.Instance.checkNameExist(txtLocationName.Text))
+                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text)==true)
                     {
                         int count = LocationBUS.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
                         if (count > 0)
@@ -166,7 +166,7 @@ namespace frmLogin
                 }
                 if (MessageBox.Show("You definitely want to fix this desk position?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    if (LocationBUS.Instance.checkNameExist(txtLocationName.Text))
+                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text)==true)
                     {
                         int count = LocationBUS.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
                         if (count > 0)
@@ -192,10 +192,7 @@ namespace frmLogin
             {
                 if (MessageBox.Show("Bạn chắc chắn muốn xóa vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    if (LocationBUS.Instance.checkExistDelete(txtLocationID.Text))
-                    {
-
-
+                    
                         int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
                         if (count > 0)
                         {
@@ -206,9 +203,7 @@ namespace frmLogin
                         {
                             MessageBox.Show("Xóa vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
-                    }
-                    else
-                        MessageBox.Show("Vị trí bàn đã có trong bàn ăn không thể xóa!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        
                     LoadLocationTable();
                 }
             }
@@ -216,10 +211,7 @@ namespace frmLogin
             {
 
                 if (MessageBox.Show("You definitely want to delete this location?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                {
-
-                    if (LocationBUS.Instance.checkExistDelete(txtLocationID.Text))
-                    {
+                {                  
                         int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
                         if (count > 0)
                         {
@@ -227,12 +219,10 @@ namespace frmLogin
                         }
                         else
                         {
-                            MessageBox.Show("Delete the table position successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Delete the table position unsuccessfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
-                    }
-                    else
-                        MessageBox.Show("The table position already in the dining table cannot be deleted!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    LoadLocationTable();
+                                       
+                        LoadLocationTable();
                 }
             }
         }
@@ -244,30 +234,23 @@ namespace frmLogin
                 if (MessageBox.Show("Bạn chắc chắn muốn xóa tất cả vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
 
-                    if (LocationBUS.Instance.checkExistDelete(txtLocationID.Text))
+                    int count = LocationBUS.Instance.DeleteAllLocationTable();
+                    if (count > 0)
                     {
-                        int count = LocationBUS.Instance.DeleteAllLocationTable();
-                        if (count > 0)
-                        {
-                            MessageBox.Show("Xóa tất cả vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-
-                        else
-                        {
-                            MessageBox.Show("Xóa tất cả vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
+                        MessageBox.Show("Xóa tất cả vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+
                     else
-                        MessageBox.Show("Vị trí bàn đã có trong bàn ăn không thể xóa!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    {
+                        MessageBox.Show("Xóa tất cả vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                     LoadLocationTable();
                 }
             }
             else
             {
                 if (MessageBox.Show("You definitely want to delete all these locations?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                {
-                    if (MessageBox.Show("Bạn chắc chắn muốn xóa tất cả vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                    {
+                {                   
                         int count = LocationBUS.Instance.DeleteAllLocationTable();
                         if (count > 0)
                         {
@@ -277,10 +260,8 @@ namespace frmLogin
                         else
                         {
                             MessageBox.Show("Delete all failed table positions!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                    }
-                    else
-                        MessageBox.Show("The table position already in the dining table cannot be deleted!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }                   
+                    
                     LoadLocationTable();
                 }
             }
@@ -1019,7 +1000,8 @@ namespace frmLogin
 
         private void btnPositionDeleted_Click(object sender, EventArgs e)
         {
-
+            frmRecycleBinCategory frm = new frmRecycleBinCategory();
+            frm.Show();
         }
 
         private void btnTypeAccountDeleted_Click(object sender, EventArgs e)

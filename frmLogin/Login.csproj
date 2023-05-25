@@ -158,10 +158,10 @@
     <Compile Include="Form\frmOutputBill.Designer.cs">
       <DependentUpon>frmOutputBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProductReport.cs">
+    <Compile Include="Form\frmProductReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProductReport.Designer.cs">
+    <Compile Include="Form\frmProductReport.Designer.cs">
       <DependentUpon>frmProductReport.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQuanLyAdmin.cs">
@@ -347,7 +347,7 @@
     <EmbeddedResource Include="frmlogin.vi.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProductReport.resx">
+    <EmbeddedResource Include="Form\frmProductReport.resx">
       <DependentUpon>frmProductReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyAdmin.en-AS.resx">

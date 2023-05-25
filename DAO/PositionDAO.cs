@@ -115,7 +115,7 @@ namespace DAO
         }
         public bool checkNameExist( string tenloai)
         {
-            string query = string.Format("Select count(*) from CHUCVU where  tenchucvu={0}", tenloai);
+            string query = string.Format("Select count(*) from CHUCVU where  tenchucvu= N'{0}'", tenloai);
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
         }

@@ -74,15 +74,16 @@ namespace frmLogin
 
             }
         }
+       
 
         private void btnScan_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
         }
 
-        private void frmQRCode_FormClosing(object sender, FormClosingEventArgs e)
+        private void btnExitFormQR_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }
