@@ -817,7 +817,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Sum(Fields!TotalPrice.Value, "DataSet1")</Value>
-                    <Style />
+                    <Style>
+                      <Format>0.00'₫';(0.00'₫')</Format>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -839,6 +841,7 @@
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
+              <rd:FormatSymbolCulture>vi-VN</rd:FormatSymbolCulture>
             </Style>
           </Textbox>
           <Textbox Name="Textbox26">
@@ -879,7 +882,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Sum(Fields!Price.Value, "DataSet3")</Value>
-                    <Style />
+                    <Style>
+                      <Format>0.00'₫';(0.00'₫')</Format>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -901,6 +906,7 @@
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
+              <rd:FormatSymbolCulture>vi-VN</rd:FormatSymbolCulture>
             </Style>
           </Textbox>
           <Textbox Name="Textbox35">
@@ -1111,7 +1117,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Sum(Fields!Price.Value, "DataSet3")+Sum(Fields!Total.Value, "DataSet2")</Value>
-                    <Style />
+                    <Style>
+                      <Format>0.00'₫';(0.00'₫')</Format>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1133,6 +1141,7 @@
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
               <PaddingBottom>2pt</PaddingBottom>
+              <rd:FormatSymbolCulture>vi-VN</rd:FormatSymbolCulture>
             </Style>
           </Textbox>
           <Textbox Name="Textbox24">

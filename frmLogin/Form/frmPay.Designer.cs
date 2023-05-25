@@ -110,6 +110,7 @@ namespace frmLogin
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.PasswordChar = '\0';
             this.txtEmployeeID.PlaceholderText = "";
+            this.txtEmployeeID.ReadOnly = true;
             this.txtEmployeeID.SelectedText = "";
             // 
             // label5
@@ -132,6 +133,7 @@ namespace frmLogin
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.PasswordChar = '\0';
             this.txtEmployeeName.PlaceholderText = "";
+            this.txtEmployeeName.ReadOnly = true;
             this.txtEmployeeName.SelectedText = "";
             // 
             // label8
@@ -342,6 +344,7 @@ namespace frmLogin
             this.txtTableID.Name = "txtTableID";
             this.txtTableID.PasswordChar = '\0';
             this.txtTableID.PlaceholderText = "";
+            this.txtTableID.ReadOnly = true;
             this.txtTableID.SelectedText = "";
             // 
             // label7
@@ -364,6 +367,7 @@ namespace frmLogin
             this.txtBillID.Name = "txtBillID";
             this.txtBillID.PasswordChar = '\0';
             this.txtBillID.PlaceholderText = "";
+            this.txtBillID.ReadOnly = true;
             this.txtBillID.SelectedText = "";
             // 
             // label6
