@@ -103,6 +103,16 @@ namespace frmLogin
 
         }
 
+        public string GetMoneyReceive()
+        {
+            return lblMoneyReceive.Text;
+        }
+
+        public string GetMoneyPay()
+        {
+            return lblMoneyPay.Text;
+        }
+
         private void btnOutputBill_Click(object sender, EventArgs e)
         {
             float total = billMenu.Total;
@@ -123,7 +133,7 @@ namespace frmLogin
                     MessageBox.Show("Thanh toán thành công", "Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmPay_Load(sender, e);
                     this.IsMdiContainer = true;
-                    frmOutputBill frm = new frmOutputBill();
+                    frmOutputBill frm = new frmOutputBill(this);
                     frm.Show();
                     LoadBackColorMDI();
                     frmSellManagement.ActiveForm.Load += new EventHandler(CloseForm);

@@ -37,6 +37,31 @@ namespace DAO
             return list;
         }
 
+        public List<Bill> GetListBillPaid()
+        {
+            List<Bill> list = new List<Bill>();
+            string query = "Select * from HOADON WHERE TRANGTHAI = 1 and TRANGTHAITHANHTOAN = 1";
+            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
+            foreach (DataRow item in data.Rows)
+            {
+                Bill bill = new Bill(item);
+                list.Add(bill);
+            }
+
+            return list;
+        }
+
+        public float GetTotalRenvenueByDate(string startDay, string endDay)
+        {
+            float total=0;
+            List<Bill> list = GetListBillPaid();
+            foreach(Bill bill in list)
+            {
+                total += bill.TotalPrice;
+            }
+            return total;
+           
+        }
 
         public string GetBillIDByTableID(int tableID)
         {

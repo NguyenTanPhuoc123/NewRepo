@@ -15,9 +15,11 @@ namespace frmLogin
 {
     public partial class frmOutputBill : Form
     {
-        public frmOutputBill()
+        frmPay frm;
+        public frmOutputBill(frmPay pay)
         {
             InitializeComponent();
+            frm = pay;
         }
 
         private void frmOutputBill_Load(object sender, EventArgs e)
@@ -31,6 +33,10 @@ namespace frmLogin
             this.rpvOutputBill.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", bill));
             this.rpvOutputBill.LocalReport.DataSources.Add(new ReportDataSource("DataSet2", billMenus));
             this.rpvOutputBill.LocalReport.DataSources.Add(new ReportDataSource("DataSet3", discounts));
+            ReportParameterCollection reportParameters = new ReportParameterCollection();
+            reportParameters.Add(new ReportParameter("MoneyReceive",frm.GetMoneyReceive()));
+            reportParameters.Add(new ReportParameter("MoneyPay",frm.GetMoneyPay()));
+            this.rpvOutputBill.LocalReport.SetParameters(reportParameters);
             this.rpvOutputBill.RefreshReport();
         }
 

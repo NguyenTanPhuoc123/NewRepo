@@ -76,6 +76,6 @@ namespace BUS
         {
             return BillMenuDAO.Instance.GetListBillMenuByDate(startDay, endDay);
         }
-
+       
     }
 }

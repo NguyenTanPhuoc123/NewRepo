@@ -63,5 +63,12 @@ namespace BUS
         {
             return BillDAO.Instance.GetListBillForID(BillID);
         }
+
+        public float GetTotalRenvenueByDate(string startDay, string endDay)
+        {
+            return BillDAO.Instance.GetTotalRenvenueByDate(startDay, endDay);
+        }
+
     }
+        
 }

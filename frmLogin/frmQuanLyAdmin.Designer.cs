@@ -31,14 +31,14 @@ namespace frmLogin
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyAdmin));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnTableManagement = new System.Windows.Forms.Button();
             this.btnBillManagement = new System.Windows.Forms.Button();
@@ -280,6 +280,7 @@ namespace frmLogin
             resources.ApplyResources(this.btnStatisticalRevenue, "btnStatisticalRevenue");
             this.btnStatisticalRevenue.ForeColor = System.Drawing.Color.White;
             this.btnStatisticalRevenue.Name = "btnStatisticalRevenue";
+            this.btnStatisticalRevenue.Click += new System.EventHandler(this.btnStatisticalRevenue_Click);
             // 
             // dtpRevenueEnd
             // 
@@ -317,23 +318,23 @@ namespace frmLogin
             // 
             // chartProduct
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartProduct.ChartAreas.Add(chartArea3);
-            legend3.Name = "countSold";
-            this.chartProduct.Legends.Add(legend3);
+            chartArea5.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea5);
+            legend5.Name = "countSold";
+            this.chartProduct.Legends.Add(legend5);
             resources.ApplyResources(this.chartProduct, "chartProduct");
             this.chartProduct.Name = "chartProduct";
             this.chartProduct.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series3.Legend = "countSold";
-            series3.LegendText = "Số lượng bán được";
-            series3.Name = "product";
-            this.chartProduct.Series.Add(series3);
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.ForeColor = System.Drawing.Color.Red;
-            title3.Name = "Product";
-            this.chartProduct.Titles.Add(title3);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series5.Legend = "countSold";
+            series5.LegendText = "Số lượng bán được";
+            series5.Name = "product";
+            this.chartProduct.Series.Add(series5);
+            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title5.ForeColor = System.Drawing.Color.Red;
+            title5.Name = "Product";
+            this.chartProduct.Titles.Add(title5);
             // 
             // panel2
             // 
@@ -425,22 +426,22 @@ namespace frmLogin
             // 
             // chartEmployeeCreateBill
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartEmployeeCreateBill.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartEmployeeCreateBill.Legends.Add(legend4);
+            chartArea6.Name = "ChartArea1";
+            this.chartEmployeeCreateBill.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartEmployeeCreateBill.Legends.Add(legend6);
             resources.ApplyResources(this.chartEmployeeCreateBill, "chartEmployeeCreateBill");
             this.chartEmployeeCreateBill.Name = "chartEmployeeCreateBill";
             this.chartEmployeeCreateBill.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.LegendText = "Số hóa đơn lập";
-            series4.Name = "CountBill";
-            this.chartEmployeeCreateBill.Series.Add(series4);
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.ForeColor = System.Drawing.Color.Red;
-            title4.Name = "Title1";
-            this.chartEmployeeCreateBill.Titles.Add(title4);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.LegendText = "Số hóa đơn lập";
+            series6.Name = "CountBill";
+            this.chartEmployeeCreateBill.Series.Add(series6);
+            title6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title6.ForeColor = System.Drawing.Color.Red;
+            title6.Name = "Title1";
+            this.chartEmployeeCreateBill.Titles.Add(title6);
             // 
             // panel3
             // 

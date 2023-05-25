@@ -177,6 +177,7 @@ namespace frmLogin
         {
             LoadEmloyeeCreateBill();
             LoadProduct();
+            //LoadStisticalRevenue();
         }
         #region Employee
         public void LoadEmloyeeCreateBill()
@@ -233,8 +234,27 @@ namespace frmLogin
             frm.ShowDialog();
             this.Show();
         }
-
+       
         #endregion
+
+        public void LoadStisticalRevenue()
+        {                       
+            DateTime startDay = DateTime.Now;
+            DateTime endDay = DateTime.Now;
+            float revenue = BillBUS.Instance.GetTotalRenvenueByDate(startDay.ToString("yyyy/MM/dd"), endDay.ToString("yyyy/MM/dd"));
+            List <BillMenu> list = BillMenuBUS.Instance.GetListBillMenuByDate(startDay.ToString("yyyy/MM/dd"), endDay.ToString("yyyy/MM/dd"));
+
+            this.rpvRevenue.LocalReport.ReportEmbeddedResource = "frmLogin.RevenueReport.rdlc";
+            this.rpvRevenue.LocalReport.DataSources.Add(new ReportDataSource("Revenue", list));
+
+            ReportParameterCollection reportParameters = new ReportParameterCollection();
+            reportParameters.Add(new ReportParameter("StartDay", startDay.ToString("dd/MM/yyyy")));
+            reportParameters.Add(new ReportParameter("EndDay", endDay.ToString("dd/MM/yyyy")));
+            reportParameters.Add(new ReportParameter("EmployeeCreate", GetEmployeeByID().TenNV));
+            reportParameters.Add(new ReportParameter("TotalRevenue", revenue.ToString()));
+            this.rpvRevenue.LocalReport.SetParameters(reportParameters);
+            this.rpvRevenue.RefreshReport();
+        }
 
         #region KeyDown
         private void btnProducManagement_KeyDown(object sender, KeyEventArgs e)
@@ -346,8 +366,27 @@ namespace frmLogin
 
 
 
+
         #endregion
 
+        private void btnStatisticalRevenue_Click(object sender, EventArgs e)
+        {
+            DateTime startDay = dtpRevenueStart.Value;
+            DateTime endDay = dtpRevenueEnd.Value;
+     
+            float revenue = BillBUS.Instance.GetTotalRenvenueByDate(startDay.ToString("yyyy/MM/dd"), endDay.ToString("yyyy/MM/dd"));
+            List<BillMenu> list = BillMenuBUS.Instance.GetListBillMenuByDate(startDay.ToString("yyyy/MM/dd"), endDay.ToString("yyyy/MM/dd"));
 
+            this.rpvRevenue.LocalReport.ReportEmbeddedResource = "frmLogin.RevenueReport.rdlc";
+            this.rpvRevenue.LocalReport.DataSources.Add(new ReportDataSource("Revenue", list));
+
+            ReportParameterCollection reportParameters = new ReportParameterCollection();
+            reportParameters.Add(new ReportParameter("StartDay", startDay.ToString("dd/MM/yyyy")));
+            reportParameters.Add(new ReportParameter("EndDay", endDay.ToString("dd/MM/yyyy")));
+            reportParameters.Add(new ReportParameter("EmployeeCreate", GetEmployeeByID().TenNV));
+            reportParameters.Add(new ReportParameter("TotalRevenue", revenue.ToString("c")));
+            this.rpvRevenue.LocalReport.SetParameters(reportParameters);
+            this.rpvRevenue.RefreshReport();
+        }
     }
 }

@@ -1892,54 +1892,6 @@
   <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
-    <value>btnExit</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
-    <value>panelTitle</value>
-  </data>
-  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
-    <value>lblTitle</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
-    <value>panelTitle</value>
-  </data>
-  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panelTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 0</value>
-  </data>
-  <data name="panelTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 154</value>
-  </data>
-  <data name="panelTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelTitle.Name" xml:space="preserve">
-    <value>panelTitle</value>
-  </data>
-  <data name="&gt;&gt;panelTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelTitle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelTitle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="btnExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -2016,8 +1968,131 @@
   <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="panelTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 0</value>
+  </data>
+  <data name="panelTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 154</value>
+  </data>
+  <data name="panelTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Name" xml:space="preserve">
+    <value>panelTitle</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tctrlStatistical.Name" xml:space="preserve">
+    <value>tctrlStatistical</value>
+  </data>
+  <data name="&gt;&gt;tctrlStatistical.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TabControl, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;tctrlStatistical.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;tctrlStatistical.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 154</value>
+  </data>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 548</value>
+  </data>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tctrlStatistical.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
     <value>Left</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.Name" xml:space="preserve">
+    <value>tbpRevenue</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.Parent" xml:space="preserve">
+    <value>tctrlStatistical</value>
+  </data>
+  <data name="&gt;&gt;tbpRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Name" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Parent" xml:space="preserve">
+    <value>tctrlStatistical</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbpEmployee.Name" xml:space="preserve">
+    <value>tbpEmployee</value>
+  </data>
+  <data name="&gt;&gt;tbpEmployee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpEmployee.Parent" xml:space="preserve">
+    <value>tctrlStatistical</value>
+  </data>
+  <data name="&gt;&gt;tbpEmployee.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tctrlStatistical.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tctrlStatistical.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>180, 40</value>
+  </data>
+  <data name="tctrlStatistical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tctrlStatistical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 548</value>
+  </data>
+  <data name="tctrlStatistical.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tctrlStatistical.Name" xml:space="preserve">
+    <value>tctrlStatistical</value>
+  </data>
+  <data name="&gt;&gt;tctrlStatistical.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TabControl, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;tctrlStatistical.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;tctrlStatistical.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;rpvRevenue.Name" xml:space="preserve">
     <value>rpvRevenue</value>
@@ -2070,6 +2145,210 @@
   <data name="&gt;&gt;tbpRevenue.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="rpvRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 88</value>
+  </data>
+  <data name="rpvRevenue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 449</value>
+  </data>
+  <data name="rpvRevenue.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.Name" xml:space="preserve">
+    <value>rpvRevenue</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.Type" xml:space="preserve">
+    <value>Microsoft.Reporting.WinForms.ReportViewer, Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.Parent" xml:space="preserve">
+    <value>tbpRevenue</value>
+  </data>
+  <data name="&gt;&gt;rpvRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Name" xml:space="preserve">
+    <value>btnStatisticalRevenue</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Name" xml:space="preserve">
+    <value>dtpRevenueEnd</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Name" xml:space="preserve">
+    <value>dtpRevenueStart</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 76</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tbpRevenue</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnStatisticalRevenue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnStatisticalRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 10</value>
+  </data>
+  <data name="btnStatisticalRevenue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 55</value>
+  </data>
+  <data name="btnStatisticalRevenue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnStatisticalRevenue.Text" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Name" xml:space="preserve">
+    <value>btnStatisticalRevenue</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalRevenue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dtpRevenueEnd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="dtpRevenueEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 10</value>
+  </data>
+  <data name="dtpRevenueEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="dtpRevenueEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Name" xml:space="preserve">
+    <value>dtpRevenueEnd</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueEnd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dtpRevenueStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="dtpRevenueStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 10</value>
+  </data>
+  <data name="dtpRevenueStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 55</value>
+  </data>
+  <data name="dtpRevenueStart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Name" xml:space="preserve">
+    <value>dtpRevenueStart</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dtpRevenueStart.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.Name" xml:space="preserve">
+    <value>chartProduct</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.Parent" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="&gt;&gt;chartProduct.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tpbProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="tpbProduct.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpbProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>841, 540</value>
+  </data>
+  <data name="tpbProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpbProduct.Text" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Name" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.Parent" xml:space="preserve">
+    <value>tctrlStatistical</value>
+  </data>
+  <data name="&gt;&gt;tpbProduct.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="chartProduct.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 120</value>
   </data>
@@ -2090,6 +2369,102 @@
   </data>
   <data name="&gt;&gt;chartProduct.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnShowReportProduct.Name" xml:space="preserve">
+    <value>btnShowReportProduct</value>
+  </data>
+  <data name="&gt;&gt;btnShowReportProduct.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnShowReportProduct.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnShowReportProduct.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.Name" xml:space="preserve">
+    <value>cbFillProduct</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;cbFillProduct.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Name" xml:space="preserve">
+    <value>btnStatisticalProduct</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnStatisticalProduct.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.Name" xml:space="preserve">
+    <value>dtpProductEnd</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;dtpProductEnd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.Name" xml:space="preserve">
+    <value>dtpProductStart</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;dtpProductStart.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 111</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>tpbProduct</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnShowReportProduct.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -2253,57 +2628,6 @@
   <data name="&gt;&gt;dtpProductStart.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 111</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>tpbProduct</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tpbProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 4</value>
-  </data>
-  <data name="tpbProduct.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tpbProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>841, 540</value>
-  </data>
-  <data name="tpbProduct.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tpbProduct.Text" xml:space="preserve">
-    <value>Sản phẩm</value>
-  </data>
-  <data name="&gt;&gt;tpbProduct.Name" xml:space="preserve">
-    <value>tpbProduct</value>
-  </data>
-  <data name="&gt;&gt;tpbProduct.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpbProduct.Parent" xml:space="preserve">
-    <value>tctrlStatistical</value>
-  </data>
-  <data name="&gt;&gt;tpbProduct.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;chartEmployeeCreateBill.Name" xml:space="preserve">
     <value>chartEmployeeCreateBill</value>
   </data>
@@ -2353,210 +2677,6 @@
     <value>tctrlStatistical</value>
   </data>
   <data name="&gt;&gt;tbpEmployee.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tctrlStatistical.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tctrlStatistical.ItemSize" type="System.Drawing.Size, System.Drawing">
-    <value>180, 40</value>
-  </data>
-  <data name="tctrlStatistical.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tctrlStatistical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 548</value>
-  </data>
-  <data name="tctrlStatistical.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;tctrlStatistical.Name" xml:space="preserve">
-    <value>tctrlStatistical</value>
-  </data>
-  <data name="&gt;&gt;tctrlStatistical.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TabControl, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;tctrlStatistical.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;tctrlStatistical.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 154</value>
-  </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 548</value>
-  </data>
-  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="rpvRevenue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 88</value>
-  </data>
-  <data name="rpvRevenue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 449</value>
-  </data>
-  <data name="rpvRevenue.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;rpvRevenue.Name" xml:space="preserve">
-    <value>rpvRevenue</value>
-  </data>
-  <data name="&gt;&gt;rpvRevenue.Type" xml:space="preserve">
-    <value>Microsoft.Reporting.WinForms.ReportViewer, Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</value>
-  </data>
-  <data name="&gt;&gt;rpvRevenue.Parent" xml:space="preserve">
-    <value>tbpRevenue</value>
-  </data>
-  <data name="&gt;&gt;rpvRevenue.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Name" xml:space="preserve">
-    <value>btnStatisticalRevenue</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Name" xml:space="preserve">
-    <value>dtpRevenueEnd</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.Name" xml:space="preserve">
-    <value>dtpRevenueStart</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 76</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tbpRevenue</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnStatisticalRevenue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnStatisticalRevenue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 10</value>
-  </data>
-  <data name="btnStatisticalRevenue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 55</value>
-  </data>
-  <data name="btnStatisticalRevenue.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnStatisticalRevenue.Text" xml:space="preserve">
-    <value>Thống kê</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Name" xml:space="preserve">
-    <value>btnStatisticalRevenue</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnStatisticalRevenue.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="dtpRevenueEnd.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="dtpRevenueEnd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 10</value>
-  </data>
-  <data name="dtpRevenueEnd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 55</value>
-  </data>
-  <data name="dtpRevenueEnd.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Name" xml:space="preserve">
-    <value>dtpRevenueEnd</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueEnd.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="dtpRevenueStart.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="dtpRevenueStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 10</value>
-  </data>
-  <data name="dtpRevenueStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 55</value>
-  </data>
-  <data name="dtpRevenueStart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.Name" xml:space="preserve">
-    <value>dtpRevenueStart</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;dtpRevenueStart.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="chartEmployeeCreateBill.Location" type="System.Drawing.Point, System.Drawing">
