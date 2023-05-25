@@ -60,7 +60,7 @@ namespace frmLogin
                 if (decoded != "")
                 {
                     timer1.Stop();
-                    MessageBox.Show("Thanh toán thành công");
+                    MessageBox.Show("Giao dịch thành công");
                     
                     if (frame.IsRunning == true)
                     {

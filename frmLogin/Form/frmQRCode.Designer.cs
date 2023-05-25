@@ -89,6 +89,7 @@ namespace frmLogin
             this.Controls.Add(this.cboCamara);
             this.Controls.Add(this.label1);
             this.Name = "frmQRCode";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQRCode_FormClosing);
             this.Load += new System.EventHandler(this.frmQRCode_Load);

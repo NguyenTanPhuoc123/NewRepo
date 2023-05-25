@@ -123,11 +123,20 @@ namespace frmLogin
             {
                 price = DiscountBUS.Instance.GetDiscountForID(id).Price;
             }
-            total = total - price;
-            int row = TableBUS.Instance.UpdateTablePay(billMenu.TableID);
-            int count = BillBUS.Instance.OutputBill(txtBillID.Text, total, cbDiscount.SelectedValue.ToString());
-            if (total > 0)
+            float moneypay = 0;
+            
+            if (cbPay.SelectedIndex == 0)
             {
+                moneypay = float.Parse(txtMoneyPay.Text) - total;
+            }
+            if (cbPay.SelectedIndex == 1)
+            {
+                moneypay = 0;
+            }
+            if (total > 0 && moneypay >= 0)
+            {
+                int row = TableBUS.Instance.UpdateTablePay(billMenu.TableID);
+                int count = BillBUS.Instance.OutputBill(txtBillID.Text, total, cbDiscount.SelectedValue.ToString());
                 if (count > 0 && row > 0)
                 {
                     MessageBox.Show("Thanh toán thành công", "Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -201,6 +210,11 @@ namespace frmLogin
             }
             else
             {
+                label15.Visible = false;
+                txtMoneyPay.Visible = false;
+                CultureInfo culture = new CultureInfo("vi-VN");
+                lblMoneyReceive.Text = lblTotal.Text;
+                lblMoneyPay.Text = 0.ToString("c", culture);
                 this.IsMdiContainer = true;
                 frmQRCode frm = new frmQRCode();
                 frm.Show();
