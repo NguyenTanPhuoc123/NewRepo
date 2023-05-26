@@ -8,6 +8,11 @@ namespace DTO
 {
     public class HashCode
     {
+        public int count = 1;
+        public string strDefault = "";
+        public string positionManager = "Nhân viên quản lý";
+        public string positionSeller = "Nhân viên bán hàng";
+        public int idManager = 1;
         public int valueDefault = 0;
         public string titleChartEmployeeCreateMaxVi = "NHÂN VIÊN LẬP NHIỀU HÓA ĐƠN NHẤT";
         public string titleChartEmployeeCreateMinVi = "NHÂN VIÊN LẬP ÍT HÓA ĐƠN NHẤT";
