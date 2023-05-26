@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class Infomation
+    public class HashCode
     {
-     
-
+        public int valueDefault = 0;
         public string titleChartEmployeeCreateMaxVi = "NHÂN VIÊN LẬP NHIỀU HÓA ĐƠN NHẤT";
         public string titleChartEmployeeCreateMinVi = "NHÂN VIÊN LẬP ÍT HÓA ĐƠN NHẤT";
         public string titleChartProductSoldMaxVi = "SẢN PHẨM BÁN CHẠY NHẤT";

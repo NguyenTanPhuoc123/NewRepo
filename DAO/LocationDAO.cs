@@ -108,17 +108,31 @@ namespace DAO
 
         public int RestoreLocation(int id)
         {
+            int row;
             string query = string.Format("UPDATE VITRI SET XOA = 0  where MAVITRI = {0}",id);
-            int row = DataProvider.ExecuteInsertCommand(query, null);
-
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 
         public int RestoreAllLocation()
         {
+            int row;
             string query = string.Format("UPDATE VITRI SET XOA = 0");
-            int row = DataProvider.ExecuteInsertCommand(query, null);
-
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 

@@ -73,55 +73,91 @@ namespace DAO
         {
             string query = string.Format("Insert BANAN(TENBAN,VITRI,TRANGTHAI) values(N'{0}',{1},N'Trống')", tenBan, maVitri);
             int row = 0;
-            row = DataProvider.ExecuteInsertCommand(query, null);
-
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 
         public int EditTable(int maBan, string tenBan, int maViTri)
         {
             string query = string.Format("Update BANAN SET TENBAN = N'{0}' , VITRI = {1} where MABANAN = {2}", tenBan, maViTri, maBan);
-            int row = 0;
-            row = DataProvider.ExecuteInsertCommand(query, null);
-
+            int row;
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 
         public int DeleteTable(int maBan)
         {
             string query = string.Format("Update BANAN SET XOA = 1 where MABANAN = {0}", maBan);
-            int row = 0;
-            row = DataProvider.ExecuteInsertCommand(query, null);
-
+            int row;
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 
         public int DeleteAllTable()
         {
             string query = string.Format("Update BANAN SET XOA = 1 ");
-            int row = 0;
-            row = DataProvider.ExecuteInsertCommand(query, null);
-
+            int row;
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 
         public int RestoreTable(int maBan)
         {
             string query = string.Format("Update BANAN SET XOA = 0 where MABANAN = {0}", maBan);
-            int row = 0;
+            int row;
+            try { 
             row = DataProvider.ExecuteInsertCommand(query, null);
-
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
 
         public int RestoreAllTable()
         {
             string query = string.Format("Update BANAN SET XOA = 0 ");
-            int row = 0;
-            row = DataProvider.ExecuteInsertCommand(query, null);
-
+            int row;
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+            }
             return row;
         }
+
         public int UpdateTable(int maBAN)
         {
             string query = string.Format("Update BANAN SET TRANGTHAI = N'Trống' where MABANAN = {0}",maBAN);
@@ -158,13 +194,13 @@ namespace DAO
             int row = DataProvider.ExecuteInsertCommand(query, null);
             return row;
         }
-        public bool checkTableExist(string tenban)
+        public bool CheckTableNameExist(string tenban)
         {
-            string sql = string.Format("Select count(*) from BanAn where TENBAN ={0}",  tenban);
-            int data = DataProvider.ExecuteScalarCommand(sql, null);
-            return data > 0 ? false : true;
+            string query = string.Format("Select count(*) from BanAn where TENBAN = N'{0}' ",  tenban);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data == 0 ? true : false;
         }
-        public bool checkExistDelete(string TableID)
+        public bool CheckExistDelete(string TableID)
         {
             string sql = string.Format("Select count(*) from BanAn where MABANAN ={0} And TRANGTHAI =N'Có người'", TableID);
             int data = DataProvider.ExecuteScalarCommand(sql, null);

@@ -18,7 +18,7 @@ namespace frmLogin
     
     public partial class frmQuanLyAdmin : Form
     {
-        Infomation info = new Infomation();
+        HashCode info = new HashCode();
         private int Language = frmlogin.Language;
         private Button currentButton;
         private Form activeForm;

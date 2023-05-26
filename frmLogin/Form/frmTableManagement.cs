@@ -21,9 +21,12 @@ namespace frmLogin
     public partial class frmTableManagement : Form
     {
         private int Language = frmlogin.Language;
+        HashCode info = new HashCode();
+
         public frmTableManagement()
         {
-            if (Language == 0)
+            
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -55,7 +58,7 @@ namespace frmLogin
         {
             txtTableID.Text = TableBUS.Instance.GetTableIDMax().ToString();
             txtTableName.Clear();
-            cbLocation.SelectedIndex = 0;
+            cbLocation.SelectedIndex = info.firstIndex;
             btnSaveTable.Enabled = true;
             btnDeleteAllTable.Enabled = false;
             btnDeleteTable.Enabled = false;
@@ -70,13 +73,13 @@ namespace frmLogin
             btnDeleteTable.Enabled = true;
             btnSaveTable.Enabled = false;
             btnTableDeleted.Enabled = true;
-
+            
             LoadFillTableFood();
             cbLocation.DataSource = LocationBUS.Instance.GetListLocation();
             cbLocation.ValueMember = "MaViTri";
             cbLocation.DisplayMember = "TenViTri";
-            cbFillTable.SelectedIndex = 0;
-            cbSortTable.SelectedIndex = 0;
+            cbFillTable.SelectedIndex = info.firstIndex;
+            cbSortTable.SelectedIndex = info.firstIndex;
             LoadTable();
         }
         public void LoadTable()
@@ -91,251 +94,225 @@ namespace frmLogin
             btnDeleteAllTable.Enabled = true;
             btnDeleteTable.Enabled = true;
             btnTableDeleted.Enabled = true;
-
-            if (dtgvListTable.SelectedRows.Count > 0)
-            {
-                txtTableID.Text = dtgvListTable.SelectedRows[0].Cells[0].Value.ToString();
-                txtTableName.Text = dtgvListTable.SelectedRows[0].Cells[1].Value.ToString();
-                cbLocation.SelectedValue = int.Parse(dtgvListTable.SelectedRows[0].Cells[2].Value.ToString());
+            info.firstIndex = info.valueDefault;
+            if (dtgvListTable.SelectedRows.Count > info.valueDefault)
+            {             
+                txtTableID.Text = dtgvListTable.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
+                txtTableName.Text = dtgvListTable.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
+                cbLocation.SelectedValue = int.Parse(dtgvListTable.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString());
 
             }
         }
 
         private void btnSaveTable_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtTableName.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập tên bàn ăn vào ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.eventNullVi,info.titleMessageVi , MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
-                }
-                try
-                {
-                    if (TableBUS.Instance.checkTableExist(txtTableName.Text))
+                }           
+                
+                    if (TableBUS.Instance.CheckTableNameExist(txtTableName.Text))
                     {
                         int count = TableBUS.Instance.AddTable(txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 
-                        if (count > 0)
-                            MessageBox.Show("Thêm bàn ăn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        else
-                            MessageBox.Show("Thêm bàn ăn thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    if (count > 0)
+                    {
+                        MessageBox.Show(info.addVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        frmTableManagement_Load(sender, e);
+                    }
+                    else
+                        MessageBox.Show(info.addFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
-                        MessageBox.Show("Tên bàn ăn đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.MessageCheckExistVi(txtTableName.Text),info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                frmTableManagement_Load(sender, e);
+                                
+                
             }
             else
             {
                 if (string.IsNullOrEmpty(txtTableName.Text.Trim()))
                 {
-                    MessageBox.Show("Please enter the table name in ", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
-                }
-                try
-                {
-                    if (TableBUS.Instance.checkTableExist(txtTableName.Text))
+                }               
+                    if (TableBUS.Instance.CheckTableNameExist(txtTableName.Text))
                     {
                         int count = TableBUS.Instance.AddTable(txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 
                         if (count > 0)
-                            MessageBox.Show("Successfully added dining table", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.addEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("More failed dining table", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.addFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
-                        MessageBox.Show("The name of the table already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                frmTableManagement_Load(sender, e);
+                        MessageBox.Show(info.MessageCheckExistEn(txtTableName.Text),info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }               
+      
             }
         }
 
         private void btnEditTable_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn muốn sửa bàn này chứ ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageEditVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
 
                     if (string.IsNullOrEmpty(txtTableName.Text))
                     {
-                        MessageBox.Show("Vui lòng nhập tên bàn ăn vào ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(info.eventNullVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
-
-                    try
+                  
+                    if (TableBUS.Instance.CheckTableNameExist(txtTableName.Text))
                     {
-                        if (TableBUS.Instance.checkTableExist(txtTableName.Text))
-                        {
-                            int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
+                        int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 
-                            if (count > 0)
-                                MessageBox.Show("Sửa bàn ăn thành công ", "Thông báo", MessageBoxButtons.OK);
-                            else
-                                MessageBox.Show("Sửa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        if (count > 0)
+                        {
+                            MessageBox.Show(info.editVi,info.titleMessageVi, MessageBoxButtons.OK);
+                            frmTableManagement_Load(sender, e);
                         }
                         else
-                        {
-                            MessageBox.Show("Tên bàn đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
+                            MessageBox.Show(info.editFailedVi,info.eventNullVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show(ex.Message);
-                    }
-                    frmTableManagement_Load(sender, e);
+                        MessageBox.Show(info.MessageCheckExistVi(txtTableName.Text),info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }                                                         
+                    
                 }
             }
-            else
-            {
-                if (MessageBox.Show("Do you want to fix this table?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            else { 
+                if (MessageBox.Show(info.messageEditEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
 
                     if (string.IsNullOrEmpty(txtTableName.Text))
                     {
-                        MessageBox.Show("Please enter table name", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
-                    }
+                    }                   
 
-                    try
+                    if (TableBUS.Instance.CheckTableNameExist(txtTableName.Text))
                     {
+                        int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 
-                        if (TableBUS.Instance.checkTableExist(txtTableName.Text))
-                        {
-                            int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
-
-                            if (count > 0)
-                                MessageBox.Show("Successfully repaired the dining table", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            else
-                                MessageBox.Show("Fixing the dining table failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                        else
-                        {
-                            MessageBox.Show("The name of the table already exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-
-                    }
-                    catch (Exception ex)
+                    if (count > 0)
                     {
-                        MessageBox.Show(ex.Message);
+                        MessageBox.Show(info.editEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        frmTableManagement_Load(sender, e);
                     }
-                    frmTableManagement_Load(sender, e);
+                    else
+                        MessageBox.Show(info.editFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show(info.MessageCheckExistEn(txtTableName.Text),info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                                       
+                    
                 }
             }
         }
 
         private void btnDeleteTable_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn muốn xóa bàn này chứ ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteVi, info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    if (TableBUS.Instance.checkExistDelete(txtTableID.Text))
+                    if (TableBUS.Instance.CheckExistDelete(txtTableID.Text))
                     {
                         int count = TableBUS.Instance.DeleteTable(int.Parse(txtTableID.Text));
 
                         if (count > 0)
-                            MessageBox.Show("Xóa bàn ăn thành công ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        {
+                            MessageBox.Show(info.deleteVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            frmTableManagement_Load(sender, e);
+                        }
                         else
-                            MessageBox.Show("Xóa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Xóa bàn ăn thất bại ,ban ăn hiện tại đang có khách", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                    frmTableManagement_Load(sender, e);
+
                 }
             }
             else
             {
 
-                if (MessageBox.Show("Do you want to delete this table?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteEn, info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    try
+                    if (TableBUS.Instance.CheckExistDelete(txtTableID.Text))
                     {
-                        if (TableBUS.Instance.checkExistDelete(txtTableID.Text))
-                        {
-                            int count = TableBUS.Instance.DeleteTable(int.Parse(txtTableID.Text));
+                        int count = TableBUS.Instance.DeleteTable(int.Parse(txtTableID.Text));
 
-                            if (count > 0)
-                                MessageBox.Show("Delete the dining table successfully", "Notification", MessageBoxButtons.OK);
-                            else
-                                MessageBox.Show("Delete the dining table failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        if (count > 0)
+                        {
+                            MessageBox.Show(info.deleteEn,info.titleMessageEn, MessageBoxButtons.OK);
+                            frmTableManagement_Load(sender, e);
                         }
                         else
-                            MessageBox.Show("Delete the dining table failed, the dining table is currently having guests", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    frmTableManagement_Load(sender, e);
+                    else
+                        MessageBox.Show(info.checkDelEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            }
+            }                                        
+                            
         }
 
         private void btnDeleteAllTable_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn thật sự muốn xóa tất cả các bàn  chứ ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                {
-                    try
-                    {
-                        if (TableBUS.Instance.checkExistDelete(txtTableID.Text))
+                if (MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {                  
+                        if (TableBUS.Instance.CheckExistDelete(txtTableID.Text))
                         {
                             int count = TableBUS.Instance.DeleteAllTable();
 
                             if (count > 0)
-                                MessageBox.Show("Xóa bàn ăn thành công ", "Thông báo", MessageBoxButtons.OK);
+                            {
+                                MessageBox.Show(info.deleteAllVi,info.titleMessageVi, MessageBoxButtons.OK);
+                                frmTableManagement_Load(sender, e);
+                            }
                             else
-                                MessageBox.Show("Xóa bàn ăn thất bại ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                MessageBox.Show(info.deleteAllFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
-                            MessageBox.Show("Xóa bàn ăn thất bại ,ban ăn hiện tại đang có khách", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    frmTableManagement_Load(sender, e);
+                            MessageBox.Show(info.checkDelVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+                                    
             }
             else
             {
-                if (MessageBox.Show("Do you really want to delete all the tables?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                {
-                    try
-                    {
-                        if (TableBUS.Instance.checkExistDelete(txtTableID.Text))
+                if (MessageBox.Show(info.messageDeleteAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {                   
+                        if (TableBUS.Instance.CheckExistDelete(txtTableID.Text))
                         {
                             int count = TableBUS.Instance.DeleteAllTable();
 
-                            if (count > 0)
-                                MessageBox.Show("Delete the dining table successfully", "Notification", MessageBoxButtons.OK);
-                            else
-                                MessageBox.Show("Delete the dining table failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        if (count > 0)
+                        {
+                            MessageBox.Show(info.deleteAllEn,info.titleMessageEn, MessageBoxButtons.OK);
+                            frmTableManagement_Load(sender, e);
                         }
                         else
-                            MessageBox.Show("Delete the dining table failed, the dining table is currently having guests", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    frmTableManagement_Load(sender, e);
+                            MessageBox.Show(info.deleteAllFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                            MessageBox.Show(info.checkDelEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);                   
+                    
                 }
             }
         }

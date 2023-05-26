@@ -83,13 +83,13 @@ namespace BUS
         {
             return TableDAO.Instance.UpdateTablePay(TableID);
         }
-        public bool checkTableExist(string tenban)
+        public bool CheckTableNameExist(string tableName) 
         {
-            return TableDAO.Instance.checkTableExist(tenban);
+            return TableDAO.Instance.CheckTableNameExist(tableName);
         }
-        public bool checkExistDelete(string TableID)
+        public bool CheckExistDelete(string tableID)
         {
-            return TableDAO.Instance.checkExistDelete(TableID);
+            return TableDAO.Instance.CheckExistDelete(tableID);
         }
     }
 }

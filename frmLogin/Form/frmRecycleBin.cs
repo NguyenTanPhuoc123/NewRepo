@@ -18,9 +18,10 @@ namespace frmLogin
     public partial class frmRecycleBin : Form
     {
         private int Language = frmlogin.Language;
+        HashCode info = new HashCode();
         public frmRecycleBin()
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -42,10 +43,7 @@ namespace frmLogin
         }
 
         private void btnExitFormSelectDish_Click(object sender, EventArgs e)
-        {
-           
-            
-                    
+        {                                          
             this.Close();
         }
 
@@ -61,99 +59,81 @@ namespace frmLogin
             frmTableManagement.ActiveForm.Load += new EventHandler(CloseForm);
         }
 
-        private void dtgvListTableFoodDeleted_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgvListTableFoodDeleted_SelectionChanged(object sender, EventArgs e)
         {
-            if (dtgvListTableFoodDeleted.SelectedRows.Count > 0)
+            info.firstIndex = info.valueDefault;
+            if (dtgvListTableFoodDeleted.SelectedRows.Count > info.valueDefault)
             {
-                txtTableID.Text = dtgvListTableFoodDeleted.SelectedRows[0].Cells[0].Value.ToString();
-                txtTableName.Text = dtgvListTableFoodDeleted.SelectedRows[0].Cells[1].Value.ToString();
-                txtLocation.Text = dtgvListTableFoodDeleted.SelectedRows[0].Cells[4].Value.ToString();
+                txtTableID.Text = dtgvListTableFoodDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
+                txtTableName.Text = dtgvListTableFoodDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
+                txtLocation.Text = dtgvListTableFoodDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
 
             }
         }
 
         private void btnRestoreTable_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn muốn khôi phục lại bàn ăn này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    try
+                if (MessageBox.Show(info.messageRestoreVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {                  
+                    int count = TableBUS.Instance.RestoreTable(int.Parse(txtTableID.Text));
+                    if (count > 0)
                     {
-                        int count = TableBUS.Instance.RestoreTable(int.Parse(txtTableID.Text));
-                        if (count > 0)
-                            MessageBox.Show("Khôi phục thành công ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
-                        else
-                            MessageBox.Show("Khôi phục thất bại ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
+                        MessageBox.Show(info.restoreVi,info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        LoadTableFoodDeleted();
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    LoadTableFoodDeleted();
-                }
+                    else
+                        MessageBox.Show(info.restoreFailedVi, info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }                
             }
             else
             {
-                if (MessageBox.Show("Do you want to restore this dining table?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    try
-                    {
+                if (MessageBox.Show(info.messageRestoreEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {                   
                         int count = TableBUS.Instance.RestoreTable(int.Parse(txtTableID.Text));
-                        if (count > 0)
-                            MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        else
-                            MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    catch (Exception ex)
+                    if (count > info.valueDefault)
                     {
-                        MessageBox.Show(ex.Message);
+                        MessageBox.Show(info.restoreEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadTableFoodDeleted();
                     }
-                    LoadTableFoodDeleted();
-                }
+                    else
+                        MessageBox.Show(info.restoreFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }    
             }
         }
 
         private void btnRestoreAllTable_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn chắc chắn muốn khôi phục lại tất cả bàn ăn chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    try
-                    {
+                if (MessageBox.Show(info.messageRestoreAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {                   
                         int count = TableBUS.Instance.RestoreAllTable();
-                        if (count > 0)
-                            MessageBox.Show("Khôi phục tất cả thành công ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
-                        else
-                            MessageBox.Show("Khôi phục tất cả thất bại ", "Khôi phục bàn ăn", MessageBoxButtons.OK);
-                    }
-                    catch (Exception ex)
+                    if (count > info.valueDefault)
                     {
-                        MessageBox.Show(ex.Message);
+                        MessageBox.Show(info.restoreAllVi, info.titleMessageVi, MessageBoxButtons.OK);
+                        LoadTableFoodDeleted();
                     }
-                    LoadTableFoodDeleted();
+                    else
+                        MessageBox.Show(info.restoreAllFailedVi, info.titleMessageVi, MessageBoxButtons.OK);     
                 }
             }
             else
             {
-                if (MessageBox.Show("Are you sure you want to restore all the dining tables?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    try
-                    {
+                if (MessageBox.Show(info.messageRestoreAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {                 
                         int count = TableBUS.Instance.RestoreAllTable();
-                        if (count > 0)
-                            MessageBox.Show("Successful recovery", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        else
-                            MessageBox.Show("Recovery failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    catch (Exception ex)
+                    if (count > info.valueDefault)
                     {
-                        MessageBox.Show(ex.Message);
+                        MessageBox.Show(info.restoreAllEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadTableFoodDeleted();
                     }
-                    LoadTableFoodDeleted();
-                }
-            }
+                    else
+                        MessageBox.Show(info.restoreAllFailedEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }                   
+                    
+            }           
         }
         #endregion
        
@@ -511,8 +491,8 @@ namespace frmLogin
         }
 
 
+
         #endregion
-
-
+       
     }
 }

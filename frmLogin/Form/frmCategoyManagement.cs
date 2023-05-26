@@ -17,9 +17,10 @@ namespace frmLogin
     public partial class frmCategoyManagement : Form
     {
         private int Language = frmlogin.Language;
+        HashCode info = new HashCode();
         public frmCategoyManagement()
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -35,7 +36,6 @@ namespace frmLogin
         private void frmCategoyManagement_Load(object sender, EventArgs e)
         {
             LoadLocationTable();
-
             LoadTypeProduct();
             LoadPosition();
             LoadTypeAccount();
@@ -74,37 +74,39 @@ namespace frmLogin
 
         private void btnSaveLocation_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtLocationName.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(info.eventNullVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text)==true)
                 {
                     int count = LocationBUS.Instance.AddLocationTable(txtLocationName.Text);
-                    if (count > 0)
+                    if (count > info.valueDefault)
                     {
-                        MessageBox.Show("Thêm vị trí bàn thành công!", "Thêm vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.addVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadLocationTable();
                     }
 
                     else
                     {
-                        MessageBox.Show("Thêm vị trí bàn thất bại!", "Thêm vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.addFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Tên vị trí đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.MessageCheckExistVi(txtLocationName.Text),info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
-                LoadLocationTable();
+                
             }
             else
             {
                 if (string.IsNullOrEmpty(txtLocationName.Text.Trim()))
                 {
-                    MessageBox.Show("Please enter the name of the desk location you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(info.eventNullEn,info.eventNullEn, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text)==true)
@@ -112,157 +114,165 @@ namespace frmLogin
                     int count = LocationBUS.Instance.AddLocationTable(txtLocationName.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Add successful table position!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.addEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadLocationTable();
                     }
 
                     else
                     {
-                        MessageBox.Show("Add failed table position!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.addFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Location name already exists!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.MessageCheckExistEn(txtLocationName.Text),info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
-                LoadLocationTable();
+                
             }
         }
 
         private void btnEditLocation_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtLocationName.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn sửa vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(info.eventNullVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (MessageBox.Show("Bạn chắc chắn muốn sửa vị trí bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageEditVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text)==true)
+                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text) == true)
                     {
                         int count = LocationBUS.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
-                        if (count > 0)
+                        if (count > info.valueDefault)
                         {
-                            MessageBox.Show("Sửa vị trí bàn thành công!", "Sửa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.editVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadLocationTable();
                         }
 
                         else
                         {
-                            MessageBox.Show("Sửa vị trí bàn thất bại!", "Sửa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.editFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
-                        MessageBox.Show("Tên vị trí đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    LoadLocationTable();
+                    {
+                        MessageBox.Show(info.MessageCheckExistVi(txtLocationName.Text),info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    
                 }
             }
             else
             {
                 if (string.IsNullOrEmpty(txtLocationName.Text.Trim()))
                 {
-                    MessageBox.Show("Please enter the name of the desk position you want to edit!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (MessageBox.Show("You definitely want to fix this desk position?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageEditEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text)==true)
+                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text) == true)
                     {
                         int count = LocationBUS.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
-                        if (count > 0)
+                        if (count > info.valueDefault)
                         {
-                            MessageBox.Show("Fix table position successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.editEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadLocationTable();
                         }
 
                         else
                         {
-                            MessageBox.Show("Fix table position failed!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.editFailedEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
-                        MessageBox.Show("Location name already exists!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    LoadLocationTable();
+                    {
+                        MessageBox.Show(info.MessageCheckExistEn(txtLocationName.Text),info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                 }
             }
         }
 
         private void btnDeleteLocation_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn chắc chắn muốn xóa vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteEn,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     
                         int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
-                        if (count > 0)
+                        if (count > info.valueDefault)
                         {
-                            MessageBox.Show("Xóa vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                            MessageBox.Show(info.deleteVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadLocationTable();
+                    }
 
                         else
                         {
-                            MessageBox.Show("Xóa vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                                        
-                    LoadLocationTable();
+                            MessageBox.Show(info.deleteFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }                                                      
                 }
             }
             else
             {
 
-                if (MessageBox.Show("You definitely want to delete this location?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {                  
-                        int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
-                        if (count > 0)
-                        {
-                            MessageBox.Show("Delete the table position successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Delete the table position unsuccessfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                                       
+                    int count = LocationBUS.Instance.DeleteLocationTable(int.Parse(txtLocationID.Text));
+                    if (count > info.valueDefault)
+                    {
+                        MessageBox.Show(info.deleteEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LoadLocationTable();
+                    }
+                    else
+                    {
+                        MessageBox.Show(info.deleteFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                                                              
                 }
             }
         }
 
         private void btnDeleteAllLocation_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn chắc chắn muốn xóa tất cả vị trí này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
 
                     int count = LocationBUS.Instance.DeleteAllLocationTable();
-                    if (count > 0)
+                    if (count > info.valueDefault)
                     {
-                        MessageBox.Show("Xóa tất cả vị trí bàn thành công!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.deleteAllVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadLocationTable();
                     }
 
                     else
                     {
-                        MessageBox.Show("Xóa tất cả vị trí bàn thất bại!", "Xóa vị trí", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.deleteAllFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    LoadLocationTable();
+                    
                 }
             }
             else
             {
-                if (MessageBox.Show("You definitely want to delete all these locations?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {                   
-                        int count = LocationBUS.Instance.DeleteAllLocationTable();
-                        if (count > 0)
-                        {
-                            MessageBox.Show("You definitely want to delete all these locations", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                    int count = LocationBUS.Instance.DeleteAllLocationTable();
+                    if (count > 0)
+                    {
+                        MessageBox.Show(info.deleteAllEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadLocationTable();
+                    }
 
-                        else
-                        {
-                            MessageBox.Show("Delete all failed table positions!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }                   
+                    else
+                    {
+                        MessageBox.Show(info.deleteAllFailedEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }                                       
                     
-                    LoadLocationTable();
                 }
             }
         }
@@ -275,9 +285,10 @@ namespace frmLogin
 
         private void dtgvListLocation_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dtgvListLocation.SelectedRows.Count > 0)
-                txtLocationID.Text = dtgvListLocation.SelectedRows[0].Cells[0].Value.ToString();
-            txtLocationName.Text = dtgvListLocation.SelectedRows[0].Cells[1].Value.ToString();
+            info.firstIndex = info.valueDefault;
+            if (dtgvListLocation.SelectedRows.Count > info.valueDefault)
+                txtLocationID.Text = dtgvListLocation.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
+            txtLocationName.Text = dtgvListLocation.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
         }
         #endregion
 

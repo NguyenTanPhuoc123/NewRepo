@@ -16,10 +16,11 @@ namespace frmLogin
 {
     public partial class frmRecycleBinCategory : Form
     {
+        HashCode info = new HashCode();
         private int Language = frmlogin.Language;
         public frmRecycleBinCategory()
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -65,42 +66,43 @@ namespace frmLogin
 
         private void dtgvListLocationDeleted_SelectionChanged(object sender, EventArgs e)
         {
-            if (dtgvListLocationDeleted.SelectedRows.Count > 0)
+            info.firstIndex = info.valueDefault;
+            if (dtgvListLocationDeleted.SelectedRows.Count > info.valueDefault)
             {
-                txtLocationID.Text = dtgvListLocationDeleted.SelectedRows[0].Cells[0].Value.ToString();
-                txtLocationName.Text = dtgvListLocationDeleted.SelectedRows[0].Cells[1].Value.ToString();
+                txtLocationID.Text = dtgvListLocationDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
+                txtLocationName.Text = dtgvListLocationDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
 
             }
         }
 
         private void btnRestoreLocation_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn chắc chắn muốn khôi phục lại vị trí bàn này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show(info.messageRestoreVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 int count = LocationBUS.Instance.RestoreLocation(int.Parse(txtLocationID.Text));
                 if (count > 0)
                 {
-                    MessageBox.Show("Khôi phục vị trí bàn thành công", "Khôi phục vị trí bàn", MessageBoxButtons.OK);
+                    MessageBox.Show(info.restoreVi,info.titleMessageVi, MessageBoxButtons.OK);
                     LoadLocationDeleted();
                 }
                 else
-                    MessageBox.Show("Khôi phục vị trí bàn thất bại", "Khôi phục vị trí bàn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(info.restoreFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
 
         private void btnRestoreAllLocation_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn chắc chắn muốn khôi phục tất cả  vị trí bàn này chứ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            if (MessageBox.Show(info.messageRestoreAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 int count = LocationBUS.Instance.RestoreAllLocation();
                 if (count > 0)
                 {
-                    MessageBox.Show("Khôi phục tất cả vị trí bàn thành công", "Khôi phục vị trí bàn", MessageBoxButtons.OK);
+                    MessageBox.Show(info.restoreAllVi,info.titleMessageVi, MessageBoxButtons.OK);
                     LoadLocationDeleted();
                 }
                 else
-                    MessageBox.Show("Khôi phục tất cả vị trí bàn thất bại", "Khôi phục vị trí bàn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(info.restoreAllFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
