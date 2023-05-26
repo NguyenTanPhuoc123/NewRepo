@@ -147,9 +147,12 @@ namespace frmLogin
                 {
                     int count = AccountBUS.Instance.RestoreAccountByUserName(txtUsername.Text);
                     if (count > info.valueDefault)
-                        MessageBox.Show(info.restoreVi, info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    {
+                        MessageBox.Show(info.restoreVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadAccountDeleted();
+                    }
                     else
-                        MessageBox.Show(info.restoreFailedVi, info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                        MessageBox.Show(info.restoreFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 frmRecycleBin_Load(sender, e);
             }
@@ -161,7 +164,7 @@ namespace frmLogin
                     if (count > 0)
                     {
                         MessageBox.Show(info.restoreEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        frmRecycleBin_Load(sender, e);
+                        LoadAccountDeleted();
                     }
                     else
                         MessageBox.Show(info.restoreFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -178,9 +181,12 @@ namespace frmLogin
                 {
                     int count = AccountBUS.Instance.RestoreAllAccount();
                     if (count > 0)
-                        MessageBox.Show(info.restoreAllVi, info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    {
+                        MessageBox.Show(info.restoreAllVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadAccountDeleted();
+                    }
                     else
-                        MessageBox.Show(info.restoreAllFailedVi, info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                        MessageBox.Show(info.restoreAllFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -191,7 +197,7 @@ namespace frmLogin
                     if (count > info.valueDefault)
                     {
                         MessageBox.Show(info.restoreAllEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        frmRecycleBin_Load(sender, e);
+                        LoadAccountDeleted();
                     }
                     else
                         MessageBox.Show(info.restoreAllFailedEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -212,10 +218,10 @@ namespace frmLogin
             info.firstIndex = info.valueDefault;
             int i = e.RowIndex;
             if (i == -1) return;
-            txtUsername.Text = dtgvListAccountDeleted.SelectedRows[i].Cells[info.firstIndex].Value.ToString();
-            txtPassword.Text = dtgvListAccountDeleted.SelectedRows[i].Cells[info.firstIndex += 1].Value.ToString();
-            txtEmployee.Text = dtgvListAccountDeleted.SelectedRows[i].Cells[info.firstIndex += 1].Value.ToString();
-            int type = int.Parse(dtgvListAccountDeleted.SelectedRows[i].Cells[info.firstIndex += 1].Value.ToString());
+            txtUsername.Text = dtgvListAccountDeleted.Rows[i].Cells[info.firstIndex].Value.ToString();
+            txtPassword.Text = dtgvListAccountDeleted.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
+            txtEmployee.Text = dtgvListAccountDeleted.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
+            int type = int.Parse(dtgvListAccountDeleted.Rows[i].Cells[info.firstIndex += 1].Value.ToString());
             if (type == info.idManager)
                 txtTypeAccount.Text = info.positionManager;
             else
@@ -239,8 +245,8 @@ namespace frmLogin
             pbProduct.Image = Image.FromStream(memoryStream);
             txtProductID.Text = dtgvListProductDeleted.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
             txtProductName.Text = dtgvListProductDeleted.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
-            cbCategory.SelectedValue = dtgvListProductDeleted.Rows[i].Cells[info.firstIndex += 2].Value;
-            numQuantity.Value = Convert.ToInt32(dtgvListProductDeleted.Rows[i].Cells[info.firstIndex += 1].Value);
+            txtCategoryProduct.Text = dtgvListProductDeleted.Rows[i].Cells[info.firstIndex +=1].Value.ToString();
+            numQuantity.Value = Convert.ToInt32(dtgvListProductDeleted.Rows[i].Cells[info.firstIndex += 2].Value);
             txtPrice.Text = dtgvListProductDeleted.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
             richtxtDescribe.Text = dtgvListProductDeleted.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
         }
@@ -426,12 +432,13 @@ namespace frmLogin
 
         private void dtgvListBillDetailDeleted_SelectionChanged(object sender, EventArgs e)
         {
+            info.firstIndex = info.valueDefault;
             if (dtgvListBillDetailDeleted.SelectedRows.Count > info.valueDefault)
             {
                 txtBillID.Text = dtgvListBillDetailDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
                 txtProductNameBill.Text = dtgvListBillDetailDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
-                numCountBillInfo.Value = int.Parse(dtgvListBillDetailDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString());
-                txtPriceBillInfo.Text = dtgvListBillDetailDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                numCountBillInfo.Value = int.Parse(dtgvListBillDetailDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString());                
+                txtPriceBillInfo.Text = dtgvListBillDetailDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();                             
                 txtTotalBillInfo.Text = dtgvListBillDetailDeleted.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
             }
         }
