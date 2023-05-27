@@ -117,990 +117,857 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Chức vụ:</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="grpFunctionEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 247</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 22</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Sắp xếp</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="cbSortEmployee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="cbSortEmployee.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="cbSortEmployee.Items" xml:space="preserve">
-    <value>Mặc định</value>
-  </data>
-  <data name="cbSortEmployee.Items1" xml:space="preserve">
-    <value>Tên nhân viên</value>
-  </data>
-  <data name="cbSortEmployee.Items2" xml:space="preserve">
-    <value>Mã nhân viên</value>
-  </data>
-  <data name="cbSortEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 268</value>
-  </data>
-  <data name="cbSortEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 36</value>
-  </data>
-  <data name="cbSortEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;cbSortEmployee.Name" xml:space="preserve">
-    <value>cbSortEmployee</value>
-  </data>
-  <data name="&gt;&gt;cbSortEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;cbSortEmployee.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cbSortEmployee.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="txtSearchEmployee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="txtSearchEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 268</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtSearchEmployee.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="txtSearchEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 36</value>
-  </data>
-  <data name="txtSearchEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;txtSearchEmployee.Name" xml:space="preserve">
-    <value>txtSearchEmployee</value>
-  </data>
-  <data name="&gt;&gt;txtSearchEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;txtSearchEmployee.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtSearchEmployee.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="cbFillEmployee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="cbFillEmployee.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="cbFillEmployee.Items" xml:space="preserve">
-    <value>Tất cả</value>
-  </data>
-  <data name="cbFillEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>852, 269</value>
-  </data>
-  <data name="cbFillEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 36</value>
-  </data>
-  <data name="cbFillEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;cbFillEmployee.Name" xml:space="preserve">
-    <value>cbFillEmployee</value>
-  </data>
-  <data name="&gt;&gt;cbFillEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;cbFillEmployee.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cbFillEmployee.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="dtgvListEmployee.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <metadata name="colEmployeeID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="colEmployeeID.HeaderText" xml:space="preserve">
-    <value>Mã nhân viên</value>
-  </data>
-  <data name="colEmployeeID.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="colEmployeeFullName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="colEmployeeFullName.HeaderText" xml:space="preserve">
-    <value>Họ tên</value>
-  </data>
-  <data name="colEmployeeFullName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="colBirthDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="colBirthDay.HeaderText" xml:space="preserve">
-    <value>Ngày sinh</value>
-  </data>
-  <data name="colBirthDay.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="colSex.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="colSex.HeaderText" xml:space="preserve">
-    <value>Giới tính</value>
-  </data>
-  <data name="colSex.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="colNumberPhone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="colNumberPhone.HeaderText" xml:space="preserve">
-    <value>Số điện thoai</value>
-  </data>
-  <data name="colNumberPhone.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="colAddress.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="colAddress.HeaderText" xml:space="preserve">
-    <value>Địa chỉ</value>
-  </data>
-  <data name="colAddress.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="colWorkingDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="colWorkingDay.HeaderText" xml:space="preserve">
-    <value>Ngày vào làm</value>
-  </data>
-  <data name="colWorkingDay.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="colPosition.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="colPosition.HeaderText" xml:space="preserve">
-    <value>Chức vụ</value>
-  </data>
-  <data name="colPosition.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column1.HeaderText" xml:space="preserve">
-    <value>MaChucVu</value>
-  </data>
-  <data name="Column1.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="Column1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="dtgvListEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 311</value>
-  </data>
-  <data name="dtgvListEmployee.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
   <data name="dtgvListEmployee.Size" type="System.Drawing.Size, System.Drawing">
     <value>980, 179</value>
   </data>
-  <data name="dtgvListEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;btnSaveEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;dtgvListEmployee.Name" xml:space="preserve">
-    <value>dtgvListEmployee</value>
-  </data>
-  <data name="&gt;&gt;dtgvListEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtgvListEmployee.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dtgvListEmployee.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="guna2HtmlLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>852, 247</value>
-  </data>
-  <data name="guna2HtmlLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 22</value>
-  </data>
-  <data name="guna2HtmlLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="guna2HtmlLabel1.Text" xml:space="preserve">
-    <value>Lọc</value>
-  </data>
-  <data name="&gt;&gt;guna2HtmlLabel1.Name" xml:space="preserve">
-    <value>guna2HtmlLabel1</value>
-  </data>
-  <data name="&gt;&gt;guna2HtmlLabel1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;guna2HtmlLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;guna2HtmlLabel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;richtxtAddress.Name" xml:space="preserve">
-    <value>richtxtAddress</value>
-  </data>
-  <data name="&gt;&gt;richtxtAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richtxtAddress.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;richtxtAddress.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="radMale.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cbPosition.Name" xml:space="preserve">
-    <value>cbPosition</value>
-  </data>
-  <data name="&gt;&gt;cbPosition.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;cbPosition.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;cbPosition.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;dtpWorkingDay.Name" xml:space="preserve">
-    <value>dtpWorkingDay</value>
-  </data>
-  <data name="&gt;&gt;dtpWorkingDay.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtpWorkingDay.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;dtpWorkingDay.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txtNumberPhone.Name" xml:space="preserve">
-    <value>txtNumberPhone</value>
-  </data>
-  <data name="&gt;&gt;txtNumberPhone.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;txtNumberPhone.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;txtNumberPhone.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;radFemale.Name" xml:space="preserve">
-    <value>radFemale</value>
-  </data>
-  <data name="&gt;&gt;radFemale.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radFemale.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;radFemale.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;radMale.Name" xml:space="preserve">
-    <value>radMale</value>
-  </data>
-  <data name="&gt;&gt;radMale.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radMale.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
   </data>
   <data name="&gt;&gt;radMale.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;dtpBirthday.Name" xml:space="preserve">
-    <value>dtpBirthday</value>
-  </data>
-  <data name="&gt;&gt;dtpBirthday.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtpBirthday.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;dtpBirthday.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeName.Name" xml:space="preserve">
-    <value>txtEmployeeName</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeName.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeName.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeName.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeID.Name" xml:space="preserve">
-    <value>txtEmployeeID</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeID.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeID.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeID.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="grpEmployeeInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="grpEmployeeInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 232</value>
-  </data>
-  <data name="grpEmployeeInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="grpEmployeeInfo.Text" xml:space="preserve">
-    <value>Thông tin nhân viên</value>
-  </data>
-  <data name="&gt;&gt;grpEmployeeInfo.Name" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;grpEmployeeInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpEmployeeInfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpEmployeeInfo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="richtxtAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 157</value>
-  </data>
-  <data name="richtxtAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 63</value>
-  </data>
-  <data name="richtxtAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="richtxtAddress.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;richtxtAddress.Name" xml:space="preserve">
-    <value>richtxtAddress</value>
-  </data>
-  <data name="&gt;&gt;richtxtAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richtxtAddress.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;richtxtAddress.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 175</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 22</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Địa chỉ:</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cbPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="cbPosition.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="cbPosition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 115</value>
-  </data>
-  <data name="cbPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 36</value>
-  </data>
-  <data name="cbPosition.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;cbPosition.Name" xml:space="preserve">
-    <value>cbPosition</value>
-  </data>
-  <data name="&gt;&gt;cbPosition.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;cbPosition.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;cbPosition.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 129</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 22</value>
+  <data name="&gt;&gt;dtpWorkingDay.Name" xml:space="preserve">
+    <value>dtpWorkingDay</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Chức vụ:</value>
+  <data name="txtNumberPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 24</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="&gt;&gt;dtpBirthday.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;richtxtAddress.Parent" xml:space="preserve">
     <value>grpEmployeeInfo</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="dtpWorkingDay.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnDeleteEmployee.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="dtpWorkingDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 72</value>
+  <data name="&gt;&gt;grpEmployeeInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="dtpWorkingDay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 36</value>
+  <data name="Column1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="dtpWorkingDay.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="guna2HtmlLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>852, 247</value>
   </data>
-  <data name="&gt;&gt;dtpWorkingDay.Name" xml:space="preserve">
-    <value>dtpWorkingDay</value>
+  <data name="&gt;&gt;guna2AnimateWindow1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2AnimateWindow, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;dtpWorkingDay.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="&gt;&gt;cbSortEmployee.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;dtpWorkingDay.Parent" xml:space="preserve">
+  <data name="&gt;&gt;radMale.Parent" xml:space="preserve">
     <value>grpEmployeeInfo</value>
   </data>
-  <data name="&gt;&gt;dtpWorkingDay.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="txtEmployeeName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 38</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="dtgvListEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 311</value>
+  </data>
+  <data name="txtEmployeeID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 24</value>
+  </data>
+  <data name="cbSortEmployee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="grpFunctionEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>699, 20</value>
+  </data>
+  <data name="btnDeleteEmployee.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="btnEditEmployee.Text" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>363, 83</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+  <data name="&gt;&gt;txtSearchEmployee.Name" xml:space="preserve">
+    <value>txtSearchEmployee</value>
   </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="colWorkingDay.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Ngày vào làm:</value>
+  <data name="&gt;&gt;richtxtAddress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtSearchEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="richtxtAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnEmployeeDeleted.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACyUlEQVRYR8WXS8hNURTHr1fkETMMFFJi
+        5JERI5kQZqSEUvJIIRIp8ppQShQDjwkT8ph4JKEklJJHyTOvTCjyypvfb3931b33u+ee47tX/vXru2ud
+        tfY5Z5+9115fqQMaBXvhEXyHH/AY9sE4+GfqAd74F/zOwGsHoRe0VN78AsSN7sFamAKTYTXchbh+BXpC
+        y7QL4g3XQxeoVWfwQX6CsQegJRoJMehGHTlaA/GwY3U0qx3ggE+gm44cOTt+InNcM03rJjjY1mQV0zow
+        536ycjQD9jTgMziYi7De9XqcA3O+VfjqMRtK78Hg/8FXKC2BE2Viun3rky3mAzj2bYj7LYcqzQSDPiar
+        tXoNjj0vWRkaDwZJPx0tUneICjpJR5aGQDyA+z9PVsFpbT8bajAUGrfwkyKLjAXKeGeukf5qZot8q05w
+        GWLQG2ApzpJb3bhCa+sWGOxhk6VZEDeXp+DsZcnVbtyDZOXoNBi8O1nt5Sn3DIw5BUchFZQG2gbGX0pW
+        jmwsDD6erPbaAF63yg2H/uD094GVUE+HwJzDycqRJ57B15NVrUHwCbzuIVWpLfAFhiWrWhfBnO3JytFC
+        MPhFsqply7UYFkBfHRV6COZZ9WrloeS1FcnKkfvaYPu9eo1HluaAeVK7haMMW2lzNQZioIE6kN/Y6dsP
+        q3TUkVvzGph3B7qCcqZivAk68jQAIiE6mvkQPrfU6AriRlY7P0/ELQU1AsI3VEeefFtXuAnTwc/wqmzX
+        Yxkoy3Kl/w1YG/wc2lZMm9tCeg4mLQIfqLLjreUdOGvKIzb8Fh1buLll2wcqrKtg0uZktQ3kfs8i3sy/
+        4Yv+MZpU+4DCOgYmueiaVbT0Z5JVUJF0NlnNqUMvE9NWqKvNUbR5m5JVUBPBJDkCJncEa3+MMxUKy6Jy
+        HiK5Wfxf8W+qalJv2Aluybcd5CXY/9eeG2WVSn8A7ig9LTyeth8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;cbFillEmployee.Name" xml:space="preserve">
+    <value>cbFillEmployee</value>
+  </data>
+  <data name="&gt;&gt;radFemale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtEmployeeName.Name" xml:space="preserve">
+    <value>txtEmployeeName</value>
+  </data>
+  <data name="btnSearchEmployee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnSaveEmployee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtEmployeeID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;dtgvListEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="grpEmployeeInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 232</value>
+  </data>
+  <data name="btnEditEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="colNumberPhone.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="txtEmployeeName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 70</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeDeleted.Name" xml:space="preserve">
+    <value>btnEmployeeDeleted</value>
+  </data>
+  <data name="cbPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 115</value>
+  </data>
+  <data name="&gt;&gt;dtgvListEmployee.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtSearchEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeDeleted.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;colAddress.Name" xml:space="preserve">
+    <value>colAddress</value>
+  </data>
+  <data name="btnEmployeeDeleted.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 78</value>
+  </data>
+  <data name="btnEditEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 78</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;colWorkingDay.Name" xml:space="preserve">
+    <value>colWorkingDay</value>
   </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>grpEmployeeInfo</value>
   </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="grpFunctionEmployee.Text" xml:space="preserve">
+    <value>Chức năng</value>
   </data>
-  <data name="txtNumberPhone.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="txtNumberPhone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 24</value>
-  </data>
-  <data name="txtNumberPhone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="btnAddEmployee.Text" xml:space="preserve">
+    <value>Thêm</value>
   </data>
   <data name="txtNumberPhone.Size" type="System.Drawing.Size, System.Drawing">
     <value>207, 38</value>
   </data>
-  <data name="txtNumberPhone.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;radMale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtNumberPhone.Name" xml:space="preserve">
-    <value>txtNumberPhone</value>
+  <data name="&gt;&gt;grpFunctionEmployee.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;txtNumberPhone.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;txtNumberPhone.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;txtNumberPhone.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 35</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Số điện thoại:</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="radFemale.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radFemale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 175</value>
-  </data>
-  <data name="radFemale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 26</value>
-  </data>
-  <data name="radFemale.TabIndex" type="System.Int32, mscorlib">
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="radFemale.Text" xml:space="preserve">
     <value>Nữ</value>
   </data>
-  <data name="&gt;&gt;radFemale.Name" xml:space="preserve">
-    <value>radFemale</value>
-  </data>
-  <data name="&gt;&gt;radFemale.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radFemale.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;radFemale.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="radMale.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radMale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 175</value>
+  <data name="&gt;&gt;cbSortEmployee.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="radMale.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 26</value>
   </data>
-  <data name="radMale.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="radMale.Text" xml:space="preserve">
-    <value>Nam</value>
-  </data>
-  <data name="&gt;&gt;radMale.Name" xml:space="preserve">
-    <value>radMale</value>
-  </data>
-  <data name="&gt;&gt;radMale.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radMale.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;radMale.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+  <data name="radFemale.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 175</value>
+  <data name="btnDeleteAllEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 151</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 22</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Giới tính:</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="dtpBirthday.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="dtpBirthday.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 115</value>
-  </data>
-  <data name="dtpBirthday.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 36</value>
-  </data>
-  <data name="dtpBirthday.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;dtpBirthday.Name" xml:space="preserve">
-    <value>dtpBirthday</value>
-  </data>
-  <data name="&gt;&gt;dtpBirthday.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtpBirthday.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;dtpBirthday.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 129</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 22</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Ngày sinh:</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="txtEmployeeName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="txtEmployeeName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 70</value>
-  </data>
-  <data name="txtEmployeeName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="txtEmployeeName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 38</value>
-  </data>
-  <data name="txtEmployeeName.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeName.Name" xml:space="preserve">
-    <value>txtEmployeeName</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeName.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeName.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
-  </data>
-  <data name="&gt;&gt;txtEmployeeName.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 83</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Tên nhân viên:</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
+  <data name="&gt;&gt;txtNumberPhone.Name" xml:space="preserve">
+    <value>txtNumberPhone</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="txtEmployeeID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="btnDeleteAllEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="txtEmployeeID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 24</value>
+  <data name="&gt;&gt;dtpBirthday.Name" xml:space="preserve">
+    <value>dtpBirthday</value>
   </data>
-  <data name="txtEmployeeID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="guna2HtmlLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 22</value>
   </data>
-  <data name="txtEmployeeID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 38</value>
+  <data name="&gt;&gt;colAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtEmployeeID.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;btnSearchEmployee.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtEmployeeID.Name" xml:space="preserve">
-    <value>txtEmployeeID</value>
+  <data name="Column1.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;txtEmployeeID.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1054, 497</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txtEmployeeID.Parent" xml:space="preserve">
     <value>grpEmployeeInfo</value>
   </data>
+  <data name="&gt;&gt;cbPosition.Name" xml:space="preserve">
+    <value>cbPosition</value>
+  </data>
+  <data name="dtgvListEmployee.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dtpBirthday.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="&gt;&gt;dtpWorkingDay.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;txtEmployeeID.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="btnEmployeeDeleted.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;dtgvListEmployee.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 175</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Sắp xếp</value>
+  </data>
+  <data name="&gt;&gt;dtgvListEmployee.Name" xml:space="preserve">
+    <value>dtgvListEmployee</value>
+  </data>
+  <data name="radFemale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 26</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 247</value>
+  </data>
+  <data name="txtSearchEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 268</value>
+  </data>
+  <data name="btnSaveEmployee.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="grpFunctionEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 218</value>
+  </data>
+  <data name="&gt;&gt;cbFillEmployee.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmEmployeeManager</value>
+  </data>
+  <data name="&gt;&gt;btnAddEmployee.Name" xml:space="preserve">
+    <value>btnAddEmployee</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="cbSortEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btnSearchEmployee.Name" xml:space="preserve">
+    <value>btnSearchEmployee</value>
+  </data>
+  <data name="btnEmployeeDeleted.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnAddEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="&gt;&gt;colPosition.Name" xml:space="preserve">
+    <value>colPosition</value>
+  </data>
+  <data name="colEmployeeFullName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteEmployee.Parent" xml:space="preserve">
+    <value>grpFunctionEmployee</value>
+  </data>
+  <data name="radFemale.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;colWorkingDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 129</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Địa chỉ:</value>
+  </data>
+  <data name="btnDeleteEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 45</value>
+  </data>
+  <data name="cbSortEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 268</value>
+  </data>
+  <data name="btnSearchEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        pd9JdRQ04zIJABjZWdN1Uj0hqFfPjkndwKQfVkc71+/49Q2/dm+sI59ZP5MAgDWqx9WHplpQ+KT09rTk
+        vQeOTe9I9e3+f6WfTwcltsMkAGCDah3BJdLN0oPSi1I98t6lrYrrW339bl+L9R6SbpEunZa2Ec8cmAQA
+        TEBtV1yLDGvXusNSPRavnxLqw7Q+VLuBbVsdlWoh5PNSba9beyjUzx8XSz7o58UkAGDizpnqfferpVoR
+        f/tUj9Ifmp6Y6sO4enWqicPrU31IVx9KNZGoPnLCH6vekOrPrfb89+vnivpQv1e6Q7pxukb6iVQbJtUh
+        S+wWkwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
+        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
+        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
+        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
+        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
+        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
+        AFgokwAAWKj7pO5Dc5f6Xrp0AgBOZJefBNSH/20SANDYxUmAD38A2Au7NAnw4Q8A+2AXJgE+/AFgBXOe
+        BPjwB4AB5jgJ8OEPACOY0yTAhz8AjGgOkwAf/gCwBlOeBPjwB4A1muIkwIc/AGzAlCYBPvwBYIOmMAnw
+        4Q8AW7DNSYAPfwDYom1MAnz4A8AEbHIS4MMfACZkE5MAH/4AMEHrnAT48AeACVvHJMCHPwDMwJiTAB/+
+        ADAjY0wCfPgDwAwNmQT48AeAGVtlEuDDHwB2wL5MAnz4A8AO2ZtJgA9/ANhBpzQJ8OEPADusmwT48AeA
+        BTjxJMCHPwAsSE0CfPgDwAJd+oT/BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOzmlO838BWh4XXIETABAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="dtpBirthday.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="&gt;&gt;btnAddEmployee.Parent" xml:space="preserve">
+    <value>grpFunctionEmployee</value>
+  </data>
+  <data name="&gt;&gt;richtxtAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colNumberPhone.HeaderText" xml:space="preserve">
+    <value>Số điện thoai</value>
+  </data>
+  <data name="txtNumberPhone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;btnSearchEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="cbPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 36</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAllEmployee.Parent" xml:space="preserve">
+    <value>grpFunctionEmployee</value>
+  </data>
+  <data name="dtpBirthday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 115</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 35</value>
+  </data>
+  <data name="&gt;&gt;btnSearchEmployee.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnAddEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 27</value>
+  </data>
+  <data name="dtpWorkingDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 36</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 35</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 22</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Mã nhân viên:</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>grpEmployeeInfo</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;radFemale.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="btnSaveEmployee.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Ngày sinh:</value>
   </data>
-  <data name="btnSaveEmployee.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnAddEmployee.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="btnSaveEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAZBJREFUaEPtmjFOA0EQBJ0geAS8GBDPICID/CLgF8BscFJrVKe2b9nxSlxJldxe
-        T3vkYAP7sLOzs4mb8Cn8Cn8u5HN4FXbRlqDh1b6EXcu4b2I02vUaXoeb0EHkaHLf5mXyoOxoqHPTMjRI
-        7cXNy+eLZy9DQ9Re3Lx8rp61DA1Qe3Hz8nn25GUorPbi5uVzst0zFgqqvbh5+Zz8Di0UVHtx8/L5mhYK
-        qb24efl8TQuF1F7cvHy+poVC6miok7RQSL0NR3EXUidpoZD6HrbCv6bNPIbUSVooNKMWCs2ohUIzaqHQ
-        jFooNKMWCs2ohUIzaqGQ+haOvBTb7HZXUbdqoZA6comFU254C4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2C
-        ulULhdQqqFu1UEitgrpVC4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2CulULhdQqqFu1UEitgrpVC71Mz0ZD
-        nfRsFXqZno2GOunZKpf+MXSBuhc/QstjSOGZvA8t7Q8DbZnPkIZc0vaZHsJNv/Lu7PxPDodfVkTFZozc
-        PjYAAAAASUVORK5CYII=
-</value>
+  <data name="btnEmployeeDeleted.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 45</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnSaveEmployee.Location" type="System.Drawing.Point, System.Drawing">
     <value>156, 27</value>
   </data>
-  <data name="btnSaveEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 45</value>
+  <data name="btnSearchEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="btnSaveEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;btnEmployeeDeleted.Parent" xml:space="preserve">
+    <value>grpFunctionEmployee</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 22</value>
+  </data>
+  <data name="cbFillEmployee.Items" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btnEmployeeDeleted.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;radMale.Name" xml:space="preserve">
+    <value>radMale</value>
+  </data>
+  <data name="txtEmployeeName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnEditEmployee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="cbSortEmployee.Items" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="&gt;&gt;colPosition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grpEmployeeInfo.Text" xml:space="preserve">
+    <value>Thông tin nhân viên</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="btnDeleteAllEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaUlEQVRYR+2XQU7DQAxFcwo4AtweuEUB
+        AQs4B13AGvALcjX9M447HWiExJO+Gk+cb3fcSNPpn04+j9S76cZ0aRqiZd6jrenCdHLOTNcmmuBzFc5N
+        NMA4FmFOzIvEcvt6FM3c74fwAHMqzUakM/f1ELom4crE3I6F7W7NPG3At32kuNOaedpAmtCJ+qX+aUIn
+        6pf6pwmdqF/qHyXcmx5Nrd8Ga0+muznaR/0i/x1RAsVZfzaVTXD9YuLeAwuC+mlcESVQiOLc8ybK4tqY
+        o34aVywlaBNZcVA/jSuyhLIJtFQc1E/jiiyBYv7N0UkbKItT2HdiqQn107giStDixChrQv00rogSeM9Z
+        10JlE7yqivppXBEl3Jp4z1vfkjXubeZoH/WL/HekCZ2oH9cf35dtfruBlNUb8AMJh4lR/EDyNkcH4kcy
+        jlEjTfBs6XUwHEpfTTz4E8Kr+48ID9D1yLGcbcdjlX9Bf4lp+gJXohWYGBGt/AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 83</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="btnSaveEmployee.Text" xml:space="preserve">
     <value>Lưu</value>
   </data>
+  <data name="richtxtAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 157</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radMale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 175</value>
+  </data>
+  <data name="&gt;&gt;btnAddEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbSortEmployee.Name" xml:space="preserve">
+    <value>cbSortEmployee</value>
+  </data>
+  <data name="&gt;&gt;dtpBirthday.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="colAddress.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;colBirthDay.Name" xml:space="preserve">
+    <value>colBirthDay</value>
+  </data>
+  <data name="&gt;&gt;txtSearchEmployee.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;colEmployeeFullName.Name" xml:space="preserve">
+    <value>colEmployeeFullName</value>
+  </data>
+  <data name="txtEmployeeID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 38</value>
+  </data>
+  <data name="colPosition.HeaderText" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+  <data name="&gt;&gt;txtSearchEmployee.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnSearchEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 269</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;colEmployeeID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;colEmployeeID.Name" xml:space="preserve">
+    <value>colEmployeeID</value>
+  </data>
+  <data name="&gt;&gt;colSex.Name" xml:space="preserve">
+    <value>colSex</value>
+  </data>
+  <data name="&gt;&gt;cbFillEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;grpEmployeeInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtEmployeeName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;txtEmployeeName.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="colEmployeeFullName.HeaderText" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpEmployeeInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEditEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
   <data name="&gt;&gt;btnSaveEmployee.Name" xml:space="preserve">
     <value>btnSaveEmployee</value>
   </data>
-  <data name="&gt;&gt;btnSaveEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="&gt;&gt;txtNumberPhone.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;btnSaveEmployee.Parent" xml:space="preserve">
-    <value>grpFunctionEmployee</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
-  <data name="&gt;&gt;btnSaveEmployee.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="txtEmployeeName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="btnAddEmployee.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="colEmployeeID.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;colEmployeeFullName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteEmployee.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="radFemale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 175</value>
+  </data>
+  <data name="btnEditEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 45</value>
+  </data>
+  <data name="radMale.Text" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="richtxtAddress.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtEmployeeName.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnDeleteAllEmployee.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;radFemale.Name" xml:space="preserve">
+    <value>radFemale</value>
+  </data>
+  <data name="&gt;&gt;txtEmployeeID.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnEditEmployee.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnDeleteEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 149</value>
+  </data>
+  <data name="btnSaveEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Tên nhân viên:</value>
+  </data>
+  <data name="colEmployeeID.HeaderText" xml:space="preserve">
+    <value>Mã nhân viên</value>
   </data>
   <data name="btnAddEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1760,32 +1627,281 @@
         56V0qfoP99fq+GUhcdcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnAddEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 27</value>
+  <data name="btnEmployeeDeleted.Text" xml:space="preserve">
+    <value>Nhân viên đã xóa</value>
   </data>
-  <data name="btnAddEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 45</value>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="btnAddEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Mã nhân viên:</value>
   </data>
-  <data name="btnAddEmployee.Text" xml:space="preserve">
-    <value>Thêm</value>
+  <data name="dtpWorkingDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 72</value>
   </data>
-  <data name="&gt;&gt;btnAddEmployee.Name" xml:space="preserve">
-    <value>btnAddEmployee</value>
+  <data name="&gt;&gt;cbPosition.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;btnAddEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnAddEmployee.Parent" xml:space="preserve">
-    <value>grpFunctionEmployee</value>
+  <data name="dtgvListEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;btnAddEmployee.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnEditEmployee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteEmployee.Name" xml:space="preserve">
+    <value>btnDeleteEmployee</value>
+  </data>
+  <data name="&gt;&gt;colSex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAllEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="colWorkingDay.HeaderText" xml:space="preserve">
+    <value>Ngày vào làm</value>
+  </data>
+  <data name="btnDeleteAllEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 43</value>
+  </data>
+  <data name="richtxtAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 63</value>
+  </data>
+  <data name="btnDeleteEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="cbPosition.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbFillEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 36</value>
+  </data>
+  <data name="cbSortEmployee.Items1" xml:space="preserve">
+    <value>Tên nhân viên</value>
+  </data>
+  <data name="cbSortEmployee.Items2" xml:space="preserve">
+    <value>Mã nhân viên</value>
+  </data>
+  <data name="txtEmployeeID.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 175</value>
+  </data>
+  <data name="colSex.HeaderText" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAllEmployee.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="colSex.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnDeleteEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAvAAAALwCAYAAADxpkF6AAAABGdBTUEAALGPC/xhBQAALGtJREFUeF7t
+        3QfYtvd8//EkskQiRhJ7x94zVFClVGyS2lvQamySFB1GqkYJtWdoBUVo7B0xSysoMRqjCCGRSCJLkv//
+        8ytXG0++97Pu+zrn63Uc7+PAYTzPdZ6X83uf93n+flsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDkbJ0u+rsue55/vFUCAAA6slu6VXpEem56Y3pf+lL6UTo9
+        /b+N6LT0w/T59K/pdelZ6SHp5uniCQAA2EjtTvm1UhuoX56+mE5K1TC+rI5PR6aXpPunqyYAACDawH6j
+        tH/6SPpVqobqvjshtTv+T0jXTgAAMBs7pwent6VfpGpgHnrHpkPSPmmHBAAAk7IY2g9PZ6RqKB5r7fn7
+        9vdqf7+dEgAAjNKW6Y/SoWlqQ/tKnZrekNoLsQAAMAqXSO2Z9u+masidS19L+6WLJAAAGJwrp4NTW6qx
+        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
+        6enJi6oAAGySHdJuaav/+Wcsy3apfc5tuAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA6M0WW/x/N25AQIh9/CgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnSaveEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 45</value>
+  </data>
+  <data name="&gt;&gt;colNumberPhone.Name" xml:space="preserve">
+    <value>colNumberPhone</value>
   </data>
   <data name="btnEditEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2602,53 +2718,147 @@
         di29eRAXqm8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnEditEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 78</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="btnEditEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 45</value>
-  </data>
-  <data name="btnEditEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="btnEditEmployee.Text" xml:space="preserve">
-    <value>Sửa</value>
-  </data>
-  <data name="&gt;&gt;btnEditEmployee.Name" xml:space="preserve">
-    <value>btnEditEmployee</value>
-  </data>
-  <data name="&gt;&gt;btnEditEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnEditEmployee.Parent" xml:space="preserve">
-    <value>grpFunctionEmployee</value>
-  </data>
-  <data name="&gt;&gt;btnEditEmployee.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnDeleteAllEmployee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnDeleteAllEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSaveEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaUlEQVRYR+2XQU7DQAxFcwo4AtweuEUB
-        AQs4B13AGvALcjX9M447HWiExJO+Gk+cb3fcSNPpn04+j9S76cZ0aRqiZd6jrenCdHLOTNcmmuBzFc5N
-        NMA4FmFOzIvEcvt6FM3c74fwAHMqzUakM/f1ELom4crE3I6F7W7NPG3At32kuNOaedpAmtCJ+qX+aUIn
-        6pf6pwmdqF/qHyXcmx5Nrd8Ga0+muznaR/0i/x1RAsVZfzaVTXD9YuLeAwuC+mlcESVQiOLc8ybK4tqY
-        o34aVywlaBNZcVA/jSuyhLIJtFQc1E/jiiyBYv7N0UkbKItT2HdiqQn107giStDixChrQv00rogSeM9Z
-        10JlE7yqivppXBEl3Jp4z1vfkjXubeZoH/WL/HekCZ2oH9cf35dtfruBlNUb8AMJh4lR/EDyNkcH4kcy
-        jlEjTfBs6XUwHEpfTTz4E8Kr+48ID9D1yLGcbcdjlX9Bf4lp+gJXohWYGBGt/AAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAZBJREFUaEPtmjFOA0EQBJ0geAS8GBDPICID/CLgF8BscFJrVKe2b9nxSlxJldxe
+        T3vkYAP7sLOzs4mb8Cn8Cn8u5HN4FXbRlqDh1b6EXcu4b2I02vUaXoeb0EHkaHLf5mXyoOxoqHPTMjRI
+        7cXNy+eLZy9DQ9Re3Lx8rp61DA1Qe3Hz8nn25GUorPbi5uVzst0zFgqqvbh5+Zz8Di0UVHtx8/L5mhYK
+        qb24efl8TQuF1F7cvHy+poVC6miok7RQSL0NR3EXUidpoZD6HrbCv6bNPIbUSVooNKMWCs2ohUIzaqHQ
+        jFooNKMWCs2ohUIzaqGQ+haOvBTb7HZXUbdqoZA6comFU254C4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2C
+        ulULhdQqqFu1UEitgrpVC4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2CulULhdQqqFu1UEitgrpVC71Mz0ZD
+        nfRsFXqZno2GOunZKpf+MXSBuhc/QstjSOGZvA8t7Q8DbZnPkIZc0vaZHsJNv/Lu7PxPDodfVkTFZozc
+        PjYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnDeleteAllEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 151</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 22</value>
   </data>
-  <data name="btnDeleteAllEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 43</value>
+  <data name="&gt;&gt;cbPosition.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="btnDeleteAllEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Giới tính:</value>
+  </data>
+  <data name="radMale.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 22</value>
+  </data>
+  <data name="&gt;&gt;guna2AnimateWindow1.Name" xml:space="preserve">
+    <value>guna2AnimateWindow1</value>
+  </data>
+  <data name="dtpWorkingDay.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cbSortEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 36</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 129</value>
+  </data>
+  <data name="&gt;&gt;colBirthDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtEmployeeID.Name" xml:space="preserve">
+    <value>txtEmployeeID</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmEmployeeManager</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtSearchEmployee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Ngày vào làm:</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cbFillEmployee.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="&gt;&gt;cbSortEmployee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="colPosition.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbFillEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Số điện thoại:</value>
+  </data>
+  <data name="grpEmployeeInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="cbPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtNumberPhone.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="txtSearchEmployee.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;dtpWorkingDay.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionEmployee.Name" xml:space="preserve">
+    <value>grpFunctionEmployee</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="colBirthDay.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cbPosition.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;dtpWorkingDay.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
+  </data>
+  <data name="guna2HtmlLabel1.Text" xml:space="preserve">
+    <value>Lọc</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;richtxtAddress.Name" xml:space="preserve">
+    <value>richtxtAddress</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btnSaveEmployee.Parent" xml:space="preserve">
+    <value>grpFunctionEmployee</value>
   </data>
   <data name="btnDeleteAllEmployee.Text" xml:space="preserve">
     <value>Xóa tất cả</value>
@@ -2656,580 +2866,166 @@
   <data name="&gt;&gt;btnDeleteAllEmployee.Name" xml:space="preserve">
     <value>btnDeleteAllEmployee</value>
   </data>
-  <data name="&gt;&gt;btnDeleteAllEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="&gt;&gt;cbPosition.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
   </data>
-  <data name="&gt;&gt;btnDeleteAllEmployee.Parent" xml:space="preserve">
-    <value>grpFunctionEmployee</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAllEmployee.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnDeleteEmployee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnDeleteEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAvAAAALwCAYAAADxpkF6AAAABGdBTUEAALGPC/xhBQAALGtJREFUeF7t
-        3QfYtvd8//EkskQiRhJ7x94zVFClVGyS2lvQamySFB1GqkYJtWdoBUVo7B0xSysoMRqjCCGRSCJLkv//
-        8ytXG0++97Pu+zrn63Uc7+PAYTzPdZ6X83uf93n+flsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDkbJ0u+rsue55/vFUCAAA6slu6VXpEem56Y3pf+lL6UTo9
-        /b+N6LT0w/T59K/pdelZ6SHp5uniCQAA2EjtTvm1UhuoX56+mE5K1TC+rI5PR6aXpPunqyYAACDawH6j
-        tH/6SPpVqobqvjshtTv+T0jXTgAAMBs7pwent6VfpGpgHnrHpkPSPmmHBAAAk7IY2g9PZ6RqKB5r7fn7
-        9vdqf7+dEgAAjNKW6Y/SoWlqQ/tKnZrekNoLsQAAMAqXSO2Z9u+masidS19L+6WLJAAAGJwrp4NTW6qx
-        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
-        6enJi6oAAGySHdJuaav/+Wcsy3apfc5tuAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAA6M0WW/x/N25AQIh9/CgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnDeleteEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 149</value>
-  </data>
-  <data name="btnDeleteEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 45</value>
-  </data>
-  <data name="btnDeleteEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btnDeleteEmployee.Text" xml:space="preserve">
-    <value>Xóa</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteEmployee.Name" xml:space="preserve">
-    <value>btnDeleteEmployee</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteEmployee.Parent" xml:space="preserve">
-    <value>grpFunctionEmployee</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteEmployee.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnEmployeeDeleted.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnEmployeeDeleted.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACyUlEQVRYR8WXS8hNURTHr1fkETMMFFJi
-        5JERI5kQZqSEUvJIIRIp8ppQShQDjwkT8ph4JKEklJJHyTOvTCjyypvfb3931b33u+ee47tX/vXru2ud
-        tfY5Z5+9115fqQMaBXvhEXyHH/AY9sE4+GfqAd74F/zOwGsHoRe0VN78AsSN7sFamAKTYTXchbh+BXpC
-        y7QL4g3XQxeoVWfwQX6CsQegJRoJMehGHTlaA/GwY3U0qx3ggE+gm44cOTt+InNcM03rJjjY1mQV0zow
-        536ycjQD9jTgMziYi7De9XqcA3O+VfjqMRtK78Hg/8FXKC2BE2Viun3rky3mAzj2bYj7LYcqzQSDPiar
-        tXoNjj0vWRkaDwZJPx0tUneICjpJR5aGQDyA+z9PVsFpbT8bajAUGrfwkyKLjAXKeGeukf5qZot8q05w
-        GWLQG2ApzpJb3bhCa+sWGOxhk6VZEDeXp+DsZcnVbtyDZOXoNBi8O1nt5Sn3DIw5BUchFZQG2gbGX0pW
-        jmwsDD6erPbaAF63yg2H/uD094GVUE+HwJzDycqRJ57B15NVrUHwCbzuIVWpLfAFhiWrWhfBnO3JytFC
-        MPhFsqply7UYFkBfHRV6COZZ9WrloeS1FcnKkfvaYPu9eo1HluaAeVK7haMMW2lzNQZioIE6kN/Y6dsP
-        q3TUkVvzGph3B7qCcqZivAk68jQAIiE6mvkQPrfU6AriRlY7P0/ELQU1AsI3VEeefFtXuAnTwc/wqmzX
-        Yxkoy3Kl/w1YG/wc2lZMm9tCeg4mLQIfqLLjreUdOGvKIzb8Fh1buLll2wcqrKtg0uZktQ3kfs8i3sy/
-        4Yv+MZpU+4DCOgYmueiaVbT0Z5JVUJF0NlnNqUMvE9NWqKvNUbR5m5JVUBPBJDkCJncEa3+MMxUKy6Jy
-        HiK5Wfxf8W+qalJv2Aluybcd5CXY/9eeG2WVSn8A7ig9LTyeth8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnEmployeeDeleted.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 78</value>
-  </data>
-  <data name="btnEmployeeDeleted.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 45</value>
-  </data>
-  <data name="btnEmployeeDeleted.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="btnEmployeeDeleted.Text" xml:space="preserve">
-    <value>Nhân viên đã xóa</value>
-  </data>
-  <data name="&gt;&gt;btnEmployeeDeleted.Name" xml:space="preserve">
-    <value>btnEmployeeDeleted</value>
-  </data>
-  <data name="&gt;&gt;btnEmployeeDeleted.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnEmployeeDeleted.Parent" xml:space="preserve">
-    <value>grpFunctionEmployee</value>
-  </data>
-  <data name="&gt;&gt;btnEmployeeDeleted.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="grpFunctionEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>699, 20</value>
-  </data>
-  <data name="grpFunctionEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 218</value>
-  </data>
-  <data name="grpFunctionEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="grpFunctionEmployee.Text" xml:space="preserve">
-    <value>Chức năng</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionEmployee.Name" xml:space="preserve">
-    <value>grpFunctionEmployee</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionEmployee.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionEmployee.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionEmployee.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSearchEmployee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btnSearchEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        pd9JdRQ04zIJABjZWdN1Uj0hqFfPjkndwKQfVkc71+/49Q2/dm+sI59ZP5MAgDWqx9WHplpQ+KT09rTk
-        vQeOTe9I9e3+f6WfTwcltsMkAGCDah3BJdLN0oPSi1I98t6lrYrrW339bl+L9R6SbpEunZa2Ec8cmAQA
-        TEBtV1yLDGvXusNSPRavnxLqw7Q+VLuBbVsdlWoh5PNSba9beyjUzx8XSz7o58UkAGDizpnqfferpVoR
-        f/tUj9Ifmp6Y6sO4enWqicPrU31IVx9KNZGoPnLCH6vekOrPrfb89+vnivpQv1e6Q7pxukb6iVQbJtUh
-        S+wWkwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
-        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
-        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
-        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
-        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
-        AFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMAAFgokwAAWCiTAABYKJMA
-        AFgokwAAWKj7pO5Dc5f6Xrp0AgBOZJefBNSH/20SANDYxUmAD38A2Au7NAnw4Q8A+2AXJgE+/AFgBXOe
-        BPjwB4AB5jgJ8OEPACOY0yTAhz8AjGgOkwAf/gCwBlOeBPjwB4A1muIkwIc/AGzAlCYBPvwBYIOmMAnw
-        4Q8AW7DNSYAPfwDYom1MAnz4A8AEbHIS4MMfACZkE5MAH/4AMEHrnAT48AeACVvHJMCHPwDMwJiTAB/+
-        ADAjY0wCfPgDwAwNmQT48AeAGVtlEuDDHwB2wL5MAnz4A8AO2ZtJgA9/ANhBpzQJ8OEPADusmwT48AeA
-        BTjxJMCHPwAsSE0CfPgDwAJd+oT/BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOzmlO838BWh4XXIETABAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnSearchEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 269</value>
-  </data>
-  <data name="btnSearchEmployee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 36</value>
-  </data>
-  <data name="btnSearchEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;btnSearchEmployee.Name" xml:space="preserve">
-    <value>btnSearchEmployee</value>
-  </data>
-  <data name="&gt;&gt;btnSearchEmployee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnSearchEmployee.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnSearchEmployee.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1054, 497</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>frmEmployeeManager</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;colEmployeeID.Name" xml:space="preserve">
-    <value>colEmployeeID</value>
+  <data name="colAddress.HeaderText" xml:space="preserve">
+    <value>Địa chỉ</value>
   </data>
-  <data name="&gt;&gt;colEmployeeID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cbFillEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>852, 269</value>
   </data>
-  <data name="&gt;&gt;colEmployeeFullName.Name" xml:space="preserve">
-    <value>colEmployeeFullName</value>
+  <data name="&gt;&gt;radFemale.Parent" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
   </data>
-  <data name="&gt;&gt;colEmployeeFullName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;colBirthDay.Name" xml:space="preserve">
-    <value>colBirthDay</value>
+  <data name="dtpWorkingDay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;colBirthDay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colSex.Name" xml:space="preserve">
-    <value>colSex</value>
-  </data>
-  <data name="&gt;&gt;colSex.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colNumberPhone.Name" xml:space="preserve">
-    <value>colNumberPhone</value>
-  </data>
-  <data name="&gt;&gt;colNumberPhone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colAddress.Name" xml:space="preserve">
-    <value>colAddress</value>
-  </data>
-  <data name="&gt;&gt;colAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colWorkingDay.Name" xml:space="preserve">
-    <value>colWorkingDay</value>
-  </data>
-  <data name="&gt;&gt;colWorkingDay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colPosition.Name" xml:space="preserve">
-    <value>colPosition</value>
-  </data>
-  <data name="&gt;&gt;colPosition.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
-    <value>Column1</value>
+  <data name="guna2HtmlLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="&gt;&gt;Column1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;guna2AnimateWindow1.Name" xml:space="preserve">
-    <value>guna2AnimateWindow1</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 22</value>
   </data>
-  <data name="&gt;&gt;guna2AnimateWindow1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2AnimateWindow, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="txtEmployeeID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmEmployeeManager</value>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>MaChucVu</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbFillEmployee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionEmployee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEditEmployee.Parent" xml:space="preserve">
+    <value>grpFunctionEmployee</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;txtEmployeeName.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;colNumberPhone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtSearchEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 36</value>
+  </data>
+  <data name="&gt;&gt;grpEmployeeInfo.Name" xml:space="preserve">
+    <value>grpEmployeeInfo</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="dtpBirthday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 36</value>
+  </data>
+  <data name="grpEmployeeInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionEmployee.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnEditEmployee.Name" xml:space="preserve">
+    <value>btnEditEmployee</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel1.Name" xml:space="preserve">
+    <value>guna2HtmlLabel1</value>
+  </data>
+  <data name="btnAddEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 45</value>
+  </data>
+  <data name="&gt;&gt;dtpBirthday.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="dtgvListEmployee.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;txtNumberPhone.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="cbSortEmployee.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbFillEmployee.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="txtNumberPhone.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;btnSaveEmployee.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSearchEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 36</value>
+  </data>
+  <data name="colBirthDay.HeaderText" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtNumberPhone.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <metadata name="colEmployeeID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colNumberPhone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colEmployeeFullName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colBirthDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colAddress.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colPosition.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="colWorkingDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colSex.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

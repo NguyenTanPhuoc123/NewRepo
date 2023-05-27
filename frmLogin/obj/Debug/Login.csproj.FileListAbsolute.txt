@@ -1020,7 +1020,6 @@ D:\đồ án\frmLogin\obj\Debug\frmLogin.exe
 D:\đồ án\frmLogin\obj\Debug\frmLogin.pdb
 D:\DOAN\frmLogin\obj\Debug\frmLogin.frmOutputBill.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmOutputBill.resources
-C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmStoreReport.resources
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\bin\Debug\en\frmLogin.resources.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\bin\Debug\vi\frmLogin.resources.dll
 C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmSetting.en.resources
@@ -1378,3 +1377,8 @@ D:\DOANWINFORM\frmLogin\obj\Debug\vi\frmLogin.resources.dll
 D:\DOANWINFORM\frmLogin\obj\Debug\dje-NE\frmLogin.resources.dll
 D:\DOANWINFORM\frmLogin\obj\Debug\en-AS\frmLogin.resources.dll
 D:\DOANWINFORM\frmLogin\obj\Debug\vai\frmLogin.resources.dll
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\bin\Debug\en-AS\frmLogin.resources.dll
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmProductReport.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmEmployeeReport.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.en-AS.resources
+C:\Users\Admin\Desktop\QuanLyCuaHangTimo\frmLogin\obj\Debug\en-AS\frmLogin.resources.dll

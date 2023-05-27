@@ -135,5 +135,11 @@ namespace DAO
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return (data > 0 ? false : true);
         }
+        public bool CheckProduct()
+        {
+            string query = string.Format("Select count(*) from Chitiethoadon a, HOADON b where a.MAHD = b.MAHD and b.TrangThaiThanhToan = 0 " );
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return (data > 0 ? false : true);
+        }
     }
 }

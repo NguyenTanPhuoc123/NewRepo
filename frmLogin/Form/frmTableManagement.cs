@@ -177,7 +177,7 @@ namespace frmLogin
 
                         if (count > 0)
                         {
-                            MessageBox.Show(info.editVi,info.titleMessageVi, MessageBoxButtons.OK);
+                            MessageBox.Show(info.editVi,info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
                             frmTableManagement_Load(sender, e);
                         }
                         else

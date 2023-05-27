@@ -137,6 +137,18 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Sort</value>
   </data>
+  <data name="cbSortAccount.Items" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="cbSortAccount.Items1" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="cbSortAccount.Items2" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="cbFillAccount.Items" xml:space="preserve">
+    <value>All</value>
+  </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>User Name</value>
   </data>
@@ -148,6 +160,9 @@
   </data>
   <data name="Column4.HeaderText" xml:space="preserve">
     <value>TypeAccount</value>
+  </data>
+  <data name="grpAccountInfo.Text" xml:space="preserve">
+    <value>Account Information</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -194,8 +209,8 @@
   <data name="label2.Text" xml:space="preserve">
     <value>User Name:</value>
   </data>
-  <data name="grpAccountInfo.Text" xml:space="preserve">
-    <value>Account Information</value>
+  <data name="grpFunctionAccount.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1925,9 +1940,6 @@
   </data>
   <data name="btnAccountDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
-  </data>
-  <data name="grpFunctionAccount.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <data name="btnSearchAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

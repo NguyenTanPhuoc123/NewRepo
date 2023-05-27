@@ -125,9 +125,8 @@
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnLogOff.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pbHide.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -138,8 +137,8 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Tài khoản</value>
   </data>
-  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
-    <value>toolTip1</value>
+  <data name="&gt;&gt;pbDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1083,16 +1082,13 @@
   <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="pbHide.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
+  <data name="btnLogOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 52</value>
   </data>
   <data name="&gt;&gt;btnLogin.Name" xml:space="preserve">
     <value>btnLogin</value>
   </data>
   <data name="&gt;&gt;btnLogOff.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnLanguageVN.Name" xml:space="preserve">
@@ -1101,6 +1097,7 @@
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 206</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pbDisplay.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -1112,6 +1109,9 @@
   </data>
   <data name="txtUsername.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnLanguageVN.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
   <data name="pbDisplay.ToolTip" xml:space="preserve">
     <value />
@@ -1149,8 +1149,8 @@
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;txtUsername.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1169,6 +1169,9 @@
   </data>
   <data name="pbHide.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="btnLogOff.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="&gt;&gt;pbDisplay.Name" xml:space="preserve">
     <value>pbDisplay</value>
@@ -1212,8 +1215,8 @@
   <data name="btnLanguageVN.Location" type="System.Drawing.Point, System.Drawing">
     <value>761, 420</value>
   </data>
-  <data name="btnLogOff.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 363</value>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;btnLanguageEnglish.Name" xml:space="preserve">
     <value>btnLanguageEnglish</value>
@@ -1239,8 +1242,14 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="btnLanguageEnglish.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 34</value>
+  </data>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="pbHide.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1248,11 +1257,17 @@
   <data name="btnLogOff.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="btnLogOff.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="pbHide.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btnLogin.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
+  </data>
+  <data name="btnLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="&gt;&gt;btnLogin.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
@@ -1260,17 +1275,17 @@
   <data name="btnLanguageEnglish.Location" type="System.Drawing.Point, System.Drawing">
     <value>834, 422</value>
   </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>591, 35</value>
   </data>
-  <data name="btnLogOff.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 52</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="pictureBox2.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -1280,9 +1295,6 @@
   </data>
   <data name="btnLanguageVN.ToolTip" xml:space="preserve">
     <value>Ngôn ngữ Việt</value>
-  </data>
-  <data name="&gt;&gt;pbHide.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2693,26 +2705,11 @@
   <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="btnExit.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;pbDisplay.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnLogin.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="txtPassword.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="pbDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
   </data>
   <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2967,6 +2964,9 @@
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="pbHide.Location" type="System.Drawing.Point, System.Drawing">
+    <value>796, 230</value>
+  </data>
   <data name="pbDisplay.Location" type="System.Drawing.Point, System.Drawing">
     <value>796, 230</value>
   </data>
@@ -2988,8 +2988,8 @@
   <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>345, 46</value>
   </data>
-  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 56</value>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -3024,81 +3024,84 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="btnLogOff.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABc
-        EAAAAk1TRnQBSQFMAgEBBAIAAQIBDAECAR4BAAEeAQAE/wEJARAI/wFCAU0BNgEEBgABNgEEAgABKAMA
-        AXgDAAE8AwABAQEAAQgFAAEgARwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
-        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
-        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
-        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
-        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
-        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
-        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
-        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
-        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
-        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
-        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
-        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
-        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
-        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
-        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
-        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
-        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
-        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
-        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
-        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
-        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
-        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
-        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
-        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
-        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
-        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
-        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
-        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD//8A/wD/AP8A/wD/AP8A
-        /wD/AP8A/wD/AP8A/wAfAAH0Af8F9AH/CPQB/wj0Af8E9AHyHv8B8wL/AfMB9AH/AfQB8wL/AfMC/wLz
-        Af8B9AHzAv8B8wL/AfMB9AH/AvMF/xfvA/8B9AT/AfQC/wj0Af8B9AP/AfQB/wLzAvQB8wH/AfQB8h7/
-        AfMC/wHzAfQB/wH0AfMC/wFtBw8B9wH/AfMC/wHzAfQB/wLzA/8aAAFDA/8B9AT/AfQF8wH0B/8C9Abz
-        AfQB8h3/AfMB/wH0AfMC/wHzAv8MDwEOAfQB8wL/AfMC/wHzAv8BABj/AeoBAAT/AfMC/wHzEQAB/wLy
-        AfMC9AHyHf8B8wH/AfQB8wL/AfMBDgQPAQ4B7AH0Af8B8QFtBQ8BEAL/AfMC/wHzAv8BABn/AQAH/xIA
-        AQ4B8wHyAvMB/wHyHv8B8wL/AfMB9AQPAf8B8wL/AvMB/wH0AfMB/wHsBA8B9AH/AvMD/wEAAv8CABH/
-        AgAC/wEAB/8TAALyAvMB9AHyHf8C9AL/AfQDDwHrAv8B9AL/AvQB/wL0Av8B9AEOAw8B/wL0A/8BAAP/
-        AgAB8A3/AbwCAAP/AQAH/wkAAfQJAAH0A/MB9AHyHf8B8wH/AfQB8wMPAv8B8wH0Af8C8wL/AfMC/wHz
-        AfQB/wH0AeoDDwL/AfMC/wEABP8CAAEOC/8BDgIABP8BAAH/AvQC/wL0AQABDgcAAfMHAAIOAfMC9AH/
-        AfQB8h7/AfMB/wEOAw8B9AHzAv8B8wL/AvMB/wH0AfMC/wHzAv8DDwESAfMD/wEABf8BkgIABP8BAAT/
-        AgAB9wX/AQAB/wL0AfMD9AkAAf8FAAEOAwAC/wP0AfIe/wHzAf8EDwH0AfMC/wHzAv8C8wH/AfQB8wL/
-        AfMB/wEVBA8B8wP/AQAH/wIAAf8B8gMAAfMB/wIAB/8BAAH/AfQD8wL0CAAC9AHyAQ4CAAEOBAAB/wH0
-        Av8B9AHyC/8BEgUAAfIL/wHzAf8BDgUPAf8B8wH0Af8C8wL/AfMC/wHzAfQB/wHvBQ8BFQHzAv8BAAj/
-        BAAB/wQACP8BAAH/BvMHAAP0AvMBDgYAAv8B8wL0AfIK/wEOAeoF/wEAAQ4K/wHzAf8IDwL/AvMC/wHz
-        Av8B8wH3CA8B8wL/AQAI/wIAAQcD/wEHAgAI/wEAAf8B8wH0AvMB8gHzBwABFAL/AfEBAAIOBQAE/wH0
-        AfIJ/wEAAesB/wUAAf8BAAHyCv8B8goPAewB/wLzAf8B9AERCg8D/wEABv8BDwIAB/8CAAEPBv8BAAH/
-        AfMB9APzAfQLAAEOBwAE/wH0AfIJ/wEAAv8BAAP/AQAC/wEACv8BEgsPAf8C8wH/AZILDwHwAv8BAAX/
-        AgABEwn/ARMCAAX/AQAB/wXzAfIKAAEOCAAF/wHyCf8BAAL/AQAD/wEAAv8BAAn/AfMBDgsPAfMC/wHz
-        Af8LDwHqAv8BAAP/AQcCAAP/AfADAAH0Bf8CAAHvA/8BAAH/AvQC8wL0CAABDgoABP8B9AHyCP8BBwHx
-        Av8BAAP/AQAC/wEACf8B9AEOCg8C9AL/AfQB/wETCg8BEwL/AQAC/wMAA/8DAAHvCP8DAAL/AQAB/wb0
-        AQ4IAAEOCAABDgL0Af8C9AHyCf8BFAL/AQABDgMAAv8BAAr/AQ4KDwL/AvMB/wH0AfMKDwHqAv8BAAH/
-        AwAD/wEOAQAB8gb/Ae0E/wMAAf8BAAH/B/QC7AEVAQAJ7AEAA+wB8QX0AfIJ/wEAAv8BAAP/AQ4C/wEA
-        Cf8B9AEUCQ8B9AL/AvQB/wL0AZIJDwG8Av8DAAH/AQAD/wEAAe8C/wMAAesDAAP/AQAB/wMAAv8B9AT/
-        A/QBbQEAAvMB9Ab/AQAB8gH/BfMC9AHyCf8BAAHxAv8DAAL/AeoBEgn/AfMB8gkPAf8C8wL/AfMC/wH3
-        CQ8B8wL/AgAC/wEAAv8CAAL/AgABEAMAAf8CAAL/AQAC/wIAAv8C9AT/AfQB8wFtAQAB8gHzAfQG/wEA
-        AfIB9AHzAfIB8wHyAfMC9AHyCv8BDgHxBf8B6wEAC/8B8wkPAe8C/wLzAf8B9AHzCg8D/wHvAgAB/wEA
-        Av8CAAH/AgAD/wEAARQB/wIAAv8BAAH/AgAB8wP/AfME/wH0AfMBbQEOAvMC9AT/AfQBAAHzAvQD8gHz
-        AvQB8gv/AgABFAHxAwAM/wHzAQ4IDwESAv8C8wH/AfQB8wkPARAF/wMAAv8CAAH/AgAD/wEAAW0B/wIA
-        Av8DAAb/AfQD/wH0AfMB7wEAAvMC9AX/AQAD9ALzAfIB8wL0AfIO/wEHDv8B8wH/AfQJDwLzAv8B8wL/
-        CQ8B/wHzBf8CAAL/AgAC/wEAAeoB/wEOAQAC/wEAAQ8C/wIAC/8C9AHzAQAC9AHzAvQD/wH0AQAC/wH0
-        BPMC9AHyHf8B8wH/AfQJDwEOAfMC/wHzAf8JDwEAAf8B8wb/AQAC/wH0AQAC/wEPAwAB7AH/AbwBAAP/
-        AQAG/wP0Af8E9AH/AQABDgH/AfQB/wH0Af8C9AIAAf8B9AHzBPQB/wH0AfIe/wHzAv8MDwEOCg8C8wf/
-        AQAD/wIAB/8CAAP/AQAF/wj0A/8CAAH/AfQB8gHzAf8CAAHyAfQB/wH0Bf8B9AHyHv8B8wL/AfMVDwH/
-        AvMH/wEABP8CAAHvA/8BFAIABP8BAAX/A/MB9AHzA/QD/wH0BwAB8wP0Bf8C9AHyHf8B8wH/AfQB8wL/
-        Ew8B/wHzAv8B8wb/AQAF/wYAAQ4F/wEABf8E8wH0AfMB9Af/AQACDgPzAvQH/wH0AfId/wH0Af8C9AL/
-        AfQQDwEOAv8B9AL/AfQG/wEACP8BBwj/AQAF/wH0BfMC9AX/AvQG8wH0BP8B8wL/AfQB8h7/AfMC/wHz
-        AfQB/wH0AQcNDwL/AfMB9AH/AvMH/wEAEf8BAAX/AfMB9ALzAfIC8wH0Av8B8wL/AfQB/wfzB/8B9AHy
-        Hf8L9AEOBw8BAAH/CfQG/xMABf8B8wP0A/MB9AP/AfQB/wL0A/MB9ALzAvQD/wH0Af8B8wH0AfId/wHz
-        Af8B9AHzAv8B8wL/AfMB9AH/AvMC/wHzAv8B8wH0Af8B9AHzAv8B8wL/AfMH/wEVDxEBFQb/A/MB9ALz
-        AfQG/wP0BPMD9Ab/AfQB8B3yAf8B8wL/AfMB9AH/AfQB8wL/AfMC/wLzAf8B9AHzAv8B8wL/AfMB9AH/
-        AvMf/wFCAU0BPgcAAT4DAAEoAwABeAMAATwDAAEBAQABAQUAAcABAxYAA///AP8A/wDaAAs=
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABe
+        EAAAAk1TRnQBSQFMAgEBBAEAARQBAgEcAQIBHgEAAR4BAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABeAMAATwDAAEBAQABCAUAASABHBgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
+        AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
+        AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
+        AwABZgMAAZkDAAHMAgABMwMAAjMCAAEzAWYCAAEzAZkCAAEzAcwCAAEzAf8CAAFmAwABZgEzAgACZgIA
+        AWYBmQIAAWYBzAIAAWYB/wIAAZkDAAGZATMCAAGZAWYCAAKZAgABmQHMAgABmQH/AgABzAMAAcwBMwIA
+        AcwBZgIAAcwBmQIAAswCAAHMAf8CAAH/AWYCAAH/AZkCAAH/AcwBAAEzAf8CAAH/AQABMwEAATMBAAFm
+        AQABMwEAAZkBAAEzAQABzAEAATMBAAH/AQAB/wEzAgADMwEAAjMBZgEAAjMBmQEAAjMBzAEAAjMB/wEA
+        ATMBZgIAATMBZgEzAQABMwJmAQABMwFmAZkBAAEzAWYBzAEAATMBZgH/AQABMwGZAgABMwGZATMBAAEz
+        AZkBZgEAATMCmQEAATMBmQHMAQABMwGZAf8BAAEzAcwCAAEzAcwBMwEAATMBzAFmAQABMwHMAZkBAAEz
+        AswBAAEzAcwB/wEAATMB/wEzAQABMwH/AWYBAAEzAf8BmQEAATMB/wHMAQABMwL/AQABZgMAAWYBAAEz
+        AQABZgEAAWYBAAFmAQABmQEAAWYBAAHMAQABZgEAAf8BAAFmATMCAAFmAjMBAAFmATMBZgEAAWYBMwGZ
+        AQABZgEzAcwBAAFmATMB/wEAAmYCAAJmATMBAANmAQACZgGZAQACZgHMAQABZgGZAgABZgGZATMBAAFm
+        AZkBZgEAAWYCmQEAAWYBmQHMAQABZgGZAf8BAAFmAcwCAAFmAcwBMwEAAWYBzAGZAQABZgLMAQABZgHM
+        Af8BAAFmAf8CAAFmAf8BMwEAAWYB/wGZAQABZgH/AcwBAAHMAQAB/wEAAf8BAAHMAQACmQIAAZkBMwGZ
+        AQABmQEAAZkBAAGZAQABzAEAAZkDAAGZAjMBAAGZAQABZgEAAZkBMwHMAQABmQEAAf8BAAGZAWYCAAGZ
+        AWYBMwEAAZkBMwFmAQABmQFmAZkBAAGZAWYBzAEAAZkBMwH/AQACmQEzAQACmQFmAQADmQEAApkBzAEA
+        ApkB/wEAAZkBzAIAAZkBzAEzAQABZgHMAWYBAAGZAcwBmQEAAZkCzAEAAZkBzAH/AQABmQH/AgABmQH/
+        ATMBAAGZAcwBZgEAAZkB/wGZAQABmQH/AcwBAAGZAv8BAAHMAwABmQEAATMBAAHMAQABZgEAAcwBAAGZ
+        AQABzAEAAcwBAAGZATMCAAHMAjMBAAHMATMBZgEAAcwBMwGZAQABzAEzAcwBAAHMATMB/wEAAcwBZgIA
+        AcwBZgEzAQABmQJmAQABzAFmAZkBAAHMAWYBzAEAAZkBZgH/AQABzAGZAgABzAGZATMBAAHMAZkBZgEA
+        AcwCmQEAAcwBmQHMAQABzAGZAf8BAALMAgACzAEzAQACzAFmAQACzAGZAQADzAEAAswB/wEAAcwB/wIA
+        AcwB/wEzAQABmQH/AWYBAAHMAf8BmQEAAcwB/wHMAQABzAL/AQABzAEAATMBAAH/AQABZgEAAf8BAAGZ
+        AQABzAEzAgAB/wIzAQAB/wEzAWYBAAH/ATMBmQEAAf8BMwHMAQAB/wEzAf8BAAH/AWYCAAH/AWYBMwEA
+        AcwCZgEAAf8BZgGZAQAB/wFmAcwBAAHMAWYB/wEAAf8BmQIAAf8BmQEzAQAB/wGZAWYBAAH/ApkBAAH/
+        AZkBzAEAAf8BmQH/AQAB/wHMAgAB/wHMATMBAAH/AcwBZgEAAf8BzAGZAQAB/wLMAQAB/wHMAf8BAAL/
+        ATMBAAHMAf8BZgEAAv8BmQEAAv8BzAEAAmYB/wEAAWYB/wFmAQABZgL/AQAB/wJmAQAB/wFmAf8BAAL/
+        AWYBAAEhAQABpQEAA18BAAN3AQADhgEAA5YBAAPLAQADsgEAA9cBAAPdAQAD4wEAA+oBAAPxAQAD+AEA
+        AfAB+wH/AQABpAKgAQADgAMAAf8CAAH/AwAC/wEAAf8DAAH/AQAB/wEAAv8CAAP//wD/AP8A/wD/AP8A
+        /wD/AP8A/wD/AP8A/wD/AB8AAfQB/wX0Af8I9AH/CPQB/wT0AfIe/wHzAv8B8wH0Af8B9AHzAv8B8wL/
+        AvMB/wH0AfMC/wHzAv8B8wH0Af8C8wX/F+8D/wH0BP8B9AL/CPQB/wH0A/8B9AH/AvMC9AHzAf8B9AHy
+        Hv8B8wL/AfMB9AH/AfQB8wL/AW0HDwH3Af8B8wL/AfMB9AH/AvMD/xoAAUMD/wH0BP8B9AXzAfQH/wL0
+        BvMB9AHyHf8B8wH/AfQB8wL/AfMC/wwPAQ4B9AHzAv8B8wL/AfMC/wEAGP8B6gEABP8B8wL/AfMRAAH/
+        AvIB8wL0AfId/wHzAf8B9AHzAv8B8wEOBA8BDgHsAfQB/wHxAW0FDwEQAv8B8wL/AfMC/wEAGf8BAAf/
+        EgABDgHzAfIC8wH/AfIe/wHzAv8B8wH0BA8B/wHzAv8C8wH/AfQB8wH/AewEDwH0Af8C8wP/AQAC/wIA
+        Ef8CAAL/AQAH/xMAAvIC8wH0AfId/wL0Av8B9AMPAesC/wH0Av8C9AH/AvQC/wH0AQ4DDwH/AvQD/wEA
+        A/8CAAHwDf8BvAIAA/8BAAf/CQAB9AkAAfQD8wH0AfId/wHzAf8B9AHzAw8C/wHzAfQB/wLzAv8B8wL/
+        AfMB9AH/AfQB6gMPAv8B8wL/AQAE/wIAAQ4L/wEOAgAE/wEAAf8C9AL/AvQBAAEOBwAB8wcAAg4B8wL0
+        Af8B9AHyHv8B8wH/AQ4DDwH0AfMC/wHzAv8C8wH/AfQB8wL/AfMC/wMPARIB8wP/AQAF/wGSAgAE/wEA
+        BP8CAAH3Bf8BAAH/AvQB8wP0CQAB/wUAAQ4DAAL/A/QB8h7/AfMB/wQPAfQB8wL/AfMC/wLzAf8B9AHz
+        Av8B8wH/ARUEDwHzA/8BAAf/AgAB/wHyAwAB8wH/AgAH/wEAAf8B9APzAvQIAAL0AfIBDgIAAQ4EAAH/
+        AfQC/wH0AfIL/wESBQAB8gv/AfMB/wEOBQ8B/wHzAfQB/wLzAv8B8wL/AfMB9AH/Ae8FDwEVAfMC/wEA
+        CP8EAAH/BAAI/wEAAf8G8wcAA/QC8wEOBgAC/wHzAvQB8gr/AQ4B6gX/AQABDgr/AfMB/wgPAv8C8wL/
+        AfMC/wHzAfcIDwHzAv8BAAj/AgABBwP/AQcCAAj/AQAB/wHzAfQC8wHyAfMHAAEUAv8B8QEAAg4FAAT/
+        AfQB8gn/AQAB6wH/BQAB/wEAAfIK/wHyCg8B7AH/AvMB/wH0AREKDwP/AQAG/wEPAgAH/wIAAQ8G/wEA
+        Af8B8wH0A/MB9AsAAQ4HAAT/AfQB8gn/AQAC/wEAA/8BAAL/AQAK/wESCw8B/wLzAf8BkgsPAfAC/wEA
+        Bf8CAAETCf8BEwIABf8BAAH/BfMB8goAAQ4IAAX/AfIJ/wEAAv8BAAP/AQAC/wEACf8B8wEOCw8B8wL/
+        AfMB/wsPAeoC/wEAA/8BBwIAA/8B8AMAAfQF/wIAAe8D/wEAAf8C9ALzAvQIAAEOCgAE/wH0AfII/wEH
+        AfEC/wEAA/8BAAL/AQAJ/wH0AQ4KDwL0Av8B9AH/ARMKDwETAv8BAAL/AwAD/wMAAe8I/wMAAv8BAAH/
+        BvQBDggAAQ4IAAEOAvQB/wL0AfIJ/wEUAv8BAAEOAwAC/wEACv8BDgoPAv8C8wH/AfQB8woPAeoC/wEA
+        Af8DAAP/AQ4BAAHyBv8B7QT/AwAB/wEAAf8H9ALsARUBAAnsAQAD7AHxBfQB8gn/AQAC/wEAA/8BDgL/
+        AQAJ/wH0ARQJDwH0Av8C9AH/AvQBkgkPAbwC/wMAAf8BAAP/AQAB7wL/AwAB6wMAA/8BAAH/AwAC/wH0
+        BP8D9AFtAQAC8wH0Bv8BAAHyAf8F8wL0AfIJ/wEAAfEC/wMAAv8B6gESCf8B8wHyCQ8B/wLzAv8B8wL/
+        AfcJDwHzAv8CAAL/AQAC/wIAAv8CAAEQAwAB/wIAAv8BAAL/AgAC/wL0BP8B9AHzAW0BAAHyAfMB9Ab/
+        AQAB8gH0AfMB8gHzAfIB8wL0AfIK/wEOAfEF/wHrAQAL/wHzCQ8B7wL/AvMB/wH0AfMKDwP/Ae8CAAH/
+        AQAC/wIAAf8CAAP/AQABFAH/AgAC/wEAAf8CAAHzA/8B8wT/AfQB8wFtAQ4C8wL0BP8B9AEAAfMC9APy
+        AfMC9AHyC/8CAAEUAfEDAAz/AfMBDggPARIC/wLzAf8B9AHzCQ8BEAX/AwAC/wIAAf8CAAP/AQABbQH/
+        AgAC/wMABv8B9AP/AfQB8wHvAQAC8wL0Bf8BAAP0AvMB8gHzAvQB8g7/AQcO/wHzAf8B9AkPAvMC/wHz
+        Av8JDwH/AfMF/wIAAv8CAAL/AQAB6gH/AQ4BAAL/AQABDwL/AgAL/wL0AfMBAAL0AfMC9AP/AfQBAAL/
+        AfQE8wL0AfId/wHzAf8B9AkPAQ4B8wL/AfMB/wkPAQAB/wHzBv8BAAL/AfQBAAL/AQ8DAAHsAf8BvAEA
+        A/8BAAb/A/QB/wT0Af8BAAEOAf8B9AH/AfQB/wL0AgAB/wH0AfME9AH/AfQB8h7/AfMC/wwPAQ4KDwLz
+        B/8BAAP/AgAH/wIAA/8BAAX/CPQD/wIAAf8B9AHyAfMB/wIAAfIB9AH/AfQF/wH0AfIe/wHzAv8B8xUP
+        Af8C8wf/AQAE/wIAAe8D/wEUAgAE/wEABf8D8wH0AfMD9AP/AfQHAAHzA/QF/wL0AfId/wHzAf8B9AHz
+        Av8TDwH/AfMC/wHzBv8BAAX/BgABDgX/AQAF/wTzAfQB8wH0B/8BAAIOA/MC9Af/AfQB8h3/AfQB/wL0
+        Av8B9BAPAQ4C/wH0Av8B9Ab/AQAI/wEHCP8BAAX/AfQF8wL0Bf8C9AbzAfQE/wHzAv8B9AHyHv8B8wL/
+        AfMB9AH/AfQBBw0PAv8B8wH0Af8C8wf/AQAR/wEABf8B8wH0AvMB8gLzAfQC/wHzAv8B9AH/B/MH/wH0
+        AfId/wv0AQ4HDwEAAf8J9Ab/EwAF/wHzA/QD8wH0A/8B9AH/AvQD8wH0AvMC9AP/AfQB/wHzAfQB8h3/
+        AfMB/wH0AfMC/wHzAv8B8wH0Af8C8wL/AfMC/wHzAfQB/wH0AfMC/wHzAv8B8wf/ARUPEQEVBv8D8wH0
+        AvMB9Ab/A/QE8wP0Bv8B9AHwHfIB/wHzAv8B8wH0Af8B9AHzAv8B8wL/AvMB/wH0AfMC/wHzAv8B8wH0
+        Af8C8x//AUIBTQE+BwABPgMAASgDAAF4AwABPAMAAQEBAAEBBQABwAEDFgAD//8A/wD/ANoACw==
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -3110,14 +3113,11 @@
   <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="btnLogOff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>564, 363</value>
   </data>
-  <data name="pictureBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
   </data>
   <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
     <value>$this</value>
@@ -3151,6 +3151,9 @@
   </data>
   <data name="pbHide.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 56</value>
   </data>
   <data name="pbHide.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4643,14 +4646,11 @@
   <data name="pbHide.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
   </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pbHide.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -4690,17 +4690,17 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="pbHide.Location" type="System.Drawing.Point, System.Drawing">
-    <value>796, 230</value>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;pbDisplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pbDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
@@ -4723,8 +4723,8 @@
   <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>498, 224</value>
   </data>
-  <data name="btnLanguageVN.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+  <data name="&gt;&gt;pbDisplay.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>21, 17</value>

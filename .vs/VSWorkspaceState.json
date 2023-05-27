@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\frmLogin"
   ],
-  "SelectedNode": "\\QuanLyCuaHangAnVatTimo.sln",
+  "SelectedNode": "\\frmLogin\\frmQuanLyAdmin.cs",
   "PreviewInSolutionExplorer": false
 }

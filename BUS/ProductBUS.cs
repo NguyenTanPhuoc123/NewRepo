@@ -41,6 +41,10 @@ namespace BUS
         {
             return ProductDAO.Instance.ExecuteInsertCommand(product);
         }
+        public int DeleteProductAll()
+        {
+            return ProductDAO.Instance.DeleteProductAll();
+        }
         public int DeleteProduct(string ProductID)
         {
             return ProductDAO.Instance.DeleteProduct(ProductID);

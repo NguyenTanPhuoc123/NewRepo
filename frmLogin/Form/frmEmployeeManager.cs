@@ -122,7 +122,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    if (EmployeeBUS.Instance.CheckAccountDelete(txtEmployeeName.Text))
+                    if (EmployeeBUS.Instance.CheckAccountDelete(Convert.ToInt32(txtEmployeeID.Text)))
                     {
                         int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
                         if (count > 0)
@@ -145,7 +145,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show("You definitely want to delete this employee", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    if (EmployeeBUS.Instance.CheckAccountDelete(txtEmployeeName.Text))
+                    if (EmployeeBUS.Instance.CheckAccountDelete(int.Parse(txtEmployeeID.Text)))
                     {
                         int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
                         if (count > 0)
@@ -197,7 +197,7 @@ namespace frmLogin
             {
                 if (string.IsNullOrEmpty(txtEmployeeName.Text.Trim()) || string.IsNullOrEmpty(txtNumberPhone.Text.Trim()) || string.IsNullOrEmpty(richtxtAddress.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập tên vị trí bàn muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Vui lòng nhập đủ thông tin muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
@@ -206,11 +206,11 @@ namespace frmLogin
                     int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Thêm tài khoản thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show("Thêm nhân viên thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Thêm tài khoản thất bại","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Thêm nhân viên thất bại","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmEmployeeManager_Load(sender, e);
                 }
@@ -223,7 +223,7 @@ namespace frmLogin
             {
                 if (string.IsNullOrEmpty(txtEmployeeName.Text.Trim()) || string.IsNullOrEmpty(txtNumberPhone.Text.Trim()) || string.IsNullOrEmpty(richtxtAddress.Text.Trim()))
                 {
-                    MessageBox.Show("Please enter the name of the desk location you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please enter the employee name you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
@@ -232,11 +232,11 @@ namespace frmLogin
                     int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Account added successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Employee added successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Adding account failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Employee account failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmEmployeeManager_Load(sender, e);
                 }
@@ -258,11 +258,11 @@ namespace frmLogin
                         int count = EmployeeBUS.Instance.DeleteAllEmployee();
                         if (count > 0)
                         {
-                            MessageBox.Show("Xóa tất cả tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Xóa tất cả nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Xóa tất cả tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Xóa tất cả nhân viên thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
@@ -282,11 +282,11 @@ namespace frmLogin
                         int count = EmployeeBUS.Instance.DeleteAllEmployee();
                         if (count > 0)
                         {
-                            MessageBox.Show("Delete all accounts successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Delete all employee successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Delete all failed accounts", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Delete all failed employee", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else

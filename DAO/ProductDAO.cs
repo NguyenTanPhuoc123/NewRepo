@@ -84,6 +84,13 @@ namespace DAO
             row = DataProvider.ExecuteInsertCommand(query, parameter);
             return row;
         }
+        public int DeleteProductAll()
+        {
+            string query = "UPDATE SANPHAM SET TRANGTHAI=0";
+            int row = 0;
+            row = DataProvider.ExecuteInsertCommand(query, null);
+            return row;
+        }
         public int RestoreProduct(string ProductID)
         {
             string query = "UPDATE SANPHAM SET TRANGTHAI=1 WHERE MASANPHAM=@SANPHAM";

@@ -128,6 +128,21 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Sort</value>
   </data>
+  <data name="cbSortTable.Items" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="cbSortTable.Items1" xml:space="preserve">
+    <value>Table ID(Increase)</value>
+  </data>
+  <data name="cbSortTable.Items2" xml:space="preserve">
+    <value>Table Code(Reduce)</value>
+  </data>
+  <data name="cbSortTable.Items3" xml:space="preserve">
+    <value>Location(Increase)</value>
+  </data>
+  <data name="cbSortTable.Items4" xml:space="preserve">
+    <value>Location(Reduce)</value>
+  </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -148,6 +163,9 @@
   </data>
   <data name="colStatus.HeaderText" xml:space="preserve">
     <value>Status</value>
+  </data>
+  <data name="grpTableInfo.Text" xml:space="preserve">
+    <value>Table information</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -185,8 +203,8 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Table ID:</value>
   </data>
-  <data name="grpTableInfo.Text" xml:space="preserve">
-    <value>Table information</value>
+  <data name="grpFunctionTable.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="btnSaveTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -284,9 +302,6 @@
   </data>
   <data name="btnTableDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
-  </data>
-  <data name="grpFunctionTable.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <data name="btnSearchTable.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

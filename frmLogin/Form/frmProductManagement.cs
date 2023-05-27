@@ -355,20 +355,64 @@ namespace frmLogin
 
         private void cbSortProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dtgvListProduct.DataSource = null;
-            dtgvListProduct.Rows.Clear();
-            if (cbSortProduct.SelectedIndex == 0)
-                dtgvListProduct.DataSource = ProductBUS.Instance.SortProductName(cbFillProduct.Text);
-            else if (cbSortProduct.SelectedIndex == 1)
-                dtgvListProduct.DataSource = ProductBUS.Instance.SortSoLuongASC(cbFillProduct.Text);
-            else if (cbSortProduct.SelectedIndex == 2)
-                dtgvListProduct.DataSource = ProductBUS.Instance.SortSoLuongDESC(cbFillProduct.Text);
-            else if (cbSortProduct.SelectedIndex == 3)
-                dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaASC(cbFillProduct.Text);
-            else
-                dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaDESC(cbFillProduct.Text);
+                dtgvListProduct.DataSource = null;
+                dtgvListProduct.Rows.Clear();
+                if (cbSortProduct.SelectedIndex == 0)
+                    dtgvListProduct.DataSource = ProductBUS.Instance.SortProductName(cbFillProduct.Text);
+                else if (cbSortProduct.SelectedIndex == 1)
+                    dtgvListProduct.DataSource = ProductBUS.Instance.SortSoLuongASC(cbFillProduct.Text);
+                else if (cbSortProduct.SelectedIndex == 2)
+                    dtgvListProduct.DataSource = ProductBUS.Instance.SortSoLuongDESC(cbFillProduct.Text);
+                else if (cbSortProduct.SelectedIndex == 3)
+                    dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaASC(cbFillProduct.Text);
+                else
+                    dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaDESC(cbFillProduct.Text);
         }
 
-
+        private void btnDeleteAllProduct_Click(object sender, EventArgs e)
+        {
+            if (Language == 0)
+            {
+                if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    if (BillInfoBUS.Instance.CheckProduct())
+                    {
+                        int data = ProductBUS.Instance.DeleteProductAll();
+                        if (data > 0)
+                            MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        frmProductManagement_Load(sender, e);
+                        LoadProduct();
+                        Resettext();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sản phẩm đã có trong hóa đơn không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            else
+            {
+                if (DialogResult.Yes == MessageBox.Show("Do you want to delete all the product?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    if (BillInfoBUS.Instance.CheckProduct())
+                    {
+                        int data = ProductBUS.Instance.DeleteProductAll();
+                        if (data > 0)
+                            MessageBox.Show("Delete successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Delete failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        frmProductManagement_Load(sender, e);
+                        LoadProduct();
+                        Resettext();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Product already in invoice cannot be deleted", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
     }
 }

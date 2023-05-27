@@ -70,9 +70,9 @@ namespace BUS
             return EmployeeDAO.Instance.RestoreAllEmployee();
         }
 
-        public bool CheckAccountDelete(string employeeName)
+        public bool CheckAccountDelete(int employeeid)
         {
-            return EmployeeDAO.Instance.CheckAccountDelete(employeeName);
+            return EmployeeDAO.Instance.CheckAccountDelete(employeeid);
         }
 
         public bool CheckAccountDeleteAll()

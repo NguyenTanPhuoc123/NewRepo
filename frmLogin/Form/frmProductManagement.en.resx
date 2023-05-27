@@ -137,6 +137,21 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Sort</value>
   </data>
+  <data name="cbSortProduct.Items" xml:space="preserve">
+    <value>Product name</value>
+  </data>
+  <data name="cbSortProduct.Items1" xml:space="preserve">
+    <value>The number is increasing</value>
+  </data>
+  <data name="cbSortProduct.Items2" xml:space="preserve">
+    <value>The number is decreasing</value>
+  </data>
+  <data name="cbSortProduct.Items3" xml:space="preserve">
+    <value>The price increases gradually</value>
+  </data>
+  <data name="cbSortProduct.Items4" xml:space="preserve">
+    <value>The price is decreasing</value>
+  </data>
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>Image</value>
   </data>
@@ -160,6 +175,9 @@
   </data>
   <data name="Column7.HeaderText" xml:space="preserve">
     <value>Describe</value>
+  </data>
+  <data name="grpProductInfo.Text" xml:space="preserve">
+    <value>Food information</value>
   </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1627,8 +1645,8 @@
   <data name="pbProduct.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="grpProductInfo.Text" xml:space="preserve">
-    <value>Food information</value>
+  <data name="grpFunction.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="btnSaveProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2601,9 +2619,6 @@
   </data>
   <data name="btnProductDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
-  </data>
-  <data name="grpFunction.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <data name="btnSearchProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

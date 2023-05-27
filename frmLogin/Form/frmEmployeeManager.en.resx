@@ -128,6 +128,15 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Sort</value>
   </data>
+  <data name="cbSortEmployee.Items" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="cbSortEmployee.Items1" xml:space="preserve">
+    <value>Employee Name</value>
+  </data>
+  <data name="cbSortEmployee.Items2" xml:space="preserve">
+    <value>Employee ID</value>
+  </data>
   <data name="colEmployeeID.HeaderText" xml:space="preserve">
     <value>Employee ID</value>
   </data>
@@ -157,6 +166,9 @@
   </data>
   <data name="guna2HtmlLabel1.Text" xml:space="preserve">
     <value>Fillter</value>
+  </data>
+  <data name="grpEmployeeInfo.Text" xml:space="preserve">
+    <value>Staff Information</value>
   </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -257,8 +269,8 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Employee ID:</value>
   </data>
-  <data name="grpEmployeeInfo.Text" xml:space="preserve">
-    <value>Staff Information</value>
+  <data name="grpFunctionEmployee.Text" xml:space="preserve">
+    <value>Function</value>
   </data>
   <data name="btnSaveEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1988,9 +2000,6 @@
   </data>
   <data name="btnEmployeeDeleted.Text" xml:space="preserve">
     <value>Deleted</value>
-  </data>
-  <data name="grpFunctionEmployee.Text" xml:space="preserve">
-    <value>Function</value>
   </data>
   <data name="btnSearchEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
