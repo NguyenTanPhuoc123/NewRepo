@@ -177,7 +177,7 @@ namespace frmLogin
         {
             LoadEmloyeeCreateBill();
             LoadProduct();
-            //LoadStisticalRevenue();
+            LoadStisticalRevenue();
         }
         #region Employee
         public void LoadEmloyeeCreateBill()
@@ -361,11 +361,6 @@ namespace frmLogin
             frm.ShowDialog();
             this.Show();
         }
-
-
-
-
-
 
         #endregion
 

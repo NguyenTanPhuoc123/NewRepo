@@ -37,10 +37,10 @@ namespace DAO
             return list;
         }
 
-        public List<Bill> GetListBillPaid()
-        {
+        public List<Bill> GetListBillPaid(string startDay, string endDay)
+        {            
             List<Bill> list = new List<Bill>();
-            string query = "Select * from HOADON WHERE TRANGTHAI = 1 and TRANGTHAITHANHTOAN = 1";
+            string query = string.Format("LoadListBillPaidByDay '{0}' , '{1}' ",startDay,endDay);
             DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
             foreach (DataRow item in data.Rows)
             {
@@ -54,7 +54,7 @@ namespace DAO
         public float GetTotalRenvenueByDate(string startDay, string endDay)
         {
             float total=0;
-            List<Bill> list = GetListBillPaid();
+            List<Bill> list = GetListBillPaid(startDay,endDay);
             foreach(Bill bill in list)
             {
                 total += bill.TotalPrice;
