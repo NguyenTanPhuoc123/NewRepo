@@ -14,15 +14,16 @@ namespace frmLogin
         private string fileAddress;
         private byte[] img;
         private int Language = frmlogin.Language;
+        HashCode info = new HashCode();
         public frmProductManagement()
         {
             InitializeComponent();
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             dtgvListProduct.AutoGenerateColumns = false;
-            cbFillProduct.SelectedIndex = 0;
+            cbFillProduct.SelectedIndex = info.valueDefault;
 
         }
 
@@ -40,87 +41,67 @@ namespace frmLogin
             txtProductName.Clear();
             txtPrice.Clear();
             richtxtDescribe.Clear();
-            numQuantity.Value = 1;
-            cbCategory.SelectedIndex = 0;
+            numQuantity.Value = info.count;
+            cbCategory.SelectedIndex = info.valueDefault;
             btnEditProduct.Enabled = false;
             btnDeleteProduct.Enabled = false;
         }
 
         private void btnSaveProduct_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (string.IsNullOrEmpty(txtProductName.Text.Trim()))
+                if (string.IsNullOrEmpty(txtProductName.Text.Trim()) || string.IsNullOrEmpty(txtPrice.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập tên sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.eventNullVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
-                }
-                else
+                }                                  
+                Product product = new Product(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
+                if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham))
                 {
-                    if (string.IsNullOrEmpty(txtPrice.Text.Trim()))
+                    int count = ProductBUS.Instance.ExecuteInsertCommand(product);
+                    if (count > 0)
                     {
-                        MessageBox.Show("Vui lòng nhập đơn giá cúa sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
+                        MessageBox.Show(info.addVi,info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        LoadProduct();
+                        Resettext();
                     }
                     else
-                    {
-                        Product product = new Product(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
-                        if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham))
-                        {
-                            int count = ProductBUS.Instance.ExecuteInsertCommand(product);
-                            if (count > 0)
-                            {
-                                MessageBox.Show("Thêm sản phẩm mới thành công", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
-                                LoadProduct();
-                                Resettext();
-                            }
-                            else
-                                MessageBox.Show("Thêm sản phẩm mới thất bại", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                        }
-                        else
-                            MessageBox.Show("Tên sản phẩm đã có", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                        MessageBox.Show(info.addFailedVi,info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
+                else
+                    MessageBox.Show(info.MessageCheckExistVi(txtProductName.Text),info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);                                   
             }
             else
             {
-                if (string.IsNullOrEmpty(txtProductName.Text.Trim()))
+                if (string.IsNullOrEmpty(txtProductName.Text.Trim()) || string.IsNullOrEmpty(txtPrice.Text.Trim()))
                 {
-                    MessageBox.Show("Please enter product name", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
-                }
-                else
+                }                                  
+                Product product = new Product(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
+                if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham))
                 {
-                    if (string.IsNullOrEmpty(txtPrice.Text.Trim()))
+                    int count = ProductBUS.Instance.ExecuteInsertCommand(product);
+                    if (count > 0)
                     {
-                        MessageBox.Show("Please enter the price of the product", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
+                        MessageBox.Show(info.addEn,info.titleMessageEn, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        LoadProduct();
+                        Resettext();
                     }
                     else
-                    {
-                        Product product = new Product(txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text);
-                        if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham))
-                        {
-                            int count = ProductBUS.Instance.ExecuteInsertCommand(product);
-                            if (count > 0)
-                            {
-                                MessageBox.Show("Successfully added new products", "Notification", MessageBoxButtons.OK);
-                                LoadProduct();
-                                Resettext();
-                            }
-                            else
-                                MessageBox.Show("Add new product failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                        else
-                            MessageBox.Show("Add new product failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                        MessageBox.Show(info.addFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+                else
+                    MessageBox.Show(info.MessageCheckExistEn(txtProductName.Text),info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
+                
             }
         }
         private void pbProduct_Click(object sender, EventArgs e)
         {
-            ofdImage.Filter = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
-            ofdImage.Title = "Chọn ảnh";
+            ofdImage.Filter = info.filterPicTure;
+            ofdImage.Title = info.selectImgVi;
             if (ofdImage.ShowDialog() == DialogResult.OK)
             {
                 fileAddress = ofdImage.FileName;
@@ -167,29 +148,29 @@ namespace frmLogin
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtProductID.Text))
                 {
-                    MessageBox.Show("Bạn chưa chọn sản phẩm để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messDelDishVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     if (BillInfoBUS.Instance.CheckProduct(txtProductID.Text))
                     {
                         int data = ProductBUS.Instance.DeleteProduct(txtProductID.Text);
                         if (data > 0)
-                            MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         frmProductManagement_Load(sender, e);
                         LoadProduct();
                         Resettext();
                     }
                     else
                     {
-                        MessageBox.Show("Sản phẩm đã có trong hóa đơn không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -197,25 +178,25 @@ namespace frmLogin
             {
                 if (string.IsNullOrEmpty(txtProductID.Text))
                 {
-                    MessageBox.Show("You have not selected a product to delete", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messDelDishEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (DialogResult.Yes == MessageBox.Show("Do you want to delete the product?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     if (BillInfoBUS.Instance.CheckProduct(txtProductID.Text))
                     {
                         int data = ProductBUS.Instance.DeleteProduct(txtProductID.Text);
                         if (data > 0)
-                            MessageBox.Show("Delete successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Delete failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         frmProductManagement_Load(sender, e);
                         LoadProduct();
                         Resettext();
                     }
                     else
                     {
-                        MessageBox.Show("Product already in invoice cannot be deleted", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -226,8 +207,8 @@ namespace frmLogin
             txtProductName.Clear();
             txtPrice.Clear();
             richtxtDescribe.Clear();
-            numQuantity.Value = 1;
-            cbCategory.SelectedIndex = 0;
+            numQuantity.Value = info.count;
+            cbCategory.SelectedIndex = info.valueDefault;
             btnSaveProduct.Enabled = false;
             btnAddProduct.Enabled = true;
             btnDeleteProduct.Enabled = true;
@@ -243,27 +224,28 @@ namespace frmLogin
         private void dtgvListProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int i = e.RowIndex;
+            info.firstIndex = info.valueDefault;
             if (i == -1) return;
-            MemoryStream memoryStream = new MemoryStream((byte[])dtgvListProduct.Rows[i].Cells[0].Value);
+            MemoryStream memoryStream = new MemoryStream((byte[])dtgvListProduct.Rows[i].Cells[info.firstIndex].Value);
             pbProduct.Image = Image.FromStream(memoryStream);
-            txtProductID.Text = dtgvListProduct.Rows[i].Cells[1].Value.ToString();
-            txtProductName.Text = dtgvListProduct.Rows[i].Cells[2].Value.ToString();
-            cbCategory.SelectedValue = dtgvListProduct.Rows[i].Cells[4].Value;
-            numQuantity.Value = Convert.ToInt32(dtgvListProduct.Rows[i].Cells[5].Value);
-            txtPrice.Text = dtgvListProduct.Rows[i].Cells[6].Value.ToString();
-            richtxtDescribe.Text = dtgvListProduct.Rows[i].Cells[7].Value.ToString();
+            txtProductID.Text = dtgvListProduct.Rows[i].Cells[info.firstIndex+=1].Value.ToString();
+            txtProductName.Text = dtgvListProduct.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
+            cbCategory.SelectedValue = dtgvListProduct.Rows[i].Cells[info.firstIndex += 2].Value;
+            numQuantity.Value = Convert.ToInt32(dtgvListProduct.Rows[i].Cells[info.firstIndex += 1].Value);
+            txtPrice.Text = dtgvListProduct.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
+            richtxtDescribe.Text = dtgvListProduct.Rows[i].Cells[info.firstIndex += 1].Value.ToString();
         }
 
         private void btnEditProduct_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtProductID.Text))
                 {
-                    MessageBox.Show("Bạn chưa chọn sản phẩm để sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messEditDishVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (DialogResult.Yes == MessageBox.Show("Bạn có muốn sửa sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (DialogResult.Yes == MessageBox.Show(info.messageEditVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
 
                     Product product = new Product
@@ -274,13 +256,13 @@ namespace frmLogin
                     {
                         int cout = ProductBUS.Instance.UpdateProduct(product);
                         if (cout > 0)
-                            MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.editVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Sửa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.editFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
-                        MessageBox.Show("Tên sản phẩm đã có", "Thông báo", MessageBoxButtons.OK);
+                        MessageBox.Show(info.MessageCheckExistVi(txtProductName.Text),info.titleMessageVi, MessageBoxButtons.OK);
                     }
                     Resettext();
                     LoadProduct();
@@ -290,10 +272,10 @@ namespace frmLogin
             {
                 if (string.IsNullOrEmpty(txtProductID.Text))
                 {
-                    MessageBox.Show("You have not selected a product to repair", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messEditDishEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (DialogResult.Yes == MessageBox.Show("Do you want to fix the product?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (DialogResult.Yes == MessageBox.Show(info.messageEditEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     Product product = new Product
                         (
@@ -303,12 +285,12 @@ namespace frmLogin
                     {
                         int cout = ProductBUS.Instance.UpdateProduct(product);
                         if (cout > 0)
-                            MessageBox.Show("Successful fix", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.editEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Fix failure", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.editFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Tên sản phẩm đã có", "Thông báo", MessageBoxButtons.OK);
+                        MessageBox.Show(info.MessageCheckExistEn(txtProductName.Text),info.titleMessageEn, MessageBoxButtons.OK);
                     Resettext();
                     LoadProduct();
                 }
@@ -318,7 +300,7 @@ namespace frmLogin
         {
             dtgvListProduct.DataSource = null;
             dtgvListProduct.Rows.Clear();
-            if (cbFillProduct.SelectedIndex == 0)
+            if (cbFillProduct.SelectedIndex == info.valueDefault)
             {
                 LoadProduct();
             }
@@ -330,11 +312,11 @@ namespace frmLogin
 
         private void btnSearchProduct_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtSearchProduct.Text.Trim()))
                 {
-                    MessageBox.Show("Bạn chưa nhập tên sản phẩm để tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messSearchDishVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 dtgvListProduct.DataSource = null;
@@ -344,7 +326,7 @@ namespace frmLogin
             else
             {
                 {
-                    MessageBox.Show("You have not entered the product name to search", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messSearchDishEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 dtgvListProduct.DataSource = null;
@@ -355,61 +337,62 @@ namespace frmLogin
 
         private void cbSortProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
-                dtgvListProduct.DataSource = null;
-                dtgvListProduct.Rows.Clear();
-                if (cbSortProduct.SelectedIndex == 0)
-                    dtgvListProduct.DataSource = ProductBUS.Instance.SortProductName(cbFillProduct.Text);
-                else if (cbSortProduct.SelectedIndex == 1)
-                    dtgvListProduct.DataSource = ProductBUS.Instance.SortSoLuongASC(cbFillProduct.Text);
-                else if (cbSortProduct.SelectedIndex == 2)
-                    dtgvListProduct.DataSource = ProductBUS.Instance.SortSoLuongDESC(cbFillProduct.Text);
-                else if (cbSortProduct.SelectedIndex == 3)
-                    dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaASC(cbFillProduct.Text);
-                else
-                    dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaDESC(cbFillProduct.Text);
+            info.firstIndex = info.valueDefault;
+            dtgvListProduct.DataSource = null;
+            dtgvListProduct.Rows.Clear();
+            if (cbSortProduct.SelectedIndex == info.firstIndex )
+                dtgvListProduct.DataSource = ProductBUS.Instance.SortProductName(cbFillProduct.Text);
+            else if (cbSortProduct.SelectedIndex == (info.firstIndex+=1))
+                dtgvListProduct.DataSource = ProductBUS.Instance.SortSoLuongASC(cbFillProduct.Text);
+            else if (cbSortProduct.SelectedIndex == (info.firstIndex += 1))
+                dtgvListProduct.DataSource = ProductBUS.Instance.SortSoLuongDESC(cbFillProduct.Text);
+            else if (cbSortProduct.SelectedIndex == (info.firstIndex += 1))
+                dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaASC(cbFillProduct.Text);
+            else
+                dtgvListProduct.DataSource = ProductBUS.Instance.SortDonGiaDESC(cbFillProduct.Text);
         }
 
         private void btnDeleteAllProduct_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa tất cả sản phẩm", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     if (BillInfoBUS.Instance.CheckProduct())
                     {
                         int data = ProductBUS.Instance.DeleteProductAll();
                         if (data > 0)
-                            MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteAllVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteAllEn,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         frmProductManagement_Load(sender, e);
                         LoadProduct();
                         Resettext();
                     }
                     else
                     {
-                        MessageBox.Show("Sản phẩm đã có trong hóa đơn không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
             else
             {
-                if (DialogResult.Yes == MessageBox.Show("Do you want to delete all the product?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     if (BillInfoBUS.Instance.CheckProduct())
                     {
                         int data = ProductBUS.Instance.DeleteProductAll();
                         if (data > 0)
-                            MessageBox.Show("Delete successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteAllEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         else
-                            MessageBox.Show("Delete failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteAllFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         frmProductManagement_Load(sender, e);
                         LoadProduct();
                         Resettext();
                     }
                     else
                     {
-                        MessageBox.Show("Product already in invoice cannot be deleted", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }

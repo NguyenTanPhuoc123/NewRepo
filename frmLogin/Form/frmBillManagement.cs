@@ -16,10 +16,11 @@ namespace frmLogin
 {
     public partial class frmBillManagement : Form
     {
+        HashCode info = new HashCode();
         private int Language = frmlogin.Language;
         public frmBillManagement()
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -38,7 +39,7 @@ namespace frmLogin
         {
             LoadBill();
             chkFillBill.Checked = false;
-            cbSortBill.SelectedIndex = 0;
+            cbSortBill.SelectedIndex = info.valueDefault;
         }
         public void LoadBill()
         {
@@ -48,63 +49,67 @@ namespace frmLogin
 
         private void dtgvListBill_SelectionChanged(object sender, EventArgs e)
         {
+            info.firstIndex = info.valueDefault;
             if (dtgvListBill.SelectedRows.Count > 0)
-            {
-                txtBillID.Text = dtgvListBill.SelectedRows[0].Cells[0].Value.ToString();
-                txtDayCheckIn.Text = dtgvListBill.SelectedRows[0].Cells[1].Value.ToString();
-                txtEmployeeName.Text = dtgvListBill.SelectedRows[0].Cells[2].Value.ToString();
-                if (dtgvListBill.SelectedRows[0].Cells[3].Value != null)
-                    txtDiscount.Text = dtgvListBill.SelectedRows[0].Cells[3].Value.ToString();
+            {   
+                txtBillID.Text = dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
+                txtDayCheckIn.Text = dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
+                txtEmployeeName.Text = dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                if (dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value != null)
+                    txtDiscount.Text = dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
                 else
                     txtDiscount.Text = "Không giảm giá";
-                txtTable.Text = dtgvListBill.SelectedRows[0].Cells[4].Value.ToString();
-                txtDayCheckOut.Text = dtgvListBill.SelectedRows[0].Cells[5].Value.ToString();
+                txtTable.Text = dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                txtDayCheckOut.Text = dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
                 CultureInfo culture = new CultureInfo("vi-VN");
-                float total = float.Parse(dtgvListBill.SelectedRows[0].Cells[6].Value.ToString());
+                float total = float.Parse(dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString());
                 txtTotalBill.Text = total.ToString("c", culture);
-                bool statusCheckOut = bool.Parse(dtgvListBill.SelectedRows[0].Cells[7].Value.ToString());
+                bool statusCheckOut = bool.Parse(dtgvListBill.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString());
                 if (statusCheckOut == true)
-                    cbStatusCheckOut.SelectedIndex = 0;
+                    cbStatusCheckOut.SelectedIndex = info.valueDefault;
                 else
-                    cbStatusCheckOut.SelectedIndex = 1;
+                    cbStatusCheckOut.SelectedIndex = info.valueDefault+1;
             }
         }
 
         private void cbSortBill_SelectedIndexChanged(object sender, EventArgs e)
-        {   if (chkFillBill.Checked == true)
+        {
+            info.firstIndex = info.valueDefault;
+            if (chkFillBill.Checked == true)
             {
                 string dayCheckIn = dtpFillBill.Value.ToString("yyyy/MM/dd");
 
-                if (cbSortBill.SelectedIndex == 1)
+                if (cbSortBill.SelectedIndex == (info.firstIndex+=1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillID(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 2)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillIDDesc(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 3)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckIn(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 4)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckInDesc(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 5)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotal(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 6)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotalDesc(dayCheckIn);
                 else
                     dtgvListBill.DataSource = BillMenuBUS.Instance.FillBillByDayCheckIn(dayCheckIn);
             }
             else
             {
-                if (cbSortBill.SelectedIndex == 0)
+                info.firstIndex = info.valueDefault;
+                if (cbSortBill.SelectedIndex == info.firstIndex)
                     dtgvListBill.DataSource = BillMenuBUS.Instance.GetListBillMenu();
-                else  if (cbSortBill.SelectedIndex == 1)
+                else  if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillID(null);
-                else if (cbSortBill.SelectedIndex == 2)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillIDDesc(null);
-                else if (cbSortBill.SelectedIndex == 3)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckIn(null);
-                else if (cbSortBill.SelectedIndex == 4)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckInDesc(null);
-                else if (cbSortBill.SelectedIndex == 5)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotal(null);
-                else if (cbSortBill.SelectedIndex == 6)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotalDesc(null);
               
             }
@@ -120,21 +125,22 @@ namespace frmLogin
 
         private void dtpFillBill_ValueChanged(object sender, EventArgs e)
         {
+            info.firstIndex = info.valueDefault;
             if(chkFillBill.Checked == true)
             {
                 string dayCheckIn = dtpFillBill.Value.ToString("yyyy/MM/dd");
 
-                if (cbSortBill.SelectedIndex == 1)
+                if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillID(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 2)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByBillIDDesc(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 3)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckIn(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 4)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByDayCheckInDesc(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 5)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotal(dayCheckIn);
-                else if (cbSortBill.SelectedIndex == 6)
+                else if (cbSortBill.SelectedIndex == (info.firstIndex += 1))
                     dtgvListBill.DataSource = BillMenuBUS.Instance.SortBillByTotalDesc(dayCheckIn);
                 else
                     dtgvListBill.DataSource = BillMenuBUS.Instance.FillBillByDayCheckIn(dayCheckIn);

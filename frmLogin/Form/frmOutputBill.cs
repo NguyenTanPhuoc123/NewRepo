@@ -38,14 +38,11 @@ namespace frmLogin
             reportParameters.Add(new ReportParameter("MoneyPay",frm.GetMoneyPay()));
             this.rpvOutputBill.LocalReport.SetParameters(reportParameters);
             this.rpvOutputBill.RefreshReport();
-        }
+        }            
 
-      
-
-        private void frmOutputBill_KeyDown(object sender, KeyEventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Escape)
-                this.Close();
+            this.Close();
         }
     }
 }

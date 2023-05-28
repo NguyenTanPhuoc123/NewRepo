@@ -17,12 +17,13 @@ namespace frmLogin
     public partial class frmBillDetail : Form
     {
         Bill getBill;
+        HashCode info = new HashCode();
         private int Language = frmlogin.Language;
         public Bill GetBill { get => getBill; set => getBill = value; }
         frmBillManagement frmBillManagement;
         public frmBillDetail(Bill bill, frmBillManagement frmBill)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -53,44 +54,56 @@ namespace frmLogin
 
         private void btnDeleteBillDetail_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn muốn xóa chi tiết hóa đơn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    string productID = "";
-                    if (dtgvBillDetail.SelectedRows.Count > 0)
-                        productID = dtgvBillDetail.SelectedRows[0].Cells[1].Value.ToString();
-                    int count = BillInfoBUS.Instance.DeleteBillInfo(txtBillID.Text, productID);
-
-                    if (count > 0)
+                    if (!BillInfoBUS.Instance.CheckBillInfoUsing(txtBillID.Text))
                     {
-                        MessageBox.Show("Xóa chi tiết hóa đơn thành công", "Xóa chi tiết hóa đơn", MessageBoxButtons.OK);
-                        this.frmBillManagement.LoadBill();
-                        frmBillDetail_Load(sender, e);
+                        info.firstIndex = info.valueDefault;
+                        string productID = info.strDefault;
+                        if (dtgvBillDetail.SelectedRows.Count > 0)
+                            productID = dtgvBillDetail.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                        int count = BillInfoBUS.Instance.DeleteBillInfo(txtBillID.Text, productID);
 
+                        if (count > 0)
+                        {
+                            MessageBox.Show(info.deleteVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.frmBillManagement.LoadBill();
+                            frmBillDetail_Load(sender, e);
+
+                        }
+                        else
+                            MessageBox.Show(info.deleteFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Xóa chi tiết hóa đơn thất bại", "Xóa chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                if (MessageBox.Show("You want to delete this invoice details ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    string productID = "";
-                    if (dtgvBillDetail.SelectedRows.Count > 0)
-                        productID = dtgvBillDetail.SelectedRows[0].Cells[1].Value.ToString();
-                    int count = BillInfoBUS.Instance.DeleteBillInfo(txtBillID.Text, productID);
-
-                    if (count > 0)
+                    if (!BillInfoBUS.Instance.CheckBillInfoUsing(txtBillID.Text))
                     {
-                        MessageBox.Show("Successfully deleted invoice details", "Notification", MessageBoxButtons.OK);
-                        this.frmBillManagement.LoadBill();
-                        frmBillDetail_Load(sender, e);
+                        string productID = info.strDefault;
+                        info.firstIndex = info.valueDefault;
+                        if (dtgvBillDetail.SelectedRows.Count > 0)
+                            productID = dtgvBillDetail.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                        int count = BillInfoBUS.Instance.DeleteBillInfo(txtBillID.Text, productID);
 
+                        if (count > 0)
+                        {
+                            MessageBox.Show(info.deleteEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.frmBillManagement.LoadBill();
+                            frmBillDetail_Load(sender, e);
+
+                        }
+                        else
+                            MessageBox.Show(info.deleteFailedEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    else
-                        MessageBox.Show("Delete failed invoice details", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        else
+                        MessageBox.Show(info.checkDelEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -99,48 +112,60 @@ namespace frmLogin
         {
             if (dtgvBillDetail.SelectedRows.Count > 0)
             {
-                txtBillID.Text = dtgvBillDetail.SelectedRows[0].Cells[0].Value.ToString();
-                txtProductName.Text = dtgvBillDetail.SelectedRows[0].Cells[2].Value.ToString();
-                numCount.Value = int.Parse(dtgvBillDetail.SelectedRows[0].Cells[3].Value.ToString());
-                txtPrice.Text = dtgvBillDetail.SelectedRows[0].Cells[4].Value.ToString();
-                txtTotal.Text = dtgvBillDetail.SelectedRows[0].Cells[5].Value.ToString();
+                info.firstIndex = info.valueDefault;
+                txtBillID.Text = dtgvBillDetail.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
+                txtProductName.Text = dtgvBillDetail.SelectedRows[info.valueDefault].Cells[info.firstIndex+=2].Value.ToString();
+                numCount.Value = int.Parse(dtgvBillDetail.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString());
+                txtPrice.Text = dtgvBillDetail.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
+                txtTotal.Text = dtgvBillDetail.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
             }
         }
 
         private void btnDeleteAllBillDetail_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn muốn xóa tất cả chi tiết hóa đơn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    int count = BillInfoBUS.Instance.DeleteAllBillInfo();
-
-                    if (count > 0)
+                    if (!BillInfoBUS.Instance.CheckBillInfoUsing(getBill.ID))
                     {
-                        MessageBox.Show("Xóa tất cả chi tiết hóa đơn thành công", "Xóa chi tiết hóa đơn", MessageBoxButtons.OK);
-                        this.frmBillManagement.LoadBill();
-                        frmBillDetail_Load(sender, e);
+                        int count = BillInfoBUS.Instance.DeleteAllBillInfo();
 
+                        if (count > 0)
+                        {
+                            MessageBox.Show(info.deleteAllVi,info.titleMessageVi, MessageBoxButtons.OK);
+                            this.frmBillManagement.LoadBill();
+                            frmBillDetail_Load(sender, e);
+
+                        }
+                        else
+                            MessageBox.Show(info.deleteAllFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Xóa tất cả chi tiết hóa đơn thất bại", "Xóa chi tiết hóa đơn", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelVi, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                if (MessageBox.Show("Want to delete all this invoice details?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                
+                if (MessageBox.Show(info.messageDeleteAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    int count = BillInfoBUS.Instance.DeleteAllBillInfo();
-
-                    if (count > 0)
+                    if (!BillInfoBUS.Instance.CheckBillInfoUsing(getBill.ID))
                     {
-                        MessageBox.Show("Delete all invoice details successfully", "Notification", MessageBoxButtons.OK);
-                        this.frmBillManagement.LoadBill();
-                        frmBillDetail_Load(sender, e);
+                        int count = BillInfoBUS.Instance.DeleteAllBillInfo();
 
+                        if (count > 0)
+                        {
+                            MessageBox.Show(info.deleteAllEn,info.titleMessageEn, MessageBoxButtons.OK);
+                            this.frmBillManagement.LoadBill();
+                            frmBillDetail_Load(sender, e);
+
+                        }
+                        else
+                            MessageBox.Show(info.deleteAllFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
-                        MessageBox.Show("Delete all failed invoice details", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }

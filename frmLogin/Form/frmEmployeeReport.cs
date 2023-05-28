@@ -44,5 +44,10 @@ namespace frmLogin
             this.rpvStoreReport.LocalReport.SetParameters(reportParameters);
             this.rpvStoreReport.RefreshReport();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

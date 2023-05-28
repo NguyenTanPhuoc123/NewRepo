@@ -62,6 +62,13 @@ namespace DAO
             return row;
         }
 
+        public bool CheckBillInfoUsing(string billID)
+        {
+            string query = string.Format("SELECT COUNT(*) FROM HOADON WHERE MAHD = '{0}' AND TRANGTHAITHANHTOAN = 0 ", billID);
+            int count = DataProvider.ExecuteScalarCommand(query, null);
+            return count > 0 ? true : false;
+        }      
+
         public int DeleteAllBillInfo()
         {
             int row;

@@ -8,6 +8,23 @@ namespace DTO
 {
     public class HashCode
     {
+        public string maleVi = "Nam";
+        public string maleEn = "Male";
+        public string femaleVi = "Nữ";
+        public string femaleEn = "Female";
+        public char passwordCharNull = '\0';
+        public char passwordChar = '●'; 
+        public string messEditTypeDishVi = "Bạn chưa chọn loại sản phẩm để sửa";
+        public string messEditTypeDishEn = "You have not selected a product type to edit";
+        public string messDelTypeDishVi = "Bạn chưa chọn loại sản phẩm để xóa";
+        public string messDelTypeDishEn = "You have not selected a product type to delete";
+        public string messDelDishVi = "Bạn chưa chọn sản phẩm để xóa";
+        public string messDelDishEn = "You have not selected a product to delete";
+        public string messEditDishVi = "Bạn chưa chọn sản phẩm để sửa";
+        public string messEditDishEn = "You have not selected a product to edit";
+        public string filterPicTure = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
+        public string selectImgVi = "Chọn ảnh";
+        public string selectImgEn = "Select Image";
         public string qrCodeVi = "Giao dịch thành công";
         public string qrCodeEn = "Transaction success";
         public string qrCodeFailedVi = "Giao dịch thất bại";
@@ -115,6 +132,9 @@ namespace DTO
         public string messCheckDelAllEn = "You cannot perform the function without deleting the account";
 
         #endregion
+
+        public string titleStatisticalVi = "Thống kê";
+        public string titleStatisticalEn = "Statistical";
 
         public string MessageCheckExistVi(string name)
         {

@@ -29,7 +29,9 @@ namespace frmLogin
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductReport));
             this.rpvProduct = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rpvProduct
@@ -41,16 +43,32 @@ namespace frmLogin
             this.rpvProduct.Size = new System.Drawing.Size(842, 450);
             this.rpvProduct.TabIndex = 1;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(755, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 10);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmProductReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(842, 450);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.rpvProduct);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmProductReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmProductReport";
+            this.Text = "Báo cáo sản phẩm";
             this.Load += new System.EventHandler(this.frmProductReport_Load);
             this.ResumeLayout(false);
 
@@ -58,5 +76,6 @@ namespace frmLogin
 
         #endregion
         private Microsoft.Reporting.WinForms.ReportViewer rpvProduct;
+        private System.Windows.Forms.Button btnExit;
     }
 }

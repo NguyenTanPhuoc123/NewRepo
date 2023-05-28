@@ -38,7 +38,11 @@ namespace BUS
             return BillInfoDAO.Instance.DeleteBillInfo(billID, productID);
         }
 
-        public int DeleteAllBillInfo()
+        public bool CheckBillInfoUsing(string billID)
+        {
+            return BillInfoDAO.Instance.CheckBillInfoUsing(billID);
+        }
+            public int DeleteAllBillInfo()
         {
             return BillInfoDAO.Instance.DeleteAllBillInfo();
         }

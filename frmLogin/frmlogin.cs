@@ -19,7 +19,8 @@ namespace frmLogin
    
     public partial class frmlogin : Form
     {
-        public static int Language = 0;
+        HashCode info = new HashCode();
+        public static int Language = 0; 
         public static string username;
         public frmlogin()
         {
@@ -50,14 +51,14 @@ namespace frmLogin
         {
             pbHide.BringToFront();
             txtPassword.UseSystemPasswordChar= false;
-            txtPassword.PasswordChar = '\0';
+            txtPassword.PasswordChar = info.passwordCharNull;
         }
 
         private void pbHide_Click(object sender, EventArgs e)
         {
            pbDisplay.BringToFront();
             txtPassword.UseSystemPasswordChar = true;
-            txtPassword.PasswordChar = '●';
+            txtPassword.PasswordChar = info.passwordChar;
         }
 
         
@@ -65,11 +66,11 @@ namespace frmLogin
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
             SetUsername(txtUsername.Text);
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(info.eventNullVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
@@ -84,14 +85,14 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Dữ liệu không hợp lệ", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkLoginVi,info.titleMessageVi,MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
             }
             else
             {
                 if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
                 {
-                    MessageBox.Show("Please enter full information", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
@@ -106,7 +107,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Invalid data", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkLoginEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             
@@ -133,7 +134,7 @@ namespace frmLogin
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             this.Controls.Clear();
             InitializeComponent();
-            Language = 0;
+            Language = info.valueDefault;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -141,7 +142,7 @@ namespace frmLogin
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             this.Controls.Clear();
             InitializeComponent();
-            Language = 1;
+            Language = info.count;
         }
     }
 }

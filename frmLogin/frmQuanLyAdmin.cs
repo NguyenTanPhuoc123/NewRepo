@@ -26,7 +26,7 @@ namespace frmLogin
 
         public frmQuanLyAdmin(frmSellManagement frmSell)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -135,12 +135,12 @@ namespace frmLogin
 
         private void pbLogo_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (activeForm != null)
                     activeForm.Close();
 
-                lblTitle.Text = "Thống kê";
+                lblTitle.Text = info.titleStatisticalVi;
                 DisableButton();
             }
             else
@@ -148,7 +148,7 @@ namespace frmLogin
                 if (activeForm != null)
                     activeForm.Close();
 
-                lblTitle.Text = "Statistical";
+                lblTitle.Text = info.titleStatisticalEn;
                 DisableButton();
             }
             
@@ -234,9 +234,10 @@ namespace frmLogin
             frm.ShowDialog();
             this.Show();
         }
-       
+
         #endregion
 
+        #region Revenue
         public void LoadStisticalRevenue()
         {                       
             DateTime startDay = DateTime.Now;
@@ -255,7 +256,7 @@ namespace frmLogin
             this.rpvRevenue.LocalReport.SetParameters(reportParameters);
             this.rpvRevenue.RefreshReport();
         }
-
+        #endregion
         #region KeyDown
         private void btnProducManagement_KeyDown(object sender, KeyEventArgs e)
         {

@@ -17,11 +17,12 @@ namespace frmLogin
     public partial class frmSetting : Form
     {
         Account account;
+        HashCode info = new HashCode();
         private int Language = frmlogin.Language;
         frmSellManagement frm;
         public frmSetting(Account acc, frmSellManagement frmSell)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -53,9 +54,9 @@ namespace frmLogin
 
         private void btnLogOff_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (MessageBox.Show("Bạn muốn đăng xuất khỏi tài khoản này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show(info.checkLogOutVi,info.titleMessageVi, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     frmSellManagement.ActiveForm.Disposed += new EventHandler(CloseForm);
                     this.Close();
@@ -63,7 +64,7 @@ namespace frmLogin
             }
             else
             {
-                if (MessageBox.Show("Want to sign out of this account?", "Notifications", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show(info.checkLogOutEn,info.titleMessageEn, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     frmSellManagement.ActiveForm.Disposed += new EventHandler(CloseForm);
                     this.Close();
@@ -92,7 +93,7 @@ namespace frmLogin
             dtpBirthday.Text = employee.NgaySinh;
             dtpWorkingDay.Text = employee.NgayVaoLam;
             txtAddress.Text = employee.DiaChi;
-            if (employee.GioiTinh == "Nam")
+            if (employee.GioiTinh == info.maleVi)
                 radMale.Checked = true;
             else
                 radFemale.Checked = true;
@@ -104,58 +105,58 @@ namespace frmLogin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtNumberPhone.Text.Trim()))
                 {
-                    MessageBox.Show("Số điện thoại không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkPhoneSettingVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 string gioiTinh;
                 if (radMale.Checked)
-                    gioiTinh = "Nam";
+                    gioiTinh = info.maleVi;
                 else
-                    gioiTinh = "Nữ";
+                    gioiTinh = info.femaleVi;
                 if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text,txtEmployeeID.Text))
                 {
                     int row = EmployeeBUS.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text), txtNumberPhone.Text, dtpBirthday.Text, gioiTinh, txtAddress.Text);
                     if (row == 1)
                     {
-                        MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show(info.editVi,info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
                         LoadThongTin();
                     }
                     else
-                        MessageBox.Show("Sửa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.editFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
-                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau");
+                    MessageBox.Show(info.checkPhoneSettingVi+info.orVi+info.checkPhoneExistVi,info.titleMessageVi,MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             else
             {
                 if (string.IsNullOrEmpty(txtNumberPhone.Text.Trim()))
                 {
-                    MessageBox.Show("Phone number cannot be null", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkPhoneSettingEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 string gioiTinh;
                 if (radMale.Checked)
-                    gioiTinh = "Nam";
+                    gioiTinh = info.maleVi;
                 else
-                    gioiTinh = "Nữ";
+                    gioiTinh = info.femaleVi;
                 if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text, txtEmployeeID.Text))
                 {
                     int row = EmployeeBUS.Instance.UpdateEmployeeInFo(Convert.ToInt32(txtEmployeeID.Text), txtNumberPhone.Text, dtpBirthday.Text, gioiTinh, txtAddress.Text);
                     if (row == 1)
                     {
-                        MessageBox.Show("Edit successful", "Notice", MessageBoxButtons.OK);
+                        MessageBox.Show(info.editEn,info.titleMessageEn, MessageBoxButtons.OK);
                         LoadThongTin();
                     }
                     else
-                        MessageBox.Show("Edit failed", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.editFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
-                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng");
+                    MessageBox.Show(info.checkPhoneSettingEn + info.orEn + info.checkPhoneExistEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -169,12 +170,12 @@ namespace frmLogin
                 {
                     if (string.IsNullOrEmpty(txtNewPassword.Text.Trim()) || string.IsNullOrEmpty(txtRepeatPassword.Text.Trim()))
                     {
-                        MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.eventNullVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     else if (txtNewPassword.Text != txtRepeatPassword.Text)
                     {
-                        MessageBox.Show("Mật khẩu mới không trùng khớp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkPasswordNewVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     else
@@ -182,16 +183,16 @@ namespace frmLogin
                         int row = AccountBUS.Instance.UpdatePassword(txtNewPassword.Text, account.Username);
                         if (row == 1)
                         {
-                            MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK);
+                            MessageBox.Show(info.messageChangePasswordVi,info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
 
                         }
                         else
-                            MessageBox.Show("Đổi mật khẩu thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.messageChangePasswordfailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Mật khẩu củ không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkPasswordOldVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -202,12 +203,12 @@ namespace frmLogin
                 {
                     if (string.IsNullOrEmpty(txtNewPassword.Text.Trim()) || string.IsNullOrEmpty(txtRepeatPassword.Text.Trim()))
                     {
-                        MessageBox.Show("Please complete information", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     else if (txtNewPassword.Text != txtRepeatPassword.Text)
                     {
-                        MessageBox.Show("New password does not match", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkPasswordNewEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     else
@@ -215,16 +216,16 @@ namespace frmLogin
                         int row = AccountBUS.Instance.UpdatePassword(txtNewPassword.Text, account.Username);
                         if (row == 1)
                         {
-                            MessageBox.Show("Password changed successfully", "Notice", MessageBoxButtons.OK);
+                            MessageBox.Show(info.messageChangePasswordEn,info.titleMessageEn, MessageBoxButtons.OK);
 
                         }
                         else
-                            MessageBox.Show("Password change failed", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.messageChangePasswordfailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("The old password is incorrect", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkPasswordOldEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
