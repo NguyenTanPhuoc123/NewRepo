@@ -119,6 +119,12 @@ namespace DAO
             int data  = DataProvider.ExecuteScalarCommand(query, null);
             return data>0?false:true;
         }
+        public bool checkNameExist(string tenloai,string id)
+        {
+            string query = string.Format("Select count(*) from LOAITAIKHOAN where tenloai=N'{0}' and  MALOAI!={1}", tenloai,id);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data > 0 ? false : true;
+        }
         public bool checkExistDelete(string maloai)
         {
             string query = string.Format("Select count(*) from taikhoan where loaitaikhoan='{0}'", maloai);

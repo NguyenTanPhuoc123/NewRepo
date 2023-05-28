@@ -141,6 +141,12 @@ namespace DAO
             string query = string.Format("Select count(*) from VITRI where TENVITRI= N'{0}' ", locationName);
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
-        }    
+        }
+        public bool CheckNameExist(string locationName,string ID)
+        {
+            string query = string.Format("Select count(*) from VITRI where TENVITRI= N'{0}' and MAVITRI !={1}", locationName,ID);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data > 0 ? false : true;
+        }
     }
 }

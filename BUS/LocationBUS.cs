@@ -65,6 +65,11 @@ namespace BUS
         {
             return LocationDAO.Instance.CheckNameExist(locationName);
         }
-     
+        public bool CheckNameExist(string locationName, string ID)
+        {
+            return LocationDAO.Instance.CheckNameExist(locationName, ID);
+        }
+
+
     }
 }

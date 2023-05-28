@@ -270,7 +270,7 @@ namespace frmLogin
                         (
                             txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text
                         );
-                    if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham))
+                    if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham,txtProductID.Text))
                     {
                         int cout = ProductBUS.Instance.UpdateProduct(product);
                         if (cout > 0)
@@ -299,7 +299,7 @@ namespace frmLogin
                         (
                             txtProductID.Text, txtProductName.Text, Convert.ToInt32(cbCategory.SelectedValue.ToString()), Convert.ToInt32(numQuantity.Value.ToString()), Convert.ToInt32(txtPrice.Text), 1, ImageToByteArray(pbProduct), richtxtDescribe.Text
                         );
-                    if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham))
+                    if (ProductBUS.Instance.CheckNameProduct(product.TenSanPham, txtProductID.Text))
                     {
                         int cout = ProductBUS.Instance.UpdateProduct(product);
                         if (cout > 0)

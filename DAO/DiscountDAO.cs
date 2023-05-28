@@ -181,7 +181,13 @@ namespace DAO
         }
         public bool checkNameExist(string TENGIAMGIA)
         {
-            string query = string.Format("Select count(*) from DANHMUC where TENGIAMGIA={0}", TENGIAMGIA);
+            string query = string.Format("Select count(*) from DANHMUC where TENGIAMGIA='{0}'", TENGIAMGIA);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data > 0 ? false : true;
+        }
+        public bool checkNameExist(string TENGIAMGIA ,string MAGIAMGIA)
+        {
+            string query = string.Format("Select count(*) from DANHMUC where TENGIAMGIA='{0}' and MAGIAM != '{1}' ", TENGIAMGIA,MAGIAMGIA);
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
         }

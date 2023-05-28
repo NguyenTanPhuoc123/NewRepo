@@ -59,6 +59,12 @@ namespace DAO
             int count = DataProvider.ExecuteScalarCommand(query, null);
             return (count > 0 ? false : true);
         }
+        public bool CheckNameProduct(string productName,string ProductID)
+        {
+            string query = string.Format("Select Count(*) From SanPham Where TENSANPHAM=N'{0}' and MASANPHAM !='{1}'", productName,ProductID);
+            int count = DataProvider.ExecuteScalarCommand(query, null);
+            return (count > 0 ? false : true);
+        }
         public int ExecuteInsertCommand(Product product)
         {
             string query = "INSERT INTO SANPHAM(MASANPHAM,TENSANPHAM,DANHMUC,SOLUONG,DONGIA,MOTA,TRANGTHAI,HinhANh) VALUES(@MASP,@TENSP,@DANHMUC,@SOLUONG,@DONGIA,@MOTA,@TRANGTHAI,@HINHANH)";

@@ -29,6 +29,10 @@ namespace BUS
         {
             return ProductDAO.Instance.CheckNameProduct(productName);
         }
+        public bool CheckNameProduct(string productName,string ProductID)
+        {
+            return ProductDAO.Instance.CheckNameProduct(productName,ProductID);
+        }
         public DataTable GetProductDeleted()
         {
             return ProductDAO.Instance.GetProductDeleted();

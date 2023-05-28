@@ -143,7 +143,7 @@ namespace frmLogin
                 }
                 if (MessageBox.Show(info.messageEditVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text) == true)
+                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text,txtLocationID.Text))
                     {
                         int count = LocationBUS.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
                         if (count > info.valueDefault)
@@ -173,7 +173,7 @@ namespace frmLogin
                 }
                 if (MessageBox.Show(info.messageEditEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text) == true)
+                    if (LocationBUS.Instance.CheckNameExist(txtLocationName.Text, txtLocationID.Text))
                     {
                         int count = LocationBUS.Instance.UpdateLocationTable(int.Parse(txtLocationID.Text), txtLocationName.Text);
                         if (count > info.valueDefault)
@@ -390,7 +390,7 @@ namespace frmLogin
                         MessageBox.Show("Vui lòng nhập tên loại muốn sửa vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
-                    if (CategoryFoodBUS.Instance.checkNameExist(txtTypeProductName.Text))
+                    if (CategoryFoodBUS.Instance.checkNameExist(txtTypeProductName.Text,txtTypeProductID.Text))
                     {
                         int count = CategoryFoodBUS.Instance.UpdateCategoryFood(txtTypeProductID.Text, txtTypeProductName.Text);
                         if (count > 0)
@@ -421,7 +421,7 @@ namespace frmLogin
                         MessageBox.Show("Please enter the name of the type you want to edit!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
-                    if (CategoryFoodBUS.Instance.checkNameExist(txtTypeProductName.Text))
+                    if (CategoryFoodBUS.Instance.checkNameExist(txtTypeProductName.Text, txtTypeProductID.Text))
                     {
                         int count = CategoryFoodBUS.Instance.UpdateCategoryFood(txtTypeProductID.Text, txtTypeProductName.Text);
                         if (count > 0)
@@ -617,7 +617,7 @@ namespace frmLogin
                     MessageBox.Show("Vui lòng nhập tên chức vụ muốn sửa vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (PositionBUS.Instance.checkNameExist(txtPositionName.Text))
+                if (PositionBUS.Instance.checkNameExist(txtPositionName.Text,txtPositionID.Text))
                 {
                     int count = PositionBUS.Instance.UpdatePosition(int.Parse(txtPositionID.Text), txtPositionName.Text);
                     if (count > 0)
@@ -642,7 +642,7 @@ namespace frmLogin
                     MessageBox.Show("Please enter the name of the position you want to edit!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (PositionBUS.Instance.checkNameExist(txtPositionName.Text))
+                if (PositionBUS.Instance.checkNameExist(txtPositionName.Text, txtPositionID.Text))
                 {
                     int count = PositionBUS.Instance.UpdatePosition(int.Parse(txtPositionID.Text), txtPositionName.Text);
                     if (count > 0)
@@ -859,7 +859,7 @@ namespace frmLogin
                     MessageBox.Show("Vui lòng nhập tên loại tài khoản muốn sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (TypeAccountBUS.Instance.checkNameExist(txtTypeAccountName.Text))
+                if (TypeAccountBUS.Instance.checkNameExist(txtTypeAccountName.Text,txtTypeAccountID.Text))
                 {
                     int count = TypeAccountBUS.Instance.UpdateTypeAccount(int.Parse(txtTypeAccountID.Text), txtTypeAccountName.Text);
                     if (count > 0)
@@ -885,7 +885,7 @@ namespace frmLogin
                     MessageBox.Show("Please enter the name of the account type you want to edit!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                if (TypeAccountBUS.Instance.checkNameExist(txtTypeAccountName.Text))
+                if (TypeAccountBUS.Instance.checkNameExist(txtTypeAccountName.Text, txtTypeAccountID.Text))
                 {
                     int count = TypeAccountBUS.Instance.UpdateTypeAccount(int.Parse(txtTypeAccountID.Text), txtTypeAccountName.Text);
                     if (count > 0)

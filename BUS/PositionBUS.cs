@@ -74,6 +74,10 @@ namespace BUS
         {
             return PositionDAO.Instance.checkNameExist( tenloai);
         }
+        public bool checkNameExist(string tenloai,string id)
+        {
+            return PositionDAO.Instance.checkNameExist(tenloai,id);
+        }
         public bool checkExistDelete(string maloai)
         {
             return PositionDAO.Instance.checkExistDelete(maloai);
