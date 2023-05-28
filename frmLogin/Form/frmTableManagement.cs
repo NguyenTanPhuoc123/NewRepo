@@ -171,7 +171,7 @@ namespace frmLogin
                         return;
                     }
                   
-                    if (TableBUS.Instance.CheckTableNameExist(txtTableName.Text))
+                    if (TableBUS.Instance.CheckTableNameExist(txtTableName.Text,txtTableID.Text))
                     {
                         int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 
@@ -199,9 +199,9 @@ namespace frmLogin
                     {
                         MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
-                    }                   
+                    }
 
-                    if (TableBUS.Instance.CheckTableNameExist(txtTableName.Text))
+                    if (TableBUS.Instance.CheckTableNameExist(txtTableName.Text, txtTableID.Text))
                     {
                         int count = TableBUS.Instance.EditTable(int.Parse(txtTableID.Text), txtTableName.Text, int.Parse(cbLocation.SelectedValue.ToString()));
 

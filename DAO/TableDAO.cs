@@ -200,6 +200,12 @@ namespace DAO
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data == 0 ? true : false;
         }
+        public bool CheckTableNameExist(string tenban,string maban)
+        {
+            string query = string.Format("Select count(*) from BanAn where TENBAN = N'{0}' and mabanan !={1} ", tenban,maban);
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data == 0 ? true : false;
+        }
         public bool CheckExistDelete(string TableID)
         {
             string sql = string.Format("Select count(*) from BanAn where MABANAN ={0} And TRANGTHAI =N'Có người'", TableID);

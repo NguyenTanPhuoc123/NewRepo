@@ -87,6 +87,10 @@ namespace BUS
         {
             return TableDAO.Instance.CheckTableNameExist(tableName);
         }
+        public bool CheckTableNameExist(string tenban, string maban)
+        {
+            return TableDAO.Instance.CheckTableNameExist(tenban,maban);
+        }
         public bool CheckExistDelete(string tableID)
         {
             return TableDAO.Instance.CheckExistDelete(tableID);
