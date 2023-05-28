@@ -31,9 +31,9 @@ namespace frmLogin
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccountManagement));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbSortAccount = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -82,12 +82,12 @@ namespace frmLogin
             // 
             // cbSortAccount
             // 
-            resources.ApplyResources(this.cbSortAccount, "cbSortAccount");
             this.cbSortAccount.BackColor = System.Drawing.Color.Transparent;
             this.cbSortAccount.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbSortAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSortAccount.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbSortAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbSortAccount, "cbSortAccount");
             this.cbSortAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbSortAccount.Items.AddRange(new object[] {
             resources.GetString("cbSortAccount.Items"),
@@ -98,7 +98,6 @@ namespace frmLogin
             // 
             // txtSearchAccount
             // 
-            resources.ApplyResources(this.txtSearchAccount, "txtSearchAccount");
             this.txtSearchAccount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchAccount.DefaultText = "";
             this.txtSearchAccount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -106,6 +105,7 @@ namespace frmLogin
             this.txtSearchAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchAccount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearchAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtSearchAccount, "txtSearchAccount");
             this.txtSearchAccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchAccount.Name = "txtSearchAccount";
             this.txtSearchAccount.PasswordChar = '\0';
@@ -115,12 +115,12 @@ namespace frmLogin
             // 
             // cbFillAccount
             // 
-            resources.ApplyResources(this.cbFillAccount, "cbFillAccount");
             this.cbFillAccount.BackColor = System.Drawing.Color.Transparent;
             this.cbFillAccount.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbFillAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFillAccount.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbFillAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbFillAccount, "cbFillAccount");
             this.cbFillAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbFillAccount.Items.AddRange(new object[] {
             resources.GetString("cbFillAccount.Items"),
@@ -131,17 +131,17 @@ namespace frmLogin
             // 
             // dtgvListAccount
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgvListAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvListAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.dtgvListAccount, "dtgvListAccount");
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtgvListAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvListAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvListAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvListAccount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -150,14 +150,14 @@ namespace frmLogin
             this.Column6,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvListAccount.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvListAccount.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvListAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListAccount.Name = "dtgvListAccount";
             this.dtgvListAccount.ReadOnly = true;
@@ -231,7 +231,6 @@ namespace frmLogin
             // 
             // grpAccountInfo
             // 
-            resources.ApplyResources(this.grpAccountInfo, "grpAccountInfo");
             this.grpAccountInfo.Controls.Add(this.cbEmloyee);
             this.grpAccountInfo.Controls.Add(this.label6);
             this.grpAccountInfo.Controls.Add(this.cbTypeAccount);
@@ -240,17 +239,18 @@ namespace frmLogin
             this.grpAccountInfo.Controls.Add(this.label4);
             this.grpAccountInfo.Controls.Add(this.txtUsername);
             this.grpAccountInfo.Controls.Add(this.label2);
+            resources.ApplyResources(this.grpAccountInfo, "grpAccountInfo");
             this.grpAccountInfo.Name = "grpAccountInfo";
             this.grpAccountInfo.TabStop = false;
             // 
             // cbEmloyee
             // 
-            resources.ApplyResources(this.cbEmloyee, "cbEmloyee");
             this.cbEmloyee.BackColor = System.Drawing.Color.Transparent;
             this.cbEmloyee.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbEmloyee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEmloyee.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbEmloyee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbEmloyee, "cbEmloyee");
             this.cbEmloyee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbEmloyee.Name = "cbEmloyee";
             // 
@@ -261,12 +261,12 @@ namespace frmLogin
             // 
             // cbTypeAccount
             // 
-            resources.ApplyResources(this.cbTypeAccount, "cbTypeAccount");
             this.cbTypeAccount.BackColor = System.Drawing.Color.Transparent;
             this.cbTypeAccount.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbTypeAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTypeAccount.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbTypeAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbTypeAccount, "cbTypeAccount");
             this.cbTypeAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbTypeAccount.Name = "cbTypeAccount";
             // 
@@ -277,7 +277,6 @@ namespace frmLogin
             // 
             // txtPassword
             // 
-            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.BorderRadius = 10;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.DefaultText = "";
@@ -286,6 +285,7 @@ namespace frmLogin
             this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
@@ -299,7 +299,6 @@ namespace frmLogin
             // 
             // txtUsername
             // 
-            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.BorderRadius = 10;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.DefaultText = "";
@@ -308,6 +307,7 @@ namespace frmLogin
             this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
@@ -321,24 +321,24 @@ namespace frmLogin
             // 
             // grpFunctionAccount
             // 
-            resources.ApplyResources(this.grpFunctionAccount, "grpFunctionAccount");
             this.grpFunctionAccount.Controls.Add(this.btnSave);
             this.grpFunctionAccount.Controls.Add(this.btnAddAccount);
             this.grpFunctionAccount.Controls.Add(this.btnEditAccount);
             this.grpFunctionAccount.Controls.Add(this.btnDeleteAllAccount);
             this.grpFunctionAccount.Controls.Add(this.btnDeleteAccount);
             this.grpFunctionAccount.Controls.Add(this.btnAccountDeleted);
+            resources.ApplyResources(this.grpFunctionAccount, "grpFunctionAccount");
             this.grpFunctionAccount.Name = "grpFunctionAccount";
             this.grpFunctionAccount.TabStop = false;
             // 
             // btnSave
             // 
-            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.BorderRadius = 20;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
@@ -348,13 +348,13 @@ namespace frmLogin
             // 
             // btnAddAccount
             // 
-            resources.ApplyResources(this.btnAddAccount, "btnAddAccount");
             this.btnAddAccount.BorderRadius = 20;
             this.btnAddAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(255)))), ((int)(((byte)(51)))));
+            resources.ApplyResources(this.btnAddAccount, "btnAddAccount");
             this.btnAddAccount.ForeColor = System.Drawing.Color.Black;
             this.btnAddAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAccount.Image")));
             this.btnAddAccount.ImageSize = new System.Drawing.Size(30, 30);
@@ -363,13 +363,13 @@ namespace frmLogin
             // 
             // btnEditAccount
             // 
-            resources.ApplyResources(this.btnEditAccount, "btnEditAccount");
             this.btnEditAccount.BorderRadius = 20;
             this.btnEditAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEditAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEditAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEditAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnEditAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.btnEditAccount, "btnEditAccount");
             this.btnEditAccount.ForeColor = System.Drawing.Color.Black;
             this.btnEditAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAccount.Image")));
             this.btnEditAccount.ImageSize = new System.Drawing.Size(30, 30);
@@ -378,7 +378,6 @@ namespace frmLogin
             // 
             // btnDeleteAllAccount
             // 
-            resources.ApplyResources(this.btnDeleteAllAccount, "btnDeleteAllAccount");
             this.btnDeleteAllAccount.BorderColor = System.Drawing.Color.Red;
             this.btnDeleteAllAccount.BorderRadius = 10;
             this.btnDeleteAllAccount.BorderThickness = 2;
@@ -387,6 +386,7 @@ namespace frmLogin
             this.btnDeleteAllAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDeleteAllAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDeleteAllAccount.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnDeleteAllAccount, "btnDeleteAllAccount");
             this.btnDeleteAllAccount.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAllAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAllAccount.Image")));
             this.btnDeleteAllAccount.ImageSize = new System.Drawing.Size(30, 30);
@@ -395,13 +395,13 @@ namespace frmLogin
             // 
             // btnDeleteAccount
             // 
-            resources.ApplyResources(this.btnDeleteAccount, "btnDeleteAccount");
             this.btnDeleteAccount.BorderRadius = 20;
             this.btnDeleteAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDeleteAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDeleteAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(85)))));
+            resources.ApplyResources(this.btnDeleteAccount, "btnDeleteAccount");
             this.btnDeleteAccount.ForeColor = System.Drawing.Color.Black;
             this.btnDeleteAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAccount.Image")));
             this.btnDeleteAccount.ImageSize = new System.Drawing.Size(50, 50);
@@ -410,13 +410,13 @@ namespace frmLogin
             // 
             // btnAccountDeleted
             // 
-            resources.ApplyResources(this.btnAccountDeleted, "btnAccountDeleted");
             this.btnAccountDeleted.BorderRadius = 20;
             this.btnAccountDeleted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAccountDeleted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAccountDeleted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAccountDeleted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAccountDeleted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(184)))));
+            resources.ApplyResources(this.btnAccountDeleted, "btnAccountDeleted");
             this.btnAccountDeleted.ForeColor = System.Drawing.Color.Black;
             this.btnAccountDeleted.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountDeleted.Image")));
             this.btnAccountDeleted.ImageSize = new System.Drawing.Size(30, 30);
@@ -425,13 +425,13 @@ namespace frmLogin
             // 
             // btnSearchAccount
             // 
-            resources.ApplyResources(this.btnSearchAccount, "btnSearchAccount");
             this.btnSearchAccount.BorderRadius = 10;
             this.btnSearchAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSearchAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSearchAccount.FillColor = System.Drawing.Color.MediumSlateBlue;
+            resources.ApplyResources(this.btnSearchAccount, "btnSearchAccount");
             this.btnSearchAccount.ForeColor = System.Drawing.Color.White;
             this.btnSearchAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchAccount.Image")));
             this.btnSearchAccount.Name = "btnSearchAccount";
@@ -439,8 +439,8 @@ namespace frmLogin
             // 
             // frmAccountManagement
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.grpFunctionAccount);
             this.Controls.Add(this.grpAccountInfo);
             this.Controls.Add(this.dtgvListAccount);

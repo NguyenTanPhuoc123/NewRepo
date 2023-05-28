@@ -24,6 +24,7 @@ namespace frmLogin
         private static int manv;
         private static float total;
         private static string tennv;
+        HashCode info = new HashCode();
         public Account LoginAccount
         {
             get { return this.loginAccount; }
@@ -98,7 +99,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Bạn không đủ quyền vào quản lý", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Bạn không đủ quyền vào quản lý",info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -113,7 +114,7 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("You do not have the right to manage", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("You do not have the right to manage",info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -124,23 +125,23 @@ namespace frmLogin
         {
             if (Language == 0)
             {
-                if (MessageBox.Show("Bạn muốn thoát khỏi phần mềm này?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show(info.exitVi,info.titleMessageVi, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     this.Close();
             }
             else
             {
-                if (MessageBox.Show("Want to get rid of this software?", "Notice", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show(info.exitEn, info.titleMessageEn, MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     this.Close();
             }
         }
 
         private void btnSelectDish_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (GetTableID() == 0)
+                if (GetTableID() == info.valueDefault)
                 {
-                    MessageBox.Show("Bạn chưa chọn bàn để chọn món", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.selectTableVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
@@ -153,9 +154,9 @@ namespace frmLogin
             }
             else
             {
-                if (GetTableID() == 0)
+                if (GetTableID() == info.valueDefault)
                 {
-                    MessageBox.Show("You have not selected a table to choose from", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.selectTableEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
@@ -178,11 +179,11 @@ namespace frmLogin
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (GetTableID() == 0)
+                if (GetTableID() == info.valueDefault)
                 {
-                    MessageBox.Show("Bạn chưa chọn bàn để thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.selectTablePayVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
@@ -197,9 +198,9 @@ namespace frmLogin
             }
             else
             {
-                if (GetTableID() == 0)
+                if (GetTableID() == info.valueDefault)
                 {
-                    MessageBox.Show("You have not selected a table to pay", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.selectTablePayEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
@@ -228,11 +229,11 @@ namespace frmLogin
             cbLocationTable.DataSource = LocationBUS.Instance.GetListLocation();
             cbLocationTable.DisplayMember = "TenViTri";
             cbLocationTable.ValueMember = "MaViTri";
-            LoadTableNull();
+            LoadTable();
         }
-        public void LoadTableNull()
+        public void LoadTable()
         {
-            cbChangeTable.DataSource = TableBUS.Instance.GetListTablesTrong();
+            cbChangeTable.DataSource = TableBUS.Instance.GetListTables();
             cbChangeTable.DisplayMember = "TenBan";
             cbChangeTable.ValueMember = "MaBanAn";
         }
@@ -288,12 +289,12 @@ namespace frmLogin
 
             foreach (Table item in listTable)
             {
-                Button btnTable = new Button() { Width = 150, Height = 150 };               
-                string tableDisplay = item.TenBan + Environment.NewLine + "<" + item.TrangThai + ">";
+                Button btnTable = new Button() { Width = info.sizeWidth, Height = info.sizeHeight};               
+                string tableDisplay = info.DisplayTable(item.TenBan,item.TrangThai);
                 btnTable.Text = tableDisplay;
                 btnTable.Click += btnTable_Click;
                 btnTable.Tag = item;
-                if (item.TrangThai == "Trống")
+                if (item.TrangThai == info.status_table_null)
                     btnTable.BackColor = Color.GreenYellow;
                 else
                     btnTable.BackColor = Color.Red;
@@ -334,87 +335,78 @@ namespace frmLogin
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (lstvMenuDish.SelectedItems.Count > 0)
+                if (lstvMenuDish.SelectedItems.Count > info.valueDefault)
                 {
 
-                    int index = lstvMenuDish.SelectedItems[0].Index;
-                    ListViewItem item = lstvMenuDish.SelectedItems[0];
+                    int index = lstvMenuDish.SelectedItems[info.valueDefault].Index;
+                    ListViewItem item = lstvMenuDish.SelectedItems[info.valueDefault];
                     string mahd = BillBUS.Instance.HDID(tableID);
-                    string masp = ProductBUS.Instance.ProductID(item.Text);
-                    if (DialogResult.Yes == MessageBox.Show("Bạn có muốn xóa món này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
-                    {
+                    string masp = ProductBUS.Instance.ProductID(item.Text);                   
                         int count = BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
-                        if (count > 0)
-                        {
-                            MessageBox.Show("Xóa món ăn thành công", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        if (count > info.valueDefault)
+                        {                            
                             lstvMenuDish.Items.RemoveAt(index);
-                        }
-                        else
-                            MessageBox.Show("Xóa món ăn thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                        }                        
+                    
                 }
                 else
-                    MessageBox.Show("Bạn chưa chọn món để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messDelDishSelectedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 if (lstvMenuDish.SelectedItems.Count > 0)
                 {
 
-                    int index = lstvMenuDish.SelectedItems[0].Index;
-                    ListViewItem item = lstvMenuDish.SelectedItems[0];
+                    int index = lstvMenuDish.SelectedItems[info.valueDefault].Index;
+                    ListViewItem item = lstvMenuDish.SelectedItems[info.valueDefault];
                     string mahd = BillBUS.Instance.HDID(tableID);
-                    string masp = ProductBUS.Instance.ProductID(item.Text);
-                    if (DialogResult.Yes == MessageBox.Show("Do you want to delete this item", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
-                    {
+                    string masp = ProductBUS.Instance.ProductID(item.Text);                    
                         int count = BillInfoBUS.Instance.DeleteBillInfo(mahd, masp);
                         if (count > 0)
-                        {
-                            MessageBox.Show("Delete successful dish", "Notification", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        {                     
                             lstvMenuDish.Items.RemoveAt(index);
-                        }
-                        else
-                            MessageBox.Show("Delete successful dish", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                        }                   
+                    
                 }
                 else
-                    MessageBox.Show("You have not selected the item to delete", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messDelDishSelectedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
         private void btnChangeTable_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                int tableid = GetTableID();
-                string tablenew = cbChangeTable.SelectedValue.ToString();
-                if (BillBUS.Instance.UpdateBill(tableid, tablenew))
+                int tableIdOld = GetTableID();
+                int tableIdNew = int.Parse(cbChangeTable.SelectedValue.ToString());
+                 
+                if (TableBUS.Instance.SwitchTable(tableIdOld,tableIdNew)>0)
                 {
-                    MessageBox.Show("Chuyển bàn thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    TableBUS.Instance.UpdateTableNull(tableid);
-                    TableBUS.Instance.UpdateTable(tablenew);
-                    LoadTableNull();
+                    MessageBox.Show(info.changeTableVi,info.titleMessageVi,MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    TableBUS.Instance.UpdateStatusTable(tableIdOld);
+                    TableBUS.Instance.UpdateStatusTable(tableIdNew);
+                    LoadTable();
                     GetListTableByLocationID(1);
                 }
                 else
-                    MessageBox.Show("Chuyển bàn thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.changeTableFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                int tableid = GetTableID();
-                string tablenew = cbChangeTable.SelectedValue.ToString();
-                if (BillBUS.Instance.UpdateBill(tableid, tablenew))
+                int tableIdOld = GetTableID();
+                int tableIdNew = int.Parse(cbChangeTable.SelectedValue.ToString());
+                if (TableBUS.Instance.SwitchTable(tableIdOld,tableIdNew)>0)
                 {
-                    MessageBox.Show("Table transfer successful", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    TableBUS.Instance.UpdateTableNull(tableid);
-                    TableBUS.Instance.UpdateTable(tablenew);
-                    LoadTableNull();
+                    MessageBox.Show(info.changeTableEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TableBUS.Instance.UpdateStatusTable(tableIdOld);
+                    TableBUS.Instance.UpdateStatusTable(tableIdNew);
+                    LoadTable();
                     GetListTableByLocationID(1);
                 }
                 else
-                    MessageBox.Show("Table transfer failed", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.changeTableFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

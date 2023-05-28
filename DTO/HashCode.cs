@@ -8,6 +8,16 @@ namespace DTO
 {
     public class HashCode
     {
+        public string qrCodeVi = "Giao dịch thành công";
+        public string qrCodeEn = "Transaction success";
+        public string qrCodeFailedVi = "Giao dịch thất bại";
+        public string qrCodeFailedEn = "Transaction failed";
+        public int sizeHeight = 150;
+        public int sizeWidth = 150;
+        public string exitVi = "Bạn muốn thoát khỏi phần mềm này?";
+        public string exitEn = "Would you like to exit this sofware?";
+        public string messDelDishSelectedVi = "Bạn chưa chọn món muốn xóa!";
+        public string messDelDishSelectedEn = "You haven't selected the food to delete!";
         public int count = 1;
         public string strDefault = "";
         public string positionManager = "Nhân viên quản lý";
@@ -45,8 +55,10 @@ namespace DTO
         public string checkLoginVi = "Sai tên đăng nhập hoặc mật khẩu!";
         public string checkLoginEn = "Incorrect username or password!";
 
-        public string checkPhoneSettingVi = "Số điện thoại không hợp lệ!";
-        public string checkPhoneSettingEn = "Number phone is not valid!";
+        public string checkPhoneSettingVi = "Số điện thoại không hợp lệ";
+        public string orVi = "Hoặc";
+        public string orEn = "Or";
+        public string checkPhoneSettingEn = "Number phone is not valid";
         public string checkLogOutVi = "Bạn muốn đăng xuất khỏi tài khoản này ? ";
         public string checkLogOutEn = "Would you like to log out this account? ";
         public string checkPasswordOldVi = "Mật khẩu cũ không đúng!";
@@ -96,9 +108,11 @@ namespace DTO
 
         public string checkAgeVi = "Tuổi phải lớn hơn hoặc bằng 18!";
         public string checkAgeEn = "Age must be greater than or equal to 18!";
-        public string checkPhoneExistVi = "Số điện thoại đã tồn tại!";
-        public string checkPhoneExistEn = "Number phone already exist!";
+        public string checkPhoneExistVi = "Số điện thoại đã tồn tại";
+        public string checkPhoneExistEn = "Number phone already exist";
 
+        public string messCheckDelAllVi = "Bạn không thể thực hiện chức năng khi chưa xóa tài khoản";
+        public string messCheckDelAllEn = "You cannot perform the function without deleting the account";
 
         #endregion
 
@@ -111,5 +125,31 @@ namespace DTO
         {
             return string.Format("{0} already exist!", name);
         }
+
+        public string MessageCheckAccExistVi(string username, string name)
+        {
+            return string.Format("{0} đã tồn tại hoặc nhân viên {1} đã có tài khoản",username,name);
+        }
+
+        public string MessageCheckAccExistEn(string username,string name)
+        {
+            return string.Format("{0} already exist or {1} had account",username, name);
+        }
+
+        public string messSearchDishVi = "Vui lòng nhập tên món muốn tìm!";
+        public string messSearchDishEn = "Please input dish's name to find!";
+
+        #region TableFood
+        public string DisplayTable(string tableName ,string status)
+        {
+            return string.Format("{0} {1} <{2}> ",tableName,Environment.NewLine,status);
+        }
+        public string changeTableVi = "Chuyển bàn thành công!";
+        public string changeTableEn = "Switch table success!";
+        public string changeTableFailedVi = "Chuyển bàn thất bại!";
+        public string changeTableFailedEn = "Switch table failed";
+        public string status_table_null = "Trống";
+        public string status_table_full = "Có người";
+        #endregion
     }
 }

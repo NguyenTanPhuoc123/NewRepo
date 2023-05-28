@@ -12,11 +12,12 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
 using ZXing.QrCode;
-
+using DTO;
 namespace frmLogin
 {
     public partial class frmQRCode : Form
     {
+        HashCode info = new HashCode();
         public frmQRCode()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace frmLogin
             {
                 cboCamara.Items.Add(Device.Name);
             }
-            cboCamara.SelectedIndex = 0;
+            cboCamara.SelectedIndex = info.valueDefault;
             frame = new VideoCaptureDevice();
             StartCamara();
         }
@@ -60,7 +61,7 @@ namespace frmLogin
                 if (decoded != "")
                 {
                     timer1.Stop();
-                    MessageBox.Show("Giao dịch thành công");
+                    MessageBox.Show(info.qrCodeVi,info.titleMessageVi,MessageBoxButtons.OK,MessageBoxIcon.Information);
                     
                     if (frame.IsRunning == true)
                     {
@@ -71,7 +72,7 @@ namespace frmLogin
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(info.qrCodeFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
        

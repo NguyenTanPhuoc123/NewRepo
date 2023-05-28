@@ -436,7 +436,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Price.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>0.00'₫';(0.00'₫')</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -452,6 +454,7 @@
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
+                            <rd:FormatSymbolCulture>vi-VN</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -466,7 +469,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Total.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>0.00'₫';(0.00'₫')</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -482,6 +487,7 @@
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
+                            <rd:FormatSymbolCulture>vi-VN</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>

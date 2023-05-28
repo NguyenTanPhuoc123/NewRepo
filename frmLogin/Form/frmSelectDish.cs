@@ -17,15 +17,16 @@ namespace frmLogin
     public partial class frmSelectDish : Form
     {
         private frmSellManagement FrmSellManagement;
+        HashCode info = new HashCode();
         private int Language = frmlogin.Language;
         public frmSelectDish(frmSellManagement frmSell)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
-            cbCategoryDish.SelectedIndex = 0;
+            cbCategoryDish.SelectedIndex = info.valueDefault;
             this.FrmSellManagement = frmSell;
         }
 
@@ -36,9 +37,9 @@ namespace frmLogin
 
         private void frmSelectDish_Load(object sender, EventArgs e)
         {
-            LoadcbCategoryFoof();
+            LoadcbCategoryFood();
         }
-        private void LoadcbCategoryFoof()
+        private void LoadcbCategoryFood()
         {
             List<CategoryFood> categoryFoods = CategoryFoodBUS.Instance.GetCategoryFoods();
             for (int i = 0; i < categoryFoods.Count; i++)
@@ -78,35 +79,36 @@ namespace frmLogin
                 Usercontrol uc = new Usercontrol();
                 if (lstvListDish.SelectedItems.Count > 0)
                 {
-                    int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
+                    int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[info.valueDefault]);
                     uc.HinhAnh = imageList1.Images[i];
                     uc.TenSP = tenSP;
                     uc.SoLuong = numQuantity.Value.ToString();
                     uc.DonGia = txtDishPrice.Text;
                     flpAddDish.Controls.Add(uc);
                 }
-                numQuantity.Value = 1;
+                numQuantity.Value = info.count;
             }
             else
             {
-                if (Language == 0)
-                    MessageBox.Show("Số lượng món không đủ", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                if (Language == info.valueDefault)
+                    MessageBox.Show(info.checkCountVi,info.titleMessageVi,MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 else
-                    MessageBox.Show("The number of items is not enough", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkCountEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void lstvListDish_SelectedIndexChanged(object sender, EventArgs e)
         {
+            info.firstIndex = info.valueDefault;
             if (lstvListDish.SelectedItems.Count > 0)
             {
-                int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[0]);
+                int i = lstvListDish.Items.IndexOf(lstvListDish.SelectedItems[info.valueDefault]);
                 pbPictureDish.Image = imageList1.Images[i];
                 pbPictureDish.SizeMode = PictureBoxSizeMode.Zoom;
-                txtDishName.Text = lstvListDish.SelectedItems[0].Text;
-                string Danhmuc = lstvListDish.SelectedItems[0].SubItems[1].Text;
+                txtDishName.Text = lstvListDish.SelectedItems[info.valueDefault].Text;
+                string Danhmuc = lstvListDish.SelectedItems[info.valueDefault].SubItems[info.firstIndex+=1].Text;
                 txtCategoryDish.Text = CategoryFoodBUS.Instance.GetCategory(Convert.ToInt32(Danhmuc));
-                txtDishPrice.Text = lstvListDish.SelectedItems[0].SubItems[2].Text;
+                txtDishPrice.Text = lstvListDish.SelectedItems[info.valueDefault].SubItems[info.firstIndex+=1].Text;
             }
 
         }
@@ -175,14 +177,14 @@ namespace frmLogin
             }          
             this.Close();
             this.FrmSellManagement.GetListTableByLocationID(1);
-            this.FrmSellManagement.LoadTableNull();
+            this.FrmSellManagement.LoadTable();
         }
 
         private void cbCategoryDish_SelectedIndexChanged(object sender, EventArgs e)
         {
             lstvListDish.Clear();
             imageList1.Images.Clear();
-            if (cbCategoryDish.SelectedIndex == 0)
+            if (cbCategoryDish.SelectedIndex == info.valueDefault)
             {
                 List<Product> products = ProductBUS.Instance.GetProduct();
                 for (int i = 0; i < products.Count; i++)
@@ -213,11 +215,11 @@ namespace frmLogin
         private void btnSearchDish_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtSearchDish.Text))
-            {
-                if(Language ==0)
-                    MessageBox.Show("Bạn chưa nhập tên sản phẩm để tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            {   
+                if(Language ==info.valueDefault)
+                    MessageBox.Show(info.messSearchDishVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
-                    MessageBox.Show("You have not entered the product name to search", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.messSearchDishEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             lstvListDish.Clear();

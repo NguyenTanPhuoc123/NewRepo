@@ -17,15 +17,16 @@ namespace frmLogin
     public partial class frmAccountManagement : Form
     {
         private int Language = frmlogin.Language;
+        HashCode info = new HashCode();
         public frmAccountManagement()
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
-            cbSortAccount.SelectedIndex = 0;
-            cbFillAccount.SelectedIndex = 0;
+            cbSortAccount.SelectedIndex = info.valueDefault;
+            cbFillAccount.SelectedIndex = info.valueDefault;
         }
 
         private void frmAccountManagement_Load(object sender, EventArgs e)
@@ -56,34 +57,34 @@ namespace frmLogin
 
         private void btnDeleteAllAccount_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tất cả các tài khoản ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
                 {
                     int count = AccountBUS.Instance.DeleteAllAccount(frmlogin.GetUsername());
                     if (count > 0)
                     {
-                        MessageBox.Show("Xóa tất cả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.deleteAllVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Xóa tất cả thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.deleteAllFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 frmAccountManagement_Load(sender, e);
             }
             else
             {
-                if (DialogResult.Yes == MessageBox.Show("You definitely want to delete all accounts?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
                 {
                     int count = AccountBUS.Instance.DeleteAllAccount(frmlogin.GetUsername());
                     if (count > 0)
                     {
-                        MessageBox.Show("Delete all successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.deleteAllEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Delete all failures", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.deleteAllFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 frmAccountManagement_Load(sender, e);
@@ -94,8 +95,8 @@ namespace frmLogin
         {
             txtUsername.Clear();
             txtPassword.Clear();
-            cbEmloyee.SelectedIndex = 0;
-            cbTypeAccount.SelectedIndex = 0;
+            cbEmloyee.SelectedIndex = info.valueDefault;
+            cbTypeAccount.SelectedIndex = info.valueDefault;
             btnSave.Enabled = true;
             btnDeleteAllAccount.Enabled = false;
             btnDeleteAccount.Enabled = false;
@@ -106,48 +107,48 @@ namespace frmLogin
 
         private void btnDeleteAccount_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
 
-                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa tài khoản này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
                     if ((cbEmloyee.SelectedIndex + 1) != frmSellManagement.GetMANV())
                     {
                         int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
                         if (count > 0)
                         {
-                            MessageBox.Show("Xóa tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Xóa tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Tài khoản đang được đăng nhập không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
             else
             {
-                if (DialogResult.Yes == MessageBox.Show("You definitely want to delete this account", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
                     if ((cbEmloyee.SelectedIndex + 1) != frmSellManagement.GetMANV())
                     {
                         int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
                         if (count > 0)
                         {
-                            MessageBox.Show("Delete all successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Delete all failures", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Logged in account cannot be deleted", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -156,40 +157,57 @@ namespace frmLogin
 
         private void btnEditAccount_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
-                if (count > 0)
-                {
-                    MessageBox.Show("Sửa tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (MessageBox.Show(info.messageEditVi, info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {   
+                    if(string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
+                    {
+                        MessageBox.Show(info.eventNullVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show(info.editVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(info.editFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    frmAccountManagement_Load(sender, e);
                 }
-                else
-                {
-                    MessageBox.Show("Sửa tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                frmAccountManagement_Load(sender, e);
             }
             else
             {
-                int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
-                if (count > 0)
+                if (MessageBox.Show(info.messageEditEn, info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Account Edited Successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
+                    {
+                        MessageBox.Show(info.eventNullEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    int count = AccountBUS.Instance.EditAccount(txtUsername.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString(), txtPassword.Text);
+                    if (count > 0)
+                    {
+                        MessageBox.Show(info.editEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(info.editFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    frmAccountManagement_Load(sender, e);
                 }
-                else
-                {
-                    MessageBox.Show("Repair failed account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                frmAccountManagement_Load(sender, e);
             }
         }
 
         private void dtgvListAccount_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtUsername.Text = dtgvListAccount.SelectedRows[0].Cells[0].Value.ToString();
-            txtPassword.Text = dtgvListAccount.SelectedRows[0].Cells[1].Value.ToString();
-            cbEmloyee.SelectedValue = Convert.ToInt32(dtgvListAccount.SelectedRows[0].Cells[2].Value.ToString());
-            cbTypeAccount.SelectedValue = Convert.ToInt32(dtgvListAccount.SelectedRows[0].Cells[3].Value.ToString());
+            info.firstIndex = info.valueDefault;
+            txtUsername.Text = dtgvListAccount.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
+            txtPassword.Text = dtgvListAccount.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString();
+            cbEmloyee.SelectedValue = Convert.ToInt32(dtgvListAccount.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString());
+            cbTypeAccount.SelectedValue = Convert.ToInt32(dtgvListAccount.SelectedRows[info.valueDefault].Cells[info.firstIndex+=1].Value.ToString());
             btnSave.Enabled = false;
             btnDeleteAllAccount.Enabled = true;
             btnDeleteAccount.Enabled = true;
@@ -198,11 +216,11 @@ namespace frmLogin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.eventNullVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckExistEmployee(Convert.ToInt32(cbEmloyee.SelectedValue.ToString())))
@@ -210,24 +228,24 @@ namespace frmLogin
                     int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
                     if (count > 0)
                     {
-                        MessageBox.Show("Thêm tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.addVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Thêm tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.addFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmAccountManagement_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Tạo tài khoản không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.MessageCheckAccExistVi(txtUsername.Text,cbEmloyee.Text),info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
                 if (string.IsNullOrEmpty(txtUsername.Text.Trim()) || string.IsNullOrEmpty(txtPassword.Text.Trim()))
                 {
-                    MessageBox.Show("Please enter full information", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (AccountBUS.Instance.CheckUsername(txtUsername.Text) && AccountBUS.Instance.CheckExistEmployee(Convert.ToInt32(cbEmloyee.SelectedValue.ToString())))
@@ -235,17 +253,17 @@ namespace frmLogin
                     int count = AccountBUS.Instance.AddAccount(txtUsername.Text, txtPassword.Text, cbEmloyee.SelectedValue.ToString(), cbTypeAccount.SelectedValue.ToString());
                     if (count > 0)
                     {
-                        MessageBox.Show("Successfully added account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.addEn,info.addFailedEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Adding account failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.addFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmAccountManagement_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Invalid account creationInvalid account creation", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.MessageCheckAccExistEn(txtUsername.Text,cbEmloyee.Text),info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -262,42 +280,46 @@ namespace frmLogin
 
         private void cbSortAccount_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbSortAccount.SelectedIndex == 0 && cbFillAccount.SelectedIndex == 0)
+            info.firstIndex = info.valueDefault;
+            if (cbSortAccount.SelectedIndex == info.firstIndex && cbFillAccount.SelectedIndex == info.firstIndex)
             {
                 dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
             }
 
-            else if (cbSortAccount.SelectedIndex == 1)
+            else if (cbSortAccount.SelectedIndex == (info.firstIndex+=1))
                 dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByUsername(cbFillAccount.SelectedIndex);
-            else if (cbSortAccount.SelectedIndex == 2)
+            else if (cbSortAccount.SelectedIndex == (info.firstIndex+=1))
                 dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByEmployeeName(cbFillAccount.SelectedIndex);
         }
 
         private void cbFillAccount_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbFillAccount.SelectedIndex == 0 && cbSortAccount.SelectedIndex == 0)
+            info.firstIndex = info.valueDefault;
+            if (cbFillAccount.SelectedIndex == info.firstIndex && cbSortAccount.SelectedIndex == info.firstIndex)
             {
                 dtgvListAccount.DataSource = AccountMenuBUS.Instance.GetListAccount();
             }
 
-            else if (cbFillAccount.SelectedIndex == 0 && cbSortAccount.SelectedIndex == 1)
+            else if (cbFillAccount.SelectedIndex == info.valueDefault && cbSortAccount.SelectedIndex == (info.firstIndex+=1))
             {
                 dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByUsername(0);
 
             }
 
-            else if (cbFillAccount.SelectedIndex == 0 && cbSortAccount.SelectedIndex == 2)
+            else if (cbFillAccount.SelectedIndex == info.valueDefault && cbSortAccount.SelectedIndex == (info.firstIndex += 1))
                 dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByEmployeeName(0);
 
             else
             {
+                
                 for (int i = 1; i <= cbFillAccount.Items.Count; i++)
                 {
+                    info.firstIndex = info.valueDefault;
                     if (cbFillAccount.SelectedIndex == i)
                     {
-                        if (cbSortAccount.SelectedIndex == 1)
+                        if (cbSortAccount.SelectedIndex == (info.firstIndex+=1))
                             dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByUsername(cbFillAccount.SelectedIndex);
-                        else if (cbSortAccount.SelectedIndex == 2)
+                        else if (cbSortAccount.SelectedIndex == (info.firstIndex+=1))
                             dtgvListAccount.DataSource = AccountMenuBUS.Instance.SortListAccountByEmployeeName(cbFillAccount.SelectedIndex);
                     }
                 }

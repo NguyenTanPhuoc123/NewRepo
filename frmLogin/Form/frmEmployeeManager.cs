@@ -15,16 +15,17 @@ namespace frmLogin
 {
     public partial class frmEmployeeManager : Form
     {
+        HashCode info = new HashCode();
         private int Language = frmlogin.Language;
         public frmEmployeeManager()
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             InitializeComponent();
             dtgvListEmployee.AutoGenerateColumns = false;
-            cbSortEmployee.SelectedIndex = 0;
+            cbSortEmployee.SelectedIndex = info.valueDefault;
         }
 
         private void btnEmployeeDeleted_Click(object sender, EventArgs e)
@@ -52,26 +53,28 @@ namespace frmLogin
         }
         private void dtgvListEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            info.firstIndex = info.valueDefault;
             if (dtgvListEmployee.SelectedRows.Count > 0)
             {
-                txtEmployeeID.Text = dtgvListEmployee.SelectedRows[0].Cells[0].Value.ToString();
-                txtEmployeeName.Text = dtgvListEmployee.SelectedRows[0].Cells[1].Value.ToString();
-                dtpBirthday.Text = dtgvListEmployee.SelectedRows[0].Cells[2].Value.ToString();
-                txtNumberPhone.Text = dtgvListEmployee.SelectedRows[0].Cells[4].Value.ToString();
-                richtxtAddress.Text = dtgvListEmployee.SelectedRows[0].Cells[5].Value.ToString();
-                dtpWorkingDay.Text = dtgvListEmployee.SelectedRows[0].Cells[6].Value.ToString();
-                string gender = dtgvListEmployee.SelectedRows[0].Cells[3].Value.ToString();
+                txtEmployeeID.Text = dtgvListEmployee.SelectedRows[info.valueDefault].Cells[info.firstIndex].Value.ToString();
+                txtEmployeeName.Text = dtgvListEmployee.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                dtpBirthday.Text = dtgvListEmployee.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                string gender = dtgvListEmployee.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
                 if (gender == radMale.Text)
                     radMale.Checked = true;
                 else
                     radFemale.Checked = true;
-                cbPosition.SelectedValue = Convert.ToInt32(dtgvListEmployee.SelectedRows[0].Cells[8].Value.ToString());
+                txtNumberPhone.Text = dtgvListEmployee.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                richtxtAddress.Text = dtgvListEmployee.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                dtpWorkingDay.Text = dtgvListEmployee.SelectedRows[info.valueDefault].Cells[info.firstIndex += 1].Value.ToString();
+                
+                cbPosition.SelectedValue = Convert.ToInt32(dtgvListEmployee.SelectedRows[0].Cells[info.firstIndex += 2].Value.ToString());
             }
         }
 
         private void btnEditEmployee_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
                 if (EmployeeBUS.Instance.CheckNumberPhone(txtNumberPhone.Text, txtEmployeeID.Text) && EmployeeBUS.Instance.CheckAge(dtpBirthday.Value))
@@ -79,17 +82,17 @@ namespace frmLogin
                     int count = EmployeeBUS.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Sửa tài khoản thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show(info.editVi,info.titleMessageVi,MessageBoxButtons.OK,MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Sửa tài khoản thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.editFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmEmployeeManager_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkPhoneSettingVi+info.orVi+info.checkPhoneExistVi+info.orVi+info.checkAgeVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -100,17 +103,17 @@ namespace frmLogin
                     int count = EmployeeBUS.Instance.UpdateEmployee(int.Parse(txtEmployeeID.Text), txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, txtNumberPhone.Text, richtxtAddress.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Account Edited Successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.editEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Repair failed account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.editFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmEmployeeManager_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Your phone number is up to 10 numbers and the phone numbers cannot be the same or you are under 18 years old", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkPhoneSettingEn + info.orEn + info.checkPhoneExistEn + info.orEn + info.checkAgeEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 
@@ -118,49 +121,49 @@ namespace frmLogin
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
                     if (EmployeeBUS.Instance.CheckAccountDelete(Convert.ToInt32(txtEmployeeID.Text)))
                     {
                         int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
                         if (count > 0)
                         {
-                            MessageBox.Show("Xóa nhân viên thành công","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Xóa nhân viên thất bại","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteFailedVi,info.titleMessageVi,MessageBoxButtons.OK,MessageBoxIcon.Warning);
                         }
                         frmEmployeeManager_Load(sender, e);
                     }
                     else
                     {
-                        MessageBox.Show("Tài khoản của nhân viên vẫn còn tồn tại", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelVi,info.titleMessageVi,MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
             else
             {
-                if (DialogResult.Yes == MessageBox.Show("You definitely want to delete this employee", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
                     if (EmployeeBUS.Instance.CheckAccountDelete(int.Parse(txtEmployeeID.Text)))
                     {
                         int count = EmployeeBUS.Instance.DeleteEmployeeInfo(int.Parse(txtEmployeeID.Text));
                         if (count > 0)
                         {
-                            MessageBox.Show("Delete employee successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Delete employee successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         frmEmployeeManager_Load(sender, e);
                     }
                     else
                     {
-                        MessageBox.Show("Employee's account still exists", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.checkDelEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -168,7 +171,7 @@ namespace frmLogin
 
         public void LoadCbFill()
         {
-            cbFillEmployee.SelectedIndex = 0;
+            cbFillEmployee.SelectedIndex = info.valueDefault;
             List<Position> positions = PositionBUS.Instance.GetListPosition();
             for (int i = 0; i < positions.Count; i++)
             {
@@ -179,9 +182,9 @@ namespace frmLogin
         {
             int i = EmployeeMenuBUS.Instance.GetListEmployee().Count + 1;
             txtEmployeeID.Text = i.ToString();
-            //txtEmployeeID.Enabled = false;
+            txtEmployeeID.Enabled = false;
             txtEmployeeName.Clear();
-            cbPosition.SelectedIndex = 0;
+            cbPosition.SelectedIndex = info.valueDefault;
             radMale.Checked = true;
             richtxtAddress.Clear();
             txtNumberPhone.Clear();
@@ -193,11 +196,11 @@ namespace frmLogin
 
         private void btnSaveEmployee_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
                 if (string.IsNullOrEmpty(txtEmployeeName.Text.Trim()) || string.IsNullOrEmpty(txtNumberPhone.Text.Trim()) || string.IsNullOrEmpty(richtxtAddress.Text.Trim()))
                 {
-                    MessageBox.Show("Vui lòng nhập đủ thông tin muốn thêm vào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(info.eventNullVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
@@ -206,24 +209,24 @@ namespace frmLogin
                     int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Thêm nhân viên thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show(info.addVi,info.titleMessageVi,MessageBoxButtons.OK,MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Thêm nhân viên thất bại","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.addFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmEmployeeManager_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Số điện thoại của bạn tối đa 10 số và các số điện thoại không được trùng nhau hoặc bạn chưa đủ 18 tuổi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkPhoneSettingVi + info.orVi + info.checkPhoneExistVi + info.orVi + info.checkAgeVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
                 if (string.IsNullOrEmpty(txtEmployeeName.Text.Trim()) || string.IsNullOrEmpty(txtNumberPhone.Text.Trim()) || string.IsNullOrEmpty(richtxtAddress.Text.Trim()))
                 {
-                    MessageBox.Show("Please enter the employee name you want to add!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 string gender = radMale.Checked == true ? radMale.Text : radFemale.Text;
@@ -232,42 +235,42 @@ namespace frmLogin
                     int count = EmployeeBUS.Instance.AddEmployee(txtEmployeeName.Text, dtpBirthday.Value.ToString("yyyy/MM/dd"), gender, dtpWorkingDay.Value.ToString("yyyy/MM/dd"), (int)cbPosition.SelectedValue, txtNumberPhone.Text, richtxtAddress.Text);
                     if (count > 0)
                     {
-                        MessageBox.Show("Employee added successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(info.addEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Employee account failed", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.addFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     frmEmployeeManager_Load(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Your phone number is up to 10 numbers and the phone numbers cannot be the same or you are under 18 years old", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkPhoneSettingEn + info.orEn + info.checkPhoneExistEn + info.orEn + info.checkAgeEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
 
         private void btnDeleteAllEmployee_Click(object sender, EventArgs e)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
             {
-                if (DialogResult.Yes == MessageBox.Show("Bạn chắc chắn muốn xóa toàn bộ nhân viên", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
                     if (EmployeeBUS.Instance.CheckAccountDeleteAll())
                     {
                         int count = EmployeeBUS.Instance.DeleteAllEmployee();
                         if (count > 0)
                         {
-                            MessageBox.Show("Xóa tất cả nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteAllVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Xóa tất cả nhân viên thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteAllFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Bạn không thể thực hiện chức năng khi chưa xóa tài khoản", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.messCheckDelAllVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
 
                 }
@@ -275,23 +278,23 @@ namespace frmLogin
             }
             else
             {
-                if (DialogResult.Yes == MessageBox.Show("You definitely want to delete all employees", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
                     if (EmployeeBUS.Instance.CheckAccountDeleteAll())
                     {
                         int count = EmployeeBUS.Instance.DeleteAllEmployee();
                         if (count > 0)
                         {
-                            MessageBox.Show("Delete all employee successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.deleteAllEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("Delete all failed employee", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.deleteAllFailedEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("You cannot perform the function without deleting the account", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.messCheckDelAllEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
 
                 }
@@ -311,34 +314,35 @@ namespace frmLogin
 
         private void cbSortEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbSortEmployee.SelectedIndex == 0 && cbFillEmployee.SelectedIndex == 0)
+            info.firstIndex = info.valueDefault;
+            if (cbSortEmployee.SelectedIndex == info.firstIndex && cbFillEmployee.SelectedIndex == info.firstIndex)
             {
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
             }
 
-            else if (cbSortEmployee.SelectedIndex == 1)
+            else if (cbSortEmployee.SelectedIndex == (info.firstIndex+=1))
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(cbFillEmployee.SelectedIndex);
-            else if (cbSortEmployee.SelectedIndex == 2)
+            else if (cbSortEmployee.SelectedIndex == (info.firstIndex+=1))
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(cbFillEmployee.SelectedIndex);
 
         }
 
         private void cbFillEmployee_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            if (cbFillEmployee.SelectedIndex == 0 && cbSortEmployee.SelectedIndex == 0)
+            info.firstIndex = info.valueDefault;
+            if (cbFillEmployee.SelectedIndex == info.valueDefault && cbSortEmployee.SelectedIndex == info.valueDefault)
             {
                 dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.GetListEmployee();
             }
 
-            else if (cbFillEmployee.SelectedIndex == 0 && cbSortEmployee.SelectedIndex == 1)
+            else if (cbFillEmployee.SelectedIndex == info.valueDefault && cbSortEmployee.SelectedIndex == (info.firstIndex += 1))
             {
-                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(0);
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(info.valueDefault);
 
             }
 
-            else if (cbFillEmployee.SelectedIndex == 0 && cbSortEmployee.SelectedIndex == 2)
-                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(0);
+            else if (cbFillEmployee.SelectedIndex == info.valueDefault && cbSortEmployee.SelectedIndex == (info.firstIndex += 1))
+                dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(info.valueDefault);
 
             else
             {
@@ -346,9 +350,10 @@ namespace frmLogin
                 {
                     if (cbFillEmployee.SelectedIndex == i)
                     {
-                        if (cbSortEmployee.SelectedIndex == 1)
+                        info.firstIndex = info.valueDefault;
+                        if (cbSortEmployee.SelectedIndex == (info.firstIndex += 1))
                             dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeName(cbFillEmployee.SelectedIndex);
-                        else if (cbSortEmployee.SelectedIndex == 2)
+                        else if (cbSortEmployee.SelectedIndex == (info.firstIndex+=1))
                             dtgvListEmployee.DataSource = EmployeeMenuBUS.Instance.SortListEmployeeByEmployeeID(cbFillEmployee.SelectedIndex);
                     }
                 }

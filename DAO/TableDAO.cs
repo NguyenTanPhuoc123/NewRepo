@@ -158,35 +158,25 @@ namespace DAO
             return row;
         }
 
-        public int UpdateTable(int maBAN)
-        {
-            string query = string.Format("Update BANAN SET TRANGTHAI = N'Trống' where MABANAN = {0}",maBAN);
-            int row = 0;
-            row = DataProvider.ExecuteInsertCommand(query, null);
-            return row;
-        }
-        public List<Table> GetListTablesTrong()
+        public int UpdateStatusTable(int tableId)
         {
             string query = "";
-            List<Table> listTable = new List<Table>();
-            query = string.Format("select * from BANAN where XOA = 0 and TrangThai = N'Trống'");
+            int row;
+            if(!CheckBillInfoForTable(tableId))
+                query = string.Format("Update BANAN SET TRANGTHAI = N'Trống' where MABANAN = {0}",tableId);
+            else
+                query = string.Format("Update BANAN SET TRANGTHAI = N'Có người' where MABANAN = {0}", tableId);
 
-            DataTable data = DataProvider.ExcecuteSelectCommand(query, null);
-            foreach (DataRow item in data.Rows)
+            try
             {
-                Table table = new Table(item);
-                listTable.Add(table);
+                row = DataProvider.ExecuteInsertCommand(query, null);
             }
-
-            return listTable;
-        }
-        public int UpdateTable1(string maBAN)
-        {
-            string query = string.Format("Update BANAN SET TRANGTHAI = N'Có Người' where MABANAN = {0}", maBAN);
-            int row = 0;
-            row = DataProvider.ExecuteInsertCommand(query, null);
+            catch
+            {
+                row = 0;
+            }
             return row;
-        }
+        }             
 
         public int UpdateTablePay(int TableID)
         {
@@ -212,5 +202,39 @@ namespace DAO
             int data = DataProvider.ExecuteScalarCommand(sql, null);
             return data > 0 ? false : true;
         }
+
+        public int SwitchTable(int tableIdOld, int tableIdNew)
+        {
+            string query = "";
+            if (!CheckBillInfoForTable(tableIdOld) || !CheckBillInfoForTable(tableIdNew))
+                query = string.Format("UPDATE HOADON SET SOBAN = {0} WHERE SOBAN = {1}", tableIdNew, tableIdOld);
+            else
+                query = string.Format("EXEC SWITCHTABLE {0} , {1}",tableIdOld,tableIdNew);
+            int row;
+            
+            try
+            {
+                row = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                row = 0;
+
+            }            
+            return row;
+
+        }
+
+        
+
+        public bool CheckBillInfoForTable(int tableID)
+        {
+            int count = 0;
+            string query = string.Format("select COUNT(*) FROM BANAN a, HOADON b , CHITIETHOADON c WHERE a.MABANAN = b.SOBAN and b.MAHD = c.MAHD and b.TRANGTHAITHANHTOAN = 0 and a.XOA = 0  and a.MABANAN = {0}", tableID);
+            count = DataProvider.ExecuteScalarCommand(query, null);
+
+            return count >0 ? true : false;
+        }
+       
     }
 }

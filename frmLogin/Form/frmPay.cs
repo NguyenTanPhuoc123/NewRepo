@@ -21,7 +21,7 @@ namespace frmLogin
     public partial class frmPay : Form
     {
         BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
-        
+        HashCode info = new HashCode();
         private static string billID;
         private static string discountID;
         private int Language = frmlogin.Language;
@@ -49,7 +49,7 @@ namespace frmLogin
 
         public frmPay(frmSellManagement sell)
         {
-            if (Language == 0)
+            if (Language == info.valueDefault)
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
@@ -73,7 +73,7 @@ namespace frmLogin
             }
             catch
             {
-                moneyPay = 0;
+                moneyPay = info.valueDefault;
             }
             lblMoneyReceive.Text = moneyPay.ToString("c", culture);
             lblMoneyPay.Text = (moneyPay - billMenu.Total).ToString("c", culture);
@@ -89,8 +89,8 @@ namespace frmLogin
             txtTableID.Text = billMenu.TableName;
             lblTotal.Text = billMenu.Total.ToString("c", culture);
             LoadDiscount();
-            cbDiscount.SelectedIndex = 0;
-            cbPay.SelectedIndex = 0;
+            cbDiscount.SelectedIndex = info.valueDefault;
+            cbPay.SelectedIndex = info.valueDefault;
             dtgvBill.DataSource = BillInfoMenuBUS.Instance.GetListBillInfoMenu(billMenu.ID);
         }
 
@@ -116,20 +116,21 @@ namespace frmLogin
             float total = billMenu.Total;
             string id = cbDiscount.SelectedValue.ToString();
             SetDiscountID(id);
-            float price = 0;
+            float price = info.valueDefault;
             if (DiscountBUS.Instance.GetDiscountForID(id) != null)
             {
                 price = DiscountBUS.Instance.GetDiscountForID(id).Price;
             }
-            float moneypay = 0;
+            float moneypay = info.valueDefault;
+            info.firstIndex = info.valueDefault;
             
-            if (cbPay.SelectedIndex == 0)
+            if (cbPay.SelectedIndex == info.firstIndex)
             {
                 moneypay = float.Parse(txtMoneyPay.Text) - total;
             }
-            if (cbPay.SelectedIndex == 1)
+            if (cbPay.SelectedIndex == (info.firstIndex+=1))
             {
-                moneypay = 0;
+                moneypay = info.valueDefault;
             }
             if (total > 0 && moneypay >= 0)
             {
@@ -137,7 +138,7 @@ namespace frmLogin
                 int count = BillBUS.Instance.OutputBill(txtBillID.Text, total, cbDiscount.SelectedValue.ToString());
                 if (count > 0 && row > 0)
                 {
-                    MessageBox.Show("Thanh toán thành công", "Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(info.payVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmPay_Load(sender, e);
                     this.IsMdiContainer = true;
                     frmOutputBill frm = new frmOutputBill(this);
@@ -147,12 +148,12 @@ namespace frmLogin
                 }
                 else
                 {
-                    MessageBox.Show("Thanh toán thất bại", "Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.payFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Số tiền khách hàng trả không đủ", "Thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(info.checkCustomerPayVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -178,7 +179,7 @@ namespace frmLogin
             CultureInfo culture = new CultureInfo("vi-VN");
             string id = cbDiscount.SelectedValue.ToString();
             Discount discount = DiscountBUS.Instance.GetDiscountForID(id);
-            float price = 0;
+            float price = info.valueDefault;
             if (discount != null)
             {
                 if (DiscountBUS.Instance.GetDiscountForID(id) != null)
@@ -190,8 +191,8 @@ namespace frmLogin
                     }
                     else
                     {
-                        MessageBox.Show("Không thể giảm giá cho hóa đơn này");
-                        cbDiscount.SelectedIndex = 0;
+                        MessageBox.Show(info.checkDiscountVi);
+                        cbDiscount.SelectedIndex = info.valueDefault;
                     }
                 }
 
@@ -201,7 +202,7 @@ namespace frmLogin
 
         private void cbPay_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbPay.SelectedIndex == 0)
+            if (cbPay.SelectedIndex == info.valueDefault)
             {
                 label15.Visible = true;
                 txtMoneyPay.Visible = true;
@@ -212,7 +213,7 @@ namespace frmLogin
                 txtMoneyPay.Visible = false;
                 CultureInfo culture = new CultureInfo("vi-VN");
                 lblMoneyReceive.Text = lblTotal.Text;
-                lblMoneyPay.Text = 0.ToString("c", culture);
+                lblMoneyPay.Text = info.valueDefault.ToString("c", culture);
                 this.IsMdiContainer = true;
                 frmQRCode frm = new frmQRCode();
                 frm.Show();

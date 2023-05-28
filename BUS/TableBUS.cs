@@ -44,7 +44,7 @@ namespace BUS
 
         public int EditTable(int maBan, string tenBan, int maViTri)
         {
-            return TableDAO.Instance.EditTable(maBan,tenBan,maViTri);
+            return TableDAO.Instance.EditTable(maBan, tenBan, maViTri);
         }
 
         public int DeleteTable(int maBan)
@@ -66,34 +66,36 @@ namespace BUS
         {
             return TableDAO.Instance.RestoreAllTable();
         }
-        public int UpdateTableNull(int tableid)
+        public int UpdateStatusTable(int tableID)
         {
-            return TableDAO.Instance.UpdateTable(tableid);
+            return TableDAO.Instance.UpdateStatusTable(tableID);
         }
-        public List<Table> GetListTablesTrong()
+       
+        public int UpdateTablePay(int tableID)
         {
-            return TableDAO.Instance.GetListTablesTrong();
+            return TableDAO.Instance.UpdateTablePay(tableID);
         }
-        public int UpdateTable(string maBAN)
-        {
-            return TableDAO.Instance.UpdateTable1(maBAN);
-        }
-
-        public int UpdateTablePay(int TableID)
-        {
-            return TableDAO.Instance.UpdateTablePay(TableID);
-        }
-        public bool CheckTableNameExist(string tableName) 
+        public bool CheckTableNameExist(string tableName)
         {
             return TableDAO.Instance.CheckTableNameExist(tableName);
         }
         public bool CheckTableNameExist(string tenban, string maban)
         {
-            return TableDAO.Instance.CheckTableNameExist(tenban,maban);
+            return TableDAO.Instance.CheckTableNameExist(tenban, maban);
         }
         public bool CheckExistDelete(string tableID)
         {
             return TableDAO.Instance.CheckExistDelete(tableID);
+        }
+
+        public int SwitchTable(int tableIdOld, int tableIdNew)
+        {
+            return TableDAO.Instance.SwitchTable(tableIdOld, tableIdNew);
+        }
+
+        public bool CheckBillInfoForTable(int tableID)
+        {
+            return TableDAO.Instance.CheckBillInfoForTable(tableID);
         }
     }
 }

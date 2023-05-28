@@ -149,7 +149,7 @@
     <value>Sort</value>
   </data>
   <data name="btnShowDetail.Text" xml:space="preserve">
-    <value>See details</value>
+    <value>Detail</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>378, 35</value>

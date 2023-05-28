@@ -117,157 +117,540 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1007, 514</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>766, 257</value>
   </data>
-  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 18</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="btnSave.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Column6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 22</value>
-  </data>
-  <data name="cbSortAccount.Items2" xml:space="preserve">
-    <value>Tên nhân viên</value>
-  </data>
-  <data name="Column4.HeaderText" xml:space="preserve">
-    <value>Loại tài khoản</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 22</value>
-  </data>
-  <data name="btnAddAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 45</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtSearchAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtSearchAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 36</value>
-  </data>
-  <data name="&gt;&gt;dtgvListAccount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cbEmloyee.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="cbTypeAccount.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="Column4.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btnDeleteAllAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 43</value>
-  </data>
-  <data name="dtgvListAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="cbFillAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="btnAddAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 23</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 173</value>
-  </data>
-  <data name="txtSearchAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="grpAccountInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="cbTypeAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 36</value>
-  </data>
-  <data name="&gt;&gt;btnEditAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="Column3.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtUsername.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;cbFillAccount.Name" xml:space="preserve">
-    <value>cbFillAccount</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnSearchAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAccount.Parent" xml:space="preserve">
-    <value>grpFunctionAccount</value>
-  </data>
-  <data name="cbSortAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 278</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Lọc</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 257</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 18</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Sắp xếp</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbSortAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbSortAccount.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbSortAccount.Items" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="cbSortAccount.Items1" xml:space="preserve">
+    <value>Tên đăng nhập</value>
+  </data>
+  <data name="cbSortAccount.Items2" xml:space="preserve">
+    <value>Tên nhân viên</value>
+  </data>
+  <data name="cbSortAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 278</value>
+  </data>
+  <data name="cbSortAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 36</value>
+  </data>
+  <data name="cbSortAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cbSortAccount.Name" xml:space="preserve">
+    <value>cbSortAccount</value>
+  </data>
+  <data name="&gt;&gt;cbSortAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbSortAccount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbSortAccount.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtSearchAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtSearchAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 278</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtSearchAccount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtSearchAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 36</value>
+  </data>
+  <data name="txtSearchAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txtSearchAccount.Name" xml:space="preserve">
+    <value>txtSearchAccount</value>
+  </data>
+  <data name="&gt;&gt;txtSearchAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtSearchAccount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtSearchAccount.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbFillAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbFillAccount.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbFillAccount.Items" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="cbFillAccount.Items1" xml:space="preserve">
+    <value>Nhân viên bán hàng</value>
+  </data>
+  <data name="cbFillAccount.Items2" xml:space="preserve">
+    <value>Nhân viên quản lý</value>
+  </data>
+  <data name="cbFillAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>769, 278</value>
+  </data>
+  <data name="cbFillAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 36</value>
+  </data>
+  <data name="cbFillAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cbFillAccount.Name" xml:space="preserve">
+    <value>cbFillAccount</value>
+  </data>
+  <data name="&gt;&gt;cbFillAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
   <data name="&gt;&gt;cbFillAccount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbFillAccount.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dtgvListAccount.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Tên đăng nhập</value>
+  </data>
+  <data name="Column1.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="Column2.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column5.HeaderText" xml:space="preserve">
+    <value>Mataikhoan</value>
+  </data>
+  <data name="Column5.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Column5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column6.HeaderText" xml:space="preserve">
+    <value>MaNV</value>
+  </data>
+  <data name="Column6.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Column6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="Column3.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column4.HeaderText" xml:space="preserve">
+    <value>Loại tài khoản</value>
+  </data>
+  <data name="Column4.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="dtgvListAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 320</value>
+  </data>
+  <data name="dtgvListAccount.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dtgvListAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>953, 182</value>
+  </data>
+  <data name="dtgvListAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;dtgvListAccount.Name" xml:space="preserve">
+    <value>dtgvListAccount</value>
+  </data>
+  <data name="&gt;&gt;dtgvListAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtgvListAccount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtgvListAccount.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbEmloyee.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbEmloyee.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbEmloyee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 122</value>
+  </data>
+  <data name="cbEmloyee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 36</value>
+  </data>
+  <data name="cbEmloyee.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbEmloyee.Name" xml:space="preserve">
+    <value>cbEmloyee</value>
+  </data>
+  <data name="&gt;&gt;cbEmloyee.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbEmloyee.Parent" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;cbEmloyee.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 173</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 18</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Loại tài khoản:</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbTypeAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbTypeAccount.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbTypeAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 164</value>
+  </data>
+  <data name="cbTypeAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 36</value>
+  </data>
+  <data name="cbTypeAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbTypeAccount.Name" xml:space="preserve">
+    <value>cbTypeAccount</value>
+  </data>
+  <data name="&gt;&gt;cbTypeAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbTypeAccount.Parent" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;cbTypeAccount.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 136</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 18</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Nhân viên:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 73</value>
+  </data>
+  <data name="txtPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 38</value>
+  </data>
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 89</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 18</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Mật khẩu:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtUsername.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 24</value>
+  </data>
+  <data name="txtUsername.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 38</value>
+  </data>
+  <data name="txtUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
+    <value>txtUsername</value>
+  </data>
+  <data name="&gt;&gt;txtUsername.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtUsername.Parent" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 34</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 18</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Tên đăng nhập:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="grpAccountInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="grpAccountInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>483, 242</value>
+  </data>
+  <data name="grpAccountInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="grpAccountInfo.Text" xml:space="preserve">
+    <value>Thông tin tài khoản</value>
+  </data>
+  <data name="&gt;&gt;grpAccountInfo.Name" xml:space="preserve">
+    <value>grpAccountInfo</value>
+  </data>
+  <data name="&gt;&gt;grpAccountInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpAccountInfo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grpAccountInfo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="cbFillAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="&gt;&gt;cbEmloyee.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Column5.Visible" type="System.Boolean, mscorlib">
+  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="guna2AnimateWindow2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>234, 17</value>
+  </metadata>
+  <data name="btnSave.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;cbEmloyee.Name" xml:space="preserve">
-    <value>cbEmloyee</value>
+  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="dtgvListAccount.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAZBJREFUaEPtmjFOA0EQBJ0geAS8GBDPICID/CLgF8BscFJrVKe2b9nxSlxJldxe
+        T3vkYAP7sLOzs4mb8Cn8Cn8u5HN4FXbRlqDh1b6EXcu4b2I02vUaXoeb0EHkaHLf5mXyoOxoqHPTMjRI
+        7cXNy+eLZy9DQ9Re3Lx8rp61DA1Qe3Hz8nn25GUorPbi5uVzst0zFgqqvbh5+Zz8Di0UVHtx8/L5mhYK
+        qb24efl8TQuF1F7cvHy+poVC6miok7RQSL0NR3EXUidpoZD6HrbCv6bNPIbUSVooNKMWCs2ohUIzaqHQ
+        jFooNKMWCs2ohUIzaqGQ+haOvBTb7HZXUbdqoZA6comFU254C4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2C
+        ulULhdQqqFu1UEitgrpVC4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2CulULhdQqqFu1UEitgrpVC71Mz0ZD
+        nfRsFXqZno2GOunZKpf+MXSBuhc/QstjSOGZvA8t7Q8DbZnPkIZc0vaZHsJNv/Lu7PxPDodfVkTFZozc
+        PjYAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="&gt;&gt;grpAccountInfo.Name" xml:space="preserve">
-    <value>grpAccountInfo</value>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 23</value>
   </data>
-  <data name="btnAccountDeleted.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 45</value>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 45</value>
   </data>
-  <data name="&gt;&gt;dtgvListAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;txtUsername.Parent" xml:space="preserve">
-    <value>grpAccountInfo</value>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>grpFunctionAccount</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnAddAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="btnAddAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -927,203 +1310,32 @@
         56V0qfoP99fq+GUhcdcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;btnEditAccount.Parent" xml:space="preserve">
-    <value>grpFunctionAccount</value>
+  <data name="btnAddAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
   </data>
-  <data name="cbFillAccount.Items1" xml:space="preserve">
-    <value>Nhân viên bán hàng</value>
+  <data name="btnAddAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 45</value>
   </data>
-  <data name="grpFunctionAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>558, 12</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
-    <value>txtPassword</value>
-  </data>
-  <data name="btnAccountDeleted.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 103</value>
+  <data name="btnAddAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="btnAddAccount.Text" xml:space="preserve">
     <value>Thêm</value>
   </data>
-  <data name="cbTypeAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 164</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Lọc</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmAccountManagement</value>
-  </data>
-  <data name="dtgvListAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 320</value>
-  </data>
-  <data name="btnAddAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 34</value>
-  </data>
-  <data name="&gt;&gt;guna2AnimateWindow1.Name" xml:space="preserve">
-    <value>guna2AnimateWindow1</value>
-  </data>
-  <data name="btnDeleteAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 45</value>
-  </data>
-  <data name="txtUsername.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 24</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
-    <value>txtUsername</value>
-  </data>
-  <data name="cbFillAccount.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;Column4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 38</value>
-  </data>
-  <data name="cbTypeAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 257</value>
-  </data>
-  <data name="grpFunctionAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Sắp xếp</value>
-  </data>
-  <data name="&gt;&gt;Column5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cbFillAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 36</value>
-  </data>
-  <data name="Column3.HeaderText" xml:space="preserve">
-    <value>Nhân viên</value>
-  </data>
-  <data name="btnSearchAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>558, 278</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Loại tài khoản:</value>
-  </data>
-  <data name="&gt;&gt;cbFillAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="Column6.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>766, 257</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 22</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;cbSortAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;btnEditAccount.Name" xml:space="preserve">
-    <value>btnEditAccount</value>
-  </data>
-  <data name="btnDeleteAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="txtUsername.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionAccount.Name" xml:space="preserve">
-    <value>grpFunctionAccount</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>grpAccountInfo</value>
-  </data>
-  <data name="Column6.HeaderText" xml:space="preserve">
-    <value>MaNV</value>
-  </data>
-  <data name="&gt;&gt;Column2.Name" xml:space="preserve">
-    <value>Column2</value>
-  </data>
   <data name="&gt;&gt;btnAddAccount.Name" xml:space="preserve">
     <value>btnAddAccount</value>
   </data>
-  <data name="&gt;&gt;btnDeleteAccount.Name" xml:space="preserve">
-    <value>btnDeleteAccount</value>
-  </data>
-  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 38</value>
-  </data>
-  <data name="&gt;&gt;btnAccountDeleted.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>frmAccountManagement</value>
-  </data>
-  <data name="&gt;&gt;Column3.Name" xml:space="preserve">
-    <value>Column3</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnDeleteAllAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 173</value>
-  </data>
-  <data name="&gt;&gt;cbSortAccount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAccount.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cbSortAccount.Items" xml:space="preserve">
-    <value>Mặc định</value>
-  </data>
-  <data name="&gt;&gt;Column5.Name" xml:space="preserve">
-    <value>Column5</value>
-  </data>
-  <data name="Column5.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAllAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cbTypeAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
   <data name="&gt;&gt;btnAddAccount.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnAddAccount.Parent" xml:space="preserve">
+    <value>grpFunctionAccount</value>
+  </data>
+  <data name="&gt;&gt;btnAddAccount.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnEditAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="btnEditAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1940,163 +2152,71 @@
         di29eRAXqm8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnDeleteAllAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="btnAccountDeleted.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACyUlEQVRYR8WXS8hNURTHr1fkETMMFFJi
-        5JERI5kQZqSEUvJIIRIp8ppQShQDjwkT8ph4JKEklJJHyTOvTCjyypvfb3931b33u+ee47tX/vXru2ud
-        tfY5Z5+9115fqQMaBXvhEXyHH/AY9sE4+GfqAd74F/zOwGsHoRe0VN78AsSN7sFamAKTYTXchbh+BXpC
-        y7QL4g3XQxeoVWfwQX6CsQegJRoJMehGHTlaA/GwY3U0qx3ggE+gm44cOTt+InNcM03rJjjY1mQV0zow
-        536ycjQD9jTgMziYi7De9XqcA3O+VfjqMRtK78Hg/8FXKC2BE2Viun3rky3mAzj2bYj7LYcqzQSDPiar
-        tXoNjj0vWRkaDwZJPx0tUneICjpJR5aGQDyA+z9PVsFpbT8bajAUGrfwkyKLjAXKeGeukf5qZot8q05w
-        GWLQG2ApzpJb3bhCa+sWGOxhk6VZEDeXp+DsZcnVbtyDZOXoNBi8O1nt5Sn3DIw5BUchFZQG2gbGX0pW
-        jmwsDD6erPbaAF63yg2H/uD094GVUE+HwJzDycqRJ57B15NVrUHwCbzuIVWpLfAFhiWrWhfBnO3JytFC
-        MPhFsqply7UYFkBfHRV6COZZ9WrloeS1FcnKkfvaYPu9eo1HluaAeVK7haMMW2lzNQZioIE6kN/Y6dsP
-        q3TUkVvzGph3B7qCcqZivAk68jQAIiE6mvkQPrfU6AriRlY7P0/ELQU1AsI3VEeefFtXuAnTwc/wqmzX
-        Yxkoy3Kl/w1YG/wc2lZMm9tCeg4mLQIfqLLjreUdOGvKIzb8Fh1buLll2wcqrKtg0uZktQ3kfs8i3sy/
-        4Yv+MZpU+4DCOgYmueiaVbT0Z5JVUJF0NlnNqUMvE9NWqKvNUbR5m5JVUBPBJDkCJncEa3+MMxUKy6Jy
-        HiK5Wfxf8W+qalJv2Aluybcd5CXY/9eeG2WVSn8A7ig9LTyeth8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;dtgvListAccount.Name" xml:space="preserve">
-    <value>dtgvListAccount</value>
-  </data>
-  <data name="cbSortAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
-    <value>btnSave</value>
-  </data>
-  <data name="&gt;&gt;Column2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtSearchAccount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="&gt;&gt;guna2AnimateWindow2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2AnimateWindow, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAllAccount.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbTypeAccount.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="grpFunctionAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>428, 242</value>
+  <data name="btnEditAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 103</value>
   </data>
   <data name="btnEditAccount.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 45</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>grpAccountInfo</value>
+  <data name="btnEditAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="btnDeleteAccount.Text" xml:space="preserve">
-    <value>Xóa</value>
+  <data name="btnEditAccount.Text" xml:space="preserve">
+    <value>Sửa</value>
   </data>
-  <data name="&gt;&gt;btnAccountDeleted.Name" xml:space="preserve">
-    <value>btnAccountDeleted</value>
+  <data name="&gt;&gt;btnEditAccount.Name" xml:space="preserve">
+    <value>btnEditAccount</value>
   </data>
-  <data name="&gt;&gt;btnAddAccount.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnEditAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnEditAccount.Parent" xml:space="preserve">
     <value>grpFunctionAccount</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>grpAccountInfo</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 22</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="Column1.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
   </data>
   <data name="&gt;&gt;btnEditAccount.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;txtSearchAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  <data name="btnDeleteAllAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;btnSearchAccount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnDeleteAllAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAZBJREFUaEPtmjFOA0EQBJ0geAS8GBDPICID/CLgF8BscFJrVKe2b9nxSlxJldxe
-        T3vkYAP7sLOzs4mb8Cn8Cn8u5HN4FXbRlqDh1b6EXcu4b2I02vUaXoeb0EHkaHLf5mXyoOxoqHPTMjRI
-        7cXNy+eLZy9DQ9Re3Lx8rp61DA1Qe3Hz8nn25GUorPbi5uVzst0zFgqqvbh5+Zz8Di0UVHtx8/L5mhYK
-        qb24efl8TQuF1F7cvHy+poVC6miok7RQSL0NR3EXUidpoZD6HrbCv6bNPIbUSVooNKMWCs2ohUIzaqHQ
-        jFooNKMWCs2ohUIzaqGQ+haOvBTb7HZXUbdqoZA6comFU254C4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2C
-        ulULhdQqqFu1UEitgrpVC4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2CulULhdQqqFu1UEitgrpVC71Mz0ZD
-        nfRsFXqZno2GOunZKpf+MXSBuhc/QstjSOGZvA8t7Q8DbZnPkIZc0vaZHsJNv/Lu7PxPDodfVkTFZozc
-        PjYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaUlEQVRYR+2XQU7DQAxFcwo4AtweuEUB
+        AQs4B13AGvALcjX9M447HWiExJO+Gk+cb3fcSNPpn04+j9S76cZ0aRqiZd6jrenCdHLOTNcmmuBzFc5N
+        NMA4FmFOzIvEcvt6FM3c74fwAHMqzUakM/f1ELom4crE3I6F7W7NPG3At32kuNOaedpAmtCJ+qX+aUIn
+        6pf6pwmdqF/qHyXcmx5Nrd8Ga0+muznaR/0i/x1RAsVZfzaVTXD9YuLeAwuC+mlcESVQiOLc8ybK4tqY
+        o34aVywlaBNZcVA/jSuyhLIJtFQc1E/jiiyBYv7N0UkbKItT2HdiqQn107giStDixChrQv00rogSeM9Z
+        10JlE7yqivppXBEl3Jp4z1vfkjXubeZoH/WL/HekCZ2oH9cf35dtfruBlNUb8AMJh4lR/EDyNkcH4kcy
+        jlEjTfBs6XUwHEpfTTz4E8Kr+48ID9D1yLGcbcdjlX9Bf4lp+gJXohWYGBGt/AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="cbTypeAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
+  <data name="btnDeleteAllAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 173</value>
   </data>
-  <data name="&gt;&gt;grpFunctionAccount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnDeleteAllAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 43</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnDeleteAllAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="btnEditAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="btnDeleteAllAccount.Text" xml:space="preserve">
+    <value>Xóa tất cả</value>
   </data>
-  <data name="&gt;&gt;cbSortAccount.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;btnDeleteAllAccount.Name" xml:space="preserve">
+    <value>btnDeleteAllAccount</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 89</value>
+  <data name="&gt;&gt;btnDeleteAllAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;txtSearchAccount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
-  </data>
-  <data name="cbSortAccount.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>grpAccountInfo</value>
-  </data>
-  <data name="dtgvListAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>953, 182</value>
-  </data>
-  <data name="cbEmloyee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="&gt;&gt;btnAccountDeleted.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnDeleteAllAccount.Parent" xml:space="preserve">
     <value>grpFunctionAccount</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;btnDeleteAllAccount.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="cbEmloyee.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;guna2AnimateWindow2.Name" xml:space="preserve">
-    <value>guna2AnimateWindow2</value>
+  <data name="btnDeleteAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="btnDeleteAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2293,6 +2413,102 @@
         AAAAAAAAAAAAAAAAAAAAAAAA6M0WW/x/N25AQIh9/CgAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnDeleteAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 173</value>
+  </data>
+  <data name="btnDeleteAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 45</value>
+  </data>
+  <data name="btnDeleteAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnDeleteAccount.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAccount.Name" xml:space="preserve">
+    <value>btnDeleteAccount</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAccount.Parent" xml:space="preserve">
+    <value>grpFunctionAccount</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAccount.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnAccountDeleted.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnAccountDeleted.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACyUlEQVRYR8WXS8hNURTHr1fkETMMFFJi
+        5JERI5kQZqSEUvJIIRIp8ppQShQDjwkT8ph4JKEklJJHyTOvTCjyypvfb3931b33u+ee47tX/vXru2ud
+        tfY5Z5+9115fqQMaBXvhEXyHH/AY9sE4+GfqAd74F/zOwGsHoRe0VN78AsSN7sFamAKTYTXchbh+BXpC
+        y7QL4g3XQxeoVWfwQX6CsQegJRoJMehGHTlaA/GwY3U0qx3ggE+gm44cOTt+InNcM03rJjjY1mQV0zow
+        536ycjQD9jTgMziYi7De9XqcA3O+VfjqMRtK78Hg/8FXKC2BE2Viun3rky3mAzj2bYj7LYcqzQSDPiar
+        tXoNjj0vWRkaDwZJPx0tUneICjpJR5aGQDyA+z9PVsFpbT8bajAUGrfwkyKLjAXKeGeukf5qZot8q05w
+        GWLQG2ApzpJb3bhCa+sWGOxhk6VZEDeXp+DsZcnVbtyDZOXoNBi8O1nt5Sn3DIw5BUchFZQG2gbGX0pW
+        jmwsDD6erPbaAF63yg2H/uD094GVUE+HwJzDycqRJ57B15NVrUHwCbzuIVWpLfAFhiWrWhfBnO3JytFC
+        MPhFsqply7UYFkBfHRV6COZZ9WrloeS1FcnKkfvaYPu9eo1HluaAeVK7haMMW2lzNQZioIE6kN/Y6dsP
+        q3TUkVvzGph3B7qCcqZivAk68jQAIiE6mvkQPrfU6AriRlY7P0/ELQU1AsI3VEeefFtXuAnTwc/wqmzX
+        Yxkoy3Kl/w1YG/wc2lZMm9tCeg4mLQIfqLLjreUdOGvKIzb8Fh1buLll2wcqrKtg0uZktQ3kfs8i3sy/
+        4Yv+MZpU+4DCOgYmueiaVbT0Z5JVUJF0NlnNqUMvE9NWqKvNUbR5m5JVUBPBJDkCJncEa3+MMxUKy6Jy
+        HiK5Wfxf8W+qalJv2Aluybcd5CXY/9eeG2WVSn8A7ig9LTyeth8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnAccountDeleted.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 103</value>
+  </data>
+  <data name="btnAccountDeleted.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 45</value>
+  </data>
+  <data name="btnAccountDeleted.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnAccountDeleted.Text" xml:space="preserve">
+    <value>Đã xóa</value>
+  </data>
+  <data name="&gt;&gt;btnAccountDeleted.Name" xml:space="preserve">
+    <value>btnAccountDeleted</value>
+  </data>
+  <data name="&gt;&gt;btnAccountDeleted.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnAccountDeleted.Parent" xml:space="preserve">
+    <value>grpFunctionAccount</value>
+  </data>
+  <data name="&gt;&gt;btnAccountDeleted.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpFunctionAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>558, 12</value>
+  </data>
+  <data name="grpFunctionAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 242</value>
+  </data>
+  <data name="grpFunctionAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="grpFunctionAccount.Text" xml:space="preserve">
+    <value>Chức năng</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionAccount.Name" xml:space="preserve">
+    <value>grpFunctionAccount</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionAccount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionAccount.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSearchAccount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
   <data name="btnSearchAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAJ4VJREFUeF7t
@@ -2467,310 +2683,94 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOzmlO838BWh4XXIETABAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;btnSearchAccount.Name" xml:space="preserve">
-    <value>btnSearchAccount</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="cbEmloyee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 36</value>
-  </data>
-  <data name="&gt;&gt;cbTypeAccount.Name" xml:space="preserve">
-    <value>cbTypeAccount</value>
-  </data>
-  <data name="btnEditAccount.Text" xml:space="preserve">
-    <value>Sửa</value>
-  </data>
-  <data name="txtPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="btnAccountDeleted.Text" xml:space="preserve">
-    <value>Tài khoản đã xóa</value>
-  </data>
-  <data name="txtSearchAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 278</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="grpFunctionAccount.Text" xml:space="preserve">
-    <value>Chức năng</value>
-  </data>
-  <data name="cbSortAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 36</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 136</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Lưu</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnDeleteAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 173</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAllAccount.Parent" xml:space="preserve">
-    <value>grpFunctionAccount</value>
-  </data>
-  <data name="btnAddAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDeleteAllAccount.Text" xml:space="preserve">
-    <value>Xóa tất cả</value>
-  </data>
-  <data name="&gt;&gt;cbTypeAccount.Parent" xml:space="preserve">
-    <value>grpAccountInfo</value>
-  </data>
-  <data name="&gt;&gt;btnAddAccount.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
-    <value>grpAccountInfo</value>
-  </data>
-  <data name="&gt;&gt;cbEmloyee.Parent" xml:space="preserve">
-    <value>grpAccountInfo</value>
-  </data>
-  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAccount.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAllAccount.Name" xml:space="preserve">
-    <value>btnDeleteAllAccount</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="txtUsername.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="cbSortAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Tên đăng nhập:</value>
-  </data>
-  <data name="btnDeleteAllAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionAccount.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Column6.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbFillAccount.Items" xml:space="preserve">
-    <value>Tất cả</value>
-  </data>
-  <data name="btnAccountDeleted.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;guna2AnimateWindow1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2AnimateWindow, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;dtgvListAccount.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="cbEmloyee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 122</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Mật khẩu:</value>
-  </data>
-  <data name="dtgvListAccount.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;Column4.Name" xml:space="preserve">
-    <value>Column4</value>
-  </data>
-  <data name="Column2.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;cbSortAccount.Name" xml:space="preserve">
-    <value>cbSortAccount</value>
-  </data>
-  <data name="cbSortAccount.Items1" xml:space="preserve">
-    <value>Tên đăng nhập</value>
+  <data name="btnSearchAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>558, 278</value>
   </data>
   <data name="btnSearchAccount.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 36</value>
   </data>
-  <data name="btnAccountDeleted.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnDeleteAllAccount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaUlEQVRYR+2XQU7DQAxFcwo4AtweuEUB
-        AQs4B13AGvALcjX9M447HWiExJO+Gk+cb3fcSNPpn04+j9S76cZ0aRqiZd6jrenCdHLOTNcmmuBzFc5N
-        NMA4FmFOzIvEcvt6FM3c74fwAHMqzUakM/f1ELom4crE3I6F7W7NPG3At32kuNOaedpAmtCJ+qX+aUIn
-        6pf6pwmdqF/qHyXcmx5Nrd8Ga0+muznaR/0i/x1RAsVZfzaVTXD9YuLeAwuC+mlcESVQiOLc8ybK4tqY
-        o34aVywlaBNZcVA/jSuyhLIJtFQc1E/jiiyBYv7N0UkbKItT2HdiqQn107giStDixChrQv00rogSeM9Z
-        10JlE7yqivppXBEl3Jp4z1vfkjXubeZoH/WL/HekCZ2oH9cf35dtfruBlNUb8AMJh4lR/EDyNkcH4kcy
-        jlEjTfBs6XUwHEpfTTz4E8Kr+48ID9D1yLGcbcdjlX9Bf4lp+gJXohWYGBGt/AAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnDeleteAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
   <data name="btnSearchAccount.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="Column1.HeaderText" xml:space="preserve">
-    <value>Tên đăng nhập</value>
+  <data name="&gt;&gt;btnSearchAccount.Name" xml:space="preserve">
+    <value>btnSearchAccount</value>
   </data>
-  <data name="Column5.HeaderText" xml:space="preserve">
-    <value>Mataikhoan</value>
+  <data name="&gt;&gt;btnSearchAccount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;grpAccountInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 23</value>
-  </data>
-  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;Column6.Name" xml:space="preserve">
-    <value>Column6</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;btnSearchAccount.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSearchAccount.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="btnSearchAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="cbEmloyee.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;grpFunctionAccount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cbFillAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>769, 278</value>
-  </data>
-  <data name="&gt;&gt;grpAccountInfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnEditAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Nhân viên:</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
-    <value>grpFunctionAccount</value>
-  </data>
-  <data name="&gt;&gt;Column3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnEditAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 103</value>
-  </data>
-  <data name="grpAccountInfo.Text" xml:space="preserve">
-    <value>Thông tin tài khoản</value>
-  </data>
-  <data name="&gt;&gt;txtSearchAccount.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cbFillAccount.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cbFillAccount.Items2" xml:space="preserve">
-    <value>Nhân viên quản lý</value>
-  </data>
-  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
-    <value>Column1</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 22</value>
-  </data>
-  <data name="&gt;&gt;btnAccountDeleted.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txtSearchAccount.Name" xml:space="preserve">
-    <value>txtSearchAccount</value>
-  </data>
-  <data name="grpAccountInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>483, 242</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="grpAccountInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 45</value>
-  </data>
-  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 73</value>
-  </data>
-  <data name="Column2.HeaderText" xml:space="preserve">
-    <value>Mật khẩu</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
-  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="guna2AnimateWindow2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>234, 17</value>
-  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1007, 514</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmAccountManagement</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column2.Name" xml:space="preserve">
+    <value>Column2</value>
+  </data>
+  <data name="&gt;&gt;Column2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column5.Name" xml:space="preserve">
+    <value>Column5</value>
+  </data>
+  <data name="&gt;&gt;Column5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column6.Name" xml:space="preserve">
+    <value>Column6</value>
+  </data>
+  <data name="&gt;&gt;Column6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column3.Name" xml:space="preserve">
+    <value>Column3</value>
+  </data>
+  <data name="&gt;&gt;Column3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column4.Name" xml:space="preserve">
+    <value>Column4</value>
+  </data>
+  <data name="&gt;&gt;Column4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guna2AnimateWindow1.Name" xml:space="preserve">
+    <value>guna2AnimateWindow1</value>
+  </data>
+  <data name="&gt;&gt;guna2AnimateWindow1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2AnimateWindow, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2AnimateWindow2.Name" xml:space="preserve">
+    <value>guna2AnimateWindow2</value>
+  </data>
+  <data name="&gt;&gt;guna2AnimateWindow2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2AnimateWindow, Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmAccountManagement</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
