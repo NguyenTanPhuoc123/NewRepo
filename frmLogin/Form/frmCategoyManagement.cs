@@ -505,7 +505,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    if (CategoryFoodBUS.Instance.checkExistDelete(txtTypeProductID.Text))
+                    if (CategoryFoodBUS.Instance.checkExistDelete())
                     {
                         int count = CategoryFoodBUS.Instance.DeleteAllCategoryFood();
                         if (count > 0)
@@ -525,7 +525,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    if (CategoryFoodBUS.Instance.checkExistDelete(txtTypeProductID.Text))
+                    if (CategoryFoodBUS.Instance.checkExistDelete())
                     {
                         int count = CategoryFoodBUS.Instance.DeleteAllCategoryFood();
                         if (count > 0)
@@ -733,7 +733,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    if (PositionBUS.Instance.checkExistDelete(txtPositionID.Text))
+                    if (PositionBUS.Instance.checkExistDelete())
                     {
                         int count = PositionBUS.Instance.DeleteAllPosition();
                         if (count > 0)
@@ -757,7 +757,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    if (PositionBUS.Instance.checkExistDelete(txtPositionID.Text))
+                    if (PositionBUS.Instance.checkExistDelete())
                     {
                         int count = PositionBUS.Instance.DeleteAllPosition();
                         if (count > 0)
@@ -982,7 +982,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    if (TypeAccountBUS.Instance.checkExistDelete(txtTypeAccountID.Text))
+                    if (TypeAccountBUS.Instance.checkExistDelete())
                     {
                         int count = TypeAccountBUS.Instance.DeleteAllTypeAccount();
                         if (count > 0)
@@ -1005,7 +1005,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageDeleteAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    if (TypeAccountBUS.Instance.checkExistDelete(txtTypeAccountID.Text))
+                    if (TypeAccountBUS.Instance.checkExistDelete())
                     {
                         int count = TypeAccountBUS.Instance.DeleteAllTypeAccount();
                         if (count > 0)
@@ -1149,14 +1149,14 @@ namespace frmLogin
         {
             if (Language == info.valueDefault)
             {
-                if (MessageBox.Show(info.messageEditVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(info.messageEditVi, info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     if (string.IsNullOrEmpty(txtDiscountName.Text) || string.IsNullOrEmpty(txtDiscountPrice.Text))
                     {
-                        MessageBox.Show(info.eventNullVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(info.eventNullVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-
+                  
                     string discountID = txtDiscountID.Text;
                     string discountName = txtDiscountName.Text;
                     float discountPrice = float.Parse(txtDiscountPrice.Text);
@@ -1165,20 +1165,20 @@ namespace frmLogin
                     int available = cbAvailableDiscount.SelectedIndex == info.valueDefault ? info.count : info.valueDefault;
                     float limitDiscount = float.Parse(txtLimitDiscount.Text);
 
-                    if (DiscountBUS.Instance.checkNameExist(txtDiscountName.Text))
+                    if (DiscountBUS.Instance.CheckNameExistToEdit(txtDiscountName.Text,txtDiscountID.Text))
                     {
                         int count = DiscountBUS.Instance.EditDiscount(discountID, discountName, startDay, endDay, discountPrice, available, limitDiscount);
                         if (count > 0)
                         {
-                            MessageBox.Show(info.editVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(info.editVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
                             LoadListDiscount();
                         }
                         else
-                            MessageBox.Show(info.editFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else
-                        MessageBox.Show(info.MessageCheckExistVi(txtDiscountName.Text),info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(info.editFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);                       
                 }
+            }
+            else
+                MessageBox.Show(info.MessageCheckExistVi(txtDiscountName.Text), info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -1188,9 +1188,8 @@ namespace frmLogin
                     {
                         MessageBox.Show(info.eventNullEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
-                    }
-
-                    string discountID = txtDiscountID.Text;
+                    }                   
+                        string discountID = txtDiscountID.Text;
                     string discountName = txtDiscountName.Text;
                     float discountPrice = float.Parse(txtDiscountPrice.Text);
                     string startDay = dtpDateStart.Value.ToString("yyyy/MM/dd");
@@ -1198,7 +1197,7 @@ namespace frmLogin
                     int available = cbAvailableDiscount.SelectedIndex == info.valueDefault ? info.count : info.valueDefault;
                     float limitDiscount = float.Parse(txtLimitDiscount.Text);
 
-                    if (DiscountBUS.Instance.checkNameExist(txtDiscountName.Text))
+                    if (DiscountBUS.Instance.CheckNameExistToEdit(txtDiscountName.Text, txtDiscountID.Text))
                     {
                         int count = DiscountBUS.Instance.EditDiscount(discountID, discountName, startDay, endDay, discountPrice, available, limitDiscount);
                         if (count > 0)

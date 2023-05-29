@@ -1,0 +1,17 @@
+D:\đồ án\DTO\bin\Release\DTO.dll
+D:\đồ án\DTO\bin\Release\DTO.pdb
+D:\đồ án\DTO\bin\Release\AForge.dll
+D:\đồ án\DTO\bin\Release\AForge.Video.DirectShow.dll
+D:\đồ án\DTO\bin\Release\AForge.Video.dll
+D:\đồ án\DTO\bin\Release\zxing.dll
+D:\đồ án\DTO\bin\Release\zxing.presentation.dll
+D:\đồ án\DTO\bin\Release\AForge.xml
+D:\đồ án\DTO\bin\Release\AForge.Video.xml
+D:\đồ án\DTO\bin\Release\AForge.Video.DirectShow.xml
+D:\đồ án\DTO\bin\Release\zxing.xml
+D:\đồ án\DTO\bin\Release\zxing.presentation.xml
+D:\đồ án\DTO\obj\Release\DTO.csproj.AssemblyReference.cache
+D:\đồ án\DTO\obj\Release\DTO.csproj.CoreCompileInputs.cache
+D:\đồ án\DTO\obj\Release\DTO.csproj.CopyComplete
+D:\đồ án\DTO\obj\Release\DTO.dll
+D:\đồ án\DTO\obj\Release\DTO.pdb

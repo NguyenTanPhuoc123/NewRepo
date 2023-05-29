@@ -76,9 +76,14 @@ namespace BUS
         {
             return DiscountDAO.Instance.GetListDiscountForID(DiscountID);
         }
-        public bool checkNameExist(string TENGIAMGIA)
+        public bool checkNameExist(string discountName)
         {
-            return DiscountDAO.Instance.checkNameExist(TENGIAMGIA);
+            return DiscountDAO.Instance.checkNameExist(discountName);
+        }
+
+        public bool CheckNameExistToEdit(string discountName, string discountID)
+        {
+            return DiscountDAO.Instance.CheckNameExistToEdit(discountName, discountID);
         }
     }
 }

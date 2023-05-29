@@ -109,6 +109,7 @@ namespace frmLogin
             // btnExitFormSell
             // 
             resources.ApplyResources(this.btnExitFormSell, "btnExitFormSell");
+            this.btnExitFormSell.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExitFormSell.FlatAppearance.BorderSize = 0;
             this.btnExitFormSell.Name = "btnExitFormSell";
             this.btnExitFormSell.UseVisualStyleBackColor = true;
@@ -255,7 +256,6 @@ namespace frmLogin
             this.btnStoreManagement.Image = ((System.Drawing.Image)(resources.GetObject("btnStoreManagement.Image")));
             this.btnStoreManagement.ImageSize = new System.Drawing.Size(30, 30);
             this.btnStoreManagement.Name = "btnStoreManagement";
-            this.toolTip1.SetToolTip(this.btnStoreManagement, resources.GetString("btnStoreManagement.ToolTip"));
             this.btnStoreManagement.Click += new System.EventHandler(this.btnStoreManagement_Click);
             this.btnStoreManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnStoreManagement_KeyDown);
             // 

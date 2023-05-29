@@ -179,15 +179,15 @@ namespace DAO
             }
             return list;
         }
-        public bool checkNameExist(string TENGIAMGIA)
+        public bool checkNameExist(string discountName)
         {
-            string query = string.Format("Select count(*) from DANHMUC where TENGIAMGIA='{0}'", TENGIAMGIA);
+            string query = string.Format("Select count(*) from GIAMGIA where TENGIAMGIA='{0}'", discountName);
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
         }
-        public bool checkNameExist(string TENGIAMGIA ,string MAGIAMGIA)
+        public bool CheckNameExistToEdit(string discountName ,string discountID)
         {
-            string query = string.Format("Select count(*) from DANHMUC where TENGIAMGIA='{0}' and MAGIAM != '{1}' ", TENGIAMGIA,MAGIAMGIA);
+            string query = string.Format("Select count(*) from GIAMGIA where TENGIAMGIA= N'{0}' and MAGIAM != '{1}' ", discountName,discountID);
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
         }

@@ -177,7 +177,7 @@ namespace frmLogin
         {
             LoadEmloyeeCreateBill();
             LoadProduct();
-            LoadStisticalRevenue();
+            //LoadStisticalRevenue();
         }
         #region Employee
         public void LoadEmloyeeCreateBill()

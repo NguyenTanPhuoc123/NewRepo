@@ -31,14 +31,14 @@ namespace frmLogin
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyAdmin));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnTableManagement = new System.Windows.Forms.Button();
             this.btnBillManagement = new System.Windows.Forms.Button();
@@ -114,7 +114,6 @@ namespace frmLogin
             resources.ApplyResources(this.btnTableManagement, "btnTableManagement");
             this.btnTableManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnTableManagement.Name = "btnTableManagement";
-            this.toolTip1.SetToolTip(this.btnTableManagement, resources.GetString("btnTableManagement.ToolTip"));
             this.btnTableManagement.UseVisualStyleBackColor = false;
             this.btnTableManagement.Click += new System.EventHandler(this.btnTableManagement_Click);
             this.btnTableManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnTableManagement_KeyDown);
@@ -126,7 +125,6 @@ namespace frmLogin
             resources.ApplyResources(this.btnBillManagement, "btnBillManagement");
             this.btnBillManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnBillManagement.Name = "btnBillManagement";
-            this.toolTip1.SetToolTip(this.btnBillManagement, resources.GetString("btnBillManagement.ToolTip"));
             this.btnBillManagement.UseVisualStyleBackColor = false;
             this.btnBillManagement.Click += new System.EventHandler(this.btnBillManagement_Click);
             this.btnBillManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnBillManagement_KeyDown);
@@ -138,7 +136,6 @@ namespace frmLogin
             resources.ApplyResources(this.btnCategoryManagement, "btnCategoryManagement");
             this.btnCategoryManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnCategoryManagement.Name = "btnCategoryManagement";
-            this.toolTip1.SetToolTip(this.btnCategoryManagement, resources.GetString("btnCategoryManagement.ToolTip"));
             this.btnCategoryManagement.UseVisualStyleBackColor = false;
             this.btnCategoryManagement.Click += new System.EventHandler(this.btnCategoryManagement_Click);
             this.btnCategoryManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnCategoryManagement_KeyDown);
@@ -150,7 +147,6 @@ namespace frmLogin
             resources.ApplyResources(this.btnEmployeeManager, "btnEmployeeManager");
             this.btnEmployeeManager.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEmployeeManager.Name = "btnEmployeeManager";
-            this.toolTip1.SetToolTip(this.btnEmployeeManager, resources.GetString("btnEmployeeManager.ToolTip"));
             this.btnEmployeeManager.UseVisualStyleBackColor = false;
             this.btnEmployeeManager.Click += new System.EventHandler(this.btnEmployeeManager_Click);
             this.btnEmployeeManager.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnEmployeeManager_KeyDown);
@@ -162,7 +158,6 @@ namespace frmLogin
             resources.ApplyResources(this.btnAccountManagement, "btnAccountManagement");
             this.btnAccountManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAccountManagement.Name = "btnAccountManagement";
-            this.toolTip1.SetToolTip(this.btnAccountManagement, resources.GetString("btnAccountManagement.ToolTip"));
             this.btnAccountManagement.UseVisualStyleBackColor = false;
             this.btnAccountManagement.Click += new System.EventHandler(this.btnAccountManagement_Click);
             this.btnAccountManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnAccountManagement_KeyDown);
@@ -174,7 +169,6 @@ namespace frmLogin
             resources.ApplyResources(this.btnProducManagement, "btnProducManagement");
             this.btnProducManagement.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnProducManagement.Name = "btnProducManagement";
-            this.toolTip1.SetToolTip(this.btnProducManagement, resources.GetString("btnProducManagement.ToolTip"));
             this.btnProducManagement.UseVisualStyleBackColor = false;
             this.btnProducManagement.Click += new System.EventHandler(this.btnProducManagement_Click);
             this.btnProducManagement.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnProducManagement_KeyDown);
@@ -318,23 +312,23 @@ namespace frmLogin
             // 
             // chartProduct
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartProduct.ChartAreas.Add(chartArea5);
-            legend5.Name = "countSold";
-            this.chartProduct.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea1);
+            legend1.Name = "countSold";
+            this.chartProduct.Legends.Add(legend1);
             resources.ApplyResources(this.chartProduct, "chartProduct");
             this.chartProduct.Name = "chartProduct";
             this.chartProduct.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series5.Legend = "countSold";
-            series5.LegendText = "Số lượng bán được";
-            series5.Name = "product";
-            this.chartProduct.Series.Add(series5);
-            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title5.ForeColor = System.Drawing.Color.Red;
-            title5.Name = "Product";
-            this.chartProduct.Titles.Add(title5);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series1.Legend = "countSold";
+            series1.LegendText = "Số lượng bán được";
+            series1.Name = "product";
+            this.chartProduct.Series.Add(series1);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.Red;
+            title1.Name = "Product";
+            this.chartProduct.Titles.Add(title1);
             // 
             // panel2
             // 
@@ -426,22 +420,22 @@ namespace frmLogin
             // 
             // chartEmployeeCreateBill
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartEmployeeCreateBill.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chartEmployeeCreateBill.Legends.Add(legend6);
+            chartArea2.Name = "ChartArea1";
+            this.chartEmployeeCreateBill.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartEmployeeCreateBill.Legends.Add(legend2);
             resources.ApplyResources(this.chartEmployeeCreateBill, "chartEmployeeCreateBill");
             this.chartEmployeeCreateBill.Name = "chartEmployeeCreateBill";
             this.chartEmployeeCreateBill.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.LegendText = "Số hóa đơn lập";
-            series6.Name = "CountBill";
-            this.chartEmployeeCreateBill.Series.Add(series6);
-            title6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title6.ForeColor = System.Drawing.Color.Red;
-            title6.Name = "Title1";
-            this.chartEmployeeCreateBill.Titles.Add(title6);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.LegendText = "Số hóa đơn lập";
+            series2.Name = "CountBill";
+            this.chartEmployeeCreateBill.Series.Add(series2);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.ForeColor = System.Drawing.Color.Red;
+            title2.Name = "Title1";
+            this.chartEmployeeCreateBill.Titles.Add(title2);
             // 
             // panel3
             // 

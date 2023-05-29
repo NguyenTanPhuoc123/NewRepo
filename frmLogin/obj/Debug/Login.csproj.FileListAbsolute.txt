@@ -1591,3 +1591,6 @@ D:\DOANC#\frmLogin\obj\Debug\vai\frmLogin.resources.dll
 D:\DOANC#\frmLogin\bin\Debug\gl\frmLogin.resources.dll
 D:\DOANC#\frmLogin\obj\Debug\frmLogin.frmPay.gl.resources
 D:\DOANC#\frmLogin\obj\Debug\gl\frmLogin.resources.dll
+D:\đồ án\frmLogin\bin\Debug\gl\frmLogin.resources.dll
+D:\đồ án\frmLogin\obj\Debug\frmLogin.frmPay.gl.resources
+D:\đồ án\frmLogin\obj\Debug\gl\frmLogin.resources.dll

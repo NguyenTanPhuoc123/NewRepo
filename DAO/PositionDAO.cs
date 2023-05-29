@@ -131,5 +131,11 @@ namespace DAO
             int data = DataProvider.ExecuteScalarCommand(query, null);
             return data > 0 ? false : true;
         }
+        public bool checkExistDelete()
+        {
+            string query = string.Format("Select count(*) from NHANVIEN ");
+            int data = DataProvider.ExecuteScalarCommand(query, null);
+            return data > 0 ? false : true;
+        }
     }
 }

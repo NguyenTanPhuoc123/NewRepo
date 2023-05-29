@@ -83,5 +83,9 @@ namespace BUS
         {
             return TypeAccountDAO.Instance.checkExistDelete(maloai);
         }
+        public bool checkExistDelete()
+        {
+            return TypeAccountDAO.Instance.checkExistDelete();
+        }
     }
 }

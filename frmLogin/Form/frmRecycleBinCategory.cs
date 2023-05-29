@@ -161,7 +161,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageRestoreAllVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    int count = CategoryFoodBUS.Instance.RestoreCategoryFood(txtProductID.Text);
+                    int count = CategoryFoodBUS.Instance.RestoreAllCategoryFood();
                     if (count > 0)
                     {
                         MessageBox.Show(info.restoreAllVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -175,7 +175,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageRestoreAllEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
-                    int count = CategoryFoodBUS.Instance.RestoreCategoryFood(txtProductID.Text);
+                    int count = CategoryFoodBUS.Instance.RestoreAllCategoryFood();
                     if (count > 0)
                     {
                         MessageBox.Show(info.restoreAllEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
