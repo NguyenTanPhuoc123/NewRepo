@@ -54,6 +54,8 @@ namespace DTO
         public string checkDelEn = "Can't delete this object , because it is being used!";
         public string checkCustomerPayVi = "Số tiền khách hàng trả không đủ!";
         public string checkCustomerPayEn = "The amount paid by customer isn't enough!";
+        public string moneyPayVi = "Vui lòng nhập số tiền khách trả";
+        public string moneyPayEn = "Please enter the amount to be paid by the customer";
         public string payVi = "Thanh toán thành công!";
         public string payEn = "Payment success";
         public string payFailedVi = "Thanh toán thất bại!";

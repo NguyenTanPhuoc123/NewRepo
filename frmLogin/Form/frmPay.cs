@@ -81,6 +81,10 @@ namespace frmLogin
 
         private void frmPay_Load(object sender, EventArgs e)
         {
+            txtBillID.Enabled = false;
+            txtEmployeeID.Enabled = false;
+            txtTableID.Enabled = false;
+            txtEmployeeName.Enabled = false;
             CultureInfo culture = new CultureInfo("vi-VN");
             txtBillID.Text = billMenu.ID;
             SetBillID(billMenu.ID);
@@ -113,48 +117,108 @@ namespace frmLogin
 
         private void btnOutputBill_Click(object sender, EventArgs e)
         {
-            float total = billMenu.Total;
-            string id = cbDiscount.SelectedValue.ToString();
-            SetDiscountID(id);
-            float price = info.valueDefault;
-            if (DiscountBUS.Instance.GetDiscountForID(id) != null)
+            if (Language == info.valueDefault)
             {
-                price = DiscountBUS.Instance.GetDiscountForID(id).Price;
-            }
-            float moneypay = info.valueDefault;
-            info.firstIndex = info.valueDefault;
-            
-            if (cbPay.SelectedIndex == info.firstIndex)
-            {
-                moneypay = float.Parse(txtMoneyPay.Text) - total;
-            }
-            if (cbPay.SelectedIndex == (info.firstIndex+=1))
-            {
-                moneypay = info.valueDefault;
-            }
-            if (total > 0 && moneypay >= 0)
-            {
-                int row = TableBUS.Instance.UpdateTablePay(billMenu.TableID);
-                int count = BillBUS.Instance.OutputBill(txtBillID.Text, total, cbDiscount.SelectedValue.ToString());
-                if (count > 0 && row > 0)
+                float total = billMenu.Total;
+                string id = cbDiscount.SelectedValue.ToString();
+                SetDiscountID(id);
+                float price = info.valueDefault;
+                if (DiscountBUS.Instance.GetDiscountForID(id) != null)
                 {
-                    MessageBox.Show(info.payVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    frmPay_Load(sender, e);
-                    this.IsMdiContainer = true;
-                    frmOutputBill frm = new frmOutputBill(this);
-                    frm.Show();
-                    LoadBackColorMDI();
-                    frmSell.frmSellManagement_Load(sender, e);
+                    price = DiscountBUS.Instance.GetDiscountForID(id).Price;
+                }
+                float moneypay = info.valueDefault;
+                info.firstIndex = info.valueDefault;
+
+                if (cbPay.SelectedIndex == info.firstIndex)
+                {
+                    if (string.IsNullOrEmpty(txtMoneyPay.Text.Trim()))
+                    {
+                        MessageBox.Show(info.moneyPayVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    moneypay = float.Parse(txtMoneyPay.Text) - total;
+                }
+                if (cbPay.SelectedIndex == (info.firstIndex += 1))
+                {
+                    moneypay = info.valueDefault;
+                }
+                if (total > 0 && moneypay >= 0)
+                {
+                    int row = TableBUS.Instance.UpdateTablePay(billMenu.TableID);
+                    int count = BillBUS.Instance.OutputBill(txtBillID.Text, total, cbDiscount.SelectedValue.ToString());
+                    if (count > 0 && row > 0)
+                    {
+                        MessageBox.Show(info.payVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        frmPay_Load(sender, e);
+                        this.IsMdiContainer = true;
+                        frmOutputBill frm = new frmOutputBill(this);
+                        frm.Show();
+                        LoadBackColorMDI();
+                        frmSell.frmSellManagement_Load(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show(info.payFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(info.payFailedVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.checkCustomerPayVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show(info.checkCustomerPayVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
+                float total = billMenu.Total;
+                string id = cbDiscount.SelectedValue.ToString();
+                SetDiscountID(id);
+                float price = info.valueDefault;
+                if (DiscountBUS.Instance.GetDiscountForID(id) != null)
+                {
+                    price = DiscountBUS.Instance.GetDiscountForID(id).Price;
+                }
+                float moneypay = info.valueDefault;
+                info.firstIndex = info.valueDefault;
+
+                if (cbPay.SelectedIndex == info.firstIndex)
+                {
+                    if (string.IsNullOrEmpty(txtMoneyPay.Text.Trim()))
+                    {
+                        MessageBox.Show(info.moneyPayEn, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    moneypay = float.Parse(txtMoneyPay.Text) - total;
+                }
+                if (cbPay.SelectedIndex == (info.firstIndex += 1))
+                {
+                    moneypay = info.valueDefault;
+                }
+                if (total > 0 && moneypay >= 0)
+                {
+                    int row = TableBUS.Instance.UpdateTablePay(billMenu.TableID);
+                    int count = BillBUS.Instance.OutputBill(txtBillID.Text, total, cbDiscount.SelectedValue.ToString());
+                    if (count > 0 && row > 0)
+                    {
+                        MessageBox.Show(info.payEn, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        frmPay_Load(sender, e);
+                        this.IsMdiContainer = true;
+                        frmOutputBill frm = new frmOutputBill(this);
+                        frm.Show();
+                        LoadBackColorMDI();
+                        frmSell.frmSellManagement_Load(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show(info.payFailedEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(info.checkCustomerPayEn, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
+            
         }
 
         public void LoadBackColorMDI()
@@ -220,6 +284,12 @@ namespace frmLogin
                 LoadBackColorMDI();
             }
 
+        }
+
+        private void txtMoneyPay_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

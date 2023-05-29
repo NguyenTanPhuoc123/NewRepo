@@ -269,6 +269,9 @@
     <EmbeddedResource Include="Form\frmPay.en.resx">
       <DependentUpon>frmPay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPay.gl.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmPay.vi.resx">
       <DependentUpon>frmPay.cs</DependentUpon>
     </EmbeddedResource>

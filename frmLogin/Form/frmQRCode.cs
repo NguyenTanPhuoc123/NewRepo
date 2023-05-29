@@ -84,6 +84,10 @@ namespace frmLogin
 
         private void btnExitFormQR_Click(object sender, EventArgs e)
         {
+            if (frame.IsRunning == true)
+            {
+                frame.Stop();
+            }
             this.Close();
         }
     }
