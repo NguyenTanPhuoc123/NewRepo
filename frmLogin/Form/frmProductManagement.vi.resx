@@ -142,22 +142,12 @@
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 67</value>
+  </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnSaveProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAZBJREFUaEPtmjFOA0EQBJ0geAS8GBDPICID/CLgF8BscFJrVKe2b9nxSlxJldxe
-        T3vkYAP7sLOzs4mb8Cn8Cn8u5HN4FXbRlqDh1b6EXcu4b2I02vUaXoeb0EHkaHLf5mXyoOxoqHPTMjRI
-        7cXNy+eLZy9DQ9Re3Lx8rp61DA1Qe3Hz8nn25GUorPbi5uVzst0zFgqqvbh5+Zz8Di0UVHtx8/L5mhYK
-        qb24efl8TQuF1F7cvHy+poVC6miok7RQSL0NR3EXUidpoZD6HrbCv6bNPIbUSVooNKMWCs2ohUIzaqHQ
-        jFooNKMWCs2ohUIzaqGQ+haOvBTb7HZXUbdqoZA6comFU254C4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2C
-        ulULhdQqqFu1UEitgrpVC4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2CulULhdQqqFu1UEitgrpVC71Mz0ZD
-        nfRsFXqZno2GOunZKpf+MXSBuhc/QstjSOGZvA8t7Q8DbZnPkIZc0vaZHsJNv/Lu7PxPDodfVkTFZozc
-        PjYAAAAASUVORK5CYII=
-</value>
   </data>
   <data name="pbProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1556,6 +1546,19 @@
   <data name="pbProduct.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="btnSaveProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DQAACw0B7QfALAAAAZBJREFUaEPtmjFOA0EQBJ0geAS8GBDPICID/CLgF8BscFJrVKe2b9nxSlxJldxe
+        T3vkYAP7sLOzs4mb8Cn8Cn8u5HN4FXbRlqDh1b6EXcu4b2I02vUaXoeb0EHkaHLf5mXyoOxoqHPTMjRI
+        7cXNy+eLZy9DQ9Re3Lx8rp61DA1Qe3Hz8nn25GUorPbi5uVzst0zFgqqvbh5+Zz8Di0UVHtx8/L5mhYK
+        qb24efl8TQuF1F7cvHy+poVC6miok7RQSL0NR3EXUidpoZD6HrbCv6bNPIbUSVooNKMWCs2ohUIzaqHQ
+        jFooNKMWCs2ohUIzaqGQ+haOvBTb7HZXUbdqoZA6comFU254C4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2C
+        ulULhdQqqFu1UEitgrpVC4XUKqhbtVBIrYK6VQuF1CqoW7VQSK2CulULhdQqqFu1UEitgrpVC71Mz0ZD
+        nfRsFXqZno2GOunZKpf+MXSBuhc/QstjSOGZvA8t7Q8DbZnPkIZc0vaZHsJNv/Lu7PxPDodfVkTFZozc
+        PjYAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnAddProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2670,8 +2673,5 @@
         BTjxJMCHPwAsSE0CfPgDwAJd+oT/BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOzmlO838BWh4XXIETABAAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

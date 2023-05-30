@@ -48,8 +48,6 @@ namespace frmLogin
             this.tctrlCagtegoryManagement = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpTypeAccount = new System.Windows.Forms.TabPage();
             this.dtgvListTypeAccount = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpFunctionTypeAccount = new System.Windows.Forms.GroupBox();
             this.btnSaveTypeAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddTypeAccount = new Guna.UI2.WinForms.Guna2Button();
@@ -64,8 +62,6 @@ namespace frmLogin
             this.label3 = new System.Windows.Forms.Label();
             this.tpPosition = new System.Windows.Forms.TabPage();
             this.dtgvListPosition = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpFunctionPosition = new System.Windows.Forms.GroupBox();
             this.btnSavePosition = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddPosition = new Guna.UI2.WinForms.Guna2Button();
@@ -80,8 +76,6 @@ namespace frmLogin
             this.label6 = new System.Windows.Forms.Label();
             this.tpLocationTable = new System.Windows.Forms.TabPage();
             this.dtgvListLocation = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpFunctionLocation = new System.Windows.Forms.GroupBox();
             this.btnSaveLocation = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddLocation = new Guna.UI2.WinForms.Guna2Button();
@@ -96,8 +90,6 @@ namespace frmLogin
             this.label1 = new System.Windows.Forms.Label();
             this.tpTypeProduct = new System.Windows.Forms.TabPage();
             this.dtgvListTypeProduct = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpFunctionTypeProduct = new System.Windows.Forms.GroupBox();
             this.btnSaveTypeProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddTypeProduct = new Guna.UI2.WinForms.Guna2Button();
@@ -112,13 +104,6 @@ namespace frmLogin
             this.label8 = new System.Windows.Forms.Label();
             this.tpDiscount = new System.Windows.Forms.TabPage();
             this.dtgvListDiscount = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpFunctionDiscount = new System.Windows.Forms.GroupBox();
             this.btnSaveDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddDiscount = new Guna.UI2.WinForms.Guna2Button();
@@ -142,6 +127,21 @@ namespace frmLogin
             this.txtDiscountID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tctrlCagtegoryManagement.SuspendLayout();
             this.tpTypeAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListTypeAccount)).BeginInit();
@@ -253,18 +253,6 @@ namespace frmLogin
             this.dtgvListTypeAccount.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListTypeAccount.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListTypeAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTypeAccount_CellClick);
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "MaLoai";
-            resources.ApplyResources(this.Column3, "Column3");
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "TenLoai";
-            resources.ApplyResources(this.Column4, "Column4");
-            this.Column4.Name = "Column4";
             // 
             // grpFunctionTypeAccount
             // 
@@ -484,18 +472,6 @@ namespace frmLogin
             this.dtgvListPosition.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListPosition.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListPosition.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListPosition_CellClick);
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "MaChucVu";
-            resources.ApplyResources(this.Column5, "Column5");
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "TenChucVu";
-            resources.ApplyResources(this.Column6, "Column6");
-            this.Column6.Name = "Column6";
             // 
             // grpFunctionPosition
             // 
@@ -717,18 +693,6 @@ namespace frmLogin
             this.dtgvListLocation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListLocation_CellContentClick);
             this.dtgvListLocation.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListLocation_CellContentClick);
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "MaViTri";
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TenViTri";
-            resources.ApplyResources(this.Column2, "Column2");
-            this.Column2.Name = "Column2";
-            // 
             // grpFunctionLocation
             // 
             this.grpFunctionLocation.Controls.Add(this.btnSaveLocation);
@@ -947,18 +911,6 @@ namespace frmLogin
             this.dtgvListTypeProduct.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListTypeProduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListTypeProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvListTypeProduct_CellContentClick);
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "CategoryID";
-            resources.ApplyResources(this.Column7, "Column7");
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "CategoryName";
-            resources.ApplyResources(this.Column8, "Column8");
-            this.Column8.Name = "Column8";
             // 
             // grpFunctionTypeProduct
             // 
@@ -1185,48 +1137,6 @@ namespace frmLogin
             this.dtgvListDiscount.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvListDiscount.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvListDiscount.SelectionChanged += new System.EventHandler(this.dtgvListDiscount_SelectionChanged);
-            // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "DiscountID";
-            resources.ApplyResources(this.Column12, "Column12");
-            this.Column12.Name = "Column12";
-            // 
-            // Column13
-            // 
-            this.Column13.DataPropertyName = "DiscountName";
-            resources.ApplyResources(this.Column13, "Column13");
-            this.Column13.Name = "Column13";
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "Price";
-            resources.ApplyResources(this.Column14, "Column14");
-            this.Column14.Name = "Column14";
-            // 
-            // Column15
-            // 
-            this.Column15.DataPropertyName = "StartDay";
-            resources.ApplyResources(this.Column15, "Column15");
-            this.Column15.Name = "Column15";
-            // 
-            // Column16
-            // 
-            this.Column16.DataPropertyName = "EndDay";
-            resources.ApplyResources(this.Column16, "Column16");
-            this.Column16.Name = "Column16";
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "Available";
-            resources.ApplyResources(this.Column9, "Column9");
-            this.Column9.Name = "Column9";
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "Limit";
-            resources.ApplyResources(this.Column10, "Column10");
-            this.Column10.Name = "Column10";
             // 
             // grpFunctionDiscount
             // 
@@ -1490,6 +1400,111 @@ namespace frmLogin
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "CategoryID";
+            resources.ApplyResources(this.Column7, "Column7");
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "CategoryName";
+            resources.ApplyResources(this.Column8, "Column8");
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaViTri";
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TenViTri";
+            resources.ApplyResources(this.Column2, "Column2");
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "MaChucVu";
+            resources.ApplyResources(this.Column5, "Column5");
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "TenChucVu";
+            resources.ApplyResources(this.Column6, "Column6");
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "MaLoai";
+            resources.ApplyResources(this.Column3, "Column3");
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "TenLoai";
+            resources.ApplyResources(this.Column4, "Column4");
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "DiscountID";
+            resources.ApplyResources(this.Column12, "Column12");
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "DiscountName";
+            resources.ApplyResources(this.Column13, "Column13");
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "Price";
+            resources.ApplyResources(this.Column14, "Column14");
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "StartDay";
+            resources.ApplyResources(this.Column15, "Column15");
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            // 
+            // Column16
+            // 
+            this.Column16.DataPropertyName = "EndDay";
+            resources.ApplyResources(this.Column16, "Column16");
+            this.Column16.Name = "Column16";
+            this.Column16.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "Available";
+            resources.ApplyResources(this.Column9, "Column9");
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "Limit";
+            resources.ApplyResources(this.Column10, "Column10");
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             // 
             // frmCategoyManagement
             // 

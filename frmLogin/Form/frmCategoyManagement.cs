@@ -40,6 +40,7 @@ namespace frmLogin
             LoadPosition();
             LoadTypeAccount();
             LoadListDiscount();
+            LoadTypeProduct();
         }
 
         #region Location Table Food
@@ -69,6 +70,7 @@ namespace frmLogin
             btnEditLocation.Enabled = false;
             btnDeleteLocation.Enabled = false;
             btnDeleteAllLocation.Enabled = false;
+            
         }
 
         private void btnSaveLocation_Click(object sender, EventArgs e)
@@ -294,7 +296,7 @@ namespace frmLogin
         #region TypeProduct
         private void btnTypeProductDeleted_Click(object sender, EventArgs e)
         {
-            frmRecycleBin frm = new frmRecycleBin();
+            frmRecycleBinCategory frm = new frmRecycleBinCategory();
             frm.Show();
         }
 

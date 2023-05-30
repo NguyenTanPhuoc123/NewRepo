@@ -223,6 +223,7 @@ namespace frmLogin
                 return;
             }
             lstvListDish.Clear();
+            imageList1.Images.Clear();
             List<Product> products = ProductBUS.Instance.GetListFindProductSelectDish(txtSearchDish.Text);
             for (int i = 0; i < products.Count; i++)
             {

@@ -39,6 +39,7 @@ namespace frmLogin
             LoadTypeAccountDeleted();
             LoadPositionDeleted();
             LoadDiscountDeleted();
+            LoadTypeProductDeleted();
         }
 
         private void btnExitFormRecycleBinCategory_Click(object sender, EventArgs e)

@@ -76,10 +76,7 @@ namespace frmLogin
         {
             frmSellManagement.ActiveForm.Dispose();
         }
-        public void CloseForm1(object sender, EventArgs e)
-        {
-            
-        }
+        
         private void LoadThongTin()
         {
             Employee employee = EmployeeBUS.Instance.GetEmployeeByEmployeeID(account.EmployeeID);

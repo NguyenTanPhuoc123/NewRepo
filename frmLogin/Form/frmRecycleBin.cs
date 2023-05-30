@@ -46,17 +46,12 @@ namespace frmLogin
         {                                          
             this.Close();
         }
-
-        public void LoadForm(object sender, EventArgs e)
-        {
-           
-        }
+      
 
         #region TableFood 
         void LoadTableFoodDeleted()
         {
-            dtgvListTableFoodDeleted.DataSource = TableMenuBUS.Instance.GetListTableMenuDeleted();
-            frmQuanLyAdmin.ActiveForm.Load += new EventHandler(LoadForm);
+            dtgvListTableFoodDeleted.DataSource = TableMenuBUS.Instance.GetListTableMenuDeleted();            
         }
 
         private void dtgvListTableFoodDeleted_SelectionChanged(object sender, EventArgs e)
@@ -81,6 +76,7 @@ namespace frmLogin
                     if (count > 0)
                     {
                         MessageBox.Show(info.restoreVi,info.titleMessageVi, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        frmQuanLyAdmin.ActiveForm.Load += LoadForm;
                         LoadTableFoodDeleted();
                     }
                     else
@@ -95,6 +91,7 @@ namespace frmLogin
                     if (count > info.valueDefault)
                     {
                         MessageBox.Show(info.restoreEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        frmTableManagement.ActiveForm.Load += new EventHandler(LoadForm);
                         LoadTableFoodDeleted();
                     }
                     else
@@ -153,8 +150,7 @@ namespace frmLogin
                     }
                     else
                         MessageBox.Show(info.restoreFailedVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                frmRecycleBin_Load(sender, e);
+                }                
             }
             else
             {
@@ -520,6 +516,12 @@ namespace frmLogin
         }
 
         #endregion
-       
+
+        public void LoadForm(object sender, EventArgs e)
+        {
+            frmTableManagement.ActiveForm.Dispose();
+            
+        }
+
     }
 }

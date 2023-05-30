@@ -23,7 +23,7 @@ namespace BUS
         }
         public List<CategoryFood> GetCategoryFoodsDeleted()
         {
-            return CategoryFoodBUS.instance.GetCategoryFoodsDeleted();
+            return CategoryFoodDAO.Instance.GetCategoryFoodsDeleted();
         }
         public List<CategoryFood> GetCategoryFoodsID()
         {
@@ -47,11 +47,11 @@ namespace BUS
         }
         public int RestoreCategoryFood(string id)
         {
-            return CategoryFoodBUS.Instance.RestoreCategoryFood(id);
+            return CategoryFoodDAO.Instance.RestoreCategoryFood(id);
         }
         public int RestoreAllCategoryFood()
         {
-            return CategoryFoodBUS.Instance.RestoreAllCategoryFood();
+            return CategoryFoodDAO.Instance.RestoreAllCategoryFood();
         }
         public string GetCategory(int CategoryID)
         {
@@ -59,7 +59,7 @@ namespace BUS
         }
         public List<CategoryFood> GetFillCategoryFoods(int CategoryID)
         {
-            return CategoryFoodBUS.instance.GetFillCategoryFoods(CategoryID);
+            return CategoryFoodDAO.Instance.GetFillCategoryFoods(CategoryID);
         }
         public bool checkNameExist(string CategoryName)
         {

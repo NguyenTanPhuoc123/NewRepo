@@ -213,6 +213,7 @@ namespace frmLogin
             btnAddProduct.Enabled = true;
             btnDeleteProduct.Enabled = true;
             btnEditProduct.Enabled = true;
+            btnDeleteAllProduct.Enabled = true;
         }
         private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -225,6 +226,7 @@ namespace frmLogin
         {
             int i = e.RowIndex;
             info.firstIndex = info.valueDefault;
+            Resettext();
             if (i == -1) return;
             MemoryStream memoryStream = new MemoryStream((byte[])dtgvListProduct.Rows[i].Cells[info.firstIndex].Value);
             pbProduct.Image = Image.FromStream(memoryStream);

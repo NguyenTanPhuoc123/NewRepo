@@ -74,12 +74,12 @@ namespace frmLogin
             btnSaveTable.Enabled = false;
             btnTableDeleted.Enabled = true;
             
-            LoadFillTableFood();
+            LoadFillTableFood();           
             cbLocation.DataSource = LocationBUS.Instance.GetListLocation();
             cbLocation.ValueMember = "MaViTri";
             cbLocation.DisplayMember = "TenViTri";
-            cbFillTable.SelectedIndex = info.firstIndex;
-            cbSortTable.SelectedIndex = info.firstIndex;
+            cbFillTable.SelectedIndex = info.valueDefault;            
+            cbSortTable.SelectedIndex = info.valueDefault;
             LoadTable();
         }
         public void LoadTable()
