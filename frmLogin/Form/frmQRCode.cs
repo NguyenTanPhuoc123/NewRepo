@@ -56,6 +56,10 @@ namespace frmLogin
             Result result = Reader.Decode((Bitmap)picQR.Image);
             try
             {
+                if (result == null)
+                {
+                    return;
+                }
                 string decoded = result.ToString().Trim();
 
                 if (decoded != "")

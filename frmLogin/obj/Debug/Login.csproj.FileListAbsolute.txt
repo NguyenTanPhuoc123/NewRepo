@@ -1767,3 +1767,7 @@ D:\Cửa hàng ăn vặt Timo\frmLogin\obj\Debug\Login.csproj.CopyComplete
 D:\Cửa hàng ăn vặt Timo\frmLogin\obj\Debug\frmLogin.exe
 D:\Cửa hàng ăn vặt Timo\frmLogin\obj\Debug\frmLogin.pdb
 D:\Cửa hàng ăn vặt Timo\frmLogin\obj\Debug\frmLogin.frmPay.en-AS.resources
+D:\DOANC#\frmLogin\bin\Debug\aa\frmLogin.resources.dll
+D:\DOANC#\frmLogin\obj\Debug\frmLogin.frmPay.en-AS.resources
+D:\DOANC#\frmLogin\obj\Debug\frmLogin.frmQuanLyAdmin.aa.resources
+D:\DOANC#\frmLogin\obj\Debug\aa\frmLogin.resources.dll
