@@ -181,37 +181,51 @@ namespace frmLogin
         {
             if (Language == info.valueDefault)
             {
+                
                 if (GetTableID() == info.valueDefault)
                 {
-                    MessageBox.Show(info.selectTablePayVi,info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.selectTablePayVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
                 {
-                    BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
-                    int count = BillBUS.Instance.Pay(billMenu.ID, manv);
+                    BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID()); 
+                    if(billMenu == null)
+                    {
+                    MessageBox.Show(info.messPayVi, info.titleMessageVi, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                    }
+                    int count = BillBUS.Instance.Pay(billMenu.ID, manv);                                                                               
                     this.IsMdiContainer = true;
                     frmPay frm = new frmPay(this);
                     frm.Show();
                     LoadBackColorMDI();
                 }
-            }
+            }                               
+                                    
             else
-            {
+            {              
                 if (GetTableID() == info.valueDefault)
                 {
-                    MessageBox.Show(info.selectTablePayEn,info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(info.selectTablePayEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
                 {
                     BillMenu billMenu = BillMenuBUS.Instance.GetBillMenuByTableID(frmSellManagement.GetTableID());
-                    int count = BillBUS.Instance.Pay(billMenu.ID, manv);
+                    if(billMenu==null)
+                    {
+                    MessageBox.Show(info.messPayEn, info.titleMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                    }       
+                    int count = BillBUS.Instance.Pay(billMenu.ID, manv);                                   
                     this.IsMdiContainer = true;
                     frmPay frm = new frmPay(this);
                     frm.Show();
                     LoadBackColorMDI();
+                    
                 }
+                         
             }
         }
 

@@ -333,7 +333,7 @@ namespace frmLogin
         }
 
         private void btnStatisticalProduct_Click(object sender, EventArgs e)
-        {
+        {              
             string startDay = dtpProductStart.Value.ToString("yyyy/MM/dd");
             string endDay = dtpProductEnd.Value.ToString("yyyy/MM/dd");
             if (cbFillProduct.SelectedIndex == info.firstIndex)

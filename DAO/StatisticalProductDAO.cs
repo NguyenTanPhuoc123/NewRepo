@@ -60,13 +60,21 @@ namespace DAO
                 list.Add(product);
             }
             return list;
-        }
+        }       
 
         public int GetSumQuantitySellByDay(string startDay, string endDay)
         {
-            int sum = 0;
+            int sum;
+
             string query = string.Format("SELECT SUM(b.SOLUONG) 'TongSoLuongBan'   FROM HOADON a, CHITIETHOADON b, SANPHAM c WHERE a.MAHD = b.MAHD and b.MASP = c.MASANPHAM and b.TRANGTHAI = 1 and c.TRANGTHAI = 1 and a.NGAYXUATHD >= '{0}' and a.NGAYXUATHD <= '{1}'", startDay, endDay);
-            sum = DataProvider.ExecuteScalarCommand(query, null);
+            try
+            {
+                sum = DataProvider.ExecuteScalarCommand(query, null);
+            }
+            catch
+            {
+                sum = 0;
+            }
             return sum;
         }
 

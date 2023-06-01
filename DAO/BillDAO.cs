@@ -140,8 +140,16 @@ namespace DAO
 
         public int Pay(string BillID, int EmployeeID)
         {
+            int data;
             string query = string.Format("update hoadon set manhanvien={0} where mahd='{1}'", EmployeeID, BillID);
-            int data = DataProvider.ExecuteInsertCommand(query, null);
+            try
+            {
+                data = DataProvider.ExecuteInsertCommand(query, null);
+            }
+            catch
+            {
+                data = 0;
+            }
             return data;
         }
 

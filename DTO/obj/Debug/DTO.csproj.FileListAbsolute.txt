@@ -165,3 +165,20 @@ D:\DOANWINFORM\DTO\bin\Debug\AForge.Video.dll
 D:\DOANWINFORM\DTO\bin\Debug\AForge.xml
 D:\DOANWINFORM\DTO\bin\Debug\AForge.Video.xml
 D:\DOANWINFORM\DTO\bin\Debug\AForge.Video.DirectShow.xml
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\DTO.dll
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\DTO.pdb
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\AForge.dll
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\AForge.Video.DirectShow.dll
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\AForge.Video.dll
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\zxing.dll
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\zxing.presentation.dll
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\AForge.xml
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\AForge.Video.xml
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\AForge.Video.DirectShow.xml
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\zxing.xml
+D:\Cửa hàng ăn vặt Timo\DTO\bin\Debug\zxing.presentation.xml
+D:\Cửa hàng ăn vặt Timo\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Cửa hàng ăn vặt Timo\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Cửa hàng ăn vặt Timo\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\Cửa hàng ăn vặt Timo\DTO\obj\Debug\DTO.dll
+D:\Cửa hàng ăn vặt Timo\DTO\obj\Debug\DTO.pdb

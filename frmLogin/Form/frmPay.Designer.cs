@@ -70,16 +70,16 @@ namespace frmLogin
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.btnExitFomPay);
             this.panel1.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // btnExitFomPay
             // 
-            resources.ApplyResources(this.btnExitFomPay, "btnExitFomPay");
             this.btnExitFomPay.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnExitFomPay, "btnExitFomPay");
             this.btnExitFomPay.Name = "btnExitFomPay";
             this.btnExitFomPay.UseVisualStyleBackColor = true;
             this.btnExitFomPay.Click += new System.EventHandler(this.btnExitFomPay_Click);
@@ -97,7 +97,6 @@ namespace frmLogin
             // 
             // txtEmployeeID
             // 
-            resources.ApplyResources(this.txtEmployeeID, "txtEmployeeID");
             this.txtEmployeeID.BorderRadius = 10;
             this.txtEmployeeID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmployeeID.DefaultText = "";
@@ -106,6 +105,7 @@ namespace frmLogin
             this.txtEmployeeID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtEmployeeID, "txtEmployeeID");
             this.txtEmployeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.PasswordChar = '\0';
@@ -120,7 +120,6 @@ namespace frmLogin
             // 
             // txtEmployeeName
             // 
-            resources.ApplyResources(this.txtEmployeeName, "txtEmployeeName");
             this.txtEmployeeName.BorderRadius = 10;
             this.txtEmployeeName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmployeeName.DefaultText = "";
@@ -129,6 +128,7 @@ namespace frmLogin
             this.txtEmployeeName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmployeeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtEmployeeName, "txtEmployeeName");
             this.txtEmployeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.PasswordChar = '\0';
@@ -173,12 +173,12 @@ namespace frmLogin
             // 
             // cbPay
             // 
-            resources.ApplyResources(this.cbPay, "cbPay");
             this.cbPay.BackColor = System.Drawing.Color.Transparent;
             this.cbPay.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbPay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPay.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbPay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbPay, "cbPay");
             this.cbPay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbPay.Items.AddRange(new object[] {
             resources.GetString("cbPay.Items"),
@@ -188,13 +188,13 @@ namespace frmLogin
             // 
             // btnOutputBill
             // 
-            resources.ApplyResources(this.btnOutputBill, "btnOutputBill");
             this.btnOutputBill.BorderRadius = 20;
             this.btnOutputBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnOutputBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnOutputBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnOutputBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnOutputBill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(60)))));
+            resources.ApplyResources(this.btnOutputBill, "btnOutputBill");
             this.btnOutputBill.ForeColor = System.Drawing.Color.White;
             this.btnOutputBill.Name = "btnOutputBill";
             this.btnOutputBill.Click += new System.EventHandler(this.btnOutputBill_Click);
@@ -206,7 +206,6 @@ namespace frmLogin
             // 
             // txtMoneyPay
             // 
-            resources.ApplyResources(this.txtMoneyPay, "txtMoneyPay");
             this.txtMoneyPay.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMoneyPay.DefaultText = "";
             this.txtMoneyPay.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -214,6 +213,7 @@ namespace frmLogin
             this.txtMoneyPay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMoneyPay.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMoneyPay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtMoneyPay, "txtMoneyPay");
             this.txtMoneyPay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMoneyPay.Name = "txtMoneyPay";
             this.txtMoneyPay.PasswordChar = '\0';
@@ -224,7 +224,6 @@ namespace frmLogin
             // 
             // dtgvBill
             // 
-            resources.ApplyResources(this.dtgvBill, "dtgvBill");
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgvBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -235,6 +234,7 @@ namespace frmLogin
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.dtgvBill, "dtgvBill");
             this.dtgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -253,6 +253,7 @@ namespace frmLogin
             this.dtgvBill.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvBill.Name = "dtgvBill";
+            this.dtgvBill.ReadOnly = true;
             this.dtgvBill.RowHeadersVisible = false;
             this.dtgvBill.RowTemplate.Height = 24;
             this.dtgvBill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -268,7 +269,7 @@ namespace frmLogin
             this.dtgvBill.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgvBill.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgvBill.ThemeStyle.HeaderStyle.Height = 20;
-            this.dtgvBill.ThemeStyle.ReadOnly = false;
+            this.dtgvBill.ThemeStyle.ReadOnly = true;
             this.dtgvBill.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvBill.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvBill.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -282,45 +283,51 @@ namespace frmLogin
             this.Column1.DataPropertyName = "BillID";
             resources.ApplyResources(this.Column1, "Column1");
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.DataPropertyName = "ProductID";
             resources.ApplyResources(this.Column3, "Column3");
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.DataPropertyName = "ProductName";
             resources.ApplyResources(this.Column2, "Column2");
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.DataPropertyName = "Count";
             resources.ApplyResources(this.Column4, "Column4");
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.DataPropertyName = "Price";
             resources.ApplyResources(this.Column5, "Column5");
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.DataPropertyName = "Total";
             resources.ApplyResources(this.Column6, "Column6");
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // cbDiscount
             // 
-            resources.ApplyResources(this.cbDiscount, "cbDiscount");
             this.cbDiscount.BackColor = System.Drawing.Color.Transparent;
             this.cbDiscount.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbDiscount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDiscount.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbDiscount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.cbDiscount, "cbDiscount");
             this.cbDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbDiscount.Name = "cbDiscount";
             this.cbDiscount.SelectedIndexChanged += new System.EventHandler(this.cbDiscount_SelectedIndexChanged);
@@ -332,7 +339,6 @@ namespace frmLogin
             // 
             // txtTableID
             // 
-            resources.ApplyResources(this.txtTableID, "txtTableID");
             this.txtTableID.BorderRadius = 10;
             this.txtTableID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTableID.DefaultText = "";
@@ -341,6 +347,7 @@ namespace frmLogin
             this.txtTableID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTableID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTableID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtTableID, "txtTableID");
             this.txtTableID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTableID.Name = "txtTableID";
             this.txtTableID.PasswordChar = '\0';
@@ -355,7 +362,6 @@ namespace frmLogin
             // 
             // txtBillID
             // 
-            resources.ApplyResources(this.txtBillID, "txtBillID");
             this.txtBillID.BorderRadius = 10;
             this.txtBillID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBillID.DefaultText = "";
@@ -364,6 +370,7 @@ namespace frmLogin
             this.txtBillID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtBillID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtBillID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtBillID, "txtBillID");
             this.txtBillID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBillID.Name = "txtBillID";
             this.txtBillID.PasswordChar = '\0';

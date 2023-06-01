@@ -1552,6 +1552,15 @@
   <data name="tbpRevenue.Text" xml:space="preserve">
     <value>Revenue</value>
   </data>
+  <data name="btnShowReportProduct.Text" xml:space="preserve">
+    <value>Show report</value>
+  </data>
+  <data name="cbFillProduct.Items" xml:space="preserve">
+    <value>Products sell max</value>
+  </data>
+  <data name="cbFillProduct.Items1" xml:space="preserve">
+    <value>Products sell min</value>
+  </data>
   <data name="btnStatisticalProduct.Text" xml:space="preserve">
     <value>Statistical</value>
   </data>
@@ -1561,8 +1570,17 @@
   <data name="btnReportEmployCreateBill.Text" xml:space="preserve">
     <value>View Report</value>
   </data>
+  <data name="cbTypeStatisticalBill.Items" xml:space="preserve">
+    <value>Employee create many bill</value>
+  </data>
+  <data name="cbTypeStatisticalBill.Items1" xml:space="preserve">
+    <value>Employee create a few bill</value>
+  </data>
   <data name="btnbtnStatisticalBill.Text" xml:space="preserve">
     <value>Statistical</value>
+  </data>
+  <data name="tbpEmployee.Text" xml:space="preserve">
+    <value>Employee</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

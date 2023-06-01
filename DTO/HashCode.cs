@@ -8,6 +8,8 @@ namespace DTO
 {
     public class HashCode
     {
+        public string messPayVi = "Bàn chọn chưa có hóa đơn!";
+        public string messPayEn = "Table selected already bill";
         public string maleVi = "Nam";
         public string maleEn = "Male";
         public string femaleVi = "Nữ";

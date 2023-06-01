@@ -259,3 +259,24 @@ C:\Users\Admin\Desktop\DoAn\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CoreCompi
 C:\Users\Admin\Desktop\DoAn\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Admin\Desktop\DoAn\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.dll
 C:\Users\Admin\Desktop\DoAn\QuanLyCuaHangTimo\BUS\obj\Debug\BUS.pdb
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\BUS.dll
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\BUS.pdb
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\AForge.dll
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\AForge.Video.DirectShow.dll
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\AForge.Video.dll
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\DAO.dll
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\DTO.dll
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\zxing.dll
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\zxing.presentation.dll
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\DAO.pdb
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\DTO.pdb
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\AForge.xml
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\AForge.Video.xml
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\AForge.Video.DirectShow.xml
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\zxing.xml
+D:\Cửa hàng ăn vặt Timo\BUS\bin\Debug\zxing.presentation.xml
+D:\Cửa hàng ăn vặt Timo\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Cửa hàng ăn vặt Timo\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Cửa hàng ăn vặt Timo\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Cửa hàng ăn vặt Timo\BUS\obj\Debug\BUS.dll
+D:\Cửa hàng ăn vặt Timo\BUS\obj\Debug\BUS.pdb

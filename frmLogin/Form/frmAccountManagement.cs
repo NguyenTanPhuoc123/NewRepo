@@ -112,7 +112,7 @@ namespace frmLogin
 
                 if (DialogResult.Yes == MessageBox.Show(info.messageDeleteVi,info.titleMessageVi, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    if ((cbEmloyee.SelectedIndex + 1) != frmSellManagement.GetMANV())
+                    if (txtUsername.Text != frmlogin.GetUsername())
                     {
                         int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
                         if (count > 0)
@@ -134,7 +134,7 @@ namespace frmLogin
             {
                 if (DialogResult.Yes == MessageBox.Show(info.messageDeleteEn,info.titleMessageEn, MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
                 {
-                    if ((cbEmloyee.SelectedIndex + 1) != frmSellManagement.GetMANV())
+                    if (txtUsername.Text != frmlogin.GetUsername())
                     {
                         int count = AccountBUS.Instance.DeleteAccountByUserName(txtUsername.Text);
                         if (count > 0)

@@ -263,6 +263,9 @@
     <EmbeddedResource Include="Form\frmOutputBill.resx">
       <DependentUpon>frmOutputBill.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPay.en-AS.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\frmPay.en-CA.resx">
       <DependentUpon>frmPay.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmProductReport.resx">
       <DependentUpon>frmProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyAdmin.aa.resx">
+      <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyAdmin.en-AS.resx">
       <DependentUpon>frmQuanLyAdmin.cs</DependentUpon>

@@ -208,6 +208,8 @@ namespace DAO
             string query = "";
             if (!CheckBillInfoForTable(tableIdOld) || !CheckBillInfoForTable(tableIdNew))
                 query = string.Format("UPDATE HOADON SET SOBAN = {0} WHERE SOBAN = {1}", tableIdNew, tableIdOld);
+            else if((!CheckBillInfoForTable(tableIdOld) && CheckBillInfoForTable(tableIdNew)))
+                query = string.Format("UPDATE HOADON SET SOBAN = {0} WHERE SOBAN = {1}", tableIdNew, tableIdOld);
             else
                 query = string.Format("EXEC SWITCHTABLE {0} , {1}",tableIdOld,tableIdNew);
             int row;

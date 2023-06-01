@@ -136,19 +136,22 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 9</value>
+    <value>396, 11</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 44</value>
+    <value>123, 55</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>PAY</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>914, 100</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
+    <value>91, 17</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Employee ID:</value>
@@ -157,7 +160,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 13</value>
+    <value>115, 17</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Employee Name:</value>
@@ -166,10 +169,10 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>835, 591</value>
+    <value>688, 455</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 13</value>
+    <value>44, 17</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Total:</value>
@@ -181,10 +184,10 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>751, 639</value>
+    <value>614, 490</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
+    <value>118, 17</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Amount received:</value>
@@ -196,10 +199,10 @@
     <value>NoControl</value>
   </data>
   <data name="label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 681</value>
+    <value>641, 528</value>
   </data>
   <data name="label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 13</value>
+    <value>91, 17</value>
   </data>
   <data name="label.Text" xml:space="preserve">
     <value>Amount paid:</value>
@@ -211,7 +214,7 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 13</value>
+    <value>121, 17</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>Payment methods</value>
@@ -229,7 +232,7 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 13</value>
+    <value>289, 17</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
     <value>Enter the amount to be paid by the customer</value>
@@ -246,23 +249,23 @@
   <data name="Column6.HeaderText" xml:space="preserve">
     <value>Total</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 13</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Discount ID:</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
+    <value>65, 17</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Table ID:</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
+    <value>47, 17</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Bill ID:</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>914, 659</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
